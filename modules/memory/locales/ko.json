@@ -1,0 +1,135 @@
+{
+  "nav": "메모리",
+  "page": {
+    "title": "에이전트 메모리",
+    "intro": "에이전트가 나중을 위해 저장한 내용이에요. 틀렸거나 비공개인 내용은 잊게 하세요. 에이전트 검색에서 바로 사라져요."
+  },
+  "scope": {
+    "label": "누구의 메모리",
+    "all": "모두",
+    "shared": "모든 에이전트 공유",
+    "global": "전체 (모든 에이전트)",
+    "team": "팀: {{name}}",
+    "private": "비공개"
+  },
+  "search": {
+    "label": "메모리 검색",
+    "placeholder": "단어 입력"
+  },
+  "item": {
+    "shared": "공유됨",
+    "saved": "{{when}} 저장",
+    "reviewed": "검토함",
+    "markReviewed": "검토 완료로 표시",
+    "forget": "잊기",
+    "confirm": "완전히 잊기",
+    "cancel": "유지",
+    "untrusted": "내가 저장하지 않음",
+    "global": "전체",
+    "team": "팀 {{name}}",
+    "by": "{{who}} 님이 저장",
+    "byYou": "내가 저장",
+    "byImport": "다른 서버에서 가져옴",
+    "byUnknown": "에이전트가 저장",
+    "sure": "확실함",
+    "unsure": "불확실함",
+    "key": "키: {{key}}",
+    "edit": "편집",
+    "editLabel": "이 메모리 편집",
+    "save": "저장",
+    "editCancel": "취소",
+    "edited": "저장했어요."
+  },
+  "empty": "아직 저장된 내용이 없어요.",
+  "loading": "불러오는 중…",
+  "error": "메모리를 불러오지 못했어요. {{reason}}",
+  "count_other": "{{count}}개",
+  "settings": {
+    "title": "메모리",
+    "backend": "메모리 저장 위치",
+    "backendHint": "변경해도 이미 저장된 항목은 옮겨지지 않아요.",
+    "local": "이 서버",
+    "limits": "에이전트당 최대 {{perAgent}}개, 공유 {{shared}}개, 항목당 {{textChars}}자까지 저장돼요."
+  },
+  "origin": {
+    "label": "저장 출처",
+    "any": "모든 채팅",
+    "owner": "내가 시작한 채팅",
+    "others": "내가 시작하지 않은 채팅"
+  },
+  "more": "더 보기",
+  "countMore_other": "처음 {{count}}개",
+  "merges": {
+    "title": "선택이 필요해요",
+    "intro": "두 에이전트가 같은 대상에 대해 서로 다른 답을 확신하고 있어요. 하나를 고르거나 올바른 답을 직접 적어 주세요.",
+    "key": "대상: {{key}}",
+    "current": "현재 저장됨",
+    "incoming": "새 답변",
+    "keepCurrent": "저장된 것 유지",
+    "useIncoming": "새것 사용",
+    "writeOwn": "직접 작성",
+    "mergedLabel": "올바른 답",
+    "saveMerged": "답 저장",
+    "cancel": "취소",
+    "gone": "(저장된 답이 삭제됨)"
+  },
+  "teams": {
+    "title": "팀",
+    "intro": "팀은 하나의 메모리를 함께 쓰는 에이전트 그룹이에요. 에이전트는 자신이 속한 팀의 메모리만 읽고 쓸 수 있어요.",
+    "empty": "아직 팀이 없어요.",
+    "name": "팀 이름",
+    "create": "팀 만들기",
+    "members": "멤버",
+    "noAgents": "먼저 에이전트를 추가해 주세요.",
+    "delete": "팀 삭제",
+    "confirmDelete": "팀과 팀 메모리 삭제",
+    "keep": "유지",
+    "count_other": "에이전트 {{count}}개"
+  },
+  "tools": {
+    "memory_remember": "기억하기",
+    "memory_search": "기억 검색",
+    "memory_teams": "내 기억 팀",
+    "memory_forget": "잊기"
+  },
+  "find": {
+    "navHint": "에이전트가 기억하는 것",
+    "navKeywords": "기억, 메모, 사실, 회상"
+  },
+  "plain": {
+    "find": {
+      "navHint": "도우미가 기억하는 것"
+    },
+    "page": {
+      "title": "도우미가 기억하는 것",
+      "intro": "도우미가 나중을 위해 저장한 것이에요. 틀리거나 사적인 건 잊게 하세요. 도우미 검색에서 바로 안 나와요."
+    },
+    "scope": {
+      "shared": "모든 도우미가 함께 써요",
+      "global": "모두(모든 도우미)"
+    },
+    "item": {
+      "byImport": "다른 컴퓨터에서 가져옴",
+      "byUnknown": "도우미가 저장함"
+    },
+    "settings": {
+      "local": "이 컴퓨터",
+      "limits": "도우미마다 최대 {{perAgent}}개, 공유 {{shared}}개, 각각 {{textChars}}자까지."
+    },
+    "merges": {
+      "intro": "두 도우미가 같은 일에 서로 다른 답을 확신했어요. 하나를 고르거나 맞는 답을 직접 써 주세요."
+    },
+    "teams": {
+      "intro": "팀은 기억 하나를 함께 쓰는 도우미 모임이에요. 도우미는 자기 팀에만 읽고 써요.",
+      "noAgents": "먼저 도우미를 추가해 주세요."
+    }
+  },
+  "card": {
+    "saved": {
+      "title": "기억해 둘게요",
+      "undo": "되돌리기",
+      "all": "기억하는 것 모두 보기",
+      "undone": "잊었어요"
+    }
+  }
+}

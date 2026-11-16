@@ -1,0 +1,139 @@
+{
+  "nav": "Rutinitas",
+  "page": {
+    "title": "Rutinitas",
+    "intro": "Rutinitas menjalankan agent secara manual, sesuai jadwal, atau saat ada yang memanggil. Balasan persis (quiet) berarti tidak ada yang baru, dan Anda tidak akan diberi tahu.",
+    "calendar": "Feed kalender",
+    "empty": "Belum ada rutinitas."
+  },
+  "hook": {
+    "title": "Alamat dan rahasia webhook",
+    "once": "Salin sekarang. Rahasia hanya ditampilkan sekali; memutarnya juga menghasilkan alamat baru.",
+    "saved": "Sudah saya simpan"
+  },
+  "create": {
+    "title": "Rutinitas baru",
+    "name": "Nama",
+    "agent": "Agen",
+    "prompt": "Apa yang harus dilakukan agent?",
+    "promptHint": "Dikirim sebagai pesan rutinitas setiap kali dijalankan.",
+    "trigger": "Berjalan",
+    "cron": "Jadwal (cron)",
+    "cronHint": "menit jam hari bulan hari-minggu, mis. 0 9 * * 1-5 = pukul 9:00 pada hari kerja",
+    "tz": "Zona waktu",
+    "target": "Tempat berjalan",
+    "submit": "Buat rutinitas",
+    "workflow": "Alur kerja",
+    "noWorkflows": "Belum ada alur kerja. Buat dulu di halaman Alur Kerja.",
+    "offline": "Jalankan walau offline",
+    "offlineHint": "Jika otak utama agent tidak dapat dijangkau, gunakan otak berikutnya (misalnya model lokal) dan beri tahu di hasilnya."
+  },
+  "kind": {
+    "schedule": "Sesuai jadwal",
+    "manual": "Manual",
+    "webhook": "Webhook",
+    "github": "GitHub",
+    "event": "Saat ada kejadian"
+  },
+  "target": {
+    "chat": "Di chat agent",
+    "thread": "Di utas baru",
+    "workflow": "Memulai alur kerja"
+  },
+  "state": {
+    "paused": "Dijeda"
+  },
+  "routine": {
+    "next": "Berikutnya",
+    "last": "Terakhir"
+  },
+  "result": {
+    "pending": "Berjalan",
+    "ok": "Selesai",
+    "silent": "Tidak ada yang baru",
+    "failed": "Gagal",
+    "interrupted": "Terhenti",
+    "skipped": "Dilewati",
+    "held": "Ditahan"
+  },
+  "source": {
+    "manual": "manual",
+    "schedule": "jadwal",
+    "webhook": "webhook",
+    "event": "kejadian",
+    "github": "GitHub",
+    "test": "uji coba"
+  },
+  "action": {
+    "run": "Jalankan sekarang",
+    "test": "Uji coba",
+    "pause": "Jeda",
+    "resume": "Lanjutkan",
+    "rotate": "Rahasia baru",
+    "rotateConfirm": "Buat rahasia dan alamat baru? Pengirim yang memakai yang lama tidak akan berfungsi lagi.",
+    "delete": "Hapus",
+    "deleteConfirm": "Hapus rutinitas ini? Aktivitasnya tetap ada di feed."
+  },
+  "activity": {
+    "title": "Aktivitas",
+    "empty": "Belum ada yang berjalan.",
+    "open": "Buka chat",
+    "silent": "Berjalan, tidak ada yang baru untuk dilaporkan.",
+    "offlineFallback": "Otak utama offline: dijalankan di {{to}}",
+    "rateLimited": "Dibatasi: model gratis sedang sibuk atau kuotanya habis, sehingga proses ini dilewati. Proses berikutnya berjalan seperti biasa."
+  },
+  "tools": {
+    "routines_list": "Daftar rutinitas saya",
+    "routines_create": "Buat rutinitas",
+    "routines_pause": "Jeda salah satu rutinitas saya",
+    "routines_delete": "Hapus salah satu rutinitas saya"
+  },
+  "server": {
+    "finished": "Rutinitas \"{{name}}\" selesai"
+  },
+  "find": {
+    "navHint": "Jalankan agen sesuai jadwal",
+    "navKeywords": "jadwal, setiap hari, timer, ulangi, harian, mingguan",
+    "stillOn_other": "{{count}} rutinitas masih aktif dan akan terus berjalan."
+  },
+  "plain": {
+    "find": {
+      "navHint": "Jalankan pembantu sesuai jadwal"
+    },
+    "page": {
+      "intro": "Rutinitas menjalankan pembantu secara manual, terjadwal, atau saat ada yang memanggil. Balasan tepat (quiet) berarti tidak ada yang baru, dan kamu tidak diberi tahu."
+    },
+    "create": {
+      "agent": "Pembantu",
+      "prompt": "Apa yang harus dilakukan pembantu?",
+      "offlineHint": "Jika otak utama pembantu tidak bisa dihubungi, pakai otak berikutnya (misalnya yang ada di komputer ini) dan sebutkan di hasilnya."
+    },
+    "kind": {
+      "webhook": "Saat tautan dipanggil"
+    },
+    "source": {
+      "webhook": "tautan"
+    },
+    "hook": {
+      "title": "Tautan dan rahasianya"
+    },
+    "target": {
+      "chat": "Di obrolan pembantu"
+    },
+    "activity": {
+      "rateLimited": "Dilewati: otak gratis sedang sibuk atau habis. Yang berikutnya berjalan seperti biasa."
+    }
+  },
+  "card": {
+    "created": {
+      "title": "Rutinitas baru: {{name}}",
+      "text": "Berjalan sendiri. Kamu bisa menjedanya, atau menghapusnya kalau tidak mau."
+    },
+    "pause": "Jeda",
+    "undo": "Hapus",
+    "open": "Lihat rutinitas",
+    "paused": "Dijeda",
+    "undone": "Dihapus",
+    "gone": "Rutinitas ini sudah tidak ada"
+  }
+}

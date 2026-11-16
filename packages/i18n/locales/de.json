@@ -1,0 +1,136 @@
+{
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "Erneut versuchen",
+    "skip": "Überspringen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "loading": "Wird geladen…"
+  },
+  "queue": {
+    "interrupted": "Dieser Durchlauf wurde durch einen Server-Neustart unterbrochen.",
+    "interruptedHint": "Versuch ihn erneut oder überspringe ihn, um mit der nächsten Nachricht weiterzumachen.",
+    "routineInterrupted": "Ein Routinedurchlauf von {{agent}} wurde durch einen Server-Neustart unterbrochen."
+  },
+  "blocks": {
+    "fallback": "Diese Nachricht enthält Inhalte, die diese App nicht anzeigen kann ({{kind}})."
+  },
+  "meta": {
+    "name": "Deutsch",
+    "dir": "ltr",
+    "status": "unreviewed"
+  },
+  "server": {
+    "approvalNeeded": "Freigabe nötig",
+    "wantsToUse": "{{name}} möchte: {{tool}}",
+    "interrupted": "Lauf durch einen Serverneustart unterbrochen",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}: Lauf fehlgeschlagen",
+    "unknownError": "unbekannter Fehler",
+    "devicePaired": "Ein Gerät wurde gekoppelt",
+    "devicePairedBody": "{{what}} kann sich jetzt bei deinem Konto anmelden."
+  },
+  "provider": {
+    "fakeName": "Attrappe (Tests)",
+    "hint": {
+      "notOnPath": "{{cli}} nicht im PATH gefunden",
+      "notFound": "{{cli}} nicht gefunden",
+      "versionFailed": "`{{cmd}} --version` ist fehlgeschlagen",
+      "runToSignIn": "führe `{{cmd}}` einmal aus, um dich anzumelden",
+      "runToSignInOrKey": "führe `{{cmd}}` einmal aus, um dich anzumelden (oder setze {{env}} über den Tresor)",
+      "runToAddProvider": "führe `{{cmd}}` einmal aus, um einen Anbieter hinzuzufügen",
+      "checkedFirstTurn": "die Anmeldung wird beim ersten Durchlauf geprüft",
+      "notAnswering": "{{name}} ({{url}}) antwortet nicht",
+      "turnSignIn": "Die Anmeldung hat beim letzten Mal nicht funktioniert. Melde dich auf der Seite „Gehirne“ erneut an."
+    }
+  },
+  "channel": {
+    "linked": "Verknüpft. Du kannst hier mit {{agent}} sprechen.",
+    "linkInvalid": "Dieser Verknüpfungscode ist ungültig oder abgelaufen. Erstelle einen neuen in PasaBot: Einstellungen → Kanäle.",
+    "failed": "Das hat leider nicht geklappt. Die Details stehen in der PasaBot-App.",
+    "empty": "(keine Antwort)",
+    "interrupted": "Durch einen Neustart unterbrochen. Versuche es in der PasaBot-App erneut.",
+    "approvalAsk": "Freigabe nötig: {{summary}}\nAntworte /approve {{id}} oder /deny {{id}}",
+    "approvalDevice": "Freigabe nötig: {{summary}}\nDiese kann nur in der PasaBot-App auf einem gekoppelten Gerät freigegeben werden.",
+    "approvalNone": "In diesem Chat wartet keine Freigabe mit dieser ID.",
+    "approvalOwnerOnly": "Nur der verknüpfte Besitzer kann Freigaben beantworten.",
+    "approvalDeviceOnly": "Diese Freigabe kann nur in der PasaBot-App auf einem gekoppelten Gerät beantwortet werden.",
+    "approved": "{{id}} freigegeben.",
+    "denied": "{{id}} abgelehnt."
+  },
+  "card": {
+    "action": {
+      "open": "Öffnen",
+      "dismiss": "Ausblenden",
+      "signIn": "Erneut anmelden",
+      "retry": "Nochmal versuchen",
+      "otherBrain": "Anderes Gehirn nehmen",
+      "wait": "Weiter warten",
+      "notNow": "Nicht jetzt",
+      "takeOver": "Übernehmen",
+      "imDone": "Fertig, weiter",
+      "ok": "Alles klar",
+      "remind": "Erinnere mich"
+    },
+    "signIn": {
+      "title": "Das Gehirn von {{name}} braucht deine Anmeldung",
+      "text": "{{brain}} ist abgemeldet, deshalb kann {{name}} noch nicht antworten. Melde dich einmal an und versuch es nochmal."
+    },
+    "failed": {
+      "title": "{{name}} konnte diese Antwort nicht beenden",
+      "offline": "Das Gehirn war nicht erreichbar. Prüf das Internet und versuch es nochmal.",
+      "timeout": "Es hat zu lange gedauert und wurde gestoppt.",
+      "auth": "Das Gehirn ist abgemeldet.",
+      "ratelimit": "Das Gehirn hat sein Nutzungslimit vorerst erreicht.",
+      "quota": "Das Gehirn hat in diesem Tarif nichts mehr übrig.",
+      "contextoverflow": "Der Chat ist für das Gehirn zu lang geworden.",
+      "other": "Das Gehirn hat vor dem Ende der Antwort aufgehört."
+    },
+    "limit": {
+      "title": "{{name}} pausiert bis {{untilAt}}",
+      "text": "Das Gehirn hat sein Limit erreicht. Deine Nachricht wartet und geht von selbst raus.",
+      "offline": "Das Gehirn ist gerade nicht erreichbar. Deine Nachricht wartet und geht von selbst raus.",
+      "remindNow": "{{name}} kann jetzt weitermachen",
+      "offlineTitle": "{{name}} pausiert bis {{untilAt}}"
+    },
+    "settled": {
+      "retrying": "Neuer Versuch läuft",
+      "signedIn": "Wieder angemeldet",
+      "resumed": "Läuft wieder",
+      "remind": "Ich erinnere dich um {{untilAt}}"
+    },
+    "member": {
+      "failed": "{{name}} konnte diese Antwort nicht beenden.",
+      "approvalWaiting": "{{name}} wartet auf das OK des Besitzers.",
+      "approvalApproved": "{{name}} hat das OK bekommen.",
+      "approvalRefused": "{{name}} wurde es nicht erlaubt."
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}} braucht deine erneute Anmeldung",
+        "text": "{{name}}s Verstand ist abgemeldet, darum kommt noch keine Antwort. Melde dich einmal an und schick deine Nachricht dann noch einmal."
+      },
+      "action": {
+        "otherBrain": "Anderen Verstand nutzen"
+      },
+      "limit": {
+        "title": "{{name}} hat seine Runden für den Moment aufgebraucht",
+        "text": "Um {{untilAt}} kann es weitermachen. Deine Nachricht wartet und geht von selbst raus.",
+        "offlineTitle": "{{name}} erreicht seinen Verstand gerade nicht",
+        "offline": "Um {{untilAt}} versucht es das noch einmal. Deine Nachricht wartet und geht von selbst raus."
+      },
+      "failed": {
+        "offline": "Es hat seinen Verstand nicht erreicht. Prüf das Internet und versuch es noch einmal.",
+        "auth": "Sein Verstand ist abgemeldet.",
+        "ratelimit": "Es hat seine Runden für den Moment aufgebraucht.",
+        "quota": "In diesem Tarif hat es keine Runden mehr.",
+        "contextoverflow": "Der Chat ist zu lang für seinen Verstand geworden.",
+        "other": "Es hat aufgehört, bevor die Antwort fertig war."
+      }
+    }
+  }
+}

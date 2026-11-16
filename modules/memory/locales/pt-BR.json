@@ -1,0 +1,141 @@
+{
+  "nav": "Memória",
+  "page": {
+    "title": "Memória dos agentes",
+    "intro": "O que seus agentes guardaram para depois. Esqueça o que estiver errado ou for privado; a busca do agente deixa de encontrar isso na hora."
+  },
+  "scope": {
+    "label": "Memória de quem",
+    "all": "Todos",
+    "shared": "Compartilhada por todos os agentes",
+    "global": "Global (todos os agentes)",
+    "team": "Equipe: {{name}}",
+    "private": "Privada"
+  },
+  "search": {
+    "label": "Buscar na memória",
+    "placeholder": "Digite uma palavra"
+  },
+  "item": {
+    "shared": "Compartilhada",
+    "saved": "Salva {{when}}",
+    "reviewed": "Revisada",
+    "markReviewed": "Marcar como revisada",
+    "forget": "Esquecer",
+    "confirm": "Esquecer de vez",
+    "cancel": "Manter",
+    "untrusted": "Não veio de você",
+    "global": "Global",
+    "team": "Equipe {{name}}",
+    "by": "Salva por {{who}}",
+    "byYou": "Salva por você",
+    "byImport": "Trazida de outro servidor",
+    "byUnknown": "Salva por um agente",
+    "sure": "Certo",
+    "unsure": "Incerto",
+    "key": "Chave: {{key}}",
+    "edit": "Editar",
+    "editLabel": "Editar esta memória",
+    "save": "Salvar",
+    "editCancel": "Cancelar",
+    "edited": "Salvo."
+  },
+  "empty": "Nada salvo aqui ainda.",
+  "loading": "Carregando…",
+  "error": "Não foi possível carregar a memória. {{reason}}",
+  "count_one": "{{count}} item",
+  "count_many": "{{count}} de itens",
+  "count_other": "{{count}} itens",
+  "settings": {
+    "title": "Memória",
+    "backend": "Onde a memória é guardada",
+    "backendHint": "Alterar isso não move os itens já salvos.",
+    "local": "Este servidor",
+    "limits": "Até {{perAgent}} itens por agente, {{shared}} compartilhados, {{textChars}} caracteres cada."
+  },
+  "origin": {
+    "label": "Salva a partir de",
+    "any": "Qualquer chat",
+    "owner": "Seus próprios chats",
+    "others": "Chats que você não iniciou"
+  },
+  "more": "Mostrar mais",
+  "countMore_one": "Primeiro {{count}} item",
+  "countMore_many": "Primeiros {{count}} de itens",
+  "countMore_other": "Primeiros {{count}} itens",
+  "merges": {
+    "title": "Precisa da sua escolha",
+    "intro": "Dois agentes tinham certeza de respostas diferentes para a mesma coisa. Escolha uma ou escreva você mesmo a resposta certa.",
+    "key": "Sobre: {{key}}",
+    "current": "Salva agora",
+    "incoming": "Nova resposta",
+    "keepCurrent": "Manter a salva",
+    "useIncoming": "Usar a nova",
+    "writeOwn": "Escrever a minha",
+    "mergedLabel": "A resposta certa",
+    "saveMerged": "Salvar resposta",
+    "cancel": "Cancelar",
+    "gone": "(a resposta salva foi excluída)"
+  },
+  "teams": {
+    "title": "Equipes",
+    "intro": "Uma equipe é um grupo de agentes que compartilham uma memória. Os agentes leem e escrevem apenas nas equipes de que fazem parte.",
+    "empty": "Ainda não há equipes.",
+    "name": "Nome da equipe",
+    "create": "Criar equipe",
+    "members": "Membros",
+    "noAgents": "Adicione um agente primeiro.",
+    "delete": "Excluir equipe",
+    "confirmDelete": "Excluir equipe e sua memória",
+    "keep": "Manter",
+    "count_one": "{{count}} agente",
+    "count_many": "{{count}} de agentes",
+    "count_other": "{{count}} agentes"
+  },
+  "tools": {
+    "memory_remember": "Lembrar",
+    "memory_search": "Pesquisar na memória",
+    "memory_teams": "Minhas equipes de memória",
+    "memory_forget": "Esquecer"
+  },
+  "find": {
+    "navHint": "O que seus agentes lembram",
+    "navKeywords": "lembrar, notas, fatos, memória"
+  },
+  "plain": {
+    "find": {
+      "navHint": "O que seus ajudantes lembram"
+    },
+    "page": {
+      "title": "O que os ajudantes lembram",
+      "intro": "O que seus ajudantes guardaram para depois. Esqueça o que estiver errado ou for privado; a busca de um ajudante para de achar na hora."
+    },
+    "scope": {
+      "shared": "Compartilhado por todos os ajudantes",
+      "global": "Todos (todos os ajudantes)"
+    },
+    "item": {
+      "byImport": "Trazido de outro computador",
+      "byUnknown": "Guardado por um ajudante"
+    },
+    "settings": {
+      "local": "Este computador",
+      "limits": "Até {{perAgent}} itens por ajudante, {{shared}} compartilhados, {{textChars}} caracteres cada."
+    },
+    "merges": {
+      "intro": "Dois ajudantes tinham certeza de respostas diferentes para a mesma coisa. Escolha uma ou escreva a certa você mesmo."
+    },
+    "teams": {
+      "intro": "Uma equipe é um grupo de ajudantes que compartilham uma memória. Ajudantes leem e escrevem só nas equipes em que estão.",
+      "noAgents": "Adicione um ajudante primeiro."
+    }
+  },
+  "card": {
+    "saved": {
+      "title": "Vou lembrar disso",
+      "undo": "Desfazer",
+      "all": "Ver tudo o que eu lembro",
+      "undone": "Esquecido"
+    }
+  }
+}

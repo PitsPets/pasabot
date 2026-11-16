@@ -1,0 +1,64 @@
+{
+  "title": "Modèles locaux",
+  "intro": "Exécutez des agents sur un modèle de cet ordinateur (Ollama, LM Studio) ou de votre réseau local. Rien ne quitte votre réseau, et les agents ne peuvent jamais ajouter d'adresse ici.",
+  "empty": "Aucun modèle local pour l'instant.",
+  "found": {
+    "text": "{{name}} trouvé à l'adresse {{url}} ({{count}} modèles).",
+    "use": "L'ajouter"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "Compatible OpenAI (LM Studio)"
+  },
+  "scope": {
+    "loopback": "Cet ordinateur",
+    "lan": "Réseau local"
+  },
+  "warning": {
+    "lan": "Cette adresse se trouve sur votre réseau local, pas sur cet ordinateur. Celui qui contrôle cette machine voit les requêtes et peut répondre à la place du modèle."
+  },
+  "models": {
+    "loading": "Recherche de modèles…",
+    "unreachable": "Aucune réponse à cette adresse.",
+    "none": "Aucun modèle trouvé. Téléchargez-en un d'abord dans Ollama ou LM Studio.",
+    "tools": "Outils",
+    "toolsTry": "Outils si pris en charge",
+    "chatOnly": "Conversation seule : outils désactivés"
+  },
+  "tools": {
+    "label": "Outils",
+    "auto": "Utiliser les outils si le modèle les prend en charge",
+    "off": "Conversation seule (outils désactivés)"
+  },
+  "use": "Les agents et les solutions de secours peuvent maintenant choisir le cerveau {{id}}.",
+  "refresh": "Actualiser les modèles",
+  "remove": {
+    "button": "Supprimer",
+    "confirm": "Oui, supprimer",
+    "cancel": "Conserver"
+  },
+  "add": {
+    "title": "Ajouter un modèle local",
+    "name": "Nom",
+    "api": "Type",
+    "url": "Adresse",
+    "urlHint": "Une adresse IP ou localhost, par exemple http://127.0.0.1:11434 (Ollama) ou http://127.0.0.1:1234/v1 (LM Studio).",
+    "check": "Vérifier",
+    "submit": "Ajouter",
+    "reachable": "Réponse reçue : {{count}} modèles."
+  },
+  "offlineHint": "Placez un modèle local dans les solutions de secours d'un agent (Cerveaux et solutions de secours) et cochez « Exécuter même hors ligne » pour une routine : lorsque le cerveau principal est injoignable, cette routine s'exécute sur le modèle local et vous le signale.",
+  "find": {
+    "settingsHint": "Faire tourner un cerveau sur cet ordinateur",
+    "settingsKeywords": "local, hors ligne, modèle, privé"
+  },
+  "plain": {
+    "title": "Cerveaux locaux",
+    "intro": "Exécutez des assistants sur un cerveau de cet ordinateur (Ollama, LM Studio) ou de votre réseau local. Rien ne quitte votre réseau, et les assistants ne peuvent jamais ajouter d'adresse ici.",
+    "empty": "Aucun cerveau local pour l'instant.",
+    "add": {
+      "title": "Ajouter un cerveau local"
+    },
+    "offlineHint": "Placez un cerveau local dans les solutions de secours d'un assistant (Cerveaux et solutions de secours) et cochez « Exécuter même hors ligne » pour une routine : lorsque le cerveau principal est injoignable, cette routine s'exécute sur le cerveau local et vous le signale."
+  }
+}

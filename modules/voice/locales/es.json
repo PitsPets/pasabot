@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "Mantén presionado para hablar",
+    "listening": "Escuchando… suelta para detener",
+    "working": "Convirtiendo tu voz en texto…",
+    "title": "Tu mensaje",
+    "text": "Lo que dijiste",
+    "send": "Enviar",
+    "cancel": "Cancelar",
+    "empty": "No se escuchó nada. Inténtalo de nuevo, un poco más cerca del micrófono.",
+    "noMic": "Este navegador no puede usar el micrófono aquí.",
+    "denied": "Se bloqueó el acceso al micrófono. Permítelo en el navegador para hablar.",
+    "unavailable": "La entrada de voz no está configurada. El owner puede descargar un modelo de voz en Ajustes → Voz.",
+    "failed": "No se pudo convertir la grabación en texto. {{reason}}",
+    "browserNote": "Usando el reconocimiento de voz de tu navegador."
+  },
+  "listen": {
+    "play": "Escuchar",
+    "stop": "Detener",
+    "loading": "Preparando audio…",
+    "failed": "No se pudo leer esto en voz alta. {{reason}}"
+  },
+  "settings": {
+    "title": "Voz",
+    "intro": "Habla con tus agentes y escucha sus respuestas. La voz se procesa en este servidor, así que nunca sale de él.",
+    "engine": "Motor de voz",
+    "engineFake": "Motor de prueba",
+    "engineLocal": "En este servidor",
+    "noPackage": "El motor de voz no está instalado en este servidor, por lo que se usa la alternativa del navegador.",
+    "stt": "Entrada de voz",
+    "tts": "Respuestas habladas",
+    "ready": "Listo: {{model}}",
+    "notReady": "Aún no hay modelo",
+    "models": "Modelos de voz",
+    "modelsIntro": "Los modelos se descargan solo cuando lo pides, desde las versiones del propio motor de voz.",
+    "kindStt": "Entrada de voz",
+    "kindTts": "Respuestas habladas",
+    "size": "Aprox. {{mb}} MB",
+    "languages": "Idiomas: {{list}}",
+    "installed": "Instalado",
+    "download": "Descargar {{name}}",
+    "remove": "Quitar {{name}}",
+    "modelName": "{{model}} ({{note}})",
+    "noteMultilingual": "multilingüe",
+    "noteEnglish": "inglés",
+    "downloading": "Descargando… {{pct}}",
+    "unpacking": "Descomprimiendo…",
+    "failedDownload": "Falló la descarga: {{reason}}",
+    "disabledUnpinned": "Aún no está disponible: PasaBot no tiene una suma de verificación para comprobar esta descarga, así que permanece desactivada.",
+    "ownerOnly": "Solo el owner puede descargar o quitar modelos.",
+    "autoRead": "Leer en voz alta las respuestas nuevas",
+    "autoReadHint": "Solo en este dispositivo.",
+    "browserStt": "Usar el reconocimiento de voz del navegador cuando no haya un modelo instalado",
+    "browserSttHint": "Algunos navegadores envían tu voz a los servidores de su fabricante para reconocerla. Desactivado de forma predeterminada.",
+    "loading": "Cargando…",
+    "error": "No se pudieron cargar los ajustes de voz. {{reason}}"
+  },
+  "find": {
+    "settingsHint": "Habla con tus agentes y escúchalos",
+    "settingsKeywords": "voz, hablar, micrófono, escuchar, audio"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Habla con tus ayudantes y escúchalos"
+    },
+    "settings": {
+      "intro": "Habla con tus ayudantes y escucha sus respuestas. La voz se procesa en este servidor, así que nunca sale de él.",
+      "engineLocal": "En este servidor",
+      "notReady": "Aún no hay cerebro",
+      "models": "Cerebros de voz",
+      "modelsIntro": "Los cerebros se descargan solo cuando lo pides, desde las versiones del propio motor de voz.",
+      "browserStt": "Usar el reconocimiento de voz del navegador cuando no haya un cerebro instalado",
+      "browserSttHint": "Algunos navegadores envían tu voz a los servidores de su fabricante para reconocerla. Desactivado de forma predeterminada."
+    }
+  }
+}

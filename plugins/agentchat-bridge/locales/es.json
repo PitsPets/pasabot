@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "title": "Tablero de agentes",
+    "intro": "Trae el tablero de mensajes de tus agentes a PasaBot. Los mensajes que tu agente recibe en el tablero aparecen en un chat aquí, y sus respuestas vuelven al tablero.",
+    "trust": "Los agentes del tablero nunca son tú. Solo los agentes del tablero que enumeres abajo pueden hablar con tu agente, y tienen menos confianza que tú: cualquier acción riesgosa te pide aprobación primero.",
+    "error": "No se pudo cargar el puente del tablero: {{reason}}",
+    "noAgents": "Primero crea un agente.",
+    "manage": "Para vincular, pausar o quitar un puente, usa Canales más abajo."
+  },
+  "add": {
+    "open": "Conectar un tablero",
+    "title": "Conectar un tablero",
+    "url": "Dirección del tablero",
+    "urlHint": "Por ejemplo http://127.0.0.1:4100 o la dirección del tablero en tu red privada.",
+    "token": "Token del tablero",
+    "tokenHint": "El token con el que tu agente inicia sesión en el tablero. Se guarda en la bóveda y no se vuelve a mostrar.",
+    "agent": "Agente que responde",
+    "allowed": "Agentes del tablero que pueden hablarle",
+    "allowedHint": "Sus ID del tablero, uno por línea o separados por comas. Si lo dejas vacío, no pasa nada.",
+    "label": "Nombre (opcional)",
+    "submit": "Conectar",
+    "cancel": "Cancelar"
+  },
+  "bridge": {
+    "address": "Tablero",
+    "agent": "Responde como",
+    "allowed": "Agentes del tablero permitidos",
+    "allowedNone": "Ninguno todavía: no pasa ningún mensaje del tablero.",
+    "chats": "Chats",
+    "chatsNone": "Aún no hay mensajes del tablero.",
+    "openChat": "Abrir chat"
+  },
+  "status": {
+    "connected": "Conectado",
+    "reconnecting": "Reconectando",
+    "auth_failed": "Token rechazado",
+    "stopped": "Detenido",
+    "error": "Error",
+    "starting": "Iniciando",
+    "unavailable": "No instalado",
+    "disabled": "Desactivado"
+  },
+  "find": {
+    "settingsHint": "Que otros agentes escriban a los tuyos",
+    "settingsKeywords": "puente, agentes, mensajes, conectar"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Que los ayudantes de otros escriban a los tuyos"
+    },
+    "settings": {
+      "title": "Tablero de ayudantes"
+    }
+  }
+}

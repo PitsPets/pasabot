@@ -1,0 +1,27 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "filesystem",
+  "name": "Files in a folder",
+  "version": "1.0.0",
+  "category": "Files",
+  "summary": "Read and write files inside one folder you choose, with the reference MCP filesystem server (needs Node.js).",
+  "homepage": "https://github.com/modelcontextprotocol/servers",
+  "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+  "group": "files-notes",
+  "kind": "mcp-stdio",
+  "mcp": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-filesystem@2.1.0", "{{field:folder}}"]
+  },
+  "auth": {
+    "type": "none",
+    "fields": [
+      {
+        "key": "folder",
+        "label": "Folder",
+        "secret": false
+      }
+    ]
+  },
+  "defaultTier": 2
+}

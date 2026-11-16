@@ -1,0 +1,38 @@
+{
+  "name": "@pasabot/plugin-agentchat-bridge",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "pasabot": {
+    "kind": "channel",
+    "entry": "./dist/index.js",
+    "source": "./src/index.ts",
+    "web": "./web/index.tsx"
+  },
+  "dependencies": {
+    "@pasabot/core": "workspace:*",
+    "@pasabot/i18n": "workspace:*",
+    "@pasabot/safe-net": "workspace:*",
+    "@pasabot/ui": "workspace:*",
+    "zod": "^4.6.7"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@pasabot/testkit": "workspace:*",
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "nav": "Connector",
+  "page": {
+    "title": "Connector",
+    "intro": "Tautan siap pakai ke layanan luar. Tambahkan satu, lalu pilih siapa yang boleh memakainya.",
+    "introTech": "Tautan siap pakai ke layanan luar. Tambahkan satu, lalu pilih di halaman server MCP agent mana yang boleh memakainya."
+  },
+  "loading": "Memuat…",
+  "kind": {
+    "mcp-stdio": "Berjalan di mesin ini",
+    "mcp-http": "Layanan hosted",
+    "oauth-api": "Masuk"
+  },
+  "status": {
+    "ready": "Ditambahkan",
+    "needs_auth": "Perlu masuk atau kunci",
+    "error": "Bermasalah"
+  },
+  "oauth": {
+    "connected": "Sudah masuk. Connector siap dipakai.",
+    "denied": "Proses masuk dibatalkan.",
+    "expired": "Tautan masuk itu sudah kedaluwarsa. Coba lagi.",
+    "failed": "Proses masuk gagal. Periksa ID klien lalu coba lagi.",
+    "connectedApp": "Sudah masuk. {{name}} siap dipakai.",
+    "failedApp": "Masuk ke {{name}} tidak selesai. Coba lagi."
+  },
+  "catalog": {
+    "title": "Tambahkan lagi",
+    "homepage": "Tentang layanan ini",
+    "install": "Tambahkan {{name}}",
+    "custom": "Mau menambahkan yang lain?",
+    "customTech": "Punya alamat server alat?"
+  },
+  "install": {
+    "secretHint": "Disimpan di vault. Agent tidak pernah melihatnya.",
+    "oauthHint": "Connector ini masuk dengan klien OAuth milik Anda sendiri. Buat satu di layanannya dan tambahkan alamat kembali ini ke dalamnya.",
+    "redirect": "Alamat kembali:",
+    "clientId": "ID klien OAuth",
+    "clientSecret": "Rahasia klien OAuth (jika diberikan layanan)",
+    "clientSecretHint": "Disimpan di vault.",
+    "save": "Tambahkan",
+    "cancel": "Batal"
+  },
+  "installed": {
+    "title": "Terhubung",
+    "secrets": "Rahasia yang disimpan di vault: {{names}}",
+    "mcpHint": "Pilih agent mana yang boleh memakainya:",
+    "foundHint": "Nyalakan dan pilih siapa yang boleh memakainya:",
+    "mcpLink": "Server MCP",
+    "appsLink": "Aplikasi yang bisa dipakai agent",
+    "signIn": "Masuk",
+    "signInAgain": "Masuk lagi",
+    "remove": "Hapus",
+    "removeConfirm": "Ya, hapus"
+  },
+  "find": {
+    "navHint": "Hubungkan aplikasi dan layanan",
+    "navKeywords": "aplikasi, layanan, hubungkan, integrasi, akun"
+  },
+  "search": {
+    "label": "Cari aplikasi",
+    "placeholder": "Cari aplikasi, misalnya \"kalender\"",
+    "none": "Tidak ada aplikasi yang cocok."
+  },
+  "state": {
+    "added": "Ditambahkan",
+    "ready": "Siap ditambahkan",
+    "needs_key": "Perlu masuk atau kunci",
+    "missing": "Tidak ada di komputer ini"
+  },
+  "ready": {
+    "title": "Siap ditambahkan"
+  },
+  "missing": {
+    "line": "Perlu {{name}}, yang belum ada di komputer ini.",
+    "get": "Dapatkan {{name}}",
+    "ask": "Ini perlu {{name}}, yang belum ada di komputer ini. Tetap tambahkan?",
+    "addAnyway": "Tetap tambahkan"
+  },
+  "found": {
+    "title": "Ditemukan di komputer ini",
+    "intro": "Alat yang sudah kamu siapkan di aplikasi lain. Tambahkan satu agar bisa dipakai di sini juga.",
+    "introTech": "Server alat yang sudah kamu atur di aplikasi lain. Tambahkan satu agar bisa dipakai di sini juga.",
+    "from": "Diatur di {{app}}",
+    "keys": "Kuncinya langsung masuk ke brankas kamu dan tidak pernah ditampilkan: {{names}}",
+    "keysAsk": "Ini punya kunci. Salin juga ke brankas kamu? Agent tidak pernah melihatnya.",
+    "confirm": "Ya, tambahkan",
+    "blocked": {
+      "key-in-command": "Yang ini menyimpan kunci di dalam perintahnya. Tambahkan sendiri saja:",
+      "unsupported": "PasaBot tidak bisa memindahkan yang ini apa adanya. Tambahkan sendiri saja:"
+    }
+  },
+  "describe": {
+    "filesystem": "Membiarkan agen membaca dan mengubah file di satu folder pilihanmu.",
+    "git": "Membiarkan agen melihat riwayat dan perubahan satu folder kode.",
+    "github": "Membiarkan agen bekerja dengan kode, issue, dan pull request GitHub kamu.",
+    "github-remote": "Alat GitHub yang sama, dijalankan GitHub secara online. Tidak ada yang perlu diatur di sini.",
+    "google-calendar": "Membiarkan agen membaca Google Kalender kamu.",
+    "time": "Memberi tahu agen waktu di mana saja di dunia.",
+    "notion": "Asisten mencari, membaca, dan menulis halaman di Notion-mu.",
+    "atlassian": "Asisten melihat dan memperbarui pekerjaanmu di Jira dan halaman Confluence.",
+    "trello": "Asisten membaca papan Trello-mu dan memindah atau menambah kartu.",
+    "clickup": "Asisten mencari, menambah, dan memperbarui tugas ClickUp-mu.",
+    "intercom": "Asisten melihat chat dan kontak pelangganmu di Intercom.",
+    "stripe": "Asisten memeriksa pembayaran, pelanggan, dan tagihan Stripe-mu."
+  },
+  "adding": "Menambahkan…",
+  "server": {
+    "connected": "{{name}} sudah terhubung. Coba tanyakan sesuatu tentangnya."
+  },
+  "groups": {
+    "popular": "Populer",
+    "files-notes": "File dan catatan",
+    "calendar-email": "Kalender dan email",
+    "work-tasks": "Kerja dan tugas",
+    "shop-money": "Belanja dan uang",
+    "social-chat": "Sosial dan chat",
+    "other": "Lainnya"
+  },
+  "button": {
+    "add": "Tambah",
+    "signIn": "Masuk",
+    "code": "Perlu kode",
+    "added": "Sudah ditambah"
+  },
+  "signin": {
+    "lead": "{{name}} membuka halamannya sendiri agar kamu bisa masuk. Kamu tidak mengetik apa pun di sini.",
+    "can": "Asistenmu akan bisa:",
+    "ask": "Semua yang mengirim, memposting, membayar, atau menghapus akan bertanya dulu, setiap kali.",
+    "go": "Lanjut ke {{name}}",
+    "failed": "Halaman masuk {{name}} tidak bisa dibuka. Coba lagi sebentar lagi.",
+    "insecure": "{{name}} hanya mengizinkan masuk dari alamat yang aman. Buka PasaBot di komputer tempat ia berjalan, atau di alamat amannya (https), lalu masuk.",
+    "refused": "{{name}} tidak menerima proses masuk PasaBot. Mencoba lagi tidak akan mengubahnya."
+  },
+  "code": {
+    "lead": "{{name}} memberimu kode untuk ditempel di sini.",
+    "get": "Ambil kodemu",
+    "paste": "Tempel kodemu",
+    "test": "Uji dan tambah",
+    "bad": "Kode itu tidak berhasil. Pastikan kamu menyalin semuanya.",
+    "unreachable": "Tidak bisa menjangkau {{name}}. Periksa internetmu lalu coba lagi.",
+    "failed": "Tidak berhasil: {{reason}}",
+    "refused": "{{name}} menjawab, tapi sekarang tidak mau bekerja dengan PasaBot. Coba lagi nanti."
+  },
+  "helpers": {
+    "title": "Siapa yang boleh memakainya",
+    "main": "asisten utama"
+  },
+  "connected": {
+    "title": "{{name}} sudah terhubung",
+    "try": "Coba tanyakan:",
+    "who": "Ubah siapa yang boleh memakainya"
+  },
+  "try": {
+    "notion": {
+      "a": "Cari catatan Notion-ku tentang rapat berikutnya",
+      "b": "Buat halaman Notion berisi daftar tugas minggu ini"
+    },
+    "atlassian": {
+      "a": "Issue Jira apa saja yang ditugaskan padaku?",
+      "b": "Ringkas halaman Confluence terbaru yang diubah timku"
+    },
+    "trello": {
+      "a": "Ada apa di papan Trello-ku hari ini?",
+      "b": "Tambah kartu Trello: telepon pemasok hari Jumat"
+    },
+    "clickup": {
+      "a": "Tugas ClickUp mana yang jatuh tempo minggu ini?",
+      "b": "Tambah tugas ClickUp: kirim penawaran besok"
+    },
+    "intercom": {
+      "a": "Tampilkan chat Intercom terbaruku",
+      "b": "Siapa yang menghubungi kami di Intercom soal refund?"
+    },
+    "stripe": {
+      "a": "Berapa yang kuterima di Stripe minggu ini?",
+      "b": "Daftar tagihan Stripe-ku yang belum dibayar"
+    },
+    "generic": {
+      "a": "Apa yang bisa kamu lakukan dengan {{name}}?",
+      "b": "Tunjukkan apa yang bisa kamu lihat di {{name}}"
+    }
+  },
+  "plain": {
+    "nav": "Aplikasi untuk pembantu",
+    "page": {
+      "title": "Aplikasi untuk pembantu"
+    },
+    "oauth": {
+      "connected": "Sudah masuk. Aplikasinya siap."
+    },
+    "install": {
+      "secretHint": "Disimpan aman di komputer ini. Pembantu tidak pernah melihatnya.",
+      "oauthHint": "Aplikasi ini masuk lewat aplikasi masuk milikmu sendiri. Buat satu di situs layanan itu dan tambahkan alamat kembali ini ke sana.",
+      "clientId": "ID aplikasi masuk",
+      "clientSecret": "Kata sandi aplikasi masuk (kalau layanan memberimu satu)",
+      "clientSecretHint": "Disimpan aman di komputer ini."
+    },
+    "installed": {
+      "mcpHint": "Pilih pembantu mana yang boleh memakainya:",
+      "appsLink": "Aplikasi dan alat untuk pembantu"
+    },
+    "found": {
+      "keys": "Kode rahasianya disimpan aman dan tidak pernah ditampilkan: {{names}}",
+      "keysAsk": "Ini punya kode rahasia. Simpan salinannya di sini juga? Pembantu tidak pernah melihatnya."
+    }
+  }
+}

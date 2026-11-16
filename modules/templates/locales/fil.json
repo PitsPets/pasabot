@@ -1,0 +1,109 @@
+{
+  "nav": "Mga template",
+  "page": {
+    "title": "Mga template",
+    "starterTitle": "Libreng simula"
+  },
+  "onboarding": {
+    "title": "Pumili ng utak para sa una mong agent",
+    "intro": "Kailangan ng mga agent mo ng utak: isang AI model na ginagamit nila sa pag-iisip. Piliin kung paano ka kukuha nito.",
+    "freeTitle": "Libreng simula, walang setup",
+    "freeBody": "Gumagamit ng libreng model sa OpenCode app. Walang key, walang login, walang bayad.",
+    "freeCta": "Gamitin ang libreng simula",
+    "freeUnavailable": "Hindi pa magagamit ang libreng simula ngayon. Ikaw na lang ang mag-set up ng utak sa ibaba.",
+    "guidedTitle": "Gamitin ang utak na meron ka na",
+    "guidedBody": "Claude, Codex, OpenCode o ibang app na naka-sign in ka na sa computer na ito.",
+    "found": "Nakita sa computer na ito",
+    "notFound": "Hindi pa naka-install",
+    "installHint": "Para i-install: {{cmd}}",
+    "guidedCta": "Idagdag ang unang agent",
+    "localTitle": "Local model sa computer na ito",
+    "localBody": "May tumatakbong model server sa computer na ito. Dito mag-iisip ang agent mo: walang account, walang lumalabas sa computer.",
+    "localFound": "Sumasagot ang {{name}} sa {{url}}, may {{count}} model.",
+    "localCta": "Gamitin ang {{name}}",
+    "localAdded": "Naidagdag na ang {{name}}. Piliin ito bilang utak ng una mong agent.",
+    "useThis": "Gamitin ito",
+    "setUp": "I-set up"
+  },
+  "consent": {
+    "title": "I-install ang OpenCode para sa libreng simula?",
+    "what": "Ano: {{what}}",
+    "where": "Saan: {{where}} (para sa user mo lang, hindi kailangan ng admin)",
+    "from": "Mula sa: {{from}}",
+    "check": "Sinusuri muna ang download laban sa nakalathalang SHA-256 nito bago may isulat.",
+    "models": "Mga libreng model ayon sa pagsusuri noong {{date}}. Puwedeng matapos ang libre anumang oras; sasabihan ka ng PasaBot kapag tumigil ang sa iyo.",
+    "agree": "I-install at gawin ang agent ko",
+    "back": "Bumalik",
+    "working": "Nag-i-install…",
+    "failed": "Hindi ma-install ang OpenCode: {{reason}}. Walang nagawa. Puwede ka pa ring mag-set up ng utak nang ikaw mismo.",
+    "agentName": "Starter",
+    "agentInstructions": "Ikaw ay isang mabait na katulong. Maikli at malinaw ang mga sagot mo."
+  },
+  "notice": {
+    "title": "Tumigil ang libreng model",
+    "body": "{{model}}: {{reason}}. Kailangan ng ibang utak ng agent mo.",
+    "action": "Pumili ng ibang utak",
+    "notFreeTitle": "Hindi na libre ang libreng model",
+    "not_free": "Hindi na libre ang {{name}}. Kailangan ng ibang utak ng agent mo: mag-set up ng iba, o gumamit ng local model.",
+    "needs_key": "Kailangan na ng key o login ang {{name}}. Kailangan ng ibang utak ng agent mo.",
+    "unavailable": "Wala na ang {{name}}. Kailangan ng ibang utak ng agent mo.",
+    "none": "Gumagana ang libreng simula mo.",
+    "busy": "Abala o ubos na ang quota ng libreng model, subukan ulit sa {{time}}."
+  },
+  "catalog": {
+    "title": "Magsimula sa isang template",
+    "use": "Gamitin",
+    "useNamed": "Gamitin ang {{name}}",
+    "export": "I-export",
+    "exportNamed": "I-export ang {{name}}",
+    "empty": "Wala pang template."
+  },
+  "describe": {
+    "title": "Ilarawan ang agent mo",
+    "label": "Ano ang dapat gawin ng agent?",
+    "placeholder": "Gawan mo ako ng agent na…",
+    "submit": "Gumawa ng draft"
+  },
+  "import": {
+    "title": "Mag-import ng agent file",
+    "hint": "Isang .pasabot-template.json, agent .md file o assistant .json file.",
+    "label": "Agent file"
+  },
+  "review": {
+    "title": "Suriin ang bagong agent",
+    "hint": "Walang malilikha hangga't hindi mo pinipindot ang Gawin.",
+    "name": "Pangalan",
+    "instructions": "Mga tagubilin",
+    "brain": "Utak",
+    "create": "Gawin ang agent",
+    "cancel": "Kanselahin"
+  },
+  "error": "May nagkamali: {{msg}}",
+  "server": {
+    "skippedTitle": "May nalaktawang routine: naabot ng libreng model ang limit",
+    "skippedBody": "Nilalaktawan ng mga routine sa libreng model ang mga takbo nila hanggang doon; tatakbo gaya ng dati ang susunod."
+  },
+  "find": {
+    "navHint": "Mga handang agent na pagsisimulan",
+    "navKeywords": "template, halimbawa, simula, handa"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Mga handang katulong na pagsisimulan"
+    },
+    "describe": {
+      "title": "Ilarawan ang katulong mo",
+      "label": "Ano ang dapat gawin ng katulong?",
+      "placeholder": "Gawan mo ako ng katulong na…"
+    },
+    "import": {
+      "title": "Magdala ng katulong mula sa file",
+      "hint": "File ng katulong na na-save ng PasaBot o ng ibang assistant app.",
+      "label": "File ng katulong"
+    },
+    "review": {
+      "title": "Tingnan ang bagong katulong",
+      "create": "Gawin ang katulong na ito"
+    }
+  }
+}

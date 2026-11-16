@@ -1,0 +1,34 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npx --yes pnpm@12.18.0 install --frozen-lockfile
+      - run: npx --yes pnpm@12.18.0 run typecheck
+      - run: npx --yes pnpm@12.18.0 run i18n:check
+      - run: npx --yes pnpm@12.18.0 run lint
+      - run: npx --yes pnpm@12.18.0 run test
+      # the runner sandbox is a required check: bubblewrap must be installed and allowed to create user
+      # namespaces (Ubuntu 24.04 restricts them via AppArmor); PASABOT_REQUIRE_SANDBOX=1 makes a missing or
+      # broken bwrap fail test:sandbox instead of skipping it
+      - name: install bubblewrap
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bubblewrap
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 || true
+      - name: test:sandbox (required)
+        run: npx --yes pnpm@12.18.0 run test:sandbox
+        env:
+          PASABOT_REQUIRE_SANDBOX: "1"
+      - run: npx --yes pnpm@12.18.0 run build

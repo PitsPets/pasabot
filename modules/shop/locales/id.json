@@ -1,0 +1,128 @@
+{
+  "card": {
+    "noImage": "Tanpa gambar",
+    "seenAt": "seperti terlihat pada {{time}}",
+    "rating": "Rating {{rating}}",
+    "ratingCount": "Rating {{rating}} dari {{count}} penilaian",
+    "open": "Buka di {{store}}"
+  },
+  "compare": {
+    "title": "Membandingkan {{count}} produk"
+  },
+  "buy": {
+    "button": "Beli",
+    "qty_other": "{{count}} item",
+    "less": "Kurangi satu",
+    "more": "Tambah satu",
+    "note": "Anda menyetujuinya di aplikasi. PasaBot hanya memasukkannya ke keranjang, lalu Anda memeriksa total dan membayar sendiri.",
+    "ask": "Minta untuk membeli",
+    "cancel": "Batal",
+    "asked": "Menunggu persetujuan Anda. Kartu pembayaran ada di daftar persetujuan Anda.",
+    "error": "Tidak dapat mengajukan ini. Coba lagi.",
+    "state": {
+      "running": "Disetujui. Memasukkan ke keranjang…",
+      "handedOver": "Sudah ada di keranjang Anda. Periksa total dan bayar sendiri di browser.",
+      "denied": "Anda menolak, jadi tidak ada yang dibeli.",
+      "paused": "Dijeda: toko memerlukan Anda di browser.",
+      "stopped": "Dihentikan. Tidak ada yang masuk keranjang; chat menjelaskan alasannya.",
+      "ended": "Pembelian ini telah berakhir; chat menjelaskan alasannya."
+    }
+  },
+  "settings": {
+    "title": "Belanja",
+    "intro": "Tempat agent Anda mencari produk. Harga ditampilkan persis seperti di halaman toko, tidak pernah dikonversi.",
+    "country": "Negara",
+    "webOnly": "Negara lain (pencarian web)",
+    "stores": "Toko",
+    "fallback": "Belum ada daftar toko untuk negara ini. Agent mencari di web dan hanya menampilkan kartu untuk halaman yang menjelaskan produk.",
+    "custom": "Toko Anda",
+    "remove": "Hapus",
+    "rules": "Agent tidak pernah membayar, membuat pesanan, mengetik data kartu, menangani kode, menyelesaikan captcha, atau membuat akun toko. Pembelian selalu meminta persetujuan Anda dulu.",
+    "loading": "Memuat…",
+    "error": "Tidak dapat memuat pengaturan belanja."
+  },
+  "custom": {
+    "add": "Tambah toko",
+    "name": "Nama toko",
+    "id": "ID singkat",
+    "idHint": "Huruf kecil, angka, dan tanda hubung, seperti corner-shop",
+    "home": "Halaman utama",
+    "search": "Alamat pencarian",
+    "searchHint": "Letakkan {query} di tempat kata pencarian",
+    "hosts": "Alamat yang diizinkan",
+    "hostsHint": "Nama host, dipisah koma, seperti shop.example atau *.example",
+    "currency": "Mata uang",
+    "currencyHint": "Tiga huruf, seperti PHP atau USD",
+    "save": "Simpan toko",
+    "error": "Periksa isian: alamat harus berada di host yang diizinkan dan tanpa kode pelacakan."
+  },
+  "onboarding": {
+    "title": "Di mana Anda berbelanja?",
+    "body": "Pilih negara Anda agar agent tahu toko mana yang dilihat. Anda bisa mengubahnya nanti di Pengaturan → Belanja."
+  },
+  "orders": {
+    "title": "Pesanan",
+    "empty": "Belum ada pesanan. Setiap pembelian yang Anda setujui muncul di sini.",
+    "error": "Tidak dapat memuat pesanan.",
+    "line": "{{qty}} × {{item}}",
+    "unknownItem": "Produk yang tidak lagi tersimpan",
+    "each": "{{price}} per buah, seperti terlihat",
+    "state": {
+      "pending": "Menunggu persetujuan Anda",
+      "denied": "Anda menolak",
+      "running": "Sedang dimasukkan ke keranjang",
+      "handed-over": "Di keranjang Anda, Anda yang membayar",
+      "paused": "Dijeda, butuh Anda",
+      "stopped": "Dihentikan",
+      "failed": "Gagal",
+      "other": "Selesai"
+    }
+  },
+  "tools": {
+    "shop_stores": "Toko belanja",
+    "shop_search": "Cari di toko",
+    "shop_capture": "Simpan produk",
+    "shop_show": "Tampilkan kartu produk",
+    "shop_compare": "Bandingkan produk",
+    "shop_buy": "Masukkan produk ke keranjang"
+  },
+  "server": {
+    "noBrowser": "Browser tidak tersedia, jadi tidak ada yang dimasukkan ke keranjang.",
+    "storeOff": "Toko ini dimatikan di Pengaturan → Belanja, jadi tidak ada yang dimasukkan ke keranjang.",
+    "badAddress": "Alamat produk itu tidak diizinkan untuk toko ini.",
+    "stoppedBefore": "Dihentikan sebelum browser disentuh.",
+    "stoppedNothing": "Dihentikan. Tidak ada yang dimasukkan ke keranjang.",
+    "priceChanged": "Harga berubah sejak Anda menyetujui: dulu {{before}}, sekarang {{after}}. Tidak ada yang dimasukkan ke keranjang. Kartu baru akan menanyakan lagi dengan harga baru.",
+    "pageDiffers": "Barang atau harga di halaman toko berbeda dari yang Anda setujui ({{price}}), jadi tidak ada yang dimasukkan ke keranjang. Simpan lagi lalu minta lagi.",
+    "openNoCartHandOver": "{{name}} terbuka di {{store}}. Masukkan {{quantity}} ke keranjang dan bayar sendiri.",
+    "openNoCart": "{{name}} terbuka di {{store}} di browser. Toko ini tidak punya langkah keranjang, jadi masukkan {{quantity}} sendiri dan bayar sendiri.",
+    "stoppedAfterAdd": "Dihentikan setelah dimasukkan ke keranjang; halaman checkout tidak dibuka.",
+    "checkoutSignUp": "Alamat checkout adalah halaman pendaftaran.",
+    "stoppedInCart": "Dihentikan. Barang sudah di keranjang; tidak ada hal lain yang dilakukan.",
+    "inCartHandOver": "{{quantity}} × {{name}} ada di keranjang Anda di {{store}}. Periksa dan bayar sendiri.",
+    "inCart": "{{quantity}} × {{name}} ada di keranjang Anda di {{store}} dan halaman checkout terbuka di browser. Periksa totalnya dan bayar sendiri; PasaBot tidak membuat pesanan.",
+    "stoppedCheck": "Dihentikan. Periksa browser sebelum melanjutkan.",
+    "buyFailed": "Pembelian berhenti: {{error}}",
+    "captcha": "Toko menampilkan pemeriksaan manusia (captcha). Buka browser dan selesaikan sendiri.",
+    "signIn": "Toko meminta Anda masuk. Buka browser dan masuk sendiri (PasaBot tidak pernah membuat akun toko).",
+    "denied": "Anda menolak, jadi browser tidak disentuh.",
+    "buySummary": "Beli {{quantity}} × {{name}} di {{store}}",
+    "buyLabel": "Pembelian",
+    "askItems": "{{quantity}} × {{name}} — {{price}} per item, seperti terlihat pada {{time}}",
+    "askTotal": "{{total}} seperti terlihat, belum final",
+    "askPayment": "Anda membayar sendiri di browser; PasaBot berhenti di keranjang"
+  },
+  "find": {
+    "settingsHint": "Biarkan agen berbelanja dengan izin Anda",
+    "settingsKeywords": "belanja, beli, pesanan, toko"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Biarkan pembantu membeli barang, dengan izin Anda"
+    },
+    "settings": {
+      "intro": "Tempat pembantu Anda mencari produk. Harga ditampilkan persis seperti di halaman toko, tidak pernah dikonversi.",
+      "rules": "Pembantu tidak pernah membayar, membuat pesanan, mengetik data kartu, menangani kode, menyelesaikan captcha, atau membuat akun toko. Pembelian selalu meminta persetujuan Anda dulu."
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "nav": "模板",
+  "page": {
+    "title": "模板",
+    "starterTitle": "免费入门"
+  },
+  "onboarding": {
+    "title": "为你的第一个 agent 选择大脑",
+    "intro": "agent 需要一个大脑，也就是它用来思考的 AI 模型。请选择获取方式。",
+    "freeTitle": "免费入门，无需设置",
+    "freeBody": "通过 OpenCode 应用使用免费模型。无需密钥、无需登录、无需付费。",
+    "freeCta": "使用免费入门",
+    "freeUnavailable": "免费入门目前不可用。请在下方自行设置大脑。",
+    "guidedTitle": "使用你已有的大脑",
+    "guidedBody": "Claude、Codex、OpenCode，或你已在这台电脑上登录的其他应用。",
+    "found": "已在这台电脑上找到",
+    "notFound": "未安装",
+    "installHint": "安装方法：{{cmd}}",
+    "guidedCta": "添加你的第一个 agent",
+    "localTitle": "这台电脑上的本地模型",
+    "localBody": "这台电脑上正在运行模型服务器。你的 agent 在本机思考：无需账号，数据不会离开这台电脑。",
+    "localFound": "{{name}} 在 {{url}} 响应，共有 {{count}} 个模型。",
+    "localCta": "使用 {{name}}",
+    "localAdded": "已添加 {{name}}。请将它选为你第一个 agent 的大脑。",
+    "useThis": "使用这个",
+    "setUp": "设置"
+  },
+  "consent": {
+    "title": "为免费入门安装 OpenCode？",
+    "what": "内容：{{what}}",
+    "where": "位置：{{where}}（仅限你的用户，无需管理员权限）",
+    "from": "来源：{{from}}",
+    "check": "写入任何内容之前，会先对照已公布的 SHA-256 校验下载文件。",
+    "models": "免费模型截至 {{date}} 的核查结果。免费模型随时可能终止；如果你的模型失效，PasaBot 会通知你。",
+    "agree": "安装并创建我的 agent",
+    "back": "返回",
+    "working": "正在安装…",
+    "failed": "无法安装 OpenCode：{{reason}}。未创建任何内容。你仍可自行设置大脑。",
+    "agentName": "入门助手",
+    "agentInstructions": "你是一位友好的助手。回答要简短清晰。"
+  },
+  "notice": {
+    "title": "免费模型已停止工作",
+    "body": "{{model}}{{reason}}。你的 agent 需要另一个大脑。",
+    "action": "选择其他大脑",
+    "notFreeTitle": "免费模型不再免费",
+    "not_free": "{{name}} 不再免费。你的 agent 需要另一个大脑：请自行设置一个，或使用本地模型。",
+    "needs_key": "{{name}} 现在需要密钥或登录。你的 agent 需要另一个大脑。",
+    "unavailable": "{{name}} 已不可用。你的 agent 需要另一个大脑。",
+    "none": "你的免费入门运行正常。",
+    "busy": "免费模型繁忙或额度已用完，请在 {{time}} 再试。"
+  },
+  "catalog": {
+    "title": "从模板开始",
+    "use": "使用",
+    "useNamed": "使用 {{name}}",
+    "export": "导出",
+    "exportNamed": "导出 {{name}}",
+    "empty": "暂无模板。"
+  },
+  "describe": {
+    "title": "描述你的 agent",
+    "label": "这个 agent 要做什么？",
+    "placeholder": "帮我做一个能……的 agent",
+    "submit": "生成草稿"
+  },
+  "import": {
+    "title": "导入 agent 文件",
+    "hint": "可以是 .pasabot-template.json、agent 的 .md 文件，或助手的 .json 文件。",
+    "label": "Agent 文件"
+  },
+  "review": {
+    "title": "检查新 agent",
+    "hint": "在你点击“创建”之前，不会创建任何内容。",
+    "name": "名称",
+    "instructions": "指令",
+    "brain": "大脑",
+    "create": "创建 agent",
+    "cancel": "取消"
+  },
+  "error": "出了点问题：{{msg}}",
+  "server": {
+    "skippedTitle": "已跳过一个例行任务：免费模型达到速率限制",
+    "skippedBody": "在此之前，使用免费模型的例行任务会跳过运行；下一次照常运行。"
+  },
+  "find": {
+    "navHint": "可直接使用的智能体模板",
+    "navKeywords": "模板, 示例, 入门, 预设"
+  },
+  "plain": {
+    "find": {
+      "navHint": "现成的助手，直接开始"
+    },
+    "describe": {
+      "title": "描述你的助手",
+      "label": "助手应该做什么？",
+      "placeholder": "帮我做一个助手，它会…"
+    },
+    "import": {
+      "title": "从文件导入助手",
+      "hint": "PasaBot 或其他助手应用保存的助手文件。",
+      "label": "助手文件"
+    },
+    "review": {
+      "title": "检查新助手",
+      "create": "创建这个助手"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "ACP 智能体",
+    "intro": "安装支持 Agent Client Protocol 的智能体 CLI。每个已安装的智能体都会成为一个大脑，可在创建或编辑智能体时选用。",
+    "ownerOnly": "只有所有者可以管理 ACP 智能体。"
+  },
+  "index": {
+    "label": "注册表索引",
+    "hint": "本地索引文件的绝对路径，或 https URL。",
+    "save": "保存",
+    "saved": "已保存。",
+    "none": "请先设置注册表索引，再浏览智能体。"
+  },
+  "search": {
+    "label": "搜索智能体",
+    "placeholder": "名称或描述",
+    "empty": "索引中没有匹配的智能体。",
+    "install": "安装",
+    "reinstall": "更新",
+    "installing": "正在安装…",
+    "installed": "已安装",
+    "remoteCommand": "远程索引只能安装软件包，不能安装本地命令。",
+    "available": "索引中可用"
+  },
+  "installed": {
+    "title": "已安装",
+    "empty": "还没有安装 ACP 智能体。",
+    "remove": "移除",
+    "removing": "正在移除…",
+    "confirmRemove": "移除 {{name}}？智能体将无法再把它用作大脑。",
+    "ready": "就绪",
+    "missing": "未找到",
+    "version": "版本 {{version}}",
+    "provider": "大脑 ID",
+    "command": "命令"
+  },
+  "error": {
+    "generic": "出了点问题（{{code}}）。",
+    "in_use": "仍有智能体在使用。请先为它选择其他大脑。",
+    "command_missing": "这台设备上没有该程序。",
+    "command_from_remote": "远程索引不能安装本地命令。",
+    "bad_index_source": "请使用绝对文件路径或 https URL。",
+    "index_unreadable": "无法读取索引。",
+    "index_invalid": "索引格式不符合要求。",
+    "install_failed": "安装失败。",
+    "no_index": "请先设置注册表索引。"
+  },
+  "find": {
+    "settingsHint": "把编程智能体加为大脑",
+    "settingsKeywords": "编程, 代码, 大脑, 命令行, 开发者"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "用编程应用作助手的大脑"
+    },
+    "settings": {
+      "title": "作大脑的编程应用"
+    }
+  }
+}

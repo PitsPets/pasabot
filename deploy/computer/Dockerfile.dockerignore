@@ -1,0 +1,44 @@
+# deploy/computer proof image (W16): the same ALLOWLIST as deploy/docker/Dockerfile.dockerignore, plus the root
+# vitest.config.ts the proof run reads. Without it, `COPY . .` would also copy a maintainer's node_modules (macOS
+# native builds that break `pnpm install` on Linux), local data, keys and screenshots into the image.
+*
+
+# sources and catalog the tests read
+!apps
+!packages
+!providers
+!channels
+!modules
+!plugins
+!catalog
+!deploy
+# workspace manifests, compiler and test settings
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!tsconfig.base.json
+!tsconfig.json
+!vitest.config.ts
+!LICENSE
+!NOTICE
+
+# never inside the folders let back in: installs, builds, local data, keys and test output
+**/node_modules
+**/dist
+**/out
+**/.git
+**/.claude
+**/.pasabot
+**/.qa
+**/.design
+**/.impeccable
+**/*.private.json
+**/server.addr
+**/.npmrc
+**/test-results
+**/playwright-report
+**/coverage
+**/*.log
+**/.env
+**/.env.*
+**/vault.key

@@ -1,0 +1,107 @@
+{
+  "nav": "People",
+  "page": {
+    "title": "People",
+    "introOwner": "Invite family, friends or co-workers. Guests see only the chats you add them to; members can also use the agents you share. You stay the only owner.",
+    "introOther": "You were invited to this PasaBot. The owner decides what you can see."
+  },
+  "kind": {
+    "owner": "Owner",
+    "member": "Member",
+    "guest": "Guest"
+  },
+  "role": {
+    "member": "Can write",
+    "observer": "Read only"
+  },
+  "invite": {
+    "title": "Invite someone",
+    "intro": "You get a link to send them. It works once and stops working after 3 days.",
+    "kind": "Invite as",
+    "guestHint": "A guest sees only the chats you pick below.",
+    "memberHint": "A member sees the chats you pick and can open chats with the agents you share.",
+    "chats": "Chats they join",
+    "noChats": "No chats yet. Create an agent first.",
+    "pickChat": "Pick at least one chat for a guest.",
+    "role": "In those chats they",
+    "create": "Create invite link",
+    "link": "Invite link",
+    "linkHint": "Send it only to the person you invite: whoever opens it first joins.",
+    "copy": "Copy link",
+    "copied": "Copied"
+  },
+  "invites": {
+    "title": "Open invites",
+    "noChats": "No chats",
+    "expires": "expires {{when}}",
+    "revoke": "Cancel invite"
+  },
+  "list": {
+    "title": "Everyone on this PasaBot",
+    "disabled": "Turned off",
+    "disable": "Turn off",
+    "enable": "Turn back on"
+  },
+  "agents": {
+    "title": "Agents members can use",
+    "intro": "Members can start their own chat with these agents. Their messages run as them, never as you, so anything risky still asks you first.",
+    "none": "No agents yet.",
+    "share": "Let members use {{name}}"
+  },
+  "member": {
+    "title": "Agents you can use",
+    "intro": "Start your own chat with an agent the owner shared.",
+    "none": "The owner hasn't shared an agent with you yet.",
+    "open": "Chat with {{name}}"
+  },
+  "guest": {
+    "title": "Your chats",
+    "body": "Your chats are in the list. The owner adds you to more when needed."
+  },
+  "chat": {
+    "button": "People",
+    "title": "People in this chat",
+    "readOnly": "Make read only",
+    "letWrite": "Let them write",
+    "remove": "Remove {{name}}",
+    "add": "Add someone",
+    "addPerson": "Add {{name}}",
+    "invite": "Invite someone new to this chat",
+    "close": "Done"
+  },
+  "join": {
+    "title": "Join PasaBot",
+    "loading": "Checking your invite…",
+    "invalid": "This invite link doesn't work anymore. Ask for a new one.",
+    "introGuest": "{{name}} invited you as a guest to: {{chats}}.",
+    "introMember": "{{name}} invited you as a member.",
+    "name": "Your name",
+    "password": "Choose a password",
+    "again": "Password again",
+    "short": "Use at least 8 characters.",
+    "mismatch": "The passwords don't match.",
+    "badName": "Use a plain name without special characters.",
+    "submit": "Join"
+  },
+  "errors": {
+    "generic": "Something went wrong. Try again."
+  },
+  "find": {
+    "navHint": "Invite people and choose who can join",
+    "navKeywords": "invite, members, guests, family, friends"
+  },
+  "plain": {
+    "page": {
+      "introOwner": "Invite family, friends or co-workers. Guests see only the chats you add them to; members can also use the helpers you share. You stay the only owner."
+    },
+    "invite": {
+      "memberHint": "A member sees the chats you pick and can open chats with the helpers you share.",
+      "noChats": "No chats yet. Make a helper first."
+    },
+    "agents": {
+      "title": "Helpers members can use",
+      "intro": "Members can start their own chat with these helpers. Their messages run as them, never as you, so anything risky still asks you first.",
+      "none": "No helpers yet."
+    }
+  }
+}

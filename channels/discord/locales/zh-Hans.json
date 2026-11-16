@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "机器人令牌",
+    "botTokenHint": "在 Discord 开发者门户中，从你的应用的“Bot”页面获取，并在该页面开启 Message Content intent。令牌将存入保密库，之后不再显示。",
+    "apiBase": "API 地址",
+    "gatewayUrl": "网关地址",
+    "advancedHint": "除非确定需要修改，否则请保持默认。"
+  },
+  "link": {
+    "howTo": "给你的机器人发送私信：/link {{code}}",
+    "dmOnly": "关联码只能在与机器人的私信中使用。"
+  },
+  "status": {
+    "connected": "已连接",
+    "reconnecting": "正在重新连接…",
+    "auth_failed": "Discord 拒绝了该机器人（请检查令牌和 Message Content intent）",
+    "stopped": "已停止"
+  }
+}

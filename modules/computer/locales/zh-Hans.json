@@ -1,0 +1,143 @@
+{
+  "nav": "电脑",
+  "page": {
+    "title": "电脑操作",
+    "intro": "使用电脑的 agent 会获得各自独立的显示屏。每一次截图、点击和按键都会先征求您的同意。您可以在这里观看，并在需要时接管。",
+    "empty": "目前没有 agent 在使用显示屏。首次批准 agent 的电脑操作时会启动一个。"
+  },
+  "setup": {
+    "title": "设置电脑操作",
+    "missing_bins": "此服务器缺少 {{list}}。请安装它们，或使用电脑镜像（deploy/computer）运行 PasaBot。",
+    "unsupported": "此操作系统不支持电脑操作。",
+    "off": "此服务器已关闭电脑操作。",
+    "practice": "练习显示屏：内置的测试应用，并非真实桌面。",
+    "windows_soon": "Windows 上暂不可用。在 Windows 电脑上，助手还不能查看或使用屏幕；其他功能都正常。"
+  },
+  "mac": {
+    "title": "允许 agent 使用这台 Mac",
+    "warning": "Mac 没有给助手的独立屏幕：你在这里允许的助手会看到你的整个屏幕，并移动你自己的指针和键盘。每个操作仍会先问你。权限属于 PasaBot Screen Helper，而不是 PasaBot 本身。",
+    "perAgent": "这台 Mac 上的电脑操作默认对所有 agent 关闭，需要您用密码在此逐个为某个 agent 开启。",
+    "permissions": "macOS 会要求您允许“屏幕录制”和“辅助功能”。macOS 会把该权限授予运行 PasaBot 的程序，因此每个 agent 自己的命令行工具之后都可能在不询问您的情况下使用您的屏幕。请仅在信任此服务器上所有 agent 时才允许，用完后请在“系统设置 → 隐私与安全性”中移除。",
+    "password": "您的密码",
+    "enable": "允许",
+    "enableFor": "允许 {{name}} 使用这台 Mac",
+    "disable": "关闭",
+    "disableFor": "在这台 Mac 上关闭 {{name}}",
+    "agentOn": "已允许",
+    "agentOff": "已关闭",
+    "noAgents": "还没有 agent。",
+    "wrong": "密码不匹配，请重试。"
+  },
+  "display": {
+    "shared": "您自己的屏幕",
+    "own": "独立显示屏 {{label}}",
+    "live": "实时",
+    "control": "接管控制",
+    "release": "停止控制",
+    "controlHint": "点击画面即可在 agent 的显示屏上点击。",
+    "stop": "停止显示屏",
+    "typeLabel": "在显示屏上输入",
+    "send": "发送文字",
+    "alt": "{{name}} 的显示屏",
+    "started": "开始于 {{time}}"
+  },
+  "activity": {
+    "title": "最近操作",
+    "empty": "暂无操作。",
+    "you": "您",
+    "failed": "失败"
+  },
+  "error": "出错了：{{msg}}",
+  "tools": {
+    "computer_display": "电脑：屏幕信息",
+    "computer_screenshot": "电脑：截屏",
+    "computer_click": "电脑：点击",
+    "computer_move": "电脑：移动指针",
+    "computer_type": "电脑：输入文字",
+    "computer_key": "电脑：按键"
+  },
+  "find": {
+    "navHint": "让智能体操作电脑",
+    "navKeywords": "桌面, 屏幕, 鼠标, 键盘, 控制"
+  },
+  "plain": {
+    "find": {
+      "navHint": "让助手使用电脑"
+    },
+    "page": {
+      "intro": "使用电脑的助手会获得各自独立的屏幕。每一次拍下屏幕、点击和按键都会先征求您的同意。您可以在这里观看，并在需要时接管。",
+      "empty": "目前没有助手在使用屏幕。首次同意助手的电脑操作时会启动一个。"
+    },
+    "setup": {
+      "missing_bins": "这台电脑缺少 {{list}}。请安装它们，或请设置 PasaBot 的人使用它的电脑设置。",
+      "off": "此 PasaBot 已关闭电脑操作。"
+    },
+    "mac": {
+      "noAgents": "还没有助手。"
+    },
+    "display": {
+      "controlHint": "点击画面即可在助手的屏幕上点击。",
+      "release": "停止控制"
+    }
+  },
+  "card": {
+    "ask": {
+      "title": "让 {{name}} 使用这台电脑吗？",
+      "body": "{{name}} 会看到你的整个屏幕，并移动你自己的指针和键盘。每次点击和按键都会先问你，按住 Esc 一秒即可随时停止。",
+      "password": "你的密码",
+      "yes": "好的，开始设置",
+      "no": "暂不"
+    },
+    "steps": {
+      "title": "为 {{name}} 设置这台电脑",
+      "stopped": "你已停止对这台电脑的控制。在这里重新打开之前会一直停止。",
+      "helper": "PasaBot Screen Helper 正在运行",
+      "helperHint": "它随这台 Mac 上的 PasaBot 应用一起启动。如果一直没有勾选，请打开 PasaBot。",
+      "screen": "打开屏幕录制",
+      "screenHint": "会打开设置。在列表中找到 PasaBot Screen Helper 并打开它。",
+      "openScreen": "打开屏幕录制设置",
+      "access": "打开辅助功能",
+      "accessHint": "会打开设置。在列表中找到 PasaBot Screen Helper 并打开它。",
+      "openAccess": "打开辅助功能设置",
+      "try": "试一试",
+      "tryHint": "只拍一张屏幕照片，别的什么都不做。",
+      "tryButton": "拍一张测试照片",
+      "tryDone": "成功了。这就是 {{name}} 会看到的。",
+      "ready": "{{name}} 现在可以请求使用这台电脑了。每个操作都会先给你看一张卡片。",
+      "off": "为 {{name}} 关闭",
+      "done": "完成",
+      "waiting": "还没有"
+    },
+    "live": {
+      "title": "{{name}} 正在使用你的电脑",
+      "idle": "{{name}} 现在没有使用电脑。",
+      "takeOver": "我来操作",
+      "stop": "停止",
+      "stopHint": "或按住 Esc 一秒。",
+      "alt": "{{name}} 屏幕的实时画面"
+    }
+  },
+  "preview": {
+    "click": "将点击红圈。",
+    "rightClick": "将右键点击红圈。",
+    "move": "将把指针移到红圈。",
+    "type": "将输入 {{count}} 个字符：",
+    "key": "将按下：{{keys}}",
+    "screenshot": "将拍一张屏幕照片。",
+    "alt": "将在屏幕上操作的位置",
+    "none": "还没有屏幕照片。",
+    "noCurrent": "没有当前的屏幕画面。同意之前请先看一下你的屏幕。"
+  },
+  "server": {
+    "setupCard": "{{name}} 想使用这台电脑。在下面的卡片中设置，或忽略它。",
+    "liveCard": "{{name}} 开始使用电脑了。在这里实时观看。"
+  },
+  "watch": {
+    "title": "确认是你本人后才能查看屏幕",
+    "body": "这是你自己 Mac 的屏幕。输入密码即可在这里查看并接管。",
+    "again": "已经过了几分钟。请再次输入密码以继续控制你的屏幕。",
+    "password": "你的密码",
+    "button": "显示我的屏幕",
+    "wrong": "不匹配，请重试。"
+  }
+}

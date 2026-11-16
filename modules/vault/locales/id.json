@@ -1,0 +1,119 @@
+{
+  "title": "Brankas",
+  "intro": "Kunci dan sandi yang dipakai agent Anda. Agent hanya mendapat referensi seperti {{example}}; nilainya tetap di server ini dan disembunyikan dari setiap balasan, log, dan kanal.",
+  "loading": "Memuat brankas…",
+  "error": "Tidak dapat memuat brankas: {{reason}}",
+  "unavailable": "Brankas terkunci di server ini (tanpa frasa sandi atau keychain). Jalankan server dengan frasa sandi brankas untuk memakainya.",
+  "requests": {
+    "title": "Agent meminta kunci",
+    "asks": "{{agent}} meminta {{name}}",
+    "untrusted": "Seseorang selain Anda memulai giliran yang meminta ini. Pastikan memang diperlukan sebelum Anda mengisinya.",
+    "fill": "Berikan kunci",
+    "decline": "Tolak",
+    "filled": "{{agent}} kini dapat memakai {{reference}}.",
+    "declined": "Permintaan ditolak."
+  },
+  "secrets": {
+    "title": "Rahasia tersimpan",
+    "empty": "Belum ada rahasia.",
+    "shared": "Bersama (server)",
+    "for": "Untuk {{agent}}",
+    "remove": "Hapus",
+    "confirmRemove": "Hapus {{name}}? Agent yang memakainya akan berhenti bekerja sampai Anda menambahkannya lagi.",
+    "module": "{{count}} entri lainnya milik kanal dan pengelola sandi.",
+    "backend_local": "Disimpan di sini",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "Kunci untuk {{brain}}. Agen yang berjalan di atasnya dapat melihat kunci ini."
+  },
+  "add": {
+    "title": "Tambah rahasia",
+    "open": "Tambah rahasia",
+    "name": "Nama",
+    "nameHint": "Huruf, angka, _ . - (agent menuliskannya sebagai {{example}}).",
+    "who": "Siapa yang dapat memakainya",
+    "shared": "Bersama (hanya server, tanpa agent)",
+    "source": "Sumber nilai",
+    "source_local": "Ketik nilainya",
+    "source_bitwarden": "Item Bitwarden",
+    "source_1password": "Referensi 1Password",
+    "value": "Nilai",
+    "valueHint": "Hanya untuk ditulis: tidak akan ditampilkan lagi.",
+    "ref_bitwarden": "ID item Bitwarden",
+    "refHint_bitwarden": "ID item, atau id/field (password, username, notes, totp, atau field kustom).",
+    "ref_1password": "Referensi rahasia",
+    "refHint_1password": "Seperti op://Private/GitHub/token",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "saved": "{{name}} tersimpan.",
+    "brainOption": "Kunci untuk {{brain}}"
+  },
+  "backends": {
+    "title": "Pengelola sandi",
+    "intro": "PasaBot membaca nilai lewat alat baris perintah Bitwarden (bw) atau 1Password (op) di server ini. Hanya referensinya yang disimpan di sini.",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "Kunci sesi (dari bw unlock)",
+    "token_1password": "Token akun layanan",
+    "tokenHint": "Hanya untuk ditulis. Kosongkan lalu simpan untuk menghapusnya.",
+    "set": "Kunci tersimpan",
+    "notSet": "Belum ada kunci tersimpan",
+    "save": "Simpan kunci",
+    "test": "Uji",
+    "state_ready": "Siap",
+    "state_locked": "Terkunci atau belum masuk",
+    "state_not_installed": "Alat baris perintah belum terpasang di server",
+    "state_unsafe_bin": "Dinonaktifkan (lokasi alat tidak aman)",
+    "unsafeHint": "Dinonaktifkan: pengguna server ini dapat mengubah file alat tersebut, sehingga agent bisa menggantinya. Pasang di folder sistem (atau atur PASABOT_BW_BIN / PASABOT_OP_BIN ke jalur tersebut) lalu mulai ulang.",
+    "state_error": "Tidak berfungsi"
+  },
+  "rotate": {
+    "title": "Rotasi kunci brankas",
+    "intro": "Membuat kunci enkripsi baru dan mengenkripsi ulang semua rahasia dengannya. Nilainya tidak berubah.",
+    "button": "Rotasi kunci",
+    "confirm": "Enkripsi ulang semua rahasia dengan kunci baru sekarang?",
+    "yes": "Rotasi sekarang",
+    "cancel": "Batal",
+    "done": "{{count}} rahasia dienkripsi ulang dengan kunci baru.",
+    "last": "Terakhir dirotasi {{when}}."
+  },
+  "tools": {
+    "vault_request_secret": "Minta kunci ke pemilik",
+    "vault_list_secrets": "Daftar kunci saya"
+  },
+  "server": {
+    "asksForKey": "{{agent}} meminta kunci: {{name}}"
+  },
+  "find": {
+    "settingsHint": "Kata sandi dan kunci, terkunci aman",
+    "settingsKeywords": "kata sandi, kunci, rahasia, token, kredensial"
+  },
+  "plain": {
+    "title": "Rahasia tersimpan",
+    "intro": "Kunci dan sandi yang dipakai pembantu Anda. Pembantu hanya mendapat referensi seperti {{example}}; nilainya tetap di server ini dan disembunyikan dari setiap balasan, log, dan kanal.",
+    "backends": {
+      "intro": "PasaBot membaca nilai lewat alat baris perintah Bitwarden (bw) atau 1Password (op) di server ini. Hanya referensinya yang disimpan di sini.",
+      "token_1password": "Token akun layanan"
+    },
+    "rotate": {
+      "title": "Rotasi kunci brankas"
+    },
+    "secrets": {
+      "title": "Yang tersimpan di sini",
+      "forBrain": "Kunci untuk {{brain}}. Pembantu yang berpikir dengannya bisa memakai kunci ini.",
+      "confirmRemove": "Hapus {{name}}? Pembantu yang memakainya berhenti bekerja sampai kamu menambahkannya lagi."
+    },
+    "requests": {
+      "title": "Pembantu yang meminta kunci"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} butuh kunci {{name}} milikmu",
+      "text": "{{agent}} bisa memakainya tapi tidak pernah melihatnya. Hanya kamu yang bisa memberinya, di kotak aman.",
+      "give": "Berikan kunci",
+      "given": "Kunci tersimpan. Sekarang bisa dipakai",
+      "declined": "Tidak diberikan"
+    }
+  }
+}

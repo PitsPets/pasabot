@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "Pertanyaan dari agent",
+    "send": "Kirim jawaban",
+    "answered": "Dijawab: {{answer}}",
+    "expired": "Tidak ada jawaban tepat waktu. Agent melanjutkan tanpa jawaban.",
+    "cancelled": "Agent berhenti menunggu hal ini.",
+    "pickMany": "Pilih satu atau lebih"
+  },
+  "form": {
+    "submit": "Kirim",
+    "sent": "Terkirim",
+    "required": "Wajib diisi",
+    "invalid": "Periksa {{field}}.",
+    "expired": "Formulir ini ditutup sebelum terkirim.",
+    "yes": "Ya",
+    "no": "Tidak"
+  },
+  "html": {
+    "note": "Dibuat oleh agent. Berjalan terpisah dari PasaBot dan tidak dapat melihat akun Anda.",
+    "frame": "Halaman agent: {{title}}"
+  },
+  "files": {
+    "open": "Buka {{name}}",
+    "download": "Unduh {{name}}",
+    "close": "Tutup",
+    "zip": "Arsip ZIP",
+    "file": "File",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "Lampirkan file",
+    "title": "Kirim file",
+    "caption": "Pesan (opsional)",
+    "send": "Kirim",
+    "cancel": "Batal",
+    "remove": "Hapus {{name}}",
+    "uploading": "Mengunggah {{pct}}%",
+    "tooBig": "{{name}} melebihi 100 MB.",
+    "tooMuch": "Total file dalam satu pesan maksimal 250 MB.",
+    "failed": "Gagal mengunggah. {{reason}}",
+    "limits": "Maksimal 100 MB per file, 250 MB per pesan."
+  },
+  "error": "Gagal mengirim. {{reason}}",
+  "tools": {
+    "richchat_ask": "Tanya pengguna",
+    "richchat_form": "Minta formulir",
+    "richchat_html": "Tampilkan HTML",
+    "richchat_share_file": "Berikan file ke pemilik"
+  },
+  "card": {
+    "file": {
+      "title": "{{name}} sudah siap",
+      "text": "Baru saja dibuat oleh {{agent}}."
+    }
+  }
+}

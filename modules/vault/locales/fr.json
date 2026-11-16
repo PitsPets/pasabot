@@ -1,0 +1,119 @@
+{
+  "title": "Coffre",
+  "intro": "Les clés et mots de passe que vos agents utilisent. Les agents reçoivent seulement une référence comme {{example}} ; la valeur reste sur ce serveur et est masquée dans chaque réponse, journal et channel.",
+  "loading": "Chargement du coffre…",
+  "error": "Impossible de charger le coffre : {{reason}}",
+  "unavailable": "Le coffre est verrouillé sur ce serveur (pas de phrase secrète ni de trousseau). Démarrez le serveur avec une phrase secrète de coffre pour l'utiliser.",
+  "requests": {
+    "title": "Agents demandant une clé",
+    "asks": "{{agent}} demande {{name}}",
+    "untrusted": "Quelqu'un d'autre que vous a lancé le tour qui a fait cette demande. Vérifiez qu'elle est vraiment nécessaire avant de la remplir.",
+    "fill": "Fournir la clé",
+    "decline": "Refuser",
+    "filled": "{{agent}} peut maintenant utiliser {{reference}}.",
+    "declined": "Demande refusée."
+  },
+  "secrets": {
+    "title": "Secrets enregistrés",
+    "empty": "Aucun secret pour l'instant.",
+    "shared": "Partagé (serveur)",
+    "for": "Pour {{agent}}",
+    "remove": "Supprimer",
+    "confirmRemove": "Supprimer {{name}} ? Les agents qui l'utilisent cesseront de fonctionner jusqu'à ce que vous l'ajoutiez à nouveau.",
+    "backend_local": "Stocké ici",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "module": "{{count}} autres entrées appartiennent aux channels et aux gestionnaires de mots de passe.",
+    "forBrain": "Clé pour {{brain}}. Les agents qui l’utilisent peuvent voir cette clé."
+  },
+  "add": {
+    "title": "Ajouter un secret",
+    "open": "Ajouter un secret",
+    "name": "Nom",
+    "nameHint": "Lettres, chiffres, _ . - (les agents l'écrivent {{example}}).",
+    "who": "Qui peut l'utiliser",
+    "shared": "Partagé (serveur uniquement, aucun agent)",
+    "source": "Origine de la valeur",
+    "source_local": "Saisir la valeur",
+    "source_bitwarden": "Élément Bitwarden",
+    "source_1password": "Référence 1Password",
+    "value": "Valeur",
+    "valueHint": "Écriture seule : elle n'est plus jamais affichée.",
+    "ref_bitwarden": "ID de l'élément Bitwarden",
+    "refHint_bitwarden": "ID de l'élément, ou id/champ (password, username, notes, totp ou un champ personnalisé).",
+    "ref_1password": "Référence du secret",
+    "refHint_1password": "Comme op://Private/GitHub/token",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "saved": "{{name}} enregistré.",
+    "brainOption": "Clé pour {{brain}}"
+  },
+  "backends": {
+    "title": "Gestionnaires de mots de passe",
+    "intro": "PasaBot lit les valeurs via l'outil en ligne de commande Bitwarden (bw) ou 1Password (op) présent sur ce serveur. Seule la référence est stockée ici.",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "Clé de session (issue de bw unlock)",
+    "token_1password": "Jeton de compte de service",
+    "tokenHint": "Écriture seule. Laissez vide et enregistrez pour la supprimer.",
+    "set": "Clé enregistrée",
+    "notSet": "Aucune clé enregistrée",
+    "save": "Enregistrer la clé",
+    "test": "Tester",
+    "state_ready": "Prêt",
+    "state_locked": "Verrouillé ou non connecté",
+    "state_not_installed": "Outil en ligne de commande non installé sur le serveur",
+    "state_unsafe_bin": "Désactivé (emplacement d'outil non sûr)",
+    "unsafeHint": "Désactivé : l'utilisateur de ce serveur peut modifier le fichier de l'outil, un agent pourrait donc le remplacer. Installez-le dans un dossier système (ou définissez PASABOT_BW_BIN / PASABOT_OP_BIN vers un tel chemin) puis redémarrez.",
+    "state_error": "Ne fonctionne pas"
+  },
+  "rotate": {
+    "title": "Renouveler la clé du coffre",
+    "intro": "Crée une nouvelle clé de chiffrement et rechiffre tous les secrets avec elle. Les valeurs ne changent pas.",
+    "button": "Renouveler la clé",
+    "confirm": "Rechiffrer tous les secrets avec une nouvelle clé maintenant ?",
+    "yes": "Renouveler maintenant",
+    "cancel": "Annuler",
+    "last": "Dernier renouvellement : {{when}}.",
+    "done": "{{count}} secrets rechiffrés avec une nouvelle clé."
+  },
+  "tools": {
+    "vault_request_secret": "Demander une clé au propriétaire",
+    "vault_list_secrets": "Lister mes clés"
+  },
+  "server": {
+    "asksForKey": "{{agent}} demande une clé : {{name}}"
+  },
+  "find": {
+    "settingsHint": "Mots de passe et clés, sous clé",
+    "settingsKeywords": "mots de passe, clés, secrets, jetons, identifiants"
+  },
+  "plain": {
+    "title": "Secrets enregistrés",
+    "intro": "Les clés et mots de passe que vos assistants utilisent. Les assistants reçoivent seulement une référence comme {{example}} ; la valeur reste sur ce serveur et est masquée dans chaque réponse, journal et channel.",
+    "backends": {
+      "intro": "PasaBot lit les valeurs via l'outil en ligne de commande Bitwarden (bw) ou 1Password (op) présent sur ce serveur. Seule la référence est stockée ici.",
+      "token_1password": "Jeton de compte de service"
+    },
+    "rotate": {
+      "title": "Renouveler la clé du coffre"
+    },
+    "secrets": {
+      "title": "Ce qui est enregistré ici",
+      "forBrain": "Clé pour {{brain}}. Les assistants qui pensent avec lui peuvent l’utiliser.",
+      "confirmRemove": "Retirer {{name}} ? Les assistants qui l’utilisent s’arrêteront jusqu’à ce que vous le rajoutiez."
+    },
+    "requests": {
+      "title": "Assistants demandant une clé"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} a besoin de votre clé {{name}}",
+      "text": "{{agent}} peut l’utiliser mais ne la voit jamais. Vous seul pouvez la donner, dans le coffre.",
+      "give": "Donner la clé",
+      "given": "Clé enregistrée. Il peut l’utiliser",
+      "declined": "Non donnée"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@pasabot/db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "migrations"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@pasabot/core": "workspace:*",
+    "better-sqlite3": "^13.1.1",
+    "kysely": "^0.29.0",
+    "@types/better-sqlite3": "^7.6.13"
+  }
+}

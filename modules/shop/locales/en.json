@@ -1,0 +1,129 @@
+{
+  "card": {
+    "noImage": "No picture",
+    "seenAt": "as seen at {{time}}",
+    "rating": "Rated {{rating}}",
+    "ratingCount": "Rated {{rating}} from {{count}} ratings",
+    "open": "Open at {{store}}"
+  },
+  "compare": {
+    "title": "Comparing {{count}} products"
+  },
+  "buy": {
+    "button": "Buy",
+    "qty_one": "{{count}} item",
+    "qty_other": "{{count}} items",
+    "less": "One less",
+    "more": "One more",
+    "note": "You approve this in the app. PasaBot only brings it to your cart, then you check the total and pay yourself.",
+    "ask": "Ask to buy",
+    "cancel": "Cancel",
+    "asked": "Waiting for your approval. The money card is in your approvals.",
+    "error": "Could not ask for this one. Try again.",
+    "state": {
+      "running": "Approved. Adding it to the cart…",
+      "handedOver": "It is in your cart. Check the total and pay yourself in the browser.",
+      "denied": "You said no, so nothing was bought.",
+      "paused": "Paused: the store needs you in the browser.",
+      "stopped": "Stopped. Nothing was added to the cart; the chat says why.",
+      "ended": "This Buy has ended; the chat says how."
+    }
+  },
+  "settings": {
+    "title": "Shopping",
+    "intro": "Where your agents look for products. Prices are shown as the store page showed them, never converted.",
+    "country": "Country",
+    "webOnly": "Other country (web search)",
+    "stores": "Stores",
+    "fallback": "No store list for this country yet. Agents search the web, and show cards only for pages that describe a product.",
+    "custom": "Your store",
+    "remove": "Remove",
+    "rules": "Agents never pay, place orders, type card details, handle codes, solve captchas or make store accounts. Buying always asks you first.",
+    "loading": "Loading…",
+    "error": "Could not load the shopping settings."
+  },
+  "custom": {
+    "add": "Add a store",
+    "name": "Store name",
+    "id": "Short id",
+    "idHint": "Lowercase letters, numbers and dashes, like corner-shop",
+    "home": "Home page",
+    "search": "Search address",
+    "searchHint": "Put {query} where the search words go",
+    "hosts": "Allowed addresses",
+    "hostsHint": "Host names, comma separated, like shop.example or *.example",
+    "currency": "Currency",
+    "currencyHint": "Three letters, like PHP or USD",
+    "save": "Save store",
+    "error": "Check the fields: the addresses must be on the allowed hosts and have no tracking codes."
+  },
+  "onboarding": {
+    "title": "Where do you shop?",
+    "body": "Pick your country so your agents know which stores to look at. You can change it later in Settings → Shopping."
+  },
+  "orders": {
+    "title": "Orders",
+    "empty": "No orders yet. A Buy you approve shows up here.",
+    "error": "Could not load the orders.",
+    "line": "{{qty}} × {{item}}",
+    "unknownItem": "A product no longer saved",
+    "each": "{{price}} each, as seen",
+    "state": {
+      "pending": "Waiting for your approval",
+      "denied": "You said no",
+      "running": "Adding to the cart",
+      "handed-over": "In your cart, yours to pay",
+      "paused": "Paused, needs you",
+      "stopped": "Stopped",
+      "failed": "Failed",
+      "other": "Ended"
+    }
+  },
+  "tools": {
+    "shop_stores": "Shopping stores",
+    "shop_search": "Search a store",
+    "shop_capture": "Capture a product",
+    "shop_show": "Show a product card",
+    "shop_compare": "Compare products",
+    "shop_buy": "Bring a product to the cart"
+  },
+  "server": {
+    "noBrowser": "The browser is not available, so nothing was added to a cart.",
+    "storeOff": "This store is turned off in Settings → Shopping, so nothing was added to a cart.",
+    "badAddress": "That product address is not allowed for this store.",
+    "stoppedBefore": "Stopped before the browser was touched.",
+    "stoppedNothing": "Stopped. Nothing was added to the cart.",
+    "priceChanged": "The price changed since you approved: {{before}} then, {{after}} now. Nothing was added to the cart. A new card asks you again at the new price.",
+    "pageDiffers": "The item or price on the store page is different from what you approved ({{price}}), so nothing was added to the cart. Capture it again and ask again.",
+    "openNoCartHandOver": "{{name}} is open at {{store}}. Add {{quantity}} to your cart and pay yourself.",
+    "openNoCart": "{{name}} is open at {{store}} in the browser. This store has no cart steps, so add {{quantity}} yourself and pay yourself.",
+    "stoppedAfterAdd": "Stopped after adding to the cart; the checkout page was not opened.",
+    "checkoutSignUp": "The checkout address is a sign-up page.",
+    "stoppedInCart": "Stopped. The item is in the cart; nothing else was done.",
+    "inCartHandOver": "{{quantity}} × {{name}} is in your cart at {{store}}. Check it and pay yourself.",
+    "inCart": "{{quantity}} × {{name}} is in your cart at {{store}} and the checkout page is open in the browser. Check the total and pay yourself; PasaBot does not place the order.",
+    "stoppedCheck": "Stopped. Check the browser before you go on.",
+    "buyFailed": "The Buy stopped: {{error}}",
+    "captcha": "The store shows a check for people (a captcha). Open the browser and finish it yourself.",
+    "signIn": "The store wants you to sign in. Open the browser and sign in yourself (PasaBot never makes store accounts).",
+    "denied": "You said no, so the browser was not touched.",
+    "buySummary": "Buy {{quantity}} × {{name}} at {{store}}",
+    "buyLabel": "Buy",
+    "askItems": "{{quantity}} × {{name}} — {{price}} each, as seen at {{time}}",
+    "askTotal": "{{total}} as seen, not final",
+    "askPayment": "You pay yourself in the browser; PasaBot stops at the cart"
+  },
+  "find": {
+    "settingsHint": "Let agents buy things, with your OK",
+    "settingsKeywords": "shop, buy, purchase, orders, store"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Let helpers buy things, with your OK"
+    },
+    "settings": {
+      "intro": "Where your helpers look for products. Prices are shown as the store page showed them, never converted.",
+      "rules": "Helpers never pay, place orders, type card details, handle codes, solve captchas or make store accounts. Buying always asks you first."
+    }
+  }
+}

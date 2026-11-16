@@ -1,0 +1,109 @@
+{
+  "nav": "Modelos",
+  "page": {
+    "title": "Modelos",
+    "starterTitle": "Início gratuito"
+  },
+  "onboarding": {
+    "title": "Escolha um cérebro para o seu primeiro agente",
+    "intro": "Seus agentes precisam de um cérebro: um modelo de IA com o qual eles pensam. Escolha como obter um.",
+    "freeTitle": "Início gratuito, sem configuração",
+    "freeBody": "Usa um modelo gratuito pelo app OpenCode. Sem chave, sem login, sem pagamento.",
+    "freeCta": "Usar o início gratuito",
+    "freeUnavailable": "O início gratuito não está disponível agora. Configure um cérebro por conta própria abaixo.",
+    "guidedTitle": "Use um cérebro que você já tem",
+    "guidedBody": "Claude, Codex, OpenCode ou outro app em que você já fez login neste computador.",
+    "found": "Encontrado neste computador",
+    "notFound": "Não instalado",
+    "installHint": "Para instalar: {{cmd}}",
+    "guidedCta": "Adicionar seu primeiro agente",
+    "localTitle": "Modelo local neste computador",
+    "localBody": "Há um servidor de modelos rodando neste computador. Seu agente pensa lá: sem conta e sem nada sair do computador.",
+    "localFound": "{{name}} responde em {{url}} com {{count}} modelo(s).",
+    "localCta": "Usar {{name}}",
+    "localAdded": "{{name}} foi adicionado. Escolha-o como o cérebro do seu primeiro agente.",
+    "useThis": "Usar este",
+    "setUp": "Configurar"
+  },
+  "consent": {
+    "title": "Instalar o OpenCode para o início gratuito?",
+    "what": "O quê: {{what}}",
+    "where": "Onde: {{where}} (só para o seu usuário, sem direitos de administrador)",
+    "from": "De: {{from}}",
+    "check": "O download é conferido com o SHA-256 publicado antes de qualquer coisa ser gravada.",
+    "models": "Modelos gratuitos conforme verificado em {{date}}. Modelos gratuitos podem acabar a qualquer momento; o PasaBot avisa se o seu parar de funcionar.",
+    "agree": "Instalar e criar meu agente",
+    "back": "Voltar",
+    "working": "Instalando…",
+    "failed": "Não foi possível instalar o OpenCode: {{reason}}. Nada foi criado. Você ainda pode configurar um cérebro por conta própria.",
+    "agentName": "Iniciante",
+    "agentInstructions": "Você é um ajudante simpático. Dê respostas curtas e claras."
+  },
+  "notice": {
+    "title": "O modelo gratuito parou de funcionar",
+    "body": "{{model}} {{reason}}. Seu agente precisa de outro cérebro.",
+    "action": "Escolher outro cérebro",
+    "notFreeTitle": "O modelo gratuito deixou de ser gratuito",
+    "not_free": "{{name}} deixou de ser gratuito. Seu agente precisa de outro cérebro: configure um ou use um modelo local.",
+    "needs_key": "{{name}} agora exige uma chave ou um login. Seu agente precisa de outro cérebro.",
+    "unavailable": "{{name}} não está mais disponível. Seu agente precisa de outro cérebro.",
+    "none": "Seu início gratuito está funcionando.",
+    "busy": "O modelo gratuito está ocupado ou sem cota, tente novamente às {{time}}."
+  },
+  "catalog": {
+    "title": "Comece por um modelo",
+    "use": "Usar",
+    "useNamed": "Usar {{name}}",
+    "export": "Exportar",
+    "exportNamed": "Exportar {{name}}",
+    "empty": "Nenhum modelo ainda."
+  },
+  "describe": {
+    "title": "Descreva seu agente",
+    "label": "O que o agente deve fazer?",
+    "placeholder": "Crie para mim um agente que…",
+    "submit": "Criar um rascunho"
+  },
+  "import": {
+    "title": "Importar um arquivo de agente",
+    "hint": "Um .pasabot-template.json, um arquivo .md de agente ou um arquivo .json de assistente.",
+    "label": "Arquivo do agente"
+  },
+  "review": {
+    "title": "Revise o novo agente",
+    "hint": "Nada é criado até você pressionar Criar.",
+    "name": "Nome",
+    "instructions": "Instruções",
+    "brain": "Cérebro",
+    "create": "Criar agente",
+    "cancel": "Cancelar"
+  },
+  "error": "Algo deu errado: {{msg}}",
+  "server": {
+    "skippedTitle": "Uma rotina foi pulada: o modelo gratuito atingiu o limite",
+    "skippedBody": "Rotinas no modelo gratuito pulam suas execuções até lá; a próxima roda normalmente."
+  },
+  "find": {
+    "navHint": "Agentes prontos para começar",
+    "navKeywords": "modelos, exemplos, início, predefinições"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Ajudantes prontos para começar"
+    },
+    "describe": {
+      "title": "Descreva seu ajudante",
+      "label": "O que o ajudante deve fazer?",
+      "placeholder": "Crie um ajudante que…"
+    },
+    "import": {
+      "title": "Trazer um ajudante de um arquivo",
+      "hint": "Um arquivo de ajudante salvo pelo PasaBot ou por outro app de assistente.",
+      "label": "Arquivo do ajudante"
+    },
+    "review": {
+      "title": "Confira o novo ajudante",
+      "create": "Criar este ajudante"
+    }
+  }
+}

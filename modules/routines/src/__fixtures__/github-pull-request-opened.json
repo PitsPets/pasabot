@@ -1,0 +1,14 @@
+{
+  "action": "opened",
+  "number": 7,
+  "pull_request": {
+    "number": 7,
+    "title": "Add a fixture for the routines test",
+    "state": "open",
+    "user": { "login": "example-dev", "id": 1001 },
+    "head": { "ref": "feature/fixture" },
+    "base": { "ref": "main" }
+  },
+  "repository": { "full_name": "example-org/example-repo", "private": true },
+  "sender": { "login": "example-dev", "id": 1001 }
+}

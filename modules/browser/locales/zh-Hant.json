@@ -1,0 +1,113 @@
+{
+  "nav": "瀏覽器",
+  "page": {
+    "title": "瀏覽器",
+    "intro": "您的 agent 可使用的瀏覽器設定檔。每個設定檔都有各自的 Cookie、登入狀態、顏色與代理伺服器。您可以即時觀看、親自操控，或在聊天時彈出視窗。",
+    "empty": "尚無瀏覽器設定檔。Agent 第一次瀏覽網頁時會自動建立，您也可以現在新增。",
+    "ownerOnly": "只有 owner 可以查看及使用瀏覽器設定檔。"
+  },
+  "badge": {
+    "running": "執行中",
+    "loggedIn": "含您的登入狀態",
+    "proxy": "代理伺服器"
+  },
+  "profile": {
+    "via": "經由 {{server}}",
+    "loggedInNote": "Agent 必須先取得您的同意（以密碼或 passkey 驗證），才能使用此設定檔。",
+    "defaultName": "智能體瀏覽器"
+  },
+  "actions": {
+    "new": "新增設定檔",
+    "watch": "觀看",
+    "start": "啟動",
+    "stop": "停止",
+    "edit": "編輯",
+    "delete": "刪除",
+    "deleteConfirm": "要刪除 {{name}} 及其 Cookie 與登入狀態嗎？此操作無法復原。",
+    "pip": "彈出視窗",
+    "full": "完整檢視",
+    "closePip": "關閉",
+    "closeView": "關閉檢視"
+  },
+  "form": {
+    "newTitle": "新增瀏覽器設定檔",
+    "editTitle": "編輯瀏覽器設定檔",
+    "name": "名稱",
+    "color": "顏色",
+    "proxy": "代理伺服器（選填）",
+    "proxyHint": "使用 http://、https:// 或 socks5://，並包含主機與連接埠。將於瀏覽器下次啟動時生效。",
+    "bypass": "不使用代理伺服器的對象",
+    "username": "代理伺服器使用者名稱",
+    "password": "代理伺服器密碼",
+    "passwordVault": "已存放在保險庫中，不會再次顯示。",
+    "passwordKeep": "留空即保留已儲存的密碼。",
+    "loggedIn": "此設定檔含有我的登入狀態（agent 必須先徵得同意）",
+    "save": "儲存",
+    "cancel": "取消"
+  },
+  "live": {
+    "title": "{{name}} 即時畫面",
+    "alt": "{{name}} 瀏覽器的即時畫面",
+    "waiting": "正在等待第一張畫面…",
+    "stopped": "此瀏覽器未在執行。"
+  },
+  "steer": {
+    "address": "網址",
+    "go": "開啟",
+    "type": "在頁面中輸入",
+    "typeHint": "請先點選畫面中的欄位。輸入內容後，此設定檔會被標記為含有您的登入狀態。",
+    "send": "輸入"
+  },
+  "keys": {
+    "Enter": "Enter",
+    "Tab": "Tab",
+    "Backspace": "Backspace",
+    "Escape": "Esc",
+    "up": "向上捲動",
+    "down": "向下捲動"
+  },
+  "network": {
+    "title": "本機位址",
+    "allowHosts": "瀏覽器可開啟的內部網路主機",
+    "hint": "除非列在此處（以逗號分隔），否則私有及迴路位址都會被封鎖。",
+    "save": "儲存",
+    "saved": "已儲存。"
+  },
+  "pip": {
+    "label": "瀏覽器子母畫面"
+  },
+  "dock": {
+    "label": "瀏覽器",
+    "idle": "目前沒有正在執行的瀏覽器。"
+  },
+  "tools": {
+    "browser_navigate": "瀏覽器：開啟網頁",
+    "browser_snapshot": "瀏覽器：讀取網頁",
+    "browser_click": "瀏覽器：點擊",
+    "browser_type": "瀏覽器：在輸入框中輸入"
+  },
+  "server": {
+    "yourTurn": "輪到你在瀏覽器中操作"
+  },
+  "find": {
+    "navHint": "讓代理使用瀏覽器",
+    "navKeywords": "網頁, 瀏覽, 網站, 網際網路"
+  },
+  "plain": {
+    "find": {
+      "navHint": "讓助理使用網頁瀏覽器"
+    },
+    "page": {
+      "intro": "你的助理能用的瀏覽器。每個都有自己的登入、顏色和設定。可以即時觀看、親自操控，或在聊天時單獨彈出。",
+      "empty": "還沒有瀏覽器。助理第一次上網時會建一個，你也可以現在新增。"
+    },
+    "profile": {
+      "loggedInNote": "助理使用這個瀏覽器前，必須用你的密碼或密碼金鑰問你。",
+      "defaultName": "助理的瀏覽器"
+    },
+    "form": {
+      "passwordVault": "安全保存在這台電腦上，不會再顯示。",
+      "loggedIn": "這個瀏覽器有我的登入（助理必須先問）"
+    }
+  }
+}

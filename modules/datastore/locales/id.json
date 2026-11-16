@@ -1,0 +1,66 @@
+{
+  "nav": "Data",
+  "page": {
+    "title": "Data bersama",
+    "intro": "Tabel yang dipakai bersama oleh agent Anda. Setiap agent dapat membaca semua tabel, jadi catatan pribadi sebaiknya disimpan di memori agent, bukan di sini.",
+    "size": "Memakai {{used}} dari {{max}}",
+    "details": "Agent yang membuat tabel bebas menambah dan mengubah barisnya; perubahan dari agent lain mengikuti aturan persetujuan Anda untuk agent tersebut (menghapus baris selalu meminta persetujuan Anda). Hanya pembuatnya yang dapat mengubah struktur atau menghapus tabel, dan penghapusan selalu meminta persetujuan Anda.",
+    "more": "Pelajari lebih lanjut"
+  },
+  "refresh": "Muat ulang",
+  "loading": "Memuat…",
+  "empty": "Belum ada tabel. Saat agent membuatnya, tabel akan muncul di sini.",
+  "error": "Tidak dapat memuat data. {{reason}}",
+  "table": {
+    "rows_other": "{{count}} baris",
+    "columns_other": "{{count}} kolom",
+    "by": "Dibuat oleh {{name}}",
+    "byUnknown": "Pembuat tidak diketahui",
+    "removedAgent": "agent yang sudah dihapus",
+    "ddl": "Definisinya",
+    "showRows": "Tampilkan baris",
+    "hideRows": "Sembunyikan baris",
+    "rowsOf": "Baris dari {{name}}"
+  },
+  "cell": {
+    "null": "kosong",
+    "blob": "(data file)"
+  },
+  "result": {
+    "count_other": "{{count}} baris",
+    "countMore_other": "{{count}} baris pertama; masih ada lagi"
+  },
+  "query": {
+    "title": "Cari sesuatu",
+    "label": "Kueri (hanya baca)",
+    "hint": "Satu pernyataan SELECT. Layar ini tidak pernah mengubah data.",
+    "run": "Jalankan kueri",
+    "result": "Hasil kueri",
+    "error": "Kueri tidak berjalan. {{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "Daftar tabel bersama",
+    "datastore_create_table": "Buat tabel bersama",
+    "datastore_query": "Kueri tabel bersama",
+    "datastore_write": "Tulis baris",
+    "datastore_alter_table": "Ubah tabel buatan Anda",
+    "datastore_drop_table": "Hapus tabel buatan Anda"
+  },
+  "find": {
+    "navHint": "Tabel dan data milik agen Anda",
+    "navKeywords": "data, tabel, basis data, catatan"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Tabel dan daftar yang disimpan pembantu Anda"
+    },
+    "page": {
+      "intro": "Tabel yang dipakai bersama pembantumu. Setiap pembantu bisa membaca semua tabel, jadi catatan pribadi taruh di ingatan pembantu, bukan di sini.",
+      "details": "Pembantu pembuat tabel bebas menambah dan mengubah barisnya; perubahan pembantu lain mengikuti aturan persetujuanmu untuk pembantu itu (menghapus baris selalu menanyaimu). Hanya pembuatnya yang bisa mengubah bentuk atau menghapus tabel, dan menghapus selalu menanyaimu."
+    },
+    "empty": "Belum ada tabel. Saat pembantu membuatnya, akan muncul di sini.",
+    "table": {
+      "removedAgent": "pembantu yang sudah dihapus"
+    }
+  }
+}

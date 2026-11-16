@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "Bot token",
+    "botTokenHint": "From the bot you created in Telegram. Stored in the vault, never shown again.",
+    "apiBase": "Bot API address",
+    "apiBaseHint": "Leave as is unless you run your own Bot API server."
+  },
+  "link": {
+    "howTo": "Open a direct chat with your bot and send: /link {{code}}",
+    "dmOnly": "The link code works only in a direct chat with the bot."
+  },
+  "status": {
+    "connected": "Connected",
+    "reconnecting": "Reconnecting…",
+    "auth_failed": "The bot token was rejected",
+    "stopped": "Stopped"
+  }
+}

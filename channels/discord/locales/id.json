@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "Token bot",
+    "botTokenHint": "Dari halaman Bot aplikasi Anda di portal developer Discord. Aktifkan intent Message Content di sana. Disimpan di vault, tidak akan ditampilkan lagi.",
+    "apiBase": "Alamat API",
+    "gatewayUrl": "Alamat gateway",
+    "advancedHint": "Biarkan apa adanya kecuali Anda yakin perlu mengubahnya."
+  },
+  "link": {
+    "howTo": "Kirim pesan langsung ke bot Anda: /link {{code}}",
+    "dmOnly": "Kode tautan hanya berfungsi di pesan langsung ke bot."
+  },
+  "status": {
+    "connected": "Terhubung",
+    "reconnecting": "Menghubungkan ulang…",
+    "auth_failed": "Discord menolak bot (periksa token dan intent Message Content)",
+    "stopped": "Berhenti"
+  }
+}

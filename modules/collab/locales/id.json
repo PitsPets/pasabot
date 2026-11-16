@@ -1,0 +1,110 @@
+{
+  "nav": "Tugas agent",
+  "page": {
+    "title": "Tugas agent",
+    "intro": "Pekerjaan yang diberikan antar-agent Anda: pesan, tugas yang didelegasikan, serah terima, dan file. Setiap tugas berjalan dengan tingkat kepercayaan yang lebih rendah di antara kedua agent.",
+    "empty": "Belum ada agent yang memberi tugas ke agent lain.",
+    "reload": "Muat ulang"
+  },
+  "kind": {
+    "delegate": "Didelegasikan",
+    "message": "Pesan",
+    "handoff": "Serah terima",
+    "file": "File"
+  },
+  "state": {
+    "queued": "Menunggu",
+    "leased": "Memulai",
+    "running": "Bekerja",
+    "done": "Selesai",
+    "failed": "Gagal",
+    "cancelled": "Dihentikan",
+    "interrupted": "Terputus"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "Berjalan sebagai {{trust}}",
+    "acked": "Sudah dikonfirmasi",
+    "ackWaiting": "Menunggu konfirmasi",
+    "reply": "Balas"
+  },
+  "trust": {
+    "guarded": "terjaga",
+    "standard": "standar",
+    "trusted": "tepercaya"
+  },
+  "team": {
+    "open": "Tim",
+    "openLead": "Tim · dipimpin {{lead}}",
+    "title": "Siapa yang bisa memakai agen ini",
+    "lead": "Pemimpin (menjawab pesan baru)",
+    "leadHint": "Hanya pemimpin yang membalas orang di sini. Pilih agent lain untuk menyerahkan kepemimpinan.",
+    "makeLead": "Jadikan pemimpin",
+    "isLead": "Memimpin sekarang",
+    "state": {
+      "active": "Aktif",
+      "stopped": "Dihentikan",
+      "archived": "Diarsipkan"
+    },
+    "stop": "Hentikan semua pekerjaan",
+    "stopHint": "Membatalkan apa yang sedang dikerjakan agent di sini dan menahan pesan baru sampai Anda melanjutkan.",
+    "resume": "Lanjutkan",
+    "archive": "Arsipkan channel",
+    "archiveConfirm": "Ketuk lagi untuk mengarsipkan",
+    "silentTitle": "Saat pemimpin diam",
+    "silentRetry": "Minta pemimpin sekali lagi",
+    "on": "Aktif",
+    "off": "Nonaktif",
+    "backup": "Lalu jawab dengan",
+    "backupNone": "Tidak ada (beri tahu saya saja)",
+    "backupModel": "Model cadangan (opsional)",
+    "backupHint": "Jika pemimpin tidak menjawab setelah percobaan ulang, penyedia ini yang menjawab pesan tersebut.",
+    "save": "Simpan",
+    "saved": "Tersimpan",
+    "error": "Gagal: {{message}}"
+  },
+  "subagent": {
+    "start": "Sub-agent {{name}} dimulai",
+    "end": "Sub-agent {{name}} selesai"
+  },
+  "reactions": {
+    "label": "{{emoji}} dari {{count}}",
+    "group": "Reaksi",
+    "button": "Beri reaksi",
+    "add": "Tambahkan reaksi",
+    "pick": "Pilih reaksi",
+    "react": "Beri reaksi {{emoji}}",
+    "remove": "Hapus {{emoji}} Anda"
+  },
+  "tools": {
+    "collab_agents": "Daftar agen",
+    "collab_delegate": "Delegasikan tugas",
+    "collab_message": "Kirim pesan ke agen",
+    "collab_handoff": "Serahkan",
+    "collab_status": "Status tugas",
+    "collab_wait": "Tunggu tugas",
+    "collab_interrupt": "Hentikan tugas",
+    "collab_ack": "Konfirmasi tugas",
+    "collab_react": "Beri reaksi pada pesan",
+    "collab_send_file": "Kirim file ke agen"
+  },
+  "server": {
+    "silent": "{{name}} tidak menjawab di {{chat}}",
+    "aChannel": "sebuah kanal"
+  },
+  "find": {
+    "navHint": "Agen bekerja sama dalam satu tugas",
+    "navKeywords": "tim, bersama, grup, kolaborasi"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Pembantu bekerja sama dalam satu tugas"
+    },
+    "nav": "Tugas pembantu",
+    "page": {
+      "title": "Tugas para pembantu",
+      "intro": "Pekerjaan yang diberikan pembantumu satu sama lain: pesan, tugas yang dioper, serah terima, dan file. Masing-masing berjalan dengan pengaturan yang lebih hati-hati dari kedua pembantu.",
+      "empty": "Belum ada pembantu yang memberi pekerjaan ke pembantu lain."
+    }
+  }
+}

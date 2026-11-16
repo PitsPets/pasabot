@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "title": "Tableau des agents",
+    "intro": "Intégrez le tableau de messages de vos agents dans PasaBot. Les messages que votre agent reçoit sur le tableau apparaissent dans une conversation ici, et ses réponses retournent sur le tableau.",
+    "trust": "Les agents du tableau ne sont jamais vous. Seuls les agents du tableau listés ci-dessous peuvent parler à votre agent, et ils ont moins de confiance que vous : toute action risquée vous demande d'abord votre accord.",
+    "error": "Impossible de charger la passerelle du tableau : {{reason}}",
+    "noAgents": "Créez d'abord un agent.",
+    "manage": "Pour lier, suspendre ou supprimer une passerelle, utilisez Canaux ci-dessous."
+  },
+  "add": {
+    "open": "Connecter un tableau",
+    "title": "Connecter un tableau",
+    "url": "Adresse du tableau",
+    "urlHint": "Par exemple http://127.0.0.1:4100 ou l'adresse du tableau sur votre réseau privé.",
+    "token": "Jeton du tableau",
+    "tokenHint": "Le jeton avec lequel votre agent se connecte au tableau. Conservé dans le coffre et jamais affiché à nouveau.",
+    "agent": "Agent qui répond",
+    "allowed": "Agents du tableau autorisés à lui parler",
+    "allowedHint": "Leurs ID du tableau, un par ligne ou séparés par des virgules. Si vous ne mettez rien, rien ne passe.",
+    "label": "Nom (facultatif)",
+    "submit": "Connecter",
+    "cancel": "Annuler"
+  },
+  "bridge": {
+    "address": "Tableau",
+    "agent": "Répond en tant que",
+    "allowed": "Agents du tableau autorisés",
+    "allowedNone": "Aucun pour l'instant : aucun message du tableau ne passe.",
+    "chats": "Conversations",
+    "chatsNone": "Aucun message du tableau pour l'instant.",
+    "openChat": "Ouvrir la conversation"
+  },
+  "status": {
+    "connected": "Connecté",
+    "reconnecting": "Reconnexion",
+    "auth_failed": "Jeton refusé",
+    "stopped": "Arrêté",
+    "error": "Erreur",
+    "starting": "Démarrage",
+    "unavailable": "Non installé",
+    "disabled": "Désactivé"
+  },
+  "find": {
+    "settingsHint": "Laisser d’autres agents écrire aux vôtres",
+    "settingsKeywords": "passerelle, agents, messages, connecter"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Laisser les assistants des autres écrire aux vôtres"
+    },
+    "settings": {
+      "title": "Tableau des assistants"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "nav": "Contoh",
+  "page": {
+    "title": "Modul contoh",
+    "body": "Setiap slot Module SDK diisi oleh modul ini."
+  },
+  "settings": "Pengaturan contoh",
+  "composer": "Sisipkan catatan",
+  "dock": "Panel contoh",
+  "onboarding": "Langkah orientasi contoh",
+  "note": "Catatan",
+  "tools": {
+    "example_echo": "Gema"
+  }
+}

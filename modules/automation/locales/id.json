@@ -1,0 +1,55 @@
+{
+  "settings": "Otomatisasi",
+  "intro": "Izinkan skrip di komputer ini memulai pekerjaan pada agent lewat perintah pasabot run atau API lokal. Setiap agent punya sakelar dan token sendiri. Token bekerja paling tinggi pada kepercayaan Standar, jadi hal berisiko tetap meminta persetujuan Anda dahulu.",
+  "loadError": "Tidak dapat memuat pengaturan otomatisasi.",
+  "noAgents": "Belum ada agent.",
+  "agent": {
+    "switch": "Izinkan otomatisasi untuk {{name}}",
+    "on": "Aktif",
+    "off": "Nonaktif",
+    "tokens": "{{count}} token aktif"
+  },
+  "form": {
+    "title": "Token baru untuk {{name}}",
+    "label": "Nama token",
+    "labelHint": "Tempat token akan dipakai, mis. \"skrip laptop\".",
+    "expiry": "Kedaluwarsa",
+    "days30": "Dalam 30 hari",
+    "days90": "Dalam 90 hari",
+    "days365": "Dalam setahun",
+    "never": "Tidak pernah",
+    "remote": "Izinkan juga dari device lain (tidak hanya komputer ini)",
+    "remoteHint": "Biarkan nonaktif kecuali skrip di mesin lain membutuhkannya. Halaman browser tidak pernah bisa memakai token.",
+    "create": "Buat token",
+    "creating": "Membuat…"
+  },
+  "created": {
+    "title": "Salin token ini sekarang",
+    "body": "Token hanya ditampilkan sekali. Simpan di tempat aman, seperti pengelola kata sandi.",
+    "copy": "Salin",
+    "copied": "Tersalin",
+    "usage": "Coba:",
+    "done": "Selesai"
+  },
+  "list": {
+    "title": "Token",
+    "empty": "Belum ada token.",
+    "revoke": "Cabut",
+    "revoked": "Dicabut",
+    "expires": "Kedaluwarsa {{when}}",
+    "noExpiry": "Tidak pernah kedaluwarsa",
+    "lastUsed": "Terakhir dipakai {{when}}",
+    "neverUsed": "Belum pernah dipakai",
+    "remote": "Device lain diizinkan",
+    "localOnly": "Hanya komputer ini"
+  },
+  "find": {
+    "settingsHint": "Webhook dan pemicu yang memulai agen",
+    "settingsKeywords": "webhook, pemicu, otomatisasi, peristiwa"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Jalankan pembantu saat sesuatu terjadi"
+    }
+  }
+}

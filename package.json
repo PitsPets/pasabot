@@ -1,0 +1,55 @@
+{
+  "name": "pasabot",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "PitsPets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PitsPets/pasabot.git"
+  },
+  "homepage": "https://github.com/PitsPets/pasabot",
+  "bugs": {
+    "url": "https://github.com/PitsPets/pasabot/issues"
+  },
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "biome check . && depcruise --config .dependency-cruiser.cjs apps packages providers channels modules plugins",
+    "depcruise": "depcruise --config .dependency-cruiser.cjs apps packages providers channels modules plugins",
+    "format": "biome check --write .",
+    "test": "vitest run",
+    "test:sdk": "vitest run apps/server/src/host/sdk.test.ts apps/web/src/shell/slots.test.tsx",
+    "test:ws-resume": "vitest run apps/server/src/core/ws-resume.test.ts",
+    "test:migrations": "vitest run packages/db/src/migrations.test.ts",
+    "test:crash": "vitest run apps/server/src/core/crash.test.ts",
+    "test:queue-priority": "vitest run apps/server/src/core/queue-priority.test.ts",
+    "test:contract": "vitest run packages/testkit/src/fake-contract.test.ts providers/fake",
+    "build": "\"$npm_execpath\" -r run build",
+    "i18n:check": "tsx packages/i18n/src/check.ts .",
+    "check": "\"$npm_execpath\" run typecheck && \"$npm_execpath\" run i18n:check && \"$npm_execpath\" run lint && \"$npm_execpath\" run test && \"$npm_execpath\" run build",
+    "test:setup": "vitest run apps/server/src/auth/setup.test.ts",
+    "test:approval": "vitest run apps/server/src/approvals/approval.test.ts",
+    "test:mcp-gateway": "vitest run apps/server/src/mcp/gateway.test.ts",
+    "test:ssrf": "vitest run packages/safe-net/src/ssrf.test.ts",
+    "test:vault": "vitest run apps/server/src/vault/vault.test.ts",
+    "test:sandbox": "vitest run apps/server/src/runner/sandbox.test.ts",
+    "test:membership": "vitest run apps/server/src/chat/membership.test.ts",
+    "test:live": "vitest run providers",
+    "dev": "\"$npm_execpath\" --filter @pasabot/web run dev",
+    "test:e2e": "\"$npm_execpath\" --filter @pasabot/web run test:e2e",
+    "test:e2e:all": "PASABOT_LAYOUT_FULL=1 \"$npm_execpath\" run test:e2e && \"$npm_execpath\" -r --no-bail --workspace-concurrency=1 --filter \"!@pasabot/web\" run test:e2e"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "vitest": "^5.1.0",
+    "@biomejs/biome": "^2.4.0",
+    "dependency-cruiser": "^17.0.0",
+    "tsx": "^4.20.0",
+    "@types/node": "^24.0.0",
+    "vite": "^8.0.0"
+  }
+}

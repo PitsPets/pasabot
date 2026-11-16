@@ -1,0 +1,143 @@
+{
+  "nav": "Computer",
+  "page": {
+    "title": "Computer use",
+    "intro": "Agents that use a computer get their own display. Every screenshot, click and keystroke asks you first. Watch them here, and take over when you need to.",
+    "empty": "No agent is using a display right now. One starts the first time you approve an agent's computer action."
+  },
+  "setup": {
+    "title": "Set up computer use",
+    "missing_bins": "This server is missing {{list}}. Install them, or run PasaBot from the computer image (deploy/computer).",
+    "unsupported": "Computer use is not available on this operating system.",
+    "off": "Computer use is turned off on this server.",
+    "practice": "Practice display: a built-in test app, not a real desktop.",
+    "windows_soon": "Not available on Windows yet. Helpers cannot see or use the screen on a Windows PC; everything else works."
+  },
+  "mac": {
+    "title": "Let an agent use this Mac",
+    "warning": "A Mac has no separate screen for helpers: a helper you allow here sees your whole screen and moves your own pointer and keyboard. Each action still asks you first. The permissions belong to PasaBot Screen Helper, not to PasaBot itself.",
+    "perAgent": "Computer use on this Mac is off for every agent until you turn it on for that one agent here, with your password.",
+    "permissions": "macOS will ask you to allow Screen Recording and Accessibility. macOS gives that permission to the program running PasaBot, so every agent's own command-line tools could then use your screen without asking you. Only allow it if you trust every agent on this server, and remove it in System Settings → Privacy & Security when you are done.",
+    "password": "Your password",
+    "enable": "Allow",
+    "enableFor": "Allow {{name}} to use this Mac",
+    "disable": "Turn off",
+    "disableFor": "Turn off {{name}} on this Mac",
+    "agentOn": "Allowed",
+    "agentOff": "Off",
+    "noAgents": "No agents yet.",
+    "wrong": "That didn't match. Try again."
+  },
+  "display": {
+    "shared": "Your own screen",
+    "own": "Own display {{label}}",
+    "live": "Live",
+    "control": "Take control",
+    "release": "Stop controlling",
+    "controlHint": "Click the picture to click on the agent's display.",
+    "stop": "Stop display",
+    "typeLabel": "Type on the display",
+    "send": "Send text",
+    "alt": "{{name}}'s display",
+    "started": "Started {{time}}"
+  },
+  "activity": {
+    "title": "Recent actions",
+    "empty": "No actions yet.",
+    "you": "You",
+    "failed": "Failed"
+  },
+  "error": "Something went wrong: {{msg}}",
+  "tools": {
+    "computer_display": "Computer: display info",
+    "computer_screenshot": "Computer: take a screenshot",
+    "computer_click": "Computer: click",
+    "computer_move": "Computer: move the pointer",
+    "computer_type": "Computer: type text",
+    "computer_key": "Computer: press keys"
+  },
+  "find": {
+    "navHint": "Let an agent use a computer",
+    "navKeywords": "desktop, screen, mouse, keyboard, control"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Let a helper use a computer"
+    },
+    "page": {
+      "intro": "Helpers that use a computer get their own screen. Every picture of the screen, click and keystroke asks you first. Watch them here, and take over when you need to.",
+      "empty": "No helper is using a screen right now. One starts the first time you say yes to a helper's computer action."
+    },
+    "setup": {
+      "missing_bins": "This computer is missing {{list}}. Install them, or ask whoever set up PasaBot to use its computer setup.",
+      "off": "Computer use is turned off in this PasaBot."
+    },
+    "mac": {
+      "noAgents": "No helpers yet."
+    },
+    "display": {
+      "controlHint": "Click the picture to click on the helper's screen.",
+      "release": "Stop controlling"
+    }
+  },
+  "card": {
+    "ask": {
+      "title": "Let {{name}} use this computer?",
+      "body": "{{name}} would see your whole screen and move your own pointer and keyboard. Every click and keystroke still asks you first, and you can stop it any time by holding Esc for a second.",
+      "password": "Your password",
+      "yes": "Yes, set it up",
+      "no": "Not now"
+    },
+    "steps": {
+      "title": "Set up this computer for {{name}}",
+      "stopped": "You stopped control of this computer. It stays stopped until you turn it on again here.",
+      "helper": "PasaBot Screen Helper is running",
+      "helperHint": "It starts with the PasaBot app on this Mac. If this stays empty, open PasaBot.",
+      "screen": "Turn on Screen Recording",
+      "screenHint": "Settings opens. Find PasaBot Screen Helper in the list and switch it on.",
+      "openScreen": "Open Screen Recording settings",
+      "access": "Turn on Accessibility",
+      "accessHint": "Settings opens. Find PasaBot Screen Helper in the list and switch it on.",
+      "openAccess": "Open Accessibility settings",
+      "try": "Try it",
+      "tryHint": "Takes one picture of your screen and nothing else.",
+      "tryButton": "Take a test picture",
+      "tryDone": "It works. This is what {{name}} would see.",
+      "ready": "{{name}} can now ask to use this computer. Each action shows you a card first.",
+      "off": "Turn off for {{name}}",
+      "done": "Done",
+      "waiting": "Not yet"
+    },
+    "live": {
+      "title": "{{name}} is using your computer",
+      "idle": "{{name}} is not using the computer right now.",
+      "takeOver": "Take over",
+      "stop": "Stop",
+      "stopHint": "Or hold Esc for a second.",
+      "alt": "Live view of {{name}}'s screen"
+    }
+  },
+  "preview": {
+    "click": "It will click the red ring.",
+    "rightClick": "It will right-click the red ring.",
+    "move": "It will move the pointer to the red ring.",
+    "type": "It will type {{count}} characters:",
+    "key": "It will press: {{keys}}",
+    "screenshot": "It will take a picture of the screen.",
+    "alt": "Where it will act on the screen",
+    "none": "No picture of the screen yet.",
+    "noCurrent": "No current picture of the screen. Look at your screen before you say yes."
+  },
+  "server": {
+    "setupCard": "{{name}} wants to use this computer. Set it up in the card below, or ignore it.",
+    "liveCard": "{{name}} started using the computer. Watch it live here."
+  },
+  "watch": {
+    "title": "Confirm it's you to see your screen",
+    "body": "This is your own Mac screen. Type your password to watch it and take over here.",
+    "again": "It has been a few minutes. Type your password again to keep controlling your screen.",
+    "password": "Your password",
+    "button": "Show my screen",
+    "wrong": "That didn't match. Try again."
+  }
+}

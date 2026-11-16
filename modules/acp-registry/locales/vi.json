@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "Agent ACP",
+    "intro": "Cài đặt các CLI agent dùng Agent Client Protocol. Mỗi agent đã cài sẽ trở thành một bộ não bạn có thể chọn khi tạo hoặc chỉnh sửa agent.",
+    "ownerOnly": "Chỉ chủ sở hữu mới quản lý được agent ACP."
+  },
+  "index": {
+    "label": "Chỉ mục registry",
+    "hint": "Đường dẫn tuyệt đối tới tệp chỉ mục cục bộ, hoặc một URL https.",
+    "save": "Lưu",
+    "saved": "Đã lưu.",
+    "none": "Hãy đặt chỉ mục registry để duyệt agent."
+  },
+  "search": {
+    "label": "Tìm agent",
+    "placeholder": "Tên hoặc mô tả",
+    "empty": "Không có agent nào trong chỉ mục khớp.",
+    "install": "Cài đặt",
+    "reinstall": "Cập nhật",
+    "installing": "Đang cài đặt…",
+    "installed": "Đã cài đặt",
+    "remoteCommand": "Chỉ mục từ xa chỉ có thể cài gói, không thể cài lệnh cục bộ.",
+    "available": "Có trong chỉ mục"
+  },
+  "installed": {
+    "title": "Đã cài đặt",
+    "empty": "Chưa cài agent ACP nào.",
+    "remove": "Xóa",
+    "removing": "Đang xóa…",
+    "confirmRemove": "Xóa {{name}}? Các agent sẽ không thể dùng nó làm bộ não nữa.",
+    "ready": "Sẵn sàng",
+    "missing": "Không tìm thấy",
+    "version": "Phiên bản {{version}}",
+    "provider": "ID bộ não",
+    "command": "Lệnh"
+  },
+  "error": {
+    "generic": "Đã xảy ra lỗi ({{code}}).",
+    "in_use": "Vẫn đang được một agent sử dụng. Hãy chọn bộ não khác cho agent đó trước.",
+    "command_missing": "Chương trình đó không có trên máy này.",
+    "command_from_remote": "Chỉ mục từ xa không thể cài lệnh cục bộ.",
+    "bad_index_source": "Hãy dùng đường dẫn tệp tuyệt đối hoặc URL https.",
+    "index_unreadable": "Không đọc được chỉ mục.",
+    "index_invalid": "Chỉ mục không đúng định dạng mong đợi.",
+    "install_failed": "Cài đặt thất bại.",
+    "no_index": "Hãy đặt chỉ mục registry trước."
+  },
+  "find": {
+    "settingsHint": "Thêm tác tử lập trình làm bộ não",
+    "settingsKeywords": "lập trình, mã, bộ não, dòng lệnh, nhà phát triển"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Dùng ứng dụng lập trình làm bộ não cho trợ lý"
+    },
+    "settings": {
+      "title": "Ứng dụng lập trình làm bộ não"
+    }
+  }
+}

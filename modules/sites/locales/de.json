@@ -1,0 +1,58 @@
+{
+  "nav": "Websites",
+  "page": {
+    "title": "Websites",
+    "intro": "Kleine Webseiten, die deine Agenten veröffentlicht haben. Sie öffnen sich unter der separaten Sites-Adresse, laufen in einer Sandbox und können deine Anmeldung nicht nutzen. Jede läuft ab, wenn sie nicht verlängert wird."
+  },
+  "refresh": "Aktualisieren",
+  "loading": "Wird geladen…",
+  "empty": "Noch keine Sites. Wenn ein Agent eine veröffentlicht, erscheint sie hier.",
+  "error": "Die Sites konnten nicht geladen werden. {{reason}}",
+  "tunnel": {
+    "title": "Adresse von außen",
+    "label": "Tunnel-Adresse für Sites",
+    "hint": "Optional. Wenn dein eigener Tunnel auf die Sites-Adresse zeigt, füge seine Adresse hier ein (zum Beispiel https://sites.example.net). Öffentliche Sites zeigen sie dann an.",
+    "save": "Adresse speichern",
+    "saved": "Gespeichert.",
+    "none": "Keine Tunnel-Adresse festgelegt, daher kann noch keine Site öffentlich sein."
+  },
+  "site": {
+    "by": "Veröffentlicht von {{name}}",
+    "byRemoved": "Veröffentlicht von einem entfernten Agenten",
+    "files_one": "{{count}} Datei",
+    "files_other": "{{count}} Dateien",
+    "expires": "Läuft ab: {{when}}",
+    "public": "Öffentlich",
+    "private": "Privat",
+    "open": "Site öffnen",
+    "openPublic": "Öffentliche Adresse",
+    "renew": "7 weitere Tage behalten",
+    "makePublic": "Öffentlich machen",
+    "makePrivate": "Privat machen",
+    "remove": "Entfernen",
+    "confirmRemove": "„{{title}}“ entfernen? Die Adresse funktioniert sofort nicht mehr.",
+    "list": "Dateien"
+  },
+  "tools": {
+    "sites_publish": "Statische Website veröffentlichen",
+    "sites_list": "Deine Websites auflisten",
+    "sites_renew": "Website verlängern",
+    "sites_unpublish": "Website entfernen"
+  },
+  "find": {
+    "navHint": "Webseiten, die deine Agenten bauen",
+    "navKeywords": "Webseite, Seite, veröffentlichen, hosten"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Websites, die deine Helfer bauen und online stellen"
+    },
+    "page": {
+      "intro": "Kleine Webseiten, die deine Helfer veröffentlicht haben. Sie öffnen sich unter einer eigenen Adresse, getrennt von der App, und können deine Anmeldung nicht nutzen. Jede läuft ab, wenn sie nicht verlängert wird."
+    },
+    "empty": "Noch keine Seiten. Wenn ein Helfer eine veröffentlicht, erscheint sie hier.",
+    "site": {
+      "byRemoved": "Von einem entfernten Helfer veröffentlicht"
+    }
+  }
+}

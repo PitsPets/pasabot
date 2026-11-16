@@ -1,0 +1,128 @@
+{
+  "card": {
+    "noImage": "Không có ảnh",
+    "seenAt": "như thấy lúc {{time}}",
+    "rating": "Đánh giá {{rating}}",
+    "ratingCount": "Đánh giá {{rating}} từ {{count}} lượt",
+    "open": "Mở tại {{store}}"
+  },
+  "compare": {
+    "title": "So sánh {{count}} sản phẩm"
+  },
+  "buy": {
+    "button": "Mua",
+    "qty_other": "{{count}} món",
+    "less": "Bớt một",
+    "more": "Thêm một",
+    "note": "Bạn phê duyệt việc này trong ứng dụng. PasaBot chỉ đưa món hàng vào giỏ, sau đó bạn tự kiểm tra tổng tiền và thanh toán.",
+    "ask": "Xin phép mua",
+    "cancel": "Hủy",
+    "asked": "Đang chờ bạn phê duyệt. Thẻ chi tiền nằm trong mục phê duyệt của bạn.",
+    "error": "Không thể gửi yêu cầu này. Hãy thử lại.",
+    "state": {
+      "running": "Đã phê duyệt. Đang thêm vào giỏ…",
+      "handedOver": "Đã có trong giỏ. Hãy kiểm tra tổng tiền và tự thanh toán trong trình duyệt.",
+      "denied": "Bạn đã từ chối nên chưa mua gì.",
+      "paused": "Đã tạm dừng: cửa hàng cần bạn thao tác trong trình duyệt.",
+      "stopped": "Đã dừng. Chưa có gì được thêm vào giỏ; chat sẽ cho biết lý do.",
+      "ended": "Lượt mua này đã kết thúc; chat sẽ cho biết diễn biến."
+    }
+  },
+  "settings": {
+    "title": "Mua sắm",
+    "intro": "Nơi các agent tìm sản phẩm. Giá được hiển thị đúng như trang cửa hàng, không quy đổi.",
+    "country": "Quốc gia",
+    "webOnly": "Quốc gia khác (tìm trên web)",
+    "stores": "Cửa hàng",
+    "fallback": "Chưa có danh sách cửa hàng cho quốc gia này. Agent sẽ tìm trên web và chỉ hiện thẻ cho các trang có mô tả sản phẩm.",
+    "custom": "Cửa hàng của bạn",
+    "remove": "Xóa",
+    "rules": "Agent không bao giờ thanh toán, đặt hàng, nhập thông tin thẻ, xử lý mã, giải captcha hay tạo tài khoản cửa hàng. Việc mua luôn hỏi bạn trước.",
+    "loading": "Đang tải…",
+    "error": "Không thể tải cài đặt mua sắm."
+  },
+  "custom": {
+    "add": "Thêm cửa hàng",
+    "name": "Tên cửa hàng",
+    "id": "ID ngắn",
+    "idHint": "Chữ thường, số và dấu gạch ngang, ví dụ corner-shop",
+    "home": "Trang chủ",
+    "search": "Địa chỉ tìm kiếm",
+    "searchHint": "Đặt {query} vào chỗ từ khóa tìm kiếm",
+    "hosts": "Địa chỉ được phép",
+    "hostsHint": "Tên máy chủ, cách nhau bằng dấu phẩy, ví dụ shop.example hoặc *.example",
+    "currency": "Tiền tệ",
+    "currencyHint": "Ba chữ cái, ví dụ PHP hoặc USD",
+    "save": "Lưu cửa hàng",
+    "error": "Hãy kiểm tra các trường: địa chỉ phải thuộc các máy chủ được phép và không có mã theo dõi."
+  },
+  "onboarding": {
+    "title": "Bạn mua sắm ở đâu?",
+    "body": "Chọn quốc gia để agent biết nên xem những cửa hàng nào. Bạn có thể đổi sau trong Cài đặt → Mua sắm."
+  },
+  "orders": {
+    "title": "Đơn hàng",
+    "empty": "Chưa có đơn hàng. Mỗi lượt mua bạn duyệt sẽ hiện ở đây.",
+    "error": "Không tải được đơn hàng.",
+    "line": "{{qty}} × {{item}}",
+    "unknownItem": "Sản phẩm không còn được lưu",
+    "each": "{{price}} mỗi món, như đã thấy",
+    "state": {
+      "pending": "Đang chờ bạn duyệt",
+      "denied": "Bạn đã từ chối",
+      "running": "Đang thêm vào giỏ",
+      "handed-over": "Trong giỏ của bạn, bạn tự thanh toán",
+      "paused": "Tạm dừng, cần bạn",
+      "stopped": "Đã dừng",
+      "failed": "Thất bại",
+      "other": "Đã kết thúc"
+    }
+  },
+  "tools": {
+    "shop_stores": "Cửa hàng mua sắm",
+    "shop_search": "Tìm trong cửa hàng",
+    "shop_capture": "Lưu một sản phẩm",
+    "shop_show": "Hiển thị thẻ sản phẩm",
+    "shop_compare": "So sánh sản phẩm",
+    "shop_buy": "Đưa sản phẩm vào giỏ hàng"
+  },
+  "server": {
+    "noBrowser": "Trình duyệt không khả dụng nên chưa có gì được thêm vào giỏ.",
+    "storeOff": "Cửa hàng này đang tắt trong Cài đặt → Mua sắm nên chưa có gì được thêm vào giỏ.",
+    "badAddress": "Địa chỉ sản phẩm đó không được phép với cửa hàng này.",
+    "stoppedBefore": "Đã dừng trước khi đụng tới trình duyệt.",
+    "stoppedNothing": "Đã dừng. Chưa có gì được thêm vào giỏ.",
+    "priceChanged": "Giá đã đổi kể từ khi bạn duyệt: trước {{before}}, nay {{after}}. Chưa có gì được thêm vào giỏ. Một thẻ mới sẽ hỏi lại bạn với giá mới.",
+    "pageDiffers": "Mặt hàng hoặc giá trên trang cửa hàng khác với thứ bạn đã duyệt ({{price}}) nên chưa có gì được thêm vào giỏ. Hãy lưu lại và hỏi lại.",
+    "openNoCartHandOver": "{{name}} đang mở ở {{store}}. Hãy tự thêm {{quantity}} vào giỏ và tự thanh toán.",
+    "openNoCart": "{{name}} đang mở ở {{store}} trong trình duyệt. Cửa hàng này không có bước giỏ hàng nên hãy tự thêm {{quantity}} và tự thanh toán.",
+    "stoppedAfterAdd": "Đã dừng sau khi thêm vào giỏ; trang thanh toán chưa được mở.",
+    "checkoutSignUp": "Địa chỉ thanh toán là trang đăng ký.",
+    "stoppedInCart": "Đã dừng. Mặt hàng đã ở trong giỏ; không làm gì thêm.",
+    "inCartHandOver": "{{quantity}} × {{name}} đã ở trong giỏ của bạn tại {{store}}. Hãy kiểm tra và tự thanh toán.",
+    "inCart": "{{quantity}} × {{name}} đã ở trong giỏ của bạn tại {{store}} và trang thanh toán đang mở trong trình duyệt. Hãy kiểm tra tổng tiền và tự thanh toán; PasaBot không đặt hàng.",
+    "stoppedCheck": "Đã dừng. Hãy kiểm tra trình duyệt trước khi tiếp tục.",
+    "buyFailed": "Lượt mua đã dừng: {{error}}",
+    "captcha": "Cửa hàng hiện bước kiểm tra người thật (captcha). Hãy mở trình duyệt và tự hoàn tất.",
+    "signIn": "Cửa hàng muốn bạn đăng nhập. Hãy mở trình duyệt và tự đăng nhập (PasaBot không bao giờ tạo tài khoản cửa hàng).",
+    "denied": "Bạn đã từ chối nên trình duyệt không bị đụng tới.",
+    "buySummary": "Mua {{quantity}} × {{name}} tại {{store}}",
+    "buyLabel": "Lượt mua",
+    "askItems": "{{quantity}} × {{name}} — {{price}} mỗi món, như đã thấy lúc {{time}}",
+    "askTotal": "{{total}} như đã thấy, chưa phải cuối cùng",
+    "askPayment": "Bạn tự thanh toán trong trình duyệt; PasaBot dừng ở giỏ hàng"
+  },
+  "find": {
+    "settingsHint": "Cho tác tử mua hàng khi bạn đồng ý",
+    "settingsKeywords": "mua sắm, mua, đơn hàng, cửa hàng"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Cho trợ lý mua đồ, khi bạn đồng ý"
+    },
+    "settings": {
+      "intro": "Nơi các trợ lý tìm sản phẩm. Giá được hiển thị đúng như trang cửa hàng, không quy đổi.",
+      "rules": "Trợ lý không bao giờ thanh toán, đặt hàng, nhập thông tin thẻ, xử lý mã, giải captcha hay tạo tài khoản cửa hàng. Việc mua luôn hỏi bạn trước."
+    }
+  }
+}

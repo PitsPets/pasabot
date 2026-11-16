@@ -1,0 +1,59 @@
+{
+  "nav": "Sitios",
+  "page": {
+    "title": "Sitios",
+    "intro": "Pequeñas páginas web publicadas por tus agentes. Se abren en la dirección separada de sitios, se ejecutan en un entorno aislado y no pueden usar tu sesión. Cada una caduca si no se renueva."
+  },
+  "refresh": "Actualizar",
+  "loading": "Cargando…",
+  "empty": "Aún no hay sitios. Cuando un agente publique uno, aparecerá aquí.",
+  "error": "No se pudieron cargar los sitios. {{reason}}",
+  "tunnel": {
+    "title": "Dirección desde el exterior",
+    "label": "Dirección del túnel para sitios",
+    "hint": "Opcional. Si tu propio túnel apunta a la dirección de sitios, pega aquí su dirección (por ejemplo https://sites.example.net). Los sitios públicos la mostrarán.",
+    "save": "Guardar dirección",
+    "saved": "Guardada.",
+    "none": "No hay dirección de túnel configurada, así que aún no puede haber sitios públicos."
+  },
+  "site": {
+    "by": "Publicado por {{name}}",
+    "byRemoved": "Publicado por un agente eliminado",
+    "files_one": "{{count}} archivo",
+    "files_many": "{{count}} de archivos",
+    "files_other": "{{count}} archivos",
+    "expires": "Caduca {{when}}",
+    "public": "Público",
+    "private": "Privado",
+    "open": "Abrir sitio",
+    "openPublic": "Dirección pública",
+    "renew": "Mantener 7 días más",
+    "makePublic": "Hacer público",
+    "makePrivate": "Hacer privado",
+    "remove": "Eliminar",
+    "confirmRemove": "¿Eliminar \"{{title}}\"? Su dirección dejará de funcionar de inmediato.",
+    "list": "Archivos"
+  },
+  "tools": {
+    "sites_publish": "Publicar un sitio estático",
+    "sites_list": "Ver tus sitios",
+    "sites_renew": "Renovar un sitio",
+    "sites_unpublish": "Retirar un sitio"
+  },
+  "find": {
+    "navHint": "Sitios web que crean tus agentes",
+    "navKeywords": "sitio web, página, publicar, alojar"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Sitios web que tus ayudantes crean y publican"
+    },
+    "page": {
+      "intro": "Pequeñas páginas web que publicaron tus ayudantes. Se abren en su propia dirección, separadas de la app, y no pueden usar tu sesión. Cada una caduca si no se renueva."
+    },
+    "empty": "Aún no hay sitios. Cuando un ayudante publique uno, aparecerá aquí.",
+    "site": {
+      "byRemoved": "Publicado por un ayudante eliminado"
+    }
+  }
+}

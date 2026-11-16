@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "agent 的提问",
+    "send": "发送回答",
+    "answered": "已回答：{{answer}}",
+    "expired": "未在时限内回答，agent 已继续执行。",
+    "cancelled": "agent 已不再等待此回答。",
+    "pickMany": "可选择一项或多项"
+  },
+  "form": {
+    "submit": "发送",
+    "sent": "已发送",
+    "required": "必填",
+    "invalid": "请检查{{field}}。",
+    "expired": "此表单在提交前已关闭。",
+    "yes": "是",
+    "no": "否"
+  },
+  "html": {
+    "note": "由 agent 生成，独立于 PasaBot 运行，无法访问你的账号。",
+    "frame": "agent 页面：{{title}}"
+  },
+  "files": {
+    "open": "打开 {{name}}",
+    "download": "下载 {{name}}",
+    "close": "关闭",
+    "zip": "ZIP 压缩包",
+    "file": "文件",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "添加文件",
+    "title": "发送文件",
+    "caption": "消息（可选）",
+    "send": "发送",
+    "cancel": "取消",
+    "remove": "移除 {{name}}",
+    "uploading": "正在上传 {{pct}}%",
+    "tooBig": "{{name}} 超过 100 MB。",
+    "tooMuch": "一条消息中的文件总大小不能超过 250 MB。",
+    "failed": "上传失败。{{reason}}",
+    "limits": "单个文件最大 100 MB，每条消息最大 250 MB。"
+  },
+  "error": "无法发送。{{reason}}",
+  "tools": {
+    "richchat_ask": "询问用户",
+    "richchat_form": "请求填写表单",
+    "richchat_html": "显示 HTML",
+    "richchat_share_file": "把文件交给主人"
+  },
+  "card": {
+    "file": {
+      "title": "{{name}} 准备好了",
+      "text": "{{agent}} 刚刚做好的。"
+    }
+  }
+}

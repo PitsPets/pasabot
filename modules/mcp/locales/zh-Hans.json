@@ -1,0 +1,112 @@
+{
+  "nav": "MCP 服务器",
+  "page": {
+    "title": "MCP 服务器",
+    "intro": "您的 agent 可使用的外部工具服务器。添加后先测试并开启，再选择允许哪些 agent 使用。"
+  },
+  "loading": "正在加载…",
+  "empty": "还没有 MCP 服务器。可在此添加，或安装一个 connector。",
+  "transport": {
+    "stdio": "本机命令",
+    "http": "网址"
+  },
+  "level": {
+    "none": "隐藏",
+    "use": "可使用",
+    "manage": "可管理",
+    "inherit": "默认（{{level}}）"
+  },
+  "access": {
+    "title": "谁可以使用",
+    "hint": "被隐藏的 agent 看不到此服务器。可管理的 agent 可以重命名或关闭它，且仍会先征求您的同意。",
+    "all": "所有 agent"
+  },
+  "server": {
+    "on": "已开启",
+    "off": "已关闭",
+    "fromConnector": "来自 connector",
+    "tools_other": "{{count}} 个工具",
+    "testFailed": "测试失败",
+    "secrets": "保存在 vault 中的密钥：{{names}}",
+    "test": "测试",
+    "turnOn": "开启",
+    "turnOff": "关闭",
+    "remove": "移除",
+    "removeConfirm": "是，移除"
+  },
+  "add": {
+    "open": "添加 MCP 服务器",
+    "title": "新建 MCP 服务器",
+    "name": "名称",
+    "transport": "连接方式",
+    "command": "命令",
+    "commandHint": "要启动的程序，例如 npx 或 docker。启动时不经过 shell。",
+    "args": "参数",
+    "argsHint": "每行一个。",
+    "env": "设置（非机密）",
+    "envHint": "每行一个 NAME=value。",
+    "url": "地址（https://…）",
+    "secrets": "机密设置",
+    "secretHeaders": "机密请求头",
+    "secretsHint": "保存在 vault 中。您无法在此回读，agent 也永远看不到。",
+    "secretName": "名称",
+    "headerName": "请求头",
+    "secretValue": "值",
+    "anotherSecret": "再添加一个",
+    "save": "添加服务器",
+    "cancel": "取消"
+  },
+  "classes": {
+    "title": "各工具的用途",
+    "hint": "付款和给他人发消息在任何信任级别下都会先征求您的同意。每个工具的类型会在列出时根据名称推测；如果推测有误，可在此修正。",
+    "default": "默认：{{class}}",
+    "money": "金钱（购买、付款）",
+    "outbound-message": "给他人发消息",
+    "delete": "删除",
+    "publish": "发布",
+    "none": "无特殊",
+    "alwaysAsks": "始终询问"
+  },
+  "tools": {
+    "tools_find": "查找工具",
+    "tools_describe": "描述工具",
+    "tools_invoke": "使用外部工具",
+    "mcp_servers": "列出 MCP 服务器",
+    "mcp_server_update": "修改 MCP 服务器"
+  },
+  "find": {
+    "navHint": "智能体可调用的工具服务器",
+    "navKeywords": "工具, 服务器, 插件, 集成"
+  },
+  "plain": {
+    "nav": "助手能用的应用和工具",
+    "find": {
+      "navHint": "助手可以替你使用的额外应用"
+    },
+    "page": {
+      "title": "助手能用的应用和工具",
+      "intro": "你的助手能用的外部应用和工具。添加、测试、打开，再选哪些助手可以用。"
+    },
+    "empty": "这里还没有。在这里添加，或添加一个现成的应用。",
+    "access": {
+      "hint": "隐藏的助手看不到它。能管理的助手可以改名或关闭它，但仍会先问你。",
+      "all": "所有助手"
+    },
+    "add": {
+      "open": "添加应用或工具",
+      "title": "新的应用或工具",
+      "secretsHint": "安全保存在这台电脑上。你在这里读不回来，助手也永远看不到。",
+      "save": "添加",
+      "command": "怎么打开",
+      "commandHint": "这里写什么，应用自己的设置页面会告诉你。",
+      "args": "更多信息"
+    },
+    "transport": {
+      "stdio": "这台电脑上的程序",
+      "http": "网上的地址"
+    },
+    "server": {
+      "fromConnector": "现成的应用"
+    }
+  }
+}

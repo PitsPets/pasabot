@@ -1,0 +1,141 @@
+{
+  "nav": "Rotinas",
+  "page": {
+    "title": "Rotinas",
+    "intro": "As rotinas executam um agente manualmente, em um horário ou quando algo as chama. Uma resposta exatamente igual a (quiet) significa que não há novidades, e você não será notificado.",
+    "calendar": "Feed de calendário",
+    "empty": "Ainda não há rotinas."
+  },
+  "hook": {
+    "title": "Endereço e segredo do webhook",
+    "once": "Copie agora. O segredo é exibido só uma vez; ao renová-lo, o endereço também muda.",
+    "saved": "Já salvei"
+  },
+  "create": {
+    "title": "Nova rotina",
+    "name": "Nome",
+    "agent": "Agente",
+    "prompt": "O que o agente deve fazer?",
+    "promptHint": "Enviado como a mensagem da rotina a cada execução.",
+    "trigger": "Executa",
+    "cron": "Agendamento (cron)",
+    "cronHint": "minuto hora dia mês dia da semana, ex.: 0 9 * * 1-5 = 9:00 em dias úteis",
+    "tz": "Fuso horário",
+    "target": "Onde executa",
+    "submit": "Criar rotina",
+    "workflow": "Fluxo de trabalho",
+    "noWorkflows": "Ainda não há fluxos de trabalho. Crie um antes na página Fluxos de trabalho.",
+    "offline": "Executar mesmo offline",
+    "offlineHint": "Se o cérebro principal do agente não puder ser acessado, usa o próximo cérebro (por exemplo, um modelo local) e informa isso no resultado."
+  },
+  "kind": {
+    "schedule": "Em um horário",
+    "manual": "Manualmente",
+    "webhook": "Webhook",
+    "github": "GitHub",
+    "event": "Em um evento"
+  },
+  "target": {
+    "chat": "No chat do agente",
+    "thread": "Em uma nova conversa",
+    "workflow": "Inicia um fluxo de trabalho"
+  },
+  "state": {
+    "paused": "Pausada"
+  },
+  "routine": {
+    "next": "Próxima",
+    "last": "Última"
+  },
+  "result": {
+    "pending": "Executando",
+    "ok": "Concluída",
+    "silent": "Sem novidades",
+    "failed": "Falhou",
+    "interrupted": "Interrompida",
+    "skipped": "Ignorada",
+    "held": "Retida"
+  },
+  "source": {
+    "manual": "manual",
+    "schedule": "agendamento",
+    "webhook": "webhook",
+    "event": "evento",
+    "github": "GitHub",
+    "test": "execução de teste"
+  },
+  "action": {
+    "run": "Executar agora",
+    "test": "Executar teste",
+    "pause": "Pausar",
+    "resume": "Retomar",
+    "rotate": "Novo segredo",
+    "rotateConfirm": "Criar um novo segredo e endereço? Quem usa os antigos deixará de funcionar.",
+    "delete": "Excluir",
+    "deleteConfirm": "Excluir esta rotina? A atividade dela continua no feed."
+  },
+  "activity": {
+    "title": "Atividade",
+    "empty": "Nada foi executado ainda.",
+    "open": "Abrir chat",
+    "silent": "Executou, sem novidades para informar.",
+    "offlineFallback": "Cérebro principal offline: executou em {{to}}",
+    "rateLimited": "Limite de requisições: o modelo gratuito está ocupado ou sem cota, então esta execução foi ignorada. A próxima roda normalmente."
+  },
+  "tools": {
+    "routines_list": "Listar minhas rotinas",
+    "routines_create": "Criar uma rotina",
+    "routines_pause": "Pausar uma das minhas rotinas",
+    "routines_delete": "Excluir uma das minhas rotinas"
+  },
+  "server": {
+    "finished": "A rotina \"{{name}}\" terminou"
+  },
+  "find": {
+    "navHint": "Execute um agente em um horário",
+    "navKeywords": "horário, todo dia, temporizador, repetir, diário, semanal",
+    "stillOn_one": "{{count}} rotina ainda está ligada e vai continuar rodando.",
+    "stillOn_many": "{{count}} de rotinas ainda estão ligadas e vão continuar rodando.",
+    "stillOn_other": "{{count}} rotinas ainda estão ligadas e vão continuar rodando."
+  },
+  "plain": {
+    "find": {
+      "navHint": "Execute um ajudante em um horário"
+    },
+    "page": {
+      "intro": "Rotinas iniciam um ajudante à mão, num horário ou quando algo chama. Uma resposta exatamente (quiet) significa nada de novo, e você não é avisado."
+    },
+    "create": {
+      "agent": "Ajudante",
+      "prompt": "O que o ajudante deve fazer?",
+      "offlineHint": "Se o cérebro principal do ajudante não responder, usar o próximo cérebro (por exemplo, um neste computador) e dizer isso no resultado."
+    },
+    "kind": {
+      "webhook": "Quando um link é chamado"
+    },
+    "source": {
+      "webhook": "um link"
+    },
+    "hook": {
+      "title": "O link e o segredo"
+    },
+    "target": {
+      "chat": "Na conversa do ajudante"
+    },
+    "activity": {
+      "rateLimited": "Pulado: o cérebro grátis está ocupado ou esgotado agora. A próxima roda normalmente."
+    }
+  },
+  "card": {
+    "created": {
+      "title": "Nova rotina: {{name}}",
+      "text": "Ela roda sozinha. Você pode pausar, ou excluir se não quiser."
+    },
+    "pause": "Pausar",
+    "undo": "Excluir",
+    "open": "Ver rotinas",
+    "paused": "Pausada",
+    "undone": "Removida",
+    "gone": "Esta rotina não existe mais"
+  }
+}

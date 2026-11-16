@@ -1,0 +1,136 @@
+{
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "Réessayer",
+    "skip": "Passer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "loading": "Chargement…"
+  },
+  "queue": {
+    "interrupted": "Cette exécution a été interrompue par un redémarrage du serveur.",
+    "interruptedHint": "Réessayez-la, ou passez-la pour continuer avec le message suivant.",
+    "routineInterrupted": "Une exécution de routine de {{agent}} a été interrompue par un redémarrage du serveur."
+  },
+  "blocks": {
+    "fallback": "Ce message contient un contenu que l'app ne peut pas afficher ({{kind}})."
+  },
+  "meta": {
+    "name": "Français",
+    "dir": "ltr",
+    "status": "unreviewed"
+  },
+  "server": {
+    "approvalNeeded": "Approbation requise",
+    "wantsToUse": "{{name}} veut : {{tool}}",
+    "interrupted": "Exécution interrompue par un redémarrage du serveur",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}} : l’exécution a échoué",
+    "unknownError": "erreur inconnue",
+    "devicePaired": "Un appareil a été associé",
+    "devicePairedBody": "{{what}} peut désormais se connecter à votre compte."
+  },
+  "provider": {
+    "fakeName": "Factice (tests)",
+    "hint": {
+      "notOnPath": "{{cli}} introuvable dans le PATH",
+      "notFound": "{{cli}} introuvable",
+      "versionFailed": "`{{cmd}} --version` a échoué",
+      "runToSignIn": "lancez `{{cmd}}` une fois pour vous connecter",
+      "runToSignInOrKey": "lancez `{{cmd}}` une fois pour vous connecter (ou définissez {{env}} dans le coffre)",
+      "runToAddProvider": "lancez `{{cmd}}` une fois pour ajouter un fournisseur",
+      "checkedFirstTurn": "la connexion est vérifiée au premier tour",
+      "notAnswering": "{{name}} ({{url}}) ne répond pas",
+      "turnSignIn": "La connexion n’a pas marché la dernière fois. Reconnecte-toi sur la page Cerveaux."
+    }
+  },
+  "channel": {
+    "linked": "Lié. Vous pouvez parler à {{agent}} ici.",
+    "linkInvalid": "Ce code de liaison n’est pas valide ou a expiré. Créez-en un nouveau dans PasaBot : Réglages → Canaux.",
+    "failed": "Désolé, cela n’a pas fonctionné. Les détails sont dans l’app PasaBot.",
+    "empty": "(pas de réponse)",
+    "interrupted": "Interrompu par un redémarrage. Réessayez dans l’app PasaBot.",
+    "approvalAsk": "Approbation requise : {{summary}}\nRépondez /approve {{id}} ou /deny {{id}}",
+    "approvalDevice": "Approbation requise : {{summary}}\nCelle-ci ne peut être approuvée que dans l’app PasaBot sur un appareil associé.",
+    "approvalNone": "Aucune approbation en attente avec cet identifiant dans cette discussion.",
+    "approvalOwnerOnly": "Seul le propriétaire lié peut répondre aux approbations.",
+    "approvalDeviceOnly": "Cette approbation ne peut recevoir de réponse que dans l’app PasaBot sur un appareil associé.",
+    "approved": "{{id}} approuvé.",
+    "denied": "{{id}} refusé."
+  },
+  "card": {
+    "action": {
+      "open": "Ouvrir",
+      "dismiss": "Masquer",
+      "signIn": "Se reconnecter",
+      "retry": "Réessayer",
+      "otherBrain": "Utiliser un autre cerveau",
+      "wait": "Continuer d’attendre",
+      "notNow": "Pas maintenant",
+      "takeOver": "Prendre la main",
+      "imDone": "C’est fait, continue",
+      "ok": "D’accord",
+      "remind": "Me le rappeler"
+    },
+    "signIn": {
+      "title": "Le cerveau de {{name}} a besoin que vous vous connectiez",
+      "text": "{{brain}} est déconnecté, donc {{name}} ne peut pas encore répondre. Connectez-vous une fois, puis réessayez."
+    },
+    "failed": {
+      "title": "{{name}} n’a pas pu finir cette réponse",
+      "offline": "Impossible de joindre son cerveau. Vérifiez internet, puis réessayez.",
+      "timeout": "C’était trop long, alors il s’est arrêté.",
+      "auth": "Son cerveau est déconnecté.",
+      "ratelimit": "Son cerveau a atteint sa limite d’usage pour l’instant.",
+      "quota": "Son cerveau n’a plus d’usage sur cette offre.",
+      "contextoverflow": "La discussion est devenue trop longue pour son cerveau.",
+      "other": "Son cerveau s’est arrêté avant la fin de la réponse."
+    },
+    "limit": {
+      "title": "{{name}} est en pause jusqu’à {{untilAt}}",
+      "text": "Son cerveau a atteint sa limite. Votre message attend et partira tout seul.",
+      "offline": "Son cerveau est injoignable pour le moment. Votre message attend et partira tout seul.",
+      "remindNow": "{{name}} peut continuer maintenant",
+      "offlineTitle": "{{name}} est en pause jusqu’à {{untilAt}}"
+    },
+    "settled": {
+      "retrying": "Nouvel essai en cours",
+      "signedIn": "Reconnecté",
+      "resumed": "Fonctionne à nouveau",
+      "remind": "Je vous le rappelle à {{untilAt}}"
+    },
+    "member": {
+      "failed": "{{name}} n’a pas pu finir cette réponse.",
+      "approvalWaiting": "{{name}} attend l’accord du propriétaire.",
+      "approvalApproved": "{{name}} a reçu l’accord.",
+      "approvalRefused": "{{name}} n’a pas été autorisé."
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}} a besoin que vous vous reconnectiez",
+        "text": "L’esprit de {{name}} est déconnecté, il ne peut donc pas encore répondre. Reconnectez-vous une fois, puis renvoyez votre message."
+      },
+      "action": {
+        "otherBrain": "Utiliser un autre esprit"
+      },
+      "limit": {
+        "title": "{{name}} a utilisé tous ses tours pour le moment",
+        "text": "Il pourra continuer à {{untilAt}}. Votre message attend et partira tout seul.",
+        "offlineTitle": "{{name}} ne joint pas son esprit pour le moment",
+        "offline": "Il réessaie à {{untilAt}}. Votre message attend et partira tout seul."
+      },
+      "failed": {
+        "offline": "Il n’a pas pu joindre son esprit. Vérifiez internet, puis réessayez.",
+        "auth": "Son esprit est déconnecté.",
+        "ratelimit": "Il a utilisé tous ses tours pour le moment.",
+        "quota": "Il n’a plus de tours avec cette offre.",
+        "contextoverflow": "La discussion est devenue trop longue pour son esprit.",
+        "other": "Il s’est arrêté avant la fin de la réponse."
+      }
+    }
+  }
+}

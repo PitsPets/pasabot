@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "ボットトークン",
+    "botTokenHint": "Telegramで作成したボットから取得できます。ボールトに保存され、再表示されません。",
+    "apiBase": "Bot APIアドレス",
+    "apiBaseHint": "独自のBot APIサーバーを使っている場合を除き、そのままにしてください。"
+  },
+  "link": {
+    "howTo": "ボットとのダイレクトチャットを開いて送信してください：/link {{code}}",
+    "dmOnly": "連携コードはボットとのダイレクトチャットでのみ使えます。"
+  },
+  "status": {
+    "connected": "接続済み",
+    "reconnecting": "再接続中…",
+    "auth_failed": "ボットトークンが拒否されました",
+    "stopped": "停止中"
+  }
+}

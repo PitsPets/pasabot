@@ -1,0 +1,102 @@
+{
+  "nav": "Machines",
+  "settings": "Machines",
+  "page": {
+    "title": "Linked machines",
+    "intro": "Your other PasaBot machines. Pick one to see its agents and chat with them; the work runs on that machine under its own rules.",
+    "empty": "No linked machines yet. Link one in Settings → Machines.",
+    "agents": "Agents on {{name}}",
+    "noAgents": "No agents there yet.",
+    "back": "All machines",
+    "open": "Open",
+    "refresh": "Refresh"
+  },
+  "chat": {
+    "title": "{{agent}} on {{machine}}",
+    "placeholder": "Message {{agent}}",
+    "send": "Send",
+    "waiting": "Waiting for {{agent}}…",
+    "me": "You",
+    "empty": "Say hello. Your message runs on {{machine}}, as a request from a linked machine."
+  },
+  "state": {
+    "active": "Linked",
+    "awaiting": "Waiting for the other owner",
+    "requested": "Wants to link",
+    "revoked": "Unlinked"
+  },
+  "grant": {
+    "label": "What it may do on this machine",
+    "view": "See",
+    "chat": "Chat",
+    "manage": "Manage",
+    "hint": "See: machine name and agent names. Chat: also chat with your agents here. Manage: also routines and workflows, within this machine's own rules. It never becomes an owner here."
+  },
+  "status": {
+    "this": "This machine: {{name}}",
+    "fingerprint": "Key fingerprint {{fp}}",
+    "unavailable": "Linking is not available yet",
+    "transport": "Link transport: {{transport}} · {{state}}",
+    "transportRunning": "running",
+    "transportDown": "starting again",
+    "transportIdle": "idle until a machine is linked"
+  },
+  "code": {
+    "title": "Link a machine",
+    "intro": "Show a one-time code here, then enter it on the other machine. It works once and expires in 10 minutes.",
+    "make": "Show a link code",
+    "expires": "Expires at {{time}}",
+    "copy": "Copy code",
+    "copied": "Copied",
+    "qr": "Link code as a QR picture"
+  },
+  "join": {
+    "title": "Enter a code from another machine",
+    "code": "Link code",
+    "submit": "Link",
+    "done": "Sent. The other owner confirms on their machine."
+  },
+  "reauth": {
+    "password": "Your password (to confirm it is you)"
+  },
+  "peers": {
+    "title": "Linked machines",
+    "empty": "None yet.",
+    "confirm": "Confirm link",
+    "check": "Check",
+    "unlink": "Unlink",
+    "unlinkConfirm": "Unlink {{name}}? It loses access at once.",
+    "fp": "Key {{fp}}"
+  },
+  "intros": {
+    "title": "Introductions",
+    "offer": "{{via}} offers to introduce {{name}} (key {{fp}}). Nothing is linked until you link it with a code from that machine.",
+    "accept": "Noted",
+    "dismiss": "Dismiss"
+  },
+  "error": "Something went wrong: {{message}}",
+  "tools": {
+    "link_machines": "List linked machines",
+    "link_message": "Message an agent on a linked machine"
+  },
+  "server": {
+    "introTitle": "{{peer}} offers to introduce {{name}}",
+    "introBody": "Nothing is linked until you link it yourself with a code from that machine.",
+    "linkTitle": "{{name}} wants to link with this machine",
+    "linkBody": "Confirm it in Settings → Machines and pick what it may do here."
+  },
+  "find": {
+    "navHint": "Other machines linked to this one",
+    "navKeywords": "machines, computers, servers, link, remote"
+  },
+  "plain": {
+    "page": {
+      "intro": "Your other computers with PasaBot. Pick one to see its helpers and chat with them; the work runs on that computer under its own rules.",
+      "agents": "Helpers on {{name}}",
+      "noAgents": "No helpers there yet."
+    },
+    "grant": {
+      "hint": "See: the computer’s name and its helpers’ names. Chat: also chat with your helpers here. Manage: also routines and workflows, within this computer’s own rules. It never becomes an owner here."
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@pasabot/desktop",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": {
+    "pasabot-desktop": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "build:macos": "bash macos/build-app.sh",
+    "smoke:macos": "bash macos/smoke.sh"
+  },
+  "dependencies": {
+    "@pasabot/safe-net": "workspace:*"
+  },
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  }
+}

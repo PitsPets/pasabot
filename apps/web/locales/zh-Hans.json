@@ -1,0 +1,794 @@
+{
+  "app": {
+    "skip": "跳到主要内容",
+    "tagline": "Sabihin mo lang. Ako na bahala.",
+    "taglineTranslation": "只管开口，剩下的交给我。"
+  },
+  "lang": {
+    "label": "语言",
+    "unreviewed": "未经审校的翻译",
+    "unreviewedNote": "{{language}}为机器翻译，尚未经母语者审校。",
+    "helpImprove": "帮助我们改进"
+  },
+  "conn": {
+    "connecting": "正在连接…",
+    "live": "在线",
+    "reconnecting": "正在重新连接…",
+    "offline": "离线",
+    "banner": "正在重新连接…你的消息很安全。",
+    "bannerLong": "无法连接到这台电脑上的 PasaBot。",
+    "tryNow": "立即重试"
+  },
+  "counts": {
+    "needs_other": "{{count}} 个需要你",
+    "working_other": "{{count}} 个工作中",
+    "idle_other": "{{count}} 个空闲"
+  },
+  "errors": {
+    "generic": "出了点问题，请重试。",
+    "rateLimited": "尝试次数过多，请等一分钟后再试。"
+  },
+  "setup": {
+    "title": "认领你的 PasaBot",
+    "intro": "设置一个名字和密码，以后用它们打开 PasaBot。",
+    "token": "设置码",
+    "tokenHint": "它在 PasaBot 启动时显示的设置链接里。要获取新的，请在那台电脑上打开 PasaBot 应用，或在那里运行 `pasabot setup-link`。",
+    "name": "你的名字",
+    "password": "密码",
+    "passwordHint": "至少 8 个字符。之后可以添加 passkey。",
+    "confirm": "再次输入密码",
+    "submit": "创建所有者账号",
+    "tooShort": "请至少使用 8 个字符。",
+    "mismatch": "两次输入的密码不一致。",
+    "badToken": "这个设置码已用过或已过期。要获取新的，请点击任务栏或菜单栏上的 PasaBot 图标并选择“打开 PasaBot”（在 Linux 上请从应用菜单再次启动 PasaBot），或在那台电脑上运行 `pasabot setup-link`。",
+    "gettingReady": "正在准备…",
+    "reopen": "请关闭 PasaBot 后重新打开。",
+    "ownerExists": "此服务器已有所有者，请直接登录。",
+    "bossNote": "这样你就是这个 PasaBot 的主人。",
+    "trustLine": "遇到危险操作（比如删除数据）前，你的智能体会先问你。",
+    "trustHow": "它如何询问你"
+  },
+  "login": {
+    "title": "欢迎回来",
+    "intro": "登录你的 PasaBot。",
+    "password": "密码",
+    "submit": "登录",
+    "passkey": "使用 passkey 登录",
+    "failed": "密码不正确。",
+    "passkeyCancelled": "passkey 验证未完成。",
+    "pairInstead": "改用配对码配对此设备",
+    "asPerson": "正在以 {{name}} 的身份登录。",
+    "notYou": "不是你？",
+    "otherWays": "其他登录方式"
+  },
+  "pair": {
+    "title": "配对此设备",
+    "intro": "在已登录的设备上打开“设备”，点按“配对手机”，然后扫描二维码，或在此输入配对码。",
+    "code": "配对码",
+    "deviceName": "此设备的名称",
+    "submit": "配对",
+    "waitingTitle": "即将完成",
+    "waiting": "请在你的另一块屏幕上确认此设备。",
+    "fingerprint": "服务器指纹",
+    "checkOther": "请确认另一块屏幕显示的指纹与此处一致，然后在那边点按“确认”。",
+    "rejected": "配对已被拒绝。",
+    "expired": "配对已过期，请重新获取配对码。",
+    "invalid": "配对码错误或已过期。",
+    "backToLogin": "返回登录"
+  },
+  "devices": {
+    "title": "设备与登录",
+    "pairTitle": "配对手机",
+    "pairIntro": "用手机相机扫描二维码，手机上会打开 PasaBot，然后在这里确认该手机。",
+    "newCode": "配对手机",
+    "qrAlt": "用于配对设备的二维码",
+    "codeLabel": "或输入此配对码",
+    "expires_other": "{{count}} 秒后过期",
+    "claims": "等待你确认",
+    "confirm": "确认",
+    "reject": "拒绝",
+    "list": "已配对的设备",
+    "none": "还没有已配对的设备。",
+    "revoked": "已移除",
+    "revoke": "移除",
+    "passkeys": "Passkey",
+    "passkeysIntro": "使用指纹、面容或设备 PIN 登录并确认有风险的操作。",
+    "passkeyN": "Passkey {{n}} · 添加于 {{date}}",
+    "remove": "移除",
+    "addPasskey": "添加 passkey",
+    "passkeyAdded": "已添加 passkey。",
+    "reauthPair": "配对新手机",
+    "reauthConfirm": "允许新设备进入",
+    "reauthPasskey": "添加通行密钥",
+    "reauthNeeded": "未完成：需要再次输入你的密码或使用通行密钥。"
+  },
+  "agents": {
+    "add": "+ 添加",
+    "newTitle": "新建 agent",
+    "editTitle": "编辑 {{name}}",
+    "name": "名称",
+    "instructions": "职责",
+    "instructionsHint": "用平实的话写：它的任务、要检查什么、何时先问你。",
+    "provider": "大脑",
+    "notInstalled": "未安装",
+    "notReachable": "无法连接",
+    "model": "模型",
+    "trust": "信任级别",
+    "trustLevels": {
+      "guarded": "谨慎：文件夹之外的任何操作都先询问",
+      "standard": "标准：对外部或有风险的操作先询问",
+      "trusted": "信任：仅在危险操作前询问"
+    },
+    "trustHint": "如果受信任的 agent 的大脑自带 shell，它能做这台电脑的用户能做的任何事。",
+    "save": "保存",
+    "avatar": "形象",
+    "avatarAlt": "{{name}} 的头像",
+    "shuffle": "换一个",
+    "avatarHint": "换到满意为止。只有点按“保存”后才会生效。",
+    "create": "创建 agent",
+    "unknownProvider": "此服务器上没有该大脑。",
+    "empty": "还没有 agent。",
+    "emptyTitle": "组建你的团队",
+    "emptyIntro": "添加你的第一个 agent，为它起个名字，指定职责和大脑。",
+    "emptyCta": "添加第一个 agent",
+    "trustWarning": "新 agent 默认为“信任”级别。创建后，它会直接完成工作，不会每次都询问你，即使是在对外发布、使用网络或安装工具这类操作上。遇到危险操作（读取密钥、删除数据、使用你的电脑）时它仍会先询问，而通过 Telegram 或其他聊天应用发给它的消息，权限最高只会按“标准”处理。若想让它更常询问，请为该 agent 选择“标准”或“谨慎”，或在“设置”中更改新 agent 的默认级别。",
+    "askShellWeb": "执行终端命令和原始网络请求前先询问",
+    "askShellWebHint": "开启后，该 agent 的大脑每次执行 shell 命令和原始网络请求前都会先询问你。“信任”级别的 agent 默认关闭，“标准”和“谨慎”默认开启。",
+    "needsSignIn": "需要登录",
+    "setUpBrains": "设置或修复大脑",
+    "backup": "备用大脑",
+    "backupNone": "无",
+    "backupHint": "主大脑达到上限或无法连接时使用。智能体会保留对话。",
+    "brainReady": "就绪",
+    "fixInstall": "安装",
+    "fixSignIn": "登录",
+    "fixCheck": "再次检查",
+    "modelAuto": "自动",
+    "modelAutoHint": "由大脑选择它常用的模型",
+    "modelHints": {
+      "fast": "快速",
+      "balanced": "适合日常工作",
+      "smart": "聪明",
+      "smartest": "最聪明",
+      "free": "免费"
+    },
+    "modelsRefresh": "刷新模型列表",
+    "modelsLoading": "正在加载模型…",
+    "modelsError": "无法加载这个大脑的模型。“自动”仍然可用，或者点“刷新”。",
+    "modelsCurated": "这个列表可能没有列出这个大脑的全部模型。",
+    "trustShort": "这个智能体不会每次都问你就开始工作。遇到危险的事，比如删除数据，它仍会先问你。",
+    "helpWith": "它应该帮你做什么？",
+    "helpPlaceholder": "例如：帮我规划三餐，买任何东西之前先问我。",
+    "helpIdeas": {
+      "week": "规划我的一周",
+      "shopping": "购物清单",
+      "messages": "写消息",
+      "questions": "回答问题"
+    },
+    "helpFill": {
+      "week": "帮我规划这一周，并提醒我接下来要做的事。",
+      "shopping": "帮我管理购物清单，买任何东西之前先问我。",
+      "messages": "帮我写消息和回复消息。发送之前先给我看。",
+      "questions": "用简单的话回答我的问题。"
+    },
+    "moreOptions": "更多选项"
+  },
+  "nav": {
+    "sidebar": "agent 与聊天",
+    "yourTeam": "你的团队",
+    "channels": "频道",
+    "devices": "设备",
+    "settings": "设置",
+    "chats": "聊天",
+    "new": "新建",
+    "newAgent": "新建助手",
+    "newGroup": "新建群聊",
+    "pinned": "已固定",
+    "searchChats": "搜索聊天",
+    "moveUp": "上移",
+    "moveDown": "下移",
+    "unpin": "从侧边栏移除",
+    "pinMenu": "{{feature}} 的选项",
+    "openSettings": "打开设置",
+    "teamTalk": "团队对话",
+    "teamTalkHint": "你的助手之间的对话",
+    "workingFor": "正在为 {{name}} 工作",
+    "newRequest": "新请求"
+  },
+  "status": {
+    "working": "忙碌中",
+    "waiting": "需要你确认",
+    "idle": "就绪",
+    "needsSignIn": "需要登录"
+  },
+  "details": {
+    "label": "Agent 详情",
+    "hide": "收起",
+    "show": "详情",
+    "since": "自 {{date}}",
+    "does": "{{name}} 的职责",
+    "edit": "编辑",
+    "noInstructions": "还没有指令。",
+    "brain": "大脑",
+    "main": "主用",
+    "backup": "备用",
+    "none": "无",
+    "trust": "信任级别",
+    "change": "更改",
+    "about": "关于{{name}}",
+    "thinksWith": "使用的大脑",
+    "more": "更多",
+    "instructions": "完整说明",
+    "backupBrains": "备用大脑",
+    "noSummary": "还没有关于这个助手的介绍。"
+  },
+  "chat": {
+    "notFound": "找不到此聊天。",
+    "members_other": "{{count}} 个 agent",
+    "logLabel": "与 {{name}} 的消息",
+    "empty": "跟 {{name}} 打个招呼吧。",
+    "selectTitle": "选择聊天",
+    "select": "请在左侧选择一个 agent 或频道。",
+    "someone": "智能体",
+    "thinking": "{{name}} 正在思考…",
+    "replyFailed": "此回复未能完成。",
+    "activity_other": "使用了 {{count}} 个工具：{{names}}",
+    "seconds_other": "{{count}} 秒",
+    "partialLabel": "部分回复：以下是中断前已写出的全部内容。",
+    "interruptedHandled": "已处理：此轮对话已重试或跳过。",
+    "steered": "已补充到 {{name}} 当前的任务中。",
+    "queueFull": "{{name}} 的队列已满，请稍后再试。",
+    "mode": {
+      "steer": "加入正在做的事",
+      "queue": "等它做完再发送",
+      "interrupt": "停下它并发送这条",
+      "more": "其他发送方式"
+    },
+    "placeholder": "给 {{name}} 发消息…",
+    "send": "发送",
+    "queued_other": "{{count}} 条排队中",
+    "failedCount_other": "{{count}} 条失败",
+    "queueHint": "{{name}} 接下来会读取这些消息",
+    "queueItem": "消息 {{n}}",
+    "qstate": {
+      "queued": "等待中",
+      "held": "暂缓，待额度重置后发送",
+      "failed": "失败",
+      "interrupted": "已中断"
+    },
+    "readOnlyNote": "你可以查看此聊天，但不能发言。如有需要，请联系所有者。",
+    "readOnlyLabel": "只读",
+    "more": "更多",
+    "searchThis": "在此聊天中搜索",
+    "editAgent": "编辑助手",
+    "copy": "复制",
+    "copied": "已复制",
+    "paused": {
+      "since": "一切都已暂停（自 {{when}} 起）。",
+      "now": "一切都已暂停。",
+      "hint": "重新开始后才能发送。",
+      "hintMember": "只有所有者能重新开始。",
+      "start": "重新开始"
+    },
+    "editNamed": "编辑 {{name}}",
+    "startersLabel": "开头的点子",
+    "startersTitle": "不知道从哪儿开始？点一个试试：",
+    "starters": {
+      "can": "你能帮我做什么？",
+      "week": "帮我规划这一周",
+      "message": "帮我写一条消息",
+      "dinner": "晚饭做什么好？"
+    },
+    "model": {
+      "thinksWith": "使用的大脑",
+      "auto": "自动",
+      "change": "{{name}}使用{{brain}}，{{model}}。更改",
+      "readOnly": "{{name}}使用{{brain}}，{{model}}",
+      "title": "{{name}}该怎么思考？",
+      "brain": "大脑",
+      "models": "模型",
+      "best": "适合大多数人",
+      "autoHint": "为每条消息挑选合适的",
+      "hints": {
+        "smartest": "最聪明，适合难的工作。较慢，更耗套餐",
+        "smart": "聪明又细心",
+        "balanced": "又快又聪明，适合大多数事情",
+        "fast": "最快，适合简单问题",
+        "free": "免费使用"
+      },
+      "own": "这个大脑会自己选择模型",
+      "more": "设置另一个大脑",
+      "error": "无法加载模型列表。",
+      "retry": "重试"
+    },
+    "toolsMore": "另外 {{n}} 项",
+    "tools": {
+      "team": "查看了团队",
+      "askHelper": "请了一位助手帮忙",
+      "noteHelper": "给助手留了言",
+      "checkHelper": "问了问助手的进度",
+      "stopHelper": "停止了助手的任务",
+      "noted": "记下了你的回答",
+      "plan": "展示了计划",
+      "makeTeam": "组建了你的团队",
+      "memoryRead": "查了记忆",
+      "memorySave": "存进了记忆",
+      "memoryForget": "从记忆中删除",
+      "searchChats": "搜索了以前的对话",
+      "browser": "用了浏览器",
+      "computer": "用了电脑",
+      "webSearch": "在网上搜索",
+      "webPage": "打开了网页",
+      "fileRead": "读了一个文件",
+      "fileChange": "改了一个文件",
+      "fileSearch": "翻查了文件",
+      "command": "运行了一条命令",
+      "todo": "列了待办清单",
+      "dataRead": "读了数据表",
+      "dataChange": "改了数据表",
+      "inbox": "查看了收件箱",
+      "machines": "和另一台电脑沟通",
+      "askYou": "问了你一个问题",
+      "card": "做了一张卡片",
+      "routine": "处理了一个例行任务",
+      "workflow": "处理了一个工作流",
+      "site": "处理了一个网站",
+      "shop": "逛了商店",
+      "shopBuy": "准备了一笔购买",
+      "skills": "处理了技能",
+      "findTool": "找了一个工具",
+      "connections": "检查了连接",
+      "secrets": "询问了保存的密钥",
+      "programs": "查看了正在运行的程序",
+      "permission": "请求了许可",
+      "other": "用了一个工具"
+    },
+    "handoff": {
+      "asked": "{{from}} 请 {{to}} 帮忙",
+      "noted": "{{from}} 给 {{to}} 留了言",
+      "whatAsked": "请求的内容",
+      "reply": "{{name}} 的回复",
+      "waiting": "正在等 {{name}}…",
+      "failed": "这次没有完成。",
+      "later": "{{name}} 的回复会在之后的消息里到。",
+      "open": "打开他们的对话",
+      "openThread": "在与 {{name}} 的聊天中打开"
+    },
+    "teamNote": "{{from}} 和 {{to}} 在这里对话。你可以一起看，也可以发言。",
+    "stopAll": "立即停止所有助手",
+    "thread": {
+      "from": "来自 {{name}}",
+      "label": "{{name}} 的请求",
+      "summary": "{{from}} 提问 · {{to}} 回答",
+      "working": "{{name}} 正在处理…",
+      "show": "显示整段对话",
+      "hide": "收起对话",
+      "reply": "在此回复",
+      "replying": "正在回复 {{name}} 的请求",
+      "stopReply": "改为普通消息"
+    },
+    "report": {
+      "workingOne": "{{name}} 正在处理…",
+      "workingMany": "{{names}} 正在处理…",
+      "reading": "{{name}} 正在整理回答…",
+      "fromOne": "{{name}} 的回答",
+      "fromMany": "{{names}} 的回答",
+      "fullOne": "显示完整回答",
+      "fullMany": "显示全部回答",
+      "finished": "{{name}} 已完成：",
+      "failed": "{{name}} 没能完成。",
+      "stoppedOne": "{{name}} 在完成前被停止了。",
+      "stillOne": "{{name}} 还在处理。",
+      "stillMany": "{{names}} 还在处理。",
+      "openFull": "打开完整回答",
+      "openThread": "在与 {{name}} 的聊天中打开",
+      "stopped": "已在此停止：助手之间来回传递的次数太多了。如果想让它们继续，请再问一次。"
+    }
+  },
+  "approval": {
+    "wants": "{{name}} 想要：{{tool}}",
+    "waiting_other": "{{count}} 项决定待处理",
+    "review": "查看",
+    "asking": "{{name}} 正在先行询问",
+    "tier0": "只是查看",
+    "tier1": "只在它自己的文件夹里",
+    "tier2": "需要你同意",
+    "tier3": "有风险",
+    "state": {
+      "pending": "等待你处理",
+      "approved": "已批准",
+      "denied": "已拒绝",
+      "expired": "已过期：视为拒绝"
+    },
+    "approve": "批准",
+    "deny": "拒绝",
+    "reauthNote": "执行前需要你验证身份。",
+    "reauthTitle": "验证身份",
+    "reauthIntro": "这是有风险的一步：{{summary}}。请输入密码，确认是你本人。",
+    "reauthSubmit": "验证并批准",
+    "reauthPasskey": "使用 passkey",
+    "reauthFailed": "验证不匹配，请重试。",
+    "screenBusy": "请稍等，有个助手刚刚操作了屏幕",
+    "workflow": "工作流“{{name}}”询问：{{message}}",
+    "askClass": {
+      "money": "涉及金钱：始终询问",
+      "outbound-message": "发给他人的消息：始终询问",
+      "delete": "删除：始终询问",
+      "publish": "发布：始终询问"
+    },
+    "fact": {
+      "items": "项目",
+      "merchant": "商家",
+      "total": "合计",
+      "paymentMethod": "支付方式",
+      "recipients": "收件人",
+      "channel": "频道",
+      "subject": "主题",
+      "text": "完整内容",
+      "target": "对象",
+      "where": "位置",
+      "count": "数量",
+      "tool": "工具",
+      "arguments": "完整请求",
+      "cc": "抄送",
+      "bcc": "密送",
+      "attachments": "附件",
+      "server": "运行",
+      "request": "请求内容"
+    },
+    "notStated": "未说明",
+    "undeclared": "助手没说这会付款或发送任何东西，但这个页面看起来会。",
+    "unshown": "此摘要未显示更多详情：{{names}}。批准前请阅读下方的完整请求。",
+    "askNote": "这类操作总会问你，不管助手被设成多常询问。只有你能在这个应用里批准。",
+    "reauthContinue": "确认并继续",
+    "wantsTo": "{{name}} 想要{{verb}}",
+    "verb": {
+      "read": "读取一个文件",
+      "write": "保存一个文件",
+      "edit": "修改一个文件",
+      "command": "在你的电脑上运行一条命令",
+      "page": "打开一个网页",
+      "webSearch": "搜索网络",
+      "findFiles": "查找文件",
+      "searchFiles": "在文件里搜索",
+      "notebook": "修改一个笔记本",
+      "task": "把任务交给一个助手",
+      "other": "使用一个工具"
+    },
+    "target": {
+      "file": "文件：{{v}}",
+      "command": "命令：{{v}}",
+      "page": "网页：{{v}}",
+      "search": "查找：{{v}}",
+      "tool": "工具：{{v}}"
+    },
+    "tierAdv0": "级别 0 · 只读",
+    "tierAdv1": "级别 1 · 自己的文件夹",
+    "tierAdv2": "级别 2 · 需要你同意",
+    "tierAdv3": "级别 3 · 有风险",
+    "reauthIntroPasskey": "这是有风险的一步：{{summary}}。请输入密码或使用通行密钥，确认是你本人。",
+    "unshownPlain": "这个请求还有这里没显示的内容：{{names}}。批准前请在设置里打开“技术用语”查看全部。",
+    "unshownShown": "摘要没有涵盖所有内容（{{names}}）。批准前请阅读请求内容。"
+  },
+  "onboarding": {
+    "next": "下一步",
+    "step": "第 {{n}} 步，共 {{total}} 步",
+    "brainTitle": "选择一个大脑",
+    "brainIntro": "大脑是你的智能体用来思考的 AI。已为你选好最合适的一个。",
+    "working": "正在准备你的智能体…",
+    "starterName": "免费入门",
+    "starterSub": "无需密钥、无需登录、无需付费",
+    "starterBody": "PasaBot 会下载一个免费的小应用，让你的智能体能够思考。大约需要一分钟。",
+    "details": "详细信息",
+    "starterWhat": "内容：{{what}}",
+    "starterWhere": "位置：{{where}}（仅限你的用户，无需管理员权限）",
+    "starterFrom": "来源：{{from}}",
+    "starterCheck": "写入任何内容之前，会先对照已公布的 SHA-256 校验下载文件。",
+    "starterGo": "下载并继续",
+    "starterWorking": "正在下载… 大约一分钟",
+    "noBrain": "这台电脑上还没有可用的大脑。请先设置一个，再回到这里。",
+    "setUpBrain": "设置大脑",
+    "otherBrain": "使用其他大脑",
+    "defaultName": "Tala",
+    "meetTitle": "认识你的第一个智能体",
+    "meetIntro": "给它起个你喜欢的名字。以后都可以再改。",
+    "meetSafe": "遇到危险的事，比如删除数据，{{name}} 会先问你。",
+    "start": "开始吧",
+    "localSub": "在这台电脑上。私密，离线也能用",
+    "starterFailedPlain": "免费入门版没有装好。请重试，或换一个大脑。"
+  },
+  "settings": {
+    "title": "设置",
+    "language": "语言",
+    "languageHint": "将切换此应用的所有界面。",
+    "modules": "模块",
+    "account": "账号",
+    "signOut": "退出登录",
+    "newAgents": "新 agent",
+    "newAgentsHint": "新 agent 的初始信任级别。你仍可为每个 agent 单独修改。",
+    "alwaysAsks": "始终询问",
+    "alwaysAsksIntro": "即使是受信任的 agent，执行以下操作前也每次都会先询问你。这些操作没有“始终允许”，聊天频道或自动化也无法代为批准。",
+    "alwaysAsksMoney": "金钱：购买、付款、结账、下单、订阅、使用支付信息、转账或发送加密货币。",
+    "alwaysAsksMessage": "发给他人的消息：向你自己已关联聊天之外的任何人发送邮件、聊天消息、私信或帖子。agent 在你自己的聊天中回复你时不会询问。",
+    "alwaysAsksDelete": "在 agent 自己的工作区之外删除：其他 agent 的文件或文件夹、这台电脑上的其他位置、其他 agent 的或共享的数据表，以及外部工具或连接器标记为破坏性的任何操作。在 agent 自己的工作区内删除则不会询问。",
+    "alwaysAsksFixed": "始终开启",
+    "alwaysAsksAdd": "你也可以让以下操作始终询问：",
+    "alwaysAsksClass": {
+      "delete": "删除文件或数据",
+      "publish": "发布（网站、帖子）"
+    },
+    "alwaysAsksLimit": "获得终端权限的 agent 可以做终端能做的任何事；“始终询问”卡片只覆盖 PasaBot 能看到的工具。shell 命令或原始网络请求可能不经卡片就发送消息或付款。若要先询问，请为该 agent 开启“执行终端命令和原始网络请求前先询问”。",
+    "search": "搜索设置",
+    "back": "返回聊天",
+    "intro": "聊天以外的一切都在这里。把每天用的功能固定到侧边栏。",
+    "pin": "在侧边栏显示",
+    "pinAria": "在侧边栏显示{{feature}}",
+    "hide": "我不用这个",
+    "hideTitle": "隐藏{{feature}}?",
+    "hideBody": "它会从所有人的设置和侧边栏中消失。不会删除任何内容。可在 设置 › 高级 中重新打开。",
+    "hideConfirm": "隐藏{{feature}}",
+    "showAgain": "重新显示",
+    "hiddenNote": "你隐藏了此功能。它仍在运行，只是不出现在列表中。",
+    "notUsing": "你不用的功能",
+    "notUsingEmpty": "你在使用所有功能。不需要时可在功能页面中隐藏。",
+    "groupEmpty": "这里暂时没有内容。隐藏的功能在“高级”中。",
+    "searchEmpty": "没有与“{{q}}”匹配的内容。试试更简单的词。",
+    "resetSidebar": "重置侧边栏",
+    "resetSidebarHint": "取消侧边栏上的所有固定项。其他内容不变。",
+    "pinnedCount": "已固定：{{count}}",
+    "saveFailed": "无法保存。请重试。",
+    "tidied": "我们整理了一下。现在一切都在设置里——把常用的固定到侧边栏。",
+    "gotIt": "知道了",
+    "where": "当前位置",
+    "advancedSwitch": "技术用语",
+    "advancedHint": "显示“信任等级”“MCP 服务器”等名称，以及技术设置页面。",
+    "moreOptions": "更多选项",
+    "switchOn": "开",
+    "switchOff": "关",
+    "sections": {
+      "everyday": "日常",
+      "helpers": "助手可以用的",
+      "own": "自动运行"
+    },
+    "technicalOnly": "用于技术设置——打开“{{switch}}”即可看到",
+    "technicalOnlyPage": "此页面用于技术设置——打开“{{switch}}”即可看到。"
+  },
+  "offline": {
+    "title": "无法连接 PasaBot",
+    "body": "PasaBot 目前无法连接到你的服务器。你的聊天安全保存在服务器上，重新连接后即可恢复。",
+    "retry": "重试"
+  },
+  "decisions": {
+    "title": "待处理的决定",
+    "intro": "所有等你处理的事项，来自每个聊天、工作流和模块。",
+    "showInChat": "在聊天中显示",
+    "openChat": "打开聊天",
+    "open": "打开",
+    "ownerOnly": "只有所有者能做出这些决定，你可以在这里查看。"
+  },
+  "roles": {
+    "ownerOnlyPage": "只有所有者可以使用此页面。",
+    "ownerOnlyBack": "返回你的聊天"
+  },
+  "account": {
+    "menu": "账户",
+    "look": "外观",
+    "lookAuto": "自动",
+    "lookLight": "浅色",
+    "lookDark": "深色",
+    "thisDevice": "此设备",
+    "role": {
+      "owner": "所有者",
+      "member": "成员",
+      "guest": "访客"
+    }
+  },
+  "features": {
+    "agents": "助手",
+    "agentsHint": "编辑、添加或归档你的助手"
+  },
+  "groups": {
+    "agents": {
+      "name": "助手与大脑",
+      "hint": "你的助手和驱动它们的 AI"
+    },
+    "tools": {
+      "name": "技能与工具",
+      "hint": "你的助手可以使用的东西"
+    },
+    "automations": {
+      "name": "自动化",
+      "hint": "自动运行的事项"
+    },
+    "safety": {
+      "name": "安全与审批",
+      "hint": "需要你同意的事项"
+    },
+    "spending": {
+      "name": "支出",
+      "hint": "限额和用量"
+    },
+    "people": {
+      "name": "成员与设备",
+      "hint": "谁可以在哪里使用 PasaBot"
+    },
+    "machines": {
+      "name": "机器",
+      "hint": "与这台电脑相连的其他电脑"
+    },
+    "shopping": {
+      "name": "购物",
+      "hint": "商店、购物车和价格"
+    },
+    "inbox": {
+      "name": "收件箱与邮件",
+      "hint": "你的助手替你阅读的邮件"
+    },
+    "memory": {
+      "name": "记忆与数据",
+      "hint": "你的助手记住和保存的内容"
+    },
+    "look": {
+      "name": "语言与外观",
+      "hint": "语言、主题和语音"
+    },
+    "advanced": {
+      "name": "高级",
+      "hint": "给爱折腾的人"
+    }
+  },
+  "plain": {
+    "agents": {
+      "trust": "多久问你一次",
+      "trustLevels": {
+        "guarded": "在自己文件夹以外做任何事前都问",
+        "standard": "有风险的事前会问",
+        "trusted": "只在危险的事前问"
+      },
+      "trustHint": "只在危险的事前问的助手，可以在这台电脑上做你能做的任何事。",
+      "askShellWeb": "运行电脑命令和直接网络请求前先问",
+      "askShellWebHint": "打开后，这个助手在电脑上运行每条命令、发出每个直接网络请求前都会先问你，这类请求可能发送你的数据或付款。对只在危险的事前问的助手，一开始是关闭的。",
+      "model": "版本",
+      "modelsRefresh": "查看新版本",
+      "modelsError": "无法加载这个大脑的版本。“自动”仍可使用，也可以再查看一次。",
+      "trustShort": "这个助手不会每次都问你就开始工作。遇到危险的事，比如删除数据，它仍会先问你。",
+      "newTitle": "新建助手",
+      "unknownProvider": "这台电脑上没有设置那个大脑。",
+      "backupHint": "主大脑到达上限或连不上时使用。你的助手会接着聊。",
+      "modelAutoHint": "由大脑选它常用的版本",
+      "modelsCurated": "这个列表可能没有列出这个大脑的所有版本。",
+      "trustWarning": "新助手从“只在危险的事前问”开始。创建后，它做事不会每次都问你，连对外发帖、上网或安装工具也一样。在危险的事（读取秘密、删除数据、使用你的电脑）之前它仍会问你；从 Telegram 或其他聊天应用传来的消息，最多只有“有风险的事前会问”。想被问得更多，请为该助手选择“有风险的事前会问”或“在自己文件夹以外做任何事前都问”，或在设置里改新助手的起点。",
+      "create": "创建助手"
+    },
+    "details": {
+      "trust": "多久问一次"
+    },
+    "settings": {
+      "newAgentsHint": "新助手开始时多久问你一次。你仍可为每个助手单独更改。",
+      "alwaysAsksLimit": "能在你的电脑上运行命令的助手，可以做那些命令能做的任何事。这些卡片只覆盖 PasaBot 看得到的操作：一条命令或一个直接网络请求可能不经卡片就发送消息或付款。想先被询问，请为该助手打开“运行电脑命令和直接网络请求前先问”。",
+      "advancedHint": "也显示技术名称和技术设置页面。",
+      "newAgents": "新助手",
+      "alwaysAsksIntro": "即使是受信任的 助手，执行以下操作前也每次都会先询问你。这些操作没有“始终允许”，聊天频道或自动化也无法代为批准。",
+      "alwaysAsksMessage": "发给他人的消息：向你自己已关联聊天之外的任何人发送邮件、聊天消息、私信或帖子。助手 在你自己的聊天中回复你时不会询问。",
+      "alwaysAsksDelete": "在 助手 自己的工作区之外删除：其他 助手 的文件或文件夹、这台电脑上的其他位置、其他 助手 的或共享的数据表，以及外部工具或连接器标记为破坏性的任何操作。在 助手 自己的工作区内删除则不会询问。"
+    },
+    "pair": {
+      "fingerprint": "安全码",
+      "checkOther": "确认另一块屏幕显示的是同一个安全码，然后在那边点“确认”。"
+    },
+    "features": {
+      "agents": "助手",
+      "agentsHint": "修改、添加或收起助手"
+    },
+    "groups": {
+      "agents": {
+        "name": "助手和大脑",
+        "hint": "你的助手和它们用来思考的 AI"
+      },
+      "inbox": {
+        "hint": "助手替你读的邮件"
+      },
+      "memory": {
+        "hint": "助手记住和保存的内容"
+      },
+      "tools": {
+        "hint": "助手能用的东西",
+        "name": "本领和工具"
+      }
+    },
+    "nav": {
+      "newAgent": "新建助手"
+    }
+  },
+  "cards": {
+    "needsOk": "需要你同意",
+    "stale": "这个已经处理过了。",
+    "failed": "没成功，请再试一次。",
+    "details": "详情",
+    "settled": {
+      "open": "待处理",
+      "done": "已完成",
+      "later": "稍后",
+      "dismissed": "已关闭",
+      "failed": "没成功"
+    },
+    "open": "打开",
+    "download": "下载",
+    "browserAlt": "助手的浏览器，实时画面",
+    "browserWait": "正在等待画面…",
+    "stillNeed": "还需要你同意的事：{{count}}",
+    "suggest": {
+      "title": "接下来可以请他们做的事",
+      "send": "试试这个",
+      "plan": {
+        "title": "安排我的一周",
+        "send": "帮我安排这一周"
+      },
+      "remind": {
+        "title": "提醒我",
+        "send": "明天 9 点提醒我交账单"
+      },
+      "write": {
+        "title": "写一条消息",
+        "send": "帮我给客户写一条简短友好的消息"
+      },
+      "find": {
+        "title": "看看团队能做什么",
+        "send": "你和团队能帮我做什么？"
+      },
+      "hint": "点一个，它会放进消息框，改好后再发送。"
+    },
+    "idea": "建议",
+    "more": "还有 {{count}} 个"
+  },
+  "system": {
+    "pageTitle": "这台电脑",
+    "pageHint": "PasaBot 对运行它的这台电脑的发现",
+    "kicker": "关于这台电脑",
+    "gotIt": "知道了",
+    "seen": "已看过",
+    "details": "详情",
+    "changeTrust": "更改新助手可以做的事",
+    "allGood": "这台电脑没有需要修复的地方。",
+    "windows-no-sandbox": {
+      "title": "这台 Windows 电脑上的助手没有安全箱",
+      "text": "在 Windows 上，PasaBot 还不能把助手限制在它自己的文件夹里，所以助手可能打开你能打开的任何文件。因此，新助手在文件夹之外做任何事之前都会先问你。只添加你信任的助手。"
+    },
+    "linux-sandbox-missing": {
+      "title": "助手还不能开始工作",
+      "text": "这台电脑缺少一个叫 bubblewrap 的小安全工具。请让管理这台电脑的人安装它，然后重新打开 PasaBot。"
+    },
+    "linux-sandbox-userns": {
+      "title": "助手还不能开始工作",
+      "text": "这个 Linux 阻止了助手运行所需的安全箱。管理这台电脑的人可以改一个设置来允许它，然后重新打开 PasaBot。"
+    },
+    "linux-sandbox-other": {
+      "title": "助手还不能开始工作",
+      "text": "助手的安全箱在这台电脑上无法启动。请让管理这台电脑的人检查一下。"
+    },
+    "vault-unavailable": {
+      "title": "保存的密钥和密码已被锁住",
+      "text": "PasaBot 这次没能打开它的保险箱，所以无法保存或使用密钥和密码。请重新打开 PasaBot。如果一直这样，请运行本页的检查。"
+    },
+    "vault-key-file": {
+      "title": "你的保险箱钥匙保存在一个文件里",
+      "text": "这台电脑没有钥匙串，所以 PasaBot 把保险箱的钥匙放在只有你的账户能打开的文件里。你自己运行的程序仍可能读取它。"
+    },
+    "data-folder-open": {
+      "title": "PasaBot 的文件夹可能对其他人开放",
+      "text": "Windows 没有让 PasaBot 把文件夹锁定给你的账户，所以这台电脑上的其他账户可能看到你的聊天和密钥。运行本页的检查了解更多。"
+    },
+    "signin-links": {
+      "title": "Codex 和 OpenCode 需要一个 Windows 设置",
+      "text": "要让助手使用你的 Codex 或 OpenCode 登录，请在 Windows 设置中打开开发者模式，然后重新打开 PasaBot。Claude 不需要这个设置。"
+    },
+    "check": {
+      "title": "检查这台电脑",
+      "text": "快速检查 PasaBot 能否在这台电脑上运行，并显示通过的项目。它使用测试文件夹，绝不使用你的数据。",
+      "notInstalled": "这个检查随已安装的 Windows 应用提供。请安装 PasaBot 后使用。",
+      "run": "检查这台电脑",
+      "started": "检查已在单独的窗口中打开。",
+      "failed": "检查没有开始。请再试一次。"
+    }
+  }
+}

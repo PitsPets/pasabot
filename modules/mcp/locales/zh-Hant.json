@@ -1,0 +1,112 @@
+{
+  "nav": "MCP 伺服器",
+  "page": {
+    "title": "MCP 伺服器",
+    "intro": "您的 agent 可使用的外部工具伺服器。新增後先測試、開啟，再選擇哪些 agent 可以使用。"
+  },
+  "loading": "載入中…",
+  "empty": "尚無 MCP 伺服器。請在此新增，或安裝 connector。",
+  "transport": {
+    "stdio": "此機器上的指令",
+    "http": "網址"
+  },
+  "level": {
+    "none": "隱藏",
+    "use": "可使用",
+    "manage": "可管理",
+    "inherit": "預設（{{level}}）"
+  },
+  "access": {
+    "title": "誰可以使用",
+    "hint": "設為隱藏的 agent 看不到此伺服器。可管理的 agent 可以重新命名或關閉它，仍須先徵求您的同意。",
+    "all": "所有 agent"
+  },
+  "server": {
+    "on": "開啟",
+    "off": "關閉",
+    "fromConnector": "來自 connector",
+    "tools_other": "{{count}} 個工具",
+    "testFailed": "測試失敗",
+    "secrets": "保險庫中的密鑰：{{names}}",
+    "test": "測試",
+    "turnOn": "開啟",
+    "turnOff": "關閉",
+    "remove": "移除",
+    "removeConfirm": "是，移除"
+  },
+  "add": {
+    "open": "新增 MCP 伺服器",
+    "title": "新增 MCP 伺服器",
+    "name": "名稱",
+    "transport": "連線方式",
+    "command": "指令",
+    "commandHint": "要啟動的程式，例如 npx 或 docker。不會透過 shell 啟動。",
+    "args": "引數",
+    "argsHint": "每行一個。",
+    "env": "設定（非機密）",
+    "envHint": "每行一個 NAME=value。",
+    "url": "位址（https://…）",
+    "secrets": "機密設定",
+    "secretHeaders": "機密標頭",
+    "secretsHint": "已存放在保險庫中。您無法在此讀回內容，agent 也永遠看不到。",
+    "secretName": "名稱",
+    "headerName": "標頭",
+    "secretValue": "值",
+    "anotherSecret": "再新增一個",
+    "save": "新增伺服器",
+    "cancel": "取消"
+  },
+  "classes": {
+    "title": "各工具的用途",
+    "hint": "付款與傳訊息給其他人，在任何信任等級下都一定會先詢問您。每個工具的類型會在列出時依名稱推測；若推測有誤，可在此修正。",
+    "default": "預設：{{class}}",
+    "money": "金錢（購買、付款）",
+    "outbound-message": "傳給其他人的訊息",
+    "delete": "刪除",
+    "publish": "發布",
+    "none": "無特殊性質",
+    "alwaysAsks": "一律詢問"
+  },
+  "tools": {
+    "tools_find": "尋找工具",
+    "tools_describe": "說明工具",
+    "tools_invoke": "使用外部工具",
+    "mcp_servers": "列出 MCP 伺服器",
+    "mcp_server_update": "修改 MCP 伺服器"
+  },
+  "find": {
+    "navHint": "代理可呼叫的工具伺服器",
+    "navKeywords": "工具, 伺服器, 外掛, 整合"
+  },
+  "plain": {
+    "nav": "助理能用的應用程式和工具",
+    "find": {
+      "navHint": "助理可以替你使用的額外應用程式"
+    },
+    "page": {
+      "title": "助理能用的應用程式和工具",
+      "intro": "你的助理能用的外部應用程式和工具。新增、測試、開啟，再選哪些助理可以用。"
+    },
+    "empty": "這裡還沒有。在這裡新增，或新增一個現成的應用程式。",
+    "access": {
+      "hint": "隱藏的助理看不到它。能管理的助理可以改名或關閉它，但仍會先問你。",
+      "all": "所有助理"
+    },
+    "add": {
+      "open": "新增應用程式或工具",
+      "title": "新的應用程式或工具",
+      "secretsHint": "安全保存在這台電腦上。你在這裡讀不回來，助理也永遠看不到。",
+      "save": "新增",
+      "command": "怎麼開啟",
+      "commandHint": "這裡寫什麼，應用程式自己的設定頁面會告訴你。",
+      "args": "更多資訊"
+    },
+    "transport": {
+      "stdio": "這台電腦上的程式",
+      "http": "網路上的位址"
+    },
+    "server": {
+      "fromConnector": "現成的應用程式"
+    }
+  }
+}

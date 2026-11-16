@@ -1,0 +1,140 @@
+{
+  "nav": "Mga routine",
+  "page": {
+    "title": "Mga routine",
+    "intro": "Pinapatakbo ng routine ang isang agent nang mano-mano, ayon sa iskedyul, o kapag may tumawag dito. Kapag ang sagot ay eksaktong (quiet), walang bago at hindi ka aabisuhan.",
+    "calendar": "Calendar feed",
+    "empty": "Wala pang routine."
+  },
+  "hook": {
+    "title": "Address at secret ng webhook",
+    "once": "Kopyahin na ngayon. Isang beses lang ipapakita ang secret; kapag pinalitan, bago rin ang address.",
+    "saved": "Naitabi ko na"
+  },
+  "create": {
+    "title": "Bagong routine",
+    "name": "Pangalan",
+    "agent": "Agent",
+    "prompt": "Ano ang gagawin ng agent?",
+    "promptHint": "Ito ang ipapadalang mensahe tuwing tatakbo ang routine.",
+    "trigger": "Kailan tatakbo",
+    "cron": "Iskedyul (cron)",
+    "cronHint": "minuto oras araw buwan araw-ng-linggo, hal. 0 9 * * 1-5 = 9:00 tuwing weekday",
+    "tz": "Time zone",
+    "target": "Saan tatakbo",
+    "submit": "Gawin ang routine",
+    "workflow": "Workflow",
+    "noWorkflows": "Wala pang workflow. Gumawa muna ng isa sa page ng Workflows.",
+    "offline": "Patakbuhin kahit offline",
+    "offlineHint": "Kapag hindi maabot ang pangunahing utak ng agent, gamitin ang kasunod nitong utak (halimbawa, isang lokal na model) at sasabihin ito sa resulta."
+  },
+  "kind": {
+    "schedule": "Ayon sa iskedyul",
+    "manual": "Mano-mano",
+    "webhook": "Webhook",
+    "github": "GitHub",
+    "event": "Kapag may event"
+  },
+  "target": {
+    "chat": "Sa chat ng agent",
+    "thread": "Sa bagong thread",
+    "workflow": "Magsisimula ng workflow"
+  },
+  "state": {
+    "paused": "Naka-pause"
+  },
+  "routine": {
+    "next": "Susunod",
+    "last": "Huli"
+  },
+  "result": {
+    "pending": "Tumatakbo",
+    "ok": "Tapos na",
+    "silent": "Walang bago",
+    "failed": "Pumalya",
+    "interrupted": "Naputol",
+    "skipped": "Nilaktawan",
+    "held": "Naka-hold"
+  },
+  "source": {
+    "manual": "mano-mano",
+    "schedule": "iskedyul",
+    "webhook": "webhook",
+    "event": "event",
+    "github": "GitHub",
+    "test": "test run"
+  },
+  "action": {
+    "run": "Patakbuhin ngayon",
+    "test": "Test run",
+    "pause": "I-pause",
+    "resume": "Ituloy",
+    "rotate": "Bagong secret",
+    "rotateConfirm": "Gagawa ng bagong secret at address? Hindi na gagana ang mga gumagamit ng luma.",
+    "delete": "Burahin",
+    "deleteConfirm": "Burahin ang routine na ito? Mananatili sa feed ang mga nangyari."
+  },
+  "activity": {
+    "title": "Mga nangyari",
+    "empty": "Wala pang tumakbo.",
+    "open": "Buksan ang chat",
+    "silent": "Tumakbo, walang bagong ulat.",
+    "offlineFallback": "Hindi maabot ang pangunahing utak: tumakbo sa {{to}}",
+    "rateLimited": "Limitado: abala o ubos na ang quota ng libreng model, kaya nilaktawan ito. Tatakbo nang normal ang susunod."
+  },
+  "tools": {
+    "routines_list": "Ilista ang mga routine ko",
+    "routines_create": "Gumawa ng routine",
+    "routines_pause": "I-pause ang isa sa mga routine ko",
+    "routines_delete": "Burahin ang isa sa mga routine ko"
+  },
+  "server": {
+    "finished": "Tapos na ang routine na \"{{name}}\""
+  },
+  "find": {
+    "navHint": "Patakbuhin ang agent ayon sa iskedyul",
+    "navKeywords": "iskedyul, araw-araw, timer, ulitin, lingguhan, oras",
+    "stillOn_one": "{{count}} routine ang naka-on pa at patuloy na tatakbo.",
+    "stillOn_other": "{{count}} na routine ang naka-on pa at patuloy na tatakbo."
+  },
+  "plain": {
+    "find": {
+      "navHint": "Patakbuhin ang katulong ayon sa iskedyul"
+    },
+    "page": {
+      "intro": "Pinapakilos ng routine ang isang katulong nang mano-mano, ayon sa iskedyul, o kapag may tumawag dito. Kapag ang sagot ay eksaktong (quiet), walang bago at hindi ka aabisuhan."
+    },
+    "create": {
+      "agent": "Katulong",
+      "prompt": "Ano ang gagawin ng katulong?",
+      "offlineHint": "Kapag hindi maabot ang pangunahing utak ng katulong, gamitin ang kasunod nitong utak (halimbawa, isa sa computer na ito) at sasabihin ito sa resulta."
+    },
+    "kind": {
+      "webhook": "Kapag tinawag ang link"
+    },
+    "source": {
+      "webhook": "isang link"
+    },
+    "hook": {
+      "title": "Ang link at sikreto nito"
+    },
+    "target": {
+      "chat": "Sa chat ng katulong"
+    },
+    "activity": {
+      "rateLimited": "Nilaktawan: abala o ubos muna ang libreng utak. Tatakbo nang normal ang susunod."
+    }
+  },
+  "card": {
+    "created": {
+      "title": "Bagong routine: {{name}}",
+      "text": "Kusa itong tatakbo. Puwede mo itong i-pause, o burahin kung ayaw mo."
+    },
+    "pause": "I-pause ito",
+    "undo": "Burahin ito",
+    "open": "Tingnan ang routines",
+    "paused": "Naka-pause",
+    "undone": "Inalis na",
+    "gone": "Wala na ang routine na ito"
+  }
+}

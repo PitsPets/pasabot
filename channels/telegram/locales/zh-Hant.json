@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "Bot 權杖",
+    "botTokenHint": "來自你在 Telegram 建立的 bot。權杖會儲存在保險庫中，之後不會再顯示。",
+    "apiBase": "Bot API 位址",
+    "apiBaseHint": "除非你自行架設 Bot API 伺服器，否則請保持原樣。"
+  },
+  "link": {
+    "howTo": "與你的 bot 開啟私人聊天並傳送：/link {{code}}",
+    "dmOnly": "連結碼僅能在與 bot 的私人聊天中使用。"
+  },
+  "status": {
+    "connected": "已連線",
+    "reconnecting": "重新連線中…",
+    "auth_failed": "bot 權杖遭到拒絕",
+    "stopped": "已停止"
+  }
+}

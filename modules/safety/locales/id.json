@@ -1,0 +1,183 @@
+{
+  "nav": "Keamanan",
+  "stop": {
+    "button": "Hentikan semua",
+    "buttonLabel": "Hentikan semua agen sekarang",
+    "stopped": "Dijeda",
+    "resume": "Mulai lagi",
+    "failed": "Tidak dapat menghentikan: {{reason}}",
+    "resumeLabel": "Semuanya dijeda. Mulai lagi"
+  },
+  "report": {
+    "title": "Semuanya dijeda",
+    "intro": "Tidak ada yang berjalan sampai kamu menekan Mulai lagi. Ini yang dihentikan.",
+    "by": "Dihentikan oleh {{who}} pada {{when}}.",
+    "who": {
+      "owner": "Anda",
+      "linked-machine": "mesin tertaut",
+      "channel": "perintah channel",
+      "automation": "token otomatisasi",
+      "agent": "agen",
+      "system": "server"
+    },
+    "empty": "Tidak ada yang berjalan atau menunggu.",
+    "kind": {
+      "run": "Giliran berjalan",
+      "queued": "Giliran menunggu",
+      "browser": "Sesi browser",
+      "computer": "Sesi komputer",
+      "voice": "Panggilan suara",
+      "approval": "Permintaan persetujuan",
+      "other": "Lainnya"
+    },
+    "outcome": {
+      "cancelled": "dihentikan",
+      "held": "ditahan",
+      "closed": "ditutup"
+    },
+    "agent": "Agen {{name}}",
+    "close": "OK",
+    "resume": "Mulai lagi",
+    "queue": {
+      "message": "Pesan",
+      "task": "Tugas",
+      "handoff": "Serah terima",
+      "routine": "Rutinitas",
+      "workflow": "Alur kerja",
+      "automation-run": "Otomasi"
+    },
+    "run": "proses {{id}}",
+    "chat": "obrolan {{id}}"
+  },
+  "resume": {
+    "title": "Mulai lagi agen-agenmu",
+    "intro": "Ketik kata sandimu untuk memulai lagi agen-agenmu. Ini mencegah orang lain memulainya lagi. Pekerjaan yang menunggu akan berjalan lagi.",
+    "password": "Kata sandi",
+    "submit": "Mulai lagi",
+    "cancel": "Batal",
+    "wrong": "Kata sandi salah.",
+    "forbidden": "Hanya pemilik yang bisa memulai lagi.",
+    "error": "Tidak bisa memulai lagi: {{reason}}"
+  },
+  "page": {
+    "title": "Keamanan",
+    "intro": "Apa yang dilakukan agen Anda, langkah demi langkah, dan kontrol yang menjaganya."
+  },
+  "receipts": {
+    "title": "Tanda terima",
+    "intro": "Setiap tugas agen meninggalkan tanda terima: langkah, panggilan alat, persetujuan dan siapa yang memutuskan, serta token yang digunakan.",
+    "empty": "Belum ada tanda terima. Tanda terima muncul begitu agen mengerjakan sesuatu.",
+    "steps": "{{count}} langkah",
+    "tokens": "{{input}} token masuk / {{output}} token keluar",
+    "open": "Buka tanda terima",
+    "back": "Semua tanda terima",
+    "timeline": "Linimasa",
+    "step": "Langkah {{n}} dari {{total}}",
+    "scrub": "Telusuri langkah",
+    "export": "Ekspor",
+    "exportJson": "Unduh JSON",
+    "exportHtml": "Buka salinan yang mudah dibaca",
+    "exporting": "Menyiapkan…",
+    "decidedBy": "Diputuskan oleh {{who}}",
+    "you": "Anda",
+    "duration": "{{s}} dtk",
+    "cost": "Biaya {{amount}} {{currency}}",
+    "state": {
+      "running": "berjalan",
+      "done": "selesai",
+      "failed": "gagal",
+      "cancelled": "dihentikan",
+      "interrupted": "terputus"
+    },
+    "kind": {
+      "run.started": "Dimulai",
+      "run.finished": "Selesai",
+      "tool.call": "Panggilan alat",
+      "tool.result": "Hasil alat",
+      "permission": "Izin diminta",
+      "approval.requested": "Meminta Anda",
+      "approval.decided": "Keputusan Anda",
+      "usage": "Token digunakan",
+      "reply": "Balasan",
+      "error": "Kesalahan",
+      "subagent": "Pembantu",
+      "screenshot": "Tangkapan layar",
+      "link": "Tautan",
+      "refused": "Ditolak oleh pemeriksaan keamanan"
+    },
+    "youNamed": "{{name}} (Anda)",
+    "nobody": "tidak ada (kedaluwarsa)",
+    "someoneElse": "sesi owner lain"
+  },
+  "retention": {
+    "title": "Simpan tanda terima selama",
+    "days": "Hari",
+    "hint": "Tanda terima lama beserta tangkapan layarnya dihapus permanen.",
+    "save": "Simpan",
+    "saved": "Tersimpan. {{count}} tanda terima lama dihapus."
+  },
+  "scan": {
+    "title": "Periksa skill sebelum menginstal",
+    "intro": "Tempel teks skill. Kami mencari hal berisiko: mengunduh dan menjalankan program, membaca kunci atau kata sandi, teks tersembunyi, dan mengirim data keluar.",
+    "label": "Teks skill",
+    "run": "Periksa",
+    "running": "Memeriksa…",
+    "clean": "Kami tidak menemukan hal berisiko.",
+    "noticed": "Kami menemukan:",
+    "timeout": "Pemeriksaan terlalu lama dan dihentikan. Bacalah sendiri skill ini sebelum menginstalnya.",
+    "error": "Pemeriksaan gagal: {{reason}}",
+    "line": "baris {{line}}",
+    "kind": {
+      "download-and-run": "mengunduh dan menjalankan program",
+      "credential-path": "membaca kunci, kata sandi, atau data browser",
+      "hidden-text": "memiliki teks tersembunyi",
+      "exfiltration": "dapat mengirim data Anda keluar",
+      "model-instruction": "mencoba memberi agen perintah rahasia"
+    }
+  },
+  "decision": {
+    "proposal": "Skill “{{skill}}” meminta izin",
+    "proposalText": "Buka Skill untuk melihat setiap alat, situs web, dan file yang diminta sebelum Anda memutuskan.",
+    "proposalWiden": "Skill ini meminta lebih dari yang Anda setujui. Buka Skill untuk melihat apa yang berubah sebelum Anda memutuskan."
+  },
+  "find": {
+    "navHint": "Yang boleh dilakukan agen, dan catatannya",
+    "navKeywords": "persetujuan, izin, izinkan, log, audit"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Apa yang boleh dilakukan pembantu, dan catatannya"
+    },
+    "stop": {
+      "buttonLabel": "Hentikan semua pembantu sekarang"
+    },
+    "page": {
+      "intro": "Apa yang dilakukan pembantumu, langkah demi langkah, dan kendali yang menjaga mereka."
+    },
+    "receipts": {
+      "intro": "Setiap tugas pembantu meninggalkan tanda terima: langkahnya, apa yang dipakai, apa yang kamu setujui dan siapa yang memutuskan, serta berapa banyak yang terpakai.",
+      "empty": "Belum ada tanda terima. Akan muncul begitu pembantu mengerjakan sesuatu.",
+      "tokens": "{{input}} dibaca / {{output}} ditulis",
+      "kind": {
+        "usage": "Jumlah terpakai"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "sesuatu yang berjalan sendiri",
+        "agent": "seorang pembantu",
+        "system": "PasaBot sendiri"
+      },
+      "agent": "Pembantu {{name}}"
+    },
+    "scan": {
+      "title": "Periksa kemampuan sebelum ditambahkan",
+      "intro": "Tempel teksnya. Kami mencari hal berisiko: mengunduh dan menjalankan program, membaca kunci atau kata sandi, teks tersembunyi, dan mengirim data keluar.",
+      "label": "Teksnya",
+      "timeout": "Pemeriksaan terlalu lama dan dihentikan. Baca sendiri sebelum menambahkannya.",
+      "kind": {
+        "model-instruction": "mencoba memberi perintah rahasia ke pembantu"
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "nav": "Máy chủ MCP",
+  "page": {
+    "title": "Máy chủ MCP",
+    "intro": "Các máy chủ công cụ bên ngoài mà agent của bạn có thể dùng. Hãy thêm một máy chủ, thử nghiệm, bật lên, rồi chọn agent nào được dùng."
+  },
+  "loading": "Đang tải…",
+  "empty": "Chưa có máy chủ MCP nào. Hãy thêm tại đây, hoặc cài một connector.",
+  "transport": {
+    "stdio": "Lệnh trên máy này",
+    "http": "Địa chỉ web"
+  },
+  "level": {
+    "none": "Ẩn",
+    "use": "Được dùng",
+    "manage": "Được quản lý",
+    "inherit": "Mặc định ({{level}})"
+  },
+  "access": {
+    "title": "Ai được dùng",
+    "hint": "Agent bị ẩn sẽ không thấy máy chủ này. Agent được quản lý có thể đổi tên hoặc tắt nó, và vẫn hỏi bạn trước.",
+    "all": "Tất cả agent"
+  },
+  "server": {
+    "on": "Bật",
+    "off": "Tắt",
+    "fromConnector": "Từ một connector",
+    "tools_other": "{{count}} công cụ",
+    "testFailed": "Thử nghiệm thất bại",
+    "secrets": "Bí mật được lưu trong vault: {{names}}",
+    "test": "Thử nghiệm",
+    "turnOn": "Bật",
+    "turnOff": "Tắt",
+    "remove": "Xóa",
+    "removeConfirm": "Đúng, xóa nó"
+  },
+  "add": {
+    "open": "Thêm máy chủ MCP",
+    "title": "Máy chủ MCP mới",
+    "name": "Tên",
+    "transport": "Cách kết nối",
+    "command": "Lệnh",
+    "commandHint": "Chương trình cần khởi động, ví dụ npx hoặc docker. Chương trình chạy không qua shell.",
+    "args": "Tham số",
+    "argsHint": "Mỗi dòng một tham số.",
+    "env": "Cài đặt (không bí mật)",
+    "envHint": "Mỗi dòng một NAME=value.",
+    "url": "Địa chỉ (https://…)",
+    "secrets": "Cài đặt bí mật",
+    "secretHeaders": "Header bí mật",
+    "secretsHint": "Được lưu trong vault. Bạn không thể đọc lại ở đây, và agent không bao giờ thấy chúng.",
+    "secretName": "Tên",
+    "headerName": "Tiêu đề",
+    "secretValue": "Giá trị",
+    "anotherSecret": "Thêm mục khác",
+    "save": "Thêm máy chủ",
+    "cancel": "Hủy"
+  },
+  "classes": {
+    "title": "Mỗi công cụ làm gì",
+    "hint": "Thanh toán và nhắn tin cho người khác luôn hỏi bạn trước, ở mọi mức tin cậy. Loại của từng công cụ được đoán từ tên khi liệt kê; hãy sửa tại đây nếu đoán sai.",
+    "default": "Mặc định: {{class}}",
+    "money": "Tiền (mua, thanh toán)",
+    "outbound-message": "Tin nhắn cho người khác",
+    "delete": "Xóa",
+    "publish": "Đăng công khai",
+    "none": "Không có gì đặc biệt",
+    "alwaysAsks": "Luôn hỏi"
+  },
+  "tools": {
+    "tools_find": "Tìm công cụ",
+    "tools_describe": "Mô tả công cụ",
+    "tools_invoke": "Dùng công cụ bên ngoài",
+    "mcp_servers": "Liệt kê máy chủ MCP",
+    "mcp_server_update": "Sửa máy chủ MCP"
+  },
+  "find": {
+    "navHint": "Máy chủ công cụ tác tử có thể gọi",
+    "navKeywords": "công cụ, máy chủ, plugin, tích hợp"
+  },
+  "plain": {
+    "nav": "Ứng dụng và công cụ trợ lý dùng được",
+    "find": {
+      "navHint": "Ứng dụng bổ sung mà trợ lý có thể dùng giúp bạn"
+    },
+    "page": {
+      "title": "Ứng dụng và công cụ trợ lý dùng được",
+      "intro": "Ứng dụng và công cụ bên ngoài trợ lý dùng được. Thêm, thử, bật, rồi chọn trợ lý nào được dùng."
+    },
+    "empty": "Chưa có gì. Thêm ở đây, hoặc thêm một ứng dụng có sẵn.",
+    "access": {
+      "hint": "Trợ lý bị ẩn không thấy nó. Trợ lý được quản lý có thể đổi tên hoặc tắt nó, và vẫn hỏi bạn trước.",
+      "all": "Tất cả trợ lý"
+    },
+    "add": {
+      "open": "Thêm ứng dụng hoặc công cụ",
+      "title": "Ứng dụng hoặc công cụ mới",
+      "secretsHint": "Được giữ an toàn trên máy này. Bạn không đọc lại được ở đây, và trợ lý không bao giờ thấy.",
+      "save": "Thêm",
+      "command": "Cách mở",
+      "commandHint": "Trang hướng dẫn cài đặt của ứng dụng sẽ cho bạn biết cần ghi gì ở đây.",
+      "args": "Thông tin thêm"
+    },
+    "transport": {
+      "stdio": "Một chương trình trên máy tính này",
+      "http": "Một địa chỉ trên web"
+    },
+    "server": {
+      "fromConnector": "Ứng dụng có sẵn"
+    }
+  }
+}

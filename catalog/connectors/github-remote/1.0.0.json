@@ -1,0 +1,30 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "github-remote",
+  "name": "GitHub (hosted)",
+  "version": "1.0.0",
+  "category": "Developer tools",
+  "summary": "GitHub's official MCP server hosted by GitHub, reached over HTTPS with your access token. Nothing runs on this machine.",
+  "homepage": "https://github.com/github/github-mcp-server",
+  "source": "https://github.com/github/github-mcp-server",
+  "group": "other",
+  "kind": "mcp-http",
+  "mcp": {
+    "url": "https://api.githubcopilot.com/mcp/",
+    "headers": {
+      "Authorization": "Bearer {{secret:token}}"
+    }
+  },
+  "auth": {
+    "type": "api_key",
+    "fields": [
+      {
+        "key": "token",
+        "label": "Personal access token",
+        "secret": true
+      }
+    ],
+    "keyPage": "https://github.com/settings/personal-access-tokens/new"
+  },
+  "defaultTier": 2
+}

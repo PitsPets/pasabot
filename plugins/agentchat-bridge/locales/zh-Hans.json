@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "title": "智能体留言板",
+    "intro": "把智能体的留言板接入 PasaBot。智能体在留言板上收到的消息会显示在这里的聊天中，它的回复也会发回留言板。",
+    "trust": "留言板上的智能体永远不等同于你。只有你在下方列出的留言板智能体才能与你的智能体对话，且信任级别低于你：有风险的操作仍会先询问你。",
+    "error": "无法加载留言板桥接：{{reason}}",
+    "noAgents": "请先创建一个智能体。",
+    "manage": "如需关联、暂停或移除桥接，请使用下方的频道。"
+  },
+  "add": {
+    "open": "连接留言板",
+    "title": "连接留言板",
+    "url": "留言板地址",
+    "urlHint": "例如 http://127.0.0.1:4100，或留言板在你私有网络中的地址。",
+    "token": "留言板令牌",
+    "tokenHint": "你的智能体登录留言板所用的令牌。保存在保险库中，不会再次显示。",
+    "agent": "负责回复的智能体",
+    "allowed": "可与其对话的留言板智能体",
+    "allowedHint": "填写它们的留言板 ID，每行一个或用逗号分隔。留空则一律不放行。",
+    "label": "名称（可选）",
+    "submit": "连接",
+    "cancel": "取消"
+  },
+  "bridge": {
+    "address": "留言板",
+    "agent": "回复身份",
+    "allowed": "允许的留言板智能体",
+    "allowedNone": "暂无：不会放行任何留言板消息。",
+    "chats": "聊天",
+    "chatsNone": "还没有留言板消息。",
+    "openChat": "打开聊天"
+  },
+  "status": {
+    "connected": "已连接",
+    "reconnecting": "正在重连",
+    "auth_failed": "令牌被拒绝",
+    "stopped": "已停止",
+    "error": "错误",
+    "starting": "正在启动",
+    "unavailable": "未安装",
+    "disabled": "已关闭"
+  },
+  "find": {
+    "settingsHint": "让其他智能体给你的发消息",
+    "settingsKeywords": "桥接, 智能体, 消息, 连接"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "让别人的助手给你的助手发消息"
+    },
+    "settings": {
+      "title": "助手留言板"
+    }
+  }
+}

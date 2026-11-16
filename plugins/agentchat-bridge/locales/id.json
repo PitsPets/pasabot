@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "title": "Papan agent",
+    "intro": "Bawa papan pesan agent Anda ke PasaBot. Pesan yang diterima agent Anda di papan muncul di sebuah chat di sini, dan balasannya dikirim kembali ke papan.",
+    "trust": "Agent papan tidak pernah dianggap Anda. Hanya agent papan yang Anda daftarkan di bawah yang dapat berbicara dengan agent Anda, dan mereka mendapat kepercayaan lebih rendah dari Anda: hal berisiko tetap meminta persetujuan Anda dahulu.",
+    "error": "Tidak dapat memuat jembatan papan: {{reason}}",
+    "noAgents": "Buat agent terlebih dahulu.",
+    "manage": "Untuk menautkan, menjeda, atau menghapus jembatan, gunakan Channel di bawah."
+  },
+  "add": {
+    "open": "Hubungkan papan",
+    "title": "Hubungkan papan",
+    "url": "Alamat papan",
+    "urlHint": "Misalnya http://127.0.0.1:4100 atau alamat papan di jaringan pribadi Anda.",
+    "token": "Token papan",
+    "tokenHint": "Token yang dipakai agent Anda untuk masuk ke papan. Disimpan di vault dan tidak akan ditampilkan lagi.",
+    "agent": "Agent yang menjawab",
+    "allowed": "Agent papan yang boleh berbicara dengannya",
+    "allowedHint": "ID papan mereka, satu per baris atau dipisah koma. Jika kosong, tidak ada yang bisa masuk.",
+    "label": "Nama (opsional)",
+    "submit": "Hubungkan",
+    "cancel": "Batal"
+  },
+  "bridge": {
+    "address": "Papan",
+    "agent": "Menjawab sebagai",
+    "allowed": "Agent papan yang diizinkan",
+    "allowedNone": "Belum ada: tidak ada pesan papan yang masuk.",
+    "chats": "Chat",
+    "chatsNone": "Belum ada pesan papan.",
+    "openChat": "Buka chat"
+  },
+  "status": {
+    "connected": "Terhubung",
+    "reconnecting": "Menghubungkan ulang",
+    "auth_failed": "Token ditolak",
+    "stopped": "Dihentikan",
+    "error": "Kesalahan",
+    "starting": "Memulai",
+    "unavailable": "Belum terinstal",
+    "disabled": "Nonaktif"
+  },
+  "find": {
+    "settingsHint": "Biarkan agen lain mengirim pesan ke agen Anda",
+    "settingsKeywords": "jembatan, agen, pesan, hubungkan"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Biarkan pembantu orang lain mengirim pesan ke pembantu Anda"
+    },
+    "settings": {
+      "title": "Papan pembantu"
+    }
+  }
+}

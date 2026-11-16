@@ -1,0 +1,6 @@
+{"sessionUpdate":"agent_thought_chunk","content":{"type":"text","text":"**Checking the files** I will list the workspace first."}}
+{"sessionUpdate":"tool_call","toolCallId":"list_directory-1","title":"ReadFolder .","kind":"search","status":"pending","locations":[{"path":"."}],"rawInput":{"dir_path":"."}}
+{"sessionUpdate":"tool_call_update","toolCallId":"list_directory-1","status":"in_progress"}
+{"sessionUpdate":"tool_call_update","toolCallId":"list_directory-1","status":"completed","content":[{"type":"content","content":{"type":"text","text":"Listed 2 item(s)."}}]}
+{"sessionUpdate":"agent_message_chunk","content":{"type":"text","text":"po"}}
+{"sessionUpdate":"agent_message_chunk","content":{"type":"text","text":"ng"}}

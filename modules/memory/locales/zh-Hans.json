@@ -1,0 +1,135 @@
+{
+  "nav": "记忆",
+  "page": {
+    "title": "智能体记忆",
+    "intro": "智能体保存下来留待日后使用的内容。错误或私密的内容可以让它们忘掉；智能体的搜索会立即不再找到这些内容。"
+  },
+  "scope": {
+    "label": "谁的记忆",
+    "all": "全部",
+    "shared": "所有智能体共享",
+    "global": "全局（所有智能体）",
+    "team": "团队：{{name}}",
+    "private": "私有"
+  },
+  "search": {
+    "label": "搜索记忆",
+    "placeholder": "输入关键词"
+  },
+  "item": {
+    "shared": "共享",
+    "saved": "保存于{{when}}",
+    "reviewed": "已审阅",
+    "markReviewed": "标记为已审阅",
+    "forget": "忘记",
+    "confirm": "永久忘记",
+    "cancel": "保留",
+    "untrusted": "非你所提供",
+    "global": "全局",
+    "team": "团队{{name}}",
+    "by": "由{{who}}保存",
+    "byYou": "由你保存",
+    "byImport": "从其他服务器导入",
+    "byUnknown": "由智能体保存",
+    "sure": "确定",
+    "unsure": "不确定",
+    "key": "键：{{key}}",
+    "edit": "编辑",
+    "editLabel": "编辑此记忆",
+    "save": "保存",
+    "editCancel": "取消",
+    "edited": "已保存。"
+  },
+  "empty": "这里还没有保存任何内容。",
+  "loading": "加载中…",
+  "error": "无法加载记忆。{{reason}}",
+  "count_other": "{{count}} 条",
+  "settings": {
+    "title": "记忆",
+    "backend": "记忆的存放位置",
+    "backendHint": "更改此项不会迁移已保存的内容。",
+    "local": "此服务器",
+    "limits": "每个智能体最多 {{perAgent}} 条，共享最多 {{shared}} 条，每条最多 {{textChars}} 个字符。"
+  },
+  "origin": {
+    "label": "保存来源",
+    "any": "任意聊天",
+    "owner": "你自己的聊天",
+    "others": "非你发起的聊天"
+  },
+  "more": "显示更多",
+  "countMore_other": "前 {{count}} 条",
+  "merges": {
+    "title": "需要你来选择",
+    "intro": "两个智能体对同一件事给出了不同的确定答案。请选择其一，或自己写出正确答案。",
+    "key": "关于：{{key}}",
+    "current": "当前已保存",
+    "incoming": "新答案",
+    "keepCurrent": "保留已存",
+    "useIncoming": "采用新答案",
+    "writeOwn": "自己来写",
+    "mergedLabel": "正确答案",
+    "saveMerged": "保存答案",
+    "cancel": "取消",
+    "gone": "（已保存的答案已被删除）"
+  },
+  "teams": {
+    "title": "团队",
+    "intro": "团队是共用一份记忆的一组智能体。智能体只能读写自己所在团队的记忆。",
+    "empty": "还没有团队。",
+    "name": "团队名称",
+    "create": "创建团队",
+    "members": "成员",
+    "noAgents": "请先添加智能体。",
+    "delete": "删除团队",
+    "confirmDelete": "删除团队及其记忆",
+    "keep": "保留",
+    "count_other": "{{count}} 个智能体"
+  },
+  "tools": {
+    "memory_remember": "记住",
+    "memory_search": "搜索记忆",
+    "memory_teams": "我的记忆团队",
+    "memory_forget": "忘记"
+  },
+  "find": {
+    "navHint": "智能体记住的内容",
+    "navKeywords": "记住, 笔记, 事实, 回忆"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助手记住的内容"
+    },
+    "page": {
+      "title": "助手记住的事",
+      "intro": "你的助手留着以后用的东西。错的或私密的可以忘掉；助手马上就搜不到了。"
+    },
+    "scope": {
+      "shared": "所有助手共享",
+      "global": "全部（所有助手）"
+    },
+    "item": {
+      "byImport": "从另一台电脑带来",
+      "byUnknown": "由助手保存"
+    },
+    "settings": {
+      "local": "这台电脑",
+      "limits": "每个助手最多 {{perAgent}} 条，共享 {{shared}} 条，每条 {{textChars}} 个字符。"
+    },
+    "merges": {
+      "intro": "两个助手对同一件事各自确信不同的答案。选一个，或自己写下正确答案。"
+    },
+    "teams": {
+      "intro": "团队是共用一份记忆的一组助手。助手只读写自己所在的团队。",
+      "noAgents": "请先添加一个助手。"
+    }
+  },
+  "card": {
+    "saved": {
+      "title": "我会记住的",
+      "undo": "撤销",
+      "all": "查看我记住的全部内容",
+      "undone": "已忘记"
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "重試",
+    "skip": "略過",
+    "cancel": "取消",
+    "save": "儲存",
+    "loading": "載入中…"
+  },
+  "queue": {
+    "interrupted": "此次執行因伺服器重新啟動而中斷。",
+    "interruptedHint": "你可以重試，或略過並繼續處理下一則訊息。",
+    "routineInterrupted": "{{agent}} 的例行程序執行因伺服器重新啟動而中斷。"
+  },
+  "blocks": {
+    "fallback": "這則訊息包含此應用程式無法顯示的內容（{{kind}}）。"
+  },
+  "meta": {
+    "name": "繁體中文",
+    "dir": "ltr",
+    "status": "unreviewed"
+  },
+  "server": {
+    "approvalNeeded": "需要你核准",
+    "wantsToUse": "{{name}} 想要：{{tool}}",
+    "interrupted": "伺服器重新啟動，執行已中斷",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}：執行失敗",
+    "unknownError": "未知錯誤",
+    "devicePaired": "有裝置已配對",
+    "devicePairedBody": "{{what}} 現在可以登入你的帳號。"
+  },
+  "provider": {
+    "fakeName": "模擬（測試用）",
+    "hint": {
+      "notOnPath": "在 PATH 中找不到 {{cli}}",
+      "notFound": "找不到 {{cli}}",
+      "versionFailed": "`{{cmd}} --version` 執行失敗",
+      "runToSignIn": "執行一次 `{{cmd}}` 以登入",
+      "runToSignInOrKey": "執行一次 `{{cmd}}` 以登入（或在保險庫中設定 {{env}}）",
+      "runToAddProvider": "執行一次 `{{cmd}}` 以新增供應者",
+      "checkedFirstTurn": "首次執行時檢查登入",
+      "notAnswering": "{{name}}（{{url}}）沒有回應",
+      "turnSignIn": "上次執行時登入沒有成功。請在「大腦」頁面重新登入。"
+    }
+  },
+  "channel": {
+    "linked": "已連結。你可以在這裡和 {{agent}} 對話。",
+    "linkInvalid": "這個連結碼無效或已過期。請在 PasaBot 的「設定 → 頻道」中新建一個。",
+    "failed": "抱歉，沒有成功。詳情請看 PasaBot 應用程式。",
+    "empty": "（沒有回覆）",
+    "interrupted": "因重新啟動而中斷。請在 PasaBot 應用程式中重試。",
+    "approvalAsk": "需要你核准：{{summary}}\n回覆 /approve {{id}} 或 /deny {{id}}",
+    "approvalDevice": "需要你核准：{{summary}}\n這一項只能在已配對裝置上的 PasaBot 應用程式中核准。",
+    "approvalNone": "這個聊天裡沒有該 id 的待核准請求。",
+    "approvalOwnerOnly": "只有已連結的擁有者才能回應核准請求。",
+    "approvalDeviceOnly": "這個核准請求只能在已配對裝置上的 PasaBot 應用程式中回應。",
+    "approved": "已核准 {{id}}。",
+    "denied": "已拒絕 {{id}}。"
+  },
+  "card": {
+    "action": {
+      "open": "開啟",
+      "dismiss": "關閉",
+      "signIn": "重新登入",
+      "retry": "再試一次",
+      "otherBrain": "換一個大腦",
+      "wait": "繼續等待",
+      "notNow": "暫不",
+      "takeOver": "我來操作",
+      "imDone": "好了，繼續",
+      "ok": "好的",
+      "remind": "提醒我"
+    },
+    "signIn": {
+      "title": "{{name}} 的大腦需要你登入",
+      "text": "{{brain}} 已登出，所以 {{name}} 還不能回答。登入一次，然後再試。"
+    },
+    "failed": {
+      "title": "{{name}} 沒能完成這則回覆",
+      "offline": "連不上它的大腦。檢查一下網路，然後再試。",
+      "timeout": "花太久了，所以停下了。",
+      "auth": "它的大腦已登出。",
+      "ratelimit": "它的大腦暫時達到了使用上限。",
+      "quota": "它的大腦在這個方案裡已經用完了。",
+      "contextoverflow": "對它的大腦來說，聊天太長了。",
+      "other": "回覆還沒寫完，它的大腦就停了。"
+    },
+    "limit": {
+      "title": "{{name}} 暫停到 {{untilAt}}",
+      "text": "它的大腦達到了使用上限。你的訊息會等著，然後自動送出。",
+      "offline": "現在連不上它的大腦。你的訊息會等著，然後自動送出。",
+      "remindNow": "{{name}} 現在可以繼續了",
+      "offlineTitle": "{{name}} 暫停到 {{untilAt}}"
+    },
+    "settled": {
+      "retrying": "正在重試",
+      "signedIn": "已重新登入",
+      "resumed": "已恢復運作",
+      "remind": "{{untilAt}} 提醒你"
+    },
+    "member": {
+      "failed": "{{name}} 沒能完成這則回覆。",
+      "approvalWaiting": "{{name}} 正在等待主人同意。",
+      "approvalApproved": "{{name}} 已獲得同意。",
+      "approvalRefused": "{{name}} 未獲允許。"
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}} 需要你重新登入",
+        "text": "{{name}} 的大腦已登出，暫時無法回覆。登入一次後，再傳一次你的訊息。"
+      },
+      "action": {
+        "otherBrain": "換一個大腦"
+      },
+      "limit": {
+        "title": "{{name}} 暫時用完了次數",
+        "text": "{{untilAt}} 可以繼續。你的訊息會等著，然後自動送出。",
+        "offlineTitle": "{{name}} 現在連不上它的大腦",
+        "offline": "{{untilAt}} 再試一次。你的訊息會等著，然後自動送出。"
+      },
+      "failed": {
+        "offline": "連不上它的大腦。檢查一下網路，然後再試一次。",
+        "auth": "它的大腦已登出。",
+        "ratelimit": "它暫時用完了次數。",
+        "quota": "這個方案裡已經沒有次數了。",
+        "contextoverflow": "對話太長了，它的大腦裝不下。",
+        "other": "回覆還沒寫完就停了。"
+      }
+    }
+  }
+}

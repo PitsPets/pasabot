@@ -1,0 +1,200 @@
+{
+  "nav": "Skills",
+  "page": {
+    "title": "Skills",
+    "intro": "Spielbücher, denen deine Agenten folgen können. Schalte einen Skill pro Agent ein; jede Änderung behält die früheren Versionen."
+  },
+  "loading": "Skills werden geladen…",
+  "empty": "Noch keine Skills. Schreib einen oder installiere unten einen.",
+  "error": "Etwas ist schiefgelaufen: {{reason}}",
+  "add": {
+    "title": "Skill hinzufügen",
+    "method": "Wie",
+    "create": "Neuen Skill schreiben",
+    "folder": "Aus einem Ordner auf dem Server",
+    "git": "Aus einer Git-URL",
+    "zip": "Aus einem Paket (.zip)",
+    "name": "Name",
+    "nameHint": "Kleingeschriebene Wörter mit Bindestrichen, z. B. lieferanten-angebote",
+    "description": "Wann er genutzt wird",
+    "descriptionHint": "Eine Zeile, z. B. „Nutze ihn, wenn du ein Angebot für einen Kunden vorbereitest“",
+    "instructions": "Anweisungen",
+    "path": "Ordnerpfad",
+    "pathHint": "Der vollständige Pfad eines Ordners mit einer SKILL.md auf dem Rechner, auf dem PasaBot läuft",
+    "url": "Git-URL",
+    "urlHint": "Eine https-Adresse eines Repositorys; sie wird auf den aktuellen Commit festgelegt",
+    "ref": "Branch oder Tag (optional)",
+    "subdir": "Ordner im Repository (optional)",
+    "zipFile": "Paketdatei",
+    "zipMissing": "Wähle zuerst eine .zip-Datei aus",
+    "safety": "Beim Installieren wird nichts aus einem Skill ausgeführt. Er ist für jeden Agenten zunächst ausgeschaltet.",
+    "createButton": "Skill erstellen",
+    "installButton": "Installieren",
+    "builtins": "Eingebaute Skills, die du entfernt hast:",
+    "builtinButton": "{{name}} wieder hinzufügen",
+    "open": "Hinzufügen",
+    "cancel": "Abbrechen",
+    "cardHint": "Schreib einen neuen Skill oder installiere einen aus einem Ordner, einer Git-URL oder einer .zip.",
+    "nameMissing": "Zuerst einen Namen eingeben",
+    "descriptionMissing": "Zuerst eintragen, wann es gilt",
+    "instructionsMissing": "Zuerst die Anleitung schreiben"
+  },
+  "item": {
+    "rev": "Version {{rev}}",
+    "builtin": "Eingebaut",
+    "agentMade": "Von einem Agenten erstellt ({{trust}})",
+    "off": "Aus",
+    "agents_one": "Für {{count}} Agent aktiv",
+    "agents_other": "Für {{count}} Agenten aktiv",
+    "open": "Öffnen",
+    "openNamed": "{{name}} öffnen"
+  },
+  "detail": {
+    "back": "Zurück zu allen Skills",
+    "source": "Quelle: {{source}}",
+    "agentMadeNote": "Ein Agent hat diesen Skill geschrieben oder geändert. Lies ihn, bevor du ihn für andere Agenten einschaltest.",
+    "agents": "Wer ihn nutzen kann",
+    "enabled": "Skill ist an",
+    "noAgents": "Noch keine Agenten.",
+    "onFor": "{{name}}",
+    "uninstall": "Deinstallieren",
+    "confirmUninstall": "Ja, mit allen Versionen deinstallieren",
+    "cancel": "Abbrechen"
+  },
+  "edit": {
+    "title": "SKILL.md",
+    "hint": "Beim Speichern entsteht eine neue Version. Der Name im Front Matter bleibt gleich.",
+    "label": "Skill-Text",
+    "files": "Dateien: {{files}}",
+    "save": "Als neue Version speichern",
+    "saved": "Als neue Version gespeichert.",
+    "unchanged": "Nichts geändert."
+  },
+  "rev": {
+    "title": "Versionen",
+    "label": "Version {{rev}}",
+    "current": "aktuell",
+    "byOwner": "von dir",
+    "byBuiltin": "eingebaut",
+    "byAgent": "von {{name}}",
+    "rollback": "Auf {{rev}} zurücksetzen",
+    "rolledBack": "Zurückgesetzt: Der Text von Version {{rev}} ist jetzt die neueste Version."
+  },
+  "perm": {
+    "choose": "Was dieser Skill nutzen darf",
+    "workspaceOnly": "Dateien: nur der eigene Arbeitsbereich seines Agenten",
+    "hosts": "Websites, die er erreichen darf",
+    "hostsHint": "Eine pro Zeile, z. B. example.com oder *.example.com. Leer lassen für keine.",
+    "messagingAsk": "Darf Nachrichten an andere Personen senden (jede fragt dich vorher)",
+    "before": "Berechtigungen, die für diesen Skill gespeichert werden:",
+    "files": "Dateien",
+    "filesWorkspace": "Nur der Arbeitsbereich seines Agenten",
+    "filesWorkspacePlus": "Der Arbeitsbereich seines Agenten sowie {{paths}}",
+    "filesPaths": "Nur {{paths}}",
+    "filesNone": "Keine Dateien",
+    "network": "Netzwerk",
+    "networkNone": "Keine Websites",
+    "messaging": "Nachrichten an andere Personen",
+    "messagingYes": "Ja, und jede fragt dich vorher",
+    "messagingNo": "Nein",
+    "none": "Für diesen Skill sind keine Berechtigungen gespeichert.",
+    "proposed": "Vorgeschlagene Berechtigungen",
+    "proposedIntro": "Ein importierter Agent oder ein Agent hat diese angefragt. Nichts wird gespeichert, bis du zustimmst. Neue Einträge sind markiert.",
+    "approve": "Genehmigen",
+    "reject": "Ablehnen",
+    "scope": "Nur gespeichert: Diese Grenzen werden geprüft, wenn ein Lauf an diesen Skill gebunden ist. Normale Chat-Runden werden dadurch noch nicht eingeschränkt.",
+    "tools": "Tools",
+    "toolsNone": "Keine Tools",
+    "toolsAsk": "Tools, die er aufrufen darf",
+    "toolsHint": "Eins pro Zeile. Ein Tool aus einer externen Verbindung wird als server/tool geschrieben. Leer lassen für keine.",
+    "outside": "externes Tool",
+    "new": "neu",
+    "removed": "Nicht mehr: {{items}}",
+    "was": "Vorher: {{what}}",
+    "first": "Für diesen Skill ist noch nichts genehmigt; alles unten ist neu.",
+    "widens": "Dadurch ändern sich die Berechtigungen, die du zuvor genehmigt hast.",
+    "changed": "Diese Anfrage hat sich geändert, nachdem du sie geöffnet hast. Sieh dir die neue Version unten an, bevor du entscheidest.",
+    "unsaved": "{{name}} ist installiert, aber die Berechtigungen wurden nicht gespeichert ({{reason}}).",
+    "retry": "Berechtigungen erneut speichern",
+    "uninstall": "Skill entfernen",
+    "hostsTooMany": "Gib höchstens 50 Websites an.",
+    "hostBad": "Schreib jede Website nur als Namen, z. B. example.com oder *.example.com (ohne https:// oder Pfade, höchstens 253 Zeichen).",
+    "toolsTooMany": "Gib höchstens 200 Tools an.",
+    "toolBad": "Schreib jedes Tool nur mit seinem Namen, ohne Leerzeichen (höchstens 200 Zeichen)."
+  },
+  "tools": {
+    "skills_list": "Skills auflisten",
+    "skills_read": "Skill lesen",
+    "skills_create": "Skill anlegen",
+    "skills_install": "Skill aus Git installieren",
+    "skills_revise": "Skill überarbeiten",
+    "skills_uninstall": "Skill deinstallieren"
+  },
+  "builtin": {
+    "datastore-guide": "Für strukturierte Einträge (Listen, Protokolle, Bestände, Preise), die auch andere Agenten lesen dürfen, mit den gemeinsamen Datenspeicher-Werkzeugen von PasaBot.",
+    "site-publisher": "Wenn der Besitzer eine kleine Webseite oder statische Site (einen Bericht, eine Speisekarte, eine teilbare Liste) auf diesem PasaBot-Server veröffentlichen möchte.",
+    "skill-author": "Wenn der Besitzer dich bittet, eine Arbeitsweise in eine wiederverwendbare Fähigkeit zu verwandeln oder eine früher erstellte Fähigkeit zu verbessern."
+  },
+  "find": {
+    "navHint": "Zusätzliche Fähigkeiten für Agenten",
+    "navKeywords": "Fähigkeiten, Können, Erweiterungen, Wissen"
+  },
+  "plain": {
+    "nav": "Fähigkeiten deiner Helfer",
+    "find": {
+      "navHint": "Bring deinen Helfern neue Dinge bei"
+    },
+    "page": {
+      "title": "Fähigkeiten deiner Helfer",
+      "intro": "Schritt-für-Schritt-Anleitungen, denen deine Helfer folgen können. Schalte jede pro Helfer ein; jede Änderung behält die früheren Fassungen."
+    },
+    "loading": "Wird geladen…",
+    "empty": "Noch nichts hier. Schreib eine oder füge unten eine hinzu.",
+    "add": {
+      "title": "Eine Fähigkeit hinzufügen",
+      "create": "Eine neue Fähigkeit schreiben",
+      "folder": "Aus einem Ordner auf diesem Computer",
+      "safety": "Beim Hinzufügen läuft nichts davon. Es ist zunächst für jeden Helfer aus.",
+      "createButton": "Diese Fähigkeit anlegen",
+      "builtins": "Eingebaute Fähigkeiten, die du entfernt hast:",
+      "cardHint": "Schreib selbst eine oder hol sie aus einer Datei."
+    },
+    "item": {
+      "agentMade": "Von einem Helfer erstellt ({{trust}})",
+      "agents_one": "Für {{count}} Helfer an",
+      "agents_other": "Für {{count}} Helfer an"
+    },
+    "detail": {
+      "back": "Zurück zur Liste",
+      "agentMadeNote": "Ein Helfer hat das geschrieben oder geändert. Lies es, bevor du es für andere Helfer einschaltest.",
+      "enabled": "Es ist an",
+      "noAgents": "Noch keine Helfer."
+    },
+    "edit": {
+      "label": "Sein Text"
+    },
+    "perm": {
+      "choose": "Was sie nutzen darf",
+      "workspaceOnly": "Dateien: nur der eigene Ordner seines Helfers",
+      "before": "Erlaubnisse, die dafür notiert werden:",
+      "filesWorkspace": "Nur der eigene Ordner seines Helfers",
+      "filesWorkspacePlus": "Der eigene Ordner seines Helfers, dazu {{paths}}",
+      "none": "Noch keine Erlaubnisse notiert.",
+      "proposedIntro": "Ein Helfer, oder einer aus einer Datei, hat das erbeten. Nichts wird notiert, bevor du zustimmst. Neues ist markiert.",
+      "scope": "Nur notiert: Diese Grenzen werden geprüft, wenn eine Aufgabe daran gebunden ist. Normale Chats begrenzen sie noch nicht.",
+      "toolsHint": "Eins pro Zeile. Ein Werkzeug einer fremden App schreibt man App/Werkzeug. Leer lassen für keins.",
+      "first": "Dafür ist noch nichts erlaubt; alles unten ist neu.",
+      "uninstall": "Entfernen"
+    },
+    "builtin": {
+      "datastore-guide": "Hilft einem Helfer, ordentliche Listen und Aufzeichnungen (Protokolle, Bestand, Preise) zu führen, die auch andere Helfer lesen können.",
+      "site-publisher": "Hilft einem Helfer, eine kleine Webseite (Bericht, Speisekarte, Liste zum Teilen) zu machen und von diesem Computer aus online zu stellen.",
+      "skill-author": "Hilft einem Helfer, eine Arbeitsweise in eine wiederverwendbare Fähigkeit zu verwandeln oder eine frühere zu verbessern."
+    },
+    "builtinTitle": {
+      "datastore-guide": "Listen und Aufzeichnungen führen",
+      "site-publisher": "Kleine Webseiten machen",
+      "skill-author": "Neue Arbeitsweisen lernen"
+    }
+  }
+}

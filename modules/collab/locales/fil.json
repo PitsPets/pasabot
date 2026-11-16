@@ -1,0 +1,110 @@
+{
+  "nav": "Gawain ng mga agent",
+  "page": {
+    "title": "Gawain ng mga agent",
+    "intro": "Mga trabahong ibinigay ng mga agent mo sa isa't isa: mensahe, ipinasang gawain, handoff at file. Bawat isa ay tumatakbo sa mas mababang trust ng dalawang agent.",
+    "empty": "Wala pang agent na nagbigay ng trabaho sa ibang agent.",
+    "reload": "I-refresh"
+  },
+  "kind": {
+    "delegate": "Ipinasa",
+    "message": "Mensahe",
+    "handoff": "Handoff",
+    "file": "File"
+  },
+  "state": {
+    "queued": "Naghihintay",
+    "leased": "Nagsisimula",
+    "running": "Ginagawa",
+    "done": "Tapos na",
+    "failed": "Pumalya",
+    "cancelled": "Itinigil",
+    "interrupted": "Naputol"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "Tumatakbo bilang {{trust}}",
+    "acked": "Kinumpirma na",
+    "ackWaiting": "Hinihintay ang kumpirmasyon",
+    "reply": "Sagot"
+  },
+  "trust": {
+    "guarded": "guarded",
+    "standard": "standard",
+    "trusted": "trusted"
+  },
+  "team": {
+    "open": "Team",
+    "openLead": "Team · si {{lead}} ang lead",
+    "title": "Sino ang puwedeng gumamit sa agent na ito",
+    "lead": "Lead (sumasagot sa bagong mensahe)",
+    "leadHint": "Ang lead lang ang sumasagot sa mga tao rito. Pumili ng ibang agent para ipasa ang pagiging lead.",
+    "makeLead": "Gawing lead",
+    "isLead": "Lead ngayon",
+    "state": {
+      "active": "Aktibo",
+      "stopped": "Nakatigil",
+      "archived": "Naka-archive"
+    },
+    "stop": "Itigil ang lahat ng trabaho",
+    "stopHint": "Kinakansela ang ginagawa ng mga agent dito at hindi muna pinapatakbo ang bagong mensahe hangga't hindi mo itinutuloy.",
+    "resume": "Ituloy",
+    "archive": "I-archive ang channel",
+    "archiveConfirm": "Pindutin ulit para i-archive",
+    "silentTitle": "Kapag hindi sumasagot ang lead",
+    "silentRetry": "Tanungin ulit ang lead nang isang beses",
+    "on": "Bukas",
+    "off": "Sarado",
+    "backup": "Pagkatapos, sasagot ang",
+    "backupNone": "Wala (sabihan na lang ako)",
+    "backupModel": "Backup na model (opsyonal)",
+    "backupHint": "Kung wala pa ring sagot ang lead pagkatapos ng retry, ang provider na ito ang sasagot sa mensaheng iyon para sa kanya.",
+    "save": "I-save",
+    "saved": "Na-save",
+    "error": "Hindi gumana: {{message}}"
+  },
+  "subagent": {
+    "start": "Nagsimula ang sub-agent na {{name}}",
+    "end": "Natapos ang sub-agent na {{name}}"
+  },
+  "reactions": {
+    "label": "{{emoji}} mula sa {{count}}",
+    "group": "Mga reaksyon",
+    "button": "Mag-react",
+    "add": "Magdagdag ng reaksyon",
+    "pick": "Pumili ng reaksyon",
+    "react": "Mag-react ng {{emoji}}",
+    "remove": "Alisin ang {{emoji}} mo"
+  },
+  "tools": {
+    "collab_agents": "Ilista ang mga agent",
+    "collab_delegate": "Ipasa ang isang gawain",
+    "collab_message": "Mag-message sa agent",
+    "collab_handoff": "Ipasa",
+    "collab_status": "Status ng gawain",
+    "collab_wait": "Hintayin ang gawain",
+    "collab_interrupt": "Itigil ang gawain",
+    "collab_ack": "Kilalanin ang gawain",
+    "collab_react": "Mag-react sa mensahe",
+    "collab_send_file": "Magpadala ng file sa agent"
+  },
+  "server": {
+    "silent": "Hindi sumasagot si {{name}} sa {{chat}}",
+    "aChannel": "isang channel"
+  },
+  "find": {
+    "navHint": "Mga agent na magkakasama sa iisang trabaho",
+    "navKeywords": "koponan, magkakasama, grupo, tulungan"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Mga katulong na nagtutulungan sa iisang trabaho"
+    },
+    "nav": "Mga gawain ng mga katulong",
+    "page": {
+      "title": "Mga gawain ng mga katulong",
+      "intro": "Mga trabahong ibinigay ng mga katulong mo sa isa’t isa: mensahe, ipinasang gawain, pagpasa at file. Bawat isa ay tumatakbo sa mas maingat na setting ng dalawang katulong.",
+      "empty": "Wala pang katulong na nagbigay ng trabaho sa ibang katulong."
+    }
+  }
+}

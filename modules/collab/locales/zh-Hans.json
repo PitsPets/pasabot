@@ -1,0 +1,110 @@
+{
+  "nav": "智能体任务",
+  "page": {
+    "title": "智能体任务",
+    "intro": "智能体之间互相交给对方的工作：消息、委派任务、交接和文件。每项工作都按两个智能体中较低的信任级别运行。",
+    "empty": "还没有智能体给其他智能体分配过工作。",
+    "reload": "刷新"
+  },
+  "kind": {
+    "delegate": "已委派",
+    "message": "消息",
+    "handoff": "交接",
+    "file": "文件"
+  },
+  "state": {
+    "queued": "等待中",
+    "leased": "正在启动",
+    "running": "处理中",
+    "done": "已完成",
+    "failed": "失败",
+    "cancelled": "已停止",
+    "interrupted": "已中断"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "以{{trust}}级别运行",
+    "acked": "已确认",
+    "ackWaiting": "等待确认",
+    "reply": "回复"
+  },
+  "trust": {
+    "guarded": "受限",
+    "standard": "标准",
+    "trusted": "受信任"
+  },
+  "team": {
+    "open": "团队",
+    "openLead": "团队 · 由{{lead}}牵头",
+    "title": "谁可以使用这个智能体",
+    "lead": "牵头者（回复新消息）",
+    "leadHint": "这里只有牵头者会回复大家。选择另一个智能体即可移交牵头权。",
+    "makeLead": "设为牵头者",
+    "isLead": "当前牵头",
+    "state": {
+      "active": "活跃",
+      "stopped": "已停止",
+      "archived": "已归档"
+    },
+    "stop": "停止所有工作",
+    "stopHint": "取消智能体在这里正在做的事，并暂存新消息，直到你恢复。",
+    "resume": "恢复",
+    "archive": "归档频道",
+    "archiveConfirm": "再点一次确认归档",
+    "silentTitle": "牵头者没有回应时",
+    "silentRetry": "再让牵头者回复一次",
+    "on": "开",
+    "off": "关",
+    "backup": "然后由以下对象回复",
+    "backupNone": "无人（改为通知我）",
+    "backupModel": "备用模型（可选）",
+    "backupHint": "如果牵头者在重试后仍没有回复，将由此提供方代为回复该消息。",
+    "save": "保存",
+    "saved": "已保存",
+    "error": "操作失败：{{message}}"
+  },
+  "subagent": {
+    "start": "子智能体 {{name}} 已开始",
+    "end": "子智能体 {{name}} 已完成"
+  },
+  "reactions": {
+    "label": "{{count}} 人回应了 {{emoji}}",
+    "group": "表情回应",
+    "button": "回应",
+    "add": "添加表情回应",
+    "pick": "选择表情回应",
+    "react": "用 {{emoji}} 回应",
+    "remove": "移除你的 {{emoji}}"
+  },
+  "tools": {
+    "collab_agents": "列出智能体",
+    "collab_delegate": "委派任务",
+    "collab_message": "给智能体发消息",
+    "collab_handoff": "移交",
+    "collab_status": "任务状态",
+    "collab_wait": "等待任务",
+    "collab_interrupt": "中断任务",
+    "collab_ack": "确认任务",
+    "collab_react": "回应消息",
+    "collab_send_file": "给智能体发送文件"
+  },
+  "server": {
+    "silent": "{{name}} 在 {{chat}} 中没有回应",
+    "aChannel": "一个频道"
+  },
+  "find": {
+    "navHint": "多个智能体协作完成一项工作",
+    "navKeywords": "团队, 一起, 小组, 协作"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助手们一起做一件事"
+    },
+    "nav": "助手的任务",
+    "page": {
+      "title": "助手的任务",
+      "intro": "你的助手互相交给对方的工作：消息、转交的任务、交接和文件。每项都按两个助手中更谨慎的设置运行。",
+      "empty": "还没有助手把工作交给别的助手。"
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "nav": "Usage",
+  "page": {
+    "title": "Usage",
+    "intro": "Tokens your agents used, counted on this server only.",
+    "days": "Last {{count}} days",
+    "agents": "Per agent",
+    "providers": "Per brain",
+    "empty": "No runs with token counts yet.",
+    "agent": "Agent",
+    "provider": "Brain",
+    "runs": "Runs",
+    "input": "In",
+    "output": "Out",
+    "cache": "Cache",
+    "limits": "Paused brains",
+    "noLimits": "Every brain is available.",
+    "limitUntil": "{{provider}}: {{reason}}, retried after {{time}}",
+    "check": "Check now",
+    "checked": "Checked: {{count}} brain(s) available again."
+  },
+  "gauge": {
+    "label": "Context {{pct}}%",
+    "title": "{{used}} of {{window}} tokens of context used ({{provider}})",
+    "full": "Memory {{pct}}% full",
+    "menu": "How full this chat is",
+    "none": "No context report for this chat yet."
+  },
+  "notice": {
+    "switched": "Switched from {{from}} to {{to}} ({{reason}}). The chat continues.",
+    "back": "Back on {{to}}.",
+    "compactedNative": "Context at {{pct}}%: compacted.",
+    "compactedReseed": "Context at {{pct}}%: the next reply starts a fresh session with a summary.",
+    "overflow": "The context was full: started a fresh session with a summary.",
+    "stopped": "Compaction stopped: the last two freed almost nothing. Start a new chat, or resume compaction in Settings.",
+    "reason": {
+      "rate_limit": "rate limit",
+      "quota": "usage limit",
+      "auth": "sign-in problem",
+      "context_overflow": "context full",
+      "offline": "primary offline"
+    }
+  },
+  "settings": {
+    "title": "Brains and fallbacks",
+    "intro": "When a brain hits a limit, the agent continues on the next one in its list, and goes back once the limit resets.",
+    "fallback": "Fallback {{n}}",
+    "none": "None",
+    "model": "Model (optional)",
+    "account": "Account for {{provider}}",
+    "defaultAccount": "Default account",
+    "compactPct": "Compact at (% of context)",
+    "compactHint": "Empty = {{pct}}%",
+    "save": "Save",
+    "saved": "Saved",
+    "stopped": "Compaction is stopped for this agent.",
+    "resume": "Resume compaction",
+    "accounts": "Accounts",
+    "accountsIntro": "Each account has its own sign-in folder for that brain's CLI.",
+    "accountLabel": "Account name",
+    "accountProvider": "Brain",
+    "addAccount": "Add account",
+    "remove": "Remove",
+    "noAccounts": "No extra accounts.",
+    "accountSignIn": "To sign in, run this once in a terminal on the server:",
+    "accountFolder": "Sign-in folder for this brain's CLI:",
+    "accountChecking": "Checking…",
+    "accountSignedIn": "Signed in",
+    "accountSignedOut": "Not signed in",
+    "accountUnknown": "Sign-in not checked",
+    "primary": "Uses {{provider}}"
+  },
+  "server": {
+    "stoppedTitle": "{{name}}: compaction stopped",
+    "stoppedBody": "Two compactions in a row freed less than 10 % of the context. Start a new chat or resume compaction in Settings."
+  },
+  "find": {
+    "navHint": "How much your agents use and cost",
+    "navKeywords": "usage, cost, tokens, spend, bill",
+    "settingsHint": "Limits and checks for your AI brains",
+    "settingsKeywords": "brains, models, limits, providers, AI",
+    "brainsHint": "Set up the AI your agents think with",
+    "brainsKeywords": "brains, AI, models, sign in, install, Claude, Codex, Gemini, Grok, OpenCode, local, free starter"
+  },
+  "brains": {
+    "title": "Brains",
+    "intro": "A brain is the AI your agent thinks with. Set up one or more; each agent picks a main brain and a backup.",
+    "name": {
+      "opencode": "Free starter (OpenCode)",
+      "local": "Local model",
+      "acp": "Other ACP agents"
+    },
+    "desc": {
+      "claude": "Anthropic's Claude Code app, with your Claude account",
+      "codex": "OpenAI's Codex app, with your ChatGPT account",
+      "opencode": "Free model, no key, no payment. Good to start",
+      "gemini": "Google's Gemini CLI, with your Google account",
+      "grok": "xAI's Grok CLI, with an xAI key",
+      "local": "Ollama or LM Studio on this computer. Private, works offline",
+      "acp": "Any app that speaks the Agent Client Protocol",
+      "other": "A brain added by a plugin or for tests"
+    },
+    "state": {
+      "ready": "Ready",
+      "needs_sign_in": "Needs sign-in",
+      "not_installed": "Not installed",
+      "unreachable": "Not reachable",
+      "not_running": "Not running",
+      "needs_model": "Needs a model",
+      "checking": "Checking…"
+    },
+    "unconfirmed": "Couldn't confirm sign-in. Run Test to be sure.",
+    "notFound": "Not found",
+    "install": "Install",
+    "signIn": "Sign in",
+    "test": "Test",
+    "testing": "Testing…",
+    "useNew": "Use for a new agent",
+    "checkAgain": "Check again",
+    "steps": "Steps",
+    "browse": "Browse and install",
+    "close": "Close",
+    "copy": "Copy",
+    "copied": "Copied",
+    "details": "Details",
+    "works": "Works. Reply: \"{{reply}}\" · {{secs}} s",
+    "usedBy": "Used by {{names}}",
+    "backupFor": "Backup for {{names}}",
+    "noneReady": "No brain is ready yet. The free starter works in one tap.",
+    "useStarter": "Use the free starter",
+    "stepsTitle": "Set up {{name}}",
+    "step": {
+      "terminal": "Open Terminal on this computer.",
+      "paste": "Paste this command and press Return:",
+      "signIn": "Paste this command and follow the sign-in it opens:",
+      "back": "Come back here and press Check again.",
+      "noPassword": "PasaBot never asks for your password. The sign-in stays with the app.",
+      "geminiChoose": "When it asks, choose \"Sign in with Google\".",
+      "grokInstall": "Install the Grok CLI by following xAI's instructions.",
+      "starter": "Or let PasaBot install it for you (download checked before it runs):",
+      "starterCta": "Install the free starter",
+      "vault": "Save your xAI key in PasaBot's Vault as {{name}}. It never shows on a page after saving.",
+      "local": "Install Ollama or LM Studio, download one model and keep the app open.",
+      "localCta": "Set up local models",
+      "acp": "Pick an agent from the list and install it.",
+      "acpCta": "Open ACP agents",
+      "keyLabel": "Key for {{brain}}",
+      "keyWho": "Agents running on this brain can see the key.",
+      "keySave": "Save key",
+      "keySaved": "Key saved in the Vault.",
+      "keyErr": "Couldn't save the key. Try again.",
+      "tokenTitle": "Or paste a setup token",
+      "tokenWhy": "Use this if signing in doesn't stick, or PasaBot runs on another computer.",
+      "tokenRun": "Open Terminal, paste this and press Return. Sign in when your browser opens:",
+      "tokenPaste": "Copy the long code it shows at the end and paste it below.",
+      "tokenLabel": "Setup token",
+      "tokenWho": "Kept locked in PasaBot's Vault. Agents running on Claude can see it.",
+      "tokenSave": "Save token",
+      "tokenSaved": "Token saved. Checking Claude now…",
+      "tokenErr": "Couldn't save the token. Try again.",
+      "starterFailed": "The free starter didn't install. Try again in a moment.",
+      "starterPlain": "PasaBot can install it for you in one tap: a small free app, just for you on this computer, checked before it runs. It takes about a minute.",
+      "terminalWindows": "Open PowerShell on this computer (type PowerShell in the Start menu).",
+      "pasteWindows": "Paste this command and press Enter:",
+      "nodeFirstWindows": "If it says npm is not found, install Node.js from nodejs.org first, then open a new PowerShell window."
+    },
+    "err": {
+      "auth": "Not signed in, or the sign-in expired. Sign in again.",
+      "limit": "This account hit its usage limit. Try again later.",
+      "limitAt": "This account hit its usage limit. It resets at {{time}}.",
+      "offline": "Couldn't reach the brain. Check the internet, or that Ollama / LM Studio is open.",
+      "crash": "The app stopped before answering.",
+      "timeout": "No answer within a minute. The app may be busy or stuck.",
+      "model": "That model isn't available on this account. Pick another model.",
+      "notInstalled": "Not installed on this computer.",
+      "busy": "Too many tests in a row. Wait a minute and try again.",
+      "failed": "Couldn't run the test. Try again.",
+      "load": "Couldn't load the brains. Try again."
+    },
+    "inUse": "In use: {{name}}",
+    "notHere": "Not on this computer"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "Set up the AI your helpers think with",
+      "navHint": "How much your helpers use and cost"
+    },
+    "brains": {
+      "intro": "A brain is the AI your helper thinks with. Set up one or more; each helper picks a main brain and a backup.",
+      "useNew": "Use for a new helper",
+      "desc": {
+        "opencode": "A free brain, no key, no payment. Good to start",
+        "gemini": "Google's Gemini, with your Google account",
+        "grok": "xAI's Grok, with an xAI key",
+        "acp": "AI apps added under technical setup"
+      },
+      "name": {
+        "local": "A brain on this computer",
+        "acp": "Other AI apps"
+      }
+    },
+    "page": {
+      "intro": "How much your helpers used, counted on this computer only.",
+      "agents": "Per helper",
+      "empty": "Nothing used yet.",
+      "agent": "Helper"
+    }
+  }
+}

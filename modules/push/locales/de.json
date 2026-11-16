@@ -1,0 +1,40 @@
+{
+  "title": "Benachrichtigungen auf diesem Gerät",
+  "intro": "Erhalte eine Benachrichtigung auf diesem Handy oder Computer, auch wenn PasaBot geschlossen ist.",
+  "state": {
+    "loading": "Wird geprüft…",
+    "off": "Aus",
+    "on": "An",
+    "unsupported": "Hier nicht unterstützt",
+    "blocked": "Im Browser blockiert",
+    "unavailable": "Auf diesem Server nicht verfügbar"
+  },
+  "turnOn": "Benachrichtigungen aktivieren",
+  "turnOff": "Auf diesem Gerät deaktivieren",
+  "prefs": {
+    "title": "Benachrichtige mich, wenn",
+    "approval": "ein Agent mein OK braucht",
+    "error": "ein Durchlauf fehlschlägt",
+    "finished": "ein Agent antwortet",
+    "progress": "eine lange Aufgabe noch läuft",
+    "alert": "andere Warnungen (Server, Sicherheit)"
+  },
+  "test": {
+    "button": "Test senden",
+    "sent": "Gesendet. Er sollte gleich erscheinen.",
+    "failed": "Der Test ist nicht angekommen. Deaktiviere die Benachrichtigungen und aktiviere sie erneut."
+  },
+  "help": {
+    "unsupported": "Dieser Browser kann keine Benachrichtigungen von Websites empfangen.",
+    "blocked": "Benachrichtigungen sind für PasaBot blockiert. Erlaube sie in den Website-Einstellungen des Browsers und komm dann zurück.",
+    "unavailable": "Der Server kann gerade keine Benachrichtigungen senden (sein Tresor ist gesperrt).",
+    "iphone": "Füge PasaBot auf dem iPhone und iPad zuerst zum Home-Bildschirm hinzu (Teilen → Zum Home-Bildschirm), und aktiviere die Funktion dann dort."
+  },
+  "errors": {
+    "subscribe": "Benachrichtigungen konnten nicht aktiviert werden. Versuch es noch einmal."
+  },
+  "find": {
+    "settingsHint": "Mitteilungen auf diesem Gerät",
+    "settingsKeywords": "Mitteilungen, Benachrichtigungen, Hinweise, Ton"
+  }
+}

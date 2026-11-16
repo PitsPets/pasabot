@@ -1,0 +1,107 @@
+{
+  "nav": "Personnes",
+  "page": {
+    "title": "Personnes",
+    "introOwner": "Invitez votre famille, vos amis ou vos collègues. Les invités ne voient que les chats auxquels vous les ajoutez ; les membres peuvent aussi utiliser les agents que vous partagez. Vous restez le seul propriétaire.",
+    "introOther": "Vous avez été invité sur ce PasaBot. Le propriétaire décide de ce que vous pouvez voir."
+  },
+  "kind": {
+    "owner": "Propriétaire",
+    "member": "Membre",
+    "guest": "Invité"
+  },
+  "role": {
+    "member": "Peut écrire",
+    "observer": "Lecture seule"
+  },
+  "invite": {
+    "title": "Inviter quelqu’un",
+    "intro": "Vous obtenez un lien à lui envoyer. Il ne fonctionne qu’une fois et expire après 3 jours.",
+    "kind": "Inviter comme",
+    "guestHint": "Un invité ne voit que les chats que vous choisissez ci-dessous.",
+    "memberHint": "Un membre voit les chats que vous choisissez et peut ouvrir des chats avec les agents que vous partagez.",
+    "chats": "Chats à rejoindre",
+    "noChats": "Aucun chat pour l’instant. Créez d’abord un agent.",
+    "pickChat": "Choisissez au moins un chat pour un invité.",
+    "role": "Dans ces chats, la personne",
+    "create": "Créer le lien d’invitation",
+    "link": "Lien d’invitation",
+    "linkHint": "Envoyez-le uniquement à la personne invitée : la première personne qui l’ouvre le rejoint.",
+    "copy": "Copier le lien",
+    "copied": "Copié"
+  },
+  "invites": {
+    "title": "Invitations en cours",
+    "noChats": "Aucun chat",
+    "expires": "expire {{when}}",
+    "revoke": "Annuler l’invitation"
+  },
+  "list": {
+    "title": "Tout le monde sur ce PasaBot",
+    "disabled": "Désactivé",
+    "disable": "Désactiver",
+    "enable": "Réactiver"
+  },
+  "agents": {
+    "title": "Agents que les membres peuvent utiliser",
+    "intro": "Les membres peuvent démarrer leur propre chat avec ces agents. Leurs messages s’exécutent en leur nom, jamais au vôtre : toute action risquée vous demande donc d’abord votre accord.",
+    "none": "Aucun agent pour l’instant.",
+    "share": "Autoriser les membres à utiliser {{name}}"
+  },
+  "member": {
+    "title": "Agents que vous pouvez utiliser",
+    "intro": "Démarrez votre propre chat avec un agent partagé par le propriétaire.",
+    "none": "Le propriétaire n’a pas encore partagé d’agent avec vous.",
+    "open": "Discuter avec {{name}}"
+  },
+  "guest": {
+    "title": "Vos chats",
+    "body": "Vos chats sont dans la liste. Le propriétaire vous en ajoute d’autres si besoin."
+  },
+  "chat": {
+    "button": "Personnes",
+    "title": "Personnes dans ce chat",
+    "readOnly": "Passer en lecture seule",
+    "letWrite": "Autoriser à écrire",
+    "remove": "Retirer {{name}}",
+    "add": "Ajouter quelqu’un",
+    "addPerson": "Ajouter {{name}}",
+    "invite": "Inviter une nouvelle personne dans ce chat",
+    "close": "Terminé"
+  },
+  "join": {
+    "title": "Rejoindre PasaBot",
+    "loading": "Vérification de votre invitation…",
+    "invalid": "Ce lien d’invitation ne fonctionne plus. Demandez-en un nouveau.",
+    "introGuest": "{{name}} vous a invité comme invité dans : {{chats}}.",
+    "introMember": "{{name}} vous a invité comme membre.",
+    "name": "Votre nom",
+    "password": "Choisissez un mot de passe",
+    "again": "Confirmez le mot de passe",
+    "short": "Utilisez au moins 8 caractères.",
+    "mismatch": "Les mots de passe ne correspondent pas.",
+    "badName": "Utilisez un nom simple, sans caractères spéciaux.",
+    "submit": "Rejoindre"
+  },
+  "errors": {
+    "generic": "Une erreur s’est produite. Réessayez."
+  },
+  "find": {
+    "navHint": "Inviter des personnes et gérer l’accès",
+    "navKeywords": "inviter, membres, invités, famille, amis"
+  },
+  "plain": {
+    "page": {
+      "introOwner": "Invitez famille, amis ou collègues. Les invités ne voient que les discussions où vous les ajoutez ; les membres peuvent aussi utiliser les assistants que vous partagez. Vous restez le seul propriétaire."
+    },
+    "invite": {
+      "memberHint": "Un membre voit les discussions que vous choisissez et peut discuter avec les assistants que vous partagez.",
+      "noChats": "Pas encore de discussion. Créez d’abord un assistant."
+    },
+    "agents": {
+      "title": "Assistants utilisables par les membres",
+      "intro": "Les membres peuvent ouvrir leur propre discussion avec ces assistants. Leurs messages agissent en leur nom, jamais au vôtre : tout ce qui est risqué vous est demandé d’abord.",
+      "none": "Pas encore d’assistant."
+    }
+  }
+}

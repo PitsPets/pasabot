@@ -1,0 +1,109 @@
+{
+  "nav": "Vorlagen",
+  "page": {
+    "title": "Vorlagen",
+    "starterTitle": "Kostenloser Starter"
+  },
+  "onboarding": {
+    "title": "Wähle ein Brain für deinen ersten Agent",
+    "intro": "Deine Agents brauchen ein Brain: ein KI-Modell, mit dem sie denken. Wähle, wie du eins bekommst.",
+    "freeTitle": "Kostenloser Starter, ohne Einrichtung",
+    "freeBody": "Nutzt ein kostenloses Modell über die OpenCode-App. Kein Schlüssel, keine Anmeldung, keine Zahlung.",
+    "freeCta": "Kostenlosen Starter nutzen",
+    "freeUnavailable": "Der kostenlose Starter ist gerade nicht verfügbar. Richte unten selbst ein Brain ein.",
+    "guidedTitle": "Ein vorhandenes Brain nutzen",
+    "guidedBody": "Claude, Codex, OpenCode oder eine andere App, bei der du auf diesem Computer angemeldet bist.",
+    "found": "Auf diesem Computer gefunden",
+    "notFound": "Nicht installiert",
+    "installHint": "Zum Installieren: {{cmd}}",
+    "guidedCta": "Ersten Agent hinzufügen",
+    "localTitle": "Lokales Modell auf diesem Computer",
+    "localBody": "Auf diesem Computer läuft ein Modellserver. Dein Agent denkt dort: kein Konto, nichts verlässt den Computer.",
+    "localFound": "{{name}} antwortet unter {{url}} mit {{count}} Modell(en).",
+    "localCta": "{{name}} nutzen",
+    "localAdded": "{{name}} wurde hinzugefügt. Wähle es als Brain deines ersten Agents.",
+    "useThis": "Verwenden",
+    "setUp": "Einrichten"
+  },
+  "consent": {
+    "title": "OpenCode für den kostenlosen Starter installieren?",
+    "what": "Was: {{what}}",
+    "where": "Wo: {{where}} (nur für deinen Benutzer, keine Admin-Rechte)",
+    "from": "Von: {{from}}",
+    "check": "Der Download wird vor dem Schreiben anhand seiner veröffentlichten SHA-256-Prüfsumme geprüft.",
+    "models": "Kostenlose Modelle, Stand {{date}}. Kostenlose Modelle können jederzeit enden; PasaBot sagt dir Bescheid, wenn deins nicht mehr funktioniert.",
+    "agree": "Installieren und meinen Agent erstellen",
+    "back": "Zurück",
+    "working": "Wird installiert…",
+    "failed": "OpenCode konnte nicht installiert werden: {{reason}}. Es wurde nichts erstellt. Du kannst trotzdem selbst ein Brain einrichten.",
+    "agentName": "Starter",
+    "agentInstructions": "Du bist ein freundlicher Helfer. Halte deine Antworten kurz und klar."
+  },
+  "notice": {
+    "title": "Das kostenlose Modell funktioniert nicht mehr",
+    "body": "{{model}} {{reason}}. Dein Agent braucht ein anderes Brain.",
+    "action": "Anderes Brain wählen",
+    "notFreeTitle": "Das kostenlose Modell ist nicht mehr kostenlos",
+    "not_free": "{{name}} ist nicht mehr kostenlos. Dein Agent braucht ein anderes Brain: richte eins ein oder nutze ein lokales Modell.",
+    "needs_key": "{{name}} braucht jetzt einen Schlüssel oder eine Anmeldung. Dein Agent braucht ein anderes Brain.",
+    "unavailable": "{{name}} ist nicht mehr verfügbar. Dein Agent braucht ein anderes Brain.",
+    "none": "Dein kostenloser Starter funktioniert.",
+    "busy": "Das kostenlose Modell ist ausgelastet oder das Kontingent ist aufgebraucht. Versuche es um {{time}} erneut."
+  },
+  "catalog": {
+    "title": "Mit einer Vorlage starten",
+    "use": "Nutzen",
+    "useNamed": "{{name}} nutzen",
+    "export": "Exportieren",
+    "exportNamed": "{{name}} exportieren",
+    "empty": "Noch keine Vorlagen."
+  },
+  "describe": {
+    "title": "Beschreibe deinen Agent",
+    "label": "Was soll der Agent tun?",
+    "placeholder": "Erstelle mir einen Agent, der…",
+    "submit": "Entwurf erstellen"
+  },
+  "import": {
+    "title": "Agent-Datei importieren",
+    "hint": "Eine .pasabot-template.json, eine Agent-.md-Datei oder eine Assistenten-.json-Datei.",
+    "label": "Agent-Datei"
+  },
+  "review": {
+    "title": "Neuen Agent prüfen",
+    "hint": "Es wird nichts erstellt, bis du auf Erstellen drückst.",
+    "name": "Name",
+    "instructions": "Anweisungen",
+    "brain": "Brain",
+    "create": "Agent erstellen",
+    "cancel": "Abbrechen"
+  },
+  "error": "Etwas ist schiefgelaufen: {{msg}}",
+  "server": {
+    "skippedTitle": "Eine Routine wurde übersprungen: Das kostenlose Modell ist ausgelastet",
+    "skippedBody": "Routinen auf dem kostenlosen Modell lassen ihre Läufe bis dahin aus; der nächste Start läuft wie gewohnt."
+  },
+  "find": {
+    "navHint": "Fertige Agenten als Vorlage",
+    "navKeywords": "Vorlagen, Beispiele, Start, Voreinstellungen"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Fertige Helfer zum Starten"
+    },
+    "describe": {
+      "title": "Beschreibe deinen Helfer",
+      "label": "Was soll der Helfer tun?",
+      "placeholder": "Mach mir einen Helfer, der…"
+    },
+    "import": {
+      "title": "Einen Helfer aus einer Datei holen",
+      "hint": "Eine Helfer-Datei aus PasaBot oder einer anderen Assistenten-App.",
+      "label": "Helfer-Datei"
+    },
+    "review": {
+      "title": "Neuen Helfer prüfen",
+      "create": "Diesen Helfer anlegen"
+    }
+  }
+}

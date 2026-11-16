@@ -1,0 +1,15 @@
+{"type":"system","subtype":"init","session_id":"SESSION","cwd":"/ws","model":"claude-test","tools":["Read","Bash"],"mcp_servers":[{"name":"pasabot","status":"connected"}],"permissionMode":"default"}
+{"type":"stream_event","event":{"type":"message_start","message":{"id":"msg_1","role":"assistant"}},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"stream_event","event":{"type":"content_block_start","index":0,"content_block":{"type":"thinking","thinking":""}},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"stream_event","event":{"type":"content_block_delta","index":0,"delta":{"type":"thinking_delta","thinking":"Checking the workspace."}},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"stream_event","event":{"type":"content_block_delta","index":1,"delta":{"type":"text_delta","text":"Let me look"}},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"stream_event","event":{"type":"content_block_delta","index":1,"delta":{"type":"text_delta","text":" first."}},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"assistant","message":{"id":"msg_1","role":"assistant","content":[{"type":"text","text":"Let me look first."},{"type":"tool_use","id":"toolu_1","name":"Bash","input":{"command":"ls"}}]},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_1","content":"notes.md\n","is_error":false}]},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"assistant","message":{"id":"msg_2","role":"assistant","content":[{"type":"tool_use","id":"toolu_2","name":"Task","input":{"description":"summarize","subagent_type":"general-purpose","prompt":"Summarize notes.md"}}]},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"assistant","message":{"id":"msg_3","role":"assistant","content":[{"type":"tool_use","id":"toolu_3","name":"Read","input":{"file_path":"notes.md"}}]},"parent_tool_use_id":"toolu_2","session_id":"SESSION"}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_3","content":[{"type":"text","text":"hello notes"}]}]},"parent_tool_use_id":"toolu_2","session_id":"SESSION"}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_2","content":[{"type":"text","text":"The notes say hello."}]}]},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"stream_event","event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"pong"}},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"assistant","message":{"id":"msg_4","role":"assistant","content":[{"type":"text","text":"pong"}]},"parent_tool_use_id":null,"session_id":"SESSION"}
+{"type":"result","subtype":"success","is_error":false,"duration_ms":1200,"num_turns":3,"result":"pong","session_id":"SESSION","total_cost_usd":0.0012,"usage":{"input_tokens":42,"cache_creation_input_tokens":10,"cache_read_input_tokens":100,"output_tokens":7}}

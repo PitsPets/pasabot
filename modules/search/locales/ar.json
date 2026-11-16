@@ -1,0 +1,29 @@
+{
+  "nav": "بحث",
+  "title": "البحث في الرسائل",
+  "label": "ابحث في محادثاتك",
+  "placeholder": "اكتب كلمة",
+  "hint": "يعثر على الكلمات في كل محادثة أنت فيها، الأحدث أولًا.",
+  "empty": "لم يتم العثور على شيء.",
+  "untitled": "محادثة",
+  "count_zero": "لا توجد رسائل",
+  "count_one": "{{count}} رسالة",
+  "count_two": "رسالتان",
+  "count_few": "{{count}} رسائل",
+  "count_many": "{{count}} رسالة",
+  "count_other": "{{count}} رسالة",
+  "author": {
+    "user": "شخص",
+    "agent": "وكيل",
+    "system": "PasaBot",
+    "external": "خارجي"
+  },
+  "error": "فشل البحث. {{reason}}",
+  "tools": {
+    "search_messages": "البحث في الرسائل"
+  },
+  "find": {
+    "navHint": "ابحث عن أي رسالة في محادثاتك",
+    "navKeywords": "بحث, إيجاد, رسائل, سجل"
+  }
+}

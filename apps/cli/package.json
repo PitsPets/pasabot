@@ -1,0 +1,27 @@
+{
+  "name": "@pasabot/cli",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": {
+    "pasabot": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@pasabot/db": "workspace:*",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6"
+  },
+  "exports": {
+    ".": {
+      "source": "./src/main.ts",
+      "types": "./dist/main.d.ts",
+      "default": "./dist/main.js"
+    }
+  }
+}

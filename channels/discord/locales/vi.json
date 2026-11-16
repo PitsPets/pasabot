@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "Token của bot",
+    "botTokenHint": "Lấy từ trang Bot của ứng dụng trong cổng nhà phát triển Discord. Hãy bật Message Content intent tại đó. Được lưu trong vault và sẽ không hiển thị lại.",
+    "apiBase": "Địa chỉ API",
+    "gatewayUrl": "Địa chỉ gateway",
+    "advancedHint": "Hãy giữ nguyên các mục này trừ khi bạn biết mình cần thay đổi."
+  },
+  "link": {
+    "howTo": "Hãy nhắn tin trực tiếp cho bot của bạn: /link {{code}}",
+    "dmOnly": "Mã liên kết chỉ hoạt động khi nhắn tin trực tiếp cho bot."
+  },
+  "status": {
+    "connected": "Đã kết nối",
+    "reconnecting": "Đang kết nối lại…",
+    "auth_failed": "Discord đã từ chối bot (hãy kiểm tra token và Message Content intent)",
+    "stopped": "Đã dừng"
+  }
+}

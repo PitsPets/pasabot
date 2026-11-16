@@ -1,0 +1,142 @@
+{
+  "nav": "Quy trình",
+  "page": {
+    "title": "Quy trình",
+    "intro": "Quy trình nối các bước: agent, lệnh gọi mô hình không dùng công cụ, điều kiện, phê duyệt của bạn, chờ và kết quả. Hãy dựng trên canvas rồi chạy.",
+    "empty": "Chưa có quy trình nào.",
+    "new": "Quy trình mới",
+    "fromTemplate": "Trả lời rồi chia sẻ",
+    "templateHint": "Agent đầu tiên trả lời yêu cầu của bạn, sau đó mọi agent còn lại nhận câu trả lời đó cùng lúc."
+  },
+  "list": {
+    "steps": "{{count}} bước",
+    "run": "Chạy",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "deleteConfirm": "Xóa quy trình này? Các lượt chạy đang diễn ra vẫn tiếp tục."
+  },
+  "approvals": {
+    "title": "Đang chờ bạn",
+    "approve": "Phê duyệt",
+    "reject": "Từ chối",
+    "rejectConfirm": "Từ chối? Lượt chạy sẽ dừng tại đây."
+  },
+  "runs": {
+    "title": "Lượt chạy gần đây",
+    "empty": "Chưa có lượt chạy nào.",
+    "show": "Hiện các bước",
+    "hide": "Ẩn các bước",
+    "cancel": "Dừng lượt chạy",
+    "loops": "Số lần lặp: {{count}}"
+  },
+  "state": {
+    "running": "Đang chạy",
+    "waiting": "Đang chờ",
+    "done": "Hoàn tất",
+    "failed": "Thất bại",
+    "rejected": "Đã từ chối",
+    "stopped": "Đã dừng",
+    "cancelled": "Đã hủy",
+    "skipped": "Đã bỏ qua"
+  },
+  "type": {
+    "agent": "Tác nhân",
+    "model": "Mô hình (không công cụ)",
+    "condition": "Điều kiện",
+    "approval": "Phê duyệt",
+    "transform": "Chuyển đổi",
+    "wait": "Chờ",
+    "parallel": "Song song",
+    "output": "Kết quả"
+  },
+  "editor": {
+    "name": "Tên quy trình",
+    "add": "Thêm bước",
+    "addHint": "Bước mới sẽ nối vào sau bước đang chọn.",
+    "save": "Lưu",
+    "back": "Quay lại danh sách",
+    "saved": "Đã lưu.",
+    "canvas": "Canvas quy trình",
+    "maxIterations": "Giới hạn lặp mỗi lượt chạy",
+    "selected": "Bước đang chọn",
+    "none": "Chạm vào một bước trên canvas để sửa.",
+    "label": "Tên bước",
+    "remove": "Xóa bước này",
+    "next": "Sau đó chuyển tới",
+    "branch": "Khi điều kiện là",
+    "link": "Thêm liên kết",
+    "links": "Liên kết đi ra",
+    "unlink": "Xóa liên kết",
+    "pick": "Chọn một bước"
+  },
+  "field": {
+    "agent": "Tác nhân",
+    "pickAgent": "Chọn một agent",
+    "prompt": "Yêu cầu",
+    "op": "Kiểm tra",
+    "value": "Giá trị",
+    "message": "Nội dung hỏi bạn",
+    "template": "Văn bản ({{input}} = đầu vào của bước)",
+    "seconds": "Số giây chờ",
+    "to": "Gửi tới",
+    "title": "Tiêu đề",
+    "channel": "ID liên kết kênh"
+  },
+  "op": {
+    "contains": "chứa",
+    "not_contains": "không chứa",
+    "equals": "bằng",
+    "matches": "khớp với mẫu",
+    "empty": "trống",
+    "not_empty": "không trống"
+  },
+  "branch": {
+    "true": "có",
+    "false": "không"
+  },
+  "to": {
+    "notification": "Thông báo",
+    "channel": "Bài đăng trong kênh"
+  },
+  "template": {
+    "title": "Trả lời rồi chia sẻ",
+    "name": "Tên",
+    "agents": "Agent (agent đầu tiên trả lời)",
+    "prompt": "Yêu cầu cho agent đầu tiên",
+    "followUp": "Những agent còn lại làm gì với câu trả lời",
+    "create": "Tạo quy trình"
+  },
+  "tools": {
+    "workflows_list": "Liệt kê quy trình của tôi",
+    "workflows_create": "Tạo quy trình",
+    "workflows_update": "Sửa một quy trình của tôi",
+    "workflows_run": "Chạy một quy trình của tôi",
+    "workflows_delete": "Xóa một quy trình của tôi"
+  },
+  "server": {
+    "failed": "Quy trình \"{{name}}\" thất bại",
+    "stopped": "Quy trình \"{{name}}\" đã dừng"
+  },
+  "find": {
+    "navHint": "Nối các bước thành một luồng",
+    "navKeywords": "bước, luồng, chuỗi, tự động"
+  },
+  "plain": {
+    "page": {
+      "intro": "Quy trình nối các bước: trợ lý, câu trả lời nhanh của bộ não, điều kiện, sự duyệt của bạn, chờ và kết quả. Dựng trên khung vẽ rồi chạy.",
+      "templateHint": "Trợ lý đầu tiên trả lời yêu cầu của bạn, rồi mọi trợ lý khác nhận câu trả lời đó cùng lúc."
+    },
+    "type": {
+      "agent": "Trợ lý",
+      "model": "Chỉ bộ não (không công cụ)"
+    },
+    "field": {
+      "agent": "Trợ lý",
+      "pickAgent": "Chọn một trợ lý"
+    },
+    "template": {
+      "agents": "Trợ lý (người đầu tiên trả lời)",
+      "prompt": "Yêu cầu cho trợ lý đầu tiên"
+    }
+  }
+}

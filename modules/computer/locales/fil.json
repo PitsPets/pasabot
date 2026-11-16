@@ -1,0 +1,143 @@
+{
+  "nav": "Computer",
+  "page": {
+    "title": "Paggamit ng computer",
+    "intro": "May sariling display ang bawat agent na gumagamit ng computer. Bawat screenshot, click at pindot sa keyboard ay ipinagpapaalam muna sa iyo. Panoorin sila dito, at ikaw muna ang humawak kapag kailangan.",
+    "empty": "Walang agent na gumagamit ng display ngayon. Magsisimula ito sa unang beses na aprubahan mo ang computer action ng isang agent."
+  },
+  "setup": {
+    "title": "I-set up ang paggamit ng computer",
+    "missing_bins": "Kulang sa server na ito ang {{list}}. I-install ang mga ito, o patakbuhin ang PasaBot mula sa computer image (deploy/computer).",
+    "unsupported": "Hindi puwede ang paggamit ng computer sa operating system na ito.",
+    "off": "Naka-off ang paggamit ng computer sa server na ito.",
+    "practice": "Practice display: isang test app na kasama na sa PasaBot, hindi totoong desktop.",
+    "windows_soon": "Hindi pa puwede sa Windows. Hindi pa nakikita o nagagamit ng mga helper ang screen sa isang Windows PC; gumagana ang lahat ng iba pa."
+  },
+  "mac": {
+    "title": "Payagan ang isang agent sa Mac na ito",
+    "warning": "Walang hiwalay na screen ang Mac para sa mga katulong: ang katulong na papayagan mo rito ay makikita ang buong screen mo at gagalawin ang sarili mong pointer at keyboard. Magtatanong pa rin muna siya sa bawat gagawin. Ang mga pahintulot ay para sa PasaBot Screen Helper, hindi sa PasaBot mismo.",
+    "perAgent": "Naka-off ang paggamit ng computer sa Mac na ito para sa lahat ng agent hangga't hindi mo ito ini-on dito para sa mismong agent na iyon, gamit ang password mo.",
+    "permissions": "Hihingin ng macOS na payagan mo ang Screen Recording at Accessibility. Ibinibigay ng macOS ang pahintulot na iyon sa program na nagpapatakbo ng PasaBot, kaya puwede na ring gamitin ng sariling command-line tools ng bawat agent ang screen mo nang hindi ka tinatanong. Payagan lang ito kung pinagkakatiwalaan mo ang lahat ng agent sa server na ito, at alisin ito sa System Settings → Privacy & Security kapag tapos ka na.",
+    "password": "Ang password mo",
+    "enable": "Payagan",
+    "enableFor": "Payagan si {{name}} na gamitin ang Mac na ito",
+    "disable": "I-off",
+    "disableFor": "I-off si {{name}} sa Mac na ito",
+    "agentOn": "Pinayagan",
+    "agentOff": "Naka-off",
+    "noAgents": "Wala pang agent.",
+    "wrong": "Hindi tugma. Subukan ulit."
+  },
+  "display": {
+    "shared": "Ang sarili mong screen",
+    "own": "Sariling display {{label}}",
+    "live": "Live",
+    "control": "Ako muna ang hahawak",
+    "release": "Ibalik sa agent",
+    "controlHint": "I-click ang larawan para mag-click sa display ng agent.",
+    "stop": "Ihinto ang display",
+    "typeLabel": "Mag-type sa display",
+    "send": "Ipadala ang text",
+    "alt": "Display ni {{name}}",
+    "started": "Nagsimula {{time}}"
+  },
+  "activity": {
+    "title": "Mga huling ginawa",
+    "empty": "Wala pang ginagawa.",
+    "you": "Ikaw",
+    "failed": "Pumalya"
+  },
+  "error": "May nagkaproblema: {{msg}}",
+  "tools": {
+    "computer_display": "Computer: impormasyon ng screen",
+    "computer_screenshot": "Computer: mag-screenshot",
+    "computer_click": "Computer: i-click",
+    "computer_move": "Computer: igalaw ang pointer",
+    "computer_type": "Computer: mag-type ng text",
+    "computer_key": "Computer: pindutin ang mga key"
+  },
+  "find": {
+    "navHint": "Hayaang gumamit ng computer ang agent",
+    "navKeywords": "desktop, screen, mouse, keyboard, kontrol"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Hayaang gumamit ng computer ang katulong"
+    },
+    "page": {
+      "intro": "May sariling screen ang bawat katulong na gumagamit ng computer. Bawat larawan ng screen, click at pindot sa keyboard ay ipinagpapaalam muna sa iyo. Panoorin sila dito, at ikaw muna ang humawak kapag kailangan.",
+      "empty": "Walang katulong na gumagamit ng screen ngayon. Magsisimula ito sa unang beses na pumayag ka sa computer action ng isang katulong."
+    },
+    "setup": {
+      "missing_bins": "Kulang sa computer na ito ang {{list}}. I-install ang mga ito, o hilingin sa nag-set up ng PasaBot na gamitin ang computer setup nito.",
+      "off": "Naka-off ang paggamit ng computer sa PasaBot na ito."
+    },
+    "mac": {
+      "noAgents": "Wala pang katulong."
+    },
+    "display": {
+      "controlHint": "I-click ang larawan para mag-click sa screen ng katulong.",
+      "release": "Ibalik sa katulong"
+    }
+  },
+  "card": {
+    "ask": {
+      "title": "Payagan si {{name}} na gamitin ang computer na ito?",
+      "body": "Makikita ni {{name}} ang buong screen mo at gagalawin niya ang sarili mong pointer at keyboard. Magtatanong pa rin muna siya sa bawat click at pindot, at puwede mo siyang patigilin anumang oras: pindutin nang matagal ang Esc nang isang segundo.",
+      "password": "Ang password mo",
+      "yes": "Oo, i-set up",
+      "no": "Hindi muna"
+    },
+    "steps": {
+      "title": "I-set up ang computer na ito para kay {{name}}",
+      "stopped": "Pinatigil mo ang pagkontrol sa computer na ito. Mananatili itong nakatigil hanggang buksan mo ulit dito.",
+      "helper": "Tumatakbo ang PasaBot Screen Helper",
+      "helperHint": "Kasabay itong bumubukas ng PasaBot app sa Mac na ito. Kung walang tsek pa rin, buksan ang PasaBot.",
+      "screen": "Buksan ang Screen Recording",
+      "screenHint": "Magbubukas ang Settings. Hanapin ang PasaBot Screen Helper sa listahan at i-on ito.",
+      "openScreen": "Buksan ang Screen Recording settings",
+      "access": "Buksan ang Accessibility",
+      "accessHint": "Magbubukas ang Settings. Hanapin ang PasaBot Screen Helper sa listahan at i-on ito.",
+      "openAccess": "Buksan ang Accessibility settings",
+      "try": "Subukan",
+      "tryHint": "Kukuha lang ito ng isang larawan ng screen mo, wala nang iba.",
+      "tryButton": "Kumuha ng test na larawan",
+      "tryDone": "Gumagana na. Ito ang makikita ni {{name}}.",
+      "ready": "Puwede nang humingi si {{name}} na gamitin ang computer na ito. May card muna sa bawat gagawin niya.",
+      "off": "I-off para kay {{name}}",
+      "done": "Tapos na",
+      "waiting": "Hindi pa"
+    },
+    "live": {
+      "title": "Ginagamit ni {{name}} ang computer mo",
+      "idle": "Hindi ginagamit ni {{name}} ang computer ngayon.",
+      "takeOver": "Ako na",
+      "stop": "Itigil",
+      "stopHint": "O pindutin nang matagal ang Esc nang isang segundo.",
+      "alt": "Live na tingin sa screen ni {{name}}"
+    }
+  },
+  "preview": {
+    "click": "Iki-click niya ang pulang bilog.",
+    "rightClick": "Ira-right-click niya ang pulang bilog.",
+    "move": "Ililipat niya ang pointer sa pulang bilog.",
+    "type": "Magta-type siya ng {{count}} na character:",
+    "key": "Pipindutin niya ang: {{keys}}",
+    "screenshot": "Kukuha siya ng larawan ng screen.",
+    "alt": "Kung saan siya kikilos sa screen",
+    "none": "Wala pang larawan ng screen.",
+    "noCurrent": "Walang bagong larawan ng screen. Tingnan muna ang screen mo bago ka pumayag."
+  },
+  "server": {
+    "setupCard": "Gustong gamitin ni {{name}} ang computer na ito. I-set up sa card sa ibaba, o huwag pansinin.",
+    "liveCard": "Sinimulang gamitin ni {{name}} ang computer. Panoorin nang live dito."
+  },
+  "watch": {
+    "title": "Kumpirmahin na ikaw ito para makita ang screen mo",
+    "body": "Ito ang sarili mong screen ng Mac. I-type ang password mo para mapanood ito at makontrol dito.",
+    "again": "Ilang minuto na ang lumipas. I-type ulit ang password mo para patuloy mong makontrol ang screen mo.",
+    "password": "Ang password mo",
+    "button": "Ipakita ang screen ko",
+    "wrong": "Hindi tugma. Subukan ulit."
+  }
+}

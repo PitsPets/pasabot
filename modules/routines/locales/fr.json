@@ -1,0 +1,141 @@
+{
+  "nav": "Routines",
+  "page": {
+    "title": "Routines",
+    "intro": "Les routines lancent un agent manuellement, selon un horaire ou lorsqu'un appel arrive. Une réponse exactement égale à (quiet) signifie qu'il n'y a rien de nouveau, et vous ne serez pas notifié.",
+    "calendar": "Flux de calendrier",
+    "empty": "Aucune routine pour l'instant."
+  },
+  "hook": {
+    "title": "Adresse et secret du webhook",
+    "once": "Copiez-les maintenant. Le secret n'est affiché qu'une seule fois ; le renouveler donne aussi une nouvelle adresse.",
+    "saved": "Je les ai enregistrés"
+  },
+  "create": {
+    "title": "Nouvelle routine",
+    "name": "Nom",
+    "agent": "Agent",
+    "prompt": "Que doit faire l'agent ?",
+    "promptHint": "Envoyé comme message de la routine à chaque exécution.",
+    "trigger": "Se lance",
+    "cron": "Horaire (cron)",
+    "cronHint": "minute heure jour mois jour de la semaine, par ex. 0 9 * * 1-5 = 9 h en semaine",
+    "tz": "Fuseau horaire",
+    "target": "Où elle s'exécute",
+    "submit": "Créer la routine",
+    "workflow": "Flux de travail",
+    "noWorkflows": "Aucun flux de travail pour l'instant. Créez-en un d'abord sur la page Flux de travail.",
+    "offline": "Exécuter même hors ligne",
+    "offlineHint": "Si le moteur principal de l'agent est inaccessible, utiliser son moteur suivant (par exemple un modèle local) et l'indiquer dans le résultat."
+  },
+  "kind": {
+    "schedule": "Selon un horaire",
+    "manual": "Manuellement",
+    "webhook": "Webhook",
+    "github": "GitHub",
+    "event": "Sur un événement"
+  },
+  "target": {
+    "chat": "Dans le chat de l'agent",
+    "thread": "Dans un nouveau fil",
+    "workflow": "Lance un flux de travail"
+  },
+  "state": {
+    "paused": "En pause"
+  },
+  "routine": {
+    "next": "Prochaine",
+    "last": "Dernière"
+  },
+  "result": {
+    "pending": "En cours",
+    "ok": "Terminée",
+    "silent": "Rien de nouveau",
+    "failed": "Échec",
+    "interrupted": "Interrompue",
+    "skipped": "Ignorée",
+    "held": "En attente"
+  },
+  "source": {
+    "manual": "manuelle",
+    "schedule": "horaire",
+    "webhook": "webhook",
+    "event": "événement",
+    "github": "GitHub",
+    "test": "test"
+  },
+  "action": {
+    "run": "Lancer maintenant",
+    "test": "Lancer un test",
+    "pause": "Mettre en pause",
+    "resume": "Reprendre",
+    "rotate": "Nouveau secret",
+    "rotateConfirm": "Créer un nouveau secret et une nouvelle adresse ? Les expéditeurs qui utilisent les anciens cesseront de fonctionner.",
+    "delete": "Supprimer",
+    "deleteConfirm": "Supprimer cette routine ? Son activité reste dans le fil."
+  },
+  "activity": {
+    "title": "Activité",
+    "empty": "Rien n'a encore été exécuté.",
+    "open": "Ouvrir le chat",
+    "silent": "Exécutée, rien de nouveau à signaler.",
+    "offlineFallback": "Moteur principal hors ligne : exécutée sur {{to}}",
+    "rateLimited": "Limite de débit : le modèle gratuit est occupé ou à court de quota, cette exécution a donc été ignorée. La suivante se déroulera normalement."
+  },
+  "tools": {
+    "routines_list": "Lister mes routines",
+    "routines_create": "Créer une routine",
+    "routines_pause": "Mettre en pause une de mes routines",
+    "routines_delete": "Supprimer une de mes routines"
+  },
+  "server": {
+    "finished": "La routine « {{name}} » est terminée"
+  },
+  "find": {
+    "navHint": "Lancer un agent selon un horaire",
+    "navKeywords": "horaire, chaque jour, minuteur, répéter, quotidien, hebdomadaire",
+    "stillOn_one": "{{count}} routine est encore active et continuera de tourner.",
+    "stillOn_many": "{{count}} de routines sont encore actives et continueront de tourner.",
+    "stillOn_other": "{{count}} routines sont encore actives et continueront de tourner."
+  },
+  "plain": {
+    "find": {
+      "navHint": "Lancer un assistant selon un horaire"
+    },
+    "page": {
+      "intro": "Les routines lancent un assistant à la main, selon un horaire ou quand quelque chose l’appelle. Une réponse exactement (quiet) veut dire rien de neuf, sans notification."
+    },
+    "create": {
+      "agent": "Assistant",
+      "prompt": "Que doit faire l’assistant ?",
+      "offlineHint": "Si le cerveau principal de l’assistant est injoignable, utiliser son cerveau suivant (par exemple un sur cet ordinateur) et le dire dans le résultat."
+    },
+    "kind": {
+      "webhook": "Quand un lien est appelé"
+    },
+    "source": {
+      "webhook": "un lien"
+    },
+    "hook": {
+      "title": "Son lien et son secret"
+    },
+    "target": {
+      "chat": "Dans la discussion de l’assistant"
+    },
+    "activity": {
+      "rateLimited": "Ignoré : le cerveau gratuit est occupé ou épuisé pour l’instant. La prochaine fois se déroule normalement."
+    }
+  },
+  "card": {
+    "created": {
+      "title": "Nouvelle routine : {{name}}",
+      "text": "Elle tourne toute seule. Vous pouvez la mettre en pause, ou la supprimer si vous n’en voulez pas."
+    },
+    "pause": "Mettre en pause",
+    "undo": "La supprimer",
+    "open": "Voir les routines",
+    "paused": "En pause",
+    "undone": "Supprimée",
+    "gone": "Cette routine n’existe plus"
+  }
+}

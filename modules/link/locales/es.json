@@ -1,0 +1,102 @@
+{
+  "nav": "Máquinas",
+  "settings": "Máquinas",
+  "page": {
+    "title": "Máquinas vinculadas",
+    "intro": "Tus otras máquinas con PasaBot. Elige una para ver sus agentes y chatear con ellos; el trabajo se ejecuta en esa máquina con sus propias reglas.",
+    "empty": "Aún no hay máquinas vinculadas. Vincula una en Ajustes → Máquinas.",
+    "agents": "Agentes en {{name}}",
+    "noAgents": "Aún no hay agentes allí.",
+    "back": "Todas las máquinas",
+    "open": "Abrir",
+    "refresh": "Actualizar"
+  },
+  "chat": {
+    "title": "{{agent}} en {{machine}}",
+    "placeholder": "Escribe a {{agent}}",
+    "send": "Enviar",
+    "waiting": "Esperando a {{agent}}…",
+    "me": "Tú",
+    "empty": "Saluda. Tu mensaje se ejecuta en {{machine}}, como una solicitud de una máquina vinculada."
+  },
+  "state": {
+    "active": "Vinculada",
+    "awaiting": "Esperando al otro propietario",
+    "requested": "Quiere vincularse",
+    "revoked": "Desvinculada"
+  },
+  "grant": {
+    "label": "Lo que puede hacer en esta máquina",
+    "view": "Ver",
+    "chat": "Chatear",
+    "manage": "Administrar",
+    "hint": "Ver: nombre de la máquina y nombres de los agentes. Chatear: además, chatear con tus agentes aquí. Administrar: además, rutinas y flujos de trabajo, dentro de las reglas propias de esta máquina. Nunca se convierte en propietario aquí."
+  },
+  "status": {
+    "this": "Esta máquina: {{name}}",
+    "fingerprint": "Huella de la clave {{fp}}",
+    "unavailable": "La vinculación aún no está disponible",
+    "transport": "Transporte del vínculo: {{transport}} · {{state}}",
+    "transportRunning": "en ejecución",
+    "transportDown": "reiniciándose",
+    "transportIdle": "inactivo hasta que se vincule una máquina"
+  },
+  "code": {
+    "title": "Vincular una máquina",
+    "intro": "Muestra aquí un código de un solo uso y luego ingrésalo en la otra máquina. Funciona una vez y vence en 10 minutos.",
+    "make": "Mostrar un código de vinculación",
+    "expires": "Vence a las {{time}}",
+    "copy": "Copiar código",
+    "copied": "Copiado",
+    "qr": "Código de vinculación como imagen QR"
+  },
+  "join": {
+    "title": "Ingresar un código de otra máquina",
+    "code": "Código de vinculación",
+    "submit": "Vincular",
+    "done": "Enviado. El otro propietario lo confirma en su máquina."
+  },
+  "reauth": {
+    "password": "Tu contraseña (para confirmar que eres tú)"
+  },
+  "peers": {
+    "title": "Máquinas vinculadas",
+    "empty": "Ninguna todavía.",
+    "confirm": "Confirmar vínculo",
+    "check": "Verificar",
+    "unlink": "Desvincular",
+    "unlinkConfirm": "¿Desvincular {{name}}? Pierde el acceso de inmediato.",
+    "fp": "Clave {{fp}}"
+  },
+  "intros": {
+    "title": "Presentaciones",
+    "offer": "{{via}} se ofrece a presentarte a {{name}} (clave {{fp}}). No se vincula nada hasta que la vincules con un código de esa máquina.",
+    "accept": "Entendido",
+    "dismiss": "Descartar"
+  },
+  "error": "Algo salió mal: {{message}}",
+  "tools": {
+    "link_machines": "Ver equipos vinculados",
+    "link_message": "Escribir a un agente de un equipo vinculado"
+  },
+  "server": {
+    "introTitle": "{{peer}} ofrece presentarte a {{name}}",
+    "introBody": "No se vincula nada hasta que lo vincules tú con un código de esa máquina.",
+    "linkTitle": "{{name}} quiere vincularse con esta máquina",
+    "linkBody": "Confírmalo en Ajustes → Máquinas y elige qué puede hacer aquí."
+  },
+  "find": {
+    "navHint": "Otras máquinas enlazadas con esta",
+    "navKeywords": "máquinas, computadoras, servidores, enlazar, remoto"
+  },
+  "plain": {
+    "page": {
+      "intro": "Tus otras computadoras con PasaBot. Elige una para ver sus ayudantes y chatear con ellos; el trabajo se hace en esa computadora con sus propias reglas.",
+      "agents": "Ayudantes en {{name}}",
+      "noAgents": "Aún no hay ayudantes allí."
+    },
+    "grant": {
+      "hint": "Ver: el nombre de la computadora y de sus ayudantes. Chatear: también chatear con tus ayudantes aquí. Gestionar: también rutinas y flujos, con las reglas de esta computadora. Nunca se vuelve dueño aquí."
+    }
+  }
+}

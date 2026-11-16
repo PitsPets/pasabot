@@ -1,0 +1,143 @@
+{
+  "nav": "Ordinateur",
+  "page": {
+    "title": "Contrôle de l'ordinateur",
+    "intro": "Les agents qui utilisent un ordinateur disposent de leur propre écran. Chaque capture d'écran, clic et frappe vous demande d'abord votre accord. Suivez-les ici et prenez la main quand il le faut.",
+    "empty": "Aucun agent n'utilise d'écran pour le moment. Un écran démarre la première fois que vous approuvez une action d'ordinateur d'un agent."
+  },
+  "setup": {
+    "title": "Configurer le contrôle de l'ordinateur",
+    "missing_bins": "Il manque {{list}} sur ce serveur. Installez-les, ou lancez PasaBot depuis l'image d'ordinateur (deploy/computer).",
+    "unsupported": "Le contrôle de l'ordinateur n'est pas disponible sur ce système d'exploitation.",
+    "off": "Le contrôle de l'ordinateur est désactivé sur ce serveur.",
+    "practice": "Écran d'entraînement : une appli de test intégrée, pas un vrai bureau.",
+    "windows_soon": "Pas encore disponible sous Windows. Les assistants ne peuvent pas voir ni utiliser l’écran d’un PC Windows ; tout le reste fonctionne."
+  },
+  "mac": {
+    "title": "Autoriser un agent à utiliser ce Mac",
+    "warning": "Un Mac n'a pas d'écran séparé pour les assistants : celui que vous autorisez ici voit tout votre écran et déplace votre propre pointeur et votre clavier. Chaque action vous est d'abord demandée. Les autorisations vont à PasaBot Screen Helper, pas à PasaBot.",
+    "perAgent": "Le contrôle de l'ordinateur sur ce Mac est désactivé pour tous les agents tant que vous ne l'activez pas pour un agent précis ici, avec votre mot de passe.",
+    "permissions": "macOS vous demandera d'autoriser l'enregistrement de l'écran et l'accessibilité. macOS accorde cette autorisation au programme qui exécute PasaBot : les outils en ligne de commande de chaque agent pourraient alors utiliser votre écran sans vous demander. Ne l'autorisez que si vous faites confiance à tous les agents de ce serveur, et retirez-la dans Réglages Système → Confidentialité et sécurité quand vous avez terminé.",
+    "password": "Votre mot de passe",
+    "enable": "Autoriser",
+    "enableFor": "Autoriser {{name}} à utiliser ce Mac",
+    "disable": "Désactiver",
+    "disableFor": "Désactiver {{name}} sur ce Mac",
+    "agentOn": "Autorisé",
+    "agentOff": "Désactivé",
+    "noAgents": "Aucun agent pour l'instant.",
+    "wrong": "Ça ne correspond pas. Réessayez."
+  },
+  "display": {
+    "shared": "Votre propre écran",
+    "own": "Écran dédié {{label}}",
+    "live": "En direct",
+    "control": "Prendre la main",
+    "release": "Arrêter le contrôle",
+    "controlHint": "Cliquez sur l'image pour cliquer sur l'écran de l'agent.",
+    "stop": "Arrêter l'écran",
+    "typeLabel": "Saisir sur l'écran",
+    "send": "Envoyer le texte",
+    "alt": "Écran de {{name}}",
+    "started": "Démarré {{time}}"
+  },
+  "activity": {
+    "title": "Actions récentes",
+    "empty": "Aucune action pour l'instant.",
+    "you": "Vous",
+    "failed": "Échec"
+  },
+  "error": "Une erreur s'est produite : {{msg}}",
+  "tools": {
+    "computer_display": "Ordinateur : infos de l’écran",
+    "computer_screenshot": "Ordinateur : faire une capture d’écran",
+    "computer_click": "Ordinateur : cliquer",
+    "computer_move": "Ordinateur : déplacer le pointeur",
+    "computer_type": "Ordinateur : saisir du texte",
+    "computer_key": "Ordinateur : appuyer sur des touches"
+  },
+  "find": {
+    "navHint": "Laisser un agent utiliser un ordinateur",
+    "navKeywords": "bureau, écran, souris, clavier, contrôle"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Laisser un assistant utiliser un ordinateur"
+    },
+    "page": {
+      "intro": "Les assistants qui utilisent un ordinateur disposent de leur propre écran. Chaque image de l'écran, clic et frappe vous demande d'abord votre accord. Suivez-les ici et prenez la main quand il le faut.",
+      "empty": "Aucun assistant n'utilise d'écran pour le moment. Un écran démarre la première fois que vous acceptez une action d'ordinateur d'un assistant."
+    },
+    "setup": {
+      "missing_bins": "Il manque {{list}} sur cet ordinateur. Installez-les, ou demandez à la personne qui a installé PasaBot d'utiliser sa configuration ordinateur.",
+      "off": "Le contrôle de l'ordinateur est désactivé dans ce PasaBot."
+    },
+    "mac": {
+      "noAgents": "Aucun assistant pour l'instant."
+    },
+    "display": {
+      "controlHint": "Cliquez sur l'image pour cliquer sur l'écran de l'assistant.",
+      "release": "Arrêter le contrôle"
+    }
+  },
+  "card": {
+    "ask": {
+      "title": "Laisser {{name}} utiliser cet ordinateur ?",
+      "body": "{{name}} verrait tout votre écran et déplacerait votre propre pointeur et votre clavier. Chaque clic et chaque touche vous est d'abord demandé, et vous pouvez l'arrêter à tout moment en maintenant Échap une seconde.",
+      "password": "Votre mot de passe",
+      "yes": "Oui, le configurer",
+      "no": "Pas maintenant"
+    },
+    "steps": {
+      "title": "Configurer cet ordinateur pour {{name}}",
+      "stopped": "Vous avez arrêté le contrôle de cet ordinateur. Il reste arrêté jusqu'à ce que vous le réactiviez ici.",
+      "helper": "PasaBot Screen Helper est lancé",
+      "helperHint": "Il s'ouvre avec l'app PasaBot sur ce Mac. Si cela reste vide, ouvrez PasaBot.",
+      "screen": "Activez l'enregistrement de l'écran",
+      "screenHint": "Réglages s'ouvre. Trouvez PasaBot Screen Helper dans la liste et activez-le.",
+      "openScreen": "Ouvrir les réglages d'enregistrement de l'écran",
+      "access": "Activez l'accessibilité",
+      "accessHint": "Réglages s'ouvre. Trouvez PasaBot Screen Helper dans la liste et activez-le.",
+      "openAccess": "Ouvrir les réglages d'accessibilité",
+      "try": "Essayer",
+      "tryHint": "Prend une seule image de votre écran, rien d'autre.",
+      "tryButton": "Prendre une image de test",
+      "tryDone": "Ça marche. Voici ce que {{name}} verrait.",
+      "ready": "{{name}} peut maintenant demander à utiliser cet ordinateur. Chaque action affiche d’abord une carte.",
+      "off": "Désactiver pour {{name}}",
+      "done": "Fait",
+      "waiting": "Pas encore"
+    },
+    "live": {
+      "title": "{{name}} utilise votre ordinateur",
+      "idle": "{{name}} n'utilise pas l'ordinateur en ce moment.",
+      "takeOver": "Prendre la main",
+      "stop": "Arrêter",
+      "stopHint": "Ou maintenez Échap une seconde.",
+      "alt": "Écran de {{name}} en direct"
+    }
+  },
+  "preview": {
+    "click": "Il cliquera sur l'anneau rouge.",
+    "rightClick": "Il fera un clic droit sur l'anneau rouge.",
+    "move": "Il déplacera le pointeur sur l'anneau rouge.",
+    "type": "Il tapera {{count}} caractères :",
+    "key": "Il appuiera sur : {{keys}}",
+    "screenshot": "Il prendra une image de l'écran.",
+    "alt": "Où il agira sur l'écran",
+    "none": "Pas encore d'image de l'écran.",
+    "noCurrent": "Aucune image actuelle de l'écran. Regardez votre écran avant de dire oui."
+  },
+  "server": {
+    "setupCard": "{{name}} veut utiliser cet ordinateur. Configurez-le dans la carte ci-dessous, ou ignorez-la.",
+    "liveCard": "{{name}} a commencé à utiliser l'ordinateur. Regardez en direct ici."
+  },
+  "watch": {
+    "title": "Confirmez que c'est vous pour voir votre écran",
+    "body": "C'est l'écran de votre propre Mac. Saisissez votre mot de passe pour le regarder et en prendre le contrôle ici.",
+    "again": "Quelques minutes ont passé. Saisissez à nouveau votre mot de passe pour continuer à contrôler votre écran.",
+    "password": "Votre mot de passe",
+    "button": "Afficher mon écran",
+    "wrong": "Cela ne correspond pas. Réessayez."
+  }
+}

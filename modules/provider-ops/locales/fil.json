@@ -1,0 +1,209 @@
+{
+  "nav": "Gamit",
+  "page": {
+    "title": "Gamit",
+    "intro": "Mga token na ginamit ng mga agent mo, binibilang lang sa server na ito.",
+    "days": "Huling {{count}} araw",
+    "agents": "Bawat agent",
+    "providers": "Bawat utak",
+    "empty": "Wala pang run na may bilang ng token.",
+    "agent": "Agent",
+    "provider": "Utak",
+    "runs": "Runs",
+    "input": "Pasok",
+    "output": "Labas",
+    "cache": "Cache",
+    "limits": "Mga utak na naka-pause",
+    "noLimits": "Available ang lahat ng utak.",
+    "limitUntil": "{{provider}}: {{reason}}, susubukan ulit pagkalipas ng {{time}}",
+    "check": "Tingnan ngayon",
+    "checked": "Natingnan: {{count}} utak ang available na ulit."
+  },
+  "gauge": {
+    "label": "Context {{pct}}%",
+    "title": "{{used}} sa {{window}} na token ng context ang gamit ({{provider}})",
+    "full": "{{pct}}% puno na ang memory",
+    "menu": "Gaano na kapuno ang chat",
+    "none": "Wala pang ulat ng context para sa chat na ito."
+  },
+  "notice": {
+    "switched": "Lumipat mula {{from}} papuntang {{to}} ({{reason}}). Tuloy ang usapan.",
+    "back": "Balik sa {{to}}.",
+    "compactedNative": "{{pct}}% na ang context: siniksik na.",
+    "compactedReseed": "{{pct}}% na ang context: bagong session na may buod ang susunod na sagot.",
+    "overflow": "Puno na ang context: nagsimula ng bagong session na may buod.",
+    "stopped": "Itinigil ang pagsiksik: halos walang naluwag sa huling dalawa. Magsimula ng bagong chat, o ituloy ang pagsiksik sa Settings.",
+    "reason": {
+      "rate_limit": "rate limit",
+      "quota": "limit ng gamit",
+      "auth": "problema sa sign-in",
+      "context_overflow": "puno ang context",
+      "offline": "hindi maabot ang pangunahin"
+    }
+  },
+  "settings": {
+    "title": "Mga utak at fallback",
+    "intro": "Kapag naabot ng isang utak ang limit, lilipat ang agent sa susunod sa listahan, at babalik kapag na-reset na ang limit.",
+    "fallback": "Fallback {{n}}",
+    "none": "Wala",
+    "model": "Model (opsyonal)",
+    "account": "Account para sa {{provider}}",
+    "defaultAccount": "Default na account",
+    "compactPct": "Siksikin sa (% ng context)",
+    "compactHint": "Walang laman = {{pct}}%",
+    "save": "I-save",
+    "saved": "Na-save",
+    "stopped": "Nakatigil ang pagsiksik para sa agent na ito.",
+    "resume": "Ituloy ang pagsiksik",
+    "accounts": "Mga account",
+    "accountsIntro": "May sariling sign-in folder ang bawat account para sa CLI ng utak na iyon.",
+    "accountLabel": "Pangalan ng account",
+    "accountProvider": "Utak",
+    "addAccount": "Magdagdag ng account",
+    "remove": "Alisin",
+    "noAccounts": "Walang dagdag na account.",
+    "accountSignIn": "Para mag-sign in, patakbuhin ito nang isang beses sa terminal ng server:",
+    "accountFolder": "Sign-in folder ng CLI ng utak na ito:",
+    "accountChecking": "Sinusuri…",
+    "accountSignedIn": "Naka-sign in",
+    "accountSignedOut": "Hindi naka-sign in",
+    "accountUnknown": "Hindi pa nasusuri ang sign-in",
+    "primary": "Gumagamit ng {{provider}}"
+  },
+  "server": {
+    "stoppedTitle": "{{name}}: huminto ang compaction",
+    "stoppedBody": "Dalawang sunod na compaction ang nakapagbakante ng wala pang 10 % ng context. Magsimula ng bagong chat o ituloy ang compaction sa Mga Setting."
+  },
+  "find": {
+    "navHint": "Gaano kalaki ang gamit at gastos ng agent",
+    "navKeywords": "gamit, gastos, token, bayarin, singil",
+    "settingsHint": "Mga limitasyon at tsek sa AI na utak",
+    "settingsKeywords": "utak, modelo, limitasyon, provider, AI",
+    "brainsHint": "I-set up ang AI na ginagamit ng mga agent mo",
+    "brainsKeywords": "utak, brain, AI, modelo, mag-sign in, i-install, Claude, Codex, Gemini, Grok, OpenCode, local, libreng simula, libreng starter"
+  },
+  "brains": {
+    "title": "Mga utak",
+    "intro": "Ang utak ang AI na ginagamit ng agent mo sa pag-iisip. Mag-set up ng isa o higit pa; bawat agent ay may pangunahing utak at backup.",
+    "name": {
+      "opencode": "Libreng simula (OpenCode)",
+      "local": "Lokal na model",
+      "acp": "Iba pang ACP agent"
+    },
+    "desc": {
+      "claude": "Ang Claude Code app ng Anthropic, gamit ang Claude account mo",
+      "codex": "Ang Codex app ng OpenAI, gamit ang ChatGPT account mo",
+      "opencode": "Libreng model, walang key, walang bayad. Magandang simula",
+      "gemini": "Ang Gemini CLI ng Google, gamit ang Google account mo",
+      "grok": "Ang Grok CLI ng xAI, gamit ang xAI key",
+      "local": "Ollama o LM Studio sa computer na ito. Pribado, gumagana kahit offline",
+      "acp": "Kahit anong app na marunong ng Agent Client Protocol",
+      "other": "Utak na idinagdag ng plugin o para sa test"
+    },
+    "state": {
+      "ready": "Handa na",
+      "needs_sign_in": "Kailangang mag-sign in",
+      "not_installed": "Hindi naka-install",
+      "unreachable": "Hindi maabot",
+      "not_running": "Hindi bukas",
+      "needs_model": "Kailangan ng model",
+      "checking": "Tinitingnan…"
+    },
+    "unconfirmed": "Hindi makumpirma ang sign-in. Pindutin ang Subukan para makasiguro.",
+    "notFound": "Hindi nakita",
+    "install": "I-install",
+    "signIn": "Mag-sign in",
+    "test": "Subukan",
+    "testing": "Sinusubukan…",
+    "useNew": "Gamitin sa bagong agent",
+    "checkAgain": "Tingnan ulit",
+    "steps": "Mga hakbang",
+    "browse": "Maghanap at mag-install",
+    "close": "Isara",
+    "copy": "Kopyahin",
+    "copied": "Nakopya",
+    "details": "Detalye",
+    "works": "Gumagana. Sagot: \"{{reply}}\" · {{secs}} s",
+    "usedBy": "Gamit ni {{names}}",
+    "backupFor": "Backup ni {{names}}",
+    "noneReady": "Wala pang handang utak. Isang pindot lang ang Libreng simula.",
+    "useStarter": "Gamitin ang Libreng simula",
+    "stepsTitle": "I-set up ang {{name}}",
+    "step": {
+      "terminal": "Buksan ang Terminal sa computer na ito.",
+      "paste": "I-paste ang command na ito at pindutin ang Return:",
+      "signIn": "I-paste ang command na ito at sundan ang sign-in na bubukas:",
+      "back": "Bumalik dito at pindutin ang Tingnan ulit.",
+      "noPassword": "Hindi kailanman hihingin ng PasaBot ang password mo. Sa app lang ang sign-in.",
+      "geminiChoose": "Kapag nagtanong, piliin ang \"Sign in with Google\".",
+      "grokInstall": "I-install ang Grok CLI ayon sa gabay ng xAI.",
+      "starter": "O hayaang i-install ito ng PasaBot para sa'yo (sinusuri ang download bago patakbuhin):",
+      "starterCta": "I-install ang Libreng simula",
+      "vault": "I-save ang xAI key mo sa Vault ng PasaBot bilang {{name}}. Hindi na ito lalabas sa page pagkatapos i-save.",
+      "local": "Mag-install ng Ollama o LM Studio, mag-download ng isang model at panatilihing bukas ang app.",
+      "localCta": "I-set up ang mga lokal na model",
+      "acp": "Pumili ng agent sa listahan at i-install ito.",
+      "acpCta": "Buksan ang mga ACP agent",
+      "keyLabel": "Key para sa {{brain}}",
+      "keyWho": "Makikita ang key ng mga agent na tumatakbo sa utak na ito.",
+      "keySave": "I-save ang key",
+      "keySaved": "Na-save ang key sa Vault.",
+      "keyErr": "Hindi na-save ang key. Subukan ulit.",
+      "tokenTitle": "O mag-paste ng setup token",
+      "tokenWhy": "Gamitin ito kung hindi tumatagal ang sign-in, o kung nasa ibang computer ang PasaBot.",
+      "tokenRun": "Buksan ang Terminal, i-paste ito at pindutin ang Return. Mag-sign in pagbukas ng browser:",
+      "tokenPaste": "Kopyahin ang mahabang code na ipapakita nito sa dulo at i-paste sa ibaba.",
+      "tokenLabel": "Setup token (code)",
+      "tokenWho": "Nakakandado sa Vault ng PasaBot. Nakikita ito ng mga agent na tumatakbo sa Claude.",
+      "tokenSave": "I-save ang token",
+      "tokenSaved": "Na-save ang token. Sinusuri na ang Claude…",
+      "tokenErr": "Hindi na-save ang token. Subukan ulit.",
+      "starterFailed": "Hindi na-install ang Libreng simula. Subukan ulit maya-maya.",
+      "starterPlain": "Kayang i-install ito ng PasaBot para sa iyo sa isang pindot: isang maliit na libreng app, para lang sa iyo sa computer na ito, sinusuri bago tumakbo. Mga isang minuto lang.",
+      "terminalWindows": "Buksan ang PowerShell sa computer na ito (i-type ang PowerShell sa Start menu).",
+      "pasteWindows": "I-paste ang command na ito at pindutin ang Enter:",
+      "nodeFirstWindows": "Kung sabihin nitong walang npm, i-install muna ang Node.js mula sa nodejs.org, tapos magbukas ng bagong PowerShell window."
+    },
+    "err": {
+      "auth": "Hindi naka-sign in, o expired na. Mag-sign in ulit.",
+      "limit": "Naubos na ang limit ng account na ito. Subukan ulit mamaya.",
+      "limitAt": "Naubos na ang limit ng account na ito. Babalik ito ng {{time}}.",
+      "offline": "Hindi maabot ang utak. Tingnan ang internet, o kung bukas ang Ollama / LM Studio.",
+      "crash": "Huminto ang app bago sumagot.",
+      "timeout": "Walang sagot sa loob ng isang minuto. Baka abala o naipit ang app.",
+      "model": "Wala ang model na iyan sa account na ito. Pumili ng ibang model.",
+      "notInstalled": "Hindi naka-install sa computer na ito.",
+      "busy": "Sobrang daming test nang sunod-sunod. Maghintay ng isang minuto at subukan ulit.",
+      "failed": "Hindi napatakbo ang test. Subukan ulit.",
+      "load": "Hindi ma-load ang mga utak. Subukan ulit."
+    },
+    "inUse": "Gamit ngayon: {{name}}",
+    "notHere": "Wala pa sa computer na ito"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "I-set up ang AI na ginagamit ng mga katulong mo sa pag-iisip",
+      "navHint": "Gaano kalaki ang gamit at gastos ng mga katulong mo"
+    },
+    "brains": {
+      "intro": "Ang utak ang AI na ginagamit ng katulong mo sa pag-iisip. Mag-set up ng isa o higit pa; bawat katulong ay may pangunahing utak at reserba.",
+      "useNew": "Gamitin sa bagong katulong",
+      "desc": {
+        "opencode": "Libreng utak, walang key, walang bayad. Magandang simula",
+        "gemini": "Ang Gemini ng Google, gamit ang Google account mo",
+        "grok": "Ang Grok ng xAI, gamit ang xAI key",
+        "acp": "Mga AI app na idinagdag sa teknikal na setup"
+      },
+      "name": {
+        "local": "Utak sa computer na ito",
+        "acp": "Iba pang AI app"
+      }
+    },
+    "page": {
+      "intro": "Gaano karami ang nagamit ng mga katulong mo, binibilang lang sa computer na ito.",
+      "agents": "Bawat katulong",
+      "empty": "Wala pang nagamit.",
+      "agent": "Katulong"
+    }
+  }
+}

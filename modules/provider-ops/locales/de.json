@@ -1,0 +1,209 @@
+{
+  "nav": "Nutzung",
+  "page": {
+    "title": "Nutzung",
+    "intro": "Tokens, die deine Agenten verbraucht haben – nur auf diesem Server gezählt.",
+    "days": "Letzte {{count}} Tage",
+    "agents": "Pro Agent",
+    "providers": "Pro Gehirn",
+    "empty": "Noch keine Läufe mit Token-Zahlen.",
+    "agent": "Agent",
+    "provider": "Gehirn",
+    "runs": "Läufe",
+    "input": "Ein",
+    "output": "Aus",
+    "cache": "Cache",
+    "limits": "Pausierte Gehirne",
+    "noLimits": "Alle Gehirne sind verfügbar.",
+    "limitUntil": "{{provider}}: {{reason}}, neuer Versuch nach {{time}}",
+    "check": "Jetzt prüfen",
+    "checked": "Geprüft: {{count}} Gehirn(e) wieder verfügbar."
+  },
+  "gauge": {
+    "label": "Kontext {{pct}} %",
+    "title": "{{used}} von {{window}} Kontext-Tokens verbraucht ({{provider}})",
+    "full": "Gedächtnis zu {{pct}} % voll",
+    "menu": "Wie voll dieser Chat ist",
+    "none": "Für diesen Chat gibt es noch keinen Kontextbericht."
+  },
+  "notice": {
+    "switched": "Von {{from}} zu {{to}} gewechselt ({{reason}}). Der Chat geht weiter.",
+    "back": "Wieder auf {{to}}.",
+    "compactedNative": "Kontext bei {{pct}} %: komprimiert.",
+    "compactedReseed": "Kontext bei {{pct}} %: Die nächste Antwort startet eine neue Sitzung mit einer Zusammenfassung.",
+    "overflow": "Der Kontext war voll: Neue Sitzung mit einer Zusammenfassung gestartet.",
+    "stopped": "Komprimierung gestoppt: Die letzten beiden haben fast nichts freigegeben. Starte einen neuen Chat oder setze die Komprimierung in den Einstellungen fort.",
+    "reason": {
+      "rate_limit": "Ratenlimit",
+      "quota": "Nutzungslimit",
+      "auth": "Anmeldeproblem",
+      "context_overflow": "Kontext voll",
+      "offline": "Hauptgehirn offline"
+    }
+  },
+  "settings": {
+    "title": "Gehirne und Ausweichoptionen",
+    "intro": "Erreicht ein Gehirn sein Limit, macht der Agent mit dem nächsten in seiner Liste weiter und wechselt zurück, sobald das Limit zurückgesetzt wird.",
+    "fallback": "Ausweichoption {{n}}",
+    "none": "Keine",
+    "model": "Modell (optional)",
+    "account": "Konto für {{provider}}",
+    "defaultAccount": "Standardkonto",
+    "compactPct": "Komprimieren bei (% des Kontexts)",
+    "compactHint": "Leer = {{pct}} %",
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "stopped": "Die Komprimierung ist für diesen Agenten gestoppt.",
+    "resume": "Komprimierung fortsetzen",
+    "accounts": "Konten",
+    "accountsIntro": "Jedes Konto hat einen eigenen Anmeldeordner für die CLI dieses Gehirns.",
+    "accountLabel": "Kontoname",
+    "accountProvider": "Gehirn",
+    "addAccount": "Konto hinzufügen",
+    "remove": "Entfernen",
+    "noAccounts": "Keine zusätzlichen Konten.",
+    "accountSignIn": "Zum Anmelden führst du das einmal in einem Terminal auf dem Server aus:",
+    "accountFolder": "Anmeldeordner für die CLI dieses Gehirns:",
+    "accountChecking": "Wird geprüft …",
+    "accountSignedIn": "Angemeldet",
+    "accountSignedOut": "Nicht angemeldet",
+    "accountUnknown": "Anmeldung nicht geprüft",
+    "primary": "Nutzt {{provider}}"
+  },
+  "server": {
+    "stoppedTitle": "{{name}}: Verdichtung gestoppt",
+    "stoppedBody": "Zwei Verdichtungen hintereinander haben weniger als 10 % des Kontexts freigegeben. Starte einen neuen Chat oder setze die Verdichtung in den Einstellungen fort."
+  },
+  "find": {
+    "navHint": "Verbrauch und Kosten deiner Agenten",
+    "navKeywords": "Nutzung, Kosten, Tokens, Ausgaben, Rechnung",
+    "settingsHint": "Grenzen und Prüfungen für deine KI",
+    "settingsKeywords": "KI, Modelle, Grenzen, Anbieter, Gehirne",
+    "brainsHint": "Die KI einrichten, mit der deine Agenten denken",
+    "brainsKeywords": "Gehirne, KI, Modelle, anmelden, installieren, Claude, Codex, Gemini, Grok, OpenCode, lokal, Gratis-Start"
+  },
+  "brains": {
+    "title": "Gehirne",
+    "intro": "Ein Gehirn ist die KI, mit der dein Agent denkt. Richte eins oder mehrere ein; jeder Agent wählt ein Haupt- und ein Ersatzgehirn.",
+    "name": {
+      "opencode": "Gratis-Start (OpenCode)",
+      "local": "Lokales Modell",
+      "acp": "Weitere ACP-Agenten"
+    },
+    "desc": {
+      "claude": "Die Claude-Code-App von Anthropic, mit deinem Claude-Konto",
+      "codex": "Die Codex-App von OpenAI, mit deinem ChatGPT-Konto",
+      "opencode": "Kostenloses Modell, ohne Schlüssel und Zahlung. Gut zum Starten",
+      "gemini": "Googles Gemini-CLI, mit deinem Google-Konto",
+      "grok": "Die Grok-CLI von xAI, mit einem xAI-Schlüssel",
+      "local": "Ollama oder LM Studio auf diesem Computer. Privat, läuft offline",
+      "acp": "Jede App, die das Agent Client Protocol spricht",
+      "other": "Ein Gehirn aus einem Plugin oder für Tests"
+    },
+    "state": {
+      "ready": "Bereit",
+      "needs_sign_in": "Anmeldung nötig",
+      "not_installed": "Nicht installiert",
+      "unreachable": "Nicht erreichbar",
+      "not_running": "Nicht geöffnet",
+      "needs_model": "Braucht ein Modell",
+      "checking": "Wird geprüft…"
+    },
+    "unconfirmed": "Anmeldung nicht bestätigt. Mit Testen sicher gehen.",
+    "notFound": "Nicht gefunden",
+    "install": "Installieren",
+    "signIn": "Anmelden",
+    "test": "Testen",
+    "testing": "Teste…",
+    "useNew": "Für neuen Agenten nutzen",
+    "checkAgain": "Erneut prüfen",
+    "steps": "Schritte",
+    "browse": "Durchsuchen und installieren",
+    "close": "Schließen",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "details": "Details",
+    "works": "Funktioniert. Antwort: \"{{reply}}\" · {{secs}} s",
+    "usedBy": "Genutzt von {{names}}",
+    "backupFor": "Ersatz für {{names}}",
+    "noneReady": "Noch kein Gehirn bereit. Der Gratis-Start geht mit einem Tipp.",
+    "useStarter": "Gratis-Start nutzen",
+    "stepsTitle": "{{name}} einrichten",
+    "step": {
+      "terminal": "Öffne das Terminal auf diesem Computer.",
+      "paste": "Füge diesen Befehl ein und drücke Return:",
+      "signIn": "Füge diesen Befehl ein und folge der Anmeldung, die sich öffnet:",
+      "back": "Komm zurück und tippe auf Erneut prüfen.",
+      "noPassword": "PasaBot fragt nie nach deinem Passwort. Die Anmeldung bleibt in der App.",
+      "geminiChoose": "Wenn gefragt, wähle \"Sign in with Google\".",
+      "grokInstall": "Installiere die Grok-CLI nach der Anleitung von xAI.",
+      "starter": "Oder lass PasaBot sie installieren (Download wird vor dem Start geprüft):",
+      "starterCta": "Gratis-Start installieren",
+      "vault": "Speichere deinen xAI-Schlüssel im PasaBot-Tresor als {{name}}. Danach wird er auf keiner Seite mehr gezeigt.",
+      "local": "Installiere Ollama oder LM Studio, lade ein Modell und lass die App offen.",
+      "localCta": "Lokale Modelle einrichten",
+      "acp": "Wähle einen Agenten aus der Liste und installiere ihn.",
+      "acpCta": "ACP-Agenten öffnen",
+      "keyLabel": "Schlüssel für {{brain}}",
+      "keyWho": "Agenten, die auf diesem Gehirn laufen, können den Schlüssel sehen.",
+      "keySave": "Schlüssel speichern",
+      "keySaved": "Schlüssel im Tresor gespeichert.",
+      "keyErr": "Schlüssel konnte nicht gespeichert werden. Versuch es erneut.",
+      "tokenTitle": "Oder ein Setup-Token einfügen",
+      "tokenWhy": "Nutze das, wenn die Anmeldung nicht hält oder PasaBot auf einem anderen Computer läuft.",
+      "tokenRun": "Öffne das Terminal, füge das ein und drücke Return. Melde dich an, wenn der Browser aufgeht:",
+      "tokenPaste": "Kopiere den langen Code, der am Ende erscheint, und füge ihn unten ein.",
+      "tokenLabel": "Setup-Token",
+      "tokenWho": "Sicher im Tresor von PasaBot. Agenten, die mit Claude laufen, können es sehen.",
+      "tokenSave": "Token speichern",
+      "tokenSaved": "Token gespeichert. Claude wird jetzt geprüft …",
+      "tokenErr": "Das Token konnte nicht gespeichert werden. Versuch es noch einmal.",
+      "starterFailed": "Der kostenlose Einstieg wurde nicht installiert. Versuch es gleich noch einmal.",
+      "starterPlain": "PasaBot kann es dir mit einem Tipp installieren: eine kleine kostenlose App, nur für dich auf diesem Computer, vor dem Start geprüft. Das dauert etwa eine Minute.",
+      "terminalWindows": "Öffne PowerShell auf diesem Computer (tippe PowerShell ins Startmenü).",
+      "pasteWindows": "Füge diesen Befehl ein und drücke die Eingabetaste:",
+      "nodeFirstWindows": "Wenn npm nicht gefunden wird, installiere zuerst Node.js von nodejs.org und öffne dann ein neues PowerShell-Fenster."
+    },
+    "err": {
+      "auth": "Nicht angemeldet oder Anmeldung abgelaufen. Melde dich neu an.",
+      "limit": "Dieses Konto hat sein Nutzungslimit erreicht. Versuch es später.",
+      "limitAt": "Dieses Konto hat sein Nutzungslimit erreicht. Es wird um {{time}} zurückgesetzt.",
+      "offline": "Gehirn nicht erreichbar. Prüfe das Internet oder ob Ollama / LM Studio offen ist.",
+      "crash": "Die App hat vor der Antwort aufgehört.",
+      "timeout": "Keine Antwort innerhalb einer Minute. Die App ist vielleicht beschäftigt oder hängt.",
+      "model": "Dieses Modell gibt es für dieses Konto nicht. Wähle ein anderes.",
+      "notInstalled": "Auf diesem Computer nicht installiert.",
+      "busy": "Zu viele Tests hintereinander. Warte eine Minute und versuch es erneut.",
+      "failed": "Test konnte nicht laufen. Versuch es erneut.",
+      "load": "Gehirne konnten nicht geladen werden. Versuch es erneut."
+    },
+    "inUse": "In Benutzung: {{name}}",
+    "notHere": "Nicht auf diesem Computer"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "Die KI einrichten, mit der deine Helfer denken",
+      "navHint": "Wie viel deine Helfer nutzen und kosten"
+    },
+    "brains": {
+      "intro": "Ein Gehirn ist die KI, mit der dein Helfer denkt. Richte eins oder mehrere ein; jeder Helfer wählt ein Haupt- und ein Ersatzgehirn.",
+      "useNew": "Für neuen Helfer nutzen",
+      "desc": {
+        "opencode": "Kostenloses Gehirn, ohne Schlüssel und Zahlung. Gut zum Starten",
+        "gemini": "Googles Gemini-CLI, mit deinem Google-Konto",
+        "grok": "Die Grok-CLI von xAI, mit einem xAI-Schlüssel",
+        "acp": "Jede App, die das Helfer Client Protocol spricht"
+      },
+      "name": {
+        "local": "Lokales Gehirn",
+        "acp": "Weitere ACP-Helfer"
+      }
+    },
+    "page": {
+      "intro": "Wie viel deine Helfer verbraucht haben, nur auf diesem Computer gezählt.",
+      "agents": "Pro Helfer",
+      "empty": "Noch nichts verbraucht.",
+      "agent": "Helfer"
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "nav": "Konnektoren",
+  "page": {
+    "title": "Konnektoren",
+    "intro": "Fertige Verbindungen zu externen Diensten. Füge eine hinzu und lege dann fest, wer sie nutzen darf.",
+    "introTech": "Fertige Verbindungen zu externen Diensten. Füge einen hinzu und lege dann auf der Seite MCP-Server fest, welche Agents ihn nutzen dürfen."
+  },
+  "loading": "Lädt…",
+  "kind": {
+    "mcp-stdio": "Läuft auf diesem Gerät",
+    "mcp-http": "Gehosteter Dienst",
+    "oauth-api": "Anmeldung"
+  },
+  "status": {
+    "ready": "Hinzugefügt",
+    "needs_auth": "Anmeldung oder Schlüssel nötig",
+    "error": "Problem"
+  },
+  "oauth": {
+    "connected": "Angemeldet. Der Konnektor ist bereit.",
+    "denied": "Die Anmeldung wurde abgebrochen.",
+    "expired": "Der Anmeldelink ist abgelaufen. Versuch es nochmal.",
+    "failed": "Die Anmeldung hat nicht geklappt. Prüfe die Client-ID und versuch es nochmal.",
+    "connectedApp": "Angemeldet. {{name}} ist bereit.",
+    "failedApp": "Die Anmeldung bei {{name}} wurde nicht abgeschlossen. Versuch es noch einmal."
+  },
+  "catalog": {
+    "title": "Weitere hinzufügen",
+    "homepage": "Über diesen Dienst",
+    "install": "{{name}} hinzufügen",
+    "custom": "Möchtest du etwas anderes hinzufügen?",
+    "customTech": "Hast du die Adresse eines Tool-Servers?"
+  },
+  "install": {
+    "secretHint": "Im Tresor gespeichert. Agents sehen es nie.",
+    "oauthHint": "Dieser Konnektor meldet sich mit deinem eigenen OAuth-Client an. Erstelle einen beim Dienst und füge ihm diese Rückkehradresse hinzu.",
+    "redirect": "Rückkehradresse:",
+    "clientId": "OAuth-Client-ID",
+    "clientSecret": "OAuth-Client-Secret (falls der Dienst dir eins gegeben hat)",
+    "clientSecretHint": "Im Tresor gespeichert.",
+    "save": "Hinzufügen",
+    "cancel": "Abbrechen"
+  },
+  "installed": {
+    "title": "Verbunden",
+    "secrets": "Im Tresor gespeicherte Geheimnisse: {{names}}",
+    "mcpHint": "Lege fest, welche Agents ihn nutzen dürfen:",
+    "foundHint": "Schalte es ein und lege fest, wer es nutzen darf:",
+    "mcpLink": "MCP-Server",
+    "appsLink": "Apps, die Agents nutzen können",
+    "signIn": "Anmelden",
+    "signInAgain": "Erneut anmelden",
+    "remove": "Entfernen",
+    "removeConfirm": "Ja, entfernen"
+  },
+  "find": {
+    "navHint": "Apps und Dienste verbinden",
+    "navKeywords": "Apps, Dienste, verbinden, Integrationen, Konten"
+  },
+  "search": {
+    "label": "Apps suchen",
+    "placeholder": "Apps suchen, z. B. „Kalender“",
+    "none": "Keine App passt dazu."
+  },
+  "state": {
+    "added": "Hinzugefügt",
+    "ready": "Bereit zum Hinzufügen",
+    "needs_key": "Anmeldung oder Schlüssel nötig",
+    "missing": "Nicht auf diesem Computer"
+  },
+  "ready": {
+    "title": "Bereit zum Hinzufügen"
+  },
+  "missing": {
+    "line": "Braucht {{name}}, das noch nicht auf diesem Computer ist.",
+    "get": "{{name}} holen",
+    "ask": "Dafür braucht es {{name}}, das noch nicht auf diesem Computer ist. Trotzdem hinzufügen?",
+    "addAnyway": "Trotzdem hinzufügen"
+  },
+  "found": {
+    "title": "Auf diesem Computer gefunden",
+    "intro": "Werkzeuge, die du schon in einer anderen App eingerichtet hast. Füge eines hinzu, um es auch hier zu nutzen.",
+    "introTech": "Tool-Server, die du schon in einer anderen App eingerichtet hast. Füge einen hinzu, um ihn auch hier zu nutzen.",
+    "from": "Eingerichtet in {{app}}",
+    "keys": "Seine Schlüssel gehen direkt in deinen Tresor und werden nie angezeigt: {{names}}",
+    "keysAsk": "Es hat Schlüssel. Sollen sie auch in deinen Tresor kopiert werden? Agents sehen sie nie.",
+    "confirm": "Ja, hinzufügen",
+    "blocked": {
+      "key-in-command": "Dieser hat einen Schlüssel direkt im Befehl. Füge ihn lieber selbst hinzu:",
+      "unsupported": "PasaBot kann diesen nicht so übernehmen. Füge ihn lieber selbst hinzu:"
+    }
+  },
+  "describe": {
+    "filesystem": "Lässt Agenten die Dateien in einem Ordner deiner Wahl lesen und ändern.",
+    "git": "Lässt Agenten Verlauf und Änderungen eines Code-Ordners ansehen.",
+    "github": "Lässt Agenten mit deinem GitHub-Code, Issues und Pull Requests arbeiten.",
+    "github-remote": "Dieselben GitHub-Werkzeuge, online von GitHub betrieben. Hier ist nichts einzurichten.",
+    "google-calendar": "Lässt Agenten deinen Google Kalender lesen.",
+    "time": "Sagt Agenten die Uhrzeit überall auf der Welt.",
+    "notion": "Helfer finden, lesen und schreiben Seiten in deinem Notion.",
+    "atlassian": "Helfer sehen deine Arbeit in Jira und deine Confluence-Seiten ein und aktualisieren sie.",
+    "trello": "Helfer lesen deine Trello-Boards und verschieben oder ergänzen Karten.",
+    "clickup": "Helfer finden, ergänzen und aktualisieren deine ClickUp-Aufgaben.",
+    "intercom": "Helfer sehen die Chats und Kontakte deiner Kunden in Intercom ein.",
+    "stripe": "Helfer prüfen deine Zahlungen, Kunden und Rechnungen in Stripe."
+  },
+  "adding": "Wird hinzugefügt…",
+  "server": {
+    "connected": "{{name}} ist verbunden. Frag mich etwas dazu."
+  },
+  "groups": {
+    "popular": "Beliebt",
+    "files-notes": "Dateien und Notizen",
+    "calendar-email": "Kalender und E-Mail",
+    "work-tasks": "Arbeit und Aufgaben",
+    "shop-money": "Einkauf und Geld",
+    "social-chat": "Soziales und Chat",
+    "other": "Sonstiges"
+  },
+  "button": {
+    "add": "Hinzufügen",
+    "signIn": "Anmelden",
+    "code": "Braucht einen Code",
+    "added": "Hinzugefügt"
+  },
+  "signin": {
+    "lead": "{{name}} öffnet seine eigene Seite, damit du dich anmeldest. Hier tippst du nichts ein.",
+    "can": "Dein Helfer kann dann:",
+    "ask": "Alles, was sendet, veröffentlicht, bezahlt oder löscht, fragt dich vorher, jedes Mal.",
+    "go": "Weiter zu {{name}}",
+    "failed": "Die Anmeldeseite von {{name}} ließ sich nicht öffnen. Versuch es gleich noch einmal.",
+    "insecure": "{{name}} erlaubt die Anmeldung nur über eine sichere Adresse. Öffne PasaBot auf dem Computer, auf dem es läuft, oder über seine sichere (https-)Adresse und melde dich dann an.",
+    "refused": "{{name}} hat die Anmeldung von PasaBot nicht angenommen. Ein neuer Versuch ändert daran nichts."
+  },
+  "code": {
+    "lead": "{{name}} gibt dir einen Code, den du hier einfügst.",
+    "get": "Code holen",
+    "paste": "Code einfügen",
+    "test": "Testen und hinzufügen",
+    "bad": "Der Code hat nicht funktioniert. Prüfe, ob du ihn ganz kopiert hast.",
+    "unreachable": "{{name}} ist nicht erreichbar. Prüfe dein Internet und versuch es noch einmal.",
+    "failed": "Hat nicht geklappt: {{reason}}",
+    "refused": "{{name}} hat geantwortet, funktioniert aber gerade nicht mit PasaBot. Versuch es später noch einmal."
+  },
+  "helpers": {
+    "title": "Wer es nutzen darf",
+    "main": "Haupthelfer"
+  },
+  "connected": {
+    "title": "{{name}} ist verbunden",
+    "try": "Frag zum Beispiel:",
+    "who": "Ändern, wer es nutzen darf"
+  },
+  "try": {
+    "notion": {
+      "a": "Finde meine Notion-Notizen zum nächsten Termin",
+      "b": "Leg eine Notion-Seite mit einer Aufgabenliste für diese Woche an"
+    },
+    "atlassian": {
+      "a": "Welche Jira-Vorgänge sind mir zugewiesen?",
+      "b": "Fass die neueste Confluence-Seite zusammen, die mein Team geändert hat"
+    },
+    "trello": {
+      "a": "Was steht heute auf meinem Trello-Board?",
+      "b": "Leg eine Trello-Karte an: Lieferanten am Freitag anrufen"
+    },
+    "clickup": {
+      "a": "Welche ClickUp-Aufgaben sind diese Woche fällig?",
+      "b": "Leg eine ClickUp-Aufgabe an: Angebot morgen senden"
+    },
+    "intercom": {
+      "a": "Zeig meine neuesten Intercom-Chats",
+      "b": "Wer hat uns in Intercom wegen einer Erstattung geschrieben?"
+    },
+    "stripe": {
+      "a": "Wie viel habe ich diese Woche über Stripe eingenommen?",
+      "b": "Liste meine offenen Stripe-Rechnungen auf"
+    },
+    "generic": {
+      "a": "Was kannst du mit {{name}} tun?",
+      "b": "Zeig mir, was du in {{name}} siehst"
+    }
+  },
+  "plain": {
+    "nav": "Apps für Helfer",
+    "page": {
+      "title": "Apps für Helfer"
+    },
+    "oauth": {
+      "connected": "Angemeldet. Die App ist bereit."
+    },
+    "install": {
+      "secretHint": "Sicher auf diesem Computer verwahrt. Helfer sehen es nie.",
+      "oauthHint": "Diese App meldet sich über eine eigene Anmelde-App von dir an. Lege eine auf der Seite des Dienstes an und trage dort diese Rücksprungadresse ein.",
+      "clientId": "ID der Anmelde-App",
+      "clientSecret": "Passwort der Anmelde-App (falls der Dienst eins vergeben hat)",
+      "clientSecretHint": "Sicher auf diesem Computer verwahrt."
+    },
+    "installed": {
+      "mcpHint": "Wähle, welche Helfer es nutzen dürfen:",
+      "appsLink": "Apps und Werkzeuge für Helfer"
+    },
+    "found": {
+      "keys": "Seine Geheimcodes werden sicher verwahrt und nie gezeigt: {{names}}",
+      "keysAsk": "Es hat Geheimcodes. Auch hier eine Kopie verwahren? Helfer sehen sie nie."
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{"type":"step_start","timestamp":1,"sessionID":"SESSION","part":{"id":"prt_1","sessionID":"SESSION","messageID":"msg_1","type":"step-start"}}
+{"type":"reasoning","timestamp":2,"sessionID":"SESSION","part":{"id":"prt_2","sessionID":"SESSION","messageID":"msg_1","type":"reasoning","text":"Checking the workspace."}}
+{"type":"text","timestamp":3,"sessionID":"SESSION","part":{"id":"prt_3","sessionID":"SESSION","messageID":"msg_1","type":"text","text":"Let me look first.","time":{"start":3,"end":3}}}
+{"type":"tool_use","timestamp":4,"sessionID":"SESSION","part":{"id":"prt_4","sessionID":"SESSION","messageID":"msg_1","type":"tool","callID":"call_1","tool":"read","state":{"status":"completed","input":{"filePath":"notes.md"},"output":"hello\n","title":"notes.md"}}}
+{"type":"tool_use","timestamp":5,"sessionID":"SESSION","part":{"id":"prt_5","sessionID":"SESSION","messageID":"msg_1","type":"tool","callID":"call_2","tool":"pasabot_memory_search","state":{"status":"error","input":{"q":"pong"},"error":"gateway unavailable"}}}
+{"type":"step_finish","timestamp":6,"sessionID":"SESSION","part":{"id":"prt_6","sessionID":"SESSION","messageID":"msg_1","type":"step-finish","reason":"tool-calls","cost":0,"tokens":{"input":30,"output":4,"reasoning":1,"cache":{"read":100,"write":0}}}}
+{"type":"step_start","timestamp":7,"sessionID":"SESSION","part":{"id":"prt_7","sessionID":"SESSION","messageID":"msg_2","type":"step-start"}}
+{"type":"text","timestamp":8,"sessionID":"SESSION","part":{"id":"prt_8","sessionID":"SESSION","messageID":"msg_2","type":"text","text":"pong","time":{"start":8,"end":8}}}
+{"type":"step_finish","timestamp":9,"sessionID":"SESSION","part":{"id":"prt_9","sessionID":"SESSION","messageID":"msg_2","type":"step-finish","reason":"stop","cost":0,"tokens":{"input":12,"output":2,"reasoning":0,"cache":{"read":10,"write":0}}}}

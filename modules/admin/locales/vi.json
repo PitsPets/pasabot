@@ -1,0 +1,76 @@
+{
+  "nav": "Quản trị",
+  "page": {
+    "title": "Quản trị máy chủ",
+    "intro": "Danh tính, tình trạng, giới hạn và nhật ký của máy chủ này. Chỉ bạn, chủ sở hữu, mới thấy trang này."
+  },
+  "host": {
+    "title": "Máy chủ này",
+    "name": "Tên máy chủ",
+    "save": "Lưu tên",
+    "id": "ID máy chủ",
+    "hostname": "Tên máy",
+    "system": "Hệ thống",
+    "uptime": "Đã chạy",
+    "minutes": "{{count}} phút"
+  },
+  "metrics": {
+    "title": "Tình trạng máy",
+    "cpu": "CPU",
+    "mem": "Bộ nhớ",
+    "disk": "Ổ đĩa",
+    "load": "Tải",
+    "none": "Chưa có số liệu.",
+    "sample": "Kiểm tra ngay",
+    "at": "Đã kiểm tra"
+  },
+  "alerts": {
+    "title": "Quy tắc cảnh báo",
+    "intro": "Bạn sẽ nhận thông báo khi một chỉ số vượt quá giới hạn liên tục.",
+    "empty": "Chưa có quy tắc cảnh báo.",
+    "name": "Tên quy tắc",
+    "metric": "Chỉ số",
+    "above": "Cảnh báo khi vượt",
+    "forSamples": "Số lần kiểm tra liên tiếp",
+    "cooldown": "Im lặng trong (phút)",
+    "add": "Thêm quy tắc",
+    "remove": "Xóa",
+    "fired": "Cảnh báo gần nhất",
+    "never": "Chưa từng cảnh báo",
+    "rule": "{{metric}} vượt {{above}}"
+  },
+  "limits": {
+    "title": "Giới hạn của agent",
+    "intro": "Giới hạn bộ nhớ và CPU cho công việc của từng agent. Để trống nếu không giới hạn.",
+    "mem": "Bộ nhớ (MB)",
+    "cpu": "CPU (%)",
+    "save": "Lưu giới hạn",
+    "saved": "Đã lưu",
+    "usage": "Đang dùng: {{mem}} MB, {{cpu}}% CPU",
+    "empty": "Chưa có agent nào."
+  },
+  "bundle": {
+    "title": "Chuyển một agent",
+    "intro": "Xuất agent cùng các cuộc trò chuyện ra tệp, rồi nhập vào máy chủ PasaBot này hoặc máy chủ khác. Bí mật, tệp và thư mục không được bao gồm.",
+    "export": "Xuất {{name}}",
+    "import": "Nhập tệp agent",
+    "imported": "Đã nhập. Agent và các cuộc trò chuyện của nó đã có trong danh sách của bạn.",
+    "failed": "Không thể nhập tệp đó."
+  },
+  "diag": {
+    "title": "Chẩn đoán",
+    "intro": "Tệp zip gồm số liệu tình trạng, tóm tắt cài đặt và nhật ký gần đây để khắc phục sự cố. Giá trị bí mật được loại bỏ trước khi rời khỏi máy chủ.",
+    "download": "Tải về chẩn đoán"
+  },
+  "audit": {
+    "title": "Nhật ký kiểm toán",
+    "filter": "Lọc theo hành động",
+    "empty": "Chưa có ghi nhận nào.",
+    "older": "Xem cũ hơn",
+    "by": "bởi {{actor}}"
+  },
+  "find": {
+    "navHint": "Bảo trì PasaBot này",
+    "navKeywords": "quản trị, bảo trì, sao lưu, nhật ký, cập nhật"
+  }
+}

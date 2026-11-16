@@ -1,0 +1,148 @@
+{
+  "settings": {
+    "title": "Canaux",
+    "intro": "Parlez à un agent depuis Telegram, Discord, Slack ou WhatsApp. Chaque chat de l’application devient son propre chat PasaBot.",
+    "empty": "Aucun canal pour l’instant.",
+    "loading": "Chargement des canaux…",
+    "error": "Impossible de charger les canaux : {{reason}}"
+  },
+  "add": {
+    "title": "Ajouter un canal",
+    "open": "Ajouter un canal",
+    "kind": "Application",
+    "label": "Nom (facultatif)",
+    "labelHint": "Affiché uniquement ici, p. ex. « Bot du groupe famille ».",
+    "agent": "Agent qui répond",
+    "token": "Jeton du bot",
+    "tokenHint": "Collez-le une seule fois. Il est conservé dans le coffre et n’est plus jamais affiché.",
+    "allowed": "Expéditeurs autorisés (facultatif)",
+    "allowedHint": "Identifiants d’utilisateur de la plateforme, un par ligne ou séparés par des virgules. Laissez vide pour que vous seul puissiez lui parler.",
+    "submit": "Ajouter le canal",
+    "cancel": "Annuler",
+    "noKinds": "Aucune application de canal n’est installée sur ce serveur.",
+    "noAgents": "Créez d’abord un agent.",
+    "pairingNext": "Après l’ajout, vous l’associez en scannant un code QR avec votre téléphone."
+  },
+  "kind": {
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "whatsapp": "WhatsApp",
+    "fake": "Canal de test",
+    "agentchat": "AgentChat"
+  },
+  "status": {
+    "connected": "Connecté",
+    "reconnecting": "Reconnexion",
+    "auth_failed": "Jeton refusé",
+    "stopped": "Arrêté",
+    "error": "Erreur",
+    "starting": "Démarrage",
+    "unavailable": "Application non installée",
+    "disabled": "Désactivé",
+    "not_linked": "Pas encore associé"
+  },
+  "binding": {
+    "agent": "Répond en tant que",
+    "lastEvent": "Dernier message",
+    "never": "rien pour l’instant",
+    "dropped_one": "{{count}} message d’inconnus ignoré",
+    "dropped_many": "{{count}} de messages d’inconnus ignorés",
+    "dropped_other": "{{count}} messages d’inconnus ignorés",
+    "owner": "Votre compte",
+    "ownerNone": "Pas encore associé : seuls les expéditeurs associés ou autorisés reçoivent des réponses.",
+    "ownerLinked": "Associé à {{name}} ({{id}})",
+    "places": "Discussions",
+    "placesNone": "Aucun chat pour l’instant. Écrivez au bot pour en démarrer un.",
+    "openChat": "Ouvrir le chat",
+    "allowed": "Expéditeurs autorisés",
+    "allowedNone": "Vous seul",
+    "token": "Jeton du bot",
+    "tokenSet": "Enregistré dans le coffre",
+    "tokenReplace": "Remplacer le jeton",
+    "tokenNew": "Nouveau jeton du bot",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "restart": "Reconnecter",
+    "turnOff": "Désactiver",
+    "turnOn": "Activer",
+    "remove": "Supprimer",
+    "removeConfirm": "Supprimer ce canal ? Le bot cesse de répondre ; ses chats restent dans PasaBot.",
+    "confirm": "Oui, supprimer",
+    "unlink": "Dissocier",
+    "error": "Dernière erreur : {{error}}",
+    "which": "Lequel"
+  },
+  "link": {
+    "start": "Associer mon compte",
+    "again": "Nouveau code d’association",
+    "how": "Envoyez ceci au bot en message privé dans les 10 minutes :",
+    "warn": "Uniquement en message privé. Un code publié dans un groupe est annulé.",
+    "copy": "Copier",
+    "copied": "Copié",
+    "ownNumber": "Numéro personnel : envoyez le code dans votre propre discussion « Vous écrire »."
+  },
+  "field": {
+    "botToken": "Jeton du bot",
+    "signingSecret": "Secret de signature"
+  },
+  "option": {
+    "ownNumber": {
+      "label": "Quel numéro",
+      "off": "Un numéro distinct pour l’agent",
+      "on": "Mon propre numéro (je lui parle dans « Vous écrire »)"
+    }
+  },
+  "events": {
+    "title": "URL des événements",
+    "how": "Collez ceci dans les paramètres d’événements de votre application {{app}}. Chaque requête est vérifiée avec le secret de signature."
+  },
+  "pairing": {
+    "title": "Associer {{app}}",
+    "riskTitle": "Avant d’associer : ce n’est pas une connexion officielle.",
+    "riskBody": "PasaBot rejoint votre compte {{app}} comme appareil associé, de la même façon qu’un ordinateur. {{app}} interdit l’usage automatisé des comptes personnels dans ses conditions d’utilisation ; le numéro peut donc être limité ou banni.",
+    "riskAdvice": "Utilisez un numéro que vous pouvez vous permettre de perdre, et limitez le nombre de messages.",
+    "accept": "Je comprends le risque, afficher le code QR",
+    "scan": "Sur votre téléphone, ouvrez {{app}} → Appareils associés → Associer un appareil, puis scannez ce code. Il change toutes les quelques secondes.",
+    "qrAlt": "Code QR pour associer cet appareil",
+    "waiting": "Récupération du code QR…",
+    "linked": "Associé. Connexion…",
+    "failed": "L’association n’a pas abouti ({{reason}}). Réessayez."
+  },
+  "find": {
+    "settingsHint": "Discuter avec les agents depuis d’autres applis",
+    "settingsKeywords": "canaux, Télégramme, messageries, discussion"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Parler à vos assistants depuis d’autres applis de chat"
+    },
+    "settings": {
+      "title": "Applis de chat",
+      "intro": "Parlez à vos assistants depuis Telegram, Discord, Slack ou WhatsApp. Chaque discussion là-bas devient une discussion ici.",
+      "empty": "Pas encore d’appli de chat."
+    },
+    "add": {
+      "title": "Ajouter une appli de chat",
+      "open": "Ajouter une appli de chat",
+      "submit": "Ajouter cette appli",
+      "kind": "Quelle appli de chat ?",
+      "agent": "Assistant qui répond",
+      "token": "Code secret de l’appli",
+      "tokenHint": "Collez-le une fois. Il est gardé en sécurité sur cet ordinateur et n’est plus jamais affiché.",
+      "allowed": "Qui d’autre peut lui écrire (facultatif)",
+      "allowedHint": "Le numéro ou nom d’utilisateur de chaque personne dans cette appli, un par ligne. Laissez vide pour être seul à lui parler.",
+      "noAgents": "Créez d’abord un assistant."
+    },
+    "field": {
+      "botToken": "Code secret de l’appli",
+      "signingSecret": "Second code secret de l’appli"
+    },
+    "binding": {
+      "token": "Code secret de l’appli",
+      "tokenSet": "Gardé en sécurité sur cet ordinateur",
+      "tokenReplace": "Remplacer le code secret",
+      "tokenNew": "Nouveau code secret de l’appli"
+    }
+  }
+}

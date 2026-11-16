@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "name": "English",
+    "dir": "ltr",
+    "status": "reviewed"
+  },
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "Retry",
+    "skip": "Skip",
+    "cancel": "Cancel",
+    "save": "Save",
+    "loading": "Loading…"
+  },
+  "queue": {
+    "interrupted": "This run was interrupted by a server restart.",
+    "interruptedHint": "Retry it, or skip it to continue with the next message.",
+    "routineInterrupted": "A routine run of {{agent}} was interrupted by a server restart."
+  },
+  "blocks": {
+    "fallback": "This message has content this app cannot show ({{kind}})."
+  },
+  "server": {
+    "approvalNeeded": "Approval needed",
+    "wantsToUse": "{{name}} wants to: {{tool}}",
+    "interrupted": "Run interrupted by a server restart",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}: run failed",
+    "unknownError": "unknown error",
+    "devicePaired": "A device was paired",
+    "devicePairedBody": "{{what}} can now sign in to your account."
+  },
+  "provider": {
+    "fakeName": "Fake (tests)",
+    "hint": {
+      "notOnPath": "{{cli}} not found on PATH",
+      "notFound": "{{cli}} not found",
+      "versionFailed": "{{cmd}} --version failed",
+      "runToSignIn": "run `{{cmd}}` once to sign in",
+      "runToSignInOrKey": "run `{{cmd}}` once to sign in (or set {{env}} through the vault)",
+      "runToAddProvider": "run `{{cmd}}` once to add a provider",
+      "checkedFirstTurn": "sign-in is checked on the first turn",
+      "notAnswering": "{{name}} ({{url}}) is not answering",
+      "turnSignIn": "Sign-in didn't work the last time it ran. Sign in again on the Brains page."
+    }
+  },
+  "channel": {
+    "linked": "Linked. You can talk to {{agent}} here.",
+    "linkInvalid": "That link code is not valid or has expired. Make a new one in PasaBot: Settings → Channels.",
+    "failed": "Sorry, that did not work. The details are in the PasaBot app.",
+    "empty": "(no reply)",
+    "interrupted": "Interrupted by a restart. Retry it in the PasaBot app.",
+    "approvalAsk": "Approval needed: {{summary}}\nReply /approve {{id}} or /deny {{id}}",
+    "approvalDevice": "Approval needed: {{summary}}\nThis one can only be approved in the PasaBot app on a paired device.",
+    "approvalNone": "No pending approval with that id in this chat.",
+    "approvalOwnerOnly": "Only the linked owner can answer approvals.",
+    "approvalDeviceOnly": "This approval can only be answered in the PasaBot app on a paired device.",
+    "approved": "Approved {{id}}.",
+    "denied": "Denied {{id}}."
+  },
+  "card": {
+    "action": {
+      "open": "Open",
+      "dismiss": "Dismiss",
+      "signIn": "Sign in again",
+      "retry": "Try again",
+      "otherBrain": "Use another brain",
+      "wait": "Keep waiting",
+      "notNow": "Not now",
+      "takeOver": "Take over",
+      "imDone": "I’m done, go on",
+      "ok": "Okay",
+      "remind": "Remind me"
+    },
+    "signIn": {
+      "title": "{{name}}’s brain needs you to sign in",
+      "text": "{{brain}} is signed out, so {{name}} can’t answer yet. Sign in once, then try again."
+    },
+    "failed": {
+      "title": "{{name}} couldn’t finish this reply",
+      "offline": "It couldn’t reach its brain. Check the internet, then try again.",
+      "timeout": "It took too long, so it stopped.",
+      "auth": "Its brain is signed out.",
+      "ratelimit": "Its brain’s usage limit is reached for now.",
+      "quota": "Its brain has no usage left on this plan.",
+      "contextoverflow": "The chat got too long for its brain.",
+      "other": "Its brain stopped before the reply was done."
+    },
+    "limit": {
+      "title": "{{name}} is paused until {{untilAt}}",
+      "text": "Its brain’s usage limit is reached. Your message waits and goes out by itself.",
+      "offline": "Its brain can’t be reached right now. Your message waits and goes out by itself.",
+      "remindNow": "{{name}} can continue now",
+      "offlineTitle": "{{name}} is paused until {{untilAt}}"
+    },
+    "settled": {
+      "retrying": "Trying again",
+      "signedIn": "Signed in again",
+      "resumed": "Working again",
+      "remind": "I’ll remind you at {{untilAt}}"
+    },
+    "member": {
+      "failed": "{{name}} couldn’t finish this reply.",
+      "approvalWaiting": "{{name}} is waiting for the owner’s OK.",
+      "approvalApproved": "{{name}} got the OK.",
+      "approvalRefused": "{{name}} was not allowed."
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}} needs you to sign in again",
+        "text": "{{name}}’s mind is signed out, so it can’t answer yet. Sign in once, then send your message again."
+      },
+      "action": {
+        "otherBrain": "Use another mind"
+      },
+      "limit": {
+        "title": "{{name}} has used up its turns for now",
+        "text": "It can continue at {{untilAt}}. Your message waits and goes out by itself.",
+        "offlineTitle": "{{name}} can’t reach its mind right now",
+        "offline": "It tries again at {{untilAt}}. Your message waits and goes out by itself."
+      },
+      "failed": {
+        "offline": "It couldn’t reach its mind. Check the internet, then try again.",
+        "auth": "Its mind is signed out.",
+        "ratelimit": "It has used up its turns for now.",
+        "quota": "It has no turns left on this plan.",
+        "contextoverflow": "The chat got too long for its mind.",
+        "other": "It stopped before the reply was done."
+      }
+    }
+  }
+}

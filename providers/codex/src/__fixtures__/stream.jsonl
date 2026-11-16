@@ -1,0 +1,14 @@
+{"type":"thread.started","thread_id":"THREAD"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"reasoning","text":"Checking the workspace."}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"Let me look first."}}
+{"type":"item.started","item":{"id":"item_2","type":"command_execution","command":"bash -lc ls","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_2","type":"command_execution","command":"bash -lc ls","aggregated_output":"notes.md\n","exit_code":0,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_3","type":"mcp_tool_call","server":"pasabot","tool":"memory_search","arguments":{"q":"pong"},"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_3","type":"mcp_tool_call","server":"pasabot","tool":"memory_search","arguments":{"q":"pong"},"result":{"content":[{"type":"text","text":"no matches"}]},"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_4","type":"file_change","changes":[{"path":"notes.md","kind":"update"}],"status":"completed"}}
+{"type":"item.started","item":{"id":"item_5","type":"command_execution","command":"bash -lc false","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_5","type":"command_execution","command":"bash -lc false","aggregated_output":"","exit_code":1,"status":"failed"}}
+{"type":"item.completed","item":{"id":"item_6","type":"todo_list","items":[{"text":"answer","completed":true}]}}
+{"type":"item.completed","item":{"id":"item_7","type":"agent_message","text":"pong"}}
+{"type":"turn.completed","usage":{"input_tokens":152,"cached_input_tokens":110,"output_tokens":7}}

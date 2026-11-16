@@ -1,0 +1,57 @@
+{
+  "nav": "網站",
+  "page": {
+    "title": "網站",
+    "intro": "由 agent 發布的小型網頁。它們會在獨立的網站位址開啟，在沙盒中執行，無法使用你的登入狀態。每個網站都會到期，除非續期。"
+  },
+  "refresh": "重新整理",
+  "loading": "載入中…",
+  "empty": "目前還沒有網站。當 agent 發布網站後，就會顯示在這裡。",
+  "error": "無法載入網站。{{reason}}",
+  "tunnel": {
+    "title": "外部位址",
+    "label": "網站的通道位址",
+    "hint": "選填。若你自己的通道指向網站位址，請在此貼上該位址（例如 https://sites.example.net），公開網站就會顯示它。",
+    "save": "儲存位址",
+    "saved": "已儲存。",
+    "none": "尚未設定通道位址，因此目前無法公開任何網站。"
+  },
+  "site": {
+    "by": "由 {{name}} 發布",
+    "byRemoved": "由已移除的 agent 發布",
+    "files_other": "{{count}} 個檔案",
+    "expires": "到期時間：{{when}}",
+    "public": "公開",
+    "private": "私人",
+    "open": "開啟網站",
+    "openPublic": "公開位址",
+    "renew": "再延長 7 天",
+    "makePublic": "設為公開",
+    "makePrivate": "設為私人",
+    "remove": "移除",
+    "confirmRemove": "要移除「{{title}}」嗎？其位址將立即失效。",
+    "list": "檔案"
+  },
+  "tools": {
+    "sites_publish": "發布靜態網站",
+    "sites_list": "列出你的網站",
+    "sites_renew": "續期網站",
+    "sites_unpublish": "移除網站"
+  },
+  "find": {
+    "navHint": "代理建立並託管的網站",
+    "navKeywords": "網站, 網頁, 發布, 託管"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助理製作並上線的網站"
+    },
+    "page": {
+      "intro": "你的助理發布的小網頁。它們在單獨的位址開啟，與應用程式隔開，不能使用你的登入。不續期就會過期。"
+    },
+    "empty": "還沒有網站。助理發布後會顯示在這裡。",
+    "site": {
+      "byRemoved": "由已移除的助理發布"
+    }
+  }
+}

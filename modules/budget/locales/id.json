@@ -1,0 +1,151 @@
+{
+  "nav": "Anggaran",
+  "page": {
+    "title": "Anggaran",
+    "intro": "Biaya agent Anda, harga yang Anda bayar, dan batas yang menghentikan mereka. Harga hanya berasal dari tabel Anda: model tanpa harga tidak pernah ditebak."
+  },
+  "spend": {
+    "title": "Pengeluaran",
+    "today": "Hari ini",
+    "month": "Bulan ini",
+    "total": "Total",
+    "none": "Belum ada pengeluaran.",
+    "byAgent": "Menurut agent",
+    "byModel": "Menurut model",
+    "runs": "{{count}} proses",
+    "tokens": "{{input}} masuk · {{output}} keluar · {{cache}} cache",
+    "priceNotSet": "harga belum diatur",
+    "unpriced": "{{count}} proses belum memiliki harga dan tidak dihitung."
+  },
+  "prices": {
+    "title": "Tabel harga",
+    "intro": "Per juta token, dalam satu mata uang per model. Model yang dipakai agent Anda muncul di sini; atur harga agar dihitung.",
+    "model": "Model",
+    "default": "(model bawaan)",
+    "input": "Masukan",
+    "output": "Keluaran",
+    "cached": "Cache",
+    "currency": "Mata uang",
+    "save": "Simpan harga",
+    "saved": "Harga tersimpan.",
+    "remove": "Hapus harga",
+    "add": "Tambah model",
+    "provider": "Otak",
+    "empty": "Belum ada model. Model muncul setelah balasan pertama agent.",
+    "providerMissing": "Tulis dulu nama otaknya"
+  },
+  "caps": {
+    "title": "Batas",
+    "intro": "Saat batas tercapai, agent berhenti dengan rapi, pekerjaan baru menunggu, dan rutinitas dilewati. Hanya Anda yang dapat menaikkan batas.",
+    "everyone": "Semua agent",
+    "day": "Per hari",
+    "month": "Per bulan",
+    "none": "Tanpa batas",
+    "spent": "{{spent}} dari {{cap}} {{currency}}",
+    "save": "Simpan batas",
+    "saved": "Batas tersimpan.",
+    "uncovered": "Tidak dihitung dalam batas apa pun sampai punya harga dalam mata uang batas: {{models}}.",
+    "oneCurrency": "Batas dan harga harus memakai satu mata uang. Ubah ke mata uang yang sama dulu."
+  },
+  "card": {
+    "who": {
+      "global": "Semua agent",
+      "agent": "{{name}}"
+    },
+    "reached": "{{who}} mencapai anggaran {{period}}: {{spent}} dari {{cap}} {{currency}}.",
+    "period": {
+      "day": "harian",
+      "month": "bulanan"
+    },
+    "stopped": "{{name}} berhenti. Yang sudah ditulisnya tetap tersimpan.",
+    "held": "Pekerjaan baru menunggu sampai batas diatur ulang atau Anda menaikkannya.",
+    "skipped": "Satu proses rutinitas dilewati.",
+    "ask": "Naikkan batas atau pertahankan?",
+    "newCap": "Batas baru ({{currency}})",
+    "raise": "Naikkan batas",
+    "keep": "Pertahankan batas",
+    "raised": "Batas dinaikkan menjadi {{cap}} {{currency}}.",
+    "kept": "Batas dipertahankan di {{cap}} {{currency}}.",
+    "failed": "Gagal. Hanya pemilik yang dapat mengubah batas."
+  },
+  "bundle": {
+    "title": "Pindahkan agent (terenkripsi)",
+    "intro": "Satu file berisi pengaturan, memori, ruang kerja, skill, dan chat agent, dikunci dengan frasa sandi. Impor selalu membuat agent baru.",
+    "agent": "Agen",
+    "passphrase": "Frasa sandi",
+    "passphraseHint": "Minimal 8 karakter. Tanpanya file tidak dapat dibuka.",
+    "vault": "Sertakan entri brankas agent ini",
+    "vaultHint": "Nonaktif secara bawaan. Memerlukan sandi Anda lagi.",
+    "password": "Sandi Anda",
+    "export": "Unduh file terenkripsi",
+    "exported": "File terunduh.",
+    "file": "File paket",
+    "import": "Impor sebagai agent baru",
+    "imported": "Diimpor sebagai {{name}}.",
+    "open": "Buka chat-nya",
+    "error": {
+      "bad_passphrase_or_tampered": "Frasa sandi salah, atau file telah diubah. Tidak ada yang diimpor.",
+      "unsafe_path": "File berisi jalur yang tidak aman. Tidak ada yang diimpor.",
+      "unsupported_version": "File ini dibuat oleh PasaBot yang lebih baru. Tidak ada yang diimpor.",
+      "not_a_bundle": "Ini bukan file agent PasaBot.",
+      "reauth_required": "Sandi Anda diperlukan untuk menyertakan entri brankas.",
+      "builtin_agent": "Pembuat tim adalah bagian dari PasaBot, jadi tidak disimpan ke file. Agen Anda yang lain bisa.",
+      "other": "Gagal."
+    }
+  },
+  "server": {
+    "allAgents": "Semua agen",
+    "capHeadDay": "{{what}} mencapai anggaran harian ({{spent}} dari {{cap}} {{currency}}).",
+    "capHeadMonth": "{{what}} mencapai anggaran bulanan ({{spent}} dari {{cap}} {{currency}}).",
+    "capStopped": "{{name}} berhenti; yang sudah ditulisnya tetap disimpan.",
+    "capHeld": "Pekerjaan baru menunggu sampai batas direset atau Anda menaikkannya.",
+    "capSkipped": "Satu jalannya rutinitas dilewati.",
+    "capCard": "{{head}} {{tail}}"
+  },
+  "find": {
+    "navHint": "Batas pengeluaran agen Anda",
+    "navKeywords": "anggaran, batas, uang, plafon, pengeluaran"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Batas pengeluaran untuk pembantu Anda"
+    },
+    "page": {
+      "intro": "Biaya pembantumu, harga yang kamu bayar, dan batas yang menghentikan mereka. Harga hanya dari tabelmu: otak tanpa harga tidak pernah ditebak."
+    },
+    "spend": {
+      "byAgent": "Per pembantu",
+      "byModel": "Per versi otak"
+    },
+    "prices": {
+      "intro": "Harga per sejuta potong teks, satu mata uang per versi otak. Versi yang dipakai pembantumu muncul di sini; beri harga agar dihitung.",
+      "model": "Versi otak",
+      "default": "(versi biasa)",
+      "add": "Tambah versi",
+      "empty": "Belum ada. Muncul setelah balasan pertama pembantu."
+    },
+    "caps": {
+      "intro": "Saat batas tercapai, pembantu berhenti dengan rapi, pekerjaan baru menunggu, dan rutinitas dilewati. Hanya kamu yang bisa menaikkan batas.",
+      "everyone": "Semua pembantu",
+      "uncovered": "Tidak dihitung ke batas mana pun sampai punya harga dalam mata uang batas: {{models}}."
+    },
+    "card": {
+      "who": {
+        "global": "Semua pembantu"
+      }
+    },
+    "bundle": {
+      "title": "Pindahkan pembantu (file terkunci)",
+      "intro": "Satu file berisi pengaturan, ingatan, file, kemampuan, dan obrolan pembantu, dikunci dengan frasa sandi. Membawanya masuk selalu membuat pembantu baru.",
+      "agent": "Pembantu",
+      "vault": "Sertakan rahasia tersimpan pembantu ini",
+      "file": "File pembantu",
+      "import": "Bawa masuk sebagai pembantu baru",
+      "error": {
+        "not_a_bundle": "Ini bukan file pembantu PasaBot.",
+        "reauth_required": "Kata sandimu diperlukan untuk menyertakan rahasia tersimpan.",
+        "builtin_agent": "Pembentuk timmu bagian dari PasaBot, jadi tidak disimpan ke file. Pembantumu yang lain bisa."
+      }
+    }
+  }
+}

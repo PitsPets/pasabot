@@ -1,0 +1,294 @@
+{
+  "nav": "收件箱",
+  "page": {
+    "title": "机器人收件箱",
+    "intro": "这是你的机器人专属邮箱。收到的邮件属于外部数据：agent 可以阅读，但绝不会听从其中的指令。他们要发送的每封邮件，都会先征求你的同意。"
+  },
+  "setup": {
+    "title": "连接邮箱",
+    "intro": "邮箱由你自己创建，可以选择任意服务商，并在你自己的浏览器中操作。",
+    "step1": "在你选择的服务商处，为机器人新建一个邮箱。",
+    "step2": "在该邮箱的设置中，开启 IMAP 和 SMTP，并生成应用专用密码。请查看服务商的条款（部分服务商的 IMAP 需要借助辅助应用）。",
+    "step3": "在下方填写服务器信息和应用专用密码。",
+    "never": "PasaBot 不会创建邮箱，不会替你通过浏览器登录，也不会破解验证码。相关信息和应用专用密码只保存在 vault 中。",
+    "address": "邮箱地址",
+    "username": "登录名",
+    "usernameHint": "如果就是邮箱地址，请留空。",
+    "imapHost": "IMAP 服务器",
+    "imapPort": "IMAP 端口",
+    "imapTls": "IMAP 安全性",
+    "smtpHost": "SMTP 服务器",
+    "smtpPort": "SMTP 端口",
+    "smtpTls": "SMTP 安全性",
+    "tls": {
+      "implicit": "全程 TLS",
+      "starttls": "STARTTLS（必需）"
+    },
+    "password": "应用专用密码",
+    "passwordHint": "服务商为这个机器人生成的应用专用密码，不是你的主密码。",
+    "passwordKeep": "已保存在 vault 中。留空则保持不变。",
+    "save": "保存邮箱",
+    "saved": "已保存。相关信息和应用专用密码都在 vault 中。"
+  },
+  "mail": {
+    "title": "邮件",
+    "intro": "以纯文本显示。邮件中的图片和链接不会被加载。",
+    "check": "检查新邮件",
+    "fetched_other": "收到 {{count}} 封新邮件。",
+    "empty": "暂无邮件。",
+    "noSubject": "（无主题）",
+    "wasHtml": "这封邮件带有格式，此处以纯文本显示。",
+    "bridgeVerified": "来自已配对的机器人 {{name}}",
+    "bridgeRefused": "机器人消息已拒收：{{reason}}",
+    "refused": {
+      "unsigned": "未签名",
+      "malformed": "签名已损坏",
+      "unknown_sender": "未知机器人",
+      "wrong_from": "发件地址不正确",
+      "wrong_key": "密钥不正确",
+      "bad_signature": "签名不匹配",
+      "wrong_recipient": "发给了其他机器人",
+      "body_changed": "内容已被改动",
+      "stale": "已过期",
+      "replayed": "重复发送"
+    }
+  },
+  "bridge": {
+    "title": "与另一个 PasaBot 配对",
+    "intro": "两个机器人可以通过邮件互相写信。请与对方的 owner 当面或通过其他可信的方式，交换下方的地址和密钥。对方的消息仍属于外部数据，每次回复都会先征求你的同意。",
+    "yourAddress": "你的机器人地址：{{address}}",
+    "noAddress": "请先连接邮箱",
+    "yourKey": "你的机器人密钥：",
+    "peerName": "对方机器人的名称",
+    "peerAddress": "对方机器人的邮箱地址",
+    "peerKey": "对方机器人的密钥",
+    "peerKeyHint": "对方 owner 在其收件箱页面上看到的密钥。",
+    "add": "配对",
+    "added": "已配对。",
+    "remove": "移除"
+  },
+  "error": {
+    "not_configured": "请先连接邮箱。",
+    "bad_host": "服务器名称似乎不正确。",
+    "password_required": "请输入应用专用密码。",
+    "blocked_address": "该服务器位于私有或被屏蔽的网络地址，PasaBot 不会连接。",
+    "host_not_allowed": "该服务器不是你填写的那个。",
+    "starttls_unavailable": "服务器未提供安全连接，PasaBot 没有登录。",
+    "tls_failed": "无法验证服务器的安全证书。",
+    "auth_failed": "邮件服务器拒绝了登录。请检查应用专用密码。",
+    "timeout": "邮件服务器没有响应。",
+    "stopped": "目前所有功能均已停止。",
+    "bad_key": "这不是有效的 PasaBot 机器人密钥。",
+    "exists": "该地址已配对。",
+    "forbidden": "只有 owner 可以执行此操作。",
+    "other": "出了点问题，请重试。"
+  },
+  "tools": {
+    "inbox_list": "列出收件箱邮件",
+    "inbox_read": "阅读一封邮件",
+    "inbox_send": "发送邮件",
+    "inbox_bridge_send": "给已配对的 PasaBot 机器人发消息"
+  },
+  "find": {
+    "navHint": "智能体阅读并回复的邮件",
+    "navKeywords": "邮件, 电子邮件, 消息, 收件箱"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助手阅读并回复的邮件"
+    },
+    "page": {
+      "intro": "机器人自己的邮箱。收到的邮件来自外部：助手可以阅读，但绝不会听从其中的指令。他们想发的每封邮件都会先问你。"
+    },
+    "setup": {
+      "intro": "邮箱由你自己在喜欢的邮件公司、用你自己的浏览器创建。",
+      "step1": "在你选择的邮件公司为机器人创建一个新邮箱。",
+      "step2": "在该邮箱的设置里打开 IMAP 和 SMTP（让邮件应用可以进入），并创建一个应用专用密码。请查看邮件公司的规定（有些需要辅助应用才能用 IMAP）。",
+      "step3": "在下面填写邮件信息和应用专用密码。",
+      "never": "PasaBot 从不创建邮箱，从不替你在浏览器里登录，也从不破解验证码。信息和应用专用密码只安全保存在这台电脑上。",
+      "imapHost": "收信地址 (IMAP)",
+      "smtpHost": "发信地址 (SMTP)",
+      "passwordHint": "邮件公司为这个机器人生成的应用专用密码，不是你的主密码。",
+      "passwordKeep": "安全保存在这台电脑上。留空则保持不变。",
+      "saved": "已保存。信息和应用专用密码安全保存在这台电脑上。",
+      "imapPort": "收件端口",
+      "smtpPort": "发件端口",
+      "imapTls": "收件安全",
+      "smtpTls": "发件安全"
+    },
+    "error": {
+      "bad_host": "这个收信或发信地址看起来不对。",
+      "blocked_address": "这个地址在私有或被屏蔽的网络上，所以 PasaBot 不会连接它。",
+      "host_not_allowed": "这不是你填写的地址。",
+      "starttls_unavailable": "邮件服务没有提供安全连接，所以 PasaBot 没有登录。",
+      "tls_failed": "无法检查邮件服务的安全证书。",
+      "auth_failed": "邮件服务拒绝了登录。请检查应用专用密码。",
+      "timeout": "邮件服务没有回应。"
+    },
+    "guide": {
+      "manual": {
+        "intro": "邮件服务的帮助页面里有这些信息（查找邮件应用的设置）。如果有应用专用密码，请使用它。"
+      }
+    }
+  },
+  "guide": {
+    "count": "第 {{n}} 步，共 {{total}} 步",
+    "back": "返回",
+    "next": "下一步",
+    "done": "完成",
+    "moved": "这个邮箱设置已转到别处。你可以在设置的“你的邮箱”里继续。",
+    "badAddress": "这看起来不像邮箱地址。请检查后再试。",
+    "pageTitle": "连接你的邮箱",
+    "openChat": "回到与 {{name}} 的聊天",
+    "cardNew": "新建邮箱",
+    "cardConnect": "连接你的邮箱",
+    "service": {
+      "title": "你用的是哪种邮箱？",
+      "other": "其他邮箱"
+    },
+    "ideas": {
+      "title": "地址点子",
+      "note": "这些只是点子。注册时 Google 会告诉你哪些还能用。",
+      "nameLabel": "你的店铺或团队名称",
+      "nameHint": "比如 Reyes Hardware。我会用它想几个地址。",
+      "show": "看看建议",
+      "copy": "复制",
+      "copyOne": "复制 {{address}}",
+      "copied": "已复制"
+    },
+    "signup": {
+      "title": "在 Gmail 创建账号",
+      "open": "打开 Gmail 注册",
+      "asks": "Google 会问你：",
+      "ask1": "你的名字",
+      "ask2": "你想要的新地址（用上面的点子也可以）",
+      "ask3": "一个由你自己选并妥善保管的密码。我永远看不到",
+      "ask4": "手机验证：Google 会发短信验证码给你",
+      "onlyYou": "这一步只能由你在自己的浏览器里完成。我从不替你注册、输入密码或回答手机验证。",
+      "done": "完成，我有新邮箱了"
+    },
+    "address": {
+      "label": "你的邮箱地址",
+      "newLabel": "你的新邮箱地址",
+      "hint": "完整地址，例如 {{example}}",
+      "looksLike": "这看起来是 {{name}} 的地址。",
+      "switch": "改用 {{name}}",
+      "work": "这是工作或学校的邮箱吗？管理它的人可能需要先允许应用专用密码。如果你的代码一直被拒绝，可以问问他们。"
+    },
+    "apppw": {
+      "title": "为 PasaBot 创建应用专用密码",
+      "why": "应用专用密码是 {{company}} 专门为 PasaBot 生成的特殊代码。我用它代替你的真实密码，你随时可以删除它。",
+      "s1": "如果两步验证没开，请先打开。{{company}} 要求先开启它才能生成应用专用密码，并会向你的手机发送验证码。",
+      "s1Open": "打开 {{company}} 的两步验证页面",
+      "s2": {
+        "gmail": "在 Google 的“应用专用密码”页面，名称填 PasaBot，然后点创建。",
+        "outlook": "在 Microsoft 的安全页面，选择创建新的应用密码。",
+        "yahoo": "在 Yahoo 的账号安全页面，点生成应用密码，输入 PasaBot，再点生成。",
+        "icloud": "在 Apple 账号页面，打开“登录与安全”，再进入“App 专用密码”。点加号，输入 PasaBot。"
+      },
+      "s2Open": "打开 {{company}} 的页面",
+      "s3": "复制显示的代码：{{letters}} 个字母，分成几小组。然后回到这里。",
+      "haveCode": "我拿到代码了"
+    },
+    "code": {
+      "title": "粘贴你的代码",
+      "label": "应用专用密码（{{letters}} 个字母）",
+      "hint": "有空格也没关系。只粘贴在这里，千万不要发到聊天里。",
+      "tech": "服务器：{{imap}} 和 {{smtp}}，仅限安全连接。",
+      "connect": "连接",
+      "checking": "正在向 {{company}} 核对…",
+      "ok": "已连接。现在我可以替你读邮件和写草稿了。"
+    },
+    "reason": {
+      "wrong_code": "{{company}} 不接受这个代码。请生成新的应用专用密码，再粘贴这 {{letters}} 个字母。",
+      "two_step_off": "{{company}} 需要先开启两步验证。请开启后生成新的应用专用密码，再粘贴到这里。",
+      "imap_off": "{{company}} 不允许邮件应用进入这个账号。如果它由公司或学校管理，请他们允许邮件应用。然后再点一次“连接”。你的代码还在框里。",
+      "no_internet": "我连不上 {{company}}。请确认这台电脑已联网，然后再试。",
+      "server_trouble": "{{company}} 的邮件服务器没有安全地回应。请等一分钟再试。",
+      "code_shape": "这不是 {{letters}} 个字母。请从 {{company}} 的页面重新复制代码。",
+      "stopped": "现在一切都已停止。重新开启后再试。",
+      "tooMany": "连续试了很多次。请等几分钟再试。",
+      "busy": "还在检查你上一次的尝试，请稍等。"
+    },
+    "manual": {
+      "intro": "你的邮件服务的帮助页面里有这些信息（找 IMAP 和 SMTP）。如果有应用专用密码，请用它。",
+      "plain": "如果是其他邮箱服务，请在聊天里告诉 {{name}} 你的邮箱是哪家公司的。会帮你找到它的设置。要自己填写，请在设置里打开“技术用语”。",
+      "plainNoName": "如果是其他邮箱服务，请在聊天里告诉你的助手你的邮箱是哪家公司的。会帮你找到它的设置。要自己填写，请在设置里打开“技术用语”。"
+    },
+    "access": {
+      "title": "你的助手可以用这个邮箱做什么？",
+      "read": "只读",
+      "readHint": "他们阅读并整理你的邮件。不写也不发任何东西。",
+      "draft": "阅读并写草稿（最适合开始）",
+      "draftHint": "他们阅读你的邮件，并写好回复给你检查。不会发送任何东西。",
+      "send": "我批准后再发送",
+      "sendHint": "他们可以发邮件，但每次都要在你点批准之后。"
+    },
+    "test": {
+      "title": "一个小测试",
+      "body": "给 {{address}} 发一封邮件，主题里写上这个词。用手机发也可以。邮件到了我会告诉你。",
+      "check": "立即检查",
+      "arrived": "已收到：“{{subject}}”，来自 {{from}}。",
+      "none": "还没有带“{{word}}”的邮件。邮件可能要一分钟，稍后再试。",
+      "finish": "结束",
+      "proves": "这说明我能读取你的收件箱。"
+    },
+    "finished": {
+      "title": "你的邮箱已连接",
+      "body": "{{address}} 已连接。",
+      "read": "你的助手可以阅读它。",
+      "draft": "你的助手可以阅读它，并为你写回复草稿。",
+      "send": "你的助手可以阅读它、写草稿，并在你批准后发送。",
+      "change": "你随时可以在设置的“你的邮箱”里更改。"
+    },
+    "say": {
+      "introNew": "我们一起为你的团队建一个新邮箱。我会一步一步来；每一步做好后，点这一步最后的按钮。",
+      "introConnect": "我们来连接你的邮箱吧。大约 3 分钟，一步一步来。",
+      "service": "首先，你用的是哪种邮箱？",
+      "ideas": "先说说，你的店铺或团队叫什么？我来推荐几个地址。",
+      "signup": "现在打开 Gmail 注册并创建账号。看到新的收件箱后点“完成”。",
+      "address_new": "太好了！在这里输入你的新地址。",
+      "address_connect": "你的邮箱地址是什么？",
+      "guide": "现在我们为我生成一个特殊代码，这样我永远不需要你的密码。",
+      "code": "把代码粘贴在这里。我会向 {{company}} 核对。",
+      "manual": "输入你的邮件服务提供的服务器信息。",
+      "access": "已连接！你的助手可以用它做什么？",
+      "test": "最后，一个小测试。",
+      "done": "全部完成！",
+      "manualPlain": "你的邮箱是哪家公司的？在聊天里告诉我，我帮你找它的设置。"
+    },
+    "settings": {
+      "title": "你的邮箱",
+      "hint": "连接你的助手要读的邮箱",
+      "keywords": "邮箱, gmail, outlook, yahoo, icloud, 应用专用密码, 信箱, 连接",
+      "none": "还没有连接邮箱。",
+      "connected": "已连接：{{address}}。",
+      "helper": "由 {{name}} 负责。",
+      "connect": "连接我的邮箱",
+      "makeNew": "新建邮箱",
+      "change": "连接另一个邮箱",
+      "saved": "已保存。"
+    },
+    "withMe": {
+      "do": "和我一起做",
+      "mine": "我在自己的浏览器里做",
+      "intro": "{{name}} 会在它自己的浏览器里打开注册页面，填好你的名字和你选的地址。密码和手机验证由你来做。",
+      "first": "名字",
+      "last": "姓氏",
+      "pick": "想试的地址",
+      "working": "正在打开注册页面…",
+      "badName": "请输入你的名字和姓氏。",
+      "noBrowser": "{{name}} 的浏览器在这里无法启动。请改用你自己的浏览器。",
+      "yourTurn": "轮到你了：设置密码并完成手机验证。我看不到也无法输入这些。",
+      "yourTurnText": "点“我来操作”使用浏览器；新邮箱建好后点“完成”。",
+      "liveAlt": "{{name}} 的浏览器（实时）",
+      "wait": "画面马上出现…",
+      "taken": "现在由你使用浏览器。{{name}} 看不到也做不了任何事。",
+      "address": "它填写的地址：{{address}}",
+      "take": "我来操作",
+      "done": "完成",
+      "settled": "已注册。下一步：你的新地址",
+      "settledMine": "在你自己的浏览器里"
+    }
+  }
+}

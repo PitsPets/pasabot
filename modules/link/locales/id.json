@@ -1,0 +1,102 @@
+{
+  "nav": "Mesin",
+  "settings": "Mesin",
+  "page": {
+    "title": "Mesin tertaut",
+    "intro": "Mesin PasaBot Anda yang lain. Pilih satu untuk melihat agent-nya dan chat dengan mereka; pekerjaan berjalan di mesin itu sesuai aturannya sendiri.",
+    "empty": "Belum ada mesin tertaut. Tautkan satu di Pengaturan → Mesin.",
+    "agents": "Agent di {{name}}",
+    "noAgents": "Belum ada agent di sana.",
+    "back": "Semua mesin",
+    "open": "Buka",
+    "refresh": "Muat ulang"
+  },
+  "chat": {
+    "title": "{{agent}} di {{machine}}",
+    "placeholder": "Kirim pesan ke {{agent}}",
+    "send": "Kirim",
+    "waiting": "Menunggu {{agent}}…",
+    "me": "Anda",
+    "empty": "Sapa dulu. Pesan Anda berjalan di {{machine}}, sebagai permintaan dari mesin tertaut."
+  },
+  "state": {
+    "active": "Tertaut",
+    "awaiting": "Menunggu owner lain",
+    "requested": "Ingin menaut",
+    "revoked": "Terputus"
+  },
+  "grant": {
+    "label": "Yang boleh dilakukan di mesin ini",
+    "view": "Lihat",
+    "chat": "Obrolan",
+    "manage": "Kelola",
+    "hint": "Lihat: nama mesin dan nama agent. Chat: juga chat dengan agent Anda di sini. Kelola: juga routine dan alur kerja, sesuai aturan mesin ini sendiri. Tidak pernah menjadi owner di sini."
+  },
+  "status": {
+    "this": "Mesin ini: {{name}}",
+    "fingerprint": "Sidik jari kunci {{fp}}",
+    "unavailable": "Penautan belum tersedia",
+    "transport": "Transport tautan: {{transport}} · {{state}}",
+    "transportRunning": "berjalan",
+    "transportDown": "memulai ulang",
+    "transportIdle": "siaga sampai ada mesin yang ditautkan"
+  },
+  "code": {
+    "title": "Tautkan mesin",
+    "intro": "Tampilkan kode sekali pakai di sini, lalu masukkan di mesin lain. Kode hanya berlaku sekali dan kedaluwarsa dalam 10 menit.",
+    "make": "Tampilkan kode tautan",
+    "expires": "Kedaluwarsa pukul {{time}}",
+    "copy": "Salin kode",
+    "copied": "Tersalin",
+    "qr": "Kode tautan sebagai gambar QR"
+  },
+  "join": {
+    "title": "Masukkan kode dari mesin lain",
+    "code": "Kode tautan",
+    "submit": "Tautkan",
+    "done": "Terkirim. Owner lain mengonfirmasi di mesinnya."
+  },
+  "reauth": {
+    "password": "Kata sandi Anda (untuk memastikan ini Anda)"
+  },
+  "peers": {
+    "title": "Mesin tertaut",
+    "empty": "Belum ada.",
+    "confirm": "Konfirmasi tautan",
+    "check": "Periksa",
+    "unlink": "Putuskan",
+    "unlinkConfirm": "Putuskan {{name}}? Aksesnya langsung dicabut.",
+    "fp": "Kunci {{fp}}"
+  },
+  "intros": {
+    "title": "Perkenalan",
+    "offer": "{{via}} menawarkan untuk memperkenalkan {{name}} (kunci {{fp}}). Tidak ada yang tertaut sampai Anda menautkannya dengan kode dari mesin itu.",
+    "accept": "Dicatat",
+    "dismiss": "Tutup"
+  },
+  "error": "Terjadi kesalahan: {{message}}",
+  "tools": {
+    "link_machines": "Daftar mesin tertaut",
+    "link_message": "Kirim pesan ke agen di mesin tertaut"
+  },
+  "server": {
+    "introTitle": "{{peer}} menawarkan untuk memperkenalkan {{name}}",
+    "introBody": "Tidak ada yang tertaut sampai Anda menautkannya sendiri dengan kode dari mesin itu.",
+    "linkTitle": "{{name}} ingin menautkan ke mesin ini",
+    "linkBody": "Konfirmasi di Pengaturan → Mesin dan pilih apa yang boleh dilakukannya di sini."
+  },
+  "find": {
+    "navHint": "Mesin lain yang tertaut ke sini",
+    "navKeywords": "mesin, komputer, server, tautkan, jarak jauh"
+  },
+  "plain": {
+    "page": {
+      "intro": "Komputer lainmu yang punya PasaBot. Pilih satu untuk melihat pembantunya dan mengobrol; pekerjaan berjalan di komputer itu dengan aturannya sendiri.",
+      "agents": "Pembantu di {{name}}",
+      "noAgents": "Belum ada pembantu di sana."
+    },
+    "grant": {
+      "hint": "Lihat: nama komputer dan nama pembantunya. Obrol: juga mengobrol dengan pembantumu di sini. Kelola: juga rutinitas dan alur kerja, sesuai aturan komputer ini. Tidak pernah menjadi pemilik di sini."
+    }
+  }
+}

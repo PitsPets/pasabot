@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "Mga ACP agent",
+    "intro": "Mag-install ng mga agent CLI na marunong ng Agent Client Protocol. Bawat naka-install na agent ay magiging utak na puwede mong piliin kapag gumagawa o nag-e-edit ng agent.",
+    "ownerOnly": "Ang may-ari lang ang puwedeng mamahala ng mga ACP agent."
+  },
+  "index": {
+    "label": "Registry index",
+    "hint": "Buong path ng local na index file, o isang https URL.",
+    "save": "I-save",
+    "saved": "Na-save na.",
+    "none": "Maglagay muna ng registry index para makita ang mga agent."
+  },
+  "search": {
+    "label": "Maghanap ng agent",
+    "placeholder": "Pangalan o paglalarawan",
+    "empty": "Walang agent sa index na tugma.",
+    "install": "I-install",
+    "reinstall": "I-update",
+    "installing": "Ini-install…",
+    "installed": "Naka-install",
+    "remoteCommand": "Package lang ang puwedeng i-install mula sa remote na index, hindi local na command.",
+    "available": "Makukuha sa index"
+  },
+  "installed": {
+    "title": "Naka-install",
+    "empty": "Wala pang naka-install na ACP agent.",
+    "remove": "Alisin",
+    "removing": "Inaalis…",
+    "confirmRemove": "Alisin ang {{name}}? Hindi na ito magagamit ng mga agent bilang utak.",
+    "ready": "Handa na",
+    "missing": "Hindi makita",
+    "version": "Bersyon {{version}}",
+    "provider": "Id ng utak",
+    "command": "Command"
+  },
+  "error": {
+    "generic": "May nagkamali ({{code}}).",
+    "in_use": "May agent pang gumagamit nito. Pumili muna ng ibang utak para doon.",
+    "command_missing": "Wala sa makinang ito ang program na iyan.",
+    "command_from_remote": "Hindi puwedeng mag-install ng local na command mula sa remote na index.",
+    "bad_index_source": "Gumamit ng buong file path o https URL.",
+    "index_unreadable": "Hindi mabasa ang index.",
+    "index_invalid": "Hindi tama ang format ng index.",
+    "install_failed": "Hindi natuloy ang pag-install.",
+    "no_index": "Maglagay muna ng registry index."
+  },
+  "find": {
+    "settingsHint": "Idagdag ang coding agent bilang utak",
+    "settingsKeywords": "coding, code, utak, terminal, developer"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Gamitin ang isang coding app bilang utak ng katulong"
+    },
+    "settings": {
+      "title": "Mga coding app bilang utak"
+    }
+  }
+}

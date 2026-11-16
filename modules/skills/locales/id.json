@@ -1,0 +1,198 @@
+{
+  "nav": "Skill",
+  "page": {
+    "title": "Skill",
+    "intro": "Panduan yang dapat diikuti agen Anda. Aktifkan skill untuk tiap agen; setiap perubahan tetap menyimpan revisi sebelumnya."
+  },
+  "loading": "Memuat skill…",
+  "empty": "Belum ada skill. Tulis satu atau instal satu di bawah.",
+  "error": "Terjadi kesalahan: {{reason}}",
+  "add": {
+    "title": "Tambah skill",
+    "method": "Cara",
+    "create": "Tulis skill baru",
+    "folder": "Dari folder di server",
+    "git": "Dari URL git",
+    "zip": "Dari paket (.zip)",
+    "name": "Nama",
+    "nameHint": "Kata huruf kecil yang dihubungkan tanda hubung, mis. supplier-quotes",
+    "description": "Kapan digunakan",
+    "descriptionHint": "Satu baris, mis. “Gunakan saat menyiapkan penawaran untuk klien”",
+    "instructions": "Instruksi",
+    "path": "Path folder",
+    "pathHint": "Path lengkap folder berisi SKILL.md, di mesin tempat PasaBot berjalan",
+    "url": "URL git",
+    "urlHint": "Alamat https repositori; dikunci pada commit yang ada saat ini",
+    "ref": "Branch atau tag (opsional)",
+    "subdir": "Folder di dalam repositori (opsional)",
+    "zipFile": "File paket",
+    "zipMissing": "Pilih file .zip terlebih dahulu",
+    "safety": "Tidak ada isi skill yang dijalankan saat diinstal. Skill dimulai dalam keadaan nonaktif untuk semua agen.",
+    "createButton": "Buat skill",
+    "installButton": "Instal",
+    "builtins": "Skill bawaan yang Anda hapus:",
+    "builtinButton": "Tambahkan kembali {{name}}",
+    "open": "Tambah",
+    "cancel": "Batal",
+    "cardHint": "Tulis skill baru, atau instal dari folder, URL git, atau .zip.",
+    "nameMissing": "Beri nama dulu",
+    "descriptionMissing": "Tulis dulu kapan dipakai",
+    "instructionsMissing": "Tulis dulu petunjuknya"
+  },
+  "item": {
+    "rev": "Revisi {{rev}}",
+    "builtin": "Bawaan",
+    "agentMade": "Dibuat oleh agen ({{trust}})",
+    "off": "Nonaktif",
+    "agents_other": "Aktif untuk {{count}} agen",
+    "open": "Buka",
+    "openNamed": "Buka {{name}}"
+  },
+  "detail": {
+    "back": "Kembali ke semua skill",
+    "source": "Sumber: {{source}}",
+    "agentMadeNote": "Seorang agen menulis atau mengubah skill ini. Bacalah sebelum mengaktifkannya untuk agen lain.",
+    "agents": "Siapa yang dapat menggunakannya",
+    "enabled": "Skill aktif",
+    "noAgents": "Belum ada agen.",
+    "onFor": "{{name}}",
+    "uninstall": "Hapus instalasi",
+    "confirmUninstall": "Ya, hapus instalasi beserta semua revisi",
+    "cancel": "Batal"
+  },
+  "edit": {
+    "title": "SKILL.md",
+    "hint": "Menyimpan akan membuat revisi baru. Nama di front matter tetap sama.",
+    "label": "Teks skill",
+    "files": "File: {{files}}",
+    "save": "Simpan sebagai revisi baru",
+    "saved": "Disimpan sebagai revisi baru.",
+    "unchanged": "Tidak ada perubahan."
+  },
+  "rev": {
+    "title": "Revisi",
+    "label": "Revisi {{rev}}",
+    "current": "saat ini",
+    "byOwner": "oleh Anda",
+    "byBuiltin": "bawaan",
+    "byAgent": "oleh {{name}}",
+    "rollback": "Kembalikan ke {{rev}}",
+    "rolledBack": "Dikembalikan: teks revisi {{rev}} kini menjadi revisi terbaru."
+  },
+  "perm": {
+    "choose": "Yang boleh digunakan skill ini",
+    "workspaceOnly": "File: hanya ruang kerja milik agennya",
+    "hosts": "Situs web yang boleh diakses",
+    "hostsHint": "Satu per baris, seperti example.com atau *.example.com. Kosongkan jika tidak ada.",
+    "messagingAsk": "Boleh mengirim pesan ke orang lain (setiap pesan tetap meminta persetujuan Anda dulu)",
+    "before": "Izin yang akan dicatat untuk skill ini:",
+    "files": "File",
+    "filesWorkspace": "Hanya ruang kerja agennya",
+    "filesWorkspacePlus": "Ruang kerja agennya, ditambah {{paths}}",
+    "filesPaths": "Hanya {{paths}}",
+    "filesNone": "Tanpa file",
+    "network": "Jaringan",
+    "networkNone": "Tanpa situs web",
+    "messaging": "Pesan ke orang lain",
+    "messagingYes": "Ya, dan setiap pesan meminta persetujuan Anda dulu",
+    "messagingNo": "Tidak",
+    "none": "Tidak ada izin yang dicatat untuk skill ini.",
+    "proposed": "Izin yang diusulkan",
+    "proposedIntro": "Agen yang diimpor atau sebuah agen meminta izin ini. Tidak ada yang dicatat sampai Anda menyetujui. Item baru diberi tanda.",
+    "approve": "Setujui",
+    "reject": "Tolak",
+    "scope": "Hanya dicatat: batasan ini diperiksa saat sebuah proses dikaitkan dengan skill ini. Giliran chat biasa belum dibatasi olehnya.",
+    "tools": "Alat",
+    "toolsNone": "Tanpa alat",
+    "toolsAsk": "Alat yang boleh dipanggil",
+    "toolsHint": "Satu per baris. Alat dari koneksi luar ditulis server/tool. Kosongkan jika tidak ada.",
+    "outside": "alat luar",
+    "new": "baru",
+    "removed": "Tidak lagi: {{items}}",
+    "was": "Sebelumnya: {{what}}",
+    "first": "Belum ada yang disetujui untuk skill ini; semua di bawah ini baru.",
+    "widens": "Ini mengubah izin yang sebelumnya Anda setujui.",
+    "changed": "Permintaan ini berubah setelah Anda membukanya. Lihat versi baru di bawah sebelum memutuskan.",
+    "unsaved": "{{name}} sudah diinstal, tetapi izinnya tidak tersimpan ({{reason}}).",
+    "retry": "Simpan izin lagi",
+    "uninstall": "Hapus skill",
+    "hostsTooMany": "Cantumkan paling banyak 50 situs web.",
+    "hostBad": "Tulis setiap situs web hanya sebagai nama, seperti example.com atau *.example.com (tanpa https:// atau path, maksimal 253 karakter).",
+    "toolsTooMany": "Cantumkan paling banyak 200 alat.",
+    "toolBad": "Tulis setiap alat hanya dengan namanya, tanpa spasi (maksimal 200 karakter)."
+  },
+  "tools": {
+    "skills_list": "Daftar skill",
+    "skills_read": "Baca skill",
+    "skills_create": "Buat skill",
+    "skills_install": "Pasang skill dari git",
+    "skills_revise": "Revisi skill",
+    "skills_uninstall": "Copot skill"
+  },
+  "builtin": {
+    "datastore-guide": "Gunakan saat Anda perlu menyimpan catatan terstruktur (daftar, log, inventaris, harga) yang juga dapat dibaca agen lain, dengan alat penyimpanan data bersama PasaBot.",
+    "site-publisher": "Gunakan saat pemilik ingin menerbitkan halaman web kecil atau situs statis (laporan, menu, daftar yang bisa dibagikan) di server PasaBot ini.",
+    "skill-author": "Gunakan saat pemilik meminta Anda mengubah cara kerja menjadi keterampilan yang dapat dipakai ulang, atau memperbaiki keterampilan yang Anda buat sebelumnya."
+  },
+  "find": {
+    "navHint": "Kemampuan tambahan untuk agen",
+    "navKeywords": "keterampilan, kemampuan, tambahan, keahlian"
+  },
+  "plain": {
+    "nav": "Kemampuan pembantu",
+    "find": {
+      "navHint": "Ajari pembantumu hal baru yang bisa mereka lakukan"
+    },
+    "page": {
+      "title": "Kemampuan pembantu",
+      "intro": "Panduan langkah demi langkah yang bisa diikuti pembantumu. Nyalakan masing-masing per pembantu; setiap ubahan menyimpan versi sebelumnya."
+    },
+    "loading": "Memuat…",
+    "empty": "Belum ada apa-apa. Tulis satu atau tambahkan di bawah.",
+    "add": {
+      "title": "Tambah kemampuan",
+      "create": "Tulis kemampuan baru",
+      "folder": "Dari folder di komputer ini",
+      "safety": "Tidak ada yang berjalan saat ditambahkan. Awalnya mati untuk setiap pembantu.",
+      "createButton": "Buat kemampuan ini",
+      "builtins": "Kemampuan bawaan yang kamu hapus:",
+      "cardHint": "Tulis sendiri, atau ambil dari sebuah file."
+    },
+    "item": {
+      "agentMade": "Dibuat pembantu ({{trust}})",
+      "agents_other": "Aktif untuk {{count}} pembantu"
+    },
+    "detail": {
+      "back": "Kembali ke daftar",
+      "agentMadeNote": "Pembantu menulis atau mengubah ini. Baca dulu sebelum menyalakannya untuk pembantu lain.",
+      "enabled": "Sedang aktif",
+      "noAgents": "Belum ada pembantu."
+    },
+    "edit": {
+      "label": "Teksnya"
+    },
+    "perm": {
+      "choose": "Apa yang boleh dipakai",
+      "workspaceOnly": "File: hanya folder milik pembantunya",
+      "before": "Izin yang dicatat untuknya:",
+      "filesWorkspace": "Hanya folder milik pembantunya",
+      "filesWorkspacePlus": "Folder milik pembantunya, ditambah {{paths}}",
+      "none": "Belum ada izin yang dicatat.",
+      "proposedIntro": "Pembantu, atau pembantu dari file, meminta ini. Tidak ada yang dicatat sampai kamu setuju. Yang baru ditandai.",
+      "scope": "Hanya dicatat: batas ini diperiksa saat tugas terikat padanya. Obrolan biasa belum dibatasi.",
+      "toolsHint": "Satu per baris. Alat dari aplikasi luar ditulis aplikasi/alat. Kosongkan jika tidak ada.",
+      "first": "Belum ada yang disetujui; semua di bawah ini baru.",
+      "uninstall": "Hapus"
+    },
+    "builtin": {
+      "datastore-guide": "Membantu pembantu menyimpan daftar dan catatan rapi (log, stok, harga) yang juga bisa dibaca pembantu lain.",
+      "site-publisher": "Membantu pembantu membuat halaman web kecil (laporan, menu, daftar untuk dibagikan) dan menaruhnya online dari komputer ini.",
+      "skill-author": "Membantu pembantu mengubah cara kerja menjadi kemampuan yang bisa dipakai lagi, atau memperbaiki yang dibuat sebelumnya."
+    },
+    "builtinTitle": {
+      "datastore-guide": "Menyimpan daftar dan catatan",
+      "site-publisher": "Membuat halaman web kecil",
+      "skill-author": "Mempelajari cara kerja baru"
+    }
+  }
+}

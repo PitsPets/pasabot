@@ -1,0 +1,208 @@
+{
+  "nav": "Mga connector",
+  "page": {
+    "title": "Mga connector",
+    "intro": "Mga handang koneksyon sa mga panlabas na serbisyo. Magdagdag ng isa, saka piliin kung sino ang puwedeng gumamit.",
+    "introTech": "Mga handang koneksyon sa mga panlabas na serbisyo. Magdagdag ng isa, saka piliin sa pahina ng mga MCP server kung aling mga agent ang puwedeng gumamit."
+  },
+  "loading": "Naglo-load…",
+  "kind": {
+    "mcp-stdio": "Tumatakbo sa makinang ito",
+    "mcp-http": "Hosted na serbisyo",
+    "oauth-api": "Sign-in"
+  },
+  "status": {
+    "ready": "Naidagdag na",
+    "needs_auth": "Kailangan ng sign-in o key",
+    "error": "May problema"
+  },
+  "oauth": {
+    "connected": "Naka-sign in na. Handa na ang connector.",
+    "denied": "Kinansela ang pag-sign in.",
+    "expired": "Nag-expire na ang sign-in link. Subukan ulit.",
+    "failed": "Hindi gumana ang pag-sign in. Tingnan ang client id at subukan ulit.",
+    "connectedApp": "Naka-sign in na. Handa na ang {{name}}.",
+    "failedApp": "Hindi natuloy ang pag-sign in sa {{name}}. Subukan ulit."
+  },
+  "catalog": {
+    "title": "Magdagdag pa",
+    "homepage": "Tungkol sa serbisyong ito",
+    "install": "Idagdag ang {{name}}",
+    "custom": "May iba ka pang gustong idagdag?",
+    "customTech": "May address ka ba ng tool server?"
+  },
+  "install": {
+    "secretHint": "Itatago sa vault. Hindi ito kailanman makikita ng mga agent.",
+    "oauthHint": "Gumagamit ang connector na ito ng sarili mong OAuth client. Gumawa ng isa sa serbisyo at idagdag doon ang return address na ito.",
+    "redirect": "Return address:",
+    "clientId": "OAuth client id",
+    "clientSecret": "OAuth client secret (kung binigyan ka ng serbisyo)",
+    "clientSecretHint": "Itatago sa vault.",
+    "save": "Idagdag",
+    "cancel": "Kanselahin"
+  },
+  "installed": {
+    "title": "Nakakonekta",
+    "secrets": "Mga sikretong nasa vault: {{names}}",
+    "mcpHint": "Piliin kung aling mga agent ang puwedeng gumamit:",
+    "foundHint": "I-on ito at piliin kung sino ang puwedeng gumamit:",
+    "mcpLink": "Mga MCP server",
+    "appsLink": "Mga app na puwedeng gamitin ng mga agent",
+    "signIn": "Mag-sign in",
+    "signInAgain": "Mag-sign in ulit",
+    "remove": "Alisin",
+    "removeConfirm": "Oo, alisin na"
+  },
+  "find": {
+    "navHint": "Ikonekta ang mga app at serbisyo",
+    "navKeywords": "app, serbisyo, ikonekta, integrasyon, account"
+  },
+  "search": {
+    "label": "Maghanap ng app",
+    "placeholder": "Maghanap ng app, gaya ng 'calendar'",
+    "none": "Walang app na tugma diyan."
+  },
+  "state": {
+    "added": "Naidagdag na",
+    "ready": "Handa nang idagdag",
+    "needs_key": "Kailangan ng sign-in o key",
+    "missing": "Wala sa computer na ito"
+  },
+  "ready": {
+    "title": "Handa nang idagdag"
+  },
+  "missing": {
+    "line": "Kailangan nito ang {{name}}, na wala pa sa computer na ito.",
+    "get": "Kunin ang {{name}}",
+    "ask": "Kailangan nito ang {{name}}, na wala pa sa computer na ito. Idagdag pa rin?",
+    "addAnyway": "Idagdag pa rin"
+  },
+  "found": {
+    "title": "Nakita sa computer na ito",
+    "intro": "Mga tool na na-set up mo na sa ibang app. Idagdag ang isa para magamit mo rin dito.",
+    "introTech": "Mga tool server na na-set up mo na sa ibang app. Idagdag ang isa para magamit din dito.",
+    "from": "Naka-set up sa {{app}}",
+    "keys": "Diretso sa vault mo ang mga key nito at hindi kailanman ipapakita: {{names}}",
+    "keysAsk": "May mga key ito. Kopyahin din sa vault mo? Hindi ito kailanman makikita ng mga agent.",
+    "confirm": "Oo, idagdag",
+    "blocked": {
+      "key-in-command": "May key na nakasulat mismo sa command nito. Ikaw na lang ang magdagdag nito:",
+      "unsupported": "Hindi ito mailipat ng PasaBot nang ganito. Ikaw na lang ang magdagdag nito:"
+    }
+  },
+  "describe": {
+    "filesystem": "Hinahayaan ang mga katulong na magbasa at magbago ng mga file sa isang folder na pipiliin mo.",
+    "git": "Hinahayaan ang mga katulong na tingnan ang kasaysayan at mga pagbabago ng isang code folder.",
+    "github": "Hinahayaan ang mga katulong na gamitin ang code, issues at pull requests mo sa GitHub.",
+    "github-remote": "Parehong GitHub tools, pinapatakbo ng GitHub online. Walang kailangang i-set up dito.",
+    "google-calendar": "Hinahayaan ang mga katulong na basahin ang Google Calendar mo.",
+    "time": "Sinasabi sa mga katulong ang oras kahit saan sa mundo.",
+    "notion": "Hinahanap, binabasa at sinusulatan ng mga katulong ang mga page mo sa Notion.",
+    "atlassian": "Tinitingnan at ina-update ng mga katulong ang trabaho mo sa Jira at mga page sa Confluence.",
+    "trello": "Binabasa ng mga katulong ang mga board mo sa Trello at naglilipat o nagdadagdag ng card.",
+    "clickup": "Hinahanap, dinadagdagan at ina-update ng mga katulong ang mga task mo sa ClickUp.",
+    "intercom": "Tinitingnan ng mga katulong ang mga chat at contact ng customer mo sa Intercom.",
+    "stripe": "Sinusuri ng mga katulong ang mga bayad, customer at invoice mo sa Stripe."
+  },
+  "adding": "Idinadagdag…",
+  "server": {
+    "connected": "Konektado na ang {{name}}. Subukan mo akong tanungin tungkol dito."
+  },
+  "groups": {
+    "popular": "Sikat",
+    "files-notes": "Mga file at tala",
+    "calendar-email": "Kalendaryo at email",
+    "work-tasks": "Trabaho at gawain",
+    "shop-money": "Pamimili at pera",
+    "social-chat": "Social at chat",
+    "other": "Iba pa"
+  },
+  "button": {
+    "add": "Idagdag",
+    "signIn": "Mag-sign in",
+    "code": "Kailangan ng code",
+    "added": "Naidagdag na"
+  },
+  "signin": {
+    "lead": "Bubuksan ng {{name}} ang sarili nitong page para makapag-sign in ka. Wala kang ita-type dito.",
+    "can": "Magagawa ng katulong mo:",
+    "ask": "Lahat ng magpapadala, magpo-post, magbabayad o magbubura ay magtatanong muna sa iyo, palagi.",
+    "go": "Tumuloy sa {{name}}",
+    "failed": "Hindi mabuksan ang sign-in page ng {{name}}. Subukan ulit mamaya.",
+    "insecure": "Sa secure na address lang pumapayag mag-sign in ang {{name}}. Buksan ang PasaBot sa computer kung saan ito tumatakbo, o sa secure (https) na address nito, saka mag-sign in.",
+    "refused": "Hindi tinanggap ng {{name}} ang pag-sign in ng PasaBot. Hindi ito maaayos ng pagsubok ulit."
+  },
+  "code": {
+    "lead": "Bibigyan ka ng {{name}} ng code na ipe-paste mo dito.",
+    "get": "Kunin ang code mo",
+    "paste": "I-paste ang code mo",
+    "test": "Subukan at idagdag",
+    "bad": "Hindi gumana ang code na iyan. Tingnan kung nakopya mo lahat.",
+    "unreachable": "Hindi maabot ang {{name}}. Tingnan ang internet mo at subukan ulit.",
+    "failed": "Hindi gumana: {{reason}}",
+    "refused": "Sumagot ang {{name}}, pero ayaw nitong gumana sa PasaBot ngayon. Subukan ulit mamaya."
+  },
+  "helpers": {
+    "title": "Sino ang puwedeng gumamit",
+    "main": "pangunahing katulong"
+  },
+  "connected": {
+    "title": "Konektado na ang {{name}}",
+    "try": "Subukang itanong:",
+    "who": "Palitan kung sino ang puwedeng gumamit"
+  },
+  "try": {
+    "notion": {
+      "a": "Hanapin ang mga tala ko sa Notion tungkol sa susunod na meeting",
+      "b": "Gumawa ng Notion page na may to-do list para sa linggong ito"
+    },
+    "atlassian": {
+      "a": "Anong mga Jira issue ang naka-assign sa akin?",
+      "b": "Ibuod ang pinakabagong Confluence page na binago ng team ko"
+    },
+    "trello": {
+      "a": "Ano ang nasa Trello board ko ngayon?",
+      "b": "Magdagdag ng Trello card: tawagan ang supplier sa Biyernes"
+    },
+    "clickup": {
+      "a": "Aling mga ClickUp task ang due ngayong linggo?",
+      "b": "Magdagdag ng ClickUp task: ipadala ang quote bukas"
+    },
+    "intercom": {
+      "a": "Ipakita ang pinakabagong mga chat sa Intercom",
+      "b": "Sino ang sumulat sa amin sa Intercom tungkol sa refund?"
+    },
+    "stripe": {
+      "a": "Magkano ang naibayad sa akin sa Stripe ngayong linggo?",
+      "b": "Ilista ang mga hindi pa bayad na invoice ko sa Stripe"
+    },
+    "generic": {
+      "a": "Ano ang kaya mong gawin sa {{name}}?",
+      "b": "Ipakita kung ano ang nakikita mo sa {{name}}"
+    }
+  },
+  "plain": {
+    "nav": "Mga app na magagamit ng mga katulong",
+    "page": {
+      "title": "Mga app na magagamit ng mga katulong"
+    },
+    "oauth": {
+      "connected": "Naka-sign in na. Handa na ang app."
+    },
+    "install": {
+      "secretHint": "Ligtas na itatago sa computer na ito. Hindi ito makikita ng mga katulong.",
+      "oauthHint": "Nagsa-sign in ang app na ito gamit ang sarili mong sign-in app. Gumawa ng isa sa site ng serbisyo at idagdag doon ang return address na ito.",
+      "clientId": "ID ng sign-in app",
+      "clientSecret": "Password ng sign-in app (kung binigyan ka ng serbisyo)",
+      "clientSecretHint": "Ligtas na itatago sa computer na ito."
+    },
+    "installed": {
+      "mcpHint": "Piliin kung aling mga katulong ang puwedeng gumamit:",
+      "appsLink": "Mga app at tool na magagamit ng mga katulong"
+    },
+    "found": {
+      "keys": "Ligtas na itatago ang mga sikretong code nito at hindi ipapakita: {{names}}",
+      "keysAsk": "May mga sikretong code ito. Kopyahin din dito? Hindi ito makikita ng mga katulong."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nav": "搜索",
+  "title": "搜索消息",
+  "label": "搜索你的聊天",
+  "placeholder": "输入关键词",
+  "hint": "在你参与的所有聊天中查找，按时间从新到旧排列。",
+  "empty": "未找到结果。",
+  "untitled": "聊天",
+  "count_other": "{{count}} 条消息",
+  "author": {
+    "user": "用户",
+    "agent": "agent",
+    "system": "PasaBot",
+    "external": "外部"
+  },
+  "error": "搜索失败。{{reason}}",
+  "tools": {
+    "search_messages": "搜索消息"
+  },
+  "find": {
+    "navHint": "在聊天中查找任何消息",
+    "navKeywords": "查找, 搜索, 消息, 历史"
+  }
+}

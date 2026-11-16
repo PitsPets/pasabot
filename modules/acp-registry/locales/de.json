@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "ACP-Agents",
+    "intro": "Installiere Agent-CLIs, die das Agent Client Protocol sprechen. Jeder installierte Agent wird zu einem Modell, das du beim Erstellen oder Bearbeiten eines Agents auswählen kannst.",
+    "ownerOnly": "Nur die Inhaber:in kann ACP-Agents verwalten."
+  },
+  "index": {
+    "label": "Registry-Index",
+    "hint": "Ein absoluter Pfad zu einer lokalen Indexdatei oder eine https-URL.",
+    "save": "Speichern",
+    "saved": "Gespeichert.",
+    "none": "Lege einen Registry-Index fest, um Agents zu durchsuchen."
+  },
+  "search": {
+    "label": "Agents suchen",
+    "placeholder": "Name oder Beschreibung",
+    "empty": "Kein Agent im Index passt.",
+    "install": "Installieren",
+    "reinstall": "Aktualisieren",
+    "installing": "Wird installiert…",
+    "installed": "Installiert",
+    "remoteCommand": "Ein entfernter Index kann nur Pakete installieren, keine lokalen Befehle.",
+    "available": "Im Index verfügbar"
+  },
+  "installed": {
+    "title": "Installiert",
+    "empty": "Noch kein ACP-Agent installiert.",
+    "remove": "Entfernen",
+    "removing": "Wird entfernt…",
+    "confirmRemove": "{{name}} entfernen? Agents können es dann nicht mehr als Modell nutzen.",
+    "ready": "Bereit",
+    "missing": "Nicht gefunden",
+    "version": "Version {{version}}",
+    "provider": "Modell-ID",
+    "command": "Befehl"
+  },
+  "error": {
+    "generic": "Etwas ist schiefgelaufen ({{code}}).",
+    "in_use": "Wird noch von einem Agent genutzt. Wähle zuerst ein anderes Modell dafür.",
+    "command_missing": "Dieses Programm ist nicht auf diesem Gerät.",
+    "command_from_remote": "Ein entfernter Index kann keinen lokalen Befehl installieren.",
+    "bad_index_source": "Nutze einen absoluten Dateipfad oder eine https-URL.",
+    "index_unreadable": "Der Index konnte nicht gelesen werden.",
+    "index_invalid": "Der Index hat nicht das erwartete Format.",
+    "install_failed": "Die Installation ist fehlgeschlagen.",
+    "no_index": "Lege zuerst einen Registry-Index fest."
+  },
+  "find": {
+    "settingsHint": "Coding-Agenten als Gehirne hinzufügen",
+    "settingsKeywords": "Programmieren, Code, Gehirne, Kommandozeile, Entwickler"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Eine Programmier-App als Gehirn eines Helfers nutzen"
+    },
+    "settings": {
+      "title": "Programmier-Apps als Gehirn"
+    }
+  }
+}

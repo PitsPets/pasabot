@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "ACP 에이전트",
+    "intro": "Agent Client Protocol을 지원하는 에이전트 CLI를 설치해요. 설치된 에이전트는 에이전트를 만들거나 편집할 때 선택할 수 있는 두뇌가 돼요.",
+    "ownerOnly": "소유자만 ACP 에이전트를 관리할 수 있어요."
+  },
+  "index": {
+    "label": "레지스트리 색인",
+    "hint": "로컬 색인 파일의 절대 경로 또는 https URL이에요.",
+    "save": "저장",
+    "saved": "저장했어요.",
+    "none": "에이전트를 둘러보려면 레지스트리 색인을 설정하세요."
+  },
+  "search": {
+    "label": "에이전트 검색",
+    "placeholder": "이름 또는 설명",
+    "empty": "색인에 일치하는 에이전트가 없어요.",
+    "install": "설치",
+    "reinstall": "업데이트",
+    "installing": "설치 중…",
+    "installed": "설치됨",
+    "remoteCommand": "원격 색인에서는 패키지만 설치할 수 있고, 로컬 명령은 설치할 수 없어요.",
+    "available": "색인에서 사용 가능"
+  },
+  "installed": {
+    "title": "설치됨",
+    "empty": "설치된 ACP 에이전트가 아직 없어요.",
+    "remove": "삭제",
+    "removing": "삭제 중…",
+    "confirmRemove": "{{name}}을(를) 삭제할까요? 에이전트가 더 이상 이것을 두뇌로 쓸 수 없어요.",
+    "ready": "준비됨",
+    "missing": "찾을 수 없음",
+    "version": "버전 {{version}}",
+    "provider": "두뇌 ID",
+    "command": "명령"
+  },
+  "error": {
+    "generic": "문제가 발생했어요 ({{code}}).",
+    "in_use": "아직 에이전트가 사용 중이에요. 먼저 해당 에이전트의 두뇌를 다른 것으로 바꾸세요.",
+    "command_missing": "이 기기에 해당 프로그램이 없어요.",
+    "command_from_remote": "원격 색인에서는 로컬 명령을 설치할 수 없어요.",
+    "bad_index_source": "절대 파일 경로 또는 https URL을 사용하세요.",
+    "index_unreadable": "색인을 읽을 수 없어요.",
+    "index_invalid": "색인 형식이 올바르지 않아요.",
+    "install_failed": "설치하지 못했어요.",
+    "no_index": "먼저 레지스트리 색인을 설정하세요."
+  },
+  "find": {
+    "settingsHint": "코딩 에이전트를 두뇌로 추가",
+    "settingsKeywords": "코딩, 코드, 두뇌, 터미널, 개발자"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "코딩 앱을 도우미의 두뇌로 쓰기"
+    },
+    "settings": {
+      "title": "두뇌가 되는 코딩 앱"
+    }
+  }
+}

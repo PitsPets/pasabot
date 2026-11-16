@@ -1,0 +1,143 @@
+{
+  "nav": "Computer",
+  "page": {
+    "title": "Computernutzung",
+    "intro": "Agenten, die einen Computer nutzen, bekommen ein eigenes Display. Jeder Screenshot, Klick und Tastendruck fragt vorher bei dir nach. Sieh ihnen hier zu und übernimm, wenn nötig.",
+    "empty": "Gerade nutzt kein Agent ein Display. Eines startet, sobald du zum ersten Mal die Computeraktion eines Agenten genehmigst."
+  },
+  "setup": {
+    "title": "Computernutzung einrichten",
+    "missing_bins": "Auf diesem Server fehlt {{list}}. Installiere es oder führe PasaBot über das Computer-Image (deploy/computer) aus.",
+    "unsupported": "Computernutzung ist auf diesem Betriebssystem nicht verfügbar.",
+    "off": "Computernutzung ist auf diesem Server ausgeschaltet.",
+    "practice": "Übungsdisplay: eine integrierte Test-App, kein echter Desktop.",
+    "windows_soon": "Unter Windows noch nicht verfügbar. Helfer können den Bildschirm eines Windows-PCs nicht sehen oder bedienen; alles andere funktioniert."
+  },
+  "mac": {
+    "title": "Einem Agenten diesen Mac überlassen",
+    "warning": "Ein Mac hat keinen eigenen Bildschirm für Helfer: Ein Helfer, den du hier erlaubst, sieht deinen ganzen Bildschirm und bewegt deinen eigenen Zeiger und deine Tastatur. Jede Aktion fragt dich vorher. Die Berechtigungen gehören PasaBot Screen Helper, nicht PasaBot selbst.",
+    "perAgent": "Die Computernutzung auf diesem Mac ist für jeden Agenten aus, bis du sie hier mit deinem Passwort für genau diesen Agenten einschaltest.",
+    "permissions": "macOS fragt dich, ob du Bildschirmaufnahme und Bedienungshilfen erlauben willst. macOS erteilt diese Berechtigung dem Programm, in dem PasaBot läuft, sodass die Kommandozeilen-Tools jedes Agenten dann deinen Bildschirm ohne Nachfrage nutzen könnten. Erlaube das nur, wenn du jedem Agenten auf diesem Server vertraust, und entferne die Berechtigung danach unter Systemeinstellungen → Datenschutz & Sicherheit.",
+    "password": "Dein Passwort",
+    "enable": "Erlauben",
+    "enableFor": "{{name}} die Nutzung dieses Macs erlauben",
+    "disable": "Ausschalten",
+    "disableFor": "{{name}} auf diesem Mac ausschalten",
+    "agentOn": "Erlaubt",
+    "agentOff": "Aus",
+    "noAgents": "Noch keine Agenten.",
+    "wrong": "Das stimmte nicht überein. Versuch es noch mal."
+  },
+  "display": {
+    "shared": "Dein eigener Bildschirm",
+    "own": "Eigenes Display {{label}}",
+    "live": "Live",
+    "control": "Steuerung übernehmen",
+    "release": "Steuerung beenden",
+    "controlHint": "Klicke ins Bild, um auf dem Display des Agenten zu klicken.",
+    "stop": "Display stoppen",
+    "typeLabel": "Auf dem Display tippen",
+    "send": "Text senden",
+    "alt": "Display von {{name}}",
+    "started": "Gestartet {{time}}"
+  },
+  "activity": {
+    "title": "Letzte Aktionen",
+    "empty": "Noch keine Aktionen.",
+    "you": "Du",
+    "failed": "Fehlgeschlagen"
+  },
+  "error": "Etwas ist schiefgelaufen: {{msg}}",
+  "tools": {
+    "computer_display": "Computer: Bildschirminfo",
+    "computer_screenshot": "Computer: Bildschirmfoto",
+    "computer_click": "Computer: klicken",
+    "computer_move": "Computer: Zeiger bewegen",
+    "computer_type": "Computer: Text tippen",
+    "computer_key": "Computer: Tasten drücken"
+  },
+  "find": {
+    "navHint": "Einen Agenten einen Computer bedienen lassen",
+    "navKeywords": "Desktop, Bildschirm, Maus, Tastatur, steuern"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Einen Helfer einen Computer benutzen lassen"
+    },
+    "page": {
+      "intro": "Helfer, die einen Computer nutzen, bekommen einen eigenen Bildschirm. Jedes Bild vom Bildschirm, jeder Klick und Tastendruck fragt vorher bei dir nach. Sieh ihnen hier zu und übernimm, wenn nötig.",
+      "empty": "Gerade nutzt kein Helfer einen Bildschirm. Einer startet, sobald du zum ersten Mal der Computeraktion eines Helfers zustimmst."
+    },
+    "setup": {
+      "missing_bins": "Auf diesem Computer fehlt {{list}}. Installiere es oder bitte die Person, die PasaBot eingerichtet hat, die Computer-Einrichtung zu nutzen.",
+      "off": "Computernutzung ist in diesem PasaBot ausgeschaltet."
+    },
+    "mac": {
+      "noAgents": "Noch keine Helfer."
+    },
+    "display": {
+      "controlHint": "Klicke ins Bild, um auf dem Bildschirm des Helfers zu klicken.",
+      "release": "Steuerung beenden"
+    }
+  },
+  "card": {
+    "ask": {
+      "title": "Darf {{name}} diesen Computer benutzen?",
+      "body": "{{name}} würde deinen ganzen Bildschirm sehen und deinen eigenen Zeiger und deine Tastatur bewegen. Jeder Klick und jede Taste fragt dich vorher, und du kannst jederzeit stoppen, indem du Esc eine Sekunde hältst.",
+      "password": "Dein Passwort",
+      "yes": "Ja, einrichten",
+      "no": "Jetzt nicht"
+    },
+    "steps": {
+      "title": "Diesen Computer für {{name}} einrichten",
+      "stopped": "Du hast die Steuerung dieses Computers gestoppt. Sie bleibt gestoppt, bis du sie hier wieder einschaltest.",
+      "helper": "PasaBot Screen Helper läuft",
+      "helperHint": "Er startet mit der PasaBot-App auf diesem Mac. Bleibt das leer, öffne PasaBot.",
+      "screen": "Bildschirmaufnahme einschalten",
+      "screenHint": "Die Einstellungen öffnen sich. Such PasaBot Screen Helper in der Liste und schalte ihn ein.",
+      "openScreen": "Einstellungen für Bildschirmaufnahme öffnen",
+      "access": "Bedienungshilfen einschalten",
+      "accessHint": "Die Einstellungen öffnen sich. Such PasaBot Screen Helper in der Liste und schalte ihn ein.",
+      "openAccess": "Einstellungen für Bedienungshilfen öffnen",
+      "try": "Ausprobieren",
+      "tryHint": "Macht ein einziges Bild deines Bildschirms, sonst nichts.",
+      "tryButton": "Testbild aufnehmen",
+      "tryDone": "Es klappt. Das würde {{name}} sehen.",
+      "ready": "{{name}} kann jetzt fragen, diesen Computer zu benutzen. Jede Aktion zeigt dir vorher eine Karte.",
+      "off": "Für {{name}} ausschalten",
+      "done": "Erledigt",
+      "waiting": "Noch nicht"
+    },
+    "live": {
+      "title": "{{name}} benutzt deinen Computer",
+      "idle": "{{name}} benutzt den Computer gerade nicht.",
+      "takeOver": "Übernehmen",
+      "stop": "Stopp",
+      "stopHint": "Oder halte Esc eine Sekunde.",
+      "alt": "Live-Ansicht von {{name}}s Bildschirm"
+    }
+  },
+  "preview": {
+    "click": "Klickt auf den roten Ring.",
+    "rightClick": "Klickt mit rechts auf den roten Ring.",
+    "move": "Bewegt den Zeiger zum roten Ring.",
+    "type": "Tippt {{count}} Zeichen:",
+    "key": "Drückt: {{keys}}",
+    "screenshot": "Macht ein Bild des Bildschirms.",
+    "alt": "Wo es auf dem Bildschirm handelt",
+    "none": "Noch kein Bild des Bildschirms.",
+    "noCurrent": "Kein aktuelles Bild des Bildschirms. Sehen Sie auf Ihren Bildschirm, bevor Sie zustimmen."
+  },
+  "server": {
+    "setupCard": "{{name}} möchte diesen Computer benutzen. Richte es in der Karte unten ein oder ignoriere sie.",
+    "liveCard": "{{name}} hat begonnen, den Computer zu benutzen. Hier live zusehen."
+  },
+  "watch": {
+    "title": "Bestätigen Sie, dass Sie es sind, um Ihren Bildschirm zu sehen",
+    "body": "Das ist der Bildschirm Ihres eigenen Mac. Geben Sie Ihr Passwort ein, um ihn hier anzusehen und zu steuern.",
+    "again": "Ein paar Minuten sind vergangen. Geben Sie Ihr Passwort erneut ein, um Ihren Bildschirm weiter zu steuern.",
+    "password": "Ihr Passwort",
+    "button": "Meinen Bildschirm zeigen",
+    "wrong": "Das stimmt nicht. Versuchen Sie es noch einmal."
+  }
+}

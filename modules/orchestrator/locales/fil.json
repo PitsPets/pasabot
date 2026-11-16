@@ -1,0 +1,299 @@
+{
+  "defaultName": "Tala",
+  "summary": "Magtatanong muna ng ilang mabilis na tanong, tapos bubuo ng maliit na team ng mga katulong na aaprubahan mo.",
+  "hello": "Hi, ako si {{name}}! Bubuo ako ng maliit na team ng mga katulong para sa iyo. Ilang mabilis na tanong lang: i-tap ang sagot, o i-type ang sarili mong sagot.",
+  "again": "Buuin ulit natin ang team mo. Ilang mabilis na tanong, gaya ng dati.",
+  "change": "Sige, ulitin natin.",
+  "skipped": "Sige, ako muna ang kasama mo. Puwede mong buuin ang team mo kahit kailan sa Mga setting, sa Mga agent at utak.",
+  "q": {
+    "help": {
+      "text": "Saan mo muna gustong magpatulong?",
+      "options": {
+        "shop": "Sa tindahan o negosyo ko",
+        "home": "Sa bahay at pamilya",
+        "work": "Sa trabaho ko",
+        "study": "Sa pag-aaral"
+      }
+    },
+    "people": {
+      "text": "Sino pa ang gagamit ng PasaBot?",
+      "options": {
+        "solo": "Ako lang",
+        "family": "Ang pamilya ko",
+        "team": "Ang mga kasama ko sa trabaho"
+      }
+    },
+    "chat": {
+      "text": "Gusto mo rin bang makausap ang mga katulong mo sa isang chat app?",
+      "options": {
+        "none": "Hindi muna",
+        "telegram": "Telegram",
+        "whatsapp": "WhatsApp",
+        "discord": "Discord",
+        "slack": "Slack"
+      }
+    },
+    "email": {
+      "text": "Kailangan ba ng email ang team mo?",
+      "options": {
+        "new": "Gumawa ng bagong email (gagabayan kita)",
+        "connect": "Ikonekta ang sarili kong email",
+        "skip": "Wala munang email"
+      }
+    },
+    "askFirst": {
+      "text": "Huli na: may bagay ba na dapat laging itanong muna sa iyo?",
+      "options": {
+        "none": "Iyon lang",
+        "money": "Anumang gastos",
+        "contact": "Pakikipag-ugnayan kahit kanino",
+        "files": "Pagbabago sa mga file ko"
+      }
+    }
+  },
+  "plan": {
+    "intro": "Ito ang team na bubuuin ko. Aprubahan mo, o baguhin.",
+    "base": "Sumagot sa wikang ginagamit ng kausap. Maikli at simple ang sagot. Laging magtanong muna sa may-ari bago gumastos, magpadala ng mensahe sa ibang tao o magbura ng kahit ano.",
+    "detail": "Ito ang sinabi ng may-ari tungkol dito: {{what}}",
+    "roles": {
+      "shop": {
+        "job": "Inaasikaso ang mga order at tanong ng mga customer ng tindahan mo."
+      },
+      "money": {
+        "job": "Binabantayan ang benta, gastos at kung sino pa ang may utang sa iyo.",
+        "why": "benta at gastos"
+      },
+      "home": {
+        "job": "Nagpaplano ng ulam, iskedyul at mga paalala para sa pamilya."
+      },
+      "work": {
+        "job": "Gumagawa ng draft ng mensahe, nagtatala at nagbabantay ng mga gagawin mo."
+      },
+      "study": {
+        "job": "Nagpapaliwanag ng aralin, nagbibigay ng quiz at tumutulong na masunod mo ang iskedyul."
+      },
+      "custom": {
+        "job": "Tumutulong sa iyo sa: {{what}}",
+        "anything": "kahit anong kailangan mo"
+      },
+      "mail": {
+        "job": "Inaayos ang email mo at gumagawa ng draft ng sagot na susuriin mo.",
+        "why": "ang email mo, may maikling gabay sa pag-set up"
+      }
+    },
+    "steps": {
+      "email-new": "Sabay gumawa ng bagong email, isa-isang hakbang",
+      "email-connect": "Ikonekta ang email mo (mga 3 minuto)",
+      "telegram": "Ikonekta ang Telegram",
+      "whatsapp": "Ikonekta ang WhatsApp",
+      "discord": "Ikonekta ang Discord",
+      "slack": "Ikonekta ang Slack",
+      "people": "Imbitahan ang mga gagamit nito"
+    },
+    "askFirst": {
+      "money": "Magtanong din muna sa may-ari bago ang anumang gastos, kahit maliit.",
+      "contact": "Magtanong din muna sa may-ari bago makipag-ugnayan kahit kanino.",
+      "files": "Magtanong din muna sa may-ari bago baguhin ang alinman sa mga file niya.",
+      "custom": "Laging magtanong din muna sa may-ari tungkol sa: {{what}}"
+    },
+    "language": "Pinili ng may-ari ang {{language}}: laging sumagot sa wikang iyon maliban kung humingi sila ng iba.",
+    "taglish": "Pinili ng may-ari ang Taglish: sumagot sa Taglish, isang natural at kaswal na halo ng Filipino at English, maliban kung humingi sila ng ibang wika."
+  },
+  "team": {
+    "ready": "Handa na ang team mo! Buksan ang isang katulong para bumati."
+  },
+  "tools": {
+    "orchestrator_answer": "I-save ang sagot sa setup",
+    "orchestrator_show_plan": "Ipakita ang plano ng team",
+    "orchestrator_create_team": "Gawin ang naaprubahang team"
+  },
+  "web": {
+    "skip": "Laktawan muna",
+    "typeOwn": "O i-type ang sarili mong sagot sa ibaba.",
+    "quick": "Mabilis na sagot",
+    "closed": "Nilaktawan ang setup",
+    "step": "Tanong {{n}} sa {{total}}",
+    "planTitle": "Ito ang team na bubuuin ko",
+    "brain": "Utak: {{name}}",
+    "stepsTitle": "Mga setup na bubuksan ko para sa iyo",
+    "approve": "Aprubahan",
+    "changePlan": "Baguhin",
+    "plan_approved": "Naaprubahan",
+    "plan_changed": "Binago",
+    "plan_skipped": "Nilaktawan",
+    "open": "Kausapin si {{name}}",
+    "stepsNext": "Mga susunod na hakbang",
+    "secretsNote": "Sa mga setup page na iyon lang ilalagay ang password at code, hindi kailanman sa chat.",
+    "ownerOnly": "Ang may-ari lang ang puwedeng sumagot dito.",
+    "failed": "Hindi gumana. Subukan ulit.",
+    "settings": {
+      "title": "Buuin ang team ko",
+      "hint": "Sumagot sa ilang tanong at magkaroon ng team ng mga katulong",
+      "keywords": "team, setup, katulong, tanong, ulitin, simula, orchestrator",
+      "body": "Magtatanong ang tagabuo ng team mo ng ilang maiikling tanong, saka magpapakita ng planong aaprubahan mo.",
+      "again": "Buuin ulit ang team ko",
+      "working": "Binubuksan…",
+      "openChat": "Buksan ang tagabuo ng team",
+      "noBrain": "Mag-set up muna ng utak, saka subukan ulit.",
+      "continue": "Ituloy ang pag-set up ng team ko"
+    },
+    "summaryTitle": "Ang mga sinabi mo"
+  },
+  "stage": {
+    "title": "Buuin ang team mo",
+    "brand": "PasaBot",
+    "skip": "Saka na lang",
+    "back": "Balik",
+    "next": "Tuloy",
+    "progress": "Hakbang {{n}} ng {{total}}",
+    "progressShort": "{{n}} ng {{total}}",
+    "last": "Last na!",
+    "wait": "Sandali lang…",
+    "slow": "Medyo natatagalan ito.",
+    "retry": "Subukan ulit",
+    "skipped": "Sige, tapusin natin ang team mo mamaya. Buksan ang Settings at i-tap ang “Ituloy ang pag-set up ng team ko” para tumuloy kung saan ka huminto.",
+    "welcome": {
+      "tag": "{{name}} · ang tagabuo ng team mo",
+      "title": "Hi! Buuin natin ang sarili mong team ng mga katulong.",
+      "body": "Magtatanong ako ng ilang madadaling tanong, tapos ise-set up ko ang mga katulong na gagawa ng trabaho para sa’yo. Mga 2 minuto lang.",
+      "start": "Simulan na natin",
+      "p1": "Walang techy na salita",
+      "p2": "Walang mangyayari nang wala ang OK mo",
+      "p3": "Puwedeng baguhin kahit kailan"
+    },
+    "lang": {
+      "title": "Anong wika ang gagamitin ng mga katulong mo?",
+      "body": "Which language do you want? Lahat ng susunod ay nasa pinili mo.",
+      "other": "Iba pa…",
+      "otherSub": "{{names}} at iba pa",
+      "seeAll": "Tingnan lahat ng wika",
+      "listTitle": "Lahat ng wika",
+      "taglish": "Taglish",
+      "taglishSample": "Hi! Ano’ng kailangan mo today?",
+      "sample": "Kumusta! Ano ang maitutulong ko?"
+    },
+    "name": {
+      "title": "Ano’ng itatawag mo sa akin?",
+      "body": "Ako ang mangunguna sa team mo. “{{name}}” ang default, pero ikaw ang bahala.",
+      "label": "Pangalan ng pangunahing katulong mo",
+      "hint": "Nagbabago rin ang mukha ko!",
+      "newLook": "Bagong look!",
+      "ideas": "Mga idea:",
+      "go": "{{name}} na!",
+      "errors": {
+        "empty": "Mag-type muna ng pangalan.",
+        "long": "Masyadong mahaba. Hanggang {{max}} letra lang.",
+        "bad": "Simpleng letra lang, walang espesyal na marka.",
+        "taken": "May gumagamit na ng pangalang iyan. Iba na lang."
+      }
+    },
+    "q": {
+      "sub": "Pumili ng isa, o i-kwento mo sa sarili mong salita.",
+      "typeLabel": "O i-type mo dito",
+      "typePlaceholder": "Sabihin mo sa sarili mong paraan…",
+      "other": "Iba pa",
+      "subMulti": "Pumili ng kahit ilan, o i-kwento mo sa sarili mong salita."
+    },
+    "plan": {
+      "title": "Ito ang team na bubuuin ko para sa’yo",
+      "lead": "Ako ang lead. Ako ang kausap mo, ako ang mag-uutos sa kanila.",
+      "because": "Kasi: {{what}}",
+      "arriving": "Dumarating…",
+      "change": "May babaguhin ako",
+      "approve": "Aprubahan ang team",
+      "picks": "Mga pinili mo",
+      "pick": {
+        "language": "Nagsasalita ng {{language}}",
+        "people": {
+          "solo": "Ako lang ang gagamit",
+          "family": "Gagamitin din ng pamilya ko",
+          "team": "Gagamitin din ng mga kasama ko sa trabaho"
+        },
+        "chat": {
+          "none": "Wala munang chat app",
+          "telegram": "Kakausapin sa Telegram",
+          "whatsapp": "Kakausapin sa WhatsApp",
+          "discord": "Kakausapin sa Discord",
+          "slack": "Kakausapin sa Slack"
+        },
+        "email": {
+          "new": "Bagong email, sabay nating gagawin nang isa-isang hakbang",
+          "connect": "Ikonekta ang sarili kong email (mga 3 minuto)",
+          "skip": "Wala munang email"
+        },
+        "askFirst": {
+          "none": "Walang ibang kailangang itanong muna",
+          "money": "Magtatanong muna bago gumastos",
+          "contact": "Magtatanong muna bago kumontak ng kahit sino",
+          "files": "Magtatanong muna bago galawin ang mga file ko"
+        }
+      }
+    },
+    "done": {
+      "title": "Buo na ang team mo!",
+      "body": "Handa na sila. Kausapin mo lang si {{name}}, at siya na ang bahala sa iba.",
+      "open": "Buksan ang PasaBot",
+      "chats": "Mga chat mo",
+      "lead": "Lead ng team · Handa na",
+      "ready": "Handa na",
+      "pinned": "Laging nasa taas si {{name}}",
+      "next": {
+        "title": "Susunod na hakbang",
+        "new": "Tutulungan ka ni {{name}} gumawa ng bagong email, isa-isang hakbang, sa chat ninyo.",
+        "newGo": "Gumawa ng bagong email kasama si {{name}}",
+        "connect": "Ikonekta na ang email mo. Mga 3 minuto lang ito.",
+        "connectGo": "Ikonekta ang email ko"
+      }
+    },
+    "summary": {
+      "body": "Buo na ang team mo! Ito ang mga sinabi mo sa akin, at ang mga katulong mo.",
+      "language": "Wika"
+    }
+  },
+  "summaryLead": "Inaalagaan ang team mo: ipinapasa ang bawat gawain sa tamang katulong, at puwedeng magdagdag o magpalit ng katulong kapag sinabi mo.",
+  "oks": {
+    "title": "Ilang bagay ang kailangan ng OK mo",
+    "sub": "Mas marami pang magagawa si {{name}} at ang team dito. Ikaw ang bahala sa bawat isa, at walang bubuksan hangga’t hindi mo pinipindot.",
+    "email": {
+      "title": "Ikonekta ang email mo",
+      "why": "Para mabasa ng katulong sa mail ang bagong email at sabihin sa’yo ang mahalaga.",
+      "yes": "Ikonekta"
+    },
+    "chat": {
+      "title": "Ikonekta ang {{app}}",
+      "why": "Para makausap mo rin ang mga katulong mo sa {{app}}.",
+      "yes": "Ikonekta"
+    },
+    "apps": {
+      "title": "Ikonekta ang {{app}}",
+      "why": "Magagamit ng mga katulong mo ang {{app}} para sa’yo kapag nakakonekta na.",
+      "yes": "Ikonekta"
+    },
+    "browser": {
+      "title": "Hayaang gamitin ng mga katulong ang sarili nilang browser",
+      "why": "Nagbubukas sila ng websites sa hiwalay na browser na mapapanood mo. Hindi sila kailanman magsa-sign in o magbabayad para sa’yo.",
+      "yes": "Payagan"
+    },
+    "computer": {
+      "title": "Hayaang gamitin ng katulong ang computer na ito",
+      "why": "Makikita nito ang screen at magagamit ang mouse at keyboard. Magtatanong muna ito sa’yo tuwing gagawin.",
+      "yes": "I-set up"
+    },
+    "ask": {
+      "title": "Piliin kung gaano kadalas magtanong muna ang mga katulong",
+      "why": "Piliin kung kailan sila magtatanong bago kumilos. Laging nagtatanong kapag pera at mensahe.",
+      "yes": "Pumili"
+    },
+    "alerts": {
+      "title": "Ma-ping kapag kailangan ka ng katulong",
+      "why": "Sasabihan ka namin sa device na ito kapag may kailangan ng OK mo.",
+      "yes": "I-on"
+    },
+    "laterBtn": "Mamaya",
+    "notNow": "Mamaya na",
+    "opened": "Nabuksan na. Tapusin sa page na iyon",
+    "later": "Mamaya: ipapaalala ni {{name}} sa chat",
+    "continue": "Tuloy",
+    "continueLater": "Tuloy, mamaya na ang iba"
+  }
+}

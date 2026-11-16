@@ -1,0 +1,183 @@
+{
+  "nav": "Sécurité",
+  "stop": {
+    "button": "Tout arrêter",
+    "buttonLabel": "Arrêter tous les agents maintenant",
+    "stopped": "En pause",
+    "resume": "Relancer",
+    "failed": "Arrêt impossible : {{reason}}",
+    "resumeLabel": "Tout est en pause. Relancer"
+  },
+  "report": {
+    "title": "Tout est en pause",
+    "intro": "Rien ne tournera tant que tu n'appuies pas sur Relancer. Voici ce qui a été arrêté.",
+    "by": "Arrêt demandé par {{who}} à {{when}}.",
+    "who": {
+      "owner": "vous",
+      "linked-machine": "un appareil associé",
+      "channel": "une commande de canal",
+      "automation": "un jeton d’automatisation",
+      "agent": "un agent",
+      "system": "le serveur"
+    },
+    "empty": "Rien n’était en cours ni en attente.",
+    "kind": {
+      "run": "Tour en cours",
+      "queued": "Tour en attente",
+      "browser": "Session de navigateur",
+      "computer": "Session d’ordinateur",
+      "voice": "Appel vocal",
+      "approval": "Demande d’approbation",
+      "other": "Autre"
+    },
+    "outcome": {
+      "cancelled": "arrêté",
+      "held": "en pause",
+      "closed": "fermé"
+    },
+    "agent": "Agent {{name}}",
+    "close": "OK",
+    "resume": "Relancer",
+    "queue": {
+      "message": "Message",
+      "task": "Tâche",
+      "handoff": "Passation",
+      "routine": "Routine",
+      "workflow": "Workflow",
+      "automation-run": "Automatisation"
+    },
+    "run": "exécution {{id}}",
+    "chat": "discussion {{id}}"
+  },
+  "resume": {
+    "title": "Relancer tes agents",
+    "intro": "Tape ton mot de passe pour relancer tes agents. Comme ça, personne d'autre ne peut les relancer. Le travail en attente reprend.",
+    "password": "Mot de passe",
+    "submit": "Relancer",
+    "cancel": "Annuler",
+    "wrong": "Ce mot de passe est incorrect.",
+    "forbidden": "Seul le propriétaire peut relancer.",
+    "error": "Impossible de relancer : {{reason}}"
+  },
+  "page": {
+    "title": "Sécurité",
+    "intro": "Ce que vos agents ont fait, étape par étape, et les contrôles qui les gardent sous surveillance."
+  },
+  "receipts": {
+    "title": "Reçus",
+    "intro": "Chaque tâche d’un agent laisse un reçu : ses étapes, appels d’outils, approbations et qui a décidé, ainsi que les jetons utilisés.",
+    "empty": "Aucun reçu pour l’instant. Ils apparaissent dès qu’un agent travaille sur quelque chose.",
+    "steps": "{{count}} étapes",
+    "tokens": "{{input}} jetons en entrée / {{output}} en sortie",
+    "open": "Ouvrir le reçu",
+    "back": "Tous les reçus",
+    "timeline": "Chronologie",
+    "step": "Étape {{n}} sur {{total}}",
+    "scrub": "Parcourir les étapes",
+    "export": "Exporter",
+    "exportJson": "Télécharger le JSON",
+    "exportHtml": "Ouvrir une copie lisible",
+    "exporting": "Préparation…",
+    "decidedBy": "Décidé par {{who}}",
+    "you": "vous",
+    "duration": "{{s}} s",
+    "cost": "Coût {{amount}} {{currency}}",
+    "state": {
+      "running": "en cours",
+      "done": "terminé",
+      "failed": "échoué",
+      "cancelled": "arrêté",
+      "interrupted": "interrompu"
+    },
+    "kind": {
+      "run.started": "Démarré",
+      "run.finished": "Terminé",
+      "tool.call": "Appel d’outil",
+      "tool.result": "Résultat d’outil",
+      "permission": "Autorisation demandée",
+      "approval.requested": "Demande envoyée",
+      "approval.decided": "Votre décision",
+      "usage": "Jetons utilisés",
+      "reply": "Réponse",
+      "error": "Erreur",
+      "subagent": "Assistant",
+      "screenshot": "Capture d’écran",
+      "link": "Lien",
+      "refused": "Refusé par un contrôle de sécurité"
+    },
+    "youNamed": "{{name}} (vous)",
+    "nobody": "personne (expiré)",
+    "someoneElse": "une autre session du propriétaire"
+  },
+  "retention": {
+    "title": "Conserver les reçus pendant",
+    "days": "Jours",
+    "hint": "Les reçus plus anciens et leurs captures d’écran sont supprimés définitivement.",
+    "save": "Enregistrer",
+    "saved": "Enregistré. {{count}} anciens reçus supprimés."
+  },
+  "scan": {
+    "title": "Vérifier une compétence avant de l’installer",
+    "intro": "Collez le texte d’une compétence. Nous recherchons les éléments risqués : téléchargement et exécution de programmes, lecture de clés ou de mots de passe, texte caché et envoi de données vers l’extérieur.",
+    "label": "Texte de la compétence",
+    "run": "Vérifier",
+    "running": "Vérification…",
+    "clean": "Nous n’avons rien remarqué de risqué.",
+    "noticed": "Nous avons remarqué :",
+    "timeout": "La vérification a pris trop de temps et a été arrêtée. Lisez la compétence vous-même avant de l’installer.",
+    "error": "La vérification a échoué : {{reason}}",
+    "line": "ligne {{line}}",
+    "kind": {
+      "download-and-run": "télécharge et exécute un programme",
+      "credential-path": "lit des clés, des mots de passe ou des données de navigateur",
+      "hidden-text": "contient du texte caché",
+      "exfiltration": "peut envoyer vos données vers l’extérieur",
+      "model-instruction": "tente de donner des ordres secrets à l’agent"
+    }
+  },
+  "decision": {
+    "proposal": "La compétence « {{skill}} » demande des autorisations",
+    "proposalText": "Ouvrez Compétences pour voir chaque outil, site web et fichier demandé avant de décider.",
+    "proposalWiden": "Elle demande plus que ce que vous avez approuvé. Ouvrez Compétences pour voir ce qui change avant de décider."
+  },
+  "find": {
+    "navHint": "Ce que les agents peuvent faire, et l’historique",
+    "navKeywords": "approbations, permissions, autoriser, journal, audit"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Ce que les assistants peuvent faire, et l’historique"
+    },
+    "stop": {
+      "buttonLabel": "Arrêter tous les assistants maintenant"
+    },
+    "page": {
+      "intro": "Ce qu’ont fait vos assistants, étape par étape, et ce qui les garde sous contrôle."
+    },
+    "receipts": {
+      "intro": "Chaque tâche d’un assistant laisse un reçu : ses étapes, ce qu’il a utilisé, ce que vous avez approuvé et qui a décidé, et la quantité utilisée.",
+      "empty": "Aucun reçu pour l’instant. Ils apparaissent dès qu’un assistant travaille sur quelque chose.",
+      "tokens": "{{input}} lu / {{output}} écrit",
+      "kind": {
+        "usage": "Quantité utilisée"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "quelque chose qui s’exécute tout seul",
+        "agent": "un assistant",
+        "system": "PasaBot lui-même"
+      },
+      "agent": "Assistant {{name}}"
+    },
+    "scan": {
+      "title": "Vérifier une compétence avant de l’ajouter",
+      "intro": "Collez son texte. Nous cherchons ce qui est risqué : télécharger et lancer des programmes, lire des clés ou mots de passe, du texte caché et l’envoi de données.",
+      "label": "Son texte",
+      "timeout": "La vérification a pris trop de temps et a été arrêtée. Lisez-le vous-même avant de l’ajouter.",
+      "kind": {
+        "model-instruction": "essaie de donner des ordres secrets à l’assistant"
+      }
+    }
+  }
+}

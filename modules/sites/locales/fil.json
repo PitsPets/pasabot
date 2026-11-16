@@ -1,0 +1,58 @@
+{
+  "nav": "Mga site",
+  "page": {
+    "title": "Mga site",
+    "intro": "Maliliit na web page na inilathala ng mga agent mo. Bumubukas sila sa hiwalay na sites address, tumatakbo sa sandbox at hindi magagamit ang sign-in mo. Mag-e-expire ang bawat isa kapag hindi na-renew."
+  },
+  "refresh": "I-refresh",
+  "loading": "Naglo-load…",
+  "empty": "Wala pang site. Lalabas dito kapag may inilathala ang isang agent.",
+  "error": "Hindi ma-load ang mga site. {{reason}}",
+  "tunnel": {
+    "title": "Address mula sa labas",
+    "label": "Tunnel address para sa mga site",
+    "hint": "Opsyonal. Kung nakaturo ang sarili mong tunnel sa sites address, i-paste dito ang address nito (halimbawa https://sites.example.net). Ipapakita ito ng mga public na site.",
+    "save": "I-save ang address",
+    "saved": "Na-save na.",
+    "none": "Wala pang tunnel address, kaya wala pang site na puwedeng gawing public."
+  },
+  "site": {
+    "by": "Inilathala ni {{name}}",
+    "byRemoved": "Inilathala ng agent na tinanggal na",
+    "files_one": "{{count}} file",
+    "files_other": "{{count}} na file",
+    "expires": "Mag-e-expire sa {{when}}",
+    "public": "Public",
+    "private": "Pribado",
+    "open": "Buksan ang site",
+    "openPublic": "Public na address",
+    "renew": "Panatilihin nang 7 araw pa",
+    "makePublic": "Gawing public",
+    "makePrivate": "Gawing pribado",
+    "remove": "Tanggalin",
+    "confirmRemove": "Tanggalin ang \"{{title}}\"? Hihinto agad ang address nito.",
+    "list": "Mga file"
+  },
+  "tools": {
+    "sites_publish": "I-publish ang static site",
+    "sites_list": "Ilista ang mga site mo",
+    "sites_renew": "I-renew ang site",
+    "sites_unpublish": "Alisin ang site"
+  },
+  "find": {
+    "navHint": "Mga website na gawa ng agent mo",
+    "navKeywords": "website, web page, ilathala, i-host"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Mga website na ginagawa at inilalagay online ng mga katulong mo"
+    },
+    "page": {
+      "intro": "Maliliit na web page na inilathala ng mga katulong mo. Bumubukas sila sa sarili nilang hiwalay na address, nakahiwalay sa app at hindi magagamit ang sign-in mo. Mag-e-expire ang bawat isa kapag hindi na-renew."
+    },
+    "empty": "Wala pang site. Lalabas dito kapag may inilathala ang isang katulong.",
+    "site": {
+      "byRemoved": "Inilathala ng katulong na tinanggal na"
+    }
+  }
+}

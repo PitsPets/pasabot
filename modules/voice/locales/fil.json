@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "Pindutin nang matagal para magsalita",
+    "listening": "Nakikinig… bitawan para tumigil",
+    "working": "Ginagawang text ang boses mo…",
+    "title": "Mensahe mo",
+    "text": "Ang sinabi mo",
+    "send": "Ipadala",
+    "cancel": "Huwag na",
+    "empty": "Walang narinig. Subukan ulit, mas malapit sa mic.",
+    "noMic": "Hindi magamit ng browser na ito ang mikropono rito.",
+    "denied": "Naka-block ang mikropono. Payagan ito sa browser para makapagsalita.",
+    "unavailable": "Hindi pa naka-set up ang voice input. Puwedeng mag-download ng speech model ang owner sa Settings → Voice.",
+    "failed": "Hindi magawang text ang recording. {{reason}}",
+    "browserNote": "Gamit ang speech recognition ng browser mo."
+  },
+  "listen": {
+    "play": "Pakinggan",
+    "stop": "Itigil",
+    "loading": "Inihahanda ang audio…",
+    "failed": "Hindi ito mabasa nang malakas. {{reason}}"
+  },
+  "settings": {
+    "title": "Boses",
+    "intro": "Kausapin ang mga agent mo at pakinggan ang mga sagot nila. Dito sa server tumatakbo ang speech, kaya hindi lumalabas ang boses mo.",
+    "engine": "Speech engine",
+    "engineFake": "Pang-test na engine",
+    "engineLocal": "Dito sa server",
+    "noPackage": "Hindi naka-install ang speech engine sa server na ito, kaya ang browser ang ginagamit.",
+    "stt": "Voice input",
+    "tts": "Binibigkas na sagot",
+    "ready": "Handa: {{model}}",
+    "notReady": "Wala pang model",
+    "models": "Mga speech model",
+    "modelsIntro": "Nagda-download lang ang model kapag hiniling mo, mula sa sariling releases ng speech engine.",
+    "kindStt": "Voice input",
+    "kindTts": "Binibigkas na sagot",
+    "size": "Mga {{mb}} MB",
+    "languages": "Mga wika: {{list}}",
+    "installed": "Naka-install",
+    "download": "I-download ang {{name}}",
+    "remove": "Alisin ang {{name}}",
+    "modelName": "{{model}} ({{note}})",
+    "noteMultilingual": "maraming wika",
+    "noteEnglish": "Ingles",
+    "downloading": "Nagda-download… {{pct}}",
+    "unpacking": "Ina-unpack…",
+    "failedDownload": "Hindi na-download: {{reason}}",
+    "disabledUnpinned": "Hindi pa puwede: wala pang checksum ang PasaBot para masuri ang download na ito, kaya naka-off muna ito.",
+    "ownerOnly": "Ang owner lang ang puwedeng mag-download o mag-alis ng model.",
+    "autoRead": "Basahin nang malakas ang mga bagong sagot",
+    "autoReadHint": "Sa device na ito lang.",
+    "browserStt": "Gamitin ang speech recognition ng browser kapag walang naka-install na model",
+    "browserSttHint": "May mga browser na ipinapadala ang boses mo sa server ng gumawa nito para makilala. Naka-off ito sa simula.",
+    "loading": "Naglo-load…",
+    "error": "Hindi ma-load ang voice settings. {{reason}}"
+  },
+  "find": {
+    "settingsHint": "Kausapin at pakinggan ang agent",
+    "settingsKeywords": "boses, magsalita, mikropono, makinig, audio"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Kausapin at pakinggan ang mga katulong mo"
+    },
+    "settings": {
+      "intro": "Kausapin ang mga katulong mo at pakinggan ang mga sagot nila. Dito sa computer tumatakbo ang speech, kaya hindi lumalabas ang boses mo.",
+      "engineLocal": "Dito sa computer",
+      "notReady": "Wala pang voice pack",
+      "models": "Mga voice pack",
+      "modelsIntro": "Nagda-download lang ang voice pack kapag hiniling mo, mula sa sariling releases ng speech engine.",
+      "browserStt": "Gamitin ang speech recognition ng browser kapag walang naka-install na voice pack",
+      "browserSttHint": "May mga browser na ipinapadala ang boses mo sa computer ng gumawa nito para makilala. Naka-off ito sa simula."
+    }
+  }
+}

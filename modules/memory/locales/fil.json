@@ -1,0 +1,138 @@
+{
+  "nav": "Alaala",
+  "page": {
+    "title": "Alaala ng mga agent",
+    "intro": "Mga itinabi ng mga agent mo para sa susunod. Kalimutan ang anumang mali o pribado; hindi na ito mahahanap ng agent mula ngayon."
+  },
+  "scope": {
+    "label": "Kaninong alaala",
+    "all": "Lahat",
+    "shared": "Pinagsasaluhan ng lahat ng agent",
+    "global": "Pangkalahatan (lahat ng agent)",
+    "team": "Team: {{name}}",
+    "private": "Pribado"
+  },
+  "search": {
+    "label": "Hanapin sa alaala",
+    "placeholder": "Mag-type ng salita"
+  },
+  "item": {
+    "shared": "Pinagsasaluhan",
+    "saved": "Itinabi {{when}}",
+    "reviewed": "Nasuri na",
+    "markReviewed": "Markahang nasuri",
+    "forget": "Kalimutan",
+    "confirm": "Kalimutan nang tuluyan",
+    "cancel": "Huwag na",
+    "untrusted": "Hindi galing sa iyo",
+    "global": "Pangkalahatan",
+    "team": "Team {{name}}",
+    "by": "Itinabi ni {{who}}",
+    "byYou": "Ikaw ang nagtabi",
+    "byImport": "Dinala mula sa ibang server",
+    "byUnknown": "Itinabi ng isang agent",
+    "sure": "Sigurado",
+    "unsure": "Hindi sigurado",
+    "key": "Tungkol sa: {{key}}",
+    "edit": "Baguhin",
+    "editLabel": "Baguhin ang alaalang ito",
+    "save": "I-save",
+    "editCancel": "Huwag na",
+    "edited": "Na-save na."
+  },
+  "empty": "Wala pang naitabi rito.",
+  "loading": "Naglo-load…",
+  "error": "Hindi ma-load ang alaala. {{reason}}",
+  "count_one": "{{count}} item",
+  "count_other": "{{count}} na item",
+  "settings": {
+    "title": "Alaala",
+    "backend": "Saan itinatabi ang alaala",
+    "backendHint": "Hindi nito ililipat ang mga naitabi na.",
+    "local": "Sa server na ito",
+    "limits": "Hanggang {{perAgent}} item bawat agent, {{shared}} na pinagsasaluhan, {{textChars}} na character bawat isa."
+  },
+  "origin": {
+    "label": "Galing sa",
+    "any": "Kahit anong chat",
+    "owner": "Sarili mong mga chat",
+    "others": "Mga chat na hindi ikaw ang nagsimula"
+  },
+  "more": "Ipakita pa",
+  "countMore_one": "Unang {{count}} item",
+  "countMore_other": "Unang {{count}} item",
+  "merges": {
+    "title": "Ikaw ang pipili",
+    "intro": "Dalawang agent ang sigurado pero magkaiba ang sagot sa iisang bagay. Pumili ng isa, o isulat mo mismo ang tamang sagot.",
+    "key": "Tungkol sa: {{key}}",
+    "current": "Nakatabi ngayon",
+    "incoming": "Bagong sagot",
+    "keepCurrent": "Panatilihin ang nakatabi",
+    "useIncoming": "Gamitin ang bago",
+    "writeOwn": "Ako ang magsusulat",
+    "mergedLabel": "Ang tamang sagot",
+    "saveMerged": "I-save ang sagot",
+    "cancel": "Huwag na",
+    "gone": "(nabura na ang nakatabing sagot)"
+  },
+  "teams": {
+    "title": "Mga team",
+    "intro": "Ang team ay grupo ng mga agent na may iisang alaala. Sa mga team lang na kasali sila sila nakakabasa at nakakasulat.",
+    "empty": "Wala pang team.",
+    "name": "Pangalan ng team",
+    "create": "Gumawa ng team",
+    "members": "Mga kasali",
+    "noAgents": "Magdagdag muna ng agent.",
+    "delete": "Burahin ang team",
+    "confirmDelete": "Burahin ang team at ang alaala nito",
+    "keep": "Huwag na",
+    "count_one": "{{count}} agent",
+    "count_other": "{{count}} na agent"
+  },
+  "tools": {
+    "memory_remember": "Tandaan",
+    "memory_search": "Maghanap sa memorya",
+    "memory_teams": "Mga memory team ko",
+    "memory_forget": "Kalimutan"
+  },
+  "find": {
+    "navHint": "Ang naaalala ng mga agent mo",
+    "navKeywords": "alalahanin, tala, impormasyon, gunita"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Ang naaalala ng mga katulong mo"
+    },
+    "page": {
+      "title": "Ang naaalala ng mga katulong",
+      "intro": "Mga itinabi ng mga katulong mo para sa susunod. Kalimutan ang anumang mali o pribado; hindi na ito mahahanap ng katulong mula ngayon."
+    },
+    "scope": {
+      "shared": "Pinagsasaluhan ng lahat ng katulong",
+      "global": "Lahat (lahat ng katulong)"
+    },
+    "item": {
+      "byImport": "Dinala mula sa ibang computer",
+      "byUnknown": "Itinabi ng isang katulong"
+    },
+    "settings": {
+      "local": "Sa computer na ito",
+      "limits": "Hanggang {{perAgent}} item bawat katulong, {{shared}} na pinagsasaluhan, {{textChars}} na character bawat isa."
+    },
+    "merges": {
+      "intro": "Dalawang katulong ang sigurado pero magkaiba ang sagot sa iisang bagay. Pumili ng isa, o isulat mo mismo ang tamang sagot."
+    },
+    "teams": {
+      "intro": "Ang team ay grupo ng mga katulong na may iisang alaala. Sa mga team lang na kasali sila sila nakakabasa at nakakasulat.",
+      "noAgents": "Magdagdag muna ng katulong."
+    }
+  },
+  "card": {
+    "saved": {
+      "title": "Tatandaan ko iyan",
+      "undo": "Bawiin",
+      "all": "Tingnan lahat ng tanda ko",
+      "undone": "Kinalimutan na"
+    }
+  }
+}

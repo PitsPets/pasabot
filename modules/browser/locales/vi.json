@@ -1,0 +1,113 @@
+{
+  "nav": "Trình duyệt",
+  "page": {
+    "title": "Trình duyệt",
+    "intro": "Các hồ sơ trình duyệt mà agent của bạn có thể dùng. Mỗi hồ sơ giữ cookie, thông tin đăng nhập, màu sắc và proxy riêng. Bạn có thể xem trực tiếp, tự điều khiển, hoặc mở cửa sổ nhỏ khi đang chat.",
+    "empty": "Chưa có hồ sơ trình duyệt nào. Agent sẽ tạo một hồ sơ ở lần duyệt web đầu tiên, hoặc bạn có thể thêm ngay bây giờ.",
+    "ownerOnly": "Chỉ owner mới có thể xem và dùng hồ sơ trình duyệt."
+  },
+  "badge": {
+    "running": "Đang chạy",
+    "loggedIn": "Có đăng nhập của bạn",
+    "proxy": "Proxy"
+  },
+  "profile": {
+    "via": "Qua {{server}}",
+    "loggedInNote": "Agent phải hỏi bạn, kèm mật khẩu hoặc passkey, trước khi dùng hồ sơ này.",
+    "defaultName": "Trình duyệt của tác tử"
+  },
+  "actions": {
+    "new": "Hồ sơ mới",
+    "watch": "Xem",
+    "start": "Bắt đầu",
+    "stop": "Dừng",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "deleteConfirm": "Xóa {{name}} cùng cookie và thông tin đăng nhập? Không thể hoàn tác.",
+    "pip": "Mở cửa sổ nhỏ",
+    "full": "Xem toàn màn hình",
+    "closePip": "Đóng",
+    "closeView": "Đóng khung xem"
+  },
+  "form": {
+    "newTitle": "Hồ sơ trình duyệt mới",
+    "editTitle": "Sửa hồ sơ trình duyệt",
+    "name": "Tên",
+    "color": "Màu sắc",
+    "proxy": "Proxy (không bắt buộc)",
+    "proxyHint": "http://, https:// hoặc socks5:// kèm máy chủ và cổng. Áp dụng ở lần khởi động trình duyệt tiếp theo.",
+    "bypass": "Bỏ qua proxy cho",
+    "username": "Tên người dùng proxy",
+    "password": "Mật khẩu proxy",
+    "passwordVault": "Được lưu trong vault, sẽ không hiển thị lại.",
+    "passwordKeep": "Để trống để giữ mật khẩu đã lưu.",
+    "loggedIn": "Hồ sơ này có đăng nhập của tôi (agent phải hỏi trước)",
+    "save": "Lưu",
+    "cancel": "Hủy"
+  },
+  "live": {
+    "title": "{{name}} trực tiếp",
+    "alt": "Khung xem trực tiếp của trình duyệt {{name}}",
+    "waiting": "Đang chờ hình ảnh đầu tiên…",
+    "stopped": "Trình duyệt này không chạy."
+  },
+  "steer": {
+    "address": "Địa chỉ",
+    "go": "Mở",
+    "type": "Nhập vào trang",
+    "typeHint": "Hãy bấm vào một ô trong hình trước. Việc nhập sẽ đánh dấu hồ sơ này là có đăng nhập của bạn.",
+    "send": "Nhập"
+  },
+  "keys": {
+    "Enter": "Enter",
+    "Tab": "Tab",
+    "Backspace": "Backspace",
+    "Escape": "Esc",
+    "up": "Cuộn lên",
+    "down": "Cuộn xuống"
+  },
+  "network": {
+    "title": "Địa chỉ cục bộ",
+    "allowHosts": "Máy chủ mà trình duyệt được phép mở trong mạng của bạn",
+    "hint": "Địa chỉ riêng tư và loopback bị chặn trừ khi được liệt kê ở đây, cách nhau bằng dấu phẩy.",
+    "save": "Lưu",
+    "saved": "Đã lưu."
+  },
+  "pip": {
+    "label": "Trình duyệt trong cửa sổ nhỏ"
+  },
+  "dock": {
+    "label": "Trình duyệt",
+    "idle": "Hiện không có trình duyệt nào đang chạy."
+  },
+  "tools": {
+    "browser_navigate": "Trình duyệt: mở trang",
+    "browser_snapshot": "Trình duyệt: đọc trang",
+    "browser_click": "Trình duyệt: nhấp",
+    "browser_type": "Trình duyệt: nhập vào ô"
+  },
+  "server": {
+    "yourTurn": "Đến lượt bạn trong trình duyệt"
+  },
+  "find": {
+    "navHint": "Cho tác tử dùng trình duyệt",
+    "navKeywords": "web, duyệt, trang web, internet"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Cho trợ lý dùng trình duyệt"
+    },
+    "page": {
+      "intro": "Các trình duyệt trợ lý dùng được. Mỗi cái giữ đăng nhập, màu và cài đặt riêng. Xem trực tiếp, tự điều khiển hoặc tách ra khi bạn trò chuyện.",
+      "empty": "Chưa có trình duyệt. Trợ lý tạo một cái lần đầu duyệt web, hoặc bạn có thể thêm ngay."
+    },
+    "profile": {
+      "loggedInNote": "Trợ lý phải hỏi bạn, bằng mật khẩu hoặc mã khóa, trước khi dùng trình duyệt này.",
+      "defaultName": "Trình duyệt của trợ lý"
+    },
+    "form": {
+      "passwordVault": "Được giữ an toàn trên máy này, không bao giờ hiện lại.",
+      "loggedIn": "Trình duyệt này có đăng nhập của tôi (trợ lý phải hỏi trước)"
+    }
+  }
+}

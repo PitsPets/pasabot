@@ -1,0 +1,102 @@
+{
+  "nav": "Máy",
+  "settings": "Máy",
+  "page": {
+    "title": "Máy đã liên kết",
+    "intro": "Các máy PasaBot khác của bạn. Chọn một máy để xem các agent trên đó và chat với họ; công việc chạy trên máy đó theo quy tắc riêng của nó.",
+    "empty": "Chưa có máy nào được liên kết. Hãy liên kết trong Cài đặt → Máy.",
+    "agents": "Agent trên {{name}}",
+    "noAgents": "Chưa có agent nào ở đó.",
+    "back": "Tất cả máy",
+    "open": "Mở",
+    "refresh": "Làm mới"
+  },
+  "chat": {
+    "title": "{{agent}} trên {{machine}}",
+    "placeholder": "Nhắn cho {{agent}}",
+    "send": "Gửi",
+    "waiting": "Đang chờ {{agent}}…",
+    "me": "Bạn",
+    "empty": "Hãy chào một câu. Tin nhắn của bạn chạy trên {{machine}}, dưới dạng yêu cầu từ một máy đã liên kết."
+  },
+  "state": {
+    "active": "Đã liên kết",
+    "awaiting": "Đang chờ chủ sở hữu bên kia",
+    "requested": "Muốn liên kết",
+    "revoked": "Đã hủy liên kết"
+  },
+  "grant": {
+    "label": "Những gì nó được làm trên máy này",
+    "view": "Xem",
+    "chat": "Trò chuyện",
+    "manage": "Quản lý",
+    "hint": "Xem: tên máy và tên agent. Chat: còn chat được với các agent của bạn tại đây. Quản lý: còn quản lý được routine và quy trình, trong phạm vi quy tắc riêng của máy này. Nó không bao giờ trở thành chủ sở hữu ở đây."
+  },
+  "status": {
+    "this": "Máy này: {{name}}",
+    "fingerprint": "Vân tay khóa {{fp}}",
+    "unavailable": "Chưa thể liên kết",
+    "transport": "Đường truyền liên kết: {{transport}} · {{state}}",
+    "transportRunning": "đang chạy",
+    "transportDown": "đang khởi động lại",
+    "transportIdle": "nghỉ cho đến khi có máy được liên kết"
+  },
+  "code": {
+    "title": "Liên kết một máy",
+    "intro": "Hiển thị mã dùng một lần ở đây, rồi nhập mã đó trên máy kia. Mã chỉ dùng được một lần và hết hạn sau 10 phút.",
+    "make": "Hiện mã liên kết",
+    "expires": "Hết hạn lúc {{time}}",
+    "copy": "Sao chép mã",
+    "copied": "Đã sao chép",
+    "qr": "Mã liên kết dạng ảnh QR"
+  },
+  "join": {
+    "title": "Nhập mã từ máy khác",
+    "code": "Mã liên kết",
+    "submit": "Liên kết",
+    "done": "Đã gửi. Chủ sở hữu bên kia sẽ xác nhận trên máy của họ."
+  },
+  "reauth": {
+    "password": "Mật khẩu của bạn (để xác nhận là bạn)"
+  },
+  "peers": {
+    "title": "Máy đã liên kết",
+    "empty": "Chưa có.",
+    "confirm": "Xác nhận liên kết",
+    "check": "Kiểm tra",
+    "unlink": "Hủy liên kết",
+    "unlinkConfirm": "Hủy liên kết {{name}}? Máy đó sẽ mất quyền truy cập ngay lập tức.",
+    "fp": "Khóa {{fp}}"
+  },
+  "intros": {
+    "title": "Giới thiệu",
+    "offer": "{{via}} đề nghị giới thiệu {{name}} (khóa {{fp}}). Sẽ không có gì được liên kết cho đến khi bạn liên kết bằng mã từ máy đó.",
+    "accept": "Đã biết",
+    "dismiss": "Bỏ qua"
+  },
+  "error": "Đã xảy ra lỗi: {{message}}",
+  "tools": {
+    "link_machines": "Liệt kê máy đã liên kết",
+    "link_message": "Nhắn cho agent trên máy đã liên kết"
+  },
+  "server": {
+    "introTitle": "{{peer}} đề nghị giới thiệu {{name}}",
+    "introBody": "Không có gì được liên kết cho đến khi bạn tự liên kết bằng mã từ máy đó.",
+    "linkTitle": "{{name}} muốn liên kết với máy này",
+    "linkBody": "Xác nhận trong Cài đặt → Máy và chọn những gì nó được làm ở đây."
+  },
+  "find": {
+    "navHint": "Máy khác liên kết với máy này",
+    "navKeywords": "máy, máy tính, máy chủ, liên kết, từ xa"
+  },
+  "plain": {
+    "page": {
+      "intro": "Các máy tính khác của bạn có PasaBot. Chọn một máy để xem trợ lý và trò chuyện; việc chạy trên máy đó theo quy tắc riêng của nó.",
+      "agents": "Trợ lý trên {{name}}",
+      "noAgents": "Ở đó chưa có trợ lý."
+    },
+    "grant": {
+      "hint": "Xem: tên máy và tên các trợ lý. Trò chuyện: còn trò chuyện với trợ lý của bạn ở đây. Quản lý: còn thói quen và quy trình, trong quy tắc của máy này. Nó không bao giờ thành chủ ở đây."
+    }
+  }
+}

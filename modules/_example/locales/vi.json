@@ -1,0 +1,15 @@
+{
+  "nav": "Ví dụ",
+  "page": {
+    "title": "Module ví dụ",
+    "body": "Mọi vị trí của Module SDK đều được module này sử dụng."
+  },
+  "settings": "Cài đặt ví dụ",
+  "composer": "Chèn ghi chú",
+  "dock": "Bảng ví dụ",
+  "onboarding": "Bước làm quen ví dụ",
+  "note": "Ghi chú",
+  "tools": {
+    "example_echo": "Lặp lại"
+  }
+}

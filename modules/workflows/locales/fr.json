@@ -1,0 +1,142 @@
+{
+  "nav": "Workflows",
+  "page": {
+    "title": "Workflows",
+    "intro": "Un workflow enchaîne des étapes : agents, appels de modèle sans outils, conditions, votre approbation, attentes et sorties. Construisez-le sur le canevas, puis lancez-le.",
+    "empty": "Aucun workflow pour l’instant.",
+    "new": "Nouveau workflow",
+    "fromTemplate": "Répondre, puis partager",
+    "templateHint": "Le premier agent répond à votre demande, puis tous les autres agents reçoivent cette réponse en même temps."
+  },
+  "list": {
+    "steps": "{{count}} étapes",
+    "run": "Lancer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "deleteConfirm": "Supprimer ce workflow ? Les exécutions déjà en cours continuent."
+  },
+  "approvals": {
+    "title": "En attente de vous",
+    "approve": "Approuver",
+    "reject": "Refuser",
+    "rejectConfirm": "Refuser ? L’exécution s’arrête ici."
+  },
+  "runs": {
+    "title": "Exécutions récentes",
+    "empty": "Aucune exécution pour l’instant.",
+    "show": "Afficher les étapes",
+    "hide": "Masquer les étapes",
+    "cancel": "Arrêter l’exécution",
+    "loops": "Répétitions de la boucle : {{count}}"
+  },
+  "state": {
+    "running": "En cours",
+    "waiting": "En attente",
+    "done": "Terminé",
+    "failed": "Échec",
+    "rejected": "Refusé",
+    "stopped": "Arrêté",
+    "cancelled": "Annulé",
+    "skipped": "Ignoré"
+  },
+  "type": {
+    "agent": "Agent",
+    "model": "Modèle (sans outils)",
+    "condition": "Condition",
+    "approval": "Approbation",
+    "transform": "Transformation",
+    "wait": "Attente",
+    "parallel": "Parallèle",
+    "output": "Sortie"
+  },
+  "editor": {
+    "name": "Nom du workflow",
+    "add": "Ajouter une étape",
+    "addHint": "Une nouvelle étape s’ajoute après celle qui est sélectionnée.",
+    "save": "Enregistrer",
+    "back": "Retour à la liste",
+    "saved": "Enregistré.",
+    "canvas": "Canevas du workflow",
+    "maxIterations": "Limite de boucles par exécution",
+    "selected": "Étape sélectionnée",
+    "none": "Touchez une étape sur le canevas pour la modifier.",
+    "label": "Nom de l’étape",
+    "remove": "Supprimer cette étape",
+    "next": "Puis aller à",
+    "branch": "Quand la condition est",
+    "link": "Ajouter un lien",
+    "links": "Liens sortants",
+    "unlink": "Supprimer le lien",
+    "pick": "Choisir une étape"
+  },
+  "field": {
+    "agent": "Agent",
+    "pickAgent": "Choisir un agent",
+    "prompt": "Instruction",
+    "op": "Vérification",
+    "value": "Valeur",
+    "message": "Ce qu’on vous demande",
+    "template": "Texte ({{input}} = l’entrée de l’étape)",
+    "seconds": "Secondes d’attente",
+    "to": "Envoyer à",
+    "title": "Titre",
+    "channel": "Identifiant de liaison du canal"
+  },
+  "op": {
+    "contains": "contient",
+    "not_contains": "ne contient pas",
+    "equals": "est égal à",
+    "matches": "correspond au motif",
+    "empty": "est vide",
+    "not_empty": "n’est pas vide"
+  },
+  "branch": {
+    "true": "oui",
+    "false": "non"
+  },
+  "to": {
+    "notification": "Notification",
+    "channel": "Message dans un canal"
+  },
+  "template": {
+    "title": "Répondre, puis partager",
+    "name": "Nom",
+    "agents": "Agents (le premier répond)",
+    "prompt": "Instruction pour le premier agent",
+    "followUp": "Ce que font les autres avec la réponse",
+    "create": "Créer le workflow"
+  },
+  "tools": {
+    "workflows_list": "Lister mes workflows",
+    "workflows_create": "Créer un workflow",
+    "workflows_update": "Modifier un de mes workflows",
+    "workflows_run": "Lancer un de mes workflows",
+    "workflows_delete": "Supprimer un de mes workflows"
+  },
+  "server": {
+    "failed": "Le workflow « {{name}} » a échoué",
+    "stopped": "Le workflow « {{name}} » s’est arrêté"
+  },
+  "find": {
+    "navHint": "Enchaîner des étapes en un flux",
+    "navKeywords": "étapes, flux, chaîne, automatiser"
+  },
+  "plain": {
+    "page": {
+      "intro": "Un enchaînement relie des étapes : assistants, réponses rapides d’un cerveau, conditions, votre accord, attentes et résultats. Construisez-le sur la toile, puis lancez-le.",
+      "templateHint": "Le premier assistant répond à votre demande, puis tous les autres reçoivent cette réponse en même temps."
+    },
+    "type": {
+      "agent": "Assistant",
+      "model": "Cerveau seul (sans outils)"
+    },
+    "field": {
+      "agent": "Assistant",
+      "pickAgent": "Choisir un assistant"
+    },
+    "template": {
+      "agents": "Assistants (le premier répond)",
+      "prompt": "Demande pour le premier assistant"
+    }
+  }
+}

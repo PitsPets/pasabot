@@ -1,0 +1,64 @@
+{
+  "title": "Model lokal",
+  "intro": "Jalankan agent dengan model di komputer ini (Ollama, LM Studio) atau di jaringan lokal Anda. Tidak ada yang keluar dari jaringan Anda, dan agent tidak pernah bisa menambahkan alamat di sini.",
+  "empty": "Belum ada model lokal.",
+  "found": {
+    "text": "Ditemukan {{name}} di {{url}} ({{count}} model).",
+    "use": "Tambahkan"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "Kompatibel dengan OpenAI (LM Studio)"
+  },
+  "scope": {
+    "loopback": "Komputer ini",
+    "lan": "Jaringan lokal"
+  },
+  "warning": {
+    "lan": "Alamat ini ada di jaringan lokal Anda, bukan di komputer ini. Siapa pun yang mengendalikan mesin itu dapat melihat prompt dan menjawab sebagai model."
+  },
+  "models": {
+    "loading": "Mencari model…",
+    "unreachable": "Tidak ada respons di alamat ini.",
+    "none": "Model tidak ditemukan. Unduh dulu satu model di Ollama atau LM Studio.",
+    "tools": "Alat",
+    "toolsTry": "Alat jika didukung",
+    "chatOnly": "Hanya chat: alat nonaktif"
+  },
+  "tools": {
+    "label": "Alat",
+    "auto": "Gunakan alat jika model mendukungnya",
+    "off": "Hanya chat (alat nonaktif)"
+  },
+  "use": "Agent dan cadangan kini dapat memilih otak {{id}}.",
+  "refresh": "Muat ulang model",
+  "remove": {
+    "button": "Hapus",
+    "confirm": "Ya, hapus",
+    "cancel": "Pertahankan"
+  },
+  "add": {
+    "title": "Tambah model lokal",
+    "name": "Nama",
+    "api": "Tipe",
+    "url": "Alamat",
+    "urlHint": "Alamat IP atau localhost, mis. http://127.0.0.1:11434 (Ollama) atau http://127.0.0.1:1234/v1 (LM Studio).",
+    "check": "Periksa",
+    "submit": "Tambah",
+    "reachable": "Merespons: {{count}} model."
+  },
+  "offlineHint": "Masukkan model lokal ke cadangan agent (Otak dan cadangan) dan tandai routine \"Jalankan meski offline\": saat otak utama tidak terjangkau, routine itu berjalan dengan model lokal dan memberi tahu Anda.",
+  "find": {
+    "settingsHint": "Jalankan otak di komputer ini",
+    "settingsKeywords": "lokal, luring, model, pribadi"
+  },
+  "plain": {
+    "title": "Otak lokal",
+    "intro": "Jalankan pembantu dengan otak di komputer ini (Ollama, LM Studio) atau di jaringan lokal Anda. Tidak ada yang keluar dari jaringan Anda, dan pembantu tidak pernah bisa menambahkan alamat di sini.",
+    "empty": "Belum ada otak lokal.",
+    "add": {
+      "title": "Tambah otak lokal"
+    },
+    "offlineHint": "Masukkan otak lokal ke cadangan pembantu (Otak dan cadangan) dan tandai routine \"Jalankan meski offline\": saat otak utama tidak terjangkau, routine itu berjalan dengan otak lokal dan memberi tahu Anda."
+  }
+}

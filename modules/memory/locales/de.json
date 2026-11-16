@@ -1,0 +1,138 @@
+{
+  "nav": "Gedächtnis",
+  "page": {
+    "title": "Agenten-Gedächtnis",
+    "intro": "Was deine Agenten für später gespeichert haben. Vergiss alles, was falsch oder privat ist; die Suche eines Agenten findet es sofort nicht mehr."
+  },
+  "scope": {
+    "label": "Wessen Gedächtnis",
+    "all": "Alle",
+    "shared": "Von allen Agenten geteilt",
+    "global": "Global (alle Agenten)",
+    "team": "Team: {{name}}",
+    "private": "Privat"
+  },
+  "search": {
+    "label": "Gedächtnis durchsuchen",
+    "placeholder": "Wort eingeben"
+  },
+  "item": {
+    "shared": "Geteilt",
+    "saved": "Gespeichert {{when}}",
+    "reviewed": "Geprüft",
+    "markReviewed": "Als geprüft markieren",
+    "forget": "Vergessen",
+    "confirm": "Endgültig vergessen",
+    "cancel": "Behalten",
+    "untrusted": "Nicht von dir",
+    "global": "Global",
+    "team": "Team {{name}}",
+    "by": "Gespeichert von {{who}}",
+    "byYou": "Von dir gespeichert",
+    "byImport": "Von einem anderen Server übernommen",
+    "byUnknown": "Von einem Agenten gespeichert",
+    "sure": "Sicher",
+    "unsure": "Unsicher",
+    "key": "Schlüssel: {{key}}",
+    "edit": "Bearbeiten",
+    "editLabel": "Diesen Eintrag bearbeiten",
+    "save": "Speichern",
+    "editCancel": "Abbrechen",
+    "edited": "Gespeichert."
+  },
+  "empty": "Hier ist noch nichts gespeichert.",
+  "loading": "Wird geladen…",
+  "error": "Das Gedächtnis konnte nicht geladen werden. {{reason}}",
+  "count_one": "{{count}} Eintrag",
+  "count_other": "{{count}} Einträge",
+  "settings": {
+    "title": "Gedächtnis",
+    "backend": "Wo das Gedächtnis liegt",
+    "backendHint": "Eine Änderung verschiebt bereits gespeicherte Einträge nicht.",
+    "local": "Dieser Server",
+    "limits": "Bis zu {{perAgent}} Einträge pro Agent, {{shared}} geteilt, jeweils {{textChars}} Zeichen."
+  },
+  "origin": {
+    "label": "Gespeichert aus",
+    "any": "Jedem Chat",
+    "owner": "Deinen eigenen Chats",
+    "others": "Chats, die du nicht gestartet hast"
+  },
+  "more": "Mehr anzeigen",
+  "countMore_one": "Erster {{count}} Eintrag",
+  "countMore_other": "Erste {{count}} Einträge",
+  "merges": {
+    "title": "Deine Entscheidung ist gefragt",
+    "intro": "Zwei Agenten waren sich bei derselben Sache mit unterschiedlichen Antworten sicher. Wähle eine aus oder schreibe die richtige Antwort selbst.",
+    "key": "Zu: {{key}}",
+    "current": "Aktuell gespeichert",
+    "incoming": "Neue Antwort",
+    "keepCurrent": "Gespeichertes behalten",
+    "useIncoming": "Neue verwenden",
+    "writeOwn": "Selbst schreiben",
+    "mergedLabel": "Die richtige Antwort",
+    "saveMerged": "Antwort speichern",
+    "cancel": "Abbrechen",
+    "gone": "(die gespeicherte Antwort wurde gelöscht)"
+  },
+  "teams": {
+    "title": "Teams",
+    "intro": "Ein Team ist eine Gruppe von Agenten mit gemeinsamem Gedächtnis. Agenten lesen und schreiben nur in Teams, in denen sie Mitglied sind.",
+    "empty": "Noch keine Teams.",
+    "name": "Teamname",
+    "create": "Team erstellen",
+    "members": "Mitglieder",
+    "noAgents": "Füge zuerst einen Agenten hinzu.",
+    "delete": "Team löschen",
+    "confirmDelete": "Team und sein Gedächtnis löschen",
+    "keep": "Behalten",
+    "count_one": "{{count}} Agent",
+    "count_other": "{{count}} Agenten"
+  },
+  "tools": {
+    "memory_remember": "Merken",
+    "memory_search": "Gedächtnis durchsuchen",
+    "memory_teams": "Meine Gedächtnis-Teams",
+    "memory_forget": "Vergessen"
+  },
+  "find": {
+    "navHint": "Was sich deine Agenten merken",
+    "navKeywords": "merken, Notizen, Fakten, erinnern"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Woran sich deine Helfer erinnern"
+    },
+    "page": {
+      "title": "Was Helfer sich merken",
+      "intro": "Was deine Helfer für später gespeichert haben. Vergiss alles Falsche oder Private; die Suche eines Helfers findet es dann sofort nicht mehr."
+    },
+    "scope": {
+      "shared": "Von allen Helfern geteilt",
+      "global": "Alle (alle Helfer)"
+    },
+    "item": {
+      "byImport": "Von einem anderen Computer übernommen",
+      "byUnknown": "Von einem Helfer gespeichert"
+    },
+    "settings": {
+      "local": "Dieser Computer",
+      "limits": "Bis zu {{perAgent}} Einträge pro Helfer, {{shared}} geteilt, je {{textChars}} Zeichen."
+    },
+    "merges": {
+      "intro": "Zwei Helfer waren sich bei derselben Sache verschieden sicher. Wähle eine Antwort oder schreib die richtige selbst."
+    },
+    "teams": {
+      "intro": "Ein Team ist eine Gruppe von Helfern mit einem gemeinsamen Gedächtnis. Helfer lesen und schreiben nur in ihren Teams.",
+      "noAgents": "Füge zuerst einen Helfer hinzu."
+    }
+  },
+  "card": {
+    "saved": {
+      "title": "Das merke ich mir",
+      "undo": "Rückgängig",
+      "all": "Alles ansehen, was ich mir merke",
+      "undone": "Vergessen"
+    }
+  }
+}

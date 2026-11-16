@@ -1,0 +1,198 @@
+{
+  "nav": "技能",
+  "page": {
+    "title": "技能",
+    "intro": "您的 agent 可以遵循的作業指南。可針對每個 agent 個別開啟技能；每次編輯都會保留先前的修訂版本。"
+  },
+  "loading": "正在載入技能…",
+  "empty": "尚無技能。請在下方撰寫或安裝一個。",
+  "error": "發生錯誤：{{reason}}",
+  "add": {
+    "title": "新增技能",
+    "method": "方式",
+    "create": "撰寫新技能",
+    "folder": "從伺服器上的資料夾",
+    "git": "從 git URL",
+    "zip": "從壓縮包（.zip）",
+    "name": "名稱",
+    "nameHint": "以連字號連接的小寫單字，例如 supplier-quotes",
+    "description": "使用時機",
+    "descriptionHint": "一行說明，例如「為客戶準備報價時使用」",
+    "instructions": "指示內容",
+    "path": "資料夾路徑",
+    "pathHint": "包含 SKILL.md 的資料夾完整路徑，位於執行 PasaBot 的機器上",
+    "url": "Git URL",
+    "urlHint": "儲存庫的 https 位址；會固定在目前的提交版本",
+    "ref": "分支或標籤（選填）",
+    "subdir": "儲存庫內的資料夾（選填）",
+    "zipFile": "壓縮包檔案",
+    "zipMissing": "請先選擇 .zip 檔案",
+    "safety": "安裝技能時不會執行其中任何內容。對所有 agent 預設皆為關閉。",
+    "createButton": "建立技能",
+    "installButton": "安裝",
+    "builtins": "您已移除的內建技能：",
+    "builtinButton": "重新加入 {{name}}",
+    "open": "新增",
+    "cancel": "取消",
+    "cardHint": "撰寫新技能，或從資料夾、git 網址或 .zip 安裝。",
+    "nameMissing": "請先取個名字",
+    "descriptionMissing": "請先寫明什麼時候用",
+    "instructionsMissing": "請先寫說明"
+  },
+  "item": {
+    "rev": "修訂版本 {{rev}}",
+    "builtin": "內建",
+    "agentMade": "由 agent 建立（{{trust}}）",
+    "off": "關閉",
+    "agents_other": "已為 {{count}} 個 agent 開啟",
+    "open": "開啟",
+    "openNamed": "開啟 {{name}}"
+  },
+  "detail": {
+    "back": "返回所有技能",
+    "source": "來源：{{source}}",
+    "agentMadeNote": "此技能由 agent 撰寫或修改。請先閱讀內容，再為其他 agent 開啟。",
+    "agents": "可使用的對象",
+    "enabled": "技能已開啟",
+    "noAgents": "尚無 agent。",
+    "onFor": "{{name}}",
+    "uninstall": "解除安裝",
+    "confirmUninstall": "是，連同所有修訂版本一併解除安裝",
+    "cancel": "取消"
+  },
+  "edit": {
+    "title": "SKILL.md",
+    "hint": "儲存後會產生新的修訂版本。前置資料中的名稱維持不變。",
+    "label": "技能內容",
+    "files": "檔案：{{files}}",
+    "save": "儲存為新修訂版本",
+    "saved": "已儲存為新修訂版本。",
+    "unchanged": "沒有任何變更。"
+  },
+  "rev": {
+    "title": "修訂版本",
+    "label": "修訂版本 {{rev}}",
+    "current": "目前",
+    "byOwner": "由您建立",
+    "byBuiltin": "內建",
+    "byAgent": "由 {{name}} 建立",
+    "rollback": "還原至 {{rev}}",
+    "rolledBack": "已還原：修訂版本 {{rev}} 的內容現已成為最新修訂版本。"
+  },
+  "perm": {
+    "choose": "此技能可使用的項目",
+    "workspaceOnly": "檔案：僅限其 agent 自己的工作區",
+    "hosts": "可連線的網站",
+    "hostsHint": "每行一個，例如 example.com 或 *.example.com。留空表示不允許。",
+    "messagingAsk": "可傳送訊息給其他人（每則仍會先徵求您的同意）",
+    "before": "將為此技能記錄的權限：",
+    "files": "檔案",
+    "filesWorkspace": "僅限其 agent 的工作區",
+    "filesWorkspacePlus": "其 agent 的工作區，以及 {{paths}}",
+    "filesPaths": "僅限 {{paths}}",
+    "filesNone": "無檔案",
+    "network": "網路",
+    "networkNone": "無網站",
+    "messaging": "傳送訊息給其他人",
+    "messagingYes": "可以，且每則都會先徵求您的同意",
+    "messagingNo": "不可以",
+    "none": "此技能尚未記錄任何權限。",
+    "proposed": "提議的權限",
+    "proposedIntro": "匯入的 agent 或某個 agent 提出了這些要求。在您核准之前不會記錄任何內容。新項目會有標記。",
+    "approve": "核准",
+    "reject": "拒絕",
+    "scope": "僅作記錄：當執行綁定此技能時才會檢查這些限制。一般聊天回合目前不受其限制。",
+    "tools": "工具",
+    "toolsNone": "無工具",
+    "toolsAsk": "可呼叫的工具",
+    "toolsHint": "每行一個。來自外部連線的工具寫成 server/tool。留空表示不允許。",
+    "outside": "外部工具",
+    "new": "新增",
+    "removed": "已移除：{{items}}",
+    "was": "原本：{{what}}",
+    "first": "此技能尚未核准任何項目；以下皆為新項目。",
+    "widens": "這會變更您先前核准的權限。",
+    "changed": "此請求在您開啟後已有變動。請先查看下方的新版本再決定。",
+    "unsaved": "{{name}} 已安裝，但其權限未能儲存（{{reason}}）。",
+    "retry": "重新儲存權限",
+    "uninstall": "移除技能",
+    "hostsTooMany": "最多只能列出 50 個網站。",
+    "hostBad": "每個網站只能寫名稱，例如 example.com 或 *.example.com（不含 https:// 或路徑，最多 253 個字元）。",
+    "toolsTooMany": "最多只能列出 200 個工具。",
+    "toolBad": "每個工具只能寫名稱，不可含空格（最多 200 個字元）。"
+  },
+  "tools": {
+    "skills_list": "列出技能",
+    "skills_read": "閱讀技能",
+    "skills_create": "建立技能",
+    "skills_install": "從 git 安裝技能",
+    "skills_revise": "修訂技能",
+    "skills_uninstall": "解除安裝技能"
+  },
+  "builtin": {
+    "datastore-guide": "需要用 PasaBot 共享資料儲存工具保存其他智慧體也能讀取的結構化記錄（清單、日誌、庫存、價格）時使用。",
+    "site-publisher": "當擁有者想在這台 PasaBot 伺服器上發佈一個小網頁或靜態網站（報告、菜單、可分享的清單）時使用。",
+    "skill-author": "當擁有者請你把一種工作方式做成可重複使用的技能，或改進你之前做的技能時使用。"
+  },
+  "find": {
+    "navHint": "為代理增加技能",
+    "navKeywords": "技能, 能力, 擴充, 知識"
+  },
+  "plain": {
+    "nav": "助理的本領",
+    "find": {
+      "navHint": "教助理學會新的本事"
+    },
+    "page": {
+      "title": "助理的本領",
+      "intro": "你的助理可以照著做的分步指南。按助理逐個開啟；每次修改都會保留舊版本。"
+    },
+    "loading": "正在載入…",
+    "empty": "這裡還沒有。寫一個，或在下面新增。",
+    "add": {
+      "title": "新增一項本領",
+      "create": "寫一項新本領",
+      "folder": "從這台電腦上的資料夾",
+      "safety": "加入時不會執行任何東西。開始時對每個助理都是關閉的。",
+      "createButton": "建立這項本領",
+      "builtins": "你移除的內建本領：",
+      "cardHint": "自己寫一個，或從檔案匯入。"
+    },
+    "item": {
+      "agentMade": "由助理製作（{{trust}}）",
+      "agents_other": "已為 {{count}} 個助理開啟"
+    },
+    "detail": {
+      "back": "返回清單",
+      "agentMadeNote": "這是助理寫的或改過的。為其他助理開啟前請先讀一遍。",
+      "enabled": "已開啟",
+      "noAgents": "還沒有助理。"
+    },
+    "edit": {
+      "label": "它的文字"
+    },
+    "perm": {
+      "choose": "它可以用什麼",
+      "workspaceOnly": "檔案：只限它的助理自己的資料夾",
+      "before": "為它記下的權限：",
+      "filesWorkspace": "只限它的助理自己的資料夾",
+      "filesWorkspacePlus": "它的助理自己的資料夾，加上 {{paths}}",
+      "none": "還沒有記下權限。",
+      "proposedIntro": "一個助理（或從檔案匯入的助理）要求了這些。你核准前不會記下任何東西。新的項目有標記。",
+      "scope": "僅記錄：工作與它綁定時才檢查這些限制。一般聊天暫不受限。",
+      "toolsHint": "每行一個。外部應用程式的工具寫成 應用程式/工具。沒有就留空。",
+      "first": "還沒有核准任何東西；下面全是新的。",
+      "uninstall": "移除"
+    },
+    "builtin": {
+      "datastore-guide": "幫助助理整理清單和紀錄（日誌、庫存、價格），其他助理也能讀。",
+      "site-publisher": "幫助助理做一個小網頁（報告、菜單、要分享的清單），並從這台電腦發布上線。",
+      "skill-author": "幫助助理把一種做事方法變成可重複使用的本領，或改進以前做的。"
+    },
+    "builtinTitle": {
+      "datastore-guide": "整理清單和紀錄",
+      "site-publisher": "做小網頁",
+      "skill-author": "學會新的做事方法"
+    }
+  }
+}

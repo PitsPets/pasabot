@@ -1,0 +1,30 @@
+{
+  "name": "@pasabot/channel-telegram",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "pasabot": {
+    "kind": "channel",
+    "entry": "./dist/index.js",
+    "source": "./src/index.ts"
+  },
+  "dependencies": {
+    "@pasabot/core": "workspace:*",
+    "@pasabot/safe-net": "workspace:*",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@pasabot/testkit": "workspace:*"
+  }
+}

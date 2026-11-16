@@ -1,0 +1,138 @@
+{
+  "nav": "Memory",
+  "page": {
+    "title": "Agent memory",
+    "intro": "What your agents saved for later. Forget anything that is wrong or private; an agent's search stops finding it right away."
+  },
+  "scope": {
+    "label": "Whose memory",
+    "all": "Everyone",
+    "shared": "Shared by all agents",
+    "global": "Global (all agents)",
+    "team": "Team: {{name}}",
+    "private": "Private"
+  },
+  "search": {
+    "label": "Search memory",
+    "placeholder": "Type a word"
+  },
+  "item": {
+    "shared": "Shared",
+    "saved": "Saved {{when}}",
+    "reviewed": "Reviewed",
+    "markReviewed": "Mark reviewed",
+    "forget": "Forget",
+    "confirm": "Forget for good",
+    "cancel": "Keep",
+    "untrusted": "Not from you",
+    "global": "Global",
+    "team": "Team {{name}}",
+    "by": "Saved by {{who}}",
+    "byYou": "Saved by you",
+    "byImport": "Brought in from another server",
+    "byUnknown": "Saved by an agent",
+    "sure": "Sure",
+    "unsure": "Not sure",
+    "key": "Key: {{key}}",
+    "edit": "Edit",
+    "editLabel": "Edit this memory",
+    "save": "Save",
+    "editCancel": "Cancel",
+    "edited": "Saved."
+  },
+  "empty": "Nothing saved here yet.",
+  "loading": "Loading…",
+  "error": "Could not load memory. {{reason}}",
+  "count_one": "{{count}} item",
+  "count_other": "{{count}} items",
+  "settings": {
+    "title": "Memory",
+    "backend": "Where memory is kept",
+    "backendHint": "Changing this does not move items already saved.",
+    "local": "This server",
+    "limits": "Up to {{perAgent}} items per agent, {{shared}} shared, {{textChars}} characters each."
+  },
+  "origin": {
+    "label": "Saved from",
+    "any": "Any chat",
+    "owner": "Your own chats",
+    "others": "Chats you did not start"
+  },
+  "more": "Show more",
+  "countMore_one": "First {{count}} item",
+  "countMore_other": "First {{count}} items",
+  "merges": {
+    "title": "Needs your choice",
+    "intro": "Two agents were sure about different answers for the same thing. Pick one, or write the right answer yourself.",
+    "key": "About: {{key}}",
+    "current": "Saved now",
+    "incoming": "New answer",
+    "keepCurrent": "Keep saved",
+    "useIncoming": "Use new",
+    "writeOwn": "Write my own",
+    "mergedLabel": "The right answer",
+    "saveMerged": "Save answer",
+    "cancel": "Cancel",
+    "gone": "(the saved answer was deleted)"
+  },
+  "teams": {
+    "title": "Teams",
+    "intro": "A team is a group of agents that share one memory. Agents read and write only the teams they are in.",
+    "empty": "No teams yet.",
+    "name": "Team name",
+    "create": "Create team",
+    "members": "Members",
+    "noAgents": "Add an agent first.",
+    "delete": "Delete team",
+    "confirmDelete": "Delete team and its memory",
+    "keep": "Keep",
+    "count_one": "{{count}} agent",
+    "count_other": "{{count}} agents"
+  },
+  "tools": {
+    "memory_remember": "Remember",
+    "memory_search": "Search memory",
+    "memory_teams": "My memory teams",
+    "memory_forget": "Forget"
+  },
+  "find": {
+    "navHint": "What your agents remember",
+    "navKeywords": "remember, notes, facts, recall"
+  },
+  "plain": {
+    "find": {
+      "navHint": "What your helpers remember"
+    },
+    "page": {
+      "title": "What helpers remember",
+      "intro": "What your helpers saved for later. Forget anything that is wrong or private; a helper’s search stops finding it right away."
+    },
+    "scope": {
+      "shared": "Shared by all helpers",
+      "global": "Everyone (all helpers)"
+    },
+    "item": {
+      "byImport": "Brought in from another computer",
+      "byUnknown": "Saved by a helper"
+    },
+    "settings": {
+      "local": "This computer",
+      "limits": "Up to {{perAgent}} items per helper, {{shared}} shared, {{textChars}} characters each."
+    },
+    "merges": {
+      "intro": "Two helpers were sure about different answers for the same thing. Pick one, or write the right answer yourself."
+    },
+    "teams": {
+      "intro": "A team is a group of helpers that share one memory. Helpers read and write only the teams they are in.",
+      "noAgents": "Add a helper first."
+    }
+  },
+  "card": {
+    "saved": {
+      "title": "I’ll remember that",
+      "undo": "Undo",
+      "all": "See everything I remember",
+      "undone": "Forgotten"
+    }
+  }
+}

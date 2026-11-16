@@ -1,0 +1,130 @@
+{
+  "card": {
+    "noImage": "Pas d’image",
+    "seenAt": "vu à {{time}}",
+    "rating": "Noté {{rating}}",
+    "ratingCount": "Noté {{rating}} sur {{count}} avis",
+    "open": "Ouvrir chez {{store}}"
+  },
+  "compare": {
+    "title": "Comparaison de {{count}} produits"
+  },
+  "buy": {
+    "button": "Acheter",
+    "qty_one": "{{count}} article",
+    "qty_many": "{{count}} d’articles",
+    "qty_other": "{{count}} articles",
+    "less": "Un de moins",
+    "more": "Un de plus",
+    "note": "Vous approuvez dans l’app. PasaBot se contente de l’ajouter à votre panier : vous vérifiez ensuite le total et payez vous-même.",
+    "ask": "Demander l’achat",
+    "cancel": "Annuler",
+    "asked": "En attente de votre approbation. La carte d’argent est dans vos approbations.",
+    "error": "Impossible de faire cette demande. Réessayez.",
+    "state": {
+      "running": "Approuvé. Ajout au panier…",
+      "handedOver": "C’est dans votre panier. Vérifiez le total et payez vous-même dans le navigateur.",
+      "denied": "Vous avez refusé, rien n’a été acheté.",
+      "paused": "En pause : la boutique a besoin de vous dans le navigateur.",
+      "stopped": "Arrêté. Rien n’a été ajouté au panier ; le chat explique pourquoi.",
+      "ended": "Cet achat est terminé ; le chat explique comment."
+    }
+  },
+  "settings": {
+    "title": "Achats",
+    "intro": "Où vos agents cherchent des produits. Les prix sont affichés tels que la page de la boutique les montrait, jamais convertis.",
+    "country": "Pays",
+    "webOnly": "Autre pays (recherche web)",
+    "stores": "Boutiques",
+    "fallback": "Pas encore de liste de boutiques pour ce pays. Les agents cherchent sur le web et n’affichent des cartes que pour les pages qui décrivent un produit.",
+    "custom": "Votre boutique",
+    "remove": "Retirer",
+    "rules": "Les agents ne paient jamais, ne passent pas de commandes, ne saisissent pas de données de carte, ne gèrent pas de codes, ne résolvent pas de captchas et ne créent pas de comptes de boutique. Un achat vous demande toujours votre accord d’abord.",
+    "loading": "Chargement…",
+    "error": "Impossible de charger les réglages d’achats."
+  },
+  "custom": {
+    "add": "Ajouter une boutique",
+    "name": "Nom de la boutique",
+    "id": "Identifiant court",
+    "idHint": "Lettres minuscules, chiffres et tirets, comme corner-shop",
+    "home": "Page d’accueil",
+    "search": "Adresse de recherche",
+    "searchHint": "Mettez {query} à l’endroit des mots recherchés",
+    "hosts": "Adresses autorisées",
+    "hostsHint": "Noms d’hôte séparés par des virgules, comme shop.example ou *.example",
+    "currency": "Devise",
+    "currencyHint": "Trois lettres, comme PHP ou USD",
+    "save": "Enregistrer la boutique",
+    "error": "Vérifiez les champs : les adresses doivent être sur les hôtes autorisés et ne contenir aucun code de suivi."
+  },
+  "onboarding": {
+    "title": "Où faites-vous vos achats ?",
+    "body": "Choisissez votre pays pour que vos agents sachent quelles boutiques consulter. Vous pourrez le changer plus tard dans Réglages → Achats."
+  },
+  "orders": {
+    "title": "Commandes",
+    "empty": "Pas encore de commande. Chaque achat que vous approuvez apparaît ici.",
+    "error": "Impossible de charger les commandes.",
+    "line": "{{qty}} × {{item}}",
+    "unknownItem": "Un produit qui n’est plus enregistré",
+    "each": "{{price}} l’unité, tel que vu",
+    "state": {
+      "pending": "En attente de votre accord",
+      "denied": "Vous avez refusé",
+      "running": "Ajout au panier en cours",
+      "handed-over": "Dans votre panier, à vous de payer",
+      "paused": "En pause, a besoin de vous",
+      "stopped": "Arrêtée",
+      "failed": "Échec",
+      "other": "Terminée"
+    }
+  },
+  "tools": {
+    "shop_stores": "Boutiques",
+    "shop_search": "Chercher dans une boutique",
+    "shop_capture": "Enregistrer un produit",
+    "shop_show": "Afficher la fiche d’un produit",
+    "shop_compare": "Comparer des produits",
+    "shop_buy": "Mettre un produit dans le panier"
+  },
+  "server": {
+    "noBrowser": "Le navigateur n’est pas disponible : rien n’a été ajouté au panier.",
+    "storeOff": "Cette boutique est désactivée dans Réglages → Achats : rien n’a été ajouté au panier.",
+    "badAddress": "Cette adresse de produit n’est pas autorisée pour cette boutique.",
+    "stoppedBefore": "Arrêté avant de toucher au navigateur.",
+    "stoppedNothing": "Arrêté. Rien n’a été ajouté au panier.",
+    "priceChanged": "Le prix a changé depuis votre accord : {{before}} avant, {{after}} maintenant. Rien n’a été ajouté au panier. Une nouvelle carte vous redemande au nouveau prix.",
+    "pageDiffers": "L’article ou le prix sur la page de la boutique diffère de ce que vous avez approuvé ({{price}}) : rien n’a été ajouté au panier. Enregistrez-le à nouveau et redemandez.",
+    "openNoCartHandOver": "{{name}} est ouvert sur {{store}}. Ajoutez-en {{quantity}} au panier et payez vous-même.",
+    "openNoCart": "{{name}} est ouvert sur {{store}} dans le navigateur. Cette boutique n’a pas d’étapes de panier : ajoutez-en {{quantity}} et payez vous-même.",
+    "stoppedAfterAdd": "Arrêté après l’ajout au panier ; la page de paiement n’a pas été ouverte.",
+    "checkoutSignUp": "L’adresse de paiement est une page d’inscription.",
+    "stoppedInCart": "Arrêté. L’article est dans le panier ; rien d’autre n’a été fait.",
+    "inCartHandOver": "{{quantity}} × {{name}} est dans votre panier sur {{store}}. Vérifiez et payez vous-même.",
+    "inCart": "{{quantity}} × {{name}} est dans votre panier sur {{store}} et la page de paiement est ouverte dans le navigateur. Vérifiez le total et payez vous-même ; PasaBot ne passe pas la commande.",
+    "stoppedCheck": "Arrêté. Vérifiez le navigateur avant de continuer.",
+    "buyFailed": "L’achat s’est arrêté : {{error}}",
+    "captcha": "La boutique affiche une vérification humaine (un captcha). Ouvrez le navigateur et terminez-la vous-même.",
+    "signIn": "La boutique veut que vous vous connectiez. Ouvrez le navigateur et connectez-vous vous-même (PasaBot ne crée jamais de compte de boutique).",
+    "denied": "Vous avez refusé : le navigateur n’a pas été touché.",
+    "buySummary": "Acheter {{quantity}} × {{name}} sur {{store}}",
+    "buyLabel": "Achat",
+    "askItems": "{{quantity}} × {{name}} — {{price}} l’unité, vu le {{time}}",
+    "askTotal": "{{total}} tel qu’affiché, non définitif",
+    "askPayment": "Vous payez vous-même dans le navigateur ; PasaBot s’arrête au panier"
+  },
+  "find": {
+    "settingsHint": "Laisser les agents acheter, avec votre accord",
+    "settingsKeywords": "achats, acheter, commandes, boutique"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Laisser les assistants acheter, avec votre accord"
+    },
+    "settings": {
+      "intro": "Où vos assistants cherchent des produits. Les prix sont affichés tels que la page de la boutique les montrait, jamais convertis.",
+      "rules": "Les assistants ne paient jamais, ne passent pas de commandes, ne saisissent pas de données de carte, ne gèrent pas de codes, ne résolvent pas de captchas et ne créent pas de comptes de boutique. Un achat vous demande toujours votre accord d’abord."
+    }
+  }
+}

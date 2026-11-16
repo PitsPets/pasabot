@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "ACP agents",
+    "intro": "Install agent CLIs that speak the Agent Client Protocol. Each installed agent becomes a brain you can pick when you create or edit an agent.",
+    "ownerOnly": "Only the owner can manage ACP agents."
+  },
+  "index": {
+    "label": "Registry index",
+    "hint": "An absolute path to a local index file, or an https URL.",
+    "save": "Save",
+    "saved": "Saved.",
+    "none": "Set a registry index to browse agents."
+  },
+  "search": {
+    "label": "Search agents",
+    "placeholder": "Name or description",
+    "empty": "No agent in the index matches.",
+    "install": "Install",
+    "reinstall": "Update",
+    "installing": "Installing…",
+    "installed": "Installed",
+    "remoteCommand": "A remote index can only install packages, not local commands.",
+    "available": "Available in the index"
+  },
+  "installed": {
+    "title": "Installed",
+    "empty": "No ACP agent installed yet.",
+    "remove": "Remove",
+    "removing": "Removing…",
+    "confirmRemove": "Remove {{name}}? Agents can no longer use it as their brain.",
+    "ready": "Ready",
+    "missing": "Not found",
+    "version": "Version {{version}}",
+    "provider": "Brain id",
+    "command": "Command"
+  },
+  "error": {
+    "generic": "Something went wrong ({{code}}).",
+    "in_use": "Still used by an agent. Pick another brain for it first.",
+    "command_missing": "That program is not on this machine.",
+    "command_from_remote": "A remote index cannot install a local command.",
+    "bad_index_source": "Use an absolute file path or an https URL.",
+    "index_unreadable": "Could not read the index.",
+    "index_invalid": "The index is not in the expected format.",
+    "install_failed": "Installing failed.",
+    "no_index": "Set a registry index first."
+  },
+  "find": {
+    "settingsHint": "Add coding agents as brains",
+    "settingsKeywords": "coding, code, brains, CLI, developer"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Use a coding app as a helper's brain"
+    },
+    "settings": {
+      "title": "Coding apps as brains"
+    }
+  }
+}

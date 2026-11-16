@@ -1,0 +1,183 @@
+{
+  "nav": "安全",
+  "stop": {
+    "button": "全部停止",
+    "buttonLabel": "立即停止所有 agent",
+    "stopped": "已暫停",
+    "resume": "重新開始",
+    "failed": "無法停止：{{reason}}",
+    "resumeLabel": "一切都已暫停。重新開始"
+  },
+  "report": {
+    "title": "一切都已暫停",
+    "intro": "在你按下「重新開始」之前，什麼都不會執行。以下是已停止的內容。",
+    "by": "由{{who}}於 {{when}} 停止。",
+    "who": {
+      "owner": "您",
+      "linked-machine": "已連結的機器",
+      "channel": "頻道指令",
+      "automation": "自動化權杖",
+      "agent": "agent",
+      "system": "伺服器"
+    },
+    "empty": "沒有正在執行或等待中的項目。",
+    "kind": {
+      "run": "執行中的回合",
+      "queued": "等待中的回合",
+      "browser": "瀏覽器工作階段",
+      "computer": "電腦工作階段",
+      "voice": "語音通話",
+      "approval": "核准請求",
+      "other": "其他"
+    },
+    "outcome": {
+      "cancelled": "已停止",
+      "held": "已暫停",
+      "closed": "已關閉"
+    },
+    "agent": "代理 {{name}}",
+    "close": "好",
+    "resume": "重新開始",
+    "queue": {
+      "message": "訊息",
+      "task": "任務",
+      "handoff": "移交",
+      "routine": "例行工作",
+      "workflow": "工作流程",
+      "automation-run": "自動化"
+    },
+    "run": "執行 {{id}}",
+    "chat": "聊天 {{id}}"
+  },
+  "resume": {
+    "title": "重新啟動你的智慧體",
+    "intro": "輸入密碼以重新啟動你的智慧體。這樣別人就無法擅自重啟它們。等待中的工作會重新開始。",
+    "password": "密碼",
+    "submit": "重新開始",
+    "cancel": "取消",
+    "wrong": "密碼不正確。",
+    "forbidden": "只有擁有者能重新開始。",
+    "error": "無法重新開始：{{reason}}"
+  },
+  "page": {
+    "title": "安全",
+    "intro": "您的 agent 做了什麼（逐步紀錄），以及管控它們的各項機制。"
+  },
+  "receipts": {
+    "title": "收據",
+    "intro": "每項 agent 任務都會留下收據：包含步驟、工具呼叫、核准與決定者，以及使用的 token。",
+    "empty": "尚無收據。agent 一開始處理工作就會出現。",
+    "steps": "{{count}} 個步驟",
+    "tokens": "輸入 {{input}} / 輸出 {{output}} 個 token",
+    "open": "開啟收據",
+    "back": "所有收據",
+    "timeline": "時間軸",
+    "step": "第 {{n}} 步，共 {{total}} 步",
+    "scrub": "瀏覽各步驟",
+    "export": "匯出",
+    "exportJson": "下載 JSON",
+    "exportHtml": "開啟易讀版本",
+    "exporting": "準備中…",
+    "decidedBy": "由{{who}}決定",
+    "you": "您",
+    "duration": "{{s}} 秒",
+    "cost": "費用 {{amount}} {{currency}}",
+    "state": {
+      "running": "執行中",
+      "done": "已完成",
+      "failed": "失敗",
+      "cancelled": "已停止",
+      "interrupted": "已中斷"
+    },
+    "kind": {
+      "run.started": "已開始",
+      "run.finished": "已結束",
+      "tool.call": "工具呼叫",
+      "tool.result": "工具結果",
+      "permission": "已請求權限",
+      "approval.requested": "已詢問您",
+      "approval.decided": "您的決定",
+      "usage": "已使用 token",
+      "reply": "回覆",
+      "error": "錯誤",
+      "subagent": "協助者",
+      "screenshot": "螢幕截圖",
+      "link": "連結",
+      "refused": "被安全檢查拒絕"
+    },
+    "youNamed": "{{name}}（您）",
+    "nobody": "無人（已逾時）",
+    "someoneElse": "另一個擁有者工作階段"
+  },
+  "retention": {
+    "title": "收據保留時間",
+    "days": "天數",
+    "hint": "較舊的收據及其螢幕截圖將被永久刪除。",
+    "save": "儲存",
+    "saved": "已儲存。已刪除 {{count}} 筆舊收據。"
+  },
+  "scan": {
+    "title": "安裝前檢查技能",
+    "intro": "貼上技能的內容。我們會檢查具風險的項目：下載並執行程式、讀取金鑰或密碼、隱藏文字，以及將資料傳送出去。",
+    "label": "技能內容",
+    "run": "檢查",
+    "running": "檢查中…",
+    "clean": "我們沒有發現任何風險。",
+    "noticed": "我們發現：",
+    "timeout": "檢查耗時過久而已中止。安裝前請自行閱讀該技能。",
+    "error": "檢查失敗：{{reason}}",
+    "line": "第 {{line}} 行",
+    "kind": {
+      "download-and-run": "下載並執行程式",
+      "credential-path": "讀取金鑰、密碼或瀏覽器資料",
+      "hidden-text": "含有隱藏文字",
+      "exfiltration": "可能將您的資料傳送出去",
+      "model-instruction": "試圖對 agent 下達秘密指令"
+    }
+  },
+  "decision": {
+    "proposal": "技能「{{skill}}」要求權限",
+    "proposalText": "請先開啟技能頁面，查看它要求的所有工具、網站和檔案，再做決定。",
+    "proposalWiden": "它要求的比您先前核准的更多。請先開啟技能頁面，查看有哪些變更，再做決定。"
+  },
+  "find": {
+    "navHint": "代理可以做什麼及其紀錄",
+    "navKeywords": "核准, 權限, 允許, 記錄, 稽核"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助理能做什麼，以及紀錄"
+    },
+    "stop": {
+      "buttonLabel": "立即停止所有助理"
+    },
+    "page": {
+      "intro": "你的助理一步步做了什麼，以及管住它們的控制。"
+    },
+    "receipts": {
+      "intro": "助理的每項工作都會留下收據：步驟、用了什麼、你核准了什麼和誰做的決定，以及用量。",
+      "empty": "還沒有收據。助理一開始做事就會出現。",
+      "tokens": "讀取 {{input}} / 寫出 {{output}}",
+      "kind": {
+        "usage": "用量"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "自動執行的東西",
+        "agent": "一個助理",
+        "system": "PasaBot 本身"
+      },
+      "agent": "助理 {{name}}"
+    },
+    "scan": {
+      "title": "加入前先檢查這項本領",
+      "intro": "貼上它的文字。我們會找危險的地方：下載並執行程式、讀取金鑰或密碼、隱藏文字、把資料送出去。",
+      "label": "它的文字",
+      "timeout": "檢查太久，已停止。加入前請自己讀一遍。",
+      "kind": {
+        "model-instruction": "想給助理下祕密命令"
+      }
+    }
+  }
+}

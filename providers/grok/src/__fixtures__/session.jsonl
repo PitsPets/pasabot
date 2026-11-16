@@ -1,0 +1,5 @@
+{"sessionUpdate":"available_commands_update","availableCommands":[]}
+{"sessionUpdate":"plan","entries":[{"content":"Answer","priority":"medium","status":"in_progress"}]}
+{"sessionUpdate":"tool_call","toolCallId":"tc_01","title":"run_terminal_cmd: ls","kind":"execute","status":"in_progress","rawInput":{"command":"ls"}}
+{"sessionUpdate":"tool_call_update","toolCallId":"tc_01","status":"failed","rawOutput":{"exit_code":1,"stderr":"ls: denied"}}
+{"sessionUpdate":"agent_message_chunk","content":{"type":"text","text":"pong"}}

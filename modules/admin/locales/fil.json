@@ -1,0 +1,76 @@
+{
+  "nav": "Admin",
+  "page": {
+    "title": "Admin ng server",
+    "intro": "Ang pagkakakilanlan, kalusugan, mga limit at mga tala ng server na ito. Ikaw lang, ang may-ari, ang nakakakita ng pahinang ito."
+  },
+  "host": {
+    "title": "Ang server na ito",
+    "name": "Pangalan ng server",
+    "save": "I-save ang pangalan",
+    "id": "ID ng server",
+    "hostname": "Pangalan ng host",
+    "system": "Sistema",
+    "uptime": "Bukas na nang",
+    "minutes": "{{count}} min"
+  },
+  "metrics": {
+    "title": "Kalusugan ng makina",
+    "cpu": "CPU",
+    "mem": "Memory",
+    "disk": "Disk",
+    "load": "Load",
+    "none": "Wala pang sukat.",
+    "sample": "Suriin ngayon",
+    "at": "Sinuri noong"
+  },
+  "alerts": {
+    "title": "Mga patakaran sa alerto",
+    "intro": "Makakatanggap ka ng abiso kapag nanatiling lampas sa limit ang isang sukat.",
+    "empty": "Wala pang patakaran sa alerto.",
+    "name": "Pangalan ng patakaran",
+    "metric": "Sukat",
+    "above": "Mag-alerto kapag lampas sa",
+    "forSamples": "Sunod-sunod na suri",
+    "cooldown": "Tahimik nang (minuto)",
+    "add": "Idagdag ang patakaran",
+    "remove": "Alisin",
+    "fired": "Huling alerto",
+    "never": "Hindi pa nag-alerto",
+    "rule": "{{metric}} lampas sa {{above}}"
+  },
+  "limits": {
+    "title": "Mga limit ng agent",
+    "intro": "Hangganan ng memory at CPU sa trabaho ng bawat agent. Iwanang blangko kung walang limit.",
+    "mem": "Memory (MB)",
+    "cpu": "CPU (%)",
+    "save": "I-save ang mga limit",
+    "saved": "Na-save",
+    "usage": "Gamit ngayon: {{mem}} MB, {{cpu}}% CPU",
+    "empty": "Wala pang agent."
+  },
+  "bundle": {
+    "title": "Ilipat ang agent",
+    "intro": "I-export ang agent kasama ang mga chat nito sa isang file, tapos i-import ito dito o sa ibang PasaBot server. Hindi kasama ang mga sikreto, file at folder.",
+    "export": "I-export si {{name}}",
+    "import": "Mag-import ng file ng agent",
+    "imported": "Na-import na. Nasa listahan mo na ang agent at ang mga chat nito.",
+    "failed": "Hindi ma-import ang file na iyan."
+  },
+  "diag": {
+    "title": "Diagnostics",
+    "intro": "Isang zip ng mga sukat ng kalusugan, buod ng mga setting at mga bagong log para sa pag-troubleshoot. Tinatanggal ang mga sikretong value bago ito lumabas ng server.",
+    "download": "I-download ang diagnostics"
+  },
+  "audit": {
+    "title": "Audit log",
+    "filter": "I-filter ayon sa aksyon",
+    "empty": "Walang naitala.",
+    "older": "Ipakita ang mas luma",
+    "by": "ni {{actor}}"
+  },
+  "find": {
+    "navHint": "Pag-aalaga sa PasaBot na ito",
+    "navKeywords": "admin, pagpapanatili, backup, log, update"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "nav": "Flujos de trabajo",
+  "page": {
+    "title": "Flujos de trabajo",
+    "intro": "Un flujo de trabajo encadena pasos: agentes, llamadas a modelos sin herramientas, condiciones, tu aprobación, esperas y resultados. Constrúyelo en el lienzo y luego ejecútalo.",
+    "empty": "Aún no hay flujos de trabajo.",
+    "new": "Nuevo flujo de trabajo",
+    "fromTemplate": "Responder y compartir",
+    "templateHint": "El primer agente responde a tu instrucción y luego todos los demás agentes reciben esa respuesta al mismo tiempo."
+  },
+  "list": {
+    "steps": "{{count}} pasos",
+    "run": "Ejecutar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "deleteConfirm": "¿Eliminar este flujo de trabajo? Las ejecuciones en curso continúan."
+  },
+  "approvals": {
+    "title": "Esperando tu respuesta",
+    "approve": "Aprobar",
+    "reject": "Rechazar",
+    "rejectConfirm": "¿Rechazar? La ejecución se detiene aquí."
+  },
+  "runs": {
+    "title": "Ejecuciones recientes",
+    "empty": "Aún no hay ejecuciones.",
+    "show": "Mostrar pasos",
+    "hide": "Ocultar pasos",
+    "cancel": "Detener ejecución",
+    "loops": "Repeticiones del bucle: {{count}}"
+  },
+  "state": {
+    "running": "En ejecución",
+    "waiting": "En espera",
+    "done": "Listo",
+    "failed": "Fallido",
+    "rejected": "Rechazado",
+    "stopped": "Detenido",
+    "cancelled": "Cancelado",
+    "skipped": "Omitido"
+  },
+  "type": {
+    "agent": "Agente",
+    "model": "Modelo (sin herramientas)",
+    "condition": "Condición",
+    "approval": "Aprobación",
+    "transform": "Transformar",
+    "wait": "Espera",
+    "parallel": "Paralelo",
+    "output": "Resultado"
+  },
+  "editor": {
+    "name": "Nombre del flujo de trabajo",
+    "add": "Agregar un paso",
+    "addHint": "Un paso nuevo se une después del seleccionado.",
+    "save": "Guardar",
+    "back": "Volver a la lista",
+    "saved": "Guardado.",
+    "canvas": "Lienzo del flujo de trabajo",
+    "maxIterations": "Límite de bucles por ejecución",
+    "selected": "Paso seleccionado",
+    "none": "Toca un paso en el lienzo para editarlo.",
+    "label": "Nombre del paso",
+    "remove": "Quitar este paso",
+    "next": "Luego ir a",
+    "branch": "Cuando la condición es",
+    "link": "Agregar vínculo",
+    "links": "Vínculos de salida",
+    "unlink": "Quitar vínculo",
+    "pick": "Elige un paso"
+  },
+  "field": {
+    "agent": "Agente",
+    "pickAgent": "Elige un agente",
+    "prompt": "Instrucción",
+    "op": "Comprobar",
+    "value": "Valor",
+    "message": "Lo que se te pregunta",
+    "template": "Texto ({{input}} = la entrada del paso)",
+    "seconds": "Segundos de espera",
+    "to": "Enviar a",
+    "title": "Título",
+    "channel": "ID de vinculación del canal"
+  },
+  "op": {
+    "contains": "contiene",
+    "not_contains": "no contiene",
+    "equals": "es igual a",
+    "matches": "coincide con el patrón",
+    "empty": "está vacío",
+    "not_empty": "no está vacío"
+  },
+  "branch": {
+    "true": "sí",
+    "false": "no"
+  },
+  "to": {
+    "notification": "Notificación",
+    "channel": "Publicación en un canal"
+  },
+  "template": {
+    "title": "Responder y compartir",
+    "name": "Nombre",
+    "agents": "Agentes (el primero responde)",
+    "prompt": "Instrucción para el primer agente",
+    "followUp": "Qué hacen los demás con la respuesta",
+    "create": "Crear flujo de trabajo"
+  },
+  "tools": {
+    "workflows_list": "Ver mis flujos de trabajo",
+    "workflows_create": "Crear un flujo de trabajo",
+    "workflows_update": "Editar uno de mis flujos de trabajo",
+    "workflows_run": "Ejecutar uno de mis flujos de trabajo",
+    "workflows_delete": "Eliminar uno de mis flujos de trabajo"
+  },
+  "server": {
+    "failed": "El flujo de trabajo «{{name}}» falló",
+    "stopped": "El flujo de trabajo «{{name}}» se detuvo"
+  },
+  "find": {
+    "navHint": "Encadena pasos en un flujo",
+    "navKeywords": "pasos, flujo, cadena, automatizar"
+  },
+  "plain": {
+    "page": {
+      "intro": "Un flujo encadena pasos: ayudantes, respuestas rápidas de un cerebro, condiciones, tu aprobación, esperas y resultados. Constrúyelo en el lienzo y ejecútalo.",
+      "templateHint": "El primer ayudante responde a tu pedido y luego todos los demás reciben esa respuesta a la vez."
+    },
+    "type": {
+      "agent": "Ayudante",
+      "model": "Solo cerebro (sin herramientas)"
+    },
+    "field": {
+      "agent": "Ayudante",
+      "pickAgent": "Elige un ayudante"
+    },
+    "template": {
+      "agents": "Ayudantes (el primero responde)",
+      "prompt": "Pedido para el primer ayudante"
+    }
+  }
+}

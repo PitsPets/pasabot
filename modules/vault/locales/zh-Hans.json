@@ -1,0 +1,119 @@
+{
+  "title": "保险库",
+  "intro": "agent 使用的密钥和密码。agent 只会得到类似 {{example}} 的引用；真实值保存在此服务器上，并会在所有回复、日志和 channel 中隐藏。",
+  "loading": "正在加载 vault…",
+  "error": "无法加载 vault：{{reason}}",
+  "unavailable": "此服务器上的 vault 已锁定（没有口令或钥匙串）。请使用 vault 口令启动服务器后再使用。",
+  "requests": {
+    "title": "agent 请求密钥",
+    "asks": "{{agent}} 请求 {{name}}",
+    "untrusted": "发起这次请求的对话并非由你开启。请先确认确有必要，再填写。",
+    "fill": "提供密钥",
+    "decline": "拒绝",
+    "filled": "{{agent}} 现在可以使用 {{reference}}。",
+    "declined": "请求已拒绝。"
+  },
+  "secrets": {
+    "title": "已保存的密钥",
+    "empty": "暂无密钥。",
+    "shared": "共享（服务器）",
+    "for": "属于 {{agent}}",
+    "remove": "移除",
+    "confirmRemove": "移除 {{name}}？使用它的 agent 将无法工作，直到你重新添加。",
+    "module": "另有 {{count}} 个条目属于 channel 和密码管理器。",
+    "backend_local": "保存在本地",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "{{brain}} 的密钥。在其上运行的代理可以看到此密钥。"
+  },
+  "add": {
+    "title": "添加密钥",
+    "open": "添加密钥",
+    "name": "名称",
+    "nameHint": "字母、数字、_ . -（agent 会写作 {{example}}）。",
+    "who": "谁可以使用",
+    "shared": "共享（仅服务器，agent 不可用）",
+    "source": "值的来源",
+    "source_local": "输入值",
+    "source_bitwarden": "Bitwarden 条目",
+    "source_1password": "1Password 引用",
+    "value": "值",
+    "valueHint": "只写不读：之后不会再显示。",
+    "ref_bitwarden": "Bitwarden 条目 ID",
+    "refHint_bitwarden": "条目 ID，或 ID/字段（password、username、notes、totp 或自定义字段）。",
+    "ref_1password": "密钥引用",
+    "refHint_1password": "例如 op://Private/GitHub/token",
+    "save": "保存",
+    "cancel": "取消",
+    "saved": "已保存 {{name}}。",
+    "brainOption": "{{brain}} 的密钥"
+  },
+  "backends": {
+    "title": "密码管理器",
+    "intro": "PasaBot 通过此服务器上的 Bitwarden（bw）或 1Password（op）命令行工具读取值。这里只保存引用。",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "会话密钥（来自 bw unlock）",
+    "token_1password": "服务账户令牌",
+    "tokenHint": "只写不读。留空并保存即可移除。",
+    "set": "密钥已保存",
+    "notSet": "未保存密钥",
+    "save": "保存密钥",
+    "test": "测试",
+    "state_ready": "就绪",
+    "state_locked": "已锁定或未登录",
+    "state_not_installed": "服务器上未安装命令行工具",
+    "state_unsafe_bin": "已停用（工具位置不安全）",
+    "unsafeHint": "已停用：此服务器的用户可以修改该工具的文件，agent 可能将其替换。请将其安装到系统目录（或将 PASABOT_BW_BIN / PASABOT_OP_BIN 设为此类路径）后重启。",
+    "state_error": "无法工作"
+  },
+  "rotate": {
+    "title": "轮换 vault 密钥",
+    "intro": "生成新的加密密钥，并用它重新加密所有密钥。值不会改变。",
+    "button": "轮换密钥",
+    "confirm": "现在用新密钥重新加密所有密钥吗？",
+    "yes": "立即轮换",
+    "cancel": "取消",
+    "done": "已用新密钥重新加密 {{count}} 个密钥。",
+    "last": "上次轮换：{{when}}。"
+  },
+  "tools": {
+    "vault_request_secret": "向所有者索取密钥",
+    "vault_list_secrets": "列出我的密钥"
+  },
+  "server": {
+    "asksForKey": "{{agent}} 请求一个密钥：{{name}}"
+  },
+  "find": {
+    "settingsHint": "密码和密钥，安全保管",
+    "settingsKeywords": "密码, 密钥, 机密, 令牌, 凭据"
+  },
+  "plain": {
+    "title": "已保存的秘密",
+    "intro": "助手 使用的密钥和密码。助手 只会得到类似 {{example}} 的引用；真实值保存在此服务器上，并会在所有回复、日志和 channel 中隐藏。",
+    "backends": {
+      "intro": "PasaBot 通过此服务器上的 Bitwarden（bw）或 1Password（op）命令行工具读取值。这里只保存引用。",
+      "token_1password": "服务账户令牌"
+    },
+    "rotate": {
+      "title": "轮换 vault 密钥"
+    },
+    "secrets": {
+      "title": "这里保存的内容",
+      "forBrain": "{{brain}} 的密钥。用它思考的助手可以使用这个密钥。",
+      "confirmRemove": "删除 {{name}}？用到它的助手会停止工作，直到你重新添加。"
+    },
+    "requests": {
+      "title": "正在请求密钥的助手"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} 需要你的 {{name}} 密钥",
+      "text": "{{agent}} 能用它，但永远看不到。只有你能在保险箱里提供。",
+      "give": "提供密钥",
+      "given": "密钥已保存，现在可以用了",
+      "declined": "未提供"
+    }
+  }
+}

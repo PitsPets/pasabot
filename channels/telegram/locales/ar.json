@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "رمز البوت",
+    "botTokenHint": "من البوت الذي أنشأته في Telegram. يُخزَّن في المخزن السري ولا يُعرض مرة أخرى.",
+    "apiBase": "عنوان Bot API",
+    "apiBaseHint": "اتركه كما هو ما لم تكن تشغّل خادم Bot API خاصًا بك."
+  },
+  "link": {
+    "howTo": "افتح محادثة مباشرة مع البوت وأرسل: /link {{code}}",
+    "dmOnly": "رمز الربط يعمل فقط في محادثة مباشرة مع البوت."
+  },
+  "status": {
+    "connected": "متصل",
+    "reconnecting": "جارٍ إعادة الاتصال…",
+    "auth_failed": "تم رفض رمز البوت",
+    "stopped": "متوقف"
+  }
+}

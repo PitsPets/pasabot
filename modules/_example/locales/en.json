@@ -1,0 +1,15 @@
+{
+  "nav": "Example",
+  "page": {
+    "title": "Example module",
+    "body": "Every slot of the Module SDK is filled by this module."
+  },
+  "settings": "Example settings",
+  "composer": "Insert a note",
+  "dock": "Example panel",
+  "onboarding": "Example onboarding step",
+  "note": "Note",
+  "tools": {
+    "example_echo": "Echo"
+  }
+}

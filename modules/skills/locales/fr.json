@@ -1,0 +1,202 @@
+{
+  "nav": "Compétences",
+  "page": {
+    "title": "Compétences",
+    "intro": "Des guides que vos agents peuvent suivre. Activez une compétence pour chaque agent ; chaque modification conserve les révisions précédentes."
+  },
+  "loading": "Chargement des compétences…",
+  "empty": "Aucune compétence pour l’instant. Rédigez-en une ou installez-en une ci-dessous.",
+  "error": "Une erreur s’est produite : {{reason}}",
+  "add": {
+    "title": "Ajouter une compétence",
+    "method": "Méthode",
+    "create": "Rédiger une nouvelle compétence",
+    "folder": "Depuis un dossier du serveur",
+    "git": "Depuis une URL git",
+    "zip": "Depuis un paquet (.zip)",
+    "name": "Nom",
+    "nameHint": "Mots en minuscules reliés par des tirets, p. ex. devis-fournisseurs",
+    "description": "Quand l’utiliser",
+    "descriptionHint": "Une ligne, p. ex. « À utiliser pour préparer un devis pour un client »",
+    "instructions": "Instructions",
+    "path": "Chemin du dossier",
+    "pathHint": "Le chemin complet d’un dossier contenant un SKILL.md, sur la machine où PasaBot fonctionne",
+    "url": "URL git",
+    "urlHint": "Une adresse https vers un dépôt ; elle est figée sur le commit actuel",
+    "ref": "Branche ou tag (facultatif)",
+    "subdir": "Dossier dans le dépôt (facultatif)",
+    "zipFile": "Fichier du paquet",
+    "zipMissing": "Choisissez d’abord un fichier .zip",
+    "safety": "Rien dans une compétence n’est exécuté à l’installation. Elle démarre désactivée pour chaque agent.",
+    "createButton": "Créer la compétence",
+    "installButton": "Installer",
+    "builtins": "Compétences intégrées que vous avez retirées :",
+    "builtinButton": "Rajouter {{name}}",
+    "open": "Ajouter",
+    "cancel": "Annuler",
+    "cardHint": "Écrivez une nouvelle compétence ou installez-en une depuis un dossier, une URL git ou un .zip.",
+    "nameMissing": "Donnez-lui d’abord un nom",
+    "descriptionMissing": "Dites d’abord quand l’utiliser",
+    "instructionsMissing": "Écrivez d’abord les instructions"
+  },
+  "item": {
+    "rev": "Révision {{rev}}",
+    "builtin": "Intégrée",
+    "agentMade": "Créée par un agent ({{trust}})",
+    "off": "Désactivée",
+    "agents_one": "Activée pour {{count}} agent",
+    "agents_many": "Activée pour {{count}} d’agents",
+    "agents_other": "Activée pour {{count}} agents",
+    "open": "Ouvrir",
+    "openNamed": "Ouvrir {{name}}"
+  },
+  "detail": {
+    "back": "Retour à toutes les compétences",
+    "source": "Source : {{source}}",
+    "agentMadeNote": "Un agent a rédigé ou modifié cette compétence. Lisez-la avant de l’activer pour d’autres agents.",
+    "agents": "Qui peut l’utiliser",
+    "enabled": "Compétence activée",
+    "noAgents": "Aucun agent pour l’instant.",
+    "onFor": "{{name}}",
+    "uninstall": "Désinstaller",
+    "confirmUninstall": "Oui, désinstaller avec toutes les révisions",
+    "cancel": "Annuler"
+  },
+  "edit": {
+    "title": "SKILL.md",
+    "hint": "L’enregistrement crée une nouvelle révision. Le nom dans l’en-tête reste inchangé.",
+    "label": "Texte de la compétence",
+    "files": "Fichiers : {{files}}",
+    "save": "Enregistrer comme nouvelle révision",
+    "saved": "Enregistré comme nouvelle révision.",
+    "unchanged": "Aucun changement."
+  },
+  "rev": {
+    "title": "Révisions",
+    "label": "Révision {{rev}}",
+    "current": "actuelle",
+    "byOwner": "par vous",
+    "byBuiltin": "intégrée",
+    "byAgent": "par {{name}}",
+    "rollback": "Revenir à {{rev}}",
+    "rolledBack": "Retour effectué : le texte de la révision {{rev}} est maintenant la révision la plus récente."
+  },
+  "perm": {
+    "choose": "Ce que cette compétence peut utiliser",
+    "workspaceOnly": "Fichiers : uniquement l’espace de travail de son agent",
+    "hosts": "Sites web accessibles",
+    "hostsHint": "Un par ligne, comme example.com ou *.example.com. Laissez vide pour aucun.",
+    "messagingAsk": "Peut envoyer des messages à d’autres personnes (chacun vous demande d’abord votre accord)",
+    "before": "Autorisations à enregistrer pour cette compétence :",
+    "files": "Fichiers",
+    "filesWorkspace": "Uniquement l’espace de travail de son agent",
+    "filesWorkspacePlus": "L’espace de travail de son agent, plus {{paths}}",
+    "filesPaths": "Uniquement {{paths}}",
+    "filesNone": "Aucun fichier",
+    "network": "Réseau",
+    "networkNone": "Aucun site web",
+    "messaging": "Messages à d’autres personnes",
+    "messagingYes": "Oui, et chacun vous demande d’abord votre accord",
+    "messagingNo": "Non",
+    "none": "Aucune autorisation enregistrée pour cette compétence.",
+    "proposed": "Autorisations proposées",
+    "proposedIntro": "Un agent importé ou un agent a demandé ces autorisations. Rien n’est enregistré tant que vous n’approuvez pas. Les nouveaux éléments sont signalés.",
+    "approve": "Approuver",
+    "reject": "Refuser",
+    "scope": "Enregistrées uniquement : ces limites sont vérifiées quand une exécution est liée à cette compétence. Les échanges de chat ordinaires n’y sont pas encore soumis.",
+    "tools": "Outils",
+    "toolsNone": "Aucun outil",
+    "toolsAsk": "Outils qu’elle peut appeler",
+    "toolsHint": "Un par ligne. Un outil issu d’une connexion externe s’écrit serveur/outil. Laissez vide pour aucun.",
+    "outside": "outil externe",
+    "new": "nouveau",
+    "removed": "Retiré : {{items}}",
+    "was": "Avant : {{what}}",
+    "first": "Rien n’est encore approuvé pour cette compétence ; tout ce qui suit est nouveau.",
+    "widens": "Cela modifie les autorisations que vous avez approuvées auparavant.",
+    "changed": "Cette demande a changé après son ouverture. Consultez la nouvelle version ci-dessous avant de décider.",
+    "unsaved": "{{name}} est installée, mais ses autorisations n’ont pas été enregistrées ({{reason}}).",
+    "retry": "Enregistrer à nouveau les autorisations",
+    "uninstall": "Retirer la compétence",
+    "hostsTooMany": "Indiquez 50 sites web au maximum.",
+    "hostBad": "Écrivez chaque site web uniquement par son nom, comme example.com ou *.example.com (sans https:// ni chemin, 253 caractères au maximum).",
+    "toolsTooMany": "Indiquez 200 outils au maximum.",
+    "toolBad": "Écrivez chaque outil uniquement par son nom, sans espaces (200 caractères au maximum)."
+  },
+  "tools": {
+    "skills_list": "Lister les compétences",
+    "skills_read": "Lire une compétence",
+    "skills_create": "Créer une compétence",
+    "skills_install": "Installer une compétence depuis git",
+    "skills_revise": "Réviser une compétence",
+    "skills_uninstall": "Désinstaller une compétence"
+  },
+  "builtin": {
+    "datastore-guide": "À utiliser pour tenir des données structurées (listes, journaux, inventaires, prix) que d’autres agents peuvent aussi lire, avec les outils partagés de base de données de PasaBot.",
+    "site-publisher": "À utiliser quand le propriétaire veut publier une petite page web ou un site statique (un rapport, un menu, une liste à partager) sur ce serveur PasaBot.",
+    "skill-author": "À utiliser quand le propriétaire vous demande de transformer une façon de travailler en compétence réutilisable, ou d’améliorer une compétence créée plus tôt."
+  },
+  "find": {
+    "navHint": "Des capacités en plus pour vos agents",
+    "navKeywords": "compétences, capacités, extensions, savoir-faire"
+  },
+  "plain": {
+    "nav": "Compétences des assistants",
+    "find": {
+      "navHint": "Apprenez de nouvelles choses à vos assistants"
+    },
+    "page": {
+      "title": "Compétences des assistants",
+      "intro": "Des guides pas à pas que vos assistants peuvent suivre. Activez chacun par assistant ; chaque modification garde les versions précédentes."
+    },
+    "loading": "Chargement…",
+    "empty": "Rien pour l’instant. Écrivez-en une ou ajoutez-en une ci-dessous.",
+    "add": {
+      "title": "Ajouter une compétence",
+      "create": "Écrire une nouvelle compétence",
+      "folder": "Depuis un dossier de cet ordinateur",
+      "safety": "Rien ne s’exécute quand vous l’ajoutez. Elle commence désactivée pour chaque assistant.",
+      "createButton": "Créer cette compétence",
+      "builtins": "Compétences intégrées que vous avez retirées :",
+      "cardHint": "Écrivez-la vous-même, ou apportez-la depuis un fichier."
+    },
+    "item": {
+      "agentMade": "Créée par un assistant ({{trust}})",
+      "agents_one": "Activée pour {{count}} assistant",
+      "agents_many": "Activée pour {{count}} assistants",
+      "agents_other": "Activée pour {{count}} assistants"
+    },
+    "detail": {
+      "back": "Retour à la liste",
+      "agentMadeNote": "Un assistant l’a écrite ou modifiée. Lisez-la avant de l’activer pour d’autres assistants.",
+      "enabled": "Elle est activée",
+      "noAgents": "Pas encore d’assistant."
+    },
+    "edit": {
+      "label": "Son texte"
+    },
+    "perm": {
+      "choose": "Ce qu’elle peut utiliser",
+      "workspaceOnly": "Fichiers : seulement le dossier de son assistant",
+      "before": "Autorisations à noter pour elle :",
+      "filesWorkspace": "Seulement le dossier de son assistant",
+      "filesWorkspacePlus": "Le dossier de son assistant, plus {{paths}}",
+      "none": "Aucune autorisation notée pour l’instant.",
+      "proposedIntro": "Un assistant, ou un assistant importé d’un fichier, a demandé ceci. Rien n’est noté avant votre accord. Les nouveautés sont signalées.",
+      "scope": "Seulement noté : ces limites sont vérifiées quand une tâche y est liée. Les discussions ordinaires ne sont pas encore limitées.",
+      "toolsHint": "Un par ligne. Un outil d’une appli externe s’écrit appli/outil. Laissez vide pour aucun.",
+      "first": "Rien n’est encore approuvé ; tout ce qui suit est nouveau.",
+      "uninstall": "La retirer"
+    },
+    "builtin": {
+      "datastore-guide": "Aide un assistant à tenir des listes et registres soignés (journaux, stock, prix) que d’autres assistants peuvent lire aussi.",
+      "site-publisher": "Aide un assistant à faire une petite page web (un rapport, un menu, une liste à partager) et à la mettre en ligne depuis cet ordinateur.",
+      "skill-author": "Aide un assistant à transformer une façon de travailler en compétence réutilisable, ou à améliorer une qu’il a faite."
+    },
+    "builtinTitle": {
+      "datastore-guide": "Tenir des listes et registres",
+      "site-publisher": "Faire de petites pages web",
+      "skill-author": "Apprendre de nouvelles façons de travailler"
+    }
+  }
+}

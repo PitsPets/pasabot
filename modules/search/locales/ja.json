@@ -1,0 +1,24 @@
+{
+  "nav": "検索",
+  "title": "メッセージを検索",
+  "label": "チャットを検索",
+  "placeholder": "キーワードを入力",
+  "hint": "参加しているすべてのチャットから、新しい順にキーワードを検索します。",
+  "empty": "見つかりませんでした。",
+  "untitled": "チャット",
+  "count_other": "{{count}}件のメッセージ",
+  "author": {
+    "user": "ユーザー",
+    "agent": "エージェント",
+    "system": "PasaBot",
+    "external": "外部"
+  },
+  "error": "検索に失敗しました。{{reason}}",
+  "tools": {
+    "search_messages": "メッセージを検索"
+  },
+  "find": {
+    "navHint": "チャット内のメッセージを探す",
+    "navKeywords": "検索, 探す, メッセージ, 履歴"
+  }
+}

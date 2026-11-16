@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "Token ng bot",
+    "botTokenHint": "Galing sa bot na ginawa mo sa Telegram. Nakatago sa vault at hindi na ipapakita ulit.",
+    "apiBase": "Address ng Bot API",
+    "apiBaseHint": "Huwag nang baguhin maliban kung may sarili kang Bot API server."
+  },
+  "link": {
+    "howTo": "Magbukas ng direct chat sa bot mo at i-send ito: /link {{code}}",
+    "dmOnly": "Gumagana lang ang link code sa direct chat kasama ang bot."
+  },
+  "status": {
+    "connected": "Nakakonekta",
+    "reconnecting": "Kumokonekta ulit…",
+    "auth_failed": "Hindi tinanggap ang token ng bot",
+    "stopped": "Nakahinto"
+  }
+}

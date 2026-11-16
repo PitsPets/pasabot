@@ -1,0 +1,112 @@
+{
+  "nav": "Server MCP",
+  "page": {
+    "title": "Server MCP",
+    "intro": "Server alat dari luar yang bisa dipakai agent Anda. Tambahkan, uji, aktifkan, lalu pilih agent mana yang boleh memakainya."
+  },
+  "loading": "Memuat…",
+  "empty": "Belum ada server MCP. Tambahkan di sini, atau pasang connector.",
+  "transport": {
+    "stdio": "Perintah di mesin ini",
+    "http": "Alamat web"
+  },
+  "level": {
+    "none": "Tersembunyi",
+    "use": "Dapat memakai",
+    "manage": "Dapat mengelola",
+    "inherit": "Default ({{level}})"
+  },
+  "access": {
+    "title": "Siapa yang dapat memakai",
+    "hint": "Agent yang disembunyikan tidak dapat melihat server ini. Agent yang dapat mengelolanya boleh mengganti namanya atau mematikannya, dan tetap meminta izin Anda dulu.",
+    "all": "Semua agent"
+  },
+  "server": {
+    "on": "Aktif",
+    "off": "Nonaktif",
+    "fromConnector": "Dari connector",
+    "tools_other": "{{count}} alat",
+    "testFailed": "Uji gagal",
+    "secrets": "Rahasia disimpan di vault: {{names}}",
+    "test": "Uji",
+    "turnOn": "Aktifkan",
+    "turnOff": "Matikan",
+    "remove": "Hapus",
+    "removeConfirm": "Ya, hapus"
+  },
+  "add": {
+    "open": "Tambah server MCP",
+    "title": "Server MCP baru",
+    "name": "Nama",
+    "transport": "Cara menjangkaunya",
+    "command": "Perintah",
+    "commandHint": "Program yang dijalankan, mis. npx atau docker. Dimulai tanpa shell.",
+    "args": "Argumen",
+    "argsHint": "Satu per baris.",
+    "env": "Pengaturan (bukan rahasia)",
+    "envHint": "Satu NAME=value per baris.",
+    "url": "Alamat (https://…)",
+    "secrets": "Pengaturan rahasia",
+    "secretHeaders": "Header rahasia",
+    "secretsHint": "Disimpan di vault. Anda tidak dapat membacanya kembali di sini, dan agent tidak pernah melihatnya.",
+    "secretName": "Nama",
+    "headerName": "Header",
+    "secretValue": "Nilai",
+    "anotherSecret": "Tambah lagi",
+    "save": "Tambah server",
+    "cancel": "Batal"
+  },
+  "classes": {
+    "title": "Fungsi setiap alat",
+    "hint": "Pembayaran dan pesan ke orang lain selalu meminta izin Anda dulu, di setiap tingkat kepercayaan. Jenis tiap alat ditebak dari namanya saat didaftarkan; perbaiki di sini jika tebakannya salah.",
+    "default": "Default: {{class}}",
+    "money": "Uang (membeli, membayar)",
+    "outbound-message": "Pesan ke orang lain",
+    "delete": "Penghapusan",
+    "publish": "Publikasi",
+    "none": "Tidak ada yang khusus",
+    "alwaysAsks": "Selalu bertanya"
+  },
+  "tools": {
+    "tools_find": "Cari alat",
+    "tools_describe": "Jelaskan alat",
+    "tools_invoke": "Pakai alat dari luar",
+    "mcp_servers": "Daftar server MCP",
+    "mcp_server_update": "Ubah server MCP"
+  },
+  "find": {
+    "navHint": "Server alat yang bisa dipanggil agen",
+    "navKeywords": "alat, server, plugin, integrasi"
+  },
+  "plain": {
+    "nav": "Aplikasi dan alat untuk pembantu",
+    "find": {
+      "navHint": "Aplikasi tambahan yang bisa dipakai pembantumu untukmu"
+    },
+    "page": {
+      "title": "Aplikasi dan alat untuk pembantu",
+      "intro": "Aplikasi dan alat luar yang bisa dipakai pembantumu. Tambahkan, uji, nyalakan, lalu pilih pembantu mana yang boleh memakainya."
+    },
+    "empty": "Belum ada apa-apa. Tambahkan di sini, atau tambahkan aplikasi siap pakai.",
+    "access": {
+      "hint": "Pembantu tersembunyi tidak bisa melihatnya. Pembantu yang boleh mengelola bisa mengganti nama atau mematikannya, dan tetap bertanya dulu.",
+      "all": "Semua pembantu"
+    },
+    "add": {
+      "open": "Tambah aplikasi atau alat",
+      "title": "Aplikasi atau alat baru",
+      "secretsHint": "Disimpan aman di komputer ini. Kamu tidak bisa membacanya lagi di sini, dan pembantu tidak pernah melihatnya.",
+      "save": "Tambahkan",
+      "command": "Cara membukanya",
+      "commandHint": "Halaman penyiapan aplikasinya sendiri memberi tahu apa yang ditulis di sini.",
+      "args": "Detail tambahan"
+    },
+    "transport": {
+      "stdio": "Program di komputer ini",
+      "http": "Alamat di web"
+    },
+    "server": {
+      "fromConnector": "Aplikasi siap pakai"
+    }
+  }
+}

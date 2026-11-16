@@ -1,0 +1,74 @@
+{
+  "nav": "Données",
+  "page": {
+    "title": "Données partagées",
+    "intro": "Des tables partagées par vos agents. Chaque agent peut lire toutes les tables : les notes privées ont donc leur place dans la mémoire d'un agent, pas ici.",
+    "size": "{{used}} utilisés sur {{max}}",
+    "details": "L'agent qui a créé une table ajoute et modifie ses lignes librement ; les modifications d'un autre agent suivent vos règles d'approbation pour cet agent (la suppression de lignes vous demande toujours votre accord). Seul son créateur peut remodeler ou supprimer une table, et la suppression vous demande toujours votre accord.",
+    "more": "En savoir plus"
+  },
+  "refresh": "Actualiser",
+  "loading": "Chargement…",
+  "empty": "Aucune table pour l'instant. Lorsqu'un agent en crée une, elle apparaît ici.",
+  "error": "Impossible de charger les données. {{reason}}",
+  "table": {
+    "rows_one": "{{count}} ligne",
+    "rows_many": "{{count}} de lignes",
+    "rows_other": "{{count}} lignes",
+    "columns_one": "{{count}} colonne",
+    "columns_many": "{{count}} de colonnes",
+    "columns_other": "{{count}} colonnes",
+    "by": "Créée par {{name}}",
+    "byUnknown": "Créateur inconnu",
+    "removedAgent": "un agent supprimé",
+    "ddl": "Sa définition",
+    "showRows": "Afficher les lignes",
+    "hideRows": "Masquer les lignes",
+    "rowsOf": "Lignes de {{name}}"
+  },
+  "cell": {
+    "null": "vide",
+    "blob": "(données de fichier)"
+  },
+  "result": {
+    "count_one": "{{count}} ligne",
+    "count_many": "{{count}} de lignes",
+    "count_other": "{{count}} lignes",
+    "countMore_one": "{{count}} ligne affichée ; il y en a d'autres",
+    "countMore_many": "{{count}} de lignes affichées ; il y en a d'autres",
+    "countMore_other": "{{count}} premières lignes ; il y en a d'autres"
+  },
+  "query": {
+    "title": "Faire une recherche",
+    "label": "Requête (lecture seule)",
+    "hint": "Une seule instruction SELECT. Cet écran ne modifie jamais les données.",
+    "run": "Exécuter la requête",
+    "result": "Résultat de la requête",
+    "error": "La requête n'a pas pu s'exécuter. {{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "Lister les tables partagées",
+    "datastore_create_table": "Créer une table partagée",
+    "datastore_query": "Interroger les tables partagées",
+    "datastore_write": "Écrire des lignes",
+    "datastore_alter_table": "Modifier une table que vous avez créée",
+    "datastore_drop_table": "Supprimer une table que vous avez créée"
+  },
+  "find": {
+    "navHint": "Tableaux et données de vos agents",
+    "navKeywords": "données, tableaux, base de données, enregistrements"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Tableaux et listes que gardent vos assistants"
+    },
+    "page": {
+      "intro": "Les tableaux que partagent vos assistants. Chaque assistant peut lire chaque tableau : les notes privées vont dans la mémoire d’un assistant, pas ici.",
+      "details": "L’assistant qui a créé un tableau ajoute et modifie ses lignes librement ; les changements d’un autre assistant suivent vos règles d’approbation pour lui (supprimer des lignes vous est toujours demandé). Seul le créateur peut remodeler ou supprimer un tableau, et la suppression vous est toujours demandée."
+    },
+    "empty": "Pas encore de tableau. Quand un assistant en crée un, il apparaît ici.",
+    "table": {
+      "removedAgent": "un assistant supprimé"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "title": "Mga channel",
+    "intro": "Kausapin ang agent mula sa Telegram, Discord, Slack o WhatsApp. Bawat chat sa app ay nagiging sariling chat sa PasaBot.",
+    "empty": "Wala pang channel.",
+    "loading": "Nilo-load ang mga channel…",
+    "error": "Hindi ma-load ang mga channel: {{reason}}"
+  },
+  "add": {
+    "title": "Magdagdag ng channel",
+    "open": "Magdagdag ng channel",
+    "kind": "App",
+    "label": "Pangalan (opsyonal)",
+    "labelHint": "Dito lang makikita, hal. “Bot ng family group”.",
+    "agent": "Agent na sasagot",
+    "token": "Bot token",
+    "tokenHint": "Isang beses lang i-paste. Itatago ito sa vault at hindi na ipapakita ulit.",
+    "allowed": "Mga puwedeng mag-message (opsyonal)",
+    "allowedHint": "Mga user id sa platform, isa bawat linya o hiwalay ng kuwit. Iwanang blangko para ikaw lang ang makausap nito.",
+    "submit": "Idagdag ang channel",
+    "cancel": "Kanselahin",
+    "noKinds": "Walang naka-install na channel app sa server na ito.",
+    "noAgents": "Gumawa muna ng agent.",
+    "pairingNext": "Pagkatapos idagdag, ili-link mo ito sa pag-scan ng QR code gamit ang phone mo."
+  },
+  "kind": {
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "whatsapp": "WhatsApp",
+    "fake": "Test na channel",
+    "agentchat": "AgentChat"
+  },
+  "status": {
+    "connected": "Konektado",
+    "reconnecting": "Kumokonekta ulit",
+    "auth_failed": "Tinanggihan ang token",
+    "stopped": "Nakahinto",
+    "error": "May error",
+    "starting": "Nagsisimula",
+    "unavailable": "Hindi naka-install ang app",
+    "disabled": "Naka-off",
+    "not_linked": "Hindi pa naka-link"
+  },
+  "binding": {
+    "agent": "Sumasagot bilang",
+    "lastEvent": "Huling mensahe",
+    "never": "wala pa",
+    "dropped_one": "{{count}} mensahe mula sa hindi kilala ang hindi pinansin",
+    "dropped_other": "{{count}} mensahe mula sa hindi kilala ang hindi pinansin",
+    "owner": "Account mo",
+    "ownerNone": "Hindi pa naka-link: ang naka-link o pinayagan lang ang sinasagot.",
+    "ownerLinked": "Naka-link kay {{name}} ({{id}})",
+    "places": "Mga chat",
+    "placesNone": "Wala pang chat. I-message ang bot para magsimula.",
+    "openChat": "Buksan ang chat",
+    "allowed": "Mga puwedeng mag-message",
+    "allowedNone": "Ikaw lang",
+    "token": "Bot token",
+    "tokenSet": "Nakatago sa vault",
+    "tokenReplace": "Palitan ang token",
+    "tokenNew": "Bagong bot token",
+    "save": "I-save",
+    "saved": "Na-save",
+    "restart": "Ikonekta ulit",
+    "turnOff": "I-off",
+    "turnOn": "I-on",
+    "remove": "Alisin",
+    "removeConfirm": "Alisin ang channel na ito? Hindi na sasagot ang bot; maiiwan ang mga chat nito sa PasaBot.",
+    "confirm": "Oo, alisin",
+    "unlink": "I-unlink",
+    "error": "Huling error: {{error}}",
+    "which": "Alin"
+  },
+  "link": {
+    "start": "I-link ang account ko",
+    "again": "Bagong link code",
+    "how": "Ipadala ito sa bot sa direct message sa loob ng 10 minuto:",
+    "warn": "Sa direct message lang. Kapag na-post sa group, makakansela ang code.",
+    "copy": "Kopyahin",
+    "copied": "Nakopya na",
+    "ownNumber": "Sariling number: ipadala ang code sa sarili mong “Message yourself” chat."
+  },
+  "field": {
+    "botToken": "Bot token",
+    "signingSecret": "Signing secret"
+  },
+  "option": {
+    "ownNumber": {
+      "label": "Aling number",
+      "off": "Hiwalay na number para sa agent",
+      "on": "Sarili kong number (kausap ko siya sa “Message yourself”)"
+    }
+  },
+  "events": {
+    "title": "Events URL",
+    "how": "I-paste ito sa event settings ng {{app}} app mo. Bawat request ay sinusuri gamit ang signing secret."
+  },
+  "pairing": {
+    "title": "I-link ang {{app}}",
+    "riskTitle": "Bago mag-link: hindi ito opisyal na koneksyon.",
+    "riskBody": "Papasok ang PasaBot sa {{app}} account mo bilang linked device, gaya ng isang computer. Hindi pinapayagan ng {{app}} sa terms of service nito ang automated na paggamit ng personal na account, kaya puwede nitong limitahan o i-ban ang number.",
+    "riskAdvice": "Gumamit ng number na kaya mong mawala, at huwag masyadong maraming mensahe.",
+    "accept": "Naiintindihan ko ang panganib, ipakita ang QR code",
+    "scan": "Sa phone mo, buksan ang {{app}} → Linked devices → Link a device, tapos i-scan ang code na ito. Nagbabago ito kada ilang segundo.",
+    "qrAlt": "QR code para i-link ang device na ito",
+    "waiting": "Kumukuha ng QR code…",
+    "linked": "Naka-link na. Kumokonekta…",
+    "failed": "Hindi natapos ang pag-link ({{reason}}). Subukan ulit."
+  },
+  "find": {
+    "settingsHint": "Makipag-chat sa agent mula sa ibang app",
+    "settingsKeywords": "channel, chat app, pagmemensahe, ibang app"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Kausapin ang mga katulong mo mula sa ibang chat app"
+    },
+    "settings": {
+      "title": "Mga chat app",
+      "intro": "Kausapin ang mga katulong mo mula sa Telegram, Discord, Slack o WhatsApp. Bawat chat doon ay nagiging sariling chat dito.",
+      "empty": "Wala pang chat app."
+    },
+    "add": {
+      "title": "Magdagdag ng chat app",
+      "open": "Magdagdag ng chat app",
+      "submit": "Idagdag ang chat app na ito",
+      "kind": "Aling chat app?",
+      "agent": "Katulong na sasagot",
+      "token": "Sikretong code mula sa app",
+      "tokenHint": "Isang beses lang i-paste. Ligtas itong itatago sa computer na ito at hindi na ipapakita ulit.",
+      "allowed": "Sino pa ang puwedeng mag-message dito (opsyonal)",
+      "allowedHint": "Ang number o user name ng bawat tao sa app na iyon, isa bawat linya. Iwanang blangko para ikaw lang ang makausap nito.",
+      "noAgents": "Gumawa muna ng katulong."
+    },
+    "field": {
+      "botToken": "Sikretong code mula sa app",
+      "signingSecret": "Pangalawang sikretong code mula sa app"
+    },
+    "binding": {
+      "token": "Sikretong code mula sa app",
+      "tokenSet": "Ligtas na nakatago sa computer na ito",
+      "tokenReplace": "Palitan ang sikretong code",
+      "tokenNew": "Bagong sikretong code mula sa app"
+    }
+  }
+}

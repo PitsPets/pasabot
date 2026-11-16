@@ -1,0 +1,209 @@
+{
+  "nav": "用量",
+  "page": {
+    "title": "用量",
+    "intro": "您的 agent 消耗的 token 数，仅统计本服务器。",
+    "days": "最近 {{count}} 天",
+    "agents": "按 agent",
+    "providers": "按大脑",
+    "empty": "暂无带 token 统计的运行记录。",
+    "agent": "智能体",
+    "provider": "大脑",
+    "runs": "运行次数",
+    "input": "输入",
+    "output": "输出",
+    "cache": "缓存",
+    "limits": "已暂停的大脑",
+    "noLimits": "所有大脑均可用。",
+    "limitUntil": "{{provider}}：{{reason}}，将在 {{time}} 后重试",
+    "check": "立即检查",
+    "checked": "检查完毕：{{count}} 个大脑已恢复可用。"
+  },
+  "gauge": {
+    "label": "上下文 {{pct}}%",
+    "title": "已使用 {{used}} / {{window}} 个 token 的上下文（{{provider}}）",
+    "full": "记忆已用 {{pct}}%",
+    "menu": "这个聊天有多满",
+    "none": "此聊天还没有上下文报告。"
+  },
+  "notice": {
+    "switched": "已从 {{from}} 切换到 {{to}}（{{reason}}）。聊天将继续。",
+    "back": "已切回 {{to}}。",
+    "compactedNative": "上下文已达 {{pct}}%：已压缩。",
+    "compactedReseed": "上下文已达 {{pct}}%：下一条回复将带着摘要开启新会话。",
+    "overflow": "上下文已满：已带着摘要开启新会话。",
+    "stopped": "压缩已停止：最近两次几乎没有释放空间。请开始新聊天，或在设置中恢复压缩。",
+    "reason": {
+      "rate_limit": "速率限制",
+      "quota": "用量上限",
+      "auth": "登录问题",
+      "context_overflow": "上下文已满",
+      "offline": "主大脑离线"
+    }
+  },
+  "settings": {
+    "title": "大脑与备用",
+    "intro": "当某个大脑达到限制时，agent 会改用列表中的下一个，并在限制解除后切换回来。",
+    "fallback": "备用 {{n}}",
+    "none": "无",
+    "model": "模型（可选）",
+    "account": "{{provider}} 的账号",
+    "defaultAccount": "默认账号",
+    "compactPct": "压缩阈值（占上下文的百分比）",
+    "compactHint": "留空 = {{pct}}%",
+    "save": "保存",
+    "saved": "已保存",
+    "stopped": "此 agent 的压缩已停止。",
+    "resume": "恢复压缩",
+    "accounts": "账号",
+    "accountsIntro": "每个账号都有各自的登录文件夹，供该大脑的 CLI 使用。",
+    "accountLabel": "账号名称",
+    "accountProvider": "大脑",
+    "addAccount": "添加账号",
+    "remove": "移除",
+    "noAccounts": "没有额外账号。",
+    "accountSignIn": "如需登录，请在服务器的终端中运行一次：",
+    "accountFolder": "该大脑 CLI 的登录文件夹：",
+    "accountChecking": "正在检查…",
+    "accountSignedIn": "已登录",
+    "accountSignedOut": "未登录",
+    "accountUnknown": "未检查登录状态",
+    "primary": "使用 {{provider}}"
+  },
+  "server": {
+    "stoppedTitle": "{{name}}：压缩已停止",
+    "stoppedBody": "连续两次压缩释放的上下文不到 10 %。请开始新的聊天，或在设置中恢复压缩。"
+  },
+  "find": {
+    "navHint": "智能体的用量和费用",
+    "navKeywords": "用量, 费用, 令牌, 支出, 账单",
+    "settingsHint": "AI 大脑的限制和检查",
+    "settingsKeywords": "大脑, 模型, 限制, 提供方, 人工智能",
+    "brainsHint": "设置你的代理用来思考的 AI",
+    "brainsKeywords": "大脑, AI, 模型, 登录, 安装, Claude, Codex, Gemini, Grok, OpenCode, 本地, 免费"
+  },
+  "brains": {
+    "title": "大脑",
+    "intro": "大脑是你的智能体用来思考的 AI。设置一个或多个；每个智能体选择一个主大脑和一个备用大脑。",
+    "name": {
+      "opencode": "免费入门（OpenCode）",
+      "local": "本地模型",
+      "acp": "其他 ACP 智能体"
+    },
+    "desc": {
+      "claude": "Anthropic 的 Claude Code 应用，使用你的 Claude 账号",
+      "codex": "OpenAI 的 Codex 应用，使用你的 ChatGPT 账号",
+      "opencode": "免费模型，无需密钥，无需付费。适合入门",
+      "gemini": "Google 的 Gemini CLI，使用你的 Google 账号",
+      "grok": "xAI 的 Grok CLI，使用 xAI 密钥",
+      "local": "本机上的 Ollama 或 LM Studio。私密，可离线使用",
+      "acp": "任何支持 Agent Client Protocol 的应用",
+      "other": "由插件添加或用于测试的大脑"
+    },
+    "state": {
+      "ready": "就绪",
+      "needs_sign_in": "需要登录",
+      "not_installed": "未安装",
+      "unreachable": "无法连接",
+      "not_running": "未运行",
+      "needs_model": "需要模型",
+      "checking": "正在检查…"
+    },
+    "unconfirmed": "无法确认登录状态。运行测试以确认。",
+    "notFound": "未找到",
+    "install": "安装",
+    "signIn": "登录",
+    "test": "测试",
+    "testing": "正在测试…",
+    "useNew": "用于新智能体",
+    "checkAgain": "重新检查",
+    "steps": "步骤",
+    "browse": "浏览并安装",
+    "close": "关闭",
+    "copy": "复制",
+    "copied": "已复制",
+    "details": "详情",
+    "works": "可用。回复：“{{reply}}” · {{secs}} 秒",
+    "usedBy": "{{names}} 正在使用",
+    "backupFor": "{{names}} 的备用",
+    "noneReady": "还没有就绪的大脑。免费入门一键即可。",
+    "useStarter": "使用免费入门",
+    "stepsTitle": "设置 {{name}}",
+    "step": {
+      "terminal": "在这台电脑上打开终端。",
+      "paste": "粘贴此命令并按回车：",
+      "signIn": "粘贴此命令并按打开的登录步骤操作：",
+      "back": "回到这里并点“重新检查”。",
+      "noPassword": "PasaBot 从不索要你的密码，登录在应用内完成。",
+      "geminiChoose": "询问时选择“Sign in with Google”。",
+      "grokInstall": "按照 xAI 的说明安装 Grok CLI。",
+      "starter": "或者让 PasaBot 替你安装（运行前会校验下载）：",
+      "starterCta": "安装免费入门",
+      "vault": "把你的 xAI 密钥以 {{name}} 存入 PasaBot 保险库。保存后它不会再显示在任何页面上。",
+      "local": "安装 Ollama 或 LM Studio，下载一个模型并保持应用打开。",
+      "localCta": "设置本地模型",
+      "acp": "从列表中选择一个智能体并安装。",
+      "acpCta": "打开 ACP 智能体",
+      "keyLabel": "{{brain}} 的密钥",
+      "keyWho": "在此大脑上运行的代理可以看到该密钥。",
+      "keySave": "保存密钥",
+      "keySaved": "密钥已保存到保险库。",
+      "keyErr": "无法保存密钥。请重试。",
+      "tokenTitle": "或粘贴设置令牌",
+      "tokenWhy": "如果登录总是失效，或 PasaBot 在另一台电脑上运行，就用这个。",
+      "tokenRun": "打开终端，粘贴这一行并按回车。浏览器打开后登录：",
+      "tokenPaste": "复制最后显示的那串长代码，粘贴到下面。",
+      "tokenLabel": "设置令牌",
+      "tokenWho": "锁在 PasaBot 的保险库里。用 Claude 运行的智能体能看到它。",
+      "tokenSave": "保存令牌",
+      "tokenSaved": "令牌已保存。正在检查 Claude…",
+      "tokenErr": "无法保存令牌。请重试。",
+      "starterFailed": "免费入门版没有装好。请稍后再试。",
+      "starterPlain": "PasaBot 可以一键帮你安装：一个免费的小应用，只给这台电脑上的你用，运行前会先检查。大约需要一分钟。",
+      "terminalWindows": "在这台电脑上打开 PowerShell（在开始菜单中输入 PowerShell）。",
+      "pasteWindows": "粘贴这个命令并按 Enter：",
+      "nodeFirstWindows": "如果提示找不到 npm，请先从 nodejs.org 安装 Node.js，然后打开一个新的 PowerShell 窗口。"
+    },
+    "err": {
+      "auth": "未登录或登录已过期。请重新登录。",
+      "limit": "此账号已达到用量上限。请稍后再试。",
+      "limitAt": "此账户已达到使用上限，将于 {{time}} 重置。",
+      "offline": "无法连接大脑。请检查网络，或确认 Ollama / LM Studio 已打开。",
+      "crash": "应用在回答前停止了。",
+      "timeout": "一分钟内没有回答。应用可能繁忙或卡住了。",
+      "model": "此账号无法使用该模型。请换一个模型。",
+      "notInstalled": "这台电脑上未安装。",
+      "busy": "连续测试太多次。请等一分钟再试。",
+      "failed": "无法运行测试。请重试。",
+      "load": "无法加载大脑列表。请重试。"
+    },
+    "inUse": "正在使用：{{name}}",
+    "notHere": "不在这台电脑上"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "设置助手用来思考的 AI",
+      "navHint": "助手用了多少、花了多少"
+    },
+    "brains": {
+      "intro": "大脑是你的助手用来思考的 AI。设置一个或多个；每个助手选择一个主大脑和一个备用大脑。",
+      "useNew": "用于新助手",
+      "desc": {
+        "opencode": "免费大脑，无需密钥，无需付费。适合入门",
+        "gemini": "Google 的 Gemini CLI，使用你的 Google 账号",
+        "grok": "xAI 的 Grok CLI，使用 xAI 密钥",
+        "acp": "任何支持 助手 Client Protocol 的应用"
+      },
+      "name": {
+        "local": "本地大脑",
+        "acp": "其他 ACP 助手"
+      }
+    },
+    "page": {
+      "intro": "你的助手用了多少，只在这台电脑上计算。",
+      "agents": "按助手",
+      "empty": "还没有用量。",
+      "agent": "助手"
+    }
+  }
+}

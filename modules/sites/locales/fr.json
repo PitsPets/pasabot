@@ -1,0 +1,59 @@
+{
+  "nav": "Sites",
+  "page": {
+    "title": "Sites",
+    "intro": "Petites pages web publiées par vos agents. Elles s'ouvrent à l'adresse distincte des sites, s'exécutent dans un bac à sable et ne peuvent pas utiliser votre connexion. Chacune expire si elle n'est pas renouvelée."
+  },
+  "refresh": "Actualiser",
+  "loading": "Chargement…",
+  "empty": "Aucun site pour l'instant. Quand un agent en publiera un, il apparaîtra ici.",
+  "error": "Impossible de charger les sites. {{reason}}",
+  "tunnel": {
+    "title": "Adresse depuis l'extérieur",
+    "label": "Adresse du tunnel pour les sites",
+    "hint": "Facultatif. Si votre propre tunnel pointe vers l'adresse des sites, collez-la ici (par exemple https://sites.example.net). Les sites publics l'afficheront alors.",
+    "save": "Enregistrer l'adresse",
+    "saved": "Enregistré.",
+    "none": "Aucune adresse de tunnel définie : aucun site ne peut donc être public pour l'instant."
+  },
+  "site": {
+    "by": "Publié par {{name}}",
+    "byRemoved": "Publié par un agent supprimé",
+    "files_one": "{{count}} fichier",
+    "files_many": "{{count}} de fichiers",
+    "files_other": "{{count}} fichiers",
+    "expires": "Expire {{when}}",
+    "public": "Public",
+    "private": "Privé",
+    "open": "Ouvrir le site",
+    "openPublic": "Adresse publique",
+    "renew": "Garder 7 jours de plus",
+    "makePublic": "Rendre public",
+    "makePrivate": "Rendre privé",
+    "remove": "Supprimer",
+    "confirmRemove": "Supprimer « {{title}} » ? Son adresse cessera de fonctionner immédiatement.",
+    "list": "Fichiers"
+  },
+  "tools": {
+    "sites_publish": "Publier un site statique",
+    "sites_list": "Lister vos sites",
+    "sites_renew": "Renouveler un site",
+    "sites_unpublish": "Retirer un site"
+  },
+  "find": {
+    "navHint": "Sites web créés par vos agents",
+    "navKeywords": "site web, page, publier, héberger"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Sites web que vos assistants créent et mettent en ligne"
+    },
+    "page": {
+      "intro": "Petites pages web publiées par vos assistants. Elles s’ouvrent à leur propre adresse, à l’écart de l’appli, et ne peuvent pas utiliser votre connexion. Chacune expire si elle n’est pas renouvelée."
+    },
+    "empty": "Pas encore de site. Quand un assistant en publie un, il apparaît ici.",
+    "site": {
+      "byRemoved": "Publié par un assistant supprimé"
+    }
+  }
+}

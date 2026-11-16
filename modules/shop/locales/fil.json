@@ -1,0 +1,129 @@
+{
+  "card": {
+    "noImage": "Walang larawan",
+    "seenAt": "ayon sa nakita noong {{time}}",
+    "rating": "May rating na {{rating}}",
+    "ratingCount": "May rating na {{rating}} mula sa {{count}} na rating",
+    "open": "Buksan sa {{store}}"
+  },
+  "compare": {
+    "title": "Pinaghahambing ang {{count}} na produkto"
+  },
+  "buy": {
+    "button": "Bilhin",
+    "qty_one": "{{count}} piraso",
+    "qty_other": "{{count}} piraso",
+    "less": "Bawasan ng isa",
+    "more": "Dagdagan ng isa",
+    "note": "Ikaw ang mag-aapruba nito sa app. Hanggang cart lang ang PasaBot; ikaw ang titingin sa total at magbabayad.",
+    "ask": "Hilingin na bilhin",
+    "cancel": "Huwag na",
+    "asked": "Hinihintay ang pag-apruba mo. Nasa mga aaprubahan mo ang money card.",
+    "error": "Hindi ito naipadala. Subukan ulit.",
+    "state": {
+      "running": "Naaprubahan. Inilalagay na sa cart…",
+      "handedOver": "Nasa cart mo na. Tingnan ang total at ikaw ang magbayad sa browser.",
+      "denied": "Sinabi mong hindi, kaya walang nabili.",
+      "paused": "Nakahinto: kailangan ka ng tindahan sa browser.",
+      "stopped": "Itinigil. Walang nailagay sa cart; nasa chat kung bakit.",
+      "ended": "Tapos na ang pagbiling ito; nasa chat kung paano."
+    }
+  },
+  "settings": {
+    "title": "Pamimili",
+    "intro": "Kung saan naghahanap ng produkto ang mga agent mo. Ipinapakita ang presyo gaya ng nasa pahina ng tindahan, hindi kino-convert.",
+    "country": "Bansa",
+    "webOnly": "Ibang bansa (web search)",
+    "stores": "Mga tindahan",
+    "fallback": "Wala pang listahan ng tindahan para sa bansang ito. Sa web maghahanap ang mga agent, at card lang para sa mga pahinang naglalarawan ng produkto.",
+    "custom": "Tindahan mo",
+    "remove": "Alisin",
+    "rules": "Hindi kailanman nagbabayad, nag-o-order, nagta-type ng detalye ng card, humahawak ng code, sumasagot ng captcha o gumagawa ng account sa tindahan ang mga agent. Laging nagtatanong muna sa iyo bago bumili.",
+    "loading": "Naglo-load…",
+    "error": "Hindi ma-load ang settings ng pamimili."
+  },
+  "custom": {
+    "add": "Magdagdag ng tindahan",
+    "name": "Pangalan ng tindahan",
+    "id": "Maikling id",
+    "idHint": "Maliliit na titik, numero at gitling, gaya ng corner-shop",
+    "home": "Home page",
+    "search": "Address ng search",
+    "searchHint": "Ilagay ang {query} kung saan pupunta ang hinahanap",
+    "hosts": "Mga pinapayagang address",
+    "hostsHint": "Mga host name na hinihiwalay ng kuwit, gaya ng shop.example o *.example",
+    "currency": "Pera",
+    "currencyHint": "Tatlong titik, gaya ng PHP o USD",
+    "save": "I-save ang tindahan",
+    "error": "Pakitingnan ang mga field: dapat nasa pinapayagang host ang mga address at walang tracking code."
+  },
+  "onboarding": {
+    "title": "Saan ka namimili?",
+    "body": "Piliin ang bansa mo para alam ng mga agent kung aling mga tindahan ang titingnan. Puwede mo itong palitan sa Settings → Pamimili."
+  },
+  "orders": {
+    "title": "Mga order",
+    "empty": "Wala pang order. Lalabas dito ang bawat Buy na aaprubahan mo.",
+    "error": "Hindi ma-load ang mga order.",
+    "line": "{{qty}} × {{item}}",
+    "unknownItem": "Produktong hindi na naka-save",
+    "each": "{{price}} bawat isa, gaya ng nakita",
+    "state": {
+      "pending": "Hinihintay ang pag-apruba mo",
+      "denied": "Tumanggi ka",
+      "running": "Inilalagay sa cart",
+      "handed-over": "Nasa cart mo na, ikaw ang magbabayad",
+      "paused": "Naka-pause, kailangan ka",
+      "stopped": "Itinigil",
+      "failed": "Pumalya",
+      "other": "Tapos na"
+    }
+  },
+  "tools": {
+    "shop_stores": "Mga tindahan",
+    "shop_search": "Maghanap sa tindahan",
+    "shop_capture": "I-save ang isang produkto",
+    "shop_show": "Ipakita ang product card",
+    "shop_compare": "Ikumpara ang mga produkto",
+    "shop_buy": "Ilagay ang produkto sa cart"
+  },
+  "server": {
+    "noBrowser": "Hindi available ang browser, kaya walang nailagay sa cart.",
+    "storeOff": "Naka-off ang tindahang ito sa Settings → Shopping, kaya walang nailagay sa cart.",
+    "badAddress": "Hindi pinapayagan ang address ng produktong iyon para sa tindahang ito.",
+    "stoppedBefore": "Itinigil bago pa nagalaw ang browser.",
+    "stoppedNothing": "Itinigil. Walang nailagay sa cart.",
+    "priceChanged": "Nagbago ang presyo mula nang aprubahan mo: {{before}} noon, {{after}} ngayon. Walang nailagay sa cart. May bagong card na magtatanong ulit sa bagong presyo.",
+    "pageDiffers": "Iba na ang item o presyo sa page ng tindahan kaysa sa inaprubahan mo ({{price}}), kaya walang nailagay sa cart. I-save ulit at magtanong ulit.",
+    "openNoCartHandOver": "Bukas ang {{name}} sa {{store}}. Ikaw ang maglagay ng {{quantity}} sa cart at magbayad.",
+    "openNoCart": "Bukas ang {{name}} sa {{store}} sa browser. Walang cart steps ang tindahang ito, kaya ikaw ang maglagay ng {{quantity}} at magbayad.",
+    "stoppedAfterAdd": "Itinigil matapos ilagay sa cart; hindi binuksan ang checkout page.",
+    "checkoutSignUp": "Sign-up page ang address ng checkout.",
+    "stoppedInCart": "Itinigil. Nasa cart na ang item; wala nang ibang ginawa.",
+    "inCartHandOver": "Nasa cart mo na sa {{store}} ang {{quantity}} × {{name}}. Tingnan ito at ikaw ang magbayad.",
+    "inCart": "Nasa cart mo na sa {{store}} ang {{quantity}} × {{name}} at bukas na ang checkout page sa browser. Tingnan ang kabuuan at ikaw ang magbayad; hindi PasaBot ang mag-o-order.",
+    "stoppedCheck": "Itinigil. Tingnan muna ang browser bago ituloy.",
+    "buyFailed": "Huminto ang Buy: {{error}}",
+    "captcha": "May check para sa tao (captcha) ang tindahan. Buksan ang browser at ikaw ang tumapos nito.",
+    "signIn": "Gusto ng tindahan na mag-sign in ka. Buksan ang browser at ikaw ang mag-sign in (hindi gumagawa ng account sa tindahan ang PasaBot).",
+    "denied": "Tumanggi ka, kaya hindi ginalaw ang browser.",
+    "buySummary": "Bilhin ang {{quantity}} × {{name}} sa {{store}}",
+    "buyLabel": "Bilhin",
+    "askItems": "{{quantity}} × {{name}} — {{price}} bawat isa, ayon sa nakita noong {{time}}",
+    "askTotal": "{{total}} ayon sa nakita, hindi pa pinal",
+    "askPayment": "Ikaw ang magbabayad sa browser; hanggang cart lang ang PasaBot"
+  },
+  "find": {
+    "settingsHint": "Hayaang bumili ang agent, sa pahintulot mo",
+    "settingsKeywords": "mamili, bumili, order, tindahan"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Hayaang bumili ang mga katulong, sa pahintulot mo"
+    },
+    "settings": {
+      "intro": "Kung saan naghahanap ng produkto ang mga katulong mo. Ipinapakita ang presyo gaya ng nasa pahina ng tindahan, hindi kino-convert.",
+      "rules": "Hindi kailanman nagbabayad, nag-o-order, nagta-type ng detalye ng card, humahawak ng code, sumasagot ng captcha o gumagawa ng account sa tindahan ang mga katulong. Laging nagtatanong muna sa iyo bago bumili."
+    }
+  }
+}

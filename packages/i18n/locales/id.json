@@ -1,0 +1,136 @@
+{
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "Coba lagi",
+    "skip": "Lewati",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "loading": "Memuat…"
+  },
+  "queue": {
+    "interrupted": "Proses ini terhenti karena server dimulai ulang.",
+    "interruptedHint": "Coba lagi, atau lewati untuk lanjut ke pesan berikutnya.",
+    "routineInterrupted": "Proses routine {{agent}} terhenti karena server dimulai ulang."
+  },
+  "blocks": {
+    "fallback": "Pesan ini berisi konten yang tidak dapat ditampilkan aplikasi ini ({{kind}})."
+  },
+  "meta": {
+    "name": "Bahasa Indonesia",
+    "dir": "ltr",
+    "status": "unreviewed"
+  },
+  "server": {
+    "approvalNeeded": "Perlu persetujuan",
+    "wantsToUse": "{{name}} ingin: {{tool}}",
+    "interrupted": "Proses terputus karena server dimulai ulang",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}: proses gagal",
+    "unknownError": "galat tidak dikenal",
+    "devicePaired": "Sebuah perangkat dipasangkan",
+    "devicePairedBody": "{{what}} sekarang bisa masuk ke akun Anda."
+  },
+  "provider": {
+    "fakeName": "Palsu (pengujian)",
+    "hint": {
+      "notOnPath": "{{cli}} tidak ditemukan di PATH",
+      "notFound": "{{cli}} tidak ditemukan",
+      "versionFailed": "`{{cmd}} --version` gagal",
+      "runToSignIn": "jalankan `{{cmd}}` sekali untuk masuk",
+      "runToSignInOrKey": "jalankan `{{cmd}}` sekali untuk masuk (atau atur {{env}} lewat brankas)",
+      "runToAddProvider": "jalankan `{{cmd}}` sekali untuk menambah penyedia",
+      "checkedFirstTurn": "status masuk diperiksa pada giliran pertama",
+      "notAnswering": "{{name}} ({{url}}) tidak merespons",
+      "turnSignIn": "Masuk tidak berhasil terakhir kali. Masuk lagi di halaman Otak."
+    }
+  },
+  "channel": {
+    "linked": "Tertaut. Anda bisa bicara dengan {{agent}} di sini.",
+    "linkInvalid": "Kode tautan itu tidak valid atau sudah kedaluwarsa. Buat yang baru di PasaBot: Pengaturan → Kanal.",
+    "failed": "Maaf, itu tidak berhasil. Detailnya ada di aplikasi PasaBot.",
+    "empty": "(tidak ada balasan)",
+    "interrupted": "Terputus karena dimulai ulang. Coba lagi di aplikasi PasaBot.",
+    "approvalAsk": "Perlu persetujuan: {{summary}}\nBalas /approve {{id}} atau /deny {{id}}",
+    "approvalDevice": "Perlu persetujuan: {{summary}}\nYang ini hanya bisa disetujui di aplikasi PasaBot pada perangkat yang dipasangkan.",
+    "approvalNone": "Tidak ada persetujuan tertunda dengan id itu di obrolan ini.",
+    "approvalOwnerOnly": "Hanya pemilik yang tertaut yang bisa menjawab persetujuan.",
+    "approvalDeviceOnly": "Persetujuan ini hanya bisa dijawab di aplikasi PasaBot pada perangkat yang dipasangkan.",
+    "approved": "{{id}} disetujui.",
+    "denied": "{{id}} ditolak."
+  },
+  "card": {
+    "action": {
+      "open": "Buka",
+      "dismiss": "Tutup",
+      "signIn": "Masuk lagi",
+      "retry": "Coba lagi",
+      "otherBrain": "Pakai otak lain",
+      "wait": "Tetap tunggu",
+      "notNow": "Nanti saja",
+      "takeOver": "Ambil alih",
+      "imDone": "Sudah, lanjutkan",
+      "ok": "Oke",
+      "remind": "Ingatkan saya"
+    },
+    "signIn": {
+      "title": "Otak {{name}} perlu kamu masuk",
+      "text": "{{brain}} sedang keluar, jadi {{name}} belum bisa menjawab. Masuk sekali, lalu coba lagi."
+    },
+    "failed": {
+      "title": "{{name}} tidak bisa menyelesaikan balasan ini",
+      "offline": "Tidak bisa menjangkau otaknya. Cek internet, lalu coba lagi.",
+      "timeout": "Terlalu lama, jadi berhenti.",
+      "auth": "Otaknya sedang keluar.",
+      "ratelimit": "Otaknya sudah mencapai batas pemakaian untuk sekarang.",
+      "quota": "Otaknya sudah habis jatah di paket ini.",
+      "contextoverflow": "Obrolannya terlalu panjang untuk otaknya.",
+      "other": "Otaknya berhenti sebelum balasan selesai."
+    },
+    "limit": {
+      "title": "{{name}} dijeda sampai {{untilAt}}",
+      "text": "Otaknya mencapai batas pemakaian. Pesanmu menunggu dan terkirim sendiri.",
+      "offline": "Otaknya tidak bisa dijangkau sekarang. Pesanmu menunggu dan terkirim sendiri.",
+      "remindNow": "{{name}} sudah bisa lanjut",
+      "offlineTitle": "{{name}} dijeda sampai {{untilAt}}"
+    },
+    "settled": {
+      "retrying": "Sedang dicoba lagi",
+      "signedIn": "Sudah masuk lagi",
+      "resumed": "Sudah jalan lagi",
+      "remind": "Saya ingatkan pukul {{untilAt}}"
+    },
+    "member": {
+      "failed": "{{name}} tidak bisa menyelesaikan balasan ini.",
+      "approvalWaiting": "{{name}} menunggu persetujuan pemilik.",
+      "approvalApproved": "{{name}} sudah mendapat persetujuan.",
+      "approvalRefused": "{{name}} tidak diizinkan."
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}} perlu kamu masuk lagi",
+        "text": "Pikiran {{name}} keluar dari akun, jadi belum bisa menjawab. Masuk sekali, lalu kirim lagi pesanmu."
+      },
+      "action": {
+        "otherBrain": "Pakai pikiran lain"
+      },
+      "limit": {
+        "title": "Giliran {{name}} sudah habis untuk sementara",
+        "text": "Bisa lanjut pukul {{untilAt}}. Pesanmu menunggu dan terkirim sendiri.",
+        "offlineTitle": "{{name}} tidak bisa menjangkau pikirannya sekarang",
+        "offline": "Dicoba lagi pukul {{untilAt}}. Pesanmu menunggu dan terkirim sendiri."
+      },
+      "failed": {
+        "offline": "Tidak bisa menjangkau pikirannya. Cek internet, lalu coba lagi.",
+        "auth": "Pikirannya keluar dari akun.",
+        "ratelimit": "Gilirannya sudah habis untuk sementara.",
+        "quota": "Tidak ada giliran tersisa di paket ini.",
+        "contextoverflow": "Obrolannya terlalu panjang untuk pikirannya.",
+        "other": "Berhenti sebelum balasannya selesai."
+      }
+    }
+  }
+}

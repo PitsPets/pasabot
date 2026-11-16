@@ -1,0 +1,76 @@
+{
+  "nav": "Admin",
+  "page": {
+    "title": "Admin server",
+    "intro": "Identitas, kondisi, batas, dan catatan server ini. Hanya Anda, sang owner, yang dapat melihat halaman ini."
+  },
+  "host": {
+    "title": "Server ini",
+    "name": "Nama server",
+    "save": "Simpan nama",
+    "id": "ID server",
+    "hostname": "Nama host",
+    "system": "Sistem",
+    "uptime": "Aktif selama",
+    "minutes": "{{count}} mnt"
+  },
+  "metrics": {
+    "title": "Kondisi mesin",
+    "cpu": "CPU",
+    "mem": "Memori",
+    "disk": "Disk",
+    "load": "Beban",
+    "none": "Belum ada sampel.",
+    "sample": "Periksa sekarang",
+    "at": "Diperiksa"
+  },
+  "alerts": {
+    "title": "Aturan peringatan",
+    "intro": "Anda mendapat notifikasi saat suatu pembacaan terus berada di atas batas.",
+    "empty": "Belum ada aturan peringatan.",
+    "name": "Nama aturan",
+    "metric": "Pembacaan",
+    "above": "Beri peringatan di atas",
+    "forSamples": "Pemeriksaan berturut-turut",
+    "cooldown": "Diam selama (menit)",
+    "add": "Tambah aturan",
+    "remove": "Hapus",
+    "fired": "Peringatan terakhir",
+    "never": "Belum pernah ada peringatan",
+    "rule": "{{metric}} di atas {{above}}"
+  },
+  "limits": {
+    "title": "Batas agent",
+    "intro": "Batas memori dan CPU untuk pekerjaan setiap agent. Kosongkan kolom jika tidak ingin ada batas.",
+    "mem": "Memori (MB)",
+    "cpu": "CPU (%)",
+    "save": "Simpan batas",
+    "saved": "Tersimpan",
+    "usage": "Sedang dipakai: {{mem}} MB, CPU {{cpu}}%",
+    "empty": "Belum ada agent."
+  },
+  "bundle": {
+    "title": "Pindahkan agent",
+    "intro": "Ekspor agent beserta chat-nya ke sebuah file, lalu impor di server PasaBot ini atau yang lain. Rahasia, file, dan folder tidak disertakan.",
+    "export": "Ekspor {{name}}",
+    "import": "Impor file agent",
+    "imported": "Berhasil diimpor. Agent dan chat-nya ada di daftar Anda.",
+    "failed": "File itu tidak dapat diimpor."
+  },
+  "diag": {
+    "title": "Diagnostik",
+    "intro": "File zip berisi pembacaan kondisi, ringkasan pengaturan, dan log terbaru untuk pemecahan masalah. Nilai rahasia dihapus sebelum keluar dari server.",
+    "download": "Unduh diagnostik"
+  },
+  "audit": {
+    "title": "Log audit",
+    "filter": "Filter berdasarkan tindakan",
+    "empty": "Belum ada catatan.",
+    "older": "Tampilkan yang lebih lama",
+    "by": "oleh {{actor}}"
+  },
+  "find": {
+    "navHint": "Perawatan PasaBot ini",
+    "navKeywords": "admin, perawatan, cadangan, log, pembaruan"
+  }
+}

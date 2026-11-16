@@ -1,0 +1,55 @@
+{
+  "settings": "自動化",
+  "intro": "讓這台電腦上的指令碼透過 pasabot run 指令或本機 API 啟動代理的工作。每個代理都有各自的開關與權杖。權杖最高只有標準信任等級，因此有風險的操作仍會先詢問你。",
+  "loadError": "無法載入自動化設定。",
+  "noAgents": "尚無代理。",
+  "agent": {
+    "switch": "允許 {{name}} 使用自動化",
+    "on": "開啟",
+    "off": "關閉",
+    "tokens": "{{count}} 個有效權杖"
+  },
+  "form": {
+    "title": "{{name}} 的新權杖",
+    "label": "權杖名稱",
+    "labelHint": "用途說明，例如「筆電指令碼」。",
+    "expiry": "到期時間",
+    "days30": "30 天後",
+    "days90": "90 天後",
+    "days365": "一年後",
+    "never": "永不",
+    "remote": "同時允許其他裝置使用（不限這台電腦）",
+    "remoteHint": "除非其他機器上的指令碼需要，否則請保持關閉。瀏覽器頁面永遠無法使用權杖。",
+    "create": "建立權杖",
+    "creating": "建立中…"
+  },
+  "created": {
+    "title": "請立即複製此權杖",
+    "body": "只會顯示這一次。請妥善保存，例如放在密碼管理工具中。",
+    "copy": "複製",
+    "copied": "已複製",
+    "usage": "試試看：",
+    "done": "完成"
+  },
+  "list": {
+    "title": "權杖",
+    "empty": "尚無權杖。",
+    "revoke": "撤銷",
+    "revoked": "已撤銷",
+    "expires": "{{when}}到期",
+    "noExpiry": "永不到期",
+    "lastUsed": "上次使用：{{when}}",
+    "neverUsed": "從未使用",
+    "remote": "允許其他裝置",
+    "localOnly": "僅限這台電腦"
+  },
+  "find": {
+    "settingsHint": "啟動代理的 Webhook 和觸發器",
+    "settingsKeywords": "Webhook, 觸發器, 自動化, 事件"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "有事發生時讓助理開始工作"
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "nav": "Penggunaan",
+  "page": {
+    "title": "Penggunaan",
+    "intro": "Token yang dipakai agent Anda, dihitung hanya di server ini.",
+    "days": "{{count}} hari terakhir",
+    "agents": "Per agen",
+    "providers": "Per otak",
+    "empty": "Belum ada proses dengan hitungan token.",
+    "agent": "Agen",
+    "provider": "Otak",
+    "runs": "Proses",
+    "input": "Masuk",
+    "output": "Keluar",
+    "cache": "Cache",
+    "limits": "Otak yang dijeda",
+    "noLimits": "Semua otak tersedia.",
+    "limitUntil": "{{provider}}: {{reason}}, dicoba lagi setelah {{time}}",
+    "check": "Periksa sekarang",
+    "checked": "Diperiksa: {{count}} otak tersedia kembali."
+  },
+  "gauge": {
+    "label": "Konteks {{pct}}%",
+    "title": "{{used}} dari {{window}} token konteks terpakai ({{provider}})",
+    "full": "Memori {{pct}}% penuh",
+    "menu": "Seberapa penuh obrolan ini",
+    "none": "Belum ada laporan konteks untuk obrolan ini."
+  },
+  "notice": {
+    "switched": "Beralih dari {{from}} ke {{to}} ({{reason}}). Chat berlanjut.",
+    "back": "Kembali ke {{to}}.",
+    "compactedNative": "Konteks {{pct}}%: dipadatkan.",
+    "compactedReseed": "Konteks {{pct}}%: balasan berikutnya memulai sesi baru dengan ringkasan.",
+    "overflow": "Konteks penuh: sesi baru dimulai dengan ringkasan.",
+    "stopped": "Pemadatan dihentikan: dua pemadatan terakhir nyaris tidak membebaskan ruang. Mulai chat baru, atau lanjutkan pemadatan di Pengaturan.",
+    "reason": {
+      "rate_limit": "batas laju",
+      "quota": "batas penggunaan",
+      "auth": "masalah masuk",
+      "context_overflow": "konteks penuh",
+      "offline": "utama offline"
+    }
+  },
+  "settings": {
+    "title": "Otak dan cadangan",
+    "intro": "Saat sebuah otak mencapai batas, agent berlanjut ke otak berikutnya dalam daftarnya, lalu kembali setelah batas direset.",
+    "fallback": "Cadangan {{n}}",
+    "none": "Tidak ada",
+    "model": "Model (opsional)",
+    "account": "Akun untuk {{provider}}",
+    "defaultAccount": "Akun default",
+    "compactPct": "Padatkan pada (% konteks)",
+    "compactHint": "Kosong = {{pct}}%",
+    "save": "Simpan",
+    "saved": "Tersimpan",
+    "stopped": "Pemadatan dihentikan untuk agent ini.",
+    "resume": "Lanjutkan pemadatan",
+    "accounts": "Akun",
+    "accountsIntro": "Setiap akun punya folder masuk sendiri untuk CLI otak tersebut.",
+    "accountLabel": "Nama akun",
+    "accountProvider": "Otak",
+    "addAccount": "Tambah akun",
+    "remove": "Hapus",
+    "noAccounts": "Tidak ada akun tambahan.",
+    "accountSignIn": "Untuk masuk, jalankan ini sekali di terminal pada server:",
+    "accountFolder": "Folder masuk untuk CLI otak ini:",
+    "accountChecking": "Memeriksa…",
+    "accountSignedIn": "Sudah masuk",
+    "accountSignedOut": "Belum masuk",
+    "accountUnknown": "Status masuk belum diperiksa",
+    "primary": "Memakai {{provider}}"
+  },
+  "server": {
+    "stoppedTitle": "{{name}}: pemadatan dihentikan",
+    "stoppedBody": "Dua pemadatan berturut-turut membebaskan kurang dari 10 % konteks. Mulai obrolan baru atau lanjutkan pemadatan di Pengaturan."
+  },
+  "find": {
+    "navHint": "Pemakaian dan biaya agen Anda",
+    "navKeywords": "pemakaian, biaya, token, pengeluaran, tagihan",
+    "settingsHint": "Batas dan pemeriksaan otak AI Anda",
+    "settingsKeywords": "otak, model, batas, penyedia, AI",
+    "brainsHint": "Siapkan AI yang dipakai agen Anda untuk berpikir",
+    "brainsKeywords": "otak, AI, model, masuk, pasang, Claude, Codex, Gemini, Grok, OpenCode, lokal, gratis"
+  },
+  "brains": {
+    "title": "Otak",
+    "intro": "Otak adalah AI yang dipakai agenmu untuk berpikir. Siapkan satu atau lebih; tiap agen memilih otak utama dan cadangan.",
+    "name": {
+      "opencode": "Pemula gratis (OpenCode)",
+      "local": "Model lokal",
+      "acp": "Agen ACP lainnya"
+    },
+    "desc": {
+      "claude": "Aplikasi Claude Code dari Anthropic, dengan akun Claude-mu",
+      "codex": "Aplikasi Codex dari OpenAI, dengan akun ChatGPT-mu",
+      "opencode": "Model gratis, tanpa kunci, tanpa bayar. Cocok untuk mulai",
+      "gemini": "Gemini CLI dari Google, dengan akun Google-mu",
+      "grok": "Grok CLI dari xAI, dengan kunci xAI",
+      "local": "Ollama atau LM Studio di komputer ini. Privat, jalan tanpa internet",
+      "acp": "Aplikasi apa pun yang memakai Agent Client Protocol",
+      "other": "Otak dari plugin atau untuk pengujian"
+    },
+    "state": {
+      "ready": "Siap",
+      "needs_sign_in": "Perlu masuk",
+      "not_installed": "Belum terpasang",
+      "unreachable": "Tidak terjangkau",
+      "not_running": "Belum dibuka",
+      "needs_model": "Perlu model",
+      "checking": "Memeriksa…"
+    },
+    "unconfirmed": "Status masuk tak bisa dipastikan. Jalankan Uji untuk memastikan.",
+    "notFound": "Tidak ditemukan",
+    "install": "Pasang",
+    "signIn": "Masuk",
+    "test": "Uji",
+    "testing": "Menguji…",
+    "useNew": "Pakai untuk agen baru",
+    "checkAgain": "Periksa lagi",
+    "steps": "Langkah",
+    "browse": "Jelajahi dan pasang",
+    "close": "Tutup",
+    "copy": "Salin",
+    "copied": "Tersalin",
+    "details": "Detail",
+    "works": "Berhasil. Balasan: \"{{reply}}\" · {{secs}} dtk",
+    "usedBy": "Dipakai {{names}}",
+    "backupFor": "Cadangan untuk {{names}}",
+    "noneReady": "Belum ada otak yang siap. Pemula gratis cukup sekali ketuk.",
+    "useStarter": "Pakai pemula gratis",
+    "stepsTitle": "Siapkan {{name}}",
+    "step": {
+      "terminal": "Buka Terminal di komputer ini.",
+      "paste": "Tempel perintah ini lalu tekan Return:",
+      "signIn": "Tempel perintah ini dan ikuti proses masuk yang terbuka:",
+      "back": "Kembali ke sini lalu tekan Periksa lagi.",
+      "noPassword": "PasaBot tidak pernah meminta kata sandimu. Proses masuk tetap di aplikasi.",
+      "geminiChoose": "Saat ditanya, pilih \"Sign in with Google\".",
+      "grokInstall": "Pasang Grok CLI sesuai petunjuk xAI.",
+      "starter": "Atau biarkan PasaBot memasangnya (unduhan diperiksa sebelum dijalankan):",
+      "starterCta": "Pasang pemula gratis",
+      "vault": "Simpan kunci xAI-mu di Brankas PasaBot sebagai {{name}}. Kunci tak pernah tampil lagi di halaman setelah disimpan.",
+      "local": "Pasang Ollama atau LM Studio, unduh satu model, dan biarkan aplikasinya terbuka.",
+      "localCta": "Siapkan model lokal",
+      "acp": "Pilih agen dari daftar lalu pasang.",
+      "acpCta": "Buka agen ACP",
+      "keyLabel": "Kunci untuk {{brain}}",
+      "keyWho": "Agen yang berjalan di otak ini dapat melihat kuncinya.",
+      "keySave": "Simpan kunci",
+      "keySaved": "Kunci tersimpan di Brankas.",
+      "keyErr": "Kunci tak bisa disimpan. Coba lagi.",
+      "tokenTitle": "Atau tempel token penyiapan",
+      "tokenWhy": "Pakai ini kalau masuk tidak bertahan, atau PasaBot berjalan di komputer lain.",
+      "tokenRun": "Buka Terminal, tempel ini lalu tekan Return. Masuk saat browser terbuka:",
+      "tokenPaste": "Salin kode panjang yang muncul di akhir dan tempel di bawah.",
+      "tokenLabel": "Token penyiapan",
+      "tokenWho": "Disimpan terkunci di Brankas PasaBot. Agen yang berjalan di Claude bisa melihatnya.",
+      "tokenSave": "Simpan token",
+      "tokenSaved": "Token tersimpan. Sedang memeriksa Claude…",
+      "tokenErr": "Token tidak bisa disimpan. Coba lagi.",
+      "starterFailed": "Pemula gratis tidak terpasang. Coba lagi sebentar lagi.",
+      "starterPlain": "PasaBot bisa memasangnya untukmu dengan sekali ketuk: aplikasi kecil gratis, hanya untukmu di komputer ini, dicek sebelum berjalan. Kira-kira satu menit.",
+      "terminalWindows": "Buka PowerShell di komputer ini (ketik PowerShell di menu Start).",
+      "pasteWindows": "Tempel perintah ini lalu tekan Enter:",
+      "nodeFirstWindows": "Kalau muncul npm tidak ditemukan, pasang Node.js dari nodejs.org dulu, lalu buka jendela PowerShell baru."
+    },
+    "err": {
+      "auth": "Belum masuk, atau sesi masuk kedaluwarsa. Masuk lagi.",
+      "limit": "Akun ini mencapai batas pemakaian. Coba lagi nanti.",
+      "limitAt": "Akun ini mencapai batas pemakaian. Batasnya pulih pukul {{time}}.",
+      "offline": "Otak tak terjangkau. Periksa internet, atau pastikan Ollama / LM Studio terbuka.",
+      "crash": "Aplikasi berhenti sebelum menjawab.",
+      "timeout": "Tak ada jawaban dalam satu menit. Aplikasi mungkin sibuk atau macet.",
+      "model": "Model itu tak tersedia di akun ini. Pilih model lain.",
+      "notInstalled": "Belum terpasang di komputer ini.",
+      "busy": "Terlalu banyak uji beruntun. Tunggu semenit lalu coba lagi.",
+      "failed": "Uji tak bisa dijalankan. Coba lagi.",
+      "load": "Daftar otak gagal dimuat. Coba lagi."
+    },
+    "inUse": "Sedang dipakai: {{name}}",
+    "notHere": "Belum ada di komputer ini"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "Atur AI yang dipakai pembantu Anda untuk berpikir",
+      "navHint": "Seberapa banyak pembantu Anda memakai dan biayanya"
+    },
+    "brains": {
+      "intro": "Otak adalah AI yang dipakai agenmu untuk berpikir. Siapkan satu atau lebih; tiap pembantu memilih otak utama dan cadangan.",
+      "useNew": "Pakai untuk pembantu baru",
+      "desc": {
+        "opencode": "Otak gratis, tanpa kunci, tanpa bayar. Cocok untuk mulai",
+        "gemini": "Gemini CLI dari Google, dengan akun Google-mu",
+        "grok": "Grok CLI dari xAI, dengan kunci xAI",
+        "acp": "Aplikasi apa pun yang memakai Pembantu Client Protocol"
+      },
+      "name": {
+        "local": "Otak lokal",
+        "acp": "Pembantu ACP lainnya"
+      }
+    },
+    "page": {
+      "intro": "Seberapa banyak yang dipakai pembantumu, dihitung di komputer ini saja.",
+      "agents": "Per pembantu",
+      "empty": "Belum ada yang terpakai.",
+      "agent": "Pembantu"
+    }
+  }
+}

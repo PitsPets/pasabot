@@ -1,0 +1,127 @@
+/*
+ * Agent avatars (direction "Silip"). The root also carries `bk-blob` so existing layout rules (status dot, strip
+ * ring, hidden-on-phone bubbles) keep applying. Motion is transform/opacity only, CSS only (no timers), seeded per
+ * agent through custom properties so a list never blinks in sync; browsers stop CSS animations in hidden tabs.
+ * Every `animation` lives inside the no-preference media block: reduced motion = the static design.
+ */
+.bk-blob.bk-av {
+  --bk-av-r: 28%;
+  border-radius: var(--bk-av-r);
+  background: transparent;
+}
+.bk-blob.bk-av[data-shape="circle"] {
+  --bk-av-r: 50%;
+}
+.bk-av__clip {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  line-height: 0;
+}
+.bk-av__clip > svg {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+}
+.bk-av[data-size="sm"] .bk-blob__status {
+  inset-inline-end: -2px;
+  inset-block-end: -2px;
+  inline-size: 10px;
+  block-size: 10px;
+  border-width: 2px;
+}
+.bk-av .bk-av__fig,
+.bk-av .bk-av__eyes,
+.bk-av .bk-av__pupils,
+.bk-av .bk-av__mouth {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+/* cursor follow (96 px on pointer devices): the component sets --bk-av-fx / --bk-av-fy in viewBox units */
+.bk-av .bk-av__look {
+  transform: translate(calc(var(--bk-av-fx, 0) * 1px), calc(var(--bk-av-fy, 0) * 1px));
+  transition: transform 0.3s ease-out;
+}
+/* offline: eyes closed, avatar dimmed, nothing moves */
+.bk-av[data-state="offline"] .bk-av__eyes {
+  transform: scaleY(0.12);
+}
+.bk-av[data-state="offline"] .bk-av__clip {
+  opacity: 0.55;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bk-av:not([data-state="offline"]) .bk-av__eyes {
+    animation: bk-av-blink var(--bk-av-blink, 6s) linear var(--bk-av-blink-delay, 0s) infinite;
+  }
+  .bk-av[data-state="idle"]:not([data-size="sm"]) .bk-av__pupils {
+    animation: bk-av-glance var(--bk-av-glance, 10s) ease-in-out var(--bk-av-glance-delay, 0s) infinite;
+  }
+  .bk-av[data-state="thinking"]:not([data-size="sm"]) .bk-av__pupils {
+    animation: bk-av-think 2.4s ease-in-out var(--bk-av-glance-delay, 0s) infinite;
+  }
+  .bk-av[data-state="speaking"]:not([data-size="sm"]) .bk-av__mouth {
+    animation: bk-av-talk 0.36s ease-in-out infinite alternate;
+  }
+  .bk-av[data-state="speaking"][data-mouth="none"]:not([data-size="sm"]) .bk-av__fig {
+    animation: bk-av-bob 1.2s ease-in-out infinite;
+  }
+}
+
+/* two blinks per seeded cycle, at uneven points, so the rhythm reads calm and irregular */
+@keyframes bk-av-blink {
+  0%,
+  43%,
+  47%,
+  90%,
+  93.5%,
+  100% {
+    transform: scaleY(1);
+  }
+  45%,
+  91.8% {
+    transform: scaleY(0.1);
+  }
+}
+/* a small glance (one side, seeded) and back */
+@keyframes bk-av-glance {
+  0%,
+  34%,
+  64%,
+  100% {
+    transform: translate(0, 0);
+  }
+  40%,
+  58% {
+    transform: translate(calc(var(--bk-av-dir, 1) * 1.6px), 0);
+  }
+}
+/* thinking: eyes up, drifting side to side */
+@keyframes bk-av-think {
+  0%,
+  100% {
+    transform: translate(-1.5px, -1.6px);
+  }
+  50% {
+    transform: translate(1.5px, -1.6px);
+  }
+}
+@keyframes bk-av-talk {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0.55);
+  }
+}
+@keyframes bk-av-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1.5px);
+  }
+}

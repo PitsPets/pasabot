@@ -1,0 +1,208 @@
+{
+  "nav": "Connectors",
+  "page": {
+    "title": "Connectors",
+    "intro": "Ready-made links to outside services. Add one, then choose who may use it.",
+    "introTech": "Ready-made links to outside services. Add one, then choose on the MCP servers page which agents may use it."
+  },
+  "loading": "Loading…",
+  "kind": {
+    "mcp-stdio": "Runs on this machine",
+    "mcp-http": "Hosted service",
+    "oauth-api": "Sign-in"
+  },
+  "status": {
+    "ready": "Added",
+    "needs_auth": "Needs sign-in or key",
+    "error": "Problem"
+  },
+  "oauth": {
+    "connected": "Signed in. The connector is ready.",
+    "denied": "Sign-in was cancelled.",
+    "expired": "That sign-in link expired. Try again.",
+    "failed": "Sign-in did not work. Check the client id and try again.",
+    "connectedApp": "Signed in. {{name}} is ready.",
+    "failedApp": "Signing in to {{name}} didn't finish. Try again."
+  },
+  "catalog": {
+    "title": "Add more",
+    "homepage": "About this service",
+    "install": "Add {{name}}",
+    "custom": "Want to add something else?",
+    "customTech": "Have a tool server address?"
+  },
+  "install": {
+    "secretHint": "Saved in the vault. Agents never see it.",
+    "oauthHint": "This connector signs in with your own OAuth client. Create one at the service and add this return address to it.",
+    "redirect": "Return address:",
+    "clientId": "OAuth client id",
+    "clientSecret": "OAuth client secret (if the service gave you one)",
+    "clientSecretHint": "Saved in the vault.",
+    "save": "Add",
+    "cancel": "Cancel"
+  },
+  "installed": {
+    "title": "Connected",
+    "secrets": "Secrets kept in the vault: {{names}}",
+    "mcpHint": "Choose which agents may use it:",
+    "foundHint": "Turn it on and choose who may use it:",
+    "mcpLink": "MCP servers",
+    "appsLink": "Apps agents can use",
+    "signIn": "Sign in",
+    "signInAgain": "Sign in again",
+    "remove": "Remove",
+    "removeConfirm": "Yes, remove it"
+  },
+  "find": {
+    "navHint": "Connect apps and services",
+    "navKeywords": "apps, services, connect, integrations, accounts"
+  },
+  "search": {
+    "label": "Search apps",
+    "placeholder": "Search apps, like 'calendar'",
+    "none": "No app matches that."
+  },
+  "state": {
+    "added": "Added",
+    "ready": "Ready to add",
+    "needs_key": "Needs sign-in or key",
+    "missing": "Not on this computer"
+  },
+  "ready": {
+    "title": "Ready to add"
+  },
+  "missing": {
+    "line": "Needs {{name}}, which is not on this computer yet.",
+    "get": "Get {{name}}",
+    "ask": "This needs {{name}}, which isn't on this computer yet. Add it anyway?",
+    "addAnyway": "Add anyway"
+  },
+  "found": {
+    "title": "Found on this computer",
+    "intro": "Tools you already set up in another app. Add one to use it here too.",
+    "introTech": "Tool servers you already set up in another app. Add one to use it here too.",
+    "from": "Set up in {{app}}",
+    "keys": "Its keys go straight to your vault and are never shown: {{names}}",
+    "keysAsk": "It has keys. Copy them into your vault too? Agents never see them.",
+    "confirm": "Yes, add it",
+    "blocked": {
+      "key-in-command": "This one keeps a key inside its command. Add it yourself instead:",
+      "unsupported": "PasaBot can't bring this one over as it is. Add it yourself instead:"
+    }
+  },
+  "describe": {
+    "filesystem": "Lets helpers read and change the files in one folder you choose.",
+    "git": "Lets helpers look through the history and changes of one code folder.",
+    "github": "Lets helpers work with your GitHub code, issues and pull requests.",
+    "github-remote": "The same GitHub tools, run by GitHub online. Nothing to set up here.",
+    "google-calendar": "Lets helpers read your Google Calendar.",
+    "time": "Tells helpers the time anywhere in the world.",
+    "notion": "Lets helpers find, read and write pages in your Notion.",
+    "atlassian": "Lets helpers look up and update your Jira work and Confluence pages.",
+    "trello": "Lets helpers read your Trello boards and move or add cards.",
+    "clickup": "Lets helpers find, add and update your ClickUp tasks.",
+    "intercom": "Lets helpers look up your Intercom customer chats and contacts.",
+    "stripe": "Lets helpers check your Stripe payments, customers and invoices."
+  },
+  "adding": "Adding…",
+  "server": {
+    "connected": "{{name}} is connected. Try asking me something about it."
+  },
+  "groups": {
+    "popular": "Popular",
+    "files-notes": "Files and notes",
+    "calendar-email": "Calendar and email",
+    "work-tasks": "Work and tasks",
+    "shop-money": "Shop and money",
+    "social-chat": "Social and chat",
+    "other": "Other"
+  },
+  "button": {
+    "add": "Add",
+    "signIn": "Sign in",
+    "code": "Needs a code",
+    "added": "Added"
+  },
+  "signin": {
+    "lead": "{{name}} opens its own page so you can sign in. You type nothing here.",
+    "can": "Your helper will be able to:",
+    "ask": "Anything that sends, posts, pays or deletes asks you first, every time.",
+    "go": "Continue to {{name}}",
+    "failed": "Couldn't open {{name}}'s sign-in page. Try again in a moment.",
+    "insecure": "{{name}} only signs in from a secure address. Open PasaBot on the computer it runs on, or at its secure (https) address, then sign in.",
+    "refused": "{{name}} didn't accept PasaBot's sign-in. Trying again won't change that."
+  },
+  "code": {
+    "lead": "{{name}} gives you a code to paste here.",
+    "get": "Get your code",
+    "paste": "Paste your code",
+    "test": "Test and add",
+    "bad": "That code didn't work. Check that you copied all of it.",
+    "unreachable": "Couldn't reach {{name}}. Check your internet and try again.",
+    "failed": "That didn't work: {{reason}}",
+    "refused": "{{name}} answered, but won't work with PasaBot right now. Try again later."
+  },
+  "helpers": {
+    "title": "Who can use it",
+    "main": "main helper"
+  },
+  "connected": {
+    "title": "{{name}} is connected",
+    "try": "Try asking:",
+    "who": "Change who can use it"
+  },
+  "try": {
+    "notion": {
+      "a": "Find my notes about the next meeting in Notion",
+      "b": "Make a Notion page with a to-do list for this week"
+    },
+    "atlassian": {
+      "a": "What Jira issues are assigned to me?",
+      "b": "Sum up the latest Confluence page my team changed"
+    },
+    "trello": {
+      "a": "What's on my Trello board today?",
+      "b": "Add a Trello card: call the supplier on Friday"
+    },
+    "clickup": {
+      "a": "Which ClickUp tasks are due this week?",
+      "b": "Add a ClickUp task to send the quote tomorrow"
+    },
+    "intercom": {
+      "a": "Show my newest Intercom chats",
+      "b": "Who wrote to us on Intercom about refunds?"
+    },
+    "stripe": {
+      "a": "How much did I get paid on Stripe this week?",
+      "b": "List my unpaid Stripe invoices"
+    },
+    "generic": {
+      "a": "What can you do with {{name}}?",
+      "b": "Show me what you can see in {{name}}"
+    }
+  },
+  "plain": {
+    "nav": "Apps helpers can use",
+    "page": {
+      "title": "Apps helpers can use"
+    },
+    "oauth": {
+      "connected": "Signed in. The app is ready."
+    },
+    "install": {
+      "secretHint": "Kept safe on this computer. Helpers never see it.",
+      "oauthHint": "This app signs in through a sign-in app of your own. Make one on the service's site and add this return address to it.",
+      "clientId": "Sign-in app ID",
+      "clientSecret": "Sign-in app password (if the service gave you one)",
+      "clientSecretHint": "Kept safe on this computer."
+    },
+    "installed": {
+      "mcpHint": "Choose which helpers may use it:",
+      "appsLink": "Apps and tools helpers can use"
+    },
+    "found": {
+      "keys": "Its secret codes are kept safe and never shown: {{names}}",
+      "keysAsk": "It has secret codes. Keep copies here too? Helpers never see them."
+    }
+  }
+}

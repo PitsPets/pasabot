@@ -1,0 +1,64 @@
+{
+  "title": "本地模型",
+  "intro": "让智能体使用本机（Ollama、LM Studio）或本地网络中的模型运行。数据不会离开你的网络，智能体也无法在此添加地址。",
+  "empty": "还没有本地模型。",
+  "found": {
+    "text": "在 {{url}} 发现 {{name}}（{{count}} 个模型）。",
+    "use": "添加"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "兼容 OpenAI（LM Studio）"
+  },
+  "scope": {
+    "loopback": "本机",
+    "lan": "本地网络"
+  },
+  "warning": {
+    "lan": "此地址位于本地网络，而不是本机。控制那台设备的人能看到提示词，并可冒充模型作答。"
+  },
+  "models": {
+    "loading": "正在查找模型…",
+    "unreachable": "此地址无响应。",
+    "none": "未找到模型。请先在 Ollama 或 LM Studio 中下载一个。",
+    "tools": "工具",
+    "toolsTry": "支持则启用工具",
+    "chatOnly": "仅聊天：已关闭工具"
+  },
+  "tools": {
+    "label": "工具",
+    "auto": "模型支持时使用工具",
+    "off": "仅聊天（关闭工具）"
+  },
+  "use": "智能体和备用方案现在可以选择大脑 {{id}}。",
+  "refresh": "刷新模型",
+  "remove": {
+    "button": "移除",
+    "confirm": "是，移除",
+    "cancel": "保留"
+  },
+  "add": {
+    "title": "添加本地模型",
+    "name": "名称",
+    "api": "类型",
+    "url": "地址",
+    "urlHint": "IP 地址或 localhost，例如 http://127.0.0.1:11434（Ollama）或 http://127.0.0.1:1234/v1（LM Studio）。",
+    "check": "检查",
+    "submit": "添加",
+    "reachable": "有响应：{{count}} 个模型。"
+  },
+  "offlineHint": "把本地模型加入智能体的备用方案（大脑与备用方案），并将某个例行任务标记为“离线也运行”：主大脑无法连接时，该例行任务会改用本地模型运行，并给出提示。",
+  "find": {
+    "settingsHint": "在这台电脑上运行大脑",
+    "settingsKeywords": "本地, 离线, 模型, 私密"
+  },
+  "plain": {
+    "title": "本地大脑",
+    "intro": "让助手使用本机（Ollama、LM Studio）或本地网络中的大脑运行。数据不会离开你的网络，助手也无法在此添加地址。",
+    "empty": "还没有本地大脑。",
+    "add": {
+      "title": "添加本地大脑"
+    },
+    "offlineHint": "把本地大脑加入助手的备用方案（大脑与备用方案），并将某个例行任务标记为“离线也运行”：主大脑无法连接时，该例行任务会改用本地大脑运行，并给出提示。"
+  }
+}

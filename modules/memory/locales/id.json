@@ -1,0 +1,135 @@
+{
+  "nav": "Memori",
+  "page": {
+    "title": "Memori agent",
+    "intro": "Apa yang disimpan agent Anda untuk nanti. Lupakan apa pun yang salah atau pribadi; pencarian agent langsung tidak menemukannya lagi."
+  },
+  "scope": {
+    "label": "Memori milik siapa",
+    "all": "Semua",
+    "shared": "Dibagikan semua agent",
+    "global": "Global (semua agent)",
+    "team": "Tim: {{name}}",
+    "private": "Pribadi"
+  },
+  "search": {
+    "label": "Cari memori",
+    "placeholder": "Ketik kata"
+  },
+  "item": {
+    "shared": "Dibagikan",
+    "saved": "Disimpan {{when}}",
+    "reviewed": "Sudah ditinjau",
+    "markReviewed": "Tandai sudah ditinjau",
+    "forget": "Lupakan",
+    "confirm": "Lupakan selamanya",
+    "cancel": "Simpan",
+    "untrusted": "Bukan dari Anda",
+    "global": "Global",
+    "team": "Tim {{name}}",
+    "by": "Disimpan oleh {{who}}",
+    "byYou": "Disimpan oleh Anda",
+    "byImport": "Dibawa dari server lain",
+    "byUnknown": "Disimpan oleh agent",
+    "sure": "Yakin",
+    "unsure": "Kurang yakin",
+    "key": "Kunci: {{key}}",
+    "edit": "Ubah",
+    "editLabel": "Ubah memori ini",
+    "save": "Simpan",
+    "editCancel": "Batal",
+    "edited": "Tersimpan."
+  },
+  "empty": "Belum ada yang tersimpan di sini.",
+  "loading": "Memuat…",
+  "error": "Tidak dapat memuat memori. {{reason}}",
+  "count_other": "{{count}} item",
+  "settings": {
+    "title": "Memori",
+    "backend": "Tempat memori disimpan",
+    "backendHint": "Mengubah ini tidak memindahkan item yang sudah tersimpan.",
+    "local": "Server ini",
+    "limits": "Maksimal {{perAgent}} item per agent, {{shared}} dibagikan, masing-masing {{textChars}} karakter."
+  },
+  "origin": {
+    "label": "Disimpan dari",
+    "any": "Chat mana pun",
+    "owner": "Chat Anda sendiri",
+    "others": "Chat yang bukan Anda mulai"
+  },
+  "more": "Tampilkan lebih banyak",
+  "countMore_other": "{{count}} item pertama",
+  "merges": {
+    "title": "Perlu pilihan Anda",
+    "intro": "Dua agent yakin dengan jawaban berbeda untuk hal yang sama. Pilih salah satu, atau tulis jawaban yang benar sendiri.",
+    "key": "Tentang: {{key}}",
+    "current": "Tersimpan sekarang",
+    "incoming": "Jawaban baru",
+    "keepCurrent": "Pertahankan",
+    "useIncoming": "Pakai yang baru",
+    "writeOwn": "Tulis sendiri",
+    "mergedLabel": "Jawaban yang benar",
+    "saveMerged": "Simpan jawaban",
+    "cancel": "Batal",
+    "gone": "(jawaban yang tersimpan sudah dihapus)"
+  },
+  "teams": {
+    "title": "Tim",
+    "intro": "Tim adalah kelompok agent yang berbagi satu memori. Agent hanya membaca dan menulis di tim tempat mereka tergabung.",
+    "empty": "Belum ada tim.",
+    "name": "Nama tim",
+    "create": "Buat tim",
+    "members": "Anggota",
+    "noAgents": "Tambahkan agent terlebih dahulu.",
+    "delete": "Hapus tim",
+    "confirmDelete": "Hapus tim beserta memorinya",
+    "keep": "Pertahankan",
+    "count_other": "{{count}} agent"
+  },
+  "tools": {
+    "memory_remember": "Ingat",
+    "memory_search": "Cari di memori",
+    "memory_teams": "Tim memori saya",
+    "memory_forget": "Lupakan"
+  },
+  "find": {
+    "navHint": "Yang diingat agen Anda",
+    "navKeywords": "ingat, catatan, fakta, kenangan"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Yang diingat pembantu Anda"
+    },
+    "page": {
+      "title": "Yang diingat pembantu",
+      "intro": "Yang disimpan pembantumu untuk nanti. Lupakan apa pun yang salah atau pribadi; pencarian pembantu langsung berhenti menemukannya."
+    },
+    "scope": {
+      "shared": "Dipakai bersama semua pembantu",
+      "global": "Semua (semua pembantu)"
+    },
+    "item": {
+      "byImport": "Dibawa dari komputer lain",
+      "byUnknown": "Disimpan oleh pembantu"
+    },
+    "settings": {
+      "local": "Komputer ini",
+      "limits": "Hingga {{perAgent}} item per pembantu, {{shared}} bersama, masing-masing {{textChars}} karakter."
+    },
+    "merges": {
+      "intro": "Dua pembantu yakin dengan jawaban berbeda untuk hal yang sama. Pilih satu, atau tulis sendiri jawaban yang benar."
+    },
+    "teams": {
+      "intro": "Tim adalah kelompok pembantu yang berbagi satu ingatan. Pembantu hanya membaca dan menulis di tim tempat mereka berada.",
+      "noAgents": "Tambahkan pembantu dulu."
+    }
+  },
+  "card": {
+    "saved": {
+      "title": "Akan aku ingat",
+      "undo": "Urungkan",
+      "all": "Lihat semua yang aku ingat",
+      "undone": "Dilupakan"
+    }
+  }
+}

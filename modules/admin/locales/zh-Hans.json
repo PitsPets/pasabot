@@ -1,0 +1,76 @@
+{
+  "nav": "管理",
+  "page": {
+    "title": "服务器管理",
+    "intro": "本服务器的身份、状态、限额和记录。只有你（所有者）能看到此页面。"
+  },
+  "host": {
+    "title": "本服务器",
+    "name": "服务器名称",
+    "save": "保存名称",
+    "id": "服务器 ID",
+    "hostname": "主机名",
+    "system": "系统",
+    "uptime": "已运行",
+    "minutes": "{{count}} 分钟"
+  },
+  "metrics": {
+    "title": "设备状态",
+    "cpu": "CPU",
+    "mem": "内存",
+    "disk": "磁盘",
+    "load": "负载",
+    "none": "暂无采样。",
+    "sample": "立即检查",
+    "at": "检查时间"
+  },
+  "alerts": {
+    "title": "警报规则",
+    "intro": "当某项读数持续超出上限时，你会收到通知。",
+    "empty": "还没有警报规则。",
+    "name": "规则名称",
+    "metric": "读数",
+    "above": "超过以下值时报警",
+    "forSamples": "连续检查次数",
+    "cooldown": "静默时长（分钟）",
+    "add": "添加规则",
+    "remove": "移除",
+    "fired": "上次警报",
+    "never": "从未报警",
+    "rule": "{{metric}}超过{{above}}"
+  },
+  "limits": {
+    "title": "智能体限额",
+    "intro": "限制每个智能体工作时使用的内存和 CPU。留空表示不设上限。",
+    "mem": "内存（MB）",
+    "cpu": "CPU（%）",
+    "save": "保存限额",
+    "saved": "已保存",
+    "usage": "当前使用：{{mem}} MB，CPU {{cpu}}%",
+    "empty": "还没有智能体。"
+  },
+  "bundle": {
+    "title": "迁移智能体",
+    "intro": "将智能体及其聊天导出为文件，然后导入到本服务器或另一台 PasaBot 服务器。不包含密钥、文件和文件夹。",
+    "export": "导出 {{name}}",
+    "import": "导入智能体文件",
+    "imported": "已导入。智能体及其聊天已出现在你的列表中。",
+    "failed": "无法导入该文件。"
+  },
+  "diag": {
+    "title": "诊断",
+    "intro": "包含状态读数、设置摘要和近期日志的压缩包，用于排查问题。密钥内容会在离开服务器前移除。",
+    "download": "下载诊断包"
+  },
+  "audit": {
+    "title": "审计日志",
+    "filter": "按操作筛选",
+    "empty": "没有记录。",
+    "older": "显示更早的记录",
+    "by": "操作者：{{actor}}"
+  },
+  "find": {
+    "navHint": "维护这个 PasaBot",
+    "navKeywords": "管理, 维护, 备份, 日志, 更新"
+  }
+}

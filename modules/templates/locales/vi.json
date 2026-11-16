@@ -1,0 +1,109 @@
+{
+  "nav": "Mẫu",
+  "page": {
+    "title": "Mẫu",
+    "starterTitle": "Gói khởi đầu miễn phí"
+  },
+  "onboarding": {
+    "title": "Chọn bộ não cho agent đầu tiên của bạn",
+    "intro": "Agent của bạn cần một bộ não: một mô hình AI để suy nghĩ. Hãy chọn cách có được nó.",
+    "freeTitle": "Gói khởi đầu miễn phí, không cần cài đặt",
+    "freeBody": "Dùng mô hình miễn phí qua ứng dụng OpenCode. Không cần khóa, đăng nhập hay thanh toán.",
+    "freeCta": "Dùng gói khởi đầu miễn phí",
+    "freeUnavailable": "Gói khởi đầu miễn phí hiện không khả dụng. Hãy tự thiết lập bộ não bên dưới.",
+    "guidedTitle": "Dùng bộ não bạn đã có",
+    "guidedBody": "Claude, Codex, OpenCode hoặc ứng dụng khác mà bạn đã đăng nhập trên máy tính này.",
+    "found": "Tìm thấy trên máy tính này",
+    "notFound": "Chưa cài đặt",
+    "installHint": "Để cài đặt: {{cmd}}",
+    "guidedCta": "Thêm agent đầu tiên của bạn",
+    "localTitle": "Mô hình cục bộ trên máy tính này",
+    "localBody": "Một máy chủ mô hình đang chạy trên máy tính này. Agent của bạn suy nghĩ ngay tại đó: không cần tài khoản, không có gì rời khỏi máy tính.",
+    "localFound": "{{name}} phản hồi tại {{url}} với {{count}} mô hình.",
+    "localCta": "Dùng {{name}}",
+    "localAdded": "Đã thêm {{name}}. Hãy chọn nó làm bộ não cho agent đầu tiên của bạn.",
+    "useThis": "Dùng cái này",
+    "setUp": "Thiết lập"
+  },
+  "consent": {
+    "title": "Cài OpenCode cho gói khởi đầu miễn phí?",
+    "what": "Nội dung: {{what}}",
+    "where": "Vị trí: {{where}} (chỉ cho người dùng của bạn, không cần quyền quản trị)",
+    "from": "Nguồn: {{from}}",
+    "check": "Bản tải về được đối chiếu với SHA-256 đã công bố trước khi ghi bất cứ thứ gì.",
+    "models": "Các mô hình miễn phí theo kiểm tra ngày {{date}}. Mô hình miễn phí có thể ngừng bất cứ lúc nào; PasaBot sẽ báo cho bạn nếu mô hình của bạn ngừng hoạt động.",
+    "agree": "Cài đặt và tạo agent của tôi",
+    "back": "Quay lại",
+    "working": "Đang cài đặt…",
+    "failed": "Không thể cài OpenCode: {{reason}}. Chưa tạo gì cả. Bạn vẫn có thể tự thiết lập bộ não.",
+    "agentName": "Khởi đầu",
+    "agentInstructions": "Bạn là một trợ lý thân thiện. Hãy trả lời ngắn gọn và rõ ràng."
+  },
+  "notice": {
+    "title": "Mô hình miễn phí đã ngừng hoạt động",
+    "body": "{{model}} {{reason}}. Agent của bạn cần một bộ não khác.",
+    "action": "Chọn bộ não khác",
+    "notFreeTitle": "Mô hình miễn phí không còn miễn phí",
+    "not_free": "{{name}} không còn miễn phí. Agent của bạn cần một bộ não khác: hãy thiết lập một cái, hoặc dùng mô hình cục bộ.",
+    "needs_key": "{{name}} giờ cần khóa hoặc đăng nhập. Agent của bạn cần một bộ não khác.",
+    "unavailable": "{{name}} không còn khả dụng. Agent của bạn cần một bộ não khác.",
+    "none": "Gói khởi đầu miễn phí của bạn đang hoạt động.",
+    "busy": "Mô hình miễn phí đang bận hoặc hết hạn mức, hãy thử lại lúc {{time}}."
+  },
+  "catalog": {
+    "title": "Bắt đầu từ một mẫu",
+    "use": "Dùng",
+    "useNamed": "Dùng {{name}}",
+    "export": "Xuất",
+    "exportNamed": "Xuất {{name}}",
+    "empty": "Chưa có mẫu nào."
+  },
+  "describe": {
+    "title": "Mô tả agent của bạn",
+    "label": "Agent nên làm gì?",
+    "placeholder": "Hãy tạo cho tôi một agent để…",
+    "submit": "Tạo bản nháp"
+  },
+  "import": {
+    "title": "Nhập tệp agent",
+    "hint": "Tệp .pasabot-template.json, tệp .md của agent hoặc tệp .json của trợ lý.",
+    "label": "Tệp agent"
+  },
+  "review": {
+    "title": "Xem lại agent mới",
+    "hint": "Chưa có gì được tạo cho đến khi bạn nhấn Tạo.",
+    "name": "Tên",
+    "instructions": "Hướng dẫn",
+    "brain": "Bộ não",
+    "create": "Tạo agent",
+    "cancel": "Hủy"
+  },
+  "error": "Đã xảy ra lỗi: {{msg}}",
+  "server": {
+    "skippedTitle": "Đã bỏ qua một quy trình: mô hình miễn phí bị giới hạn",
+    "skippedBody": "Các quy trình trên mô hình miễn phí bỏ qua lượt chạy đến lúc đó; lượt tiếp theo chạy như bình thường."
+  },
+  "find": {
+    "navHint": "Tác tử có sẵn để bắt đầu",
+    "navKeywords": "mẫu, ví dụ, khởi đầu, có sẵn"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Trợ lý làm sẵn để bắt đầu"
+    },
+    "describe": {
+      "title": "Mô tả trợ lý của bạn",
+      "label": "Trợ lý nên làm gì?",
+      "placeholder": "Tạo cho tôi một trợ lý…"
+    },
+    "import": {
+      "title": "Đưa trợ lý vào từ tệp",
+      "hint": "Tệp trợ lý do PasaBot hoặc ứng dụng trợ lý khác lưu.",
+      "label": "Tệp trợ lý"
+    },
+    "review": {
+      "title": "Kiểm tra trợ lý mới",
+      "create": "Tạo trợ lý này"
+    }
+  }
+}

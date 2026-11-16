@@ -1,0 +1,109 @@
+{
+  "nav": "Modèles",
+  "page": {
+    "title": "Modèles",
+    "starterTitle": "Démarrage gratuit"
+  },
+  "onboarding": {
+    "title": "Choisissez un cerveau pour votre premier agent",
+    "intro": "Vos agents ont besoin d'un cerveau : un modèle d'IA avec lequel ils réfléchissent. Choisissez comment en obtenir un.",
+    "freeTitle": "Démarrage gratuit, sans configuration",
+    "freeBody": "Utilise un modèle gratuit via l'application OpenCode. Sans clé, sans connexion, sans paiement.",
+    "freeCta": "Utiliser le démarrage gratuit",
+    "freeUnavailable": "Le démarrage gratuit n'est pas disponible pour le moment. Configurez vous-même un cerveau ci-dessous.",
+    "guidedTitle": "Utiliser un cerveau que vous avez déjà",
+    "guidedBody": "Claude, Codex, OpenCode ou une autre application à laquelle vous êtes connecté sur cet ordinateur.",
+    "found": "Trouvé sur cet ordinateur",
+    "notFound": "Non installé",
+    "installHint": "Pour l'installer : {{cmd}}",
+    "guidedCta": "Ajouter votre premier agent",
+    "localTitle": "Modèle local sur cet ordinateur",
+    "localBody": "Un serveur de modèles tourne sur cet ordinateur. Votre agent y réfléchit : aucun compte, rien ne quitte l'ordinateur.",
+    "localFound": "{{name}} répond à {{url}} avec {{count}} modèle(s).",
+    "localCta": "Utiliser {{name}}",
+    "localAdded": "{{name}} est ajouté. Choisissez-le comme cerveau de votre premier agent.",
+    "useThis": "Utiliser",
+    "setUp": "Configurer"
+  },
+  "consent": {
+    "title": "Installer OpenCode pour le démarrage gratuit ?",
+    "what": "Quoi : {{what}}",
+    "where": "Où : {{where}} (pour votre utilisateur uniquement, sans droits d'administrateur)",
+    "from": "Depuis : {{from}}",
+    "check": "Le téléchargement est vérifié par rapport à son SHA-256 publié avant que quoi que ce soit ne soit écrit.",
+    "models": "Modèles gratuits vérifiés le {{date}}. Les modèles gratuits peuvent prendre fin à tout moment ; PasaBot vous préviendra si le vôtre cesse de fonctionner.",
+    "agree": "Installer et créer mon agent",
+    "back": "Retour",
+    "working": "Installation…",
+    "failed": "Impossible d'installer OpenCode : {{reason}}. Rien n'a été créé. Vous pouvez toujours configurer un cerveau vous-même.",
+    "agentName": "Démarrage",
+    "agentInstructions": "Vous êtes un assistant sympathique. Gardez des réponses courtes et claires."
+  },
+  "notice": {
+    "title": "Le modèle gratuit a cessé de fonctionner",
+    "body": "{{model}} {{reason}}. Votre agent a besoin d'un autre cerveau.",
+    "action": "Choisir un autre cerveau",
+    "notFreeTitle": "Le modèle gratuit n'est plus gratuit",
+    "not_free": "{{name}} n'est plus gratuit. Votre agent a besoin d'un autre cerveau : configurez-en un ou utilisez un modèle local.",
+    "needs_key": "{{name}} nécessite désormais une clé ou une connexion. Votre agent a besoin d'un autre cerveau.",
+    "unavailable": "{{name}} n'est plus disponible. Votre agent a besoin d'un autre cerveau.",
+    "none": "Votre démarrage gratuit fonctionne.",
+    "busy": "Le modèle gratuit est occupé ou à court de quota, réessayez à {{time}}."
+  },
+  "catalog": {
+    "title": "Partir d'un modèle",
+    "use": "Utiliser",
+    "useNamed": "Utiliser {{name}}",
+    "export": "Exporter",
+    "exportNamed": "Exporter {{name}}",
+    "empty": "Aucun modèle pour l'instant."
+  },
+  "describe": {
+    "title": "Décrivez votre agent",
+    "label": "Que doit faire l'agent ?",
+    "placeholder": "Crée-moi un agent qui…",
+    "submit": "Créer un brouillon"
+  },
+  "import": {
+    "title": "Importer un fichier d'agent",
+    "hint": "Un fichier .pasabot-template.json, un fichier .md d'agent ou un fichier .json d'assistant.",
+    "label": "Fichier d'agent"
+  },
+  "review": {
+    "title": "Vérifier le nouvel agent",
+    "hint": "Rien n'est créé tant que vous n'appuyez pas sur Créer.",
+    "name": "Nom",
+    "instructions": "Instructions",
+    "brain": "Cerveau",
+    "create": "Créer l'agent",
+    "cancel": "Annuler"
+  },
+  "error": "Une erreur s'est produite : {{msg}}",
+  "server": {
+    "skippedTitle": "Une routine a été sautée : le modèle gratuit a atteint sa limite",
+    "skippedBody": "Les routines sur le modèle gratuit sautent leurs exécutions d’ici là ; la suivante s’exécute normalement."
+  },
+  "find": {
+    "navHint": "Des agents prêts à l’emploi",
+    "navKeywords": "modèles, exemples, démarrage, préréglages"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Assistants tout prêts pour commencer"
+    },
+    "describe": {
+      "title": "Décrivez votre assistant",
+      "label": "Que doit faire l’assistant ?",
+      "placeholder": "Crée-moi un assistant qui…"
+    },
+    "import": {
+      "title": "Importer un assistant depuis un fichier",
+      "hint": "Un fichier d’assistant enregistré par PasaBot ou une autre appli d’assistant.",
+      "label": "Fichier de l’assistant"
+    },
+    "review": {
+      "title": "Vérifiez le nouvel assistant",
+      "create": "Créer cet assistant"
+    }
+  }
+}

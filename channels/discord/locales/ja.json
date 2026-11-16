@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "ボットトークン",
+    "botTokenHint": "Discord開発者ポータルのアプリケーションのBotページで取得できます。そこでMessage Content intentをオンにしてください。ボールトに保存され、再表示されません。",
+    "apiBase": "APIアドレス",
+    "gatewayUrl": "ゲートウェイアドレス",
+    "advancedHint": "変更が必要だとわかっている場合を除き、そのままにしてください。"
+  },
+  "link": {
+    "howTo": "ボットにダイレクトメッセージを送ってください：/link {{code}}",
+    "dmOnly": "連携コードはボットへのダイレクトメッセージでのみ使えます。"
+  },
+  "status": {
+    "connected": "接続済み",
+    "reconnecting": "再接続中…",
+    "auth_failed": "Discordにボットを拒否されました（トークンとMessage Content intentを確認してください）",
+    "stopped": "停止中"
+  }
+}

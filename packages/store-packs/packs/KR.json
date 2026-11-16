@@ -1,0 +1,44 @@
+{
+  "country": "KR",
+  "name": "South Korea",
+  "stores": [
+    {
+      "id": "coupang",
+      "name": "Coupang",
+      "homeUrl": "https://www.coupang.com/",
+      "searchUrl": "https://www.coupang.com/np/search?q={query}",
+      "allowedHosts": ["coupang.com", "*.coupang.com", "*.coupangcdn.com"],
+      "currency": "KRW",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "naver-shopping",
+      "name": "Naver Shopping",
+      "homeUrl": "https://shopping.naver.com/",
+      "searchUrl": "https://search.shopping.naver.com/search/all?query={query}",
+      "allowedHosts": [
+        "shopping.naver.com",
+        "search.shopping.naver.com",
+        "smartstore.naver.com",
+        "*.pstatic.net"
+      ],
+      "currency": "KRW",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "gmarket",
+      "name": "Gmarket",
+      "homeUrl": "https://www.gmarket.co.kr/",
+      "searchUrl": "https://www.gmarket.co.kr/n/search?keyword={query}",
+      "allowedHosts": ["gmarket.co.kr", "*.gmarket.co.kr"],
+      "currency": "KRW",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    }
+  ]
+}

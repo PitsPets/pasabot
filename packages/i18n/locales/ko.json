@@ -1,0 +1,136 @@
+{
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "다시 시도",
+    "skip": "건너뛰기",
+    "cancel": "취소",
+    "save": "저장",
+    "loading": "불러오는 중…"
+  },
+  "queue": {
+    "interrupted": "서버가 다시 시작되어 이 실행이 중단됐어요.",
+    "interruptedHint": "다시 시도하거나, 건너뛰고 다음 메시지로 넘어가세요.",
+    "routineInterrupted": "서버가 다시 시작되어 {{agent}} 에이전트의 루틴 실행이 중단됐어요."
+  },
+  "blocks": {
+    "fallback": "이 메시지에는 앱에서 표시할 수 없는 콘텐츠({{kind}})가 있어요."
+  },
+  "meta": {
+    "name": "한국어",
+    "dir": "ltr",
+    "status": "unreviewed"
+  },
+  "server": {
+    "approvalNeeded": "승인이 필요해요",
+    "wantsToUse": "{{name}}이(가) 하려는 작업: {{tool}}",
+    "interrupted": "서버 재시작으로 실행이 중단됐어요",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}: 실행 실패",
+    "unknownError": "알 수 없는 오류",
+    "devicePaired": "기기가 페어링됐어요",
+    "devicePairedBody": "이제 {{what}}에서 내 계정에 로그인할 수 있어요."
+  },
+  "provider": {
+    "fakeName": "가짜(테스트용)",
+    "hint": {
+      "notOnPath": "PATH에서 {{cli}}을(를) 찾을 수 없어요",
+      "notFound": "{{cli}}을(를) 찾을 수 없어요",
+      "versionFailed": "`{{cmd}} --version` 실행에 실패했어요",
+      "runToSignIn": "로그인하려면 `{{cmd}}`을(를) 한 번 실행하세요",
+      "runToSignInOrKey": "로그인하려면 `{{cmd}}`을(를) 한 번 실행하세요(또는 보관함에서 {{env}} 설정)",
+      "runToAddProvider": "제공자를 추가하려면 `{{cmd}}`을(를) 한 번 실행하세요",
+      "checkedFirstTurn": "로그인은 첫 턴에서 확인해요",
+      "notAnswering": "{{name}}({{url}})이(가) 응답하지 않아요",
+      "turnSignIn": "지난번 실행에서 로그인이 되지 않았어요. 두뇌 페이지에서 다시 로그인하세요."
+    }
+  },
+  "channel": {
+    "linked": "연결됐어요. 여기서 {{agent}}와(과) 대화할 수 있어요.",
+    "linkInvalid": "그 연결 코드는 유효하지 않거나 만료됐어요. PasaBot의 설정 → 채널에서 새로 만드세요.",
+    "failed": "죄송해요, 잘 안 됐어요. 자세한 내용은 PasaBot 앱에 있어요.",
+    "empty": "(답장 없음)",
+    "interrupted": "재시작으로 중단됐어요. PasaBot 앱에서 다시 시도하세요.",
+    "approvalAsk": "승인이 필요해요: {{summary}}\n/approve {{id}} 또는 /deny {{id}}로 답장하세요",
+    "approvalDevice": "승인이 필요해요: {{summary}}\n이 요청은 페어링된 기기의 PasaBot 앱에서만 승인할 수 있어요.",
+    "approvalNone": "이 채팅에 그 id로 대기 중인 승인이 없어요.",
+    "approvalOwnerOnly": "연결된 소유자만 승인에 답할 수 있어요.",
+    "approvalDeviceOnly": "이 승인은 페어링된 기기의 PasaBot 앱에서만 답할 수 있어요.",
+    "approved": "{{id}} 승인했어요.",
+    "denied": "{{id}} 거절했어요."
+  },
+  "card": {
+    "action": {
+      "open": "열기",
+      "dismiss": "닫기",
+      "signIn": "다시 로그인",
+      "retry": "다시 시도",
+      "otherBrain": "다른 두뇌 사용",
+      "wait": "계속 기다리기",
+      "notNow": "나중에",
+      "takeOver": "직접 하기",
+      "imDone": "다 했어요, 계속해요",
+      "ok": "확인",
+      "remind": "알려 주세요"
+    },
+    "signIn": {
+      "title": "{{name}}의 두뇌에 로그인이 필요해요",
+      "text": "{{brain}}이(가) 로그아웃되어 {{name}}이(가) 아직 답할 수 없어요. 한 번 로그인한 뒤 다시 시도하세요."
+    },
+    "failed": {
+      "title": "{{name}}이(가) 이 답장을 끝내지 못했어요",
+      "offline": "두뇌에 연결하지 못했어요. 인터넷을 확인하고 다시 시도하세요.",
+      "timeout": "너무 오래 걸려서 멈췄어요.",
+      "auth": "두뇌가 로그아웃됐어요.",
+      "ratelimit": "두뇌의 사용 한도에 지금 도달했어요.",
+      "quota": "이 요금제에서 두뇌 사용량이 남지 않았어요.",
+      "contextoverflow": "대화가 두뇌에게 너무 길어졌어요.",
+      "other": "답장이 끝나기 전에 두뇌가 멈췄어요."
+    },
+    "limit": {
+      "title": "{{name}}은(는) {{untilAt}}까지 쉬어요",
+      "text": "두뇌의 사용 한도에 도달했어요. 메시지는 기다렸다가 자동으로 보내져요.",
+      "offline": "지금은 두뇌에 연결할 수 없어요. 메시지는 기다렸다가 자동으로 보내져요.",
+      "remindNow": "{{name}}이(가) 이제 다시 할 수 있어요",
+      "offlineTitle": "{{name}}은(는) {{untilAt}}까지 쉬어요"
+    },
+    "settled": {
+      "retrying": "다시 시도하는 중",
+      "signedIn": "다시 로그인됨",
+      "resumed": "다시 작동해요",
+      "remind": "{{untilAt}}에 알려 드릴게요"
+    },
+    "member": {
+      "failed": "{{name}}이(가) 이 답장을 끝내지 못했어요.",
+      "approvalWaiting": "{{name}}이(가) 주인의 승인을 기다리고 있어요.",
+      "approvalApproved": "{{name}}이(가) 승인을 받았어요.",
+      "approvalRefused": "{{name}}은(는) 허락받지 못했어요."
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}}을(를) 위해 다시 로그인해 주세요",
+        "text": "{{name}}의 두뇌가 로그아웃되어 아직 답할 수 없어요. 한 번 로그인한 뒤 메시지를 다시 보내 주세요."
+      },
+      "action": {
+        "otherBrain": "다른 두뇌 쓰기"
+      },
+      "limit": {
+        "title": "{{name}}은(는) 지금 쓸 수 있는 횟수를 다 썼어요",
+        "text": "{{untilAt}}에 다시 할 수 있어요. 메시지는 기다렸다가 자동으로 보내져요.",
+        "offlineTitle": "{{name}}이(가) 지금 두뇌에 연결할 수 없어요",
+        "offline": "{{untilAt}}에 다시 시도해요. 메시지는 기다렸다가 자동으로 보내져요."
+      },
+      "failed": {
+        "offline": "두뇌에 연결하지 못했어요. 인터넷을 확인한 뒤 다시 해 보세요.",
+        "auth": "두뇌가 로그아웃되어 있어요.",
+        "ratelimit": "지금 쓸 수 있는 횟수를 다 썼어요.",
+        "quota": "이 요금제에서는 남은 횟수가 없어요.",
+        "contextoverflow": "대화가 두뇌에게 너무 길어졌어요.",
+        "other": "답을 끝내기 전에 멈췄어요."
+      }
+    }
+  }
+}

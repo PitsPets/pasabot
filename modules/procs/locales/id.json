@@ -1,0 +1,20 @@
+{
+  "nav": "Proses",
+  "page": {
+    "title": "Proses latar belakang",
+    "intro": "Proses yang dimulai agent Anda lewat alat PasaBot. Menghentikannya akan mengakhiri proses itu beserta semua yang dijalankannya.",
+    "empty": "Tidak ada yang berjalan di latar belakang."
+  },
+  "proc": {
+    "since": "Berjalan sejak",
+    "stop": "Hentikan"
+  },
+  "tools": {
+    "procs_list": "Daftar proses latar saya",
+    "procs_stop": "Hentikan salah satu proses latar saya"
+  },
+  "find": {
+    "navHint": "Proses dan pekerjaan yang berjalan",
+    "navKeywords": "proses, pekerjaan, berjalan, tugas"
+  }
+}

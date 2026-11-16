@@ -1,0 +1,113 @@
+{
+  "nav": "MCP servers",
+  "page": {
+    "title": "MCP servers",
+    "intro": "Outside tool servers your agents can use. Add one, test it, turn it on, then choose which agents may use it."
+  },
+  "loading": "Loading…",
+  "empty": "No MCP servers yet. Add one here, or install a connector.",
+  "transport": {
+    "stdio": "Command on this machine",
+    "http": "Web address"
+  },
+  "level": {
+    "none": "Hidden",
+    "use": "Can use",
+    "manage": "Can manage",
+    "inherit": "Default ({{level}})"
+  },
+  "access": {
+    "title": "Who can use it",
+    "hint": "Hidden agents cannot see this server. Agents that can manage it may rename it or turn it off, and still ask you first.",
+    "all": "All agents"
+  },
+  "server": {
+    "on": "On",
+    "off": "Off",
+    "fromConnector": "From a connector",
+    "tools_one": "{{count}} tool",
+    "tools_other": "{{count}} tools",
+    "testFailed": "Test failed",
+    "secrets": "Secrets kept in the vault: {{names}}",
+    "test": "Test",
+    "turnOn": "Turn on",
+    "turnOff": "Turn off",
+    "remove": "Remove",
+    "removeConfirm": "Yes, remove it"
+  },
+  "add": {
+    "open": "Add MCP server",
+    "title": "New MCP server",
+    "name": "Name",
+    "transport": "How to reach it",
+    "command": "Command",
+    "commandHint": "The program to start, e.g. npx or docker. It starts without a shell.",
+    "args": "Arguments",
+    "argsHint": "One per line.",
+    "env": "Settings (not secret)",
+    "envHint": "One NAME=value per line.",
+    "url": "Address (https://…)",
+    "secrets": "Secret settings",
+    "secretHeaders": "Secret headers",
+    "secretsHint": "Saved in the vault. You cannot read them back here, and agents never see them.",
+    "secretName": "Name",
+    "headerName": "Header",
+    "secretValue": "Value",
+    "anotherSecret": "Add another",
+    "save": "Add server",
+    "cancel": "Cancel"
+  },
+  "classes": {
+    "title": "What each tool does",
+    "hint": "Paying and messaging other people always ask you first, at every trust level. Each tool's kind is guessed from its name when it is listed; fix it here if the guess is wrong.",
+    "default": "Default: {{class}}",
+    "money": "Money (buying, paying)",
+    "outbound-message": "Message to other people",
+    "delete": "Deleting",
+    "publish": "Publishing",
+    "none": "Nothing special",
+    "alwaysAsks": "Always asks"
+  },
+  "tools": {
+    "tools_find": "Find tools",
+    "tools_describe": "Describe a tool",
+    "tools_invoke": "Use an outside tool",
+    "mcp_servers": "List MCP servers",
+    "mcp_server_update": "Change an MCP server"
+  },
+  "find": {
+    "navHint": "Tool servers your agents can call",
+    "navKeywords": "tools, servers, plugins, integrations"
+  },
+  "plain": {
+    "nav": "Apps and tools helpers can use",
+    "find": {
+      "navHint": "Extra apps your helpers can reach and use for you"
+    },
+    "page": {
+      "title": "Apps and tools helpers can use",
+      "intro": "Outside apps and tools your helpers can use. Add one, test it, turn it on, then choose which helpers may use it."
+    },
+    "empty": "Nothing here yet. Add one here, or add a ready-made app.",
+    "access": {
+      "hint": "Hidden helpers cannot see it. Helpers that can manage it may rename it or turn it off, and still ask you first.",
+      "all": "All helpers"
+    },
+    "add": {
+      "open": "Add an app or tool",
+      "title": "New app or tool",
+      "secretsHint": "Kept safe on this computer. You cannot read them back here, and helpers never see them.",
+      "save": "Add it",
+      "command": "How to open it",
+      "commandHint": "The app's own setup page tells you what to write here.",
+      "args": "Extra details"
+    },
+    "transport": {
+      "stdio": "A program on this computer",
+      "http": "An address on the web"
+    },
+    "server": {
+      "fromConnector": "Ready-made app"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "nav": "Hanapin",
+  "title": "Hanapin sa mga mensahe",
+  "label": "Hanapin sa mga chat mo",
+  "placeholder": "Mag-type ng salita",
+  "hint": "Hinahanap ang salita sa lahat ng chat na kasali ka, pinakabago muna.",
+  "empty": "Walang nahanap.",
+  "untitled": "Chat",
+  "count_one": "{{count}} mensahe",
+  "count_other": "{{count}} mensahe",
+  "author": {
+    "user": "Tao",
+    "agent": "Agent",
+    "system": "PasaBot",
+    "external": "Taga-labas"
+  },
+  "error": "Hindi nakapaghanap. {{reason}}",
+  "tools": {
+    "search_messages": "Maghanap sa mga mensahe"
+  },
+  "find": {
+    "navHint": "Hanapin ang anumang mensahe sa mga chat",
+    "navKeywords": "hanapin, maghanap, mensahe, kasaysayan"
+  }
+}

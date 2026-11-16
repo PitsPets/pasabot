@@ -1,0 +1,183 @@
+{
+  "nav": "安全",
+  "stop": {
+    "button": "全部停止",
+    "buttonLabel": "立即停止所有智能体",
+    "stopped": "已暂停",
+    "resume": "重新开始",
+    "failed": "无法停止：{{reason}}",
+    "resumeLabel": "一切都已暂停。重新开始"
+  },
+  "report": {
+    "title": "一切都已暂停",
+    "intro": "在你按下“重新开始”之前，什么都不会运行。以下是已停止的内容。",
+    "by": "由{{who}}于 {{when}} 停止。",
+    "who": {
+      "owner": "你",
+      "linked-machine": "已关联的设备",
+      "channel": "频道命令",
+      "automation": "自动化令牌",
+      "agent": "某个智能体",
+      "system": "服务器"
+    },
+    "empty": "没有正在运行或等待中的内容。",
+    "kind": {
+      "run": "运行中的回合",
+      "queued": "等待中的回合",
+      "browser": "浏览器会话",
+      "computer": "电脑会话",
+      "voice": "语音通话",
+      "approval": "审批请求",
+      "other": "其他"
+    },
+    "outcome": {
+      "cancelled": "已停止",
+      "held": "已搁置",
+      "closed": "已关闭"
+    },
+    "agent": "智能体 {{name}}",
+    "close": "好",
+    "resume": "重新开始",
+    "queue": {
+      "message": "消息",
+      "task": "任务",
+      "handoff": "移交",
+      "routine": "例行任务",
+      "workflow": "工作流",
+      "automation-run": "自动化"
+    },
+    "run": "运行 {{id}}",
+    "chat": "聊天 {{id}}"
+  },
+  "resume": {
+    "title": "重新启动你的智能体",
+    "intro": "输入密码以重新启动你的智能体。这样别人就无法擅自重启它们。等待中的工作会重新开始。",
+    "password": "密码",
+    "submit": "重新开始",
+    "cancel": "取消",
+    "wrong": "密码不正确。",
+    "forbidden": "只有所有者能重新开始。",
+    "error": "无法重新开始：{{reason}}"
+  },
+  "page": {
+    "title": "安全",
+    "intro": "智能体做过的每一步，以及约束它们的控制措施。"
+  },
+  "receipts": {
+    "title": "回执",
+    "intro": "智能体的每项任务都会留下回执：包括步骤、工具调用、审批及决定人，以及使用的 token。",
+    "empty": "还没有回执。智能体一开始处理任务就会出现。",
+    "steps": "{{count}} 个步骤",
+    "tokens": "输入 {{input}} / 输出 {{output}} token",
+    "open": "打开回执",
+    "back": "全部回执",
+    "timeline": "时间线",
+    "step": "第 {{n}} 步，共 {{total}} 步",
+    "scrub": "在步骤间移动",
+    "export": "导出",
+    "exportJson": "下载 JSON",
+    "exportHtml": "打开可读版本",
+    "exporting": "正在准备…",
+    "decidedBy": "由{{who}}决定",
+    "you": "你",
+    "duration": "{{s}} 秒",
+    "cost": "费用 {{amount}} {{currency}}",
+    "state": {
+      "running": "运行中",
+      "done": "已完成",
+      "failed": "失败",
+      "cancelled": "已停止",
+      "interrupted": "已中断"
+    },
+    "kind": {
+      "run.started": "已开始",
+      "run.finished": "已结束",
+      "tool.call": "工具调用",
+      "tool.result": "工具结果",
+      "permission": "请求权限",
+      "approval.requested": "已向你请求审批",
+      "approval.decided": "你的决定",
+      "usage": "已用 token",
+      "reply": "回复",
+      "error": "错误",
+      "subagent": "助手",
+      "screenshot": "截图",
+      "link": "链接",
+      "refused": "被安全检查拒绝"
+    },
+    "youNamed": "{{name}}（你）",
+    "nobody": "无人（已过期）",
+    "someoneElse": "另一个所有者会话"
+  },
+  "retention": {
+    "title": "回执保留时长",
+    "days": "天数",
+    "hint": "更早的回执及其截图将被永久删除。",
+    "save": "保存",
+    "saved": "已保存。已删除 {{count}} 条旧回执。"
+  },
+  "scan": {
+    "title": "安装前检查技能",
+    "intro": "粘贴技能的内容。我们会查找风险项：下载并运行程序、读取密钥或密码、隐藏文本，以及向外发送数据。",
+    "label": "技能内容",
+    "run": "检查",
+    "running": "正在检查…",
+    "clean": "未发现任何风险。",
+    "noticed": "我们发现：",
+    "timeout": "检查耗时过长，已停止。安装前请自行阅读该技能。",
+    "error": "检查失败：{{reason}}",
+    "line": "第 {{line}} 行",
+    "kind": {
+      "download-and-run": "下载并运行程序",
+      "credential-path": "读取密钥、密码或浏览器数据",
+      "hidden-text": "含有隐藏文本",
+      "exfiltration": "可能向外发送你的数据",
+      "model-instruction": "试图向智能体下达秘密指令"
+    }
+  },
+  "decision": {
+    "proposal": "技能“{{skill}}”申请权限",
+    "proposalText": "请先打开“技能”，查看它申请的所有工具、网站和文件，再做决定。",
+    "proposalWiden": "它申请的权限超出了你之前的批准。请先打开“技能”查看有哪些变化，再做决定。"
+  },
+  "find": {
+    "navHint": "智能体可以做什么及其记录",
+    "navKeywords": "批准, 权限, 允许, 日志, 审计"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助手能做什么，以及记录"
+    },
+    "stop": {
+      "buttonLabel": "立即停止所有助手"
+    },
+    "page": {
+      "intro": "你的助手一步步做了什么，以及管住它们的控制。"
+    },
+    "receipts": {
+      "intro": "助手的每项工作都会留下收据：步骤、用了什么、你批准了什么和谁做的决定，以及用量。",
+      "empty": "还没有收据。助手一开始做事就会出现。",
+      "tokens": "读取 {{input}} / 写出 {{output}}",
+      "kind": {
+        "usage": "用量"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "自动运行的东西",
+        "agent": "一个助手",
+        "system": "PasaBot 自己"
+      },
+      "agent": "助手 {{name}}"
+    },
+    "scan": {
+      "title": "添加前先检查这项本领",
+      "intro": "粘贴它的文字。我们会找危险的地方：下载并运行程序、读取密钥或密码、隐藏文字、把数据发出去。",
+      "label": "它的文字",
+      "timeout": "检查太久，已停止。添加前请自己读一遍。",
+      "kind": {
+        "model-instruction": "想给助手下秘密命令"
+      }
+    }
+  }
+}

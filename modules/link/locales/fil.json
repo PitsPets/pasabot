@@ -1,0 +1,102 @@
+{
+  "nav": "Mga machine",
+  "settings": "Mga machine",
+  "page": {
+    "title": "Mga naka-link na machine",
+    "intro": "Ang iba mo pang PasaBot machine. Pumili ng isa para makita ang mga agent nito at makipag-chat sa kanila; sa machine na iyon tumatakbo ang trabaho, sa sarili nitong mga patakaran.",
+    "empty": "Wala pang naka-link na machine. Mag-link sa Settings → Mga machine.",
+    "agents": "Mga agent sa {{name}}",
+    "noAgents": "Wala pang agent doon.",
+    "back": "Lahat ng machine",
+    "open": "Buksan",
+    "refresh": "I-refresh"
+  },
+  "chat": {
+    "title": "{{agent}} sa {{machine}}",
+    "placeholder": "Mag-message kay {{agent}}",
+    "send": "Ipadala",
+    "waiting": "Hinihintay si {{agent}}…",
+    "me": "Ikaw",
+    "empty": "Mag-hello ka. Sa {{machine}} tatakbo ang mensahe mo, bilang hiling mula sa naka-link na machine."
+  },
+  "state": {
+    "active": "Naka-link",
+    "awaiting": "Hinihintay ang may-ari ng kabila",
+    "requested": "Gustong mag-link",
+    "revoked": "Na-unlink na"
+  },
+  "grant": {
+    "label": "Ano ang puwede nitong gawin sa machine na ito",
+    "view": "Tumingin",
+    "chat": "Mag-chat",
+    "manage": "Mamahala",
+    "hint": "Tumingin: pangalan ng machine at ng mga agent. Mag-chat: puwede ring makipag-chat sa mga agent mo rito. Mamahala: pati mga routine at workflow, ayon sa sariling patakaran ng machine na ito. Hindi ito kailanman nagiging may-ari rito."
+  },
+  "status": {
+    "this": "Machine na ito: {{name}}",
+    "fingerprint": "Fingerprint ng key {{fp}}",
+    "unavailable": "Hindi pa puwedeng mag-link",
+    "transport": "Link transport: {{transport}} · {{state}}",
+    "transportRunning": "tumatakbo",
+    "transportDown": "binubuksan ulit",
+    "transportIdle": "naka-standby hanggang may naka-link na machine"
+  },
+  "code": {
+    "title": "Mag-link ng machine",
+    "intro": "Magpakita ng one-time code dito, tapos ilagay ito sa kabilang machine. Isang beses lang ito gagana at mag-e-expire sa loob ng 10 minuto.",
+    "make": "Ipakita ang link code",
+    "expires": "Mag-e-expire nang {{time}}",
+    "copy": "Kopyahin ang code",
+    "copied": "Nakopya na",
+    "qr": "Link code bilang QR"
+  },
+  "join": {
+    "title": "Ilagay ang code mula sa ibang machine",
+    "code": "Link code",
+    "submit": "I-link",
+    "done": "Naipadala na. Kukumpirmahin ito ng may-ari sa machine nila."
+  },
+  "reauth": {
+    "password": "Ang password mo (para makumpirmang ikaw ito)"
+  },
+  "peers": {
+    "title": "Mga naka-link na machine",
+    "empty": "Wala pa.",
+    "confirm": "Kumpirmahin ang link",
+    "check": "Silipin",
+    "unlink": "I-unlink",
+    "unlinkConfirm": "I-unlink ang {{name}}? Mawawalan agad ito ng access.",
+    "fp": "Key {{fp}}"
+  },
+  "intros": {
+    "title": "Mga pakilala",
+    "offer": "Ipinapakilala ng {{via}} ang {{name}} (key {{fp}}). Walang mali-link hangga't hindi mo ito nili-link gamit ang code mula sa machine na iyon.",
+    "accept": "Sige, noted",
+    "dismiss": "Huwag na"
+  },
+  "error": "May nagkamali: {{message}}",
+  "tools": {
+    "link_machines": "Ilista ang mga naka-link na makina",
+    "link_message": "Mag-message sa agent sa naka-link na makina"
+  },
+  "server": {
+    "introTitle": "Inaalok ni {{peer}} na ipakilala si {{name}}",
+    "introBody": "Walang mali-link hangga't hindi mo mismo ito ini-link gamit ang code mula sa makinang iyon.",
+    "linkTitle": "Gustong mag-link ni {{name}} sa makinang ito",
+    "linkBody": "Kumpirmahin ito sa Mga Setting → Mga Makina at piliin kung ano ang puwede nitong gawin dito."
+  },
+  "find": {
+    "navHint": "Ibang makinang naka-link dito",
+    "navKeywords": "makina, computer, server, i-link, malayuan"
+  },
+  "plain": {
+    "page": {
+      "intro": "Ang iba mo pang computer na may PasaBot. Pumili ng isa para makita ang mga katulong nito at makipag-chat sa kanila; sa computer na iyon tumatakbo ang trabaho, sa sarili nitong mga patakaran.",
+      "agents": "Mga katulong sa {{name}}",
+      "noAgents": "Wala pang katulong doon."
+    },
+    "grant": {
+      "hint": "Tumingin: pangalan ng computer at ng mga katulong nito. Mag-chat: puwede ring makipag-chat sa mga katulong mo rito. Mamahala: pati mga routine at workflow, ayon sa sariling patakaran ng computer na ito. Hindi ito kailanman nagiging may-ari rito."
+    }
+  }
+}

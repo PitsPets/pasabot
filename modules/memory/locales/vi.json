@@ -1,0 +1,135 @@
+{
+  "nav": "Bộ nhớ",
+  "page": {
+    "title": "Bộ nhớ của agent",
+    "intro": "Những gì các agent đã lưu lại để dùng sau. Hãy xóa mọi thứ sai hoặc riêng tư; tính năng tìm kiếm của agent sẽ không thấy nó nữa ngay lập tức."
+  },
+  "scope": {
+    "label": "Bộ nhớ của ai",
+    "all": "Tất cả",
+    "shared": "Chung cho mọi agent",
+    "global": "Toàn cục (mọi agent)",
+    "team": "Nhóm: {{name}}",
+    "private": "Riêng tư"
+  },
+  "search": {
+    "label": "Tìm trong bộ nhớ",
+    "placeholder": "Nhập một từ"
+  },
+  "item": {
+    "shared": "Chung",
+    "saved": "Đã lưu {{when}}",
+    "reviewed": "Đã xem xét",
+    "markReviewed": "Đánh dấu đã xem xét",
+    "forget": "Quên",
+    "confirm": "Quên vĩnh viễn",
+    "cancel": "Giữ lại",
+    "untrusted": "Không phải từ bạn",
+    "global": "Toàn cục",
+    "team": "Nhóm {{name}}",
+    "by": "Lưu bởi {{who}}",
+    "byYou": "Bạn đã lưu",
+    "byImport": "Nhập từ một máy chủ khác",
+    "byUnknown": "Do một agent lưu",
+    "sure": "Chắc chắn",
+    "unsure": "Không chắc",
+    "key": "Khóa: {{key}}",
+    "edit": "Sửa",
+    "editLabel": "Sửa mục bộ nhớ này",
+    "save": "Lưu",
+    "editCancel": "Hủy",
+    "edited": "Đã lưu."
+  },
+  "empty": "Chưa có gì được lưu ở đây.",
+  "loading": "Đang tải…",
+  "error": "Không thể tải bộ nhớ. {{reason}}",
+  "count_other": "{{count}} mục",
+  "settings": {
+    "title": "Bộ nhớ",
+    "backend": "Nơi lưu bộ nhớ",
+    "backendHint": "Thay đổi này không chuyển các mục đã lưu.",
+    "local": "Máy chủ này",
+    "limits": "Tối đa {{perAgent}} mục cho mỗi agent, {{shared}} mục chung, mỗi mục {{textChars}} ký tự."
+  },
+  "origin": {
+    "label": "Lưu từ",
+    "any": "Mọi chat",
+    "owner": "Chat của riêng bạn",
+    "others": "Chat bạn không bắt đầu"
+  },
+  "more": "Hiện thêm",
+  "countMore_other": "{{count}} mục đầu tiên",
+  "merges": {
+    "title": "Cần bạn chọn",
+    "intro": "Hai agent chắc chắn về hai câu trả lời khác nhau cho cùng một việc. Hãy chọn một, hoặc tự viết câu trả lời đúng.",
+    "key": "Về: {{key}}",
+    "current": "Đang lưu",
+    "incoming": "Câu trả lời mới",
+    "keepCurrent": "Giữ bản đã lưu",
+    "useIncoming": "Dùng bản mới",
+    "writeOwn": "Tự viết",
+    "mergedLabel": "Câu trả lời đúng",
+    "saveMerged": "Lưu câu trả lời",
+    "cancel": "Hủy",
+    "gone": "(câu trả lời đã lưu đã bị xóa)"
+  },
+  "teams": {
+    "title": "Nhóm",
+    "intro": "Nhóm là tập hợp các agent dùng chung một bộ nhớ. Agent chỉ đọc và ghi trong các nhóm mà nó tham gia.",
+    "empty": "Chưa có nhóm nào.",
+    "name": "Tên nhóm",
+    "create": "Tạo nhóm",
+    "members": "Thành viên",
+    "noAgents": "Hãy thêm một agent trước.",
+    "delete": "Xóa nhóm",
+    "confirmDelete": "Xóa nhóm và bộ nhớ của nhóm",
+    "keep": "Giữ lại",
+    "count_other": "{{count}} agent"
+  },
+  "tools": {
+    "memory_remember": "Ghi nhớ",
+    "memory_search": "Tìm trong bộ nhớ",
+    "memory_teams": "Nhóm bộ nhớ của tôi",
+    "memory_forget": "Quên"
+  },
+  "find": {
+    "navHint": "Những gì tác tử ghi nhớ",
+    "navKeywords": "ghi nhớ, ghi chú, sự thật, nhớ lại"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Những gì trợ lý ghi nhớ"
+    },
+    "page": {
+      "title": "Những gì trợ lý ghi nhớ",
+      "intro": "Những gì trợ lý lưu lại để dùng sau. Quên đi điều sai hoặc riêng tư; trợ lý sẽ không tìm thấy nữa ngay lập tức."
+    },
+    "scope": {
+      "shared": "Tất cả trợ lý dùng chung",
+      "global": "Mọi người (tất cả trợ lý)"
+    },
+    "item": {
+      "byImport": "Mang từ máy tính khác sang",
+      "byUnknown": "Do một trợ lý lưu"
+    },
+    "settings": {
+      "local": "Máy tính này",
+      "limits": "Tối đa {{perAgent}} mục mỗi trợ lý, {{shared}} dùng chung, mỗi mục {{textChars}} ký tự."
+    },
+    "merges": {
+      "intro": "Hai trợ lý chắc chắn về hai câu trả lời khác nhau cho cùng một việc. Chọn một, hoặc tự viết câu đúng."
+    },
+    "teams": {
+      "intro": "Nhóm là một nhóm trợ lý dùng chung một trí nhớ. Trợ lý chỉ đọc và ghi trong nhóm mình thuộc về.",
+      "noAgents": "Hãy thêm một trợ lý trước."
+    }
+  },
+  "card": {
+    "saved": {
+      "title": "Tôi sẽ nhớ điều đó",
+      "undo": "Hoàn tác",
+      "all": "Xem mọi điều tôi nhớ",
+      "undone": "Đã quên"
+    }
+  }
+}

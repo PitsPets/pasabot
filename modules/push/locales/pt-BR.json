@@ -1,0 +1,40 @@
+{
+  "title": "Notificações neste dispositivo",
+  "intro": "Receba uma notificação neste celular ou computador mesmo com o PasaBot fechado.",
+  "state": {
+    "loading": "Verificando…",
+    "off": "Desativadas",
+    "on": "Ativadas",
+    "unsupported": "Não compatível aqui",
+    "blocked": "Bloqueadas no navegador",
+    "unavailable": "Indisponível neste servidor"
+  },
+  "turnOn": "Ativar notificações",
+  "turnOff": "Desativar neste dispositivo",
+  "prefs": {
+    "title": "Avisar quando",
+    "approval": "Um agente precisar da minha aprovação",
+    "error": "Uma execução falhar",
+    "finished": "Um agente responder",
+    "progress": "Uma tarefa longa ainda estiver em andamento",
+    "alert": "Outros alertas (servidor, segurança)"
+  },
+  "test": {
+    "button": "Enviar teste",
+    "sent": "Enviado. Ele deve aparecer em instantes.",
+    "failed": "O teste não foi enviado. Desative e ative as notificações novamente."
+  },
+  "help": {
+    "unsupported": "Este navegador não consegue receber notificações de sites.",
+    "blocked": "As notificações estão bloqueadas para o PasaBot. Permita-as nas configurações de sites do navegador e depois volte aqui.",
+    "unavailable": "O servidor não pode enviar notificações agora (o cofre de segredos está bloqueado).",
+    "iphone": "No iPhone e no iPad, primeiro adicione o PasaBot à Tela de Início (Compartilhar → Adicionar à Tela de Início) e depois ative isto por lá."
+  },
+  "errors": {
+    "subscribe": "Não foi possível ativar as notificações. Tente novamente."
+  },
+  "find": {
+    "settingsHint": "Notificações neste aparelho",
+    "settingsKeywords": "notificações, alertas, avisos, som"
+  }
+}

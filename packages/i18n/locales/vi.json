@@ -1,0 +1,136 @@
+{
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "Thử lại",
+    "skip": "Bỏ qua",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "loading": "Đang tải…"
+  },
+  "queue": {
+    "interrupted": "Lượt chạy này bị gián đoạn do máy chủ khởi động lại.",
+    "interruptedHint": "Hãy thử lại, hoặc bỏ qua để tiếp tục với tin nhắn tiếp theo.",
+    "routineInterrupted": "Một lượt chạy routine của {{agent}} bị gián đoạn do máy chủ khởi động lại."
+  },
+  "blocks": {
+    "fallback": "Tin nhắn này có nội dung mà ứng dụng không thể hiển thị ({{kind}})."
+  },
+  "meta": {
+    "name": "Tiếng Việt",
+    "dir": "ltr",
+    "status": "unreviewed"
+  },
+  "server": {
+    "approvalNeeded": "Cần bạn duyệt",
+    "wantsToUse": "{{name}} muốn: {{tool}}",
+    "interrupted": "Lượt chạy bị ngắt do máy chủ khởi động lại",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}: lượt chạy thất bại",
+    "unknownError": "lỗi không xác định",
+    "devicePaired": "Một thiết bị đã được ghép đôi",
+    "devicePairedBody": "{{what}} giờ có thể đăng nhập vào tài khoản của bạn."
+  },
+  "provider": {
+    "fakeName": "Giả lập (kiểm thử)",
+    "hint": {
+      "notOnPath": "Không tìm thấy {{cli}} trong PATH",
+      "notFound": "Không tìm thấy {{cli}}",
+      "versionFailed": "`{{cmd}} --version` bị lỗi",
+      "runToSignIn": "chạy `{{cmd}}` một lần để đăng nhập",
+      "runToSignInOrKey": "chạy `{{cmd}}` một lần để đăng nhập (hoặc đặt {{env}} qua kho khóa)",
+      "runToAddProvider": "chạy `{{cmd}}` một lần để thêm nhà cung cấp",
+      "checkedFirstTurn": "trạng thái đăng nhập được kiểm tra ở lượt đầu tiên",
+      "notAnswering": "{{name}} ({{url}}) không phản hồi",
+      "turnSignIn": "Lần chạy trước đăng nhập không được. Hãy đăng nhập lại ở trang Bộ não."
+    }
+  },
+  "channel": {
+    "linked": "Đã liên kết. Bạn có thể trò chuyện với {{agent}} tại đây.",
+    "linkInvalid": "Mã liên kết đó không hợp lệ hoặc đã hết hạn. Hãy tạo mã mới trong PasaBot: Cài đặt → Kênh.",
+    "failed": "Xin lỗi, việc đó không thành công. Chi tiết có trong ứng dụng PasaBot.",
+    "empty": "(không có trả lời)",
+    "interrupted": "Bị ngắt do khởi động lại. Hãy thử lại trong ứng dụng PasaBot.",
+    "approvalAsk": "Cần bạn duyệt: {{summary}}\nTrả lời /approve {{id}} hoặc /deny {{id}}",
+    "approvalDevice": "Cần bạn duyệt: {{summary}}\nYêu cầu này chỉ duyệt được trong ứng dụng PasaBot trên thiết bị đã ghép đôi.",
+    "approvalNone": "Không có yêu cầu duyệt nào đang chờ với id đó trong cuộc trò chuyện này.",
+    "approvalOwnerOnly": "Chỉ chủ sở hữu đã liên kết mới trả lời được yêu cầu duyệt.",
+    "approvalDeviceOnly": "Yêu cầu duyệt này chỉ trả lời được trong ứng dụng PasaBot trên thiết bị đã ghép đôi.",
+    "approved": "Đã duyệt {{id}}.",
+    "denied": "Đã từ chối {{id}}."
+  },
+  "card": {
+    "action": {
+      "open": "Mở",
+      "dismiss": "Bỏ qua",
+      "signIn": "Đăng nhập lại",
+      "retry": "Thử lại",
+      "otherBrain": "Dùng bộ não khác",
+      "wait": "Cứ chờ",
+      "notNow": "Để sau",
+      "takeOver": "Tự làm",
+      "imDone": "Xong rồi, tiếp đi",
+      "ok": "Được",
+      "remind": "Nhắc tôi"
+    },
+    "signIn": {
+      "title": "Bộ não của {{name}} cần bạn đăng nhập",
+      "text": "{{brain}} đã đăng xuất nên {{name}} chưa trả lời được. Đăng nhập một lần rồi thử lại."
+    },
+    "failed": {
+      "title": "{{name}} không hoàn thành được câu trả lời này",
+      "offline": "Không kết nối được bộ não. Kiểm tra mạng rồi thử lại.",
+      "timeout": "Mất quá lâu nên đã dừng.",
+      "auth": "Bộ não đã đăng xuất.",
+      "ratelimit": "Bộ não đã hết lượt dùng lúc này.",
+      "quota": "Bộ não đã hết lượt dùng của gói này.",
+      "contextoverflow": "Cuộc trò chuyện quá dài với bộ não.",
+      "other": "Bộ não dừng trước khi trả lời xong."
+    },
+    "limit": {
+      "title": "{{name}} tạm dừng đến {{untilAt}}",
+      "text": "Bộ não đã hết lượt dùng. Tin nhắn của bạn sẽ chờ và tự gửi đi.",
+      "offline": "Hiện không kết nối được bộ não. Tin nhắn của bạn sẽ chờ và tự gửi đi.",
+      "remindNow": "{{name}} có thể tiếp tục rồi",
+      "offlineTitle": "{{name}} tạm dừng đến {{untilAt}}"
+    },
+    "settled": {
+      "retrying": "Đang thử lại",
+      "signedIn": "Đã đăng nhập lại",
+      "resumed": "Đã hoạt động lại",
+      "remind": "Tôi sẽ nhắc bạn lúc {{untilAt}}"
+    },
+    "member": {
+      "failed": "{{name}} không hoàn thành được câu trả lời này.",
+      "approvalWaiting": "{{name}} đang chờ chủ đồng ý.",
+      "approvalApproved": "{{name}} đã được đồng ý.",
+      "approvalRefused": "{{name}} không được cho phép."
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}} cần bạn đăng nhập lại",
+        "text": "Trí óc của {{name}} đã đăng xuất nên chưa trả lời được. Hãy đăng nhập một lần, rồi gửi lại tin nhắn."
+      },
+      "action": {
+        "otherBrain": "Dùng trí óc khác"
+      },
+      "limit": {
+        "title": "{{name}} đã dùng hết lượt cho lúc này",
+        "text": "Có thể tiếp tục lúc {{untilAt}}. Tin nhắn của bạn sẽ chờ và tự gửi đi.",
+        "offlineTitle": "{{name}} hiện không kết nối được trí óc",
+        "offline": "Sẽ thử lại lúc {{untilAt}}. Tin nhắn của bạn sẽ chờ và tự gửi đi."
+      },
+      "failed": {
+        "offline": "Không kết nối được trí óc. Kiểm tra internet rồi thử lại.",
+        "auth": "Trí óc đã đăng xuất.",
+        "ratelimit": "Đã dùng hết lượt cho lúc này.",
+        "quota": "Gói này đã hết lượt.",
+        "contextoverflow": "Cuộc trò chuyện quá dài với trí óc.",
+        "other": "Đã dừng trước khi trả lời xong."
+      }
+    }
+  }
+}

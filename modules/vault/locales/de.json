@@ -1,0 +1,119 @@
+{
+  "title": "Tresor",
+  "intro": "Schlüssel und Passwörter, die deine Agents verwenden. Agents erhalten nur eine Referenz wie {{example}}; der Wert bleibt auf diesem Server und ist in jeder Antwort, jedem Log und jedem Channel verborgen.",
+  "loading": "Vault wird geladen…",
+  "error": "Der Vault konnte nicht geladen werden: {{reason}}",
+  "unavailable": "Der Vault ist auf diesem Server gesperrt (keine Passphrase oder Schlüsselbund). Starte den Server mit einer Vault-Passphrase, um ihn zu nutzen.",
+  "requests": {
+    "title": "Agents, die einen Schlüssel brauchen",
+    "asks": "{{agent}} bittet um {{name}}",
+    "untrusted": "Jemand anderes als du hat den Durchgang gestartet, der danach gefragt hat. Prüfe, ob es wirklich nötig ist, bevor du es einträgst.",
+    "fill": "Schlüssel geben",
+    "decline": "Ablehnen",
+    "filled": "{{agent}} kann jetzt {{reference}} verwenden.",
+    "declined": "Anfrage abgelehnt."
+  },
+  "secrets": {
+    "title": "Gespeicherte Secrets",
+    "empty": "Noch keine Secrets.",
+    "shared": "Geteilt (Server)",
+    "for": "Für {{agent}}",
+    "remove": "Entfernen",
+    "confirmRemove": "{{name}} entfernen? Agents, die es nutzen, funktionieren nicht mehr, bis du es wieder hinzufügst.",
+    "module": "{{count}} weitere Einträge gehören zu Channels und Passwortmanagern.",
+    "backend_local": "Hier gespeichert",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "Schlüssel für {{brain}}. Agenten, die darauf laufen, können diesen Schlüssel sehen."
+  },
+  "add": {
+    "title": "Secret hinzufügen",
+    "open": "Secret hinzufügen",
+    "name": "Name",
+    "nameHint": "Buchstaben, Ziffern, _ . - (Agents schreiben es als {{example}}).",
+    "who": "Wer es nutzen darf",
+    "shared": "Geteilt (nur Server, kein Agent)",
+    "source": "Woher der Wert kommt",
+    "source_local": "Wert eingeben",
+    "source_bitwarden": "Bitwarden-Eintrag",
+    "source_1password": "1Password-Referenz",
+    "value": "Wert",
+    "valueHint": "Nur schreibbar: Er wird nie wieder angezeigt.",
+    "ref_bitwarden": "Bitwarden-Eintrags-ID",
+    "refHint_bitwarden": "Eintrags-ID oder ID/Feld (password, username, notes, totp oder ein benutzerdefiniertes Feld).",
+    "ref_1password": "Secret-Referenz",
+    "refHint_1password": "Wie op://Private/GitHub/token",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "saved": "{{name}} gespeichert.",
+    "brainOption": "Schlüssel für {{brain}}"
+  },
+  "backends": {
+    "title": "Passwortmanager",
+    "intro": "PasaBot liest Werte über das Kommandozeilentool von Bitwarden (bw) oder 1Password (op) auf diesem Server. Hier wird nur die Referenz gespeichert.",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "Sitzungsschlüssel (von bw unlock)",
+    "token_1password": "Service-Account-Token",
+    "tokenHint": "Nur schreibbar. Leer lassen und speichern, um ihn zu entfernen.",
+    "set": "Schlüssel gespeichert",
+    "notSet": "Kein Schlüssel gespeichert",
+    "save": "Schlüssel speichern",
+    "test": "Testen",
+    "state_ready": "Bereit",
+    "state_locked": "Gesperrt oder nicht angemeldet",
+    "state_not_installed": "Kommandozeilentool nicht auf dem Server installiert",
+    "state_unsafe_bin": "Deaktiviert (unsicherer Speicherort des Tools)",
+    "unsafeHint": "Deaktiviert: Der Benutzer dieses Servers kann die Datei des Tools ändern, sodass ein Agent sie austauschen könnte. Installiere es in einem Systemordner (oder setze PASABOT_BW_BIN / PASABOT_OP_BIN auf einen solchen Pfad) und starte neu.",
+    "state_error": "Funktioniert nicht"
+  },
+  "rotate": {
+    "title": "Vault-Schlüssel rotieren",
+    "intro": "Erzeugt einen neuen Verschlüsselungsschlüssel und verschlüsselt jedes Secret damit neu. Die Werte ändern sich nicht.",
+    "button": "Schlüssel rotieren",
+    "confirm": "Jetzt alle Secrets mit einem neuen Schlüssel neu verschlüsseln?",
+    "yes": "Jetzt rotieren",
+    "cancel": "Abbrechen",
+    "done": "{{count}} Secrets mit einem neuen Schlüssel neu verschlüsselt.",
+    "last": "Zuletzt rotiert: {{when}}."
+  },
+  "tools": {
+    "vault_request_secret": "Den Besitzer um einen Schlüssel bitten",
+    "vault_list_secrets": "Meine Schlüssel auflisten"
+  },
+  "server": {
+    "asksForKey": "{{agent}} bittet um einen Schlüssel: {{name}}"
+  },
+  "find": {
+    "settingsHint": "Passwörter und Schlüssel, sicher verwahrt",
+    "settingsKeywords": "Passwörter, Schlüssel, Geheimnisse, Tokens, Zugangsdaten"
+  },
+  "plain": {
+    "title": "Gespeicherte Geheimnisse",
+    "intro": "Schlüssel und Passwörter, die deine Helfers verwenden. Helfers erhalten nur eine Referenz wie {{example}}; der Wert bleibt auf diesem Server und ist in jeder Antwort, jedem Log und jedem Channel verborgen.",
+    "backends": {
+      "intro": "PasaBot liest Werte über das Kommandozeilentool von Bitwarden (bw) oder 1Password (op) auf diesem Server. Hier wird nur die Referenz gespeichert.",
+      "token_1password": "Service-Account-Token"
+    },
+    "rotate": {
+      "title": "Vault-Schlüssel rotieren"
+    },
+    "secrets": {
+      "title": "Was hier gespeichert ist",
+      "forBrain": "Schlüssel für {{brain}}. Helfer, die damit denken, können ihn nutzen.",
+      "confirmRemove": "{{name}} entfernen? Helfer, die es nutzen, funktionieren erst wieder, wenn du es neu hinzufügst."
+    },
+    "requests": {
+      "title": "Helfer, die einen Schlüssel brauchen"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} braucht deinen Schlüssel {{name}}",
+      "text": "{{agent}} kann ihn nutzen, sieht ihn aber nie. Nur du kannst ihn geben, im Safe.",
+      "give": "Schlüssel geben",
+      "given": "Schlüssel gespeichert. Er kann ihn jetzt nutzen",
+      "declined": "Nicht gegeben"
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "defaultName": "Tala",
+  "summary": "先問你幾個簡單的問題，然後組一個小小的助理團隊，由你核准。",
+  "hello": "你好，我是{{name}}！我會幫你組一個小小的助理團隊。只要回答幾個簡單的問題：點一個答案，或自己輸入。",
+  "again": "我們重新組你的團隊吧。跟上次一樣，幾個簡單的問題。",
+  "change": "沒問題，我們再來一次。",
+  "skipped": "好的，現在先只有我。你隨時可以在設定的「助理與大腦」裡組團隊。",
+  "q": {
+    "help": {
+      "text": "你最想先在哪方面得到幫忙？",
+      "options": {
+        "shop": "我的店或生意",
+        "home": "家裡和家人",
+        "work": "我的工作",
+        "study": "上學和學習"
+      }
+    },
+    "people": {
+      "text": "還有誰會用 PasaBot？",
+      "options": {
+        "solo": "只有我",
+        "family": "我的家人",
+        "team": "我的工作團隊"
+      }
+    },
+    "chat": {
+      "text": "你也想透過聊天應用程式和助理們聊天嗎？",
+      "options": {
+        "none": "先不用",
+        "telegram": "Telegram",
+        "whatsapp": "WhatsApp",
+        "discord": "Discord",
+        "slack": "Slack"
+      }
+    },
+    "email": {
+      "text": "你的團隊需要電子郵件嗎？",
+      "options": {
+        "new": "建立新的電子郵件（我來帶你）",
+        "connect": "連結我自己的電子郵件",
+        "skip": "先不用郵件"
+      }
+    },
+    "askFirst": {
+      "text": "最後一題：有什麼事情他們一定要先問你嗎？",
+      "options": {
+        "none": "就這些",
+        "money": "任何花錢的事",
+        "contact": "聯絡任何人",
+        "files": "修改我的檔案"
+      }
+    }
+  },
+  "plan": {
+    "intro": "這是我要組的團隊。你可以核准，也可以修改。",
+    "base": "用對方使用的語言回覆。回答簡短好懂。花錢、傳訊息給其他人或刪除任何東西之前，一定先問主人。",
+    "detail": "主人對此說過的話：{{what}}",
+    "roles": {
+      "shop": {
+        "job": "處理你店裡的訂單和顧客問題。"
+      },
+      "money": {
+        "job": "記錄銷售、成本，以及誰還欠你錢。",
+        "why": "銷售和支出"
+      },
+      "home": {
+        "job": "幫家人安排三餐、行程和提醒。"
+      },
+      "work": {
+        "job": "草擬訊息、做筆記、追蹤你的待辦事項。"
+      },
+      "study": {
+        "job": "講解課程、幫你出題，讓你照計畫學習。"
+      },
+      "custom": {
+        "job": "幫你處理：{{what}}",
+        "anything": "你需要的任何事"
+      },
+      "mail": {
+        "job": "整理你的郵件，並草擬回覆讓你檢查。",
+        "why": "你的電子郵件，附簡短的引導設定"
+      }
+    },
+    "steps": {
+      "email-new": "一起建立新的電子郵件，一步一步來",
+      "email-connect": "連結你的電子郵件（約 3 分鐘）",
+      "telegram": "連接 Telegram",
+      "whatsapp": "連接 WhatsApp",
+      "discord": "連接 Discord",
+      "slack": "連接 Slack",
+      "people": "邀請會使用的人"
+    },
+    "askFirst": {
+      "money": "任何花錢的事，不管多小，也要先問主人。",
+      "contact": "聯絡任何人之前，也要先問主人。",
+      "files": "修改主人的任何檔案之前，也要先問主人。",
+      "custom": "以下事情一定先問主人：{{what}}"
+    },
+    "language": "主人選擇了{{language}}：除非對方要求換語言，否則一律用這種語言回答。",
+    "taglish": "主人選擇了 Taglish：除非對方要求換語言，否則用 Taglish 回答，也就是自然隨意地混合菲律賓語和英語。"
+  },
+  "team": {
+    "ready": "你的團隊準備好了！打開一位助理打聲招呼吧。"
+  },
+  "tools": {
+    "orchestrator_answer": "儲存設定回答",
+    "orchestrator_show_plan": "顯示團隊方案",
+    "orchestrator_create_team": "建立已核准的團隊"
+  },
+  "web": {
+    "skip": "先略過",
+    "typeOwn": "或在下方輸入你自己的回答。",
+    "quick": "快速回答",
+    "closed": "已略過設定",
+    "step": "第 {{n}} 題，共 {{total}} 題",
+    "planTitle": "這是我要組的團隊",
+    "brain": "大腦：{{name}}",
+    "stepsTitle": "我會幫你打開的設定步驟",
+    "approve": "核准",
+    "changePlan": "修改",
+    "plan_approved": "已核准",
+    "plan_changed": "已修改",
+    "plan_skipped": "已略過",
+    "open": "和{{name}}聊天",
+    "stepsNext": "下一步",
+    "secretsNote": "密碼和驗證碼只能在那些設定頁面輸入，絕對不要傳在聊天裡。",
+    "ownerOnly": "只有主人可以回答這個。",
+    "failed": "沒有成功，請再試一次。",
+    "settings": {
+      "title": "組我的團隊",
+      "hint": "回答幾個問題，得到一個助理團隊",
+      "keywords": "團隊, 設定, 助理, 問題, 重新開始, 編排",
+      "body": "團隊組建助理會問幾個簡短的問題，然後給你一個方案來核准。",
+      "again": "重新組我的團隊",
+      "working": "正在打開…",
+      "openChat": "打開團隊組建助理",
+      "noBrain": "請先設定一個大腦，然後再試一次。",
+      "continue": "繼續組建我的團隊"
+    },
+    "summaryTitle": "你告訴我的"
+  },
+  "stage": {
+    "title": "組建你的團隊",
+    "brand": "PasaBot",
+    "skip": "暫時略過",
+    "back": "返回",
+    "next": "繼續",
+    "progress": "第 {{n}} 步，共 {{total}} 步",
+    "progressShort": "{{n}}/{{total}}",
+    "last": "最後一個！",
+    "wait": "請稍候…",
+    "slow": "這次比平常慢一些。",
+    "retry": "重試",
+    "skipped": "好的，團隊可以之後再完成。打開設定，點「繼續組建我的團隊」，就能從上次停下的地方繼續。",
+    "welcome": {
+      "tag": "{{name}} · 幫你組建團隊",
+      "title": "你好！我們來組建你自己的助手團隊吧。",
+      "body": "我會問幾個簡單的問題，然後安排替你做事的助手。大約 2 分鐘。",
+      "start": "開始吧",
+      "p1": "沒有專業術語",
+      "p2": "沒有你的同意，什麼都不會發生",
+      "p3": "之後隨時可改"
+    },
+    "lang": {
+      "title": "你的助手們該說哪種語言？",
+      "body": "你想用哪種語言？之後的一切都會用你選的語言。",
+      "other": "其他…",
+      "otherSub": "{{names}} 等",
+      "seeAll": "查看所有語言",
+      "listTitle": "所有語言",
+      "taglish": "Taglish（他加祿英語）",
+      "taglishSample": "Hi! Ano’ng kailangan mo today?",
+      "sample": "你好！今天我能幫你做什麼？"
+    },
+    "name": {
+      "title": "你想叫我什麼？",
+      "body": "我來帶領你的團隊。預設名字是「{{name}}」，不過由你決定。",
+      "label": "主助手的名字",
+      "hint": "我的樣子也會變！",
+      "newLook": "新造型！",
+      "ideas": "靈感：",
+      "go": "就叫 {{name}}！",
+      "errors": {
+        "empty": "請先輸入一個名字。",
+        "long": "名字太長了，最多 {{max}} 個字。",
+        "bad": "請只用一般文字，不要特殊符號。",
+        "taken": "這個名字已經有人用了，換一個吧。"
+      }
+    },
+    "q": {
+      "sub": "點一個選項，或用你自己的話說。",
+      "typeLabel": "或者在這裡輸入",
+      "typePlaceholder": "用你的方式說…",
+      "other": "其他情況",
+      "subMulti": "想選幾個都可以，或用你自己的話說。"
+    },
+    "plan": {
+      "title": "這是我要為你組建的團隊",
+      "lead": "我是負責人。你跟我說，我來分派任務給他們。",
+      "because": "原因：{{what}}",
+      "arriving": "正在到來…",
+      "change": "我想改一下",
+      "approve": "確認這個團隊",
+      "picks": "你的選擇",
+      "pick": {
+        "language": "說{{language}}",
+        "people": {
+          "solo": "只有我自己用",
+          "family": "家人也會用",
+          "team": "工作團隊也會用"
+        },
+        "chat": {
+          "none": "先不用聊天應用程式",
+          "telegram": "在 Telegram 上聊",
+          "whatsapp": "在 WhatsApp 上聊",
+          "discord": "在 Discord 上聊",
+          "slack": "在 Slack 上聊"
+        },
+        "email": {
+          "new": "新的電子郵件，一起一步一步建好",
+          "connect": "連結我自己的電子郵件（約 3 分鐘）",
+          "skip": "先不用信箱"
+        },
+        "askFirst": {
+          "none": "沒有其他要先問的",
+          "money": "花錢前先問我",
+          "contact": "聯絡別人前先問我",
+          "files": "改動我的檔案前先問我"
+        }
+      }
+    },
+    "done": {
+      "title": "你的團隊準備好了！",
+      "body": "一切就緒。只要跟 {{name}} 說話，其餘的都交給它。",
+      "open": "打開 PasaBot",
+      "chats": "你的聊天",
+      "lead": "團隊負責人 · 就緒",
+      "ready": "就緒",
+      "pinned": "{{name}} 永遠在最上面",
+      "next": {
+        "title": "下一步",
+        "new": "{{name}} 會在你們的聊天裡，一步一步幫你建立新的電子郵件。",
+        "newGo": "和 {{name}} 一起建立新的電子郵件",
+        "connect": "現在就連結你的電子郵件。大約 3 分鐘。",
+        "connectGo": "連結我的電子郵件"
+      }
+    },
+    "summary": {
+      "body": "你的團隊建好了！這是你告訴我的內容，以及你的助手們。",
+      "language": "語言"
+    }
+  },
+  "summaryLead": "照顧你的團隊：把每件事交給合適的助理，你要求時還能新增或更換助理。",
+  "oks": {
+    "title": "有幾件事需要你同意",
+    "sub": "有了這些，{{name}} 和團隊能做更多。每一項都由你決定，你點之前什麼都不會打開。",
+    "email": {
+      "title": "連接你的信箱",
+      "why": "這樣郵件助手就能讀新郵件，告訴你重要的事。",
+      "yes": "連接"
+    },
+    "chat": {
+      "title": "連接 {{app}}",
+      "why": "這樣你在 {{app}} 裡也能和助手聊天。",
+      "yes": "連接"
+    },
+    "apps": {
+      "title": "連接 {{app}}",
+      "why": "連接後，助手就能替你使用 {{app}}。",
+      "yes": "連接"
+    },
+    "browser": {
+      "title": "讓助手用自己的瀏覽器",
+      "why": "他們在一個你能看到的獨立瀏覽器裡打開網站，從不替你登入或付款。",
+      "yes": "允許"
+    },
+    "computer": {
+      "title": "讓助手使用這台電腦",
+      "why": "它能看到螢幕、使用滑鼠和鍵盤。每次都會先問你。",
+      "yes": "去設定"
+    },
+    "ask": {
+      "title": "選擇助手多常先問你",
+      "why": "選擇他們行動前什麼時候先問你。涉及錢和訊息時總會先問。",
+      "yes": "去選擇"
+    },
+    "alerts": {
+      "title": "助手需要你時收到提醒",
+      "why": "有事需要你同意時，我們會在這台裝置上告訴你。",
+      "yes": "開啟"
+    },
+    "laterBtn": "稍後",
+    "notNow": "暫不",
+    "opened": "已打開，請在那個頁面完成",
+    "later": "稍後：{{name}} 會在聊天裡提醒你",
+    "continue": "繼續",
+    "continueLater": "繼續，其餘的稍後"
+  }
+}

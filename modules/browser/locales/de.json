@@ -1,0 +1,113 @@
+{
+  "nav": "Browser",
+  "page": {
+    "title": "Browser",
+    "intro": "Browserprofile, die deine Agenten nutzen können. Jedes hat eigene Cookies und Anmeldungen, eine eigene Farbe und einen eigenen Proxy. Sieh live zu, steuere selbst oder löse es als Fenster heraus, während du chattest.",
+    "empty": "Noch keine Browserprofile. Agenten legen beim ersten Surfen eines an, oder du fügst jetzt eins hinzu.",
+    "ownerOnly": "Nur der Owner kann Browserprofile sehen und nutzen."
+  },
+  "badge": {
+    "running": "Läuft",
+    "loggedIn": "Hat deine Anmeldungen",
+    "proxy": "Proxy"
+  },
+  "profile": {
+    "via": "Über {{server}}",
+    "loggedInNote": "Agenten müssen dich mit deinem Passwort oder Passkey fragen, bevor sie dieses Profil nutzen.",
+    "defaultName": "Agenten-Browser"
+  },
+  "actions": {
+    "new": "Neues Profil",
+    "watch": "Zusehen",
+    "start": "Starten",
+    "stop": "Stoppen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "deleteConfirm": "{{name}} mit allen Cookies und Anmeldungen löschen? Das lässt sich nicht rückgängig machen.",
+    "pip": "Herauslösen",
+    "full": "Vollansicht",
+    "closePip": "Schließen",
+    "closeView": "Ansicht schließen"
+  },
+  "form": {
+    "newTitle": "Neues Browserprofil",
+    "editTitle": "Browserprofil bearbeiten",
+    "name": "Name",
+    "color": "Farbe",
+    "proxy": "Proxy (optional)",
+    "proxyHint": "http://, https:// oder socks5:// mit Host und Port. Gilt ab dem nächsten Start des Browsers.",
+    "bypass": "Proxy überspringen für",
+    "username": "Proxy-Benutzername",
+    "password": "Proxy-Passwort",
+    "passwordVault": "Im Vault gespeichert, wird nie wieder angezeigt.",
+    "passwordKeep": "Leer lassen, um das gespeicherte Passwort zu behalten.",
+    "loggedIn": "Dieses Profil hat meine Anmeldungen (Agenten müssen vorher fragen)",
+    "save": "Speichern",
+    "cancel": "Abbrechen"
+  },
+  "live": {
+    "title": "{{name}} live",
+    "alt": "Live-Ansicht des Browsers {{name}}",
+    "waiting": "Warte auf das erste Bild …",
+    "stopped": "Dieser Browser läuft nicht."
+  },
+  "steer": {
+    "address": "Adresse",
+    "go": "Öffnen",
+    "type": "In die Seite tippen",
+    "typeHint": "Klicke zuerst im Bild auf ein Feld. Beim Tippen gilt dieses Profil als eines mit deinen Anmeldungen.",
+    "send": "Tippen"
+  },
+  "keys": {
+    "Enter": "Enter",
+    "Tab": "Tab",
+    "Backspace": "Rücktaste",
+    "Escape": "Esc",
+    "up": "Nach oben scrollen",
+    "down": "Nach unten scrollen"
+  },
+  "network": {
+    "title": "Lokale Adressen",
+    "allowHosts": "Hosts, die der Browser in deinem Netzwerk öffnen darf",
+    "hint": "Private Adressen und Loopback-Adressen sind gesperrt, sofern sie hier nicht aufgelistet sind, durch Kommas getrennt.",
+    "save": "Speichern",
+    "saved": "Gespeichert."
+  },
+  "pip": {
+    "label": "Browser im Bild-in-Bild"
+  },
+  "dock": {
+    "label": "Browser",
+    "idle": "Gerade läuft kein Browser."
+  },
+  "tools": {
+    "browser_navigate": "Browser: Seite öffnen",
+    "browser_snapshot": "Browser: Seite lesen",
+    "browser_click": "Browser: klicken",
+    "browser_type": "Browser: in ein Feld tippen"
+  },
+  "server": {
+    "yourTurn": "Du bist im Browser dran"
+  },
+  "find": {
+    "navHint": "Einen Agenten im Browser surfen lassen",
+    "navKeywords": "Web, surfen, Webseite, Internet"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Einen Helfer im Browser surfen lassen"
+    },
+    "page": {
+      "intro": "Browser, die deine Helfer nutzen können. Jeder hat eigene Anmeldungen, Farbe und Einstellungen. Schau live zu, steuere selbst oder löse ihn heraus, während du chattest.",
+      "empty": "Noch keine Browser. Ein Helfer legt einen an, wenn er zum ersten Mal surft, oder du fügst jetzt einen hinzu."
+    },
+    "profile": {
+      "loggedInNote": "Helfer müssen dich mit deinem Passwort oder Passkey fragen, bevor sie diesen Browser nutzen.",
+      "defaultName": "Browser des Helfers"
+    },
+    "form": {
+      "passwordVault": "Sicher auf diesem Computer aufbewahrt, nie wieder angezeigt.",
+      "loggedIn": "Dieser Browser hat meine Anmeldungen (Helfer müssen zuerst fragen)"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "nav": "範本",
+  "page": {
+    "title": "範本",
+    "starterTitle": "免費入門方案"
+  },
+  "onboarding": {
+    "title": "為你的第一個 agent 選擇大腦",
+    "intro": "你的 agent 需要一個大腦：也就是它用來思考的 AI 模型。請選擇取得方式。",
+    "freeTitle": "免費入門方案，免設定",
+    "freeBody": "透過 OpenCode 應用程式使用免費模型。不需金鑰、不需登入、不需付費。",
+    "freeCta": "使用免費入門方案",
+    "freeUnavailable": "免費入門方案目前無法使用。請在下方自行設定大腦。",
+    "guidedTitle": "使用你已有的大腦",
+    "guidedBody": "Claude、Codex、OpenCode，或你在這台電腦上已登入的其他應用程式。",
+    "found": "在這台電腦上找到",
+    "notFound": "未安裝",
+    "installHint": "安裝方式：{{cmd}}",
+    "guidedCta": "新增你的第一個 agent",
+    "localTitle": "這台電腦上的本機模型",
+    "localBody": "這台電腦上正在執行模型伺服器。你的 agent 在本機思考：不需帳號，資料也不會離開這台電腦。",
+    "localFound": "{{name}} 在 {{url}} 回應，共有 {{count}} 個模型。",
+    "localCta": "使用 {{name}}",
+    "localAdded": "已新增 {{name}}。請將它選為你第一個 agent 的大腦。",
+    "useThis": "使用這個",
+    "setUp": "設定"
+  },
+  "consent": {
+    "title": "要為免費入門方案安裝 OpenCode 嗎？",
+    "what": "內容：{{what}}",
+    "where": "位置：{{where}}（僅限你的使用者，不需管理員權限）",
+    "from": "來源：{{from}}",
+    "check": "寫入任何檔案之前，會先以公布的 SHA-256 檢查下載內容。",
+    "models": "免費模型以 {{date}} 的檢查結果為準。免費模型隨時可能終止；若你的模型失效，PasaBot 會通知你。",
+    "agree": "安裝並建立我的 agent",
+    "back": "返回",
+    "working": "正在安裝…",
+    "failed": "無法安裝 OpenCode：{{reason}}。未建立任何內容。你仍然可以自行設定大腦。",
+    "agentName": "入門助手",
+    "agentInstructions": "你是一位友善的助手。回答請簡短清楚。"
+  },
+  "notice": {
+    "title": "免費模型已無法使用",
+    "body": "{{model}} {{reason}}。你的 agent 需要另一個大腦。",
+    "action": "選擇其他大腦",
+    "notFreeTitle": "免費模型已不再免費",
+    "not_free": "{{name}} 已不再免費。你的 agent 需要另一個大腦：請自行設定一個，或使用本機模型。",
+    "needs_key": "{{name}} 現在需要金鑰或登入。你的 agent 需要另一個大腦。",
+    "unavailable": "{{name}} 已無法使用。你的 agent 需要另一個大腦。",
+    "none": "你的免費入門方案運作正常。",
+    "busy": "免費模型忙碌中或額度已用完，請於 {{time}} 再試。"
+  },
+  "catalog": {
+    "title": "從範本開始",
+    "use": "使用",
+    "useNamed": "使用 {{name}}",
+    "export": "匯出",
+    "exportNamed": "匯出 {{name}}",
+    "empty": "尚無範本。"
+  },
+  "describe": {
+    "title": "描述你的 agent",
+    "label": "這個 agent 該做什麼？",
+    "placeholder": "幫我做一個 agent，可以…",
+    "submit": "產生草稿"
+  },
+  "import": {
+    "title": "匯入 agent 檔案",
+    "hint": "可以是 .pasabot-template.json、agent 的 .md 檔，或助理的 .json 檔。",
+    "label": "Agent 檔案"
+  },
+  "review": {
+    "title": "檢視新的 agent",
+    "hint": "在你按下「建立」之前，不會建立任何內容。",
+    "name": "名稱",
+    "instructions": "指示",
+    "brain": "大腦",
+    "create": "建立 agent",
+    "cancel": "取消"
+  },
+  "error": "發生錯誤：{{msg}}",
+  "server": {
+    "skippedTitle": "已跳過一個例行任務：免費模型達到速率限制",
+    "skippedBody": "在此之前，使用免費模型的例行任務會跳過執行；下一次照常執行。"
+  },
+  "find": {
+    "navHint": "可直接使用的代理範本",
+    "navKeywords": "範本, 範例, 入門, 預設"
+  },
+  "plain": {
+    "find": {
+      "navHint": "現成的助理，直接開始"
+    },
+    "describe": {
+      "title": "描述你的助理",
+      "label": "助理應該做什麼？",
+      "placeholder": "幫我做一個助理，它會…"
+    },
+    "import": {
+      "title": "從檔案匯入助理",
+      "hint": "PasaBot 或其他助理應用程式儲存的助理檔案。",
+      "label": "助理檔案"
+    },
+    "review": {
+      "title": "檢查新助理",
+      "create": "建立這個助理"
+    }
+  }
+}

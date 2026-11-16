@@ -1,0 +1,209 @@
+{
+  "nav": "Mức sử dụng",
+  "page": {
+    "title": "Mức sử dụng",
+    "intro": "Số token các agent của bạn đã dùng, chỉ tính trên máy chủ này.",
+    "days": "{{count}} ngày qua",
+    "agents": "Theo agent",
+    "providers": "Theo bộ não",
+    "empty": "Chưa có lượt chạy nào có số token.",
+    "agent": "Tác nhân",
+    "provider": "Bộ não",
+    "runs": "Lượt chạy",
+    "input": "Vào",
+    "output": "Ra",
+    "cache": "Bộ nhớ đệm",
+    "limits": "Bộ não đang tạm dừng",
+    "noLimits": "Mọi bộ não đều sẵn sàng.",
+    "limitUntil": "{{provider}}: {{reason}}, sẽ thử lại sau {{time}}",
+    "check": "Kiểm tra ngay",
+    "checked": "Đã kiểm tra: {{count}} bộ não đã sẵn sàng trở lại."
+  },
+  "gauge": {
+    "label": "Ngữ cảnh {{pct}}%",
+    "title": "Đã dùng {{used}} trên {{window}} token ngữ cảnh ({{provider}})",
+    "full": "Bộ nhớ đã đầy {{pct}}%",
+    "menu": "Cuộc trò chuyện này đầy đến đâu",
+    "none": "Chưa có báo cáo ngữ cảnh cho cuộc trò chuyện này."
+  },
+  "notice": {
+    "switched": "Đã chuyển từ {{from}} sang {{to}} ({{reason}}). Cuộc chat vẫn tiếp tục.",
+    "back": "Đã quay lại {{to}}.",
+    "compactedNative": "Ngữ cảnh đạt {{pct}}%: đã nén gọn.",
+    "compactedReseed": "Ngữ cảnh đạt {{pct}}%: câu trả lời tiếp theo sẽ bắt đầu phiên mới kèm bản tóm tắt.",
+    "overflow": "Ngữ cảnh đã đầy: đã bắt đầu phiên mới kèm bản tóm tắt.",
+    "stopped": "Đã dừng nén gọn: hai lần gần nhất gần như không giải phóng thêm được gì. Hãy bắt đầu chat mới, hoặc tiếp tục nén gọn trong Cài đặt.",
+    "reason": {
+      "rate_limit": "giới hạn tốc độ",
+      "quota": "giới hạn sử dụng",
+      "auth": "lỗi đăng nhập",
+      "context_overflow": "ngữ cảnh đã đầy",
+      "offline": "bộ não chính ngoại tuyến"
+    }
+  },
+  "settings": {
+    "title": "Bộ não và phương án dự phòng",
+    "intro": "Khi một bộ não chạm giới hạn, agent sẽ tiếp tục với bộ não kế tiếp trong danh sách và quay lại khi giới hạn được đặt lại.",
+    "fallback": "Dự phòng {{n}}",
+    "none": "Không có",
+    "model": "Mô hình (không bắt buộc)",
+    "account": "Tài khoản cho {{provider}}",
+    "defaultAccount": "Tài khoản mặc định",
+    "compactPct": "Nén gọn khi đạt (% ngữ cảnh)",
+    "compactHint": "Để trống = {{pct}}%",
+    "save": "Lưu",
+    "saved": "Đã lưu",
+    "stopped": "Đã dừng nén gọn cho agent này.",
+    "resume": "Tiếp tục nén gọn",
+    "accounts": "Tài khoản",
+    "accountsIntro": "Mỗi tài khoản có thư mục đăng nhập riêng cho CLI của bộ não đó.",
+    "accountLabel": "Tên tài khoản",
+    "accountProvider": "Bộ não",
+    "addAccount": "Thêm tài khoản",
+    "remove": "Xóa",
+    "noAccounts": "Chưa có tài khoản bổ sung.",
+    "accountSignIn": "Để đăng nhập, hãy chạy lệnh này một lần trong terminal trên máy chủ:",
+    "accountFolder": "Thư mục đăng nhập cho CLI của bộ não này:",
+    "accountChecking": "Đang kiểm tra…",
+    "accountSignedIn": "Đã đăng nhập",
+    "accountSignedOut": "Chưa đăng nhập",
+    "accountUnknown": "Chưa kiểm tra đăng nhập",
+    "primary": "Dùng {{provider}}"
+  },
+  "server": {
+    "stoppedTitle": "{{name}}: đã dừng nén",
+    "stoppedBody": "Hai lần nén liên tiếp giải phóng chưa đến 10 % ngữ cảnh. Hãy bắt đầu cuộc trò chuyện mới hoặc tiếp tục nén trong Cài đặt."
+  },
+  "find": {
+    "navHint": "Mức dùng và chi phí của tác tử",
+    "navKeywords": "mức dùng, chi phí, token, chi tiêu, hóa đơn",
+    "settingsHint": "Giới hạn và kiểm tra bộ não AI",
+    "settingsKeywords": "bộ não, mô hình, giới hạn, nhà cung cấp, trí tuệ nhân tạo",
+    "brainsHint": "Thiết lập AI mà các tác tử của bạn dùng để suy nghĩ",
+    "brainsKeywords": "bộ não, AI, mô hình, đăng nhập, cài đặt, Claude, Codex, Gemini, Grok, OpenCode, cục bộ, miễn phí"
+  },
+  "brains": {
+    "title": "Bộ não",
+    "intro": "Bộ não là AI mà agent của bạn dùng để suy nghĩ. Thiết lập một hay nhiều; mỗi agent chọn một bộ não chính và một dự phòng.",
+    "name": {
+      "opencode": "Khởi đầu miễn phí (OpenCode)",
+      "local": "Mô hình cục bộ",
+      "acp": "Agent ACP khác"
+    },
+    "desc": {
+      "claude": "Ứng dụng Claude Code của Anthropic, với tài khoản Claude của bạn",
+      "codex": "Ứng dụng Codex của OpenAI, với tài khoản ChatGPT của bạn",
+      "opencode": "Mô hình miễn phí, không cần khóa, không trả phí. Hợp để bắt đầu",
+      "gemini": "Gemini CLI của Google, với tài khoản Google của bạn",
+      "grok": "Grok CLI của xAI, với khóa xAI",
+      "local": "Ollama hoặc LM Studio trên máy này. Riêng tư, chạy cả khi offline",
+      "acp": "Mọi ứng dụng dùng Agent Client Protocol",
+      "other": "Bộ não do plugin thêm hoặc để kiểm thử"
+    },
+    "state": {
+      "ready": "Sẵn sàng",
+      "needs_sign_in": "Cần đăng nhập",
+      "not_installed": "Chưa cài",
+      "unreachable": "Không kết nối được",
+      "not_running": "Chưa mở",
+      "needs_model": "Cần một mô hình",
+      "checking": "Đang kiểm tra…"
+    },
+    "unconfirmed": "Không xác nhận được đăng nhập. Hãy bấm Thử để chắc chắn.",
+    "notFound": "Không tìm thấy",
+    "install": "Cài đặt",
+    "signIn": "Đăng nhập",
+    "test": "Thử",
+    "testing": "Đang thử…",
+    "useNew": "Dùng cho agent mới",
+    "checkAgain": "Kiểm tra lại",
+    "steps": "Các bước",
+    "browse": "Xem và cài",
+    "close": "Đóng",
+    "copy": "Sao chép",
+    "copied": "Đã chép",
+    "details": "Chi tiết",
+    "works": "Hoạt động. Trả lời: \"{{reply}}\" · {{secs}} giây",
+    "usedBy": "{{names}} đang dùng",
+    "backupFor": "Dự phòng cho {{names}}",
+    "noneReady": "Chưa có bộ não nào sẵn sàng. Bản khởi đầu miễn phí chỉ cần một chạm.",
+    "useStarter": "Dùng bản miễn phí",
+    "stepsTitle": "Thiết lập {{name}}",
+    "step": {
+      "terminal": "Mở Terminal trên máy này.",
+      "paste": "Dán lệnh này rồi nhấn Return:",
+      "signIn": "Dán lệnh này và làm theo bước đăng nhập nó mở ra:",
+      "back": "Quay lại đây và bấm Kiểm tra lại.",
+      "noPassword": "PasaBot không bao giờ hỏi mật khẩu của bạn. Việc đăng nhập nằm trong ứng dụng.",
+      "geminiChoose": "Khi được hỏi, chọn \"Sign in with Google\".",
+      "grokInstall": "Cài Grok CLI theo hướng dẫn của xAI.",
+      "starter": "Hoặc để PasaBot cài giúp bạn (tệp tải về được kiểm tra trước khi chạy):",
+      "starterCta": "Cài bản miễn phí",
+      "vault": "Lưu khóa xAI vào Kho của PasaBot với tên {{name}}. Sau khi lưu, khóa không bao giờ hiện trên trang nữa.",
+      "local": "Cài Ollama hoặc LM Studio, tải một mô hình và để ứng dụng mở.",
+      "localCta": "Thiết lập mô hình cục bộ",
+      "acp": "Chọn một agent trong danh sách rồi cài.",
+      "acpCta": "Mở agent ACP",
+      "keyLabel": "Khóa cho {{brain}}",
+      "keyWho": "Các agent chạy trên bộ não này có thể thấy khóa.",
+      "keySave": "Lưu khóa",
+      "keySaved": "Đã lưu khóa vào Kho bí mật.",
+      "keyErr": "Không lưu được khóa. Thử lại.",
+      "tokenTitle": "Hoặc dán mã thiết lập",
+      "tokenWhy": "Dùng cách này nếu đăng nhập không giữ được, hoặc PasaBot chạy trên máy khác.",
+      "tokenRun": "Mở Terminal, dán dòng này rồi nhấn Return. Đăng nhập khi trình duyệt mở ra:",
+      "tokenPaste": "Sao chép đoạn mã dài hiện ở cuối và dán vào bên dưới.",
+      "tokenLabel": "Mã thiết lập",
+      "tokenWho": "Được khóa trong Kho của PasaBot. Các tác tử chạy trên Claude có thể thấy nó.",
+      "tokenSave": "Lưu mã",
+      "tokenSaved": "Đã lưu mã. Đang kiểm tra Claude…",
+      "tokenErr": "Không lưu được mã. Hãy thử lại.",
+      "starterFailed": "Gói khởi đầu miễn phí chưa cài được. Hãy thử lại sau một lát.",
+      "starterPlain": "PasaBot có thể cài giúp bạn chỉ với một chạm: một ứng dụng nhỏ miễn phí, chỉ dành cho bạn trên máy này, được kiểm tra trước khi chạy. Mất khoảng một phút.",
+      "terminalWindows": "Mở PowerShell trên máy tính này (gõ PowerShell trong menu Start).",
+      "pasteWindows": "Dán lệnh này rồi nhấn Enter:",
+      "nodeFirstWindows": "Nếu báo không tìm thấy npm, hãy cài Node.js từ nodejs.org trước, rồi mở một cửa sổ PowerShell mới."
+    },
+    "err": {
+      "auth": "Chưa đăng nhập hoặc phiên đã hết hạn. Hãy đăng nhập lại.",
+      "limit": "Tài khoản này đã chạm giới hạn sử dụng. Thử lại sau.",
+      "limitAt": "Tài khoản này đã hết hạn mức sử dụng. Hạn mức đặt lại lúc {{time}}.",
+      "offline": "Không kết nối được bộ não. Kiểm tra internet, hoặc Ollama / LM Studio có đang mở không.",
+      "crash": "Ứng dụng dừng trước khi trả lời.",
+      "timeout": "Không có trả lời trong một phút. Ứng dụng có thể đang bận hoặc bị treo.",
+      "model": "Mô hình đó không có trên tài khoản này. Hãy chọn mô hình khác.",
+      "notInstalled": "Chưa cài trên máy này.",
+      "busy": "Thử quá nhiều lần liên tiếp. Đợi một phút rồi thử lại.",
+      "failed": "Không chạy được bài thử. Thử lại.",
+      "load": "Không tải được danh sách bộ não. Thử lại."
+    },
+    "inUse": "Đang dùng: {{name}}",
+    "notHere": "Chưa có trên máy tính này"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "Thiết lập AI mà trợ lý dùng để suy nghĩ",
+      "navHint": "Trợ lý dùng bao nhiêu và tốn bao nhiêu"
+    },
+    "brains": {
+      "intro": "Bộ não là AI mà trợ lý của bạn dùng để suy nghĩ. Thiết lập một hay nhiều; mỗi trợ lý chọn một bộ não chính và một dự phòng.",
+      "useNew": "Dùng cho trợ lý mới",
+      "desc": {
+        "opencode": "Bộ não miễn phí, không cần khóa, không trả phí. Hợp để bắt đầu",
+        "gemini": "Gemini CLI của Google, với tài khoản Google của bạn",
+        "grok": "Grok CLI của xAI, với khóa xAI",
+        "acp": "Mọi ứng dụng dùng Trợ lý Client Protocol"
+      },
+      "name": {
+        "local": "Bộ não cục bộ",
+        "acp": "Trợ lý ACP khác"
+      }
+    },
+    "page": {
+      "intro": "Trợ lý đã dùng bao nhiêu, chỉ tính trên máy này.",
+      "agents": "Theo trợ lý",
+      "empty": "Chưa dùng gì.",
+      "agent": "Trợ lý"
+    }
+  }
+}

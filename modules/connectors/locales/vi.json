@@ -1,0 +1,208 @@
+{
+  "nav": "Trình kết nối",
+  "page": {
+    "title": "Trình kết nối",
+    "intro": "Các liên kết làm sẵn tới dịch vụ bên ngoài. Hãy thêm một cái, rồi chọn ai được dùng.",
+    "introTech": "Các liên kết làm sẵn tới dịch vụ bên ngoài. Hãy thêm một trình kết nối, rồi chọn ở trang máy chủ MCP những agent nào được dùng."
+  },
+  "loading": "Đang tải…",
+  "kind": {
+    "mcp-stdio": "Chạy trên máy này",
+    "mcp-http": "Dịch vụ lưu trữ trực tuyến",
+    "oauth-api": "Đăng nhập"
+  },
+  "status": {
+    "ready": "Đã thêm",
+    "needs_auth": "Cần đăng nhập hoặc khóa",
+    "error": "Có sự cố"
+  },
+  "oauth": {
+    "connected": "Đã đăng nhập. Trình kết nối đã sẵn sàng.",
+    "denied": "Đã hủy đăng nhập.",
+    "expired": "Liên kết đăng nhập đã hết hạn. Hãy thử lại.",
+    "failed": "Đăng nhập không thành công. Hãy kiểm tra client id rồi thử lại.",
+    "connectedApp": "Đã đăng nhập. {{name}} đã sẵn sàng.",
+    "failedApp": "Chưa đăng nhập xong vào {{name}}. Hãy thử lại."
+  },
+  "catalog": {
+    "title": "Thêm nữa",
+    "homepage": "Giới thiệu dịch vụ này",
+    "install": "Thêm {{name}}",
+    "custom": "Muốn thêm thứ khác?",
+    "customTech": "Bạn có địa chỉ máy chủ công cụ?"
+  },
+  "install": {
+    "secretHint": "Được lưu trong kho bảo mật. Agent không bao giờ thấy.",
+    "oauthHint": "Trình kết nối này đăng nhập bằng OAuth client của riêng bạn. Hãy tạo một client tại dịch vụ và thêm địa chỉ trả về này vào đó.",
+    "redirect": "Địa chỉ trả về:",
+    "clientId": "ID khách OAuth",
+    "clientSecret": "OAuth client secret (nếu dịch vụ có cấp)",
+    "clientSecretHint": "Được lưu trong kho bảo mật.",
+    "save": "Thêm",
+    "cancel": "Hủy"
+  },
+  "installed": {
+    "title": "Đã kết nối",
+    "secrets": "Bí mật được giữ trong kho bảo mật: {{names}}",
+    "mcpHint": "Chọn agent nào được dùng:",
+    "foundHint": "Bật lên và chọn ai được dùng:",
+    "mcpLink": "Máy chủ MCP",
+    "appsLink": "Ứng dụng agent có thể dùng",
+    "signIn": "Đăng nhập",
+    "signInAgain": "Đăng nhập lại",
+    "remove": "Xóa",
+    "removeConfirm": "Có, xóa"
+  },
+  "find": {
+    "navHint": "Kết nối ứng dụng và dịch vụ",
+    "navKeywords": "ứng dụng, dịch vụ, kết nối, tích hợp, tài khoản"
+  },
+  "search": {
+    "label": "Tìm ứng dụng",
+    "placeholder": "Tìm ứng dụng, ví dụ “lịch”",
+    "none": "Không có ứng dụng nào khớp."
+  },
+  "state": {
+    "added": "Đã thêm",
+    "ready": "Sẵn sàng thêm",
+    "needs_key": "Cần đăng nhập hoặc khóa",
+    "missing": "Không có trên máy này"
+  },
+  "ready": {
+    "title": "Sẵn sàng thêm"
+  },
+  "missing": {
+    "line": "Cần {{name}}, hiện chưa có trên máy này.",
+    "get": "Tải {{name}}",
+    "ask": "Cần {{name}}, hiện chưa có trên máy này. Vẫn thêm?",
+    "addAnyway": "Vẫn thêm"
+  },
+  "found": {
+    "title": "Tìm thấy trên máy này",
+    "intro": "Công cụ bạn đã thiết lập trong ứng dụng khác. Thêm một cái để dùng cả ở đây.",
+    "introTech": "Các máy chủ công cụ bạn đã thiết lập trong ứng dụng khác. Thêm một cái để dùng ở đây.",
+    "from": "Thiết lập trong {{app}}",
+    "keys": "Khóa của nó được đưa thẳng vào kho của bạn và không bao giờ hiện ra: {{names}}",
+    "keysAsk": "Nó có khóa. Sao chép luôn vào kho của bạn? Agent không bao giờ thấy chúng.",
+    "confirm": "Có, thêm vào",
+    "blocked": {
+      "key-in-command": "Cái này để khóa ngay trong lệnh của nó. Hãy tự thêm nó:",
+      "unsupported": "PasaBot không thể chuyển cái này sang nguyên trạng. Hãy tự thêm nó:"
+    }
+  },
+  "describe": {
+    "filesystem": "Cho phép tác tử đọc và sửa các tệp trong một thư mục bạn chọn.",
+    "git": "Cho phép tác tử xem lịch sử và thay đổi của một thư mục mã.",
+    "github": "Cho phép tác tử làm việc với mã, issue và pull request GitHub của bạn.",
+    "github-remote": "Cùng các công cụ GitHub, do GitHub chạy trực tuyến. Không cần thiết lập gì ở đây.",
+    "google-calendar": "Cho phép tác tử đọc Google Lịch của bạn.",
+    "time": "Cho tác tử biết giờ ở bất cứ đâu trên thế giới.",
+    "notion": "Trợ lý tìm, đọc và viết trang trong Notion của bạn.",
+    "atlassian": "Trợ lý xem và cập nhật công việc Jira và các trang Confluence của bạn.",
+    "trello": "Trợ lý đọc bảng Trello của bạn và chuyển hoặc thêm thẻ.",
+    "clickup": "Trợ lý tìm, thêm và cập nhật việc trong ClickUp của bạn.",
+    "intercom": "Trợ lý xem các cuộc trò chuyện và liên hệ khách hàng trong Intercom.",
+    "stripe": "Trợ lý kiểm tra thanh toán, khách hàng và hóa đơn Stripe của bạn."
+  },
+  "adding": "Đang thêm…",
+  "server": {
+    "connected": "{{name}} đã được kết nối. Hãy thử hỏi tôi điều gì đó về nó."
+  },
+  "groups": {
+    "popular": "Phổ biến",
+    "files-notes": "Tệp và ghi chú",
+    "calendar-email": "Lịch và email",
+    "work-tasks": "Công việc và nhiệm vụ",
+    "shop-money": "Mua sắm và tiền",
+    "social-chat": "Mạng xã hội và trò chuyện",
+    "other": "Khác"
+  },
+  "button": {
+    "add": "Thêm",
+    "signIn": "Đăng nhập",
+    "code": "Cần mã",
+    "added": "Đã thêm"
+  },
+  "signin": {
+    "lead": "{{name}} mở trang riêng để bạn đăng nhập. Bạn không cần gõ gì ở đây.",
+    "can": "Trợ lý của bạn sẽ có thể:",
+    "ask": "Mọi việc gửi, đăng, trả tiền hoặc xóa đều hỏi bạn trước, mỗi lần.",
+    "go": "Tiếp tục tới {{name}}",
+    "failed": "Không mở được trang đăng nhập của {{name}}. Hãy thử lại sau chốc lát.",
+    "insecure": "{{name}} chỉ cho đăng nhập từ địa chỉ an toàn. Hãy mở PasaBot trên máy tính đang chạy nó, hoặc ở địa chỉ an toàn (https) của nó, rồi đăng nhập.",
+    "refused": "{{name}} không chấp nhận đăng nhập của PasaBot. Thử lại cũng không thay đổi được."
+  },
+  "code": {
+    "lead": "{{name}} cho bạn một mã để dán vào đây.",
+    "get": "Lấy mã của bạn",
+    "paste": "Dán mã của bạn",
+    "test": "Thử và thêm",
+    "bad": "Mã đó không dùng được. Hãy kiểm tra bạn đã chép đủ.",
+    "unreachable": "Không kết nối được tới {{name}}. Hãy kiểm tra mạng và thử lại.",
+    "failed": "Không được: {{reason}}",
+    "refused": "{{name}} đã trả lời, nhưng hiện không chạy được với PasaBot. Hãy thử lại sau."
+  },
+  "helpers": {
+    "title": "Ai được dùng",
+    "main": "trợ lý chính"
+  },
+  "connected": {
+    "title": "{{name}} đã được kết nối",
+    "try": "Thử hỏi:",
+    "who": "Đổi người được dùng"
+  },
+  "try": {
+    "notion": {
+      "a": "Tìm ghi chú Notion của tôi về cuộc họp tới",
+      "b": "Tạo trang Notion có danh sách việc cho tuần này"
+    },
+    "atlassian": {
+      "a": "Những issue Jira nào đang giao cho tôi?",
+      "b": "Tóm tắt trang Confluence mới nhất mà nhóm tôi đã sửa"
+    },
+    "trello": {
+      "a": "Hôm nay bảng Trello của tôi có gì?",
+      "b": "Thêm thẻ Trello: gọi nhà cung cấp vào thứ Sáu"
+    },
+    "clickup": {
+      "a": "Việc ClickUp nào đến hạn tuần này?",
+      "b": "Thêm việc ClickUp: gửi báo giá ngày mai"
+    },
+    "intercom": {
+      "a": "Cho xem các cuộc trò chuyện Intercom mới nhất",
+      "b": "Ai đã nhắn cho chúng ta trên Intercom về hoàn tiền?"
+    },
+    "stripe": {
+      "a": "Tuần này tôi nhận được bao nhiêu trên Stripe?",
+      "b": "Liệt kê các hóa đơn Stripe chưa thanh toán"
+    },
+    "generic": {
+      "a": "Bạn làm được gì với {{name}}?",
+      "b": "Cho tôi xem bạn thấy gì trong {{name}}"
+    }
+  },
+  "plain": {
+    "nav": "Ứng dụng trợ lý dùng được",
+    "page": {
+      "title": "Ứng dụng trợ lý dùng được"
+    },
+    "oauth": {
+      "connected": "Đã đăng nhập. Ứng dụng đã sẵn sàng."
+    },
+    "install": {
+      "secretHint": "Được giữ an toàn trên máy này. Trợ lý không bao giờ thấy.",
+      "oauthHint": "Ứng dụng này đăng nhập qua một ứng dụng đăng nhập của riêng bạn. Hãy tạo một cái trên trang của dịch vụ và thêm địa chỉ quay lại này vào đó.",
+      "clientId": "ID ứng dụng đăng nhập",
+      "clientSecret": "Mật khẩu ứng dụng đăng nhập (nếu dịch vụ có cấp)",
+      "clientSecretHint": "Được giữ an toàn trên máy này."
+    },
+    "installed": {
+      "mcpHint": "Chọn những trợ lý được dùng nó:",
+      "appsLink": "Ứng dụng và công cụ trợ lý dùng được"
+    },
+    "found": {
+      "keys": "Các mã bí mật của nó được giữ an toàn và không bao giờ hiện ra: {{names}}",
+      "keysAsk": "Nó có mã bí mật. Giữ thêm một bản ở đây? Trợ lý không bao giờ thấy."
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Mô hình cục bộ",
+  "intro": "Chạy agent bằng mô hình trên máy tính này (Ollama, LM Studio) hoặc trong mạng nội bộ của bạn. Không có gì rời khỏi mạng của bạn, và agent không thể tự thêm địa chỉ ở đây.",
+  "empty": "Chưa có mô hình cục bộ.",
+  "found": {
+    "text": "Tìm thấy {{name}} tại {{url}} ({{count}} mô hình).",
+    "use": "Thêm"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "Tương thích OpenAI (LM Studio)"
+  },
+  "scope": {
+    "loopback": "Máy tính này",
+    "lan": "Mạng nội bộ"
+  },
+  "warning": {
+    "lan": "Địa chỉ này nằm trong mạng nội bộ của bạn, không phải máy tính này. Ai kiểm soát máy đó sẽ thấy các yêu cầu và có thể trả lời thay mô hình."
+  },
+  "models": {
+    "loading": "Đang tìm mô hình…",
+    "unreachable": "Không có phản hồi tại địa chỉ này.",
+    "none": "Không tìm thấy mô hình nào. Hãy tải một mô hình trong Ollama hoặc LM Studio trước.",
+    "tools": "Công cụ",
+    "toolsTry": "Công cụ nếu được hỗ trợ",
+    "chatOnly": "Chỉ trò chuyện: tắt công cụ"
+  },
+  "tools": {
+    "label": "Công cụ",
+    "auto": "Dùng công cụ khi mô hình hỗ trợ",
+    "off": "Chỉ trò chuyện (tắt công cụ)"
+  },
+  "use": "Giờ đây agent và các phương án dự phòng có thể chọn bộ não {{id}}.",
+  "refresh": "Làm mới mô hình",
+  "remove": {
+    "button": "Xóa",
+    "confirm": "Có, xóa",
+    "cancel": "Giữ lại"
+  },
+  "add": {
+    "title": "Thêm mô hình cục bộ",
+    "name": "Tên",
+    "api": "Loại",
+    "url": "Địa chỉ",
+    "urlHint": "Địa chỉ IP hoặc localhost, ví dụ http://127.0.0.1:11434 (Ollama) hoặc http://127.0.0.1:1234/v1 (LM Studio).",
+    "check": "Kiểm tra",
+    "submit": "Thêm",
+    "reachable": "Có phản hồi: {{count}} mô hình."
+  },
+  "offlineHint": "Hãy đặt một mô hình cục bộ vào phương án dự phòng của agent (Bộ não và dự phòng) và đánh dấu routine \"Chạy cả khi ngoại tuyến\": khi không kết nối được bộ não chính, routine đó sẽ chạy bằng mô hình cục bộ và cho bạn biết.",
+  "find": {
+    "settingsHint": "Chạy bộ não trên máy tính này",
+    "settingsKeywords": "cục bộ, ngoại tuyến, mô hình, riêng tư"
+  },
+  "plain": {
+    "title": "Bộ não cục bộ",
+    "intro": "Chạy trợ lý bằng bộ não trên máy tính này (Ollama, LM Studio) hoặc trong mạng nội bộ của bạn. Không có gì rời khỏi mạng của bạn, và trợ lý không thể tự thêm địa chỉ ở đây.",
+    "empty": "Chưa có bộ não cục bộ.",
+    "add": {
+      "title": "Thêm bộ não cục bộ"
+    },
+    "offlineHint": "Hãy đặt một bộ não cục bộ vào phương án dự phòng của trợ lý (Bộ não và dự phòng) và đánh dấu routine \"Chạy cả khi ngoại tuyến\": khi không kết nối được bộ não chính, routine đó sẽ chạy bằng bộ não cục bộ và cho bạn biết."
+  }
+}

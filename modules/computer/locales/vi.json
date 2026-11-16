@@ -1,0 +1,143 @@
+{
+  "nav": "Máy tính",
+  "page": {
+    "title": "Dùng máy tính",
+    "intro": "Agent dùng máy tính sẽ có màn hình riêng. Mọi ảnh chụp màn hình, cú bấm và phím gõ đều hỏi bạn trước. Theo dõi chúng tại đây và tiếp quản khi cần.",
+    "empty": "Hiện chưa có agent nào đang dùng màn hình. Một màn hình sẽ khởi động khi bạn phê duyệt thao tác máy tính đầu tiên của agent."
+  },
+  "setup": {
+    "title": "Thiết lập dùng máy tính",
+    "missing_bins": "Máy chủ này đang thiếu {{list}}. Hãy cài đặt chúng, hoặc chạy PasaBot từ image máy tính (deploy/computer).",
+    "unsupported": "Tính năng dùng máy tính không khả dụng trên hệ điều hành này.",
+    "off": "Tính năng dùng máy tính đang tắt trên máy chủ này.",
+    "practice": "Màn hình luyện tập: một ứng dụng thử nghiệm tích hợp sẵn, không phải máy tính để bàn thật.",
+    "windows_soon": "Chưa có trên Windows. Trợ lý chưa thể xem hay dùng màn hình trên máy Windows; mọi thứ khác vẫn chạy."
+  },
+  "mac": {
+    "title": "Cho phép agent dùng máy Mac này",
+    "warning": "Máy Mac không có màn hình riêng cho trợ lý: trợ lý bạn cho phép ở đây thấy toàn bộ màn hình và di chuyển con trỏ cùng bàn phím của chính bạn. Mỗi thao tác vẫn hỏi bạn trước. Quyền thuộc về PasaBot Screen Helper, không phải PasaBot.",
+    "perAgent": "Tính năng dùng máy tính trên máy Mac này đang tắt cho mọi agent cho đến khi bạn bật riêng cho từng agent tại đây, bằng mật khẩu của bạn.",
+    "permissions": "macOS sẽ yêu cầu bạn cấp quyền Ghi màn hình và Trợ năng. macOS cấp quyền này cho chương trình đang chạy PasaBot, nên công cụ dòng lệnh của mọi agent khi đó có thể dùng màn hình của bạn mà không hỏi. Chỉ cho phép nếu bạn tin tưởng mọi agent trên máy chủ này, và hãy gỡ quyền trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật khi dùng xong.",
+    "password": "Mật khẩu của bạn",
+    "enable": "Cho phép",
+    "enableFor": "Cho phép {{name}} dùng máy Mac này",
+    "disable": "Tắt",
+    "disableFor": "Tắt {{name}} trên máy Mac này",
+    "agentOn": "Được phép",
+    "agentOff": "Tắt",
+    "noAgents": "Chưa có agent nào.",
+    "wrong": "Không khớp. Hãy thử lại."
+  },
+  "display": {
+    "shared": "Màn hình của bạn",
+    "own": "Màn hình riêng {{label}}",
+    "live": "Trực tiếp",
+    "control": "Tiếp quản",
+    "release": "Ngừng điều khiển",
+    "controlHint": "Bấm vào hình để bấm trên màn hình của agent.",
+    "stop": "Dừng màn hình",
+    "typeLabel": "Nhập trên màn hình",
+    "send": "Gửi văn bản",
+    "alt": "Màn hình của {{name}}",
+    "started": "Bắt đầu lúc {{time}}"
+  },
+  "activity": {
+    "title": "Thao tác gần đây",
+    "empty": "Chưa có thao tác nào.",
+    "you": "Bạn",
+    "failed": "Thất bại"
+  },
+  "error": "Đã xảy ra lỗi: {{msg}}",
+  "tools": {
+    "computer_display": "Máy tính: thông tin màn hình",
+    "computer_screenshot": "Máy tính: chụp màn hình",
+    "computer_click": "Máy tính: nhấp",
+    "computer_move": "Máy tính: di chuyển con trỏ",
+    "computer_type": "Máy tính: nhập văn bản",
+    "computer_key": "Máy tính: nhấn phím"
+  },
+  "find": {
+    "navHint": "Cho tác tử dùng máy tính",
+    "navKeywords": "màn hình nền, màn hình, chuột, bàn phím, điều khiển"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Cho trợ lý dùng máy tính"
+    },
+    "page": {
+      "intro": "Trợ lý dùng máy tính sẽ có màn hình riêng. Mọi ảnh màn hình, cú bấm và phím gõ đều hỏi bạn trước. Theo dõi chúng tại đây và tiếp quản khi cần.",
+      "empty": "Hiện chưa có trợ lý nào đang dùng màn hình. Một màn hình sẽ khởi động khi bạn đồng ý thao tác máy tính đầu tiên của trợ lý."
+    },
+    "setup": {
+      "missing_bins": "Máy tính này thiếu {{list}}. Hãy cài đặt, hoặc nhờ người đã cài PasaBot dùng bản thiết lập máy tính của nó.",
+      "off": "Tính năng dùng máy tính đang tắt trong PasaBot này."
+    },
+    "mac": {
+      "noAgents": "Chưa có trợ lý nào."
+    },
+    "display": {
+      "controlHint": "Bấm vào hình để bấm trên màn hình của trợ lý.",
+      "release": "Ngừng điều khiển"
+    }
+  },
+  "card": {
+    "ask": {
+      "title": "Cho {{name}} dùng máy tính này?",
+      "body": "{{name}} sẽ thấy toàn bộ màn hình và di chuyển con trỏ cùng bàn phím của chính bạn. Mỗi cú nhấp và phím bấm vẫn hỏi bạn trước, và bạn có thể dừng bất cứ lúc nào bằng cách giữ Esc một giây.",
+      "password": "Mật khẩu của bạn",
+      "yes": "Có, thiết lập",
+      "no": "Để sau"
+    },
+    "steps": {
+      "title": "Thiết lập máy tính này cho {{name}}",
+      "stopped": "Bạn đã dừng quyền điều khiển máy tính này. Nó vẫn dừng cho đến khi bạn bật lại ở đây.",
+      "helper": "PasaBot Screen Helper đang chạy",
+      "helperHint": "Nó mở cùng ứng dụng PasaBot trên máy Mac này. Nếu vẫn trống, hãy mở PasaBot.",
+      "screen": "Bật Ghi màn hình",
+      "screenHint": "Cài đặt sẽ mở ra. Tìm PasaBot Screen Helper trong danh sách và bật lên.",
+      "openScreen": "Mở cài đặt Ghi màn hình",
+      "access": "Bật Trợ năng",
+      "accessHint": "Cài đặt sẽ mở ra. Tìm PasaBot Screen Helper trong danh sách và bật lên.",
+      "openAccess": "Mở cài đặt Trợ năng",
+      "try": "Thử",
+      "tryHint": "Chụp một ảnh màn hình của bạn, không gì khác.",
+      "tryButton": "Chụp ảnh thử",
+      "tryDone": "Hoạt động rồi. Đây là những gì {{name}} sẽ thấy.",
+      "ready": "{{name}} giờ có thể xin dùng máy tính này. Mỗi thao tác đều hiện thẻ cho bạn trước.",
+      "off": "Tắt cho {{name}}",
+      "done": "Xong",
+      "waiting": "Chưa"
+    },
+    "live": {
+      "title": "{{name}} đang dùng máy tính của bạn",
+      "idle": "{{name}} hiện không dùng máy tính.",
+      "takeOver": "Tiếp quản",
+      "stop": "Dừng",
+      "stopHint": "Hoặc giữ Esc một giây.",
+      "alt": "Xem trực tiếp màn hình của {{name}}"
+    }
+  },
+  "preview": {
+    "click": "Sẽ nhấp vào vòng tròn đỏ.",
+    "rightClick": "Sẽ nhấp chuột phải vào vòng tròn đỏ.",
+    "move": "Sẽ di chuyển con trỏ đến vòng tròn đỏ.",
+    "type": "Sẽ gõ {{count}} ký tự:",
+    "key": "Sẽ nhấn: {{keys}}",
+    "screenshot": "Sẽ chụp ảnh màn hình.",
+    "alt": "Nơi nó sẽ thao tác trên màn hình",
+    "none": "Chưa có ảnh màn hình.",
+    "noCurrent": "Không có ảnh màn hình mới nhất. Hãy nhìn màn hình của bạn trước khi đồng ý."
+  },
+  "server": {
+    "setupCard": "{{name}} muốn dùng máy tính này. Thiết lập trong thẻ bên dưới, hoặc bỏ qua.",
+    "liveCard": "{{name}} đã bắt đầu dùng máy tính. Xem trực tiếp tại đây."
+  },
+  "watch": {
+    "title": "Xác nhận là bạn để xem màn hình của bạn",
+    "body": "Đây là màn hình máy Mac của chính bạn. Nhập mật khẩu để xem và điều khiển nó tại đây.",
+    "again": "Đã qua vài phút. Nhập lại mật khẩu để tiếp tục điều khiển màn hình của bạn.",
+    "password": "Mật khẩu của bạn",
+    "button": "Hiện màn hình của tôi",
+    "wrong": "Không khớp. Hãy thử lại."
+  }
+}

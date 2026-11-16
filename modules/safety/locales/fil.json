@@ -1,0 +1,183 @@
+{
+  "nav": "Kaligtasan",
+  "stop": {
+    "button": "Ihinto lahat",
+    "buttonLabel": "Ihinto ngayon ang lahat ng agent",
+    "stopped": "Naka-pause",
+    "resume": "Ituloy ulit",
+    "failed": "Hindi naihinto: {{reason}}",
+    "resumeLabel": "Naka-pause ang lahat. Ituloy ulit"
+  },
+  "report": {
+    "title": "Naka-pause ang lahat",
+    "intro": "Walang tatakbo hangga't hindi mo pinipindot ang Ituloy ulit. Ito ang mga itinigil.",
+    "by": "Inihinto ng {{who}} noong {{when}}.",
+    "who": {
+      "owner": "ikaw",
+      "linked-machine": "isang naka-link na makina",
+      "channel": "isang utos sa channel",
+      "automation": "isang automation token",
+      "agent": "isang agent",
+      "system": "ang server"
+    },
+    "empty": "Walang tumatakbo o naghihintay.",
+    "kind": {
+      "run": "Tumatakbong turn",
+      "queued": "Naghihintay na turn",
+      "browser": "Browser session",
+      "computer": "Computer session",
+      "voice": "Tawag",
+      "approval": "Hiling ng pahintulot",
+      "other": "Iba pa"
+    },
+    "outcome": {
+      "cancelled": "inihinto",
+      "held": "naka-hold",
+      "closed": "isinara"
+    },
+    "agent": "Agent {{name}}",
+    "close": "OK",
+    "resume": "Ituloy ulit",
+    "queue": {
+      "message": "Mensahe",
+      "task": "Gawain",
+      "handoff": "Pagpasa",
+      "routine": "Rutina",
+      "workflow": "Workflow",
+      "automation-run": "Automation"
+    },
+    "run": "takbo {{id}}",
+    "chat": "usapan {{id}}"
+  },
+  "resume": {
+    "title": "Ituloy ulit ang mga agent mo",
+    "intro": "I-type ang password mo para ituloy ulit ang mga agent mo. Para walang ibang makapag-tuloy nito. Itutuloy ang mga gawaing naghihintay.",
+    "password": "Password",
+    "submit": "Ituloy ulit",
+    "cancel": "Huwag muna",
+    "wrong": "Mali ang password.",
+    "forbidden": "Ang may-ari lang ang puwedeng magtuloy ulit.",
+    "error": "Hindi naituloy ulit: {{reason}}"
+  },
+  "page": {
+    "title": "Kaligtasan",
+    "intro": "Ang ginawa ng mga agent mo, hakbang-hakbang, at ang mga kontrol na nagbabantay sa kanila."
+  },
+  "receipts": {
+    "title": "Mga resibo",
+    "intro": "May resibo ang bawat gawain ng agent: mga hakbang, tool na ginamit, mga pag-apruba at kung sino ang nagpasya, at ang tokens na nagamit.",
+    "empty": "Wala pang resibo. Lalabas ito sa sandaling may gawin ang isang agent.",
+    "steps": "{{count}} hakbang",
+    "tokens": "{{input}} pasok / {{output}} labas na tokens",
+    "open": "Buksan ang resibo",
+    "back": "Lahat ng resibo",
+    "timeline": "Timeline",
+    "step": "Hakbang {{n}} sa {{total}}",
+    "scrub": "Lumipat sa mga hakbang",
+    "export": "I-export",
+    "exportJson": "I-download ang JSON",
+    "exportHtml": "Buksan ang kopyang madaling basahin",
+    "exporting": "Inihahanda…",
+    "decidedBy": "Nagpasya: {{who}}",
+    "you": "ikaw",
+    "duration": "{{s}} seg",
+    "cost": "Gastos {{amount}} {{currency}}",
+    "state": {
+      "running": "tumatakbo",
+      "done": "tapos",
+      "failed": "pumalya",
+      "cancelled": "inihinto",
+      "interrupted": "naputol"
+    },
+    "kind": {
+      "run.started": "Nagsimula",
+      "run.finished": "Natapos",
+      "tool.call": "Gumamit ng tool",
+      "tool.result": "Resulta ng tool",
+      "permission": "Humingi ng pahintulot",
+      "approval.requested": "Nagtanong sa iyo",
+      "approval.decided": "Ang pasya mo",
+      "usage": "Nagamit na tokens",
+      "reply": "Sagot",
+      "error": "Error",
+      "subagent": "Katulong",
+      "screenshot": "Screenshot",
+      "link": "Link",
+      "refused": "Hinarang ng safety check"
+    },
+    "youNamed": "{{name}} (ikaw)",
+    "nobody": "walang nagdesisyon (nag-expire)",
+    "someoneElse": "ibang session ng may-ari"
+  },
+  "retention": {
+    "title": "Itago ang mga resibo nang",
+    "days": "Araw",
+    "hint": "Tuluyang mabubura ang mas lumang resibo at ang mga screenshot nito.",
+    "save": "I-save",
+    "saved": "Na-save. {{count}} lumang resibo ang nabura."
+  },
+  "scan": {
+    "title": "Suriin ang skill bago i-install",
+    "intro": "I-paste ang teksto ng skill. Hinahanap namin ang mapanganib: pag-download at pagpapatakbo ng programa, pagbasa ng susi o password, nakatagong teksto, at pagpapadala ng data palabas.",
+    "label": "Teksto ng skill",
+    "run": "Suriin",
+    "running": "Sinusuri…",
+    "clean": "Wala kaming napansing mapanganib.",
+    "noticed": "Napansin namin:",
+    "timeout": "Natagalan ang pagsusuri kaya inihinto. Basahin mo muna ang skill bago i-install.",
+    "error": "Pumalya ang pagsusuri: {{reason}}",
+    "line": "linya {{line}}",
+    "kind": {
+      "download-and-run": "nagda-download at nagpapatakbo ng programa",
+      "credential-path": "nagbabasa ng susi, password o data ng browser",
+      "hidden-text": "may nakatagong teksto",
+      "exfiltration": "maaaring magpadala ng data mo palabas",
+      "model-instruction": "nagbibigay ng lihim na utos sa agent"
+    }
+  },
+  "decision": {
+    "proposal": "Humihingi ng pahintulot ang skill na “{{skill}}”",
+    "proposalText": "Buksan ang Skills para makita ang bawat tool, website at file na hinihingi nito bago ka magpasya.",
+    "proposalWiden": "Humihingi ito ng higit sa inaprubahan mo. Buksan ang Skills para makita ang nagbago bago ka magpasya."
+  },
+  "find": {
+    "navHint": "Ano ang puwede sa agent, at ang talaan nito",
+    "navKeywords": "pag-apruba, pahintulot, payagan, talaan, audit"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Ano ang puwedeng gawin ng mga katulong, at ang talaan nito"
+    },
+    "stop": {
+      "buttonLabel": "Ihinto na ang lahat ng katulong"
+    },
+    "page": {
+      "intro": "Ang ginawa ng mga katulong mo, hakbang-hakbang, at ang mga kontrol na nagbabantay sa kanila."
+    },
+    "receipts": {
+      "intro": "May resibo ang bawat trabaho ng katulong: mga hakbang, ang ginamit, ang inaprubahan mo at kung sino ang nagpasya, at kung gaano karami ang nagamit.",
+      "empty": "Wala pang resibo. Lalabas ito sa sandaling may gawin ang isang katulong.",
+      "tokens": "{{input}} nabasa / {{output}} naisulat",
+      "kind": {
+        "usage": "Dami ng nagamit"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "isang kusang tumatakbo",
+        "agent": "isang katulong",
+        "system": "ang PasaBot mismo"
+      },
+      "agent": "Katulong na si {{name}}"
+    },
+    "scan": {
+      "title": "Suriin ang kakayahan bago idagdag",
+      "intro": "I-paste ang teksto nito. Hinahanap namin ang mapanganib: pag-download at pagpapatakbo ng programa, pagbasa ng susi o password, nakatagong teksto, at pagpapadala ng data palabas.",
+      "label": "Teksto nito",
+      "timeout": "Natagalan ang pagsusuri kaya inihinto. Basahin mo muna bago idagdag.",
+      "kind": {
+        "model-instruction": "nagbibigay ng lihim na utos sa katulong"
+      }
+    }
+  }
+}

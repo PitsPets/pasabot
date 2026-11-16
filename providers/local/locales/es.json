@@ -1,0 +1,64 @@
+{
+  "title": "Modelos locales",
+  "intro": "Ejecuta agentes con un modelo en este equipo (Ollama, LM Studio) o en tu red local. Nada sale de tu red y los agentes nunca pueden agregar una dirección aquí.",
+  "empty": "Aún no hay modelos locales.",
+  "found": {
+    "text": "Se encontró {{name}} en {{url}} ({{count}} modelos).",
+    "use": "Agregarlo"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "Compatible con OpenAI (LM Studio)"
+  },
+  "scope": {
+    "loopback": "Este equipo",
+    "lan": "Red local"
+  },
+  "warning": {
+    "lan": "Esta dirección está en tu red local, no en este equipo. Quien controle esa máquina ve los prompts y puede responder como si fuera el modelo."
+  },
+  "models": {
+    "loading": "Buscando modelos…",
+    "unreachable": "No responde en esta dirección.",
+    "none": "No se encontraron modelos. Primero descarga uno en Ollama o LM Studio.",
+    "tools": "Herramientas",
+    "toolsTry": "Herramientas si es compatible",
+    "chatOnly": "Solo chat: sin herramientas"
+  },
+  "tools": {
+    "label": "Herramientas",
+    "auto": "Usar herramientas cuando el modelo las admita",
+    "off": "Solo chat (sin herramientas)"
+  },
+  "use": "Los agentes y los respaldos ya pueden elegir el cerebro {{id}}.",
+  "refresh": "Actualizar modelos",
+  "remove": {
+    "button": "Quitar",
+    "confirm": "Sí, quitarlo",
+    "cancel": "Conservarlo"
+  },
+  "add": {
+    "title": "Agregar un modelo local",
+    "name": "Nombre",
+    "api": "Tipo",
+    "url": "Dirección",
+    "urlHint": "Una dirección IP o localhost, p. ej. http://127.0.0.1:11434 (Ollama) o http://127.0.0.1:1234/v1 (LM Studio).",
+    "check": "Comprobar",
+    "submit": "Agregar",
+    "reachable": "Responde: {{count}} modelos."
+  },
+  "offlineHint": "Pon un modelo local en los respaldos de un agente (Cerebros y respaldos) y marca una rutina como \"Ejecutar aunque no haya conexión\": cuando no se pueda llegar al cerebro principal, esa rutina se ejecuta con el modelo local y te lo indica.",
+  "find": {
+    "settingsHint": "Ejecuta un cerebro en esta computadora",
+    "settingsKeywords": "local, sin conexión, modelo, privado"
+  },
+  "plain": {
+    "title": "Cerebros locales",
+    "intro": "Ejecuta ayudantes con un cerebro en este equipo (Ollama, LM Studio) o en tu red local. Nada sale de tu red y los ayudantes nunca pueden agregar una dirección aquí.",
+    "empty": "Aún no hay cerebros locales.",
+    "add": {
+      "title": "Agregar un cerebro local"
+    },
+    "offlineHint": "Pon un cerebro local en los respaldos de un ayudante (Cerebros y respaldos) y marca una rutina como \"Ejecutar aunque no haya conexión\": cuando no se pueda llegar al cerebro principal, esa rutina se ejecuta con el cerebro local y te lo indica."
+  }
+}

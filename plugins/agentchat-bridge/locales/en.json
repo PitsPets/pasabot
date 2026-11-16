@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "title": "Agent board",
+    "intro": "Bring your agents' message board into PasaBot. Messages your agent gets on the board show up in a chat here, and its replies go back to the board.",
+    "trust": "Board agents are never you. Only the board agents you list below can talk to your agent, and they get less trust than you: anything risky still asks you first.",
+    "error": "Could not load the board bridge: {{reason}}",
+    "noAgents": "Create an agent first.",
+    "manage": "To link, pause or remove a bridge, use Channels below."
+  },
+  "add": {
+    "open": "Connect a board",
+    "title": "Connect a board",
+    "url": "Board address",
+    "urlHint": "For example http://127.0.0.1:4100 or the board's address on your private network.",
+    "token": "Board token",
+    "tokenHint": "The token your agent signs in to the board with. Kept in the vault and never shown again.",
+    "agent": "Agent that answers",
+    "allowed": "Board agents that may talk to it",
+    "allowedHint": "Their board ids, one per line or comma-separated. Leave empty and nothing gets through.",
+    "label": "Name (optional)",
+    "submit": "Connect",
+    "cancel": "Cancel"
+  },
+  "bridge": {
+    "address": "Board",
+    "agent": "Answers as",
+    "allowed": "Allowed board agents",
+    "allowedNone": "None yet: no board message gets through.",
+    "chats": "Chats",
+    "chatsNone": "No board messages yet.",
+    "openChat": "Open chat"
+  },
+  "status": {
+    "connected": "Connected",
+    "reconnecting": "Reconnecting",
+    "auth_failed": "Token rejected",
+    "stopped": "Stopped",
+    "error": "Error",
+    "starting": "Starting",
+    "unavailable": "Not installed",
+    "disabled": "Off"
+  },
+  "find": {
+    "settingsHint": "Let other agents message yours",
+    "settingsKeywords": "bridge, agents, messages, connect"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Let other people's helpers message yours"
+    },
+    "settings": {
+      "title": "Helpers' message board"
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "title": "Bóveda",
+  "intro": "Claves y contraseñas que usan tus agentes. Los agentes solo reciben una referencia como {{example}}; el valor permanece en este servidor y se oculta de toda respuesta, registro y canal.",
+  "loading": "Cargando la bóveda…",
+  "error": "No se pudo cargar la bóveda: {{reason}}",
+  "unavailable": "La bóveda está bloqueada en este servidor (sin frase de contraseña ni llavero). Inicia el servidor con una frase de contraseña de la bóveda para usarla.",
+  "requests": {
+    "title": "Agentes que piden una clave",
+    "asks": "{{agent}} pide {{name}}",
+    "untrusted": "Alguien que no eres tú inició el turno que pidió esto. Comprueba que de verdad se necesita antes de completarlo.",
+    "fill": "Dar la clave",
+    "decline": "Rechazar",
+    "filled": "{{agent}} ya puede usar {{reference}}.",
+    "declined": "Solicitud rechazada."
+  },
+  "secrets": {
+    "title": "Secretos guardados",
+    "empty": "Aún no hay secretos.",
+    "shared": "Compartido (servidor)",
+    "for": "Para {{agent}}",
+    "remove": "Quitar",
+    "confirmRemove": "¿Quitar {{name}}? Los agentes que lo usan dejarán de funcionar hasta que lo agregues de nuevo.",
+    "module": "{{count}} entradas más pertenecen a canales y administradores de contraseñas.",
+    "backend_local": "Guardado aquí",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "Clave de {{brain}}. Los agentes que funcionan con él pueden ver esta clave."
+  },
+  "add": {
+    "title": "Agregar un secreto",
+    "open": "Agregar secreto",
+    "name": "Nombre",
+    "nameHint": "Letras, dígitos, _ . - (los agentes lo escriben como {{example}}).",
+    "who": "Quién puede usarlo",
+    "shared": "Compartido (solo servidor, sin agente)",
+    "source": "De dónde viene el valor",
+    "source_local": "Escribir el valor",
+    "source_bitwarden": "Elemento de Bitwarden",
+    "source_1password": "Referencia de 1Password",
+    "value": "Valor",
+    "valueHint": "Solo escritura: no se vuelve a mostrar.",
+    "ref_bitwarden": "ID del elemento de Bitwarden",
+    "refHint_bitwarden": "ID del elemento, o id/campo (password, username, notes, totp o un campo personalizado).",
+    "ref_1password": "Referencia del secreto",
+    "refHint_1password": "Como op://Private/GitHub/token",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "saved": "{{name}} guardado.",
+    "brainOption": "Clave de {{brain}}"
+  },
+  "backends": {
+    "title": "Administradores de contraseñas",
+    "intro": "PasaBot lee los valores mediante la herramienta de línea de comandos de Bitwarden (bw) o 1Password (op) en este servidor. Aquí solo se guarda la referencia.",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "Clave de sesión (de bw unlock)",
+    "token_1password": "Token de cuenta de servicio",
+    "tokenHint": "Solo escritura. Déjalo vacío y guarda para quitarlo.",
+    "set": "Clave guardada",
+    "notSet": "Sin clave guardada",
+    "save": "Guardar clave",
+    "test": "Probar",
+    "state_ready": "Listo",
+    "state_locked": "Bloqueado o sin sesión iniciada",
+    "state_not_installed": "La herramienta de línea de comandos no está instalada en el servidor",
+    "state_unsafe_bin": "Desactivado (ubicación de la herramienta no segura)",
+    "unsafeHint": "Desactivado: el usuario de este servidor puede modificar el archivo de la herramienta, así que un agente podría reemplazarlo. Instálala en una carpeta del sistema (o define PASABOT_BW_BIN / PASABOT_OP_BIN con una ruta así) y reinicia.",
+    "state_error": "No funciona"
+  },
+  "rotate": {
+    "title": "Rotar la clave de la bóveda",
+    "intro": "Crea una nueva clave de cifrado y vuelve a cifrar todos los secretos con ella. Los valores no cambian.",
+    "button": "Rotar clave",
+    "confirm": "¿Volver a cifrar ahora todos los secretos con una clave nueva?",
+    "yes": "Rotar ahora",
+    "cancel": "Cancelar",
+    "done": "Se volvieron a cifrar {{count}} secretos con una clave nueva.",
+    "last": "Última rotación: {{when}}."
+  },
+  "tools": {
+    "vault_request_secret": "Pedir una clave al propietario",
+    "vault_list_secrets": "Ver mis claves"
+  },
+  "server": {
+    "asksForKey": "{{agent}} pide una clave: {{name}}"
+  },
+  "find": {
+    "settingsHint": "Contraseñas y claves bajo llave",
+    "settingsKeywords": "contraseñas, claves, secretos, tokens, credenciales"
+  },
+  "plain": {
+    "title": "Secretos guardados",
+    "intro": "Claves y contraseñas que usan tus ayudantes. Los ayudantes solo reciben una referencia como {{example}}; el valor permanece en este servidor y se oculta de toda respuesta, registro y canal.",
+    "backends": {
+      "intro": "PasaBot lee los valores mediante la herramienta de línea de comandos de Bitwarden (bw) o 1Password (op) en este servidor. Aquí solo se guarda la referencia.",
+      "token_1password": "Token de cuenta de servicio"
+    },
+    "rotate": {
+      "title": "Rotar la clave de la bóveda"
+    },
+    "secrets": {
+      "title": "Lo que está guardado aquí",
+      "forBrain": "Clave para {{brain}}. Los ayudantes que piensan con él pueden usarla.",
+      "confirmRemove": "¿Quitar {{name}}? Los ayudantes que lo usan dejarán de funcionar hasta que lo agregues de nuevo."
+    },
+    "requests": {
+      "title": "Ayudantes que piden una clave"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} necesita tu clave {{name}}",
+      "text": "{{agent}} puede usarla pero nunca la ve. Solo tú puedes darla, en la caja fuerte.",
+      "give": "Dar la clave",
+      "given": "Clave guardada. Ya puede usarla",
+      "declined": "No se dio"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "nav": "Personas",
+  "page": {
+    "title": "Personas",
+    "introOwner": "Invita a familiares, amigos o compañeros de trabajo. Los invitados solo ven los chats a los que los agregues; los miembros también pueden usar los agentes que compartas. Tú sigues siendo el único propietario.",
+    "introOther": "Te invitaron a este PasaBot. El propietario decide qué puedes ver."
+  },
+  "kind": {
+    "owner": "Propietario",
+    "member": "Miembro",
+    "guest": "Invitado"
+  },
+  "role": {
+    "member": "Puede escribir",
+    "observer": "Solo lectura"
+  },
+  "invite": {
+    "title": "Invitar a alguien",
+    "intro": "Obtendrás un enlace para enviarle. Funciona una sola vez y deja de funcionar después de 3 días.",
+    "kind": "Invitar como",
+    "guestHint": "Un invitado solo ve los chats que elijas abajo.",
+    "memberHint": "Un miembro ve los chats que elijas y puede abrir chats con los agentes que compartas.",
+    "chats": "Chats a los que se une",
+    "noChats": "Aún no hay chats. Primero crea un agente.",
+    "pickChat": "Elige al menos un chat para un invitado.",
+    "role": "En esos chats puede",
+    "create": "Crear enlace de invitación",
+    "link": "Enlace de invitación",
+    "linkHint": "Envíalo solo a la persona que invitas: quien lo abra primero se une.",
+    "copy": "Copiar enlace",
+    "copied": "Copiado"
+  },
+  "invites": {
+    "title": "Invitaciones abiertas",
+    "noChats": "Sin chats",
+    "expires": "vence {{when}}",
+    "revoke": "Cancelar invitación"
+  },
+  "list": {
+    "title": "Todos en este PasaBot",
+    "disabled": "Desactivado",
+    "disable": "Desactivar",
+    "enable": "Reactivar"
+  },
+  "agents": {
+    "title": "Agentes que pueden usar los miembros",
+    "intro": "Los miembros pueden iniciar su propio chat con estos agentes. Sus mensajes se ejecutan como ellos, nunca como tú, así que cualquier acción riesgosa te lo sigue preguntando a ti.",
+    "none": "Aún no hay agentes.",
+    "share": "Permitir que los miembros usen a {{name}}"
+  },
+  "member": {
+    "title": "Agentes que puedes usar",
+    "intro": "Inicia tu propio chat con un agente que el propietario haya compartido.",
+    "none": "El propietario aún no ha compartido ningún agente contigo.",
+    "open": "Chatear con {{name}}"
+  },
+  "guest": {
+    "title": "Tus chats",
+    "body": "Tus chats están en la lista. El propietario te agregará a más cuando haga falta."
+  },
+  "chat": {
+    "button": "Personas",
+    "title": "Personas en este chat",
+    "readOnly": "Dejar en solo lectura",
+    "letWrite": "Permitir que escriba",
+    "remove": "Quitar a {{name}}",
+    "add": "Agregar a alguien",
+    "addPerson": "Agregar a {{name}}",
+    "invite": "Invitar a alguien nuevo a este chat",
+    "close": "Listo"
+  },
+  "join": {
+    "title": "Unirse a PasaBot",
+    "loading": "Verificando tu invitación…",
+    "invalid": "Este enlace de invitación ya no funciona. Pide uno nuevo.",
+    "introGuest": "{{name}} te invitó como invitado a: {{chats}}.",
+    "introMember": "{{name}} te invitó como miembro.",
+    "name": "Tu nombre",
+    "password": "Elige una contraseña",
+    "again": "Repite la contraseña",
+    "short": "Usa al menos 8 caracteres.",
+    "mismatch": "Las contraseñas no coinciden.",
+    "badName": "Usa un nombre simple, sin caracteres especiales.",
+    "submit": "Unirme"
+  },
+  "errors": {
+    "generic": "Algo salió mal. Inténtalo de nuevo."
+  },
+  "find": {
+    "navHint": "Invita personas y elige quién entra",
+    "navKeywords": "invitar, miembros, invitados, familia, amigos"
+  },
+  "plain": {
+    "page": {
+      "introOwner": "Invita a familia, amigos o compañeros. Los invitados ven solo los chats a los que los añades; los miembros también pueden usar los ayudantes que compartes. Tú sigues siendo el único dueño."
+    },
+    "invite": {
+      "memberHint": "Un miembro ve los chats que elijas y puede abrir chats con los ayudantes que compartas.",
+      "noChats": "Aún no hay chats. Crea primero un ayudante."
+    },
+    "agents": {
+      "title": "Ayudantes que pueden usar los miembros",
+      "intro": "Los miembros pueden empezar su propio chat con estos ayudantes. Sus mensajes cuentan como suyos, nunca como tuyos, así que lo arriesgado sigue preguntándote antes.",
+      "none": "Aún no hay ayudantes."
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Mga lokal na model",
+  "intro": "Patakbuhin ang mga agent sa isang model sa computer na ito (Ollama, LM Studio) o sa lokal mong network. Walang lalabas sa network mo, at hindi kailanman makakapagdagdag ng address dito ang mga agent.",
+  "empty": "Wala pang lokal na model.",
+  "found": {
+    "text": "Nakita ang {{name}} sa {{url}} ({{count}} na model).",
+    "use": "Idagdag ito"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "OpenAI-compatible (LM Studio)"
+  },
+  "scope": {
+    "loopback": "Computer na ito",
+    "lan": "Lokal na network"
+  },
+  "warning": {
+    "lan": "Nasa lokal mong network ang address na ito, hindi sa computer na ito. Nakikita ng may hawak ng makinang iyon ang mga prompt at puwede itong sumagot na parang model."
+  },
+  "models": {
+    "loading": "Hinahanap ang mga model…",
+    "unreachable": "Walang sumasagot sa address na ito.",
+    "none": "Walang nakitang model. Mag-download muna ng isa sa Ollama o LM Studio.",
+    "tools": "May tools",
+    "toolsTry": "Tools kung kaya",
+    "chatOnly": "Usapan lang: walang tools"
+  },
+  "tools": {
+    "label": "Tools",
+    "auto": "Gumamit ng tools kapag kaya ng model",
+    "off": "Usapan lang (walang tools)"
+  },
+  "use": "Puwede nang piliin ng mga agent at fallback ang utak na {{id}}.",
+  "refresh": "I-refresh ang mga model",
+  "remove": {
+    "button": "Alisin",
+    "confirm": "Oo, alisin",
+    "cancel": "Huwag"
+  },
+  "add": {
+    "title": "Magdagdag ng lokal na model",
+    "name": "Pangalan",
+    "api": "Uri",
+    "url": "Address",
+    "urlHint": "Isang IP address o localhost, hal. http://127.0.0.1:11434 (Ollama) o http://127.0.0.1:1234/v1 (LM Studio).",
+    "check": "Suriin",
+    "submit": "Idagdag",
+    "reachable": "Sumasagot: {{count}} na model."
+  },
+  "offlineHint": "Ilagay ang isang lokal na model sa mga fallback ng agent (Mga utak at fallback) at markahan ang routine ng \"Patakbuhin kahit offline\": kapag hindi maabot ang pangunahing utak, tatakbo ang routine sa lokal na model at sasabihin ito.",
+  "find": {
+    "settingsHint": "Patakbuhin ang utak sa computer na ito",
+    "settingsKeywords": "lokal, walang internet, modelo, pribado"
+  },
+  "plain": {
+    "title": "Mga utak sa computer na ito",
+    "intro": "Hayaang mag-isip ang mga katulong gamit ang utak sa computer na ito (Ollama, LM Studio) o sa network sa bahay mo. Walang lalabas sa network mo, at hindi kailanman makakapagdagdag ng address dito ang mga katulong.",
+    "empty": "Wala pang utak sa computer na ito.",
+    "add": {
+      "title": "Magdagdag ng utak sa computer na ito"
+    },
+    "offlineHint": "Ilagay ang utak sa computer na ito sa mga reserba ng katulong (Mga utak at reserba) at markahan ang routine ng \"Patakbuhin kahit offline\": kapag hindi maabot ang pangunahing utak, tatakbo ang routine sa utak sa computer na ito at sasabihin ito."
+  }
+}

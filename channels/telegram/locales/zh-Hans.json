@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "机器人令牌",
+    "botTokenHint": "来自你在 Telegram 中创建的机器人。令牌将存入保密库，之后不再显示。",
+    "apiBase": "Bot API 地址",
+    "apiBaseHint": "除非你运行自己的 Bot API 服务器，否则请保持默认。"
+  },
+  "link": {
+    "howTo": "与你的机器人开启私聊并发送：/link {{code}}",
+    "dmOnly": "关联码只能在与机器人的私聊中使用。"
+  },
+  "status": {
+    "connected": "已连接",
+    "reconnecting": "正在重新连接…",
+    "auth_failed": "机器人令牌被拒绝",
+    "stopped": "已停止"
+  }
+}

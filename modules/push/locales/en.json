@@ -1,0 +1,40 @@
+{
+  "title": "Notifications on this device",
+  "intro": "Get a notification on this phone or computer even when PasaBot is closed.",
+  "state": {
+    "loading": "Checking…",
+    "off": "Off",
+    "on": "On",
+    "unsupported": "Not supported here",
+    "blocked": "Blocked in the browser",
+    "unavailable": "Not available on this server"
+  },
+  "turnOn": "Turn on notifications",
+  "turnOff": "Turn off on this device",
+  "prefs": {
+    "title": "Notify me when",
+    "approval": "An agent needs my OK",
+    "error": "A run fails",
+    "finished": "An agent replies",
+    "progress": "A long task is still running",
+    "alert": "Other alerts (server, security)"
+  },
+  "test": {
+    "button": "Send a test",
+    "sent": "Sent. It should show up in a moment.",
+    "failed": "The test didn't go through. Turn notifications off and on again."
+  },
+  "help": {
+    "unsupported": "This browser can't get notifications from websites.",
+    "blocked": "Notifications are blocked for PasaBot. Allow them in the browser's site settings, then come back.",
+    "unavailable": "The server can't send notifications right now (its secret store is locked).",
+    "iphone": "On iPhone and iPad, add PasaBot to the Home Screen first (Share → Add to Home Screen), then turn this on from there."
+  },
+  "errors": {
+    "subscribe": "Couldn't turn on notifications. Try again."
+  },
+  "find": {
+    "settingsHint": "Notifications on this device",
+    "settingsKeywords": "notifications, alerts, push, sound"
+  }
+}

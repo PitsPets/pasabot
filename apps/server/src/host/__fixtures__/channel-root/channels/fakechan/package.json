@@ -1,0 +1,10 @@
+{
+  "name": "@pasabot-fixture/channel-fakechan",
+  "private": true,
+  "type": "module",
+  "pasabot": {
+    "kind": "channel",
+    "entry": "./dist/server.js",
+    "source": "./server.ts"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "nav": "工作流",
+  "page": {
+    "title": "工作流",
+    "intro": "工作流可将多个步骤串联起来：智能体、无工具的模型调用、条件、你的批准、等待和输出。在画布上搭建，然后运行。",
+    "empty": "还没有工作流。",
+    "new": "新建工作流",
+    "fromTemplate": "先回答，再分享",
+    "templateHint": "第一个智能体先回答你的提示，然后其他所有智能体同时收到该回答。"
+  },
+  "list": {
+    "steps": "{{count}} 个步骤",
+    "run": "运行",
+    "edit": "编辑",
+    "delete": "删除",
+    "deleteConfirm": "删除此工作流？已在运行的任务会继续运行。"
+  },
+  "approvals": {
+    "title": "等你处理",
+    "approve": "批准",
+    "reject": "拒绝",
+    "rejectConfirm": "确定拒绝？运行将在此停止。"
+  },
+  "runs": {
+    "title": "最近运行",
+    "empty": "还没有运行记录。",
+    "show": "显示步骤",
+    "hide": "隐藏步骤",
+    "cancel": "停止运行",
+    "loops": "循环次数：{{count}}"
+  },
+  "state": {
+    "running": "运行中",
+    "waiting": "等待中",
+    "done": "已完成",
+    "failed": "失败",
+    "rejected": "已拒绝",
+    "stopped": "已停止",
+    "cancelled": "已取消",
+    "skipped": "已跳过"
+  },
+  "type": {
+    "agent": "智能体",
+    "model": "模型（无工具）",
+    "condition": "条件",
+    "approval": "批准",
+    "transform": "转换",
+    "wait": "等待",
+    "parallel": "并行",
+    "output": "输出"
+  },
+  "editor": {
+    "name": "工作流名称",
+    "add": "添加步骤",
+    "addHint": "新步骤会接在所选步骤之后。",
+    "save": "保存",
+    "back": "返回列表",
+    "saved": "已保存。",
+    "canvas": "工作流画布",
+    "maxIterations": "每次运行的循环上限",
+    "selected": "所选步骤",
+    "none": "点按画布上的步骤即可编辑。",
+    "label": "步骤名称",
+    "remove": "移除此步骤",
+    "next": "然后前往",
+    "branch": "当条件为",
+    "link": "添加连线",
+    "links": "出线",
+    "unlink": "移除连线",
+    "pick": "选择步骤"
+  },
+  "field": {
+    "agent": "智能体",
+    "pickAgent": "选择智能体",
+    "prompt": "提示",
+    "op": "检查",
+    "value": "值",
+    "message": "向你询问的内容",
+    "template": "文本（{{input}} = 该步骤的输入）",
+    "seconds": "等待秒数",
+    "to": "发送到",
+    "title": "标题",
+    "channel": "频道绑定 ID"
+  },
+  "op": {
+    "contains": "包含",
+    "not_contains": "不包含",
+    "equals": "等于",
+    "matches": "符合模式",
+    "empty": "为空",
+    "not_empty": "不为空"
+  },
+  "branch": {
+    "true": "是",
+    "false": "否"
+  },
+  "to": {
+    "notification": "通知",
+    "channel": "频道发帖"
+  },
+  "template": {
+    "title": "先回答，再分享",
+    "name": "名称",
+    "agents": "智能体（第一个负责回答）",
+    "prompt": "给第一个智能体的提示",
+    "followUp": "其他智能体如何处理该回答",
+    "create": "创建工作流"
+  },
+  "tools": {
+    "workflows_list": "列出我的工作流",
+    "workflows_create": "创建工作流",
+    "workflows_update": "编辑我的一个工作流",
+    "workflows_run": "运行我的一个工作流",
+    "workflows_delete": "删除我的一个工作流"
+  },
+  "server": {
+    "failed": "工作流“{{name}}”失败",
+    "stopped": "工作流“{{name}}”已停止"
+  },
+  "find": {
+    "navHint": "把多个步骤串成一个流程",
+    "navKeywords": "步骤, 流程, 串联, 自动化"
+  },
+  "plain": {
+    "page": {
+      "intro": "工作流把步骤串起来：助手、大脑的快速回答、条件、你的批准、等待和结果。在画布上搭好，再运行。",
+      "templateHint": "第一个助手回答你的请求，然后其他所有助手同时收到这个回答。"
+    },
+    "type": {
+      "agent": "助手",
+      "model": "仅大脑（不用工具）"
+    },
+    "field": {
+      "agent": "助手",
+      "pickAgent": "选择一个助手"
+    },
+    "template": {
+      "agents": "助手（第一个回答）",
+      "prompt": "给第一个助手的请求"
+    }
+  }
+}

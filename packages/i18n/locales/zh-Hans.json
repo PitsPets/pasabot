@@ -1,0 +1,136 @@
+{
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "重试",
+    "skip": "跳过",
+    "cancel": "取消",
+    "save": "保存",
+    "loading": "正在加载…"
+  },
+  "queue": {
+    "interrupted": "此次运行因服务器重启而中断。",
+    "interruptedHint": "可以重试，或跳过并继续处理下一条消息。",
+    "routineInterrupted": "{{agent}} 的一次 routine 运行因服务器重启而中断。"
+  },
+  "blocks": {
+    "fallback": "此消息包含本应用无法显示的内容（{{kind}}）。"
+  },
+  "meta": {
+    "name": "简体中文",
+    "dir": "ltr",
+    "status": "unreviewed"
+  },
+  "server": {
+    "approvalNeeded": "需要你批准",
+    "wantsToUse": "{{name}} 想要：{{tool}}",
+    "interrupted": "服务器重启，运行被中断",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}：运行失败",
+    "unknownError": "未知错误",
+    "devicePaired": "有设备已配对",
+    "devicePairedBody": "{{what}} 现在可以登录你的账号。"
+  },
+  "provider": {
+    "fakeName": "模拟（测试用）",
+    "hint": {
+      "notOnPath": "在 PATH 中找不到 {{cli}}",
+      "notFound": "找不到 {{cli}}",
+      "versionFailed": "`{{cmd}} --version` 运行失败",
+      "runToSignIn": "运行一次 `{{cmd}}` 以登录",
+      "runToSignInOrKey": "运行一次 `{{cmd}}` 以登录（或在保险库中设置 {{env}}）",
+      "runToAddProvider": "运行一次 `{{cmd}}` 以添加提供方",
+      "checkedFirstTurn": "首次运行时检查登录",
+      "notAnswering": "{{name}}（{{url}}）没有响应",
+      "turnSignIn": "上次运行时登录没有成功。请在“大脑”页面重新登录。"
+    }
+  },
+  "channel": {
+    "linked": "已关联。你可以在这里和 {{agent}} 对话。",
+    "linkInvalid": "这个关联码无效或已过期。请在 PasaBot 的“设置 → 渠道”中新建一个。",
+    "failed": "抱歉，没有成功。详情请看 PasaBot 应用。",
+    "empty": "（没有回复）",
+    "interrupted": "因重启而中断。请在 PasaBot 应用中重试。",
+    "approvalAsk": "需要你批准：{{summary}}\n回复 /approve {{id}} 或 /deny {{id}}",
+    "approvalDevice": "需要你批准：{{summary}}\n这一项只能在已配对设备上的 PasaBot 应用中批准。",
+    "approvalNone": "这个聊天里没有该 id 的待批准请求。",
+    "approvalOwnerOnly": "只有已关联的所有者才能回应批准请求。",
+    "approvalDeviceOnly": "这个批准请求只能在已配对设备上的 PasaBot 应用中回应。",
+    "approved": "已批准 {{id}}。",
+    "denied": "已拒绝 {{id}}。"
+  },
+  "card": {
+    "action": {
+      "open": "打开",
+      "dismiss": "关闭",
+      "signIn": "重新登录",
+      "retry": "再试一次",
+      "otherBrain": "换一个大脑",
+      "wait": "继续等待",
+      "notNow": "暂不",
+      "takeOver": "我来操作",
+      "imDone": "好了，继续",
+      "ok": "好的",
+      "remind": "提醒我"
+    },
+    "signIn": {
+      "title": "{{name}} 的大脑需要你登录",
+      "text": "{{brain}} 已退出登录，所以 {{name}} 还不能回答。登录一次，然后再试。"
+    },
+    "failed": {
+      "title": "{{name}} 没能完成这条回复",
+      "offline": "连不上它的大脑。检查一下网络，然后再试。",
+      "timeout": "用时太长，所以停下了。",
+      "auth": "它的大脑已退出登录。",
+      "ratelimit": "它的大脑暂时达到了使用上限。",
+      "quota": "它的大脑在这个套餐里已经用完了。",
+      "contextoverflow": "对它的大脑来说，聊天太长了。",
+      "other": "回复还没写完，它的大脑就停了。"
+    },
+    "limit": {
+      "title": "{{name}} 暂停到 {{untilAt}}",
+      "text": "它的大脑达到了使用上限。你的消息会等着，然后自动发出。",
+      "offline": "现在连不上它的大脑。你的消息会等着，然后自动发出。",
+      "remindNow": "{{name}} 现在可以继续了",
+      "offlineTitle": "{{name}} 暂停到 {{untilAt}}"
+    },
+    "settled": {
+      "retrying": "正在重试",
+      "signedIn": "已重新登录",
+      "resumed": "已恢复工作",
+      "remind": "{{untilAt}} 提醒你"
+    },
+    "member": {
+      "failed": "{{name}} 没能完成这条回复。",
+      "approvalWaiting": "{{name}} 正在等待主人同意。",
+      "approvalApproved": "{{name}} 已获得同意。",
+      "approvalRefused": "{{name}} 未获允许。"
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}} 需要你重新登录",
+        "text": "{{name}} 的大脑已退出登录，暂时无法回复。登录一次后，再发一次你的消息。"
+      },
+      "action": {
+        "otherBrain": "换一个大脑"
+      },
+      "limit": {
+        "title": "{{name}} 暂时用完了次数",
+        "text": "{{untilAt}} 可以继续。你的消息会等着，然后自动发出。",
+        "offlineTitle": "{{name}} 现在连不上它的大脑",
+        "offline": "{{untilAt}} 再试一次。你的消息会等着，然后自动发出。"
+      },
+      "failed": {
+        "offline": "连不上它的大脑。检查一下网络，然后再试一次。",
+        "auth": "它的大脑已退出登录。",
+        "ratelimit": "它暂时用完了次数。",
+        "quota": "这个方案里已经没有次数了。",
+        "contextoverflow": "对话太长了，它的大脑装不下。",
+        "other": "回复还没写完就停了。"
+      }
+    }
+  }
+}

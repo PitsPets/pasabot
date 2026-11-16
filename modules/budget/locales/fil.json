@@ -1,0 +1,151 @@
+{
+  "nav": "Gastos",
+  "page": {
+    "title": "Gastos",
+    "intro": "Magkano ang gastos ng mga agent mo, ang presyong binabayaran mo, at ang mga limit na pumipigil sa kanila. Sa table mo lang galing ang presyo: hindi kami nanghuhula kapag walang presyo ang isang model."
+  },
+  "spend": {
+    "title": "Nagastos na",
+    "today": "Ngayong araw",
+    "month": "Ngayong buwan",
+    "total": "Kabuuan",
+    "none": "Wala pang nagagastos.",
+    "byAgent": "Bawat agent",
+    "byModel": "Bawat model",
+    "runs": "{{count}} na run",
+    "tokens": "{{input}} pasok · {{output}} labas · {{cache}} naka-cache",
+    "priceNotSet": "wala pang presyo",
+    "unpriced": "{{count}} na run ang wala pang presyo kaya hindi nabibilang."
+  },
+  "prices": {
+    "title": "Presyo",
+    "intro": "Bawat milyong token, isang currency bawat model. Lumalabas dito ang mga model na nagamit na ng mga agent mo; lagyan ng presyo para mabilang.",
+    "model": "Model",
+    "default": "(default na model)",
+    "input": "Pasok",
+    "output": "Labas",
+    "cached": "Naka-cache",
+    "currency": "Currency",
+    "save": "I-save ang presyo",
+    "saved": "Na-save ang presyo.",
+    "remove": "Alisin ang presyo",
+    "add": "Magdagdag ng model",
+    "provider": "Utak",
+    "empty": "Wala pang model. Lalabas sila pagkatapos ng unang sagot ng isang agent.",
+    "providerMissing": "Isulat muna ang pangalan ng utak"
+  },
+  "caps": {
+    "title": "Mga limit",
+    "intro": "Kapag naabot ang limit, maayos na hihinto ang agent, maghihintay ang bagong trabaho, at lalaktawan ang mga routine. Ikaw lang ang puwedeng magtaas ng limit.",
+    "everyone": "Lahat ng agent",
+    "day": "Bawat araw",
+    "month": "Bawat buwan",
+    "none": "Walang limit",
+    "spent": "{{spent}} sa {{cap}} {{currency}}",
+    "save": "I-save ang mga limit",
+    "saved": "Na-save ang mga limit.",
+    "uncovered": "Hindi pa ito binibilang sa kahit anong limit hangga't walang presyo sa currency ng mga limit: {{models}}.",
+    "oneCurrency": "Iisang currency lang dapat ang gamit ng mga limit at presyo. Gawin munang pareho ang currency nila."
+  },
+  "card": {
+    "who": {
+      "global": "Lahat ng agent",
+      "agent": "{{name}}"
+    },
+    "reached": "Naabot ng {{who}} ang {{period}} na budget: {{spent}} sa {{cap}} {{currency}}.",
+    "period": {
+      "day": "pang-araw-araw",
+      "month": "buwanang"
+    },
+    "stopped": "Huminto si {{name}}. Naka-save ang naisulat niya.",
+    "held": "Maghihintay ang bagong trabaho hanggang ma-reset ang limit o itaas mo ito.",
+    "skipped": "Nilaktawan ang isang routine.",
+    "ask": "Itaas ang limit o panatilihin?",
+    "newCap": "Bagong limit ({{currency}})",
+    "raise": "Itaas ang limit",
+    "keep": "Panatilihin",
+    "raised": "Itinaas ang limit sa {{cap}} {{currency}}.",
+    "kept": "Nanatili ang limit sa {{cap}} {{currency}}.",
+    "failed": "Hindi gumana. Ang owner lang ang puwedeng magbago ng limit."
+  },
+  "bundle": {
+    "title": "Ilipat ang isang agent (naka-encrypt)",
+    "intro": "Isang file na may settings, memory, workspace, skills at chats ng agent, naka-lock sa passphrase. Laging bagong agent ang gagawin kapag in-import.",
+    "agent": "Agent",
+    "passphrase": "Passphrase",
+    "passphraseHint": "Hindi bababa sa 8 character. Kung wala ito, hindi mabubuksan ang file.",
+    "vault": "Isama ang mga vault entry ng agent na ito",
+    "vaultHint": "Naka-off bilang default. Kailangan ulit ng password mo.",
+    "password": "Ang password mo",
+    "export": "I-download ang naka-encrypt na file",
+    "exported": "Na-download ang file.",
+    "file": "File ng agent",
+    "import": "I-import bilang bagong agent",
+    "imported": "Na-import bilang {{name}}.",
+    "open": "Buksan ang chat niya",
+    "error": {
+      "bad_passphrase_or_tampered": "Mali ang passphrase, o may binago sa file. Walang na-import.",
+      "unsafe_path": "May delikadong path ang file. Walang na-import.",
+      "unsupported_version": "Gawa ito ng mas bagong PasaBot. Walang na-import.",
+      "not_a_bundle": "Hindi ito file ng agent ng PasaBot.",
+      "reauth_required": "Kailangan ang password mo para maisama ang mga vault entry.",
+      "builtin_agent": "Kasama na sa PasaBot ang tagabuo ng team, kaya hindi ito sine-save sa file. Puwede ang iba mong agent.",
+      "other": "Hindi gumana."
+    }
+  },
+  "server": {
+    "allAgents": "Lahat ng agent",
+    "capHeadDay": "Naabot ng {{what}} ang pang-araw-araw na budget ({{spent}} sa {{cap}} {{currency}}).",
+    "capHeadMonth": "Naabot ng {{what}} ang buwanang budget ({{spent}} sa {{cap}} {{currency}}).",
+    "capStopped": "Huminto si {{name}}; nananatili ang naisulat nito hanggang ngayon.",
+    "capHeld": "Maghihintay ang bagong trabaho hanggang ma-reset ang limit o itaas mo ito.",
+    "capSkipped": "May nalaktawang takbo ng routine.",
+    "capCard": "{{head}} {{tail}}"
+  },
+  "find": {
+    "navHint": "Limitasyon sa gastos ng agent",
+    "navKeywords": "badyet, limitasyon, pera, takda, gastos"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Limitasyon sa gastos ng mga katulong mo"
+    },
+    "page": {
+      "intro": "Magkano ang gastos ng mga katulong mo, ang presyong binabayaran mo, at ang mga limit na pumipigil sa kanila. Sa table mo lang galing ang presyo: hindi kami nanghuhula kapag walang presyo ang isang utak."
+    },
+    "spend": {
+      "byAgent": "Bawat katulong",
+      "byModel": "Bawat bersyon ng utak"
+    },
+    "prices": {
+      "intro": "Kopyahin ang presyo mula sa pahina ng presyo ng utak: magkano ang bayad kada 1 milyong piraso ng teksto, hal. 3 para sa pasok at 15 para sa labas. Isang uri ng pera bawat bersyon ng utak. Lumalabas dito ang mga bersyong nagamit ng mga katulong mo; lagyan ng presyo para mabilang.",
+      "model": "Bersyon ng utak",
+      "default": "(karaniwang bersyon)",
+      "add": "Magdagdag ng bersyon",
+      "empty": "Wala pa. Lalabas sila pagkatapos ng unang sagot ng isang katulong."
+    },
+    "caps": {
+      "intro": "Kapag naabot ang limit, maayos na hihinto ang katulong, maghihintay ang bagong trabaho, at lalaktawan ang mga routine. Ikaw lang ang puwedeng magtaas ng limit.",
+      "everyone": "Lahat ng katulong",
+      "uncovered": "Hindi pa ito binibilang sa kahit anong limit hangga’t walang presyo sa currency ng mga limit: {{models}}."
+    },
+    "card": {
+      "who": {
+        "global": "Lahat ng katulong"
+      }
+    },
+    "bundle": {
+      "title": "Ilipat ang katulong (naka-lock na file)",
+      "intro": "Isang file na may settings, alaala, mga file, kakayahan at chat ng katulong, naka-lock sa passphrase. Laging bagong katulong ang gagawin kapag dinala.",
+      "agent": "Katulong",
+      "vault": "Isama ang mga naka-save na sikreto ng katulong na ito",
+      "file": "File ng katulong",
+      "import": "Dalhin bilang bagong katulong",
+      "error": {
+        "not_a_bundle": "Hindi ito file ng katulong ng PasaBot.",
+        "reauth_required": "Kailangan ang password mo para maisama ang mga naka-save na sikreto.",
+        "builtin_agent": "Kasama na sa PasaBot ang tagabuo ng team, kaya hindi ito sine-save sa file. Puwede ang iba mong katulong."
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "title": "本機模型",
+  "intro": "在這台電腦（Ollama、LM Studio）或區域網路上的模型執行代理。資料不會離開你的網路，代理也無法在此新增位址。",
+  "empty": "尚無本機模型。",
+  "found": {
+    "text": "在 {{url}} 找到 {{name}}（{{count}} 個模型）。",
+    "use": "新增"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "OpenAI 相容（LM Studio）"
+  },
+  "scope": {
+    "loopback": "這台電腦",
+    "lan": "區域網路"
+  },
+  "warning": {
+    "lan": "此位址位於你的區域網路，而非這台電腦。控制該機器的人可以看到提示內容，並能冒充模型回應。"
+  },
+  "models": {
+    "loading": "正在尋找模型…",
+    "unreachable": "此位址沒有回應。",
+    "none": "找不到模型。請先在 Ollama 或 LM Studio 下載一個。",
+    "tools": "工具",
+    "toolsTry": "支援時使用工具",
+    "chatOnly": "僅聊天：工具已關閉"
+  },
+  "tools": {
+    "label": "工具",
+    "auto": "模型支援時使用工具",
+    "off": "僅聊天（關閉工具）"
+  },
+  "use": "代理與備援現在可以選用大腦 {{id}}。",
+  "refresh": "重新整理模型",
+  "remove": {
+    "button": "移除",
+    "confirm": "是，移除",
+    "cancel": "保留"
+  },
+  "add": {
+    "title": "新增本機模型",
+    "name": "名稱",
+    "api": "類型",
+    "url": "位址",
+    "urlHint": "IP 位址或 localhost，例如 http://127.0.0.1:11434（Ollama）或 http://127.0.0.1:1234/v1（LM Studio）。",
+    "check": "檢查",
+    "submit": "新增",
+    "reachable": "有回應：{{count}} 個模型。"
+  },
+  "offlineHint": "將本機模型加入代理的備援（大腦與備援），並將例行工作標示為「離線也執行」：當主要大腦無法連線時，該例行工作會改用本機模型執行並告知你。",
+  "find": {
+    "settingsHint": "在這台電腦上執行大腦",
+    "settingsKeywords": "本機, 離線, 模型, 私密"
+  },
+  "plain": {
+    "title": "本機大腦",
+    "intro": "在這台電腦（Ollama、LM Studio）或區域網路上的大腦執行代理。資料不會離開你的網路，代理也無法在此新增位址。",
+    "empty": "尚無本機大腦。",
+    "add": {
+      "title": "新增本機大腦"
+    },
+    "offlineHint": "將本機大腦加入代理的備援（大腦與備援），並將例行工作標示為「離線也執行」：當主要大腦無法連線時，該例行工作會改用本機大腦執行並告知你。"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "nav": "루틴",
+  "page": {
+    "title": "루틴",
+    "intro": "루틴은 에이전트를 직접, 일정에 따라, 또는 외부 호출이 있을 때 실행해요. 답변이 정확히 (quiet)이면 새로운 내용이 없다는 뜻이며 알림이 오지 않아요.",
+    "calendar": "캘린더 피드",
+    "empty": "아직 루틴이 없어요."
+  },
+  "hook": {
+    "title": "웹훅 주소와 시크릿",
+    "once": "지금 복사하세요. 시크릿은 한 번만 표시되며, 시크릿을 교체하면 주소도 새로 바뀌어요.",
+    "saved": "저장했어요"
+  },
+  "create": {
+    "title": "새 루틴",
+    "name": "이름",
+    "agent": "에이전트",
+    "prompt": "에이전트가 무엇을 해야 하나요?",
+    "promptHint": "루틴이 실행될 때마다 메시지로 전송돼요.",
+    "trigger": "실행 방식",
+    "cron": "일정 (cron)",
+    "cronHint": "분 시 일 월 요일 순서예요. 예: 0 9 * * 1-5 = 평일 9:00",
+    "tz": "시간대",
+    "target": "실행 위치",
+    "submit": "루틴 만들기",
+    "workflow": "워크플로",
+    "noWorkflows": "아직 워크플로가 없어요. 먼저 워크플로 페이지에서 만들어 주세요.",
+    "offline": "오프라인에서도 실행",
+    "offlineHint": "에이전트의 기본 브레인에 연결할 수 없으면 다음 브레인(예: 로컬 모델)을 사용하고 결과에 그 사실을 표시해요."
+  },
+  "kind": {
+    "schedule": "일정에 따라",
+    "manual": "직접",
+    "webhook": "웹훅",
+    "github": "GitHub",
+    "event": "이벤트 발생 시"
+  },
+  "target": {
+    "chat": "에이전트 채팅에서",
+    "thread": "새 스레드에서",
+    "workflow": "워크플로 시작"
+  },
+  "state": {
+    "paused": "일시 중지됨"
+  },
+  "routine": {
+    "next": "다음",
+    "last": "최근"
+  },
+  "result": {
+    "pending": "실행 중",
+    "ok": "완료",
+    "silent": "새 내용 없음",
+    "failed": "실패",
+    "interrupted": "중단됨",
+    "skipped": "건너뜀",
+    "held": "보류됨"
+  },
+  "source": {
+    "manual": "직접",
+    "schedule": "일정",
+    "webhook": "웹훅",
+    "event": "이벤트",
+    "github": "GitHub",
+    "test": "테스트 실행"
+  },
+  "action": {
+    "run": "지금 실행",
+    "test": "테스트 실행",
+    "pause": "일시 중지",
+    "resume": "재개",
+    "rotate": "새 시크릿",
+    "rotateConfirm": "새 시크릿과 주소를 만들까요? 이전 값을 사용하는 발신자는 더 이상 작동하지 않아요.",
+    "delete": "삭제",
+    "deleteConfirm": "이 루틴을 삭제할까요? 활동 기록은 피드에 남아요."
+  },
+  "activity": {
+    "title": "활동",
+    "empty": "아직 실행된 항목이 없어요.",
+    "open": "채팅 열기",
+    "silent": "실행했지만 보고할 새 내용이 없어요.",
+    "offlineFallback": "기본 브레인 오프라인: {{to}}에서 실행",
+    "rateLimited": "요청 한도 초과: 무료 모델이 사용 중이거나 할당량이 소진되어 이번 실행을 건너뛰었어요. 다음 실행은 평소대로 진행돼요."
+  },
+  "tools": {
+    "routines_list": "내 루틴 목록",
+    "routines_create": "루틴 만들기",
+    "routines_pause": "내 루틴 하나 일시 중지",
+    "routines_delete": "내 루틴 하나 삭제"
+  },
+  "server": {
+    "finished": "루틴 \"{{name}}\" 완료"
+  },
+  "find": {
+    "navHint": "일정에 따라 에이전트 실행",
+    "navKeywords": "일정, 매일, 타이머, 반복, 매주, 예약",
+    "stillOn_other": "루틴 {{count}}개가 아직 켜져 있으며 계속 실행됩니다."
+  },
+  "plain": {
+    "find": {
+      "navHint": "정해진 시간에 도우미 실행"
+    },
+    "page": {
+      "intro": "루틴은 직접, 일정에 맞춰, 또는 무언가가 부를 때 도우미를 움직여요. 답이 정확히 (quiet)이면 새 소식이 없다는 뜻이라 알림이 가지 않아요."
+    },
+    "create": {
+      "agent": "도우미",
+      "prompt": "도우미가 무엇을 하면 될까요?",
+      "offlineHint": "도우미의 주 두뇌에 닿지 않으면 다음 두뇌(예: 이 컴퓨터에 있는 것)를 쓰고 결과에 그렇게 알려요."
+    },
+    "kind": {
+      "webhook": "링크가 호출될 때"
+    },
+    "source": {
+      "webhook": "링크"
+    },
+    "hook": {
+      "title": "링크와 비밀"
+    },
+    "target": {
+      "chat": "도우미 채팅에서"
+    },
+    "activity": {
+      "rateLimited": "건너뜀: 무료 두뇌가 지금 바쁘거나 다 썼어요. 다음 번은 평소대로 돌아가요."
+    }
+  },
+  "card": {
+    "created": {
+      "title": "새 루틴: {{name}}",
+      "text": "알아서 실행돼요. 멈추거나, 필요 없으면 삭제할 수 있어요."
+    },
+    "pause": "일시정지",
+    "undo": "삭제하기",
+    "open": "루틴 보기",
+    "paused": "일시정지됨",
+    "undone": "삭제됨",
+    "gone": "이 루틴은 없어졌어요"
+  }
+}

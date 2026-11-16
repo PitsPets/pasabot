@@ -1,0 +1,183 @@
+{
+  "nav": "Sicherheit",
+  "stop": {
+    "button": "Alle stoppen",
+    "buttonLabel": "Alle Agenten jetzt stoppen",
+    "stopped": "Pausiert",
+    "resume": "Wieder starten",
+    "failed": "Stoppen nicht möglich: {{reason}}",
+    "resumeLabel": "Alles ist pausiert. Wieder starten"
+  },
+  "report": {
+    "title": "Alles ist pausiert",
+    "intro": "Nichts läuft, bis du auf Wieder starten drückst. Das wurde angehalten:",
+    "by": "Gestoppt von {{who}} um {{when}}.",
+    "who": {
+      "owner": "dir",
+      "linked-machine": "einem verknüpften Rechner",
+      "channel": "einem Channel-Befehl",
+      "automation": "einem Automatisierungs-Token",
+      "agent": "einem Agenten",
+      "system": "dem Server"
+    },
+    "empty": "Nichts lief oder wartete.",
+    "kind": {
+      "run": "Laufende Runde",
+      "queued": "Wartende Runde",
+      "browser": "Browser-Sitzung",
+      "computer": "Computer-Sitzung",
+      "voice": "Sprachanruf",
+      "approval": "Genehmigungsanfrage",
+      "other": "Sonstiges"
+    },
+    "outcome": {
+      "cancelled": "gestoppt",
+      "held": "angehalten",
+      "closed": "geschlossen"
+    },
+    "agent": "Agent {{name}}",
+    "close": "OK",
+    "resume": "Wieder starten",
+    "queue": {
+      "message": "Nachricht",
+      "task": "Aufgabe",
+      "handoff": "Übergabe",
+      "routine": "Routine",
+      "workflow": "Workflow",
+      "automation-run": "Automatisierung"
+    },
+    "run": "Lauf {{id}}",
+    "chat": "Chat {{id}}"
+  },
+  "resume": {
+    "title": "Deine Agenten wieder starten",
+    "intro": "Gib dein Passwort ein, um deine Agenten wieder zu starten. So kann niemand sonst sie neu starten. Wartende Arbeit läuft wieder an.",
+    "password": "Passwort",
+    "submit": "Wieder starten",
+    "cancel": "Abbrechen",
+    "wrong": "Das Passwort ist falsch.",
+    "forbidden": "Nur der Besitzer kann wieder starten.",
+    "error": "Konnte nicht wieder starten: {{reason}}"
+  },
+  "page": {
+    "title": "Sicherheit",
+    "intro": "Was deine Agenten getan haben, Schritt für Schritt, und die Kontrollen, die sie in Schach halten."
+  },
+  "receipts": {
+    "title": "Belege",
+    "intro": "Jede Agentenaufgabe hinterlässt einen Beleg: ihre Schritte, Tool-Aufrufe, Genehmigungen und wer entschieden hat, sowie die verbrauchten Tokens.",
+    "empty": "Noch keine Belege. Sie erscheinen, sobald ein Agent an etwas arbeitet.",
+    "steps": "{{count}} Schritte",
+    "tokens": "{{input}} Tokens ein / {{output}} Tokens aus",
+    "open": "Beleg öffnen",
+    "back": "Alle Belege",
+    "timeline": "Zeitverlauf",
+    "step": "Schritt {{n}} von {{total}}",
+    "scrub": "Durch die Schritte navigieren",
+    "export": "Exportieren",
+    "exportJson": "JSON herunterladen",
+    "exportHtml": "Lesbare Kopie öffnen",
+    "exporting": "Wird vorbereitet…",
+    "decidedBy": "Entschieden von {{who}}",
+    "you": "dir",
+    "duration": "{{s}} s",
+    "cost": "Kosten {{amount}} {{currency}}",
+    "state": {
+      "running": "läuft",
+      "done": "fertig",
+      "failed": "fehlgeschlagen",
+      "cancelled": "gestoppt",
+      "interrupted": "unterbrochen"
+    },
+    "kind": {
+      "run.started": "Gestartet",
+      "run.finished": "Beendet",
+      "tool.call": "Tool-Aufruf",
+      "tool.result": "Tool-Ergebnis",
+      "permission": "Berechtigung angefragt",
+      "approval.requested": "Hat dich gefragt",
+      "approval.decided": "Deine Entscheidung",
+      "usage": "Verbrauchte Tokens",
+      "reply": "Antwort",
+      "error": "Fehler",
+      "subagent": "Helfer",
+      "screenshot": "Screenshot",
+      "link": "Link",
+      "refused": "Von einer Sicherheitsprüfung abgelehnt"
+    },
+    "youNamed": "{{name}} (du)",
+    "nobody": "niemand (abgelaufen)",
+    "someoneElse": "eine andere Owner-Sitzung"
+  },
+  "retention": {
+    "title": "Belege aufbewahren für",
+    "days": "Tage",
+    "hint": "Ältere Belege und ihre Screenshots werden endgültig gelöscht.",
+    "save": "Speichern",
+    "saved": "Gespeichert. {{count}} alte Belege gelöscht."
+  },
+  "scan": {
+    "title": "Skill vor der Installation prüfen",
+    "intro": "Füge den Text eines Skills ein. Wir suchen nach riskanten Dingen: Programme herunterladen und ausführen, Schlüssel oder Passwörter lesen, versteckten Text und Daten nach außen senden.",
+    "label": "Skill-Text",
+    "run": "Prüfen",
+    "running": "Wird geprüft…",
+    "clean": "Uns ist nichts Riskantes aufgefallen.",
+    "noticed": "Uns ist aufgefallen:",
+    "timeout": "Die Prüfung hat zu lange gedauert und wurde gestoppt. Lies den Skill selbst, bevor du ihn installierst.",
+    "error": "Die Prüfung ist fehlgeschlagen: {{reason}}",
+    "line": "Zeile {{line}}",
+    "kind": {
+      "download-and-run": "lädt ein Programm herunter und führt es aus",
+      "credential-path": "liest Schlüssel, Passwörter oder Browserdaten",
+      "hidden-text": "enthält versteckten Text",
+      "exfiltration": "könnte deine Daten nach außen senden",
+      "model-instruction": "versucht, dem Agenten geheime Befehle zu geben"
+    }
+  },
+  "decision": {
+    "proposal": "Skill „{{skill}}“ fragt Berechtigungen an",
+    "proposalText": "Öffne Skills, um alle Tools, Websites und Dateien zu sehen, die er anfragt, bevor du entscheidest.",
+    "proposalWiden": "Er fragt mehr an, als du genehmigt hast. Öffne Skills, um zu sehen, was sich ändert, bevor du entscheidest."
+  },
+  "find": {
+    "navHint": "Was Agenten dürfen, und das Protokoll",
+    "navKeywords": "Freigaben, Rechte, erlauben, Protokoll, Prüfung"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Was Helfer dürfen, und das Protokoll dazu"
+    },
+    "stop": {
+      "buttonLabel": "Alle Helfer jetzt stoppen"
+    },
+    "page": {
+      "intro": "Was deine Helfer getan haben, Schritt für Schritt, und was sie im Zaum hält."
+    },
+    "receipts": {
+      "intro": "Jede Aufgabe eines Helfers hinterlässt einen Beleg: Schritte, was er benutzt hat, was du erlaubt hast und wer entschieden hat, und wie viel verbraucht wurde.",
+      "empty": "Noch keine Belege. Sie erscheinen, sobald ein Helfer etwas tut.",
+      "tokens": "{{input}} gelesen / {{output}} geschrieben",
+      "kind": {
+        "usage": "Verbrauch"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "etwas, das von selbst läuft",
+        "agent": "ein Helfer",
+        "system": "PasaBot selbst"
+      },
+      "agent": "Helfer {{name}}"
+    },
+    "scan": {
+      "title": "Eine Fähigkeit vor dem Hinzufügen prüfen",
+      "intro": "Füge den Text ein. Wir suchen nach Riskantem: Programme laden und starten, Schlüssel oder Passwörter lesen, versteckter Text und Daten nach außen senden.",
+      "label": "Sein Text",
+      "timeout": "Die Prüfung dauerte zu lange und wurde gestoppt. Lies es selbst, bevor du es hinzufügst.",
+      "kind": {
+        "model-instruction": "versucht, dem Helfer geheime Befehle zu geben"
+      }
+    }
+  }
+}

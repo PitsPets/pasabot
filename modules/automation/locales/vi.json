@@ -1,0 +1,55 @@
+{
+  "settings": "Tự động hóa",
+  "intro": "Cho phép các script trên máy tính này bắt đầu công việc cho agent bằng lệnh pasabot run hoặc API cục bộ. Mỗi agent có công tắc và token riêng. Token chỉ hoạt động ở mức tin cậy Tiêu chuẩn là tối đa, nên việc rủi ro vẫn hỏi bạn trước.",
+  "loadError": "Không tải được cài đặt tự động hóa.",
+  "noAgents": "Chưa có agent nào.",
+  "agent": {
+    "switch": "Cho phép tự động hóa cho {{name}}",
+    "on": "Bật",
+    "off": "Tắt",
+    "tokens": "{{count}} token đang hoạt động"
+  },
+  "form": {
+    "title": "Token mới cho {{name}}",
+    "label": "Tên token",
+    "labelHint": "Nơi nó sẽ được dùng, ví dụ \"script trên laptop\".",
+    "expiry": "Hết hạn",
+    "days30": "Sau 30 ngày",
+    "days90": "Sau 90 ngày",
+    "days365": "Sau một năm",
+    "never": "Không bao giờ",
+    "remote": "Cho phép cả từ thiết bị khác (không chỉ máy tính này)",
+    "remoteHint": "Hãy để tắt trừ khi script trên máy khác cần dùng. Trang trình duyệt không bao giờ dùng được token.",
+    "create": "Tạo token",
+    "creating": "Đang tạo…"
+  },
+  "created": {
+    "title": "Hãy sao chép token này ngay",
+    "body": "Token chỉ hiển thị một lần. Hãy cất ở nơi an toàn, như trình quản lý mật khẩu.",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép",
+    "usage": "Thử ngay:",
+    "done": "Xong"
+  },
+  "list": {
+    "title": "Token",
+    "empty": "Chưa có token nào.",
+    "revoke": "Thu hồi",
+    "revoked": "Đã thu hồi",
+    "expires": "Hết hạn {{when}}",
+    "noExpiry": "Không bao giờ hết hạn",
+    "lastUsed": "Dùng lần cuối {{when}}",
+    "neverUsed": "Chưa từng dùng",
+    "remote": "Cho phép thiết bị khác",
+    "localOnly": "Chỉ máy tính này"
+  },
+  "find": {
+    "settingsHint": "Webhook và trình kích hoạt khởi chạy tác tử",
+    "settingsKeywords": "webhook, kích hoạt, tự động hóa, sự kiện"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Cho trợ lý chạy khi có điều gì xảy ra"
+    }
+  }
+}

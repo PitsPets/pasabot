@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "Tahan untuk bicara",
+    "listening": "Mendengarkan… lepas untuk berhenti",
+    "working": "Mengubah suara Anda menjadi teks…",
+    "title": "Pesan Anda",
+    "text": "Yang Anda ucapkan",
+    "send": "Kirim",
+    "cancel": "Batal",
+    "empty": "Tidak ada suara terdengar. Coba lagi, sedikit lebih dekat ke mikrofon.",
+    "noMic": "Browser ini tidak dapat memakai mikrofon di sini.",
+    "denied": "Akses mikrofon diblokir. Izinkan di browser untuk berbicara.",
+    "unavailable": "Input suara belum disiapkan. Owner dapat mengunduh model ucapan di Pengaturan → Suara.",
+    "failed": "Tidak dapat mengubah rekaman menjadi teks. {{reason}}",
+    "browserNote": "Memakai pengenalan ucapan browser Anda."
+  },
+  "listen": {
+    "play": "Dengarkan",
+    "stop": "Berhenti",
+    "loading": "Menyiapkan audio…",
+    "failed": "Tidak dapat membacakan ini. {{reason}}"
+  },
+  "settings": {
+    "title": "Suara",
+    "intro": "Bicara dengan agent Anda dan dengarkan balasannya. Ucapan diproses di server ini, jadi suara Anda tidak pernah keluar darinya.",
+    "engine": "Mesin ucapan",
+    "engineFake": "Mesin uji",
+    "engineLocal": "Di server ini",
+    "noPackage": "Mesin ucapan belum terpasang di server ini, jadi cadangan dari browser yang dipakai.",
+    "stt": "Input suara",
+    "tts": "Balasan lisan",
+    "ready": "Siap: {{model}}",
+    "notReady": "Belum ada model",
+    "models": "Model ucapan",
+    "modelsIntro": "Model hanya diunduh saat Anda memintanya, dari rilis resmi mesin ucapan.",
+    "kindStt": "Input suara",
+    "kindTts": "Balasan lisan",
+    "size": "Sekitar {{mb}} MB",
+    "languages": "Bahasa: {{list}}",
+    "installed": "Terpasang",
+    "download": "Unduh {{name}}",
+    "remove": "Hapus {{name}}",
+    "modelName": "{{model}} ({{note}})",
+    "noteMultilingual": "multibahasa",
+    "noteEnglish": "bahasa Inggris",
+    "downloading": "Mengunduh… {{pct}}",
+    "unpacking": "Mengekstrak…",
+    "failedDownload": "Unduhan gagal: {{reason}}",
+    "disabledUnpinned": "Belum tersedia: PasaBot tidak punya checksum untuk memverifikasi unduhan ini, jadi tetap nonaktif.",
+    "ownerOnly": "Hanya owner yang dapat mengunduh atau menghapus model.",
+    "autoRead": "Bacakan balasan baru dengan suara",
+    "autoReadHint": "Hanya di device ini.",
+    "browserStt": "Pakai pengenalan ucapan browser jika tidak ada model terpasang",
+    "browserSttHint": "Beberapa browser mengirim suara Anda ke server pembuatnya untuk dikenali. Nonaktif secara default.",
+    "loading": "Memuat…",
+    "error": "Tidak dapat memuat pengaturan suara. {{reason}}"
+  },
+  "find": {
+    "settingsHint": "Bicara dan dengarkan agen Anda",
+    "settingsKeywords": "suara, bicara, mikrofon, dengar, audio"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Bicara dan dengarkan pembantu Anda"
+    },
+    "settings": {
+      "intro": "Bicara dengan pembantu Anda dan dengarkan balasannya. Ucapan diproses di server ini, jadi suara Anda tidak pernah keluar darinya.",
+      "engineLocal": "Di server ini",
+      "notReady": "Belum ada otak",
+      "models": "Otak ucapan",
+      "modelsIntro": "Otak hanya diunduh saat Anda memintanya, dari rilis resmi mesin ucapan.",
+      "browserStt": "Pakai pengenalan ucapan browser jika tidak ada otak terpasang",
+      "browserSttHint": "Beberapa browser mengirim suara Anda ke server pembuatnya untuk dikenali. Nonaktif secara default."
+    }
+  }
+}

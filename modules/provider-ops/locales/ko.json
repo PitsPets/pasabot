@@ -1,0 +1,209 @@
+{
+  "nav": "사용량",
+  "page": {
+    "title": "사용량",
+    "intro": "에이전트가 사용한 토큰이에요. 이 서버에서 집계한 값만 표시돼요.",
+    "days": "최근 {{count}}일",
+    "agents": "에이전트별",
+    "providers": "브레인별",
+    "empty": "토큰 수가 기록된 실행이 아직 없어요.",
+    "agent": "에이전트",
+    "provider": "브레인",
+    "runs": "실행",
+    "input": "입력",
+    "output": "출력",
+    "cache": "캐시",
+    "limits": "일시 중지된 브레인",
+    "noLimits": "모든 브레인을 사용할 수 있어요.",
+    "limitUntil": "{{provider}}: {{reason}}, {{time}} 이후에 다시 시도해요",
+    "check": "지금 확인",
+    "checked": "확인 완료: 브레인 {{count}}개를 다시 사용할 수 있어요."
+  },
+  "gauge": {
+    "label": "컨텍스트 {{pct}}%",
+    "title": "컨텍스트 토큰 {{window}}개 중 {{used}}개 사용 ({{provider}})",
+    "full": "메모리 {{pct}}% 참",
+    "menu": "이 채팅이 얼마나 찼는지",
+    "none": "이 채팅의 컨텍스트 보고가 아직 없습니다."
+  },
+  "notice": {
+    "switched": "{{from}}에서 {{to}}(으)로 전환했어요 ({{reason}}). 채팅은 계속돼요.",
+    "back": "다시 {{to}}(으)로 돌아왔어요.",
+    "compactedNative": "컨텍스트 {{pct}}%: 압축했어요.",
+    "compactedReseed": "컨텍스트 {{pct}}%: 다음 답변부터 요약본으로 새 세션을 시작해요.",
+    "overflow": "컨텍스트가 가득 차서 요약본으로 새 세션을 시작했어요.",
+    "stopped": "압축을 중단했어요. 최근 두 번의 압축으로 거의 공간이 확보되지 않았어요. 새 채팅을 시작하거나 설정에서 압축을 다시 시작하세요.",
+    "reason": {
+      "rate_limit": "요청 한도",
+      "quota": "사용 한도",
+      "auth": "로그인 문제",
+      "context_overflow": "컨텍스트 가득 참",
+      "offline": "기본 브레인 오프라인"
+    }
+  },
+  "settings": {
+    "title": "브레인과 대체 브레인",
+    "intro": "브레인이 한도에 도달하면 에이전트는 목록의 다음 브레인으로 이어서 작업하고, 한도가 초기화되면 다시 돌아가요.",
+    "fallback": "대체 {{n}}",
+    "none": "없음",
+    "model": "모델 (선택)",
+    "account": "{{provider}} 계정",
+    "defaultAccount": "기본 계정",
+    "compactPct": "압축 시점 (컨텍스트 %)",
+    "compactHint": "비워 두면 {{pct}}%",
+    "save": "저장",
+    "saved": "저장됨",
+    "stopped": "이 에이전트의 압축이 중단되었어요.",
+    "resume": "압축 다시 시작",
+    "accounts": "계정",
+    "accountsIntro": "계정마다 해당 브레인 CLI용 로그인 폴더가 따로 있어요.",
+    "accountLabel": "계정 이름",
+    "accountProvider": "브레인",
+    "addAccount": "계정 추가",
+    "remove": "삭제",
+    "noAccounts": "추가 계정이 없어요.",
+    "accountSignIn": "로그인하려면 서버의 터미널에서 다음을 한 번 실행하세요:",
+    "accountFolder": "이 브레인 CLI의 로그인 폴더:",
+    "accountChecking": "확인 중…",
+    "accountSignedIn": "로그인됨",
+    "accountSignedOut": "로그인되지 않음",
+    "accountUnknown": "로그인 확인 안 됨",
+    "primary": "{{provider}} 사용"
+  },
+  "server": {
+    "stoppedTitle": "{{name}}: 압축이 중지됨",
+    "stoppedBody": "두 번 연속 압축해도 컨텍스트가 10 % 미만으로 비었습니다. 새 채팅을 시작하거나 설정에서 압축을 다시 켜세요."
+  },
+  "find": {
+    "navHint": "에이전트 사용량과 비용",
+    "navKeywords": "사용량, 비용, 토큰, 지출, 청구",
+    "settingsHint": "AI 두뇌의 한도와 점검",
+    "settingsKeywords": "두뇌, 모델, 한도, 제공자, 인공지능",
+    "brainsHint": "에이전트가 생각하는 데 쓰는 AI 설정",
+    "brainsKeywords": "브레인, AI, 모델, 로그인, 설치, Claude, Codex, Gemini, Grok, OpenCode, 로컬, 무료"
+  },
+  "brains": {
+    "title": "브레인",
+    "intro": "브레인은 에이전트가 생각하는 AI입니다. 하나 이상 설정하세요. 각 에이전트가 기본 브레인과 백업을 고릅니다.",
+    "name": {
+      "opencode": "무료 스타터(OpenCode)",
+      "local": "로컬 모델",
+      "acp": "기타 ACP 에이전트"
+    },
+    "desc": {
+      "claude": "Anthropic의 Claude Code 앱, Claude 계정으로 사용",
+      "codex": "OpenAI의 Codex 앱, ChatGPT 계정으로 사용",
+      "opencode": "무료 모델, 키도 결제도 필요 없음. 시작하기 좋음",
+      "gemini": "Google의 Gemini CLI, Google 계정으로 사용",
+      "grok": "xAI의 Grok CLI, xAI 키로 사용",
+      "local": "이 컴퓨터의 Ollama 또는 LM Studio. 비공개, 오프라인에서도 작동",
+      "acp": "Agent Client Protocol을 쓰는 모든 앱",
+      "other": "플러그인이 추가했거나 테스트용 브레인"
+    },
+    "state": {
+      "ready": "준비됨",
+      "needs_sign_in": "로그인 필요",
+      "not_installed": "설치 안 됨",
+      "unreachable": "연결 안 됨",
+      "not_running": "실행 중이 아님",
+      "needs_model": "모델 필요",
+      "checking": "확인 중…"
+    },
+    "unconfirmed": "로그인을 확인하지 못했어요. 테스트로 확인하세요.",
+    "notFound": "찾을 수 없음",
+    "install": "설치",
+    "signIn": "로그인",
+    "test": "테스트",
+    "testing": "테스트 중…",
+    "useNew": "새 에이전트에 사용",
+    "checkAgain": "다시 확인",
+    "steps": "단계",
+    "browse": "둘러보고 설치",
+    "close": "닫기",
+    "copy": "복사",
+    "copied": "복사됨",
+    "details": "자세히",
+    "works": "작동합니다. 답: \"{{reply}}\" · {{secs}}초",
+    "usedBy": "{{names}} 사용 중",
+    "backupFor": "{{names}}의 백업",
+    "noneReady": "아직 준비된 브레인이 없어요. 무료 스타터는 한 번만 누르면 됩니다.",
+    "useStarter": "무료 스타터 사용",
+    "stepsTitle": "{{name}} 설정",
+    "step": {
+      "terminal": "이 컴퓨터에서 터미널을 엽니다.",
+      "paste": "이 명령을 붙여 넣고 Return을 누릅니다:",
+      "signIn": "이 명령을 붙여 넣고 열리는 로그인을 따라갑니다:",
+      "back": "여기로 돌아와 다시 확인을 누릅니다.",
+      "noPassword": "PasaBot은 비밀번호를 절대 묻지 않아요. 로그인은 앱에서 합니다.",
+      "geminiChoose": "물어보면 \"Sign in with Google\"을 고릅니다.",
+      "grokInstall": "xAI 안내에 따라 Grok CLI를 설치합니다.",
+      "starter": "또는 PasaBot이 대신 설치하게 하세요(실행 전에 다운로드를 검증):",
+      "starterCta": "무료 스타터 설치",
+      "vault": "xAI 키를 PasaBot 보관함에 {{name}}(으)로 저장하세요. 저장 후에는 어떤 페이지에도 보이지 않아요.",
+      "local": "Ollama 또는 LM Studio를 설치하고 모델 하나를 받은 뒤 앱을 열어 두세요.",
+      "localCta": "로컬 모델 설정",
+      "acp": "목록에서 에이전트를 골라 설치합니다.",
+      "acpCta": "ACP 에이전트 열기",
+      "keyLabel": "{{brain}} 키",
+      "keyWho": "이 브레인에서 실행되는 에이전트는 키를 볼 수 있습니다.",
+      "keySave": "키 저장",
+      "keySaved": "키를 보관함에 저장했어요.",
+      "keyErr": "키를 저장하지 못했어요. 다시 시도하세요.",
+      "tokenTitle": "또는 설정 토큰 붙여넣기",
+      "tokenWhy": "로그인이 유지되지 않거나 PasaBot이 다른 컴퓨터에서 실행될 때 사용하세요.",
+      "tokenRun": "터미널을 열고 이것을 붙여넣은 뒤 Return을 누르세요. 브라우저가 열리면 로그인하세요:",
+      "tokenPaste": "마지막에 나오는 긴 코드를 복사해 아래에 붙여넣으세요.",
+      "tokenLabel": "설정 토큰",
+      "tokenWho": "PasaBot 금고에 잠가 보관해요. Claude로 실행되는 에이전트는 볼 수 있어요.",
+      "tokenSave": "토큰 저장",
+      "tokenSaved": "토큰을 저장했어요. Claude를 확인하는 중…",
+      "tokenErr": "토큰을 저장하지 못했어요. 다시 해 보세요.",
+      "starterFailed": "무료 스타터가 설치되지 않았어요. 잠시 후 다시 해 보세요.",
+      "starterPlain": "PasaBot이 한 번에 설치해 드려요. 이 컴퓨터에서 나만 쓰는 작은 무료 앱이고, 실행 전에 확인해요. 1분 정도 걸려요.",
+      "terminalWindows": "이 컴퓨터에서 PowerShell을 여세요(시작 메뉴에서 PowerShell 입력).",
+      "pasteWindows": "이 명령을 붙여넣고 Enter 키를 누르세요:",
+      "nodeFirstWindows": "npm을 찾을 수 없다고 나오면 먼저 nodejs.org에서 Node.js를 설치하고 새 PowerShell 창을 여세요."
+    },
+    "err": {
+      "auth": "로그인하지 않았거나 만료됐어요. 다시 로그인하세요.",
+      "limit": "이 계정은 사용 한도에 도달했어요. 나중에 다시 시도하세요.",
+      "limitAt": "이 계정은 사용 한도에 도달했어요. {{time}}에 초기화돼요.",
+      "offline": "브레인에 연결할 수 없어요. 인터넷이나 Ollama / LM Studio가 열려 있는지 확인하세요.",
+      "crash": "앱이 답하기 전에 멈췄어요.",
+      "timeout": "1분 안에 답이 없어요. 앱이 바쁘거나 멈췄을 수 있어요.",
+      "model": "이 계정에서는 그 모델을 쓸 수 없어요. 다른 모델을 고르세요.",
+      "notInstalled": "이 컴퓨터에 설치되어 있지 않아요.",
+      "busy": "테스트를 너무 많이 했어요. 1분 기다린 뒤 다시 시도하세요.",
+      "failed": "테스트를 실행하지 못했어요. 다시 시도하세요.",
+      "load": "브레인을 불러오지 못했어요. 다시 시도하세요."
+    },
+    "inUse": "사용 중: {{name}}",
+    "notHere": "이 컴퓨터에 없음"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "도우미가 생각할 때 쓰는 AI 설정",
+      "navHint": "도우미 사용량과 비용"
+    },
+    "brains": {
+      "intro": "브레인은 도우미가 생각하는 AI입니다. 하나 이상 설정하세요. 각 도우미가 기본 브레인과 백업을 고릅니다.",
+      "useNew": "새 도우미에 사용",
+      "desc": {
+        "opencode": "무료 두뇌, 키도 결제도 필요 없음. 시작하기 좋음",
+        "gemini": "Google의 Gemini CLI, Google 계정으로 사용",
+        "grok": "xAI의 Grok CLI, xAI 키로 사용",
+        "acp": "Agent Client Protocol을 쓰는 모든 앱"
+      },
+      "name": {
+        "local": "로컬 두뇌",
+        "acp": "기타 ACP 도우미"
+      }
+    },
+    "page": {
+      "intro": "도우미가 쓴 양이에요. 이 컴퓨터에서만 세요.",
+      "agents": "도우미별",
+      "empty": "아직 쓴 게 없어요.",
+      "agent": "도우미"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "nav": "Templat",
+  "page": {
+    "title": "Templat",
+    "starterTitle": "Paket awal gratis"
+  },
+  "onboarding": {
+    "title": "Pilih otak untuk agent pertama Anda",
+    "intro": "Agent Anda membutuhkan otak: model AI untuk berpikir. Pilih cara mendapatkannya.",
+    "freeTitle": "Paket awal gratis, tanpa penyiapan",
+    "freeBody": "Memakai model gratis lewat aplikasi OpenCode. Tanpa kunci, tanpa login, tanpa pembayaran.",
+    "freeCta": "Pakai paket awal gratis",
+    "freeUnavailable": "Paket awal gratis sedang tidak tersedia. Siapkan otak sendiri di bawah.",
+    "guidedTitle": "Pakai otak yang sudah Anda punya",
+    "guidedBody": "Claude, Codex, OpenCode, atau aplikasi lain yang sudah Anda masuki di komputer ini.",
+    "found": "Ditemukan di komputer ini",
+    "notFound": "Belum terpasang",
+    "installHint": "Cara memasang: {{cmd}}",
+    "guidedCta": "Tambah agent pertama Anda",
+    "localTitle": "Model lokal di komputer ini",
+    "localBody": "Sebuah server model berjalan di komputer ini. Agent Anda berpikir di sana: tanpa akun, tidak ada yang keluar dari komputer.",
+    "localFound": "{{name}} menjawab di {{url}} dengan {{count}} model.",
+    "localCta": "Pakai {{name}}",
+    "localAdded": "{{name}} ditambahkan. Pilih sebagai otak agent pertama Anda.",
+    "useThis": "Pakai ini",
+    "setUp": "Siapkan"
+  },
+  "consent": {
+    "title": "Pasang OpenCode untuk paket awal gratis?",
+    "what": "Apa: {{what}}",
+    "where": "Di mana: {{where}} (hanya untuk pengguna Anda, tanpa hak admin)",
+    "from": "Dari: {{from}}",
+    "check": "Unduhan diperiksa terhadap SHA-256 yang dipublikasikan sebelum apa pun ditulis.",
+    "models": "Model gratis per pemeriksaan pada {{date}}. Model gratis dapat berakhir kapan saja; PasaBot akan memberi tahu Anda jika model Anda berhenti bekerja.",
+    "agree": "Pasang dan buat agent saya",
+    "back": "Kembali",
+    "working": "Memasang…",
+    "failed": "Tidak dapat memasang OpenCode: {{reason}}. Tidak ada yang dibuat. Anda masih bisa menyiapkan otak sendiri.",
+    "agentName": "Pemula",
+    "agentInstructions": "Anda adalah asisten yang ramah. Jawab dengan singkat dan jelas."
+  },
+  "notice": {
+    "title": "Model gratis berhenti bekerja",
+    "body": "{{model}} {{reason}}. Agent Anda membutuhkan otak lain.",
+    "action": "Pilih otak lain",
+    "notFreeTitle": "Model gratis tidak lagi gratis",
+    "not_free": "{{name}} tidak lagi gratis. Agent Anda membutuhkan otak lain: siapkan satu, atau pakai model lokal.",
+    "needs_key": "{{name}} kini membutuhkan kunci atau login. Agent Anda membutuhkan otak lain.",
+    "unavailable": "{{name}} tidak lagi tersedia. Agent Anda membutuhkan otak lain.",
+    "none": "Paket awal gratis Anda berfungsi.",
+    "busy": "Model gratis sedang sibuk atau kuotanya habis, coba lagi pada {{time}}."
+  },
+  "catalog": {
+    "title": "Mulai dari templat",
+    "use": "Pakai",
+    "useNamed": "Pakai {{name}}",
+    "export": "Ekspor",
+    "exportNamed": "Ekspor {{name}}",
+    "empty": "Belum ada templat."
+  },
+  "describe": {
+    "title": "Deskripsikan agent Anda",
+    "label": "Apa yang harus dilakukan agent?",
+    "placeholder": "Buatkan saya agent yang…",
+    "submit": "Buat draf"
+  },
+  "import": {
+    "title": "Impor file agent",
+    "hint": "File .pasabot-template.json, file .md agent, atau file .json asisten.",
+    "label": "File agent"
+  },
+  "review": {
+    "title": "Tinjau agent baru",
+    "hint": "Tidak ada yang dibuat sampai Anda menekan Buat.",
+    "name": "Nama",
+    "instructions": "Instruksi",
+    "brain": "Otak",
+    "create": "Buat agent",
+    "cancel": "Batal"
+  },
+  "error": "Terjadi kesalahan: {{msg}}",
+  "server": {
+    "skippedTitle": "Sebuah rutinitas dilewati: model gratis mencapai batas",
+    "skippedBody": "Rutinitas pada model gratis melewati jalannya sampai saat itu; jadwal berikutnya berjalan seperti biasa."
+  },
+  "find": {
+    "navHint": "Agen siap pakai untuk memulai",
+    "navKeywords": "templat, contoh, pemula, siap"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Pembantu siap pakai untuk memulai"
+    },
+    "describe": {
+      "title": "Jelaskan pembantumu",
+      "label": "Apa yang harus dilakukan pembantu?",
+      "placeholder": "Buatkan aku pembantu yang…"
+    },
+    "import": {
+      "title": "Ambil pembantu dari file",
+      "hint": "File pembantu yang disimpan PasaBot atau aplikasi asisten lain.",
+      "label": "File pembantu"
+    },
+    "review": {
+      "title": "Periksa pembantu baru",
+      "create": "Buat pembantu ini"
+    }
+  }
+}

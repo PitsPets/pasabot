@@ -1,0 +1,794 @@
+{
+  "app": {
+    "skip": "Chuyển đến nội dung",
+    "tagline": "Sabihin mo lang. Ako na bahala.",
+    "taglineTranslation": "Cứ nói thôi. Để tôi lo."
+  },
+  "lang": {
+    "label": "Ngôn ngữ",
+    "unreviewed": "bản dịch chưa được kiểm duyệt",
+    "unreviewedNote": "{{language}} là bản dịch máy và chưa có người thành thạo ngôn ngữ này kiểm tra.",
+    "helpImprove": "Giúp cải thiện bản dịch"
+  },
+  "conn": {
+    "connecting": "Đang kết nối…",
+    "live": "Trực tuyến",
+    "reconnecting": "Đang kết nối lại…",
+    "offline": "Ngoại tuyến",
+    "banner": "Đang kết nối lại… Tin nhắn của bạn vẫn an toàn.",
+    "bannerLong": "Không kết nối được PasaBot trên máy tính này.",
+    "tryNow": "Thử ngay"
+  },
+  "counts": {
+    "needs_other": "{{count}} cần bạn",
+    "working_other": "{{count}} đang làm việc",
+    "idle_other": "{{count}} đang rảnh"
+  },
+  "errors": {
+    "generic": "Đã xảy ra lỗi. Vui lòng thử lại.",
+    "rateLimited": "Bạn thử quá nhiều lần. Hãy đợi một phút rồi thử lại."
+  },
+  "setup": {
+    "title": "Nhận quyền sở hữu PasaBot của bạn",
+    "intro": "Chọn một tên và mật khẩu. Bạn sẽ dùng chúng để mở PasaBot.",
+    "token": "Mã thiết lập",
+    "tokenHint": "Mã nằm trong liên kết thiết lập PasaBot hiện lúc khởi động. Để có mã mới, hãy mở ứng dụng PasaBot trên máy đó hoặc chạy `pasabot setup-link` ở đó.",
+    "name": "Tên của bạn",
+    "password": "Mật khẩu",
+    "passwordHint": "Tối thiểu 8 ký tự. Bạn có thể thêm passkey sau.",
+    "confirm": "Nhập lại mật khẩu",
+    "submit": "Tạo tài khoản chủ sở hữu",
+    "tooShort": "Hãy dùng ít nhất 8 ký tự.",
+    "mismatch": "Hai mật khẩu không khớp.",
+    "badToken": "Mã thiết lập này đã dùng hoặc hết hạn. Để có mã mới, hãy bấm biểu tượng PasaBot trên thanh tác vụ hoặc thanh menu rồi chọn Mở PasaBot (trên Linux, hãy khởi động lại PasaBot từ menu ứng dụng), hoặc chạy `pasabot setup-link` trên máy đó.",
+    "gettingReady": "Đang chuẩn bị…",
+    "reopen": "Hãy đóng PasaBot rồi mở lại.",
+    "ownerExists": "Máy chủ này đã có chủ sở hữu. Hãy đăng nhập.",
+    "bossNote": "Bạn sẽ là chủ của PasaBot này.",
+    "trustLine": "Các agent sẽ hỏi bạn trước khi làm việc nguy hiểm, như xóa dữ liệu.",
+    "trustHow": "Cách nó hỏi bạn"
+  },
+  "login": {
+    "title": "Chào mừng bạn trở lại",
+    "intro": "Đăng nhập vào PasaBot của bạn.",
+    "password": "Mật khẩu",
+    "submit": "Đăng nhập",
+    "passkey": "Đăng nhập bằng passkey",
+    "failed": "Mật khẩu không đúng.",
+    "passkeyCancelled": "Chưa hoàn tất xác minh passkey.",
+    "pairInstead": "Ghép nối thiết bị này bằng mã",
+    "asPerson": "Đang đăng nhập với tên {{name}}.",
+    "notYou": "Không phải bạn?",
+    "otherWays": "Cách đăng nhập khác"
+  },
+  "pair": {
+    "title": "Ghép nối thiết bị này",
+    "intro": "Trên thiết bị đã đăng nhập, hãy mở Thiết bị và nhấn \"Ghép nối điện thoại\". Quét mã QR hoặc nhập mã tại đây.",
+    "code": "Mã ghép nối",
+    "deviceName": "Tên cho thiết bị này",
+    "submit": "Ghép nối",
+    "waitingTitle": "Sắp xong rồi",
+    "waiting": "Hãy xác nhận thiết bị này trên màn hình còn lại của bạn.",
+    "fingerprint": "Dấu vân tay máy chủ",
+    "checkOther": "Kiểm tra màn hình kia hiển thị cùng dấu vân tay, rồi nhấn Xác nhận ở đó.",
+    "rejected": "Yêu cầu ghép nối đã bị từ chối.",
+    "expired": "Yêu cầu ghép nối đã hết hạn. Hãy lấy mã mới.",
+    "invalid": "Mã không đúng hoặc đã hết hạn.",
+    "backToLogin": "Quay lại đăng nhập"
+  },
+  "devices": {
+    "title": "Thiết bị và đăng nhập",
+    "pairTitle": "Ghép nối điện thoại",
+    "pairIntro": "Quét mã QR bằng camera điện thoại. PasaBot sẽ mở trên điện thoại; sau đó hãy xác nhận điện thoại tại đây.",
+    "newCode": "Ghép nối điện thoại",
+    "qrAlt": "Mã QR để ghép nối thiết bị",
+    "codeLabel": "Hoặc nhập mã này",
+    "expires_other": "Hết hạn sau {{count}} giây",
+    "claims": "Đang chờ bạn",
+    "confirm": "Xác nhận",
+    "reject": "Từ chối",
+    "list": "Thiết bị đã ghép nối",
+    "none": "Chưa có thiết bị nào được ghép nối.",
+    "revoked": "Đã gỡ",
+    "revoke": "Gỡ",
+    "passkeys": "Passkey",
+    "passkeysIntro": "Đăng nhập và xác nhận các hành động rủi ro bằng vân tay, khuôn mặt hoặc mã PIN của thiết bị.",
+    "passkeyN": "Passkey {{n}} · thêm ngày {{date}}",
+    "remove": "Gỡ",
+    "addPasskey": "Thêm passkey",
+    "passkeyAdded": "Đã thêm passkey.",
+    "reauthPair": "ghép nối điện thoại mới",
+    "reauthConfirm": "cho thiết bị mới vào",
+    "reauthPasskey": "thêm khóa truy cập",
+    "reauthNeeded": "Chưa xong: cần lại mật khẩu hoặc khóa truy cập của bạn."
+  },
+  "agents": {
+    "add": "+ Thêm",
+    "newTitle": "Agent mới",
+    "editTitle": "Chỉnh sửa {{name}}",
+    "name": "Tên",
+    "instructions": "Nhiệm vụ",
+    "instructionsHint": "Viết đơn giản: công việc của agent, cần kiểm tra gì, khi nào cần hỏi bạn trước.",
+    "provider": "Bộ não",
+    "notInstalled": "chưa cài đặt",
+    "notReachable": "không thể kết nối",
+    "model": "Mô hình",
+    "trust": "Mức tin cậy",
+    "trustLevels": {
+      "guarded": "Thận trọng: hỏi trước khi làm bất cứ việc gì ngoài thư mục của nó",
+      "standard": "Tiêu chuẩn: hỏi trước khi làm việc bên ngoài hoặc rủi ro",
+      "trusted": "Tin cậy: chỉ hỏi trước khi làm việc nguy hiểm"
+    },
+    "trustHint": "Agent được tin cậy mà bộ não có shell riêng có thể làm mọi việc mà người dùng máy tính này làm được.",
+    "save": "Lưu",
+    "avatar": "Diện mạo",
+    "avatarAlt": "Ảnh đại diện của {{name}}",
+    "shuffle": "Đổi ngẫu nhiên",
+    "avatarHint": "Đổi ngẫu nhiên đến khi bạn ưng ý. Diện mạo chỉ thay đổi khi bạn nhấn Lưu.",
+    "create": "Tạo agent",
+    "unknownProvider": "Bộ não đó không có trên máy chủ này.",
+    "empty": "Chưa có agent nào.",
+    "emptyTitle": "Lập nhóm của bạn",
+    "emptyIntro": "Thêm agent đầu tiên. Hãy đặt tên, giao việc và chọn bộ não cho nó.",
+    "emptyCta": "Thêm agent đầu tiên",
+    "trustWarning": "Agent mới bắt đầu ở mức Tin cậy. Sau khi bạn tạo, agent sẽ làm việc mà không hỏi bạn mỗi lần, kể cả những việc như đăng bài ra bên ngoài, dùng web hay cài công cụ. Agent vẫn hỏi trước khi làm việc nguy hiểm (đọc bí mật, xóa dữ liệu, dùng máy tính của bạn), và tin nhắn gửi đến agent qua Telegram hoặc ứng dụng chat khác sẽ không bao giờ vượt quá mức Tiêu chuẩn. Để được hỏi thường xuyên hơn, hãy chọn Tiêu chuẩn hoặc Thận trọng cho agent đó, hoặc đổi mức mà agent mới bắt đầu trong Cài đặt.",
+    "askShellWeb": "Hỏi trước khi chạy lệnh terminal và lệnh web thô",
+    "askShellWebHint": "Khi bật, agent này sẽ hỏi bạn trước mỗi lệnh shell và mỗi yêu cầu web thô mà bộ não của nó chạy. Mặc định tắt với agent Tin cậy, bật với agent Tiêu chuẩn và Thận trọng.",
+    "needsSignIn": "cần đăng nhập",
+    "setUpBrains": "Thiết lập hoặc sửa bộ não",
+    "backup": "Bộ não dự phòng",
+    "backupNone": "Không có",
+    "backupHint": "Dùng khi bộ não chính chạm giới hạn hoặc không kết nối được. Agent vẫn giữ cuộc trò chuyện.",
+    "brainReady": "Sẵn sàng",
+    "fixInstall": "Cài đặt",
+    "fixSignIn": "Đăng nhập",
+    "fixCheck": "Kiểm tra lại",
+    "modelAuto": "Tự động",
+    "modelAutoHint": "Bộ não chọn mô hình quen dùng",
+    "modelHints": {
+      "fast": "Nhanh",
+      "balanced": "Cho việc hằng ngày",
+      "smart": "Thông minh",
+      "smartest": "Thông minh nhất",
+      "free": "Miễn phí"
+    },
+    "modelsRefresh": "Làm mới danh sách mô hình",
+    "modelsLoading": "Đang tải mô hình…",
+    "modelsError": "Không tải được các mô hình của bộ não này. Tự động vẫn dùng được, hoặc bấm Làm mới.",
+    "modelsCurated": "Danh sách này có thể không hiện mọi mô hình của bộ não này.",
+    "trustShort": "Agent này làm việc mà không hỏi mỗi lần. Nó vẫn hỏi trước những việc nguy hiểm, như xóa dữ liệu.",
+    "helpWith": "Nó nên giúp bạn việc gì?",
+    "helpPlaceholder": "vd: Giúp tôi lên thực đơn và hỏi tôi trước khi mua bất cứ thứ gì.",
+    "helpIdeas": {
+      "week": "Lên kế hoạch tuần",
+      "shopping": "Danh sách mua sắm",
+      "messages": "Viết tin nhắn",
+      "questions": "Trả lời câu hỏi"
+    },
+    "helpFill": {
+      "week": "Giúp tôi lên kế hoạch cho tuần và nhắc tôi những việc sắp tới.",
+      "shopping": "Giữ danh sách mua sắm của tôi và hỏi tôi trước khi mua bất cứ thứ gì.",
+      "messages": "Giúp tôi viết và trả lời tin nhắn. Cho tôi xem trước khi gửi.",
+      "questions": "Trả lời câu hỏi của tôi bằng lời dễ hiểu."
+    },
+    "moreOptions": "Tùy chọn khác"
+  },
+  "nav": {
+    "sidebar": "Agent và chat",
+    "yourTeam": "Nhóm của bạn",
+    "channels": "Kênh",
+    "devices": "Thiết bị",
+    "settings": "Cài đặt",
+    "chats": "Trò chuyện",
+    "new": "Mới",
+    "newAgent": "Tác nhân mới",
+    "newGroup": "Nhóm trò chuyện mới",
+    "pinned": "Đã ghim",
+    "searchChats": "Tìm trò chuyện",
+    "moveUp": "Chuyển lên",
+    "moveDown": "Chuyển xuống",
+    "unpin": "Bỏ khỏi thanh bên",
+    "pinMenu": "Tùy chọn cho {{feature}}",
+    "openSettings": "Mở Cài đặt",
+    "teamTalk": "Trò chuyện trong nhóm",
+    "teamTalkHint": "Các trợ lý của bạn nói chuyện với nhau",
+    "workingFor": "Đang làm cho {{name}}",
+    "newRequest": "Yêu cầu mới"
+  },
+  "status": {
+    "working": "Đang bận",
+    "waiting": "Cần bạn đồng ý",
+    "idle": "Sẵn sàng",
+    "needsSignIn": "Cần đăng nhập"
+  },
+  "details": {
+    "label": "Chi tiết agent",
+    "hide": "Ẩn",
+    "show": "Chi tiết",
+    "since": "từ {{date}}",
+    "does": "{{name}} làm gì",
+    "edit": "Chỉnh sửa",
+    "noInstructions": "Chưa có hướng dẫn.",
+    "brain": "Bộ não",
+    "main": "Chính",
+    "backup": "Dự phòng",
+    "none": "Không có",
+    "trust": "Mức tin cậy",
+    "change": "Thay đổi",
+    "about": "Về {{name}}",
+    "thinksWith": "Suy nghĩ bằng",
+    "more": "Thêm",
+    "instructions": "Toàn bộ hướng dẫn",
+    "backupBrains": "Bộ não dự phòng",
+    "noSummary": "Chưa có mô tả nào về trợ lý này."
+  },
+  "chat": {
+    "notFound": "Không tìm thấy chat này.",
+    "members_other": "{{count}} agent",
+    "logLabel": "Tin nhắn với {{name}}",
+    "empty": "Hãy chào {{name}}.",
+    "selectTitle": "Chọn một chat",
+    "select": "Chọn một agent hoặc một kênh ở bên trái.",
+    "someone": "Tác nhân",
+    "thinking": "{{name}} đang suy nghĩ…",
+    "replyFailed": "Phản hồi này chưa hoàn tất.",
+    "activity_other": "Đã dùng {{count}} công cụ: {{names}}",
+    "seconds_other": "{{count}} giây",
+    "partialLabel": "Phản hồi một phần: đây là toàn bộ nội dung đã viết trước khi dừng.",
+    "interruptedHandled": "Xong: lượt này đã được thử lại hoặc bỏ qua.",
+    "steered": "Đã thêm vào việc {{name}} đang làm.",
+    "queueFull": "Hàng đợi của {{name}} đã đầy. Hãy thử lại sau một lát.",
+    "mode": {
+      "steer": "Thêm vào việc đang làm",
+      "queue": "Gửi sau khi xong",
+      "interrupt": "Dừng lại và gửi cái này",
+      "more": "Cách gửi khác"
+    },
+    "placeholder": "Nhắn cho {{name}}…",
+    "send": "Gửi",
+    "queued_other": "{{count}} đang chờ",
+    "failedCount_other": "{{count}} thất bại",
+    "queueHint": "{{name}} sẽ đọc những tin này tiếp theo",
+    "queueItem": "Tin nhắn {{n}}",
+    "qstate": {
+      "queued": "đang chờ",
+      "held": "tạm giữ đến khi giới hạn được đặt lại",
+      "failed": "thất bại",
+      "interrupted": "đã bị ngắt"
+    },
+    "readOnlyNote": "Bạn có thể đọc chat này nhưng không thể viết vào. Hãy hỏi chủ sở hữu nếu cần.",
+    "readOnlyLabel": "Chỉ đọc",
+    "more": "Thêm",
+    "searchThis": "Tìm trong cuộc trò chuyện này",
+    "editAgent": "Sửa tác nhân",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép",
+    "paused": {
+      "since": "Mọi thứ đang tạm dừng (từ {{when}}).",
+      "now": "Mọi thứ đang tạm dừng.",
+      "hint": "Bắt đầu lại để gửi.",
+      "hintMember": "Chỉ chủ sở hữu mới bắt đầu lại được.",
+      "start": "Bắt đầu lại"
+    },
+    "editNamed": "Sửa {{name}}",
+    "startersLabel": "Gợi ý để bắt đầu",
+    "startersTitle": "Chưa biết bắt đầu từ đâu? Chạm vào một gợi ý:",
+    "starters": {
+      "can": "Bạn có thể giúp tôi những gì?",
+      "week": "Giúp tôi lên kế hoạch cho tuần này",
+      "message": "Giúp tôi viết một tin nhắn",
+      "dinner": "Tối nay nấu món gì nhỉ?"
+    },
+    "model": {
+      "thinksWith": "Suy nghĩ bằng",
+      "auto": "Tự động",
+      "change": "{{name}} suy nghĩ bằng {{brain}}, {{model}}. Đổi",
+      "readOnly": "{{name}} suy nghĩ bằng {{brain}}, {{model}}",
+      "title": "{{name}} nên suy nghĩ thế nào?",
+      "brain": "Bộ não",
+      "models": "Mô hình",
+      "best": "Hợp với hầu hết",
+      "autoHint": "Tự chọn cái phù hợp cho từng tin nhắn",
+      "hints": {
+        "smartest": "Thông minh nhất, cho việc khó. Chậm hơn, tốn gói của bạn hơn",
+        "smart": "Thông minh và cẩn thận",
+        "balanced": "Nhanh và thông minh. Hợp với hầu hết việc",
+        "fast": "Nhanh nhất, cho câu hỏi đơn giản",
+        "free": "Miễn phí"
+      },
+      "own": "Bộ não này tự chọn mô hình",
+      "more": "Thiết lập bộ não khác",
+      "error": "Không tải được danh sách mô hình.",
+      "retry": "Thử lại"
+    },
+    "toolsMore": "+{{n}} nữa",
+    "tools": {
+      "team": "Đã xem nhóm",
+      "askHelper": "Đã nhờ một trợ lý",
+      "noteHelper": "Đã gửi ghi chú cho trợ lý",
+      "checkHelper": "Đã hỏi thăm một trợ lý",
+      "stopHelper": "Đã dừng việc của một trợ lý",
+      "noted": "Đã ghi lại câu trả lời của bạn",
+      "plan": "Đã cho xem kế hoạch",
+      "makeTeam": "Đã lập nhóm của bạn",
+      "memoryRead": "Đã xem trong trí nhớ",
+      "memorySave": "Đã lưu vào trí nhớ",
+      "memoryForget": "Đã xóa khỏi trí nhớ",
+      "searchChats": "Đã tìm trong các cuộc trò chuyện cũ",
+      "browser": "Đã dùng trình duyệt",
+      "computer": "Đã dùng máy tính",
+      "webSearch": "Đã tìm trên web",
+      "webPage": "Đã mở một trang web",
+      "fileRead": "Đã đọc một tệp",
+      "fileChange": "Đã sửa một tệp",
+      "fileSearch": "Đã xem qua các tệp",
+      "command": "Đã chạy một lệnh",
+      "todo": "Đã lập danh sách việc cần làm",
+      "dataRead": "Đã đọc một bảng dữ liệu",
+      "dataChange": "Đã sửa một bảng dữ liệu",
+      "inbox": "Đã xem hộp thư đến",
+      "machines": "Đã nói chuyện với máy tính khác",
+      "askYou": "Đã hỏi bạn một câu",
+      "card": "Đã tạo một thẻ",
+      "routine": "Đã làm một việc định kỳ",
+      "workflow": "Đã làm một quy trình",
+      "site": "Đã làm một trang web",
+      "shop": "Đã xem các cửa hàng",
+      "shopBuy": "Đã chuẩn bị một lần mua",
+      "skills": "Đã làm các kỹ năng",
+      "findTool": "Đã tìm một công cụ",
+      "connections": "Đã kiểm tra các kết nối",
+      "secrets": "Đã hỏi về một bí mật đã lưu",
+      "programs": "Đã xem các chương trình đang chạy",
+      "permission": "Đã xin phép",
+      "other": "Đã dùng một công cụ"
+    },
+    "handoff": {
+      "asked": "{{from}} đã nhờ {{to}} giúp",
+      "noted": "{{from}} đã gửi ghi chú cho {{to}}",
+      "whatAsked": "Việc được nhờ",
+      "reply": "Trả lời của {{name}}",
+      "waiting": "Đang chờ {{name}}…",
+      "failed": "Việc này không thành.",
+      "later": "Trả lời của {{name}} sẽ đến trong một tin nhắn sau.",
+      "open": "Mở cuộc trò chuyện của họ",
+      "openThread": "Mở trong chat với {{name}}"
+    },
+    "teamNote": "{{from}} và {{to}} trò chuyện ở đây. Bạn có thể đọc cùng, và viết nữa.",
+    "stopAll": "Dừng tất cả trợ lý ngay",
+    "thread": {
+      "from": "Từ {{name}}",
+      "label": "Yêu cầu từ {{name}}",
+      "summary": "{{from}} hỏi · {{to}} trả lời",
+      "working": "{{name}} đang làm…",
+      "show": "Xem cả cuộc trao đổi",
+      "hide": "Thu gọn cuộc trao đổi",
+      "reply": "Trả lời tại đây",
+      "replying": "Đang trả lời yêu cầu của {{name}}",
+      "stopReply": "Viết tin nhắn thường"
+    },
+    "report": {
+      "workingOne": "{{name}} đang làm…",
+      "workingMany": "{{names}} đang làm…",
+      "reading": "{{name}} đang tổng hợp các câu trả lời…",
+      "fromOne": "Câu trả lời của {{name}}",
+      "fromMany": "Các câu trả lời của {{names}}",
+      "fullOne": "Xem toàn bộ câu trả lời",
+      "fullMany": "Xem toàn bộ các câu trả lời",
+      "finished": "{{name}} đã xong:",
+      "failed": "{{name}} không làm xong được.",
+      "stoppedOne": "{{name}} đã bị dừng trước khi làm xong.",
+      "stillOne": "{{name}} vẫn đang làm.",
+      "stillMany": "{{names}} vẫn đang làm.",
+      "openFull": "Mở toàn bộ câu trả lời",
+      "openThread": "Mở trong chat với {{name}}",
+      "stopped": "Đã dừng ở đây: các trợ lý đã chuyền việc này qua lại quá nhiều lần. Hãy hỏi lại nếu bạn muốn họ làm tiếp."
+    }
+  },
+  "approval": {
+    "wants": "{{name}} muốn: {{tool}}",
+    "waiting_other": "{{count}} quyết định đang chờ",
+    "review": "Xem xét",
+    "asking": "{{name}} đang hỏi trước",
+    "tier0": "Chỉ xem",
+    "tier1": "Chỉ trong thư mục của nó",
+    "tier2": "Cần bạn đồng ý",
+    "tier3": "Rủi ro",
+    "state": {
+      "pending": "Đang chờ bạn",
+      "approved": "Đã phê duyệt",
+      "denied": "Đã từ chối",
+      "expired": "Đã hết hạn: coi như bị từ chối"
+    },
+    "approve": "Phê duyệt",
+    "deny": "Từ chối",
+    "reauthNote": "Bạn sẽ xác nhận danh tính trước khi việc này được thực hiện.",
+    "reauthTitle": "Xác nhận là bạn",
+    "reauthIntro": "Đây là bước rủi ro: {{summary}}. Nhập mật khẩu để chúng tôi biết đó là bạn.",
+    "reauthSubmit": "Xác nhận và phê duyệt",
+    "reauthPasskey": "Dùng passkey",
+    "reauthFailed": "Không khớp. Hãy thử lại.",
+    "screenBusy": "Chờ một chút — một trợ lý vừa dùng màn hình",
+    "workflow": "Quy trình \"{{name}}\" hỏi: {{message}}",
+    "askClass": {
+      "money": "Tiền: luôn hỏi",
+      "outbound-message": "Tin nhắn cho người khác: luôn hỏi",
+      "delete": "Xóa: luôn hỏi",
+      "publish": "Đăng công khai: luôn hỏi"
+    },
+    "fact": {
+      "items": "Mặt hàng",
+      "merchant": "Người bán",
+      "total": "Tổng cộng",
+      "paymentMethod": "Phương thức thanh toán",
+      "recipients": "Gửi đến",
+      "channel": "Kênh",
+      "subject": "Tiêu đề",
+      "text": "Toàn văn",
+      "target": "Đối tượng",
+      "where": "Ở đâu",
+      "count": "Số lượng",
+      "tool": "Công cụ",
+      "arguments": "Yêu cầu chính xác",
+      "cc": "Cc",
+      "bcc": "Bcc",
+      "attachments": "Tệp đính kèm",
+      "server": "Chạy",
+      "request": "Chi tiết yêu cầu"
+    },
+    "notStated": "không nêu rõ",
+    "undeclared": "Trợ lý không nói việc này sẽ trả tiền hay gửi gì, nhưng trang này trông như vậy.",
+    "unshown": "Phần tóm tắt này không hiển thị thêm chi tiết: {{names}}. Hãy đọc yêu cầu chính xác bên dưới trước khi phê duyệt.",
+    "askNote": "Loại hành động này luôn hỏi bạn, bất kể trợ lý được đặt hỏi thường xuyên đến đâu. Chỉ bạn mới duyệt được ở đây trong ứng dụng.",
+    "reauthContinue": "Xác nhận và tiếp tục",
+    "wantsTo": "{{name}} muốn {{verb}}",
+    "verb": {
+      "read": "đọc một tệp",
+      "write": "lưu một tệp",
+      "edit": "sửa một tệp",
+      "command": "chạy một lệnh trên máy tính của bạn",
+      "page": "mở một trang web",
+      "webSearch": "tìm kiếm trên web",
+      "findFiles": "tìm tệp",
+      "searchFiles": "tìm bên trong các tệp",
+      "notebook": "sửa một sổ ghi chép",
+      "task": "giao một việc cho trợ lý",
+      "other": "dùng một công cụ"
+    },
+    "target": {
+      "file": "Tệp: {{v}}",
+      "command": "Lệnh: {{v}}",
+      "page": "Trang web: {{v}}",
+      "search": "Đang tìm: {{v}}",
+      "tool": "Công cụ: {{v}}"
+    },
+    "tierAdv0": "Cấp 0 · chỉ đọc",
+    "tierAdv1": "Cấp 1 · thư mục riêng",
+    "tierAdv2": "Cấp 2 · cần bạn đồng ý",
+    "tierAdv3": "Cấp 3 · rủi ro",
+    "reauthIntroPasskey": "Đây là bước rủi ro: {{summary}}. Nhập mật khẩu hoặc dùng khóa truy cập để chúng tôi biết đó là bạn.",
+    "unshownPlain": "Yêu cầu này có nhiều chi tiết hơn những gì hiện ở đây: {{names}}. Bật Từ ngữ kỹ thuật trong Cài đặt để xem hết trước khi đồng ý.",
+    "unshownShown": "Phần tóm tắt chưa nói hết mọi chi tiết ({{names}}). Hãy đọc chi tiết yêu cầu trước khi đồng ý."
+  },
+  "onboarding": {
+    "next": "Tiếp theo",
+    "step": "Bước {{n}}/{{total}}",
+    "brainTitle": "Chọn một bộ não",
+    "brainIntro": "Bộ não là AI mà agent của bạn dùng để suy nghĩ. Bộ tốt nhất đã được chọn sẵn.",
+    "working": "Đang chuẩn bị agent của bạn…",
+    "starterName": "Khởi đầu miễn phí",
+    "starterSub": "Không cần khóa, không đăng nhập, không trả phí",
+    "starterBody": "PasaBot sẽ tải một ứng dụng nhỏ miễn phí để agent của bạn có thể suy nghĩ. Mất khoảng một phút.",
+    "details": "Chi tiết",
+    "starterWhat": "Cái gì: {{what}}",
+    "starterWhere": "Vị trí: {{where}} (chỉ cho người dùng của bạn, không cần quyền quản trị)",
+    "starterFrom": "Từ: {{from}}",
+    "starterCheck": "Bản tải về được đối chiếu với SHA-256 đã công bố trước khi ghi bất cứ thứ gì.",
+    "starterGo": "Tải về và tiếp tục",
+    "starterWorking": "Đang tải… khoảng một phút",
+    "noBrain": "Máy tính này chưa có bộ não nào sẵn sàng. Hãy cài đặt một bộ rồi quay lại đây.",
+    "setUpBrain": "Cài đặt bộ não",
+    "otherBrain": "Dùng bộ não khác",
+    "defaultName": "Tala",
+    "meetTitle": "Gặp agent đầu tiên của bạn",
+    "meetIntro": "Đặt cho nó một cái tên bạn thích. Bạn có thể đổi mọi thứ sau.",
+    "meetSafe": "{{name}} hỏi bạn trước những việc nguy hiểm, như xóa dữ liệu.",
+    "start": "Bắt đầu thôi",
+    "localSub": "Trên máy tính này. Riêng tư, chạy cả khi offline",
+    "starterFailedPlain": "Gói khởi đầu miễn phí chưa cài được. Hãy thử lại, hoặc chọn bộ não khác."
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "language": "Ngôn ngữ",
+    "languageHint": "Đổi ngôn ngữ cho mọi màn hình của ứng dụng.",
+    "modules": "Mô-đun",
+    "account": "Tài khoản",
+    "signOut": "Đăng xuất",
+    "newAgents": "Agent mới",
+    "newAgentsHint": "Mức tin cậy mà agent mới bắt đầu. Bạn vẫn có thể đổi cho từng agent.",
+    "alwaysAsks": "Luôn hỏi",
+    "alwaysAsksIntro": "Ngay cả agent được tin cậy cũng hỏi bạn trước, mọi lần, trước khi làm những việc này. Không có \"luôn cho phép\" cho chúng, và kênh chat hay quy trình tự động không thể phê duyệt thay bạn.",
+    "alwaysAsksMoney": "Tiền: mua, thanh toán, đặt hàng, đăng ký dịch vụ, dùng thông tin thanh toán, gửi tiền hoặc tiền mã hóa.",
+    "alwaysAsksMessage": "Tin nhắn cho người khác: email, chat, tin nhắn riêng hoặc bài đăng gửi cho bất kỳ ai ngoài các chat đã liên kết của bạn. Agent trả lời bạn trong chat của chính bạn thì không hỏi.",
+    "alwaysAsksDelete": "Xóa bên ngoài không gian làm việc của agent: tệp hoặc thư mục của agent khác hay bất kỳ đâu trên máy tính này, bảng dữ liệu của agent khác hoặc dùng chung, và mọi thứ mà công cụ hay connector bên ngoài đánh dấu là phá hủy. Xóa trong không gian làm việc của chính agent thì không hỏi.",
+    "alwaysAsksFixed": "Luôn bật",
+    "alwaysAsksAdd": "Bạn cũng có thể đặt những việc này luôn hỏi:",
+    "alwaysAsksClass": {
+      "delete": "Xóa tệp hoặc dữ liệu",
+      "publish": "Đăng công khai (trang web, bài viết)"
+    },
+    "alwaysAsksLimit": "Agent được bạn cấp terminal có thể làm mọi việc mà terminal làm được; các thẻ luôn hỏi chỉ bao quát những công cụ PasaBot nhìn thấy. Một lệnh shell hoặc yêu cầu web thô có thể gửi tin nhắn hay thanh toán mà không có thẻ. Để được hỏi trước, hãy bật \"Hỏi trước khi chạy lệnh terminal và lệnh web thô\" cho agent đó.",
+    "search": "Tìm trong cài đặt",
+    "back": "Quay lại trò chuyện",
+    "intro": "Mọi thứ không phải trò chuyện đều ở đây. Ghim những gì bạn dùng hằng ngày vào thanh bên.",
+    "pin": "Hiện trên thanh bên",
+    "pinAria": "Hiện {{feature}} trên thanh bên",
+    "hide": "Tôi không dùng mục này",
+    "hideTitle": "Ẩn {{feature}}?",
+    "hideBody": "Mục này biến mất khỏi Cài đặt và thanh bên với mọi người. Không có gì bị xóa. Bật lại trong Cài đặt › Nâng cao.",
+    "hideConfirm": "Ẩn {{feature}}",
+    "showAgain": "Hiện lại",
+    "hiddenNote": "Bạn đã ẩn tính năng này. Nó vẫn hoạt động; chỉ không hiện trong danh sách.",
+    "notUsing": "Tính năng bạn không dùng",
+    "notUsingEmpty": "Bạn đang dùng tất cả. Ẩn một tính năng từ trang của nó khi không cần.",
+    "groupEmpty": "Hiện chưa có gì ở đây. Tính năng đã ẩn nằm trong Nâng cao.",
+    "searchEmpty": "Không có kết quả cho \"{{q}}\". Hãy thử từ đơn giản hơn.",
+    "resetSidebar": "Đặt lại thanh bên",
+    "resetSidebarHint": "Bỏ mọi mục đã ghim khỏi thanh bên. Không có gì khác thay đổi.",
+    "pinnedCount": "Đã ghim: {{count}}",
+    "saveFailed": "Không lưu được. Hãy thử lại.",
+    "tidied": "Chúng tôi đã sắp xếp lại. Mọi thứ giờ nằm trong Cài đặt — hãy ghim những gì bạn dùng vào thanh bên.",
+    "gotIt": "Đã hiểu",
+    "where": "Bạn đang ở đây",
+    "advancedSwitch": "Từ ngữ kỹ thuật",
+    "advancedHint": "Hiện các tên như \"Mức tin cậy\" và \"Máy chủ MCP\", cùng các trang cài đặt kỹ thuật.",
+    "moreOptions": "Tùy chọn khác",
+    "switchOn": "Bật",
+    "switchOff": "Tắt",
+    "sections": {
+      "everyday": "Hằng ngày",
+      "helpers": "Những gì trợ lý của bạn dùng được",
+      "own": "Tự chạy"
+    },
+    "technicalOnly": "Dành cho thiết lập kỹ thuật — bật {{switch}} để xem",
+    "technicalOnlyPage": "Trang này dành cho thiết lập kỹ thuật — bật {{switch}} để xem."
+  },
+  "offline": {
+    "title": "Không thể kết nối PasaBot",
+    "body": "PasaBot hiện không thể kết nối đến máy chủ của bạn. Các chat của bạn vẫn an toàn trên máy chủ và sẽ trở lại khi bạn kết nối lại.",
+    "retry": "Thử lại"
+  },
+  "decisions": {
+    "title": "Quyết định đang chờ",
+    "intro": "Mọi thứ đang chờ bạn, từ mọi chat, quy trình và mô-đun.",
+    "showInChat": "Hiện trong chat",
+    "openChat": "Mở chat",
+    "open": "Mở",
+    "ownerOnly": "Chỉ chủ sở hữu mới có thể quyết định những việc này. Bạn có thể xem chúng tại đây."
+  },
+  "roles": {
+    "ownerOnlyPage": "Chỉ chủ sở hữu mới dùng được trang này.",
+    "ownerOnlyBack": "Quay lại các chat của bạn"
+  },
+  "account": {
+    "menu": "Tài khoản",
+    "look": "Giao diện",
+    "lookAuto": "Tự động",
+    "lookLight": "Sáng",
+    "lookDark": "Tối",
+    "thisDevice": "Thiết bị này",
+    "role": {
+      "owner": "Chủ sở hữu",
+      "member": "Thành viên",
+      "guest": "Khách"
+    }
+  },
+  "features": {
+    "agents": "Tác nhân",
+    "agentsHint": "Sửa, thêm hoặc lưu trữ tác nhân"
+  },
+  "groups": {
+    "agents": {
+      "name": "Tác nhân & bộ não",
+      "hint": "Tác nhân của bạn và AI vận hành chúng"
+    },
+    "tools": {
+      "name": "Kỹ năng & công cụ",
+      "hint": "Những gì tác nhân có thể dùng"
+    },
+    "automations": {
+      "name": "Tự động hóa",
+      "hint": "Những thứ tự chạy"
+    },
+    "safety": {
+      "name": "An toàn & phê duyệt",
+      "hint": "Những gì cần bạn đồng ý"
+    },
+    "spending": {
+      "name": "Chi tiêu",
+      "hint": "Hạn mức và mức đã dùng"
+    },
+    "people": {
+      "name": "Mọi người & thiết bị",
+      "hint": "Ai có thể dùng PasaBot và ở đâu"
+    },
+    "machines": {
+      "name": "Máy tính liên kết",
+      "hint": "Các máy tính khác liên kết với máy này"
+    },
+    "shopping": {
+      "name": "Mua sắm",
+      "hint": "Cửa hàng, giỏ hàng và giá"
+    },
+    "inbox": {
+      "name": "Hộp thư & email",
+      "hint": "Thư mà tác nhân đọc giúp bạn"
+    },
+    "memory": {
+      "name": "Bộ nhớ & dữ liệu",
+      "hint": "Những gì tác nhân ghi nhớ và lưu giữ"
+    },
+    "look": {
+      "name": "Ngôn ngữ & giao diện",
+      "hint": "Ngôn ngữ, chủ đề và giọng nói"
+    },
+    "advanced": {
+      "name": "Nâng cao",
+      "hint": "Dành cho người thích mày mò"
+    }
+  },
+  "plain": {
+    "agents": {
+      "trust": "Khi nào nó hỏi bạn",
+      "trustLevels": {
+        "guarded": "Hỏi trước mọi việc bên ngoài thư mục của nó",
+        "standard": "Hỏi trước việc rủi ro",
+        "trusted": "Chỉ hỏi trước việc nguy hiểm"
+      },
+      "trustHint": "Trợ lý chỉ hỏi trước việc nguy hiểm có thể làm mọi thứ bạn làm được trên máy tính này.",
+      "askShellWeb": "Hỏi trước lệnh máy tính và yêu cầu web trực tiếp",
+      "askShellWebHint": "Khi bật, trợ lý này hỏi bạn trước mỗi lệnh nó chạy trên máy tính và mỗi yêu cầu web trực tiếp, vì yêu cầu như vậy có thể gửi dữ liệu của bạn hoặc thanh toán. Tắt lúc đầu với trợ lý chỉ hỏi trước việc nguy hiểm.",
+      "model": "Phiên bản",
+      "modelsRefresh": "Kiểm tra phiên bản mới",
+      "modelsError": "Không tải được các phiên bản của bộ não này. Tự động vẫn hoạt động, hoặc kiểm tra lại.",
+      "trustShort": "Trợ lý này làm việc mà không hỏi mỗi lần. Nó vẫn hỏi trước những việc nguy hiểm, như xóa dữ liệu.",
+      "newTitle": "Trợ lý mới",
+      "unknownProvider": "Bộ não đó chưa được cài trên máy này.",
+      "backupHint": "Dùng khi bộ não chính chạm giới hạn hoặc không liên lạc được. Trợ lý vẫn giữ cuộc trò chuyện.",
+      "modelAutoHint": "Bộ não chọn phiên bản thường dùng",
+      "modelsCurated": "Danh sách này có thể chưa có mọi phiên bản của bộ não.",
+      "trustWarning": "Trợ lý mới bắt đầu ở “Chỉ hỏi trước việc nguy hiểm”. Khi bạn tạo một trợ lý, nó làm việc mà không hỏi bạn mỗi lần, kể cả đăng bài ra ngoài, dùng web hay cài công cụ. Nó vẫn hỏi trước việc nguy hiểm (đọc bí mật, xóa dữ liệu, dùng máy tính của bạn), và tin nhắn đến qua Telegram hay ứng dụng chat khác không bao giờ được hơn “Hỏi trước việc rủi ro”. Để được hỏi thường xuyên hơn, hãy chọn “Hỏi trước việc rủi ro” hoặc “Hỏi trước mọi việc bên ngoài thư mục của nó” cho trợ lý đó, hoặc đổi trong Cài đặt mức mà trợ lý mới bắt đầu.",
+      "create": "Tạo trợ lý"
+    },
+    "details": {
+      "trust": "Khi nào nó hỏi"
+    },
+    "settings": {
+      "newAgentsHint": "Trợ lý mới hỏi bạn thường xuyên đến mức nào lúc đầu. Bạn vẫn có thể đổi cho từng trợ lý.",
+      "alwaysAsksLimit": "Trợ lý được chạy lệnh trên máy tính của bạn có thể làm mọi thứ các lệnh đó làm được. Các thẻ này chỉ bao gồm những gì PasaBot thấy: một lệnh hoặc yêu cầu web trực tiếp có thể gửi tin nhắn hoặc thanh toán mà không có thẻ. Để được hỏi trước, hãy bật \"Hỏi trước lệnh máy tính và yêu cầu web trực tiếp\" cho trợ lý đó.",
+      "advancedHint": "Hiện cả tên kỹ thuật và các trang cài đặt kỹ thuật.",
+      "newAgents": "Trợ lý mới",
+      "alwaysAsksIntro": "Ngay cả trợ lý được tin cậy cũng hỏi bạn trước, mọi lần, trước khi làm những việc này. Không có \"luôn cho phép\" cho chúng, và kênh chat hay quy trình tự động không thể phê duyệt thay bạn.",
+      "alwaysAsksMessage": "Tin nhắn cho người khác: email, chat, tin nhắn riêng hoặc bài đăng gửi cho bất kỳ ai ngoài các chat đã liên kết của bạn. Trợ lý trả lời bạn trong chat của chính bạn thì không hỏi.",
+      "alwaysAsksDelete": "Xóa bên ngoài không gian làm việc của trợ lý: tệp hoặc thư mục của trợ lý khác hay bất kỳ đâu trên máy tính này, bảng dữ liệu của trợ lý khác hoặc dùng chung, và mọi thứ mà công cụ hay connector bên ngoài đánh dấu là phá hủy. Xóa trong không gian làm việc của chính trợ lý thì không hỏi."
+    },
+    "pair": {
+      "fingerprint": "Mã an toàn",
+      "checkOther": "Kiểm tra màn hình kia hiện cùng mã an toàn, rồi chạm Xác nhận ở đó."
+    },
+    "features": {
+      "agents": "Trợ lý",
+      "agentsHint": "Sửa, thêm hoặc cất trợ lý"
+    },
+    "groups": {
+      "agents": {
+        "name": "Trợ lý & bộ não",
+        "hint": "Trợ lý của bạn và AI mà họ dùng để suy nghĩ"
+      },
+      "inbox": {
+        "hint": "Thư trợ lý đọc giúp bạn"
+      },
+      "memory": {
+        "hint": "Những gì trợ lý ghi nhớ và lưu giữ"
+      },
+      "tools": {
+        "hint": "Những gì trợ lý có thể dùng",
+        "name": "Khả năng & công cụ"
+      }
+    },
+    "nav": {
+      "newAgent": "Trợ lý mới"
+    }
+  },
+  "cards": {
+    "needsOk": "Cần bạn đồng ý",
+    "stale": "Việc này đã được trả lời.",
+    "failed": "Không được. Hãy thử lại.",
+    "details": "Chi tiết",
+    "settled": {
+      "open": "Đang mở",
+      "done": "Xong",
+      "later": "Để sau",
+      "dismissed": "Đã đóng",
+      "failed": "Không được"
+    },
+    "open": "Mở",
+    "download": "Tải về",
+    "browserAlt": "Trình duyệt của trợ lý, trực tiếp",
+    "browserWait": "Đang chờ hình…",
+    "stillNeed": "Việc còn cần bạn đồng ý: {{count}}",
+    "suggest": {
+      "title": "Bạn có thể nhờ tiếp",
+      "send": "Thử cái này",
+      "plan": {
+        "title": "Lên kế hoạch tuần",
+        "send": "Giúp tôi lên kế hoạch cho tuần này"
+      },
+      "remind": {
+        "title": "Nhắc tôi",
+        "send": "Nhắc tôi 9 giờ sáng mai trả hóa đơn"
+      },
+      "write": {
+        "title": "Viết tin nhắn",
+        "send": "Giúp tôi viết một tin nhắn ngắn, thân thiện gửi khách hàng"
+      },
+      "find": {
+        "title": "Xem nhóm làm được gì",
+        "send": "Bạn và nhóm có thể làm gì cho tôi?"
+      },
+      "hint": "Chạm vào một gợi ý để đưa vào ô tin nhắn, rồi sửa và gửi."
+    },
+    "idea": "Gợi ý",
+    "more": "Thêm {{count}}"
+  },
+  "system": {
+    "pageTitle": "Máy tính này",
+    "pageHint": "Những gì PasaBot tìm thấy về máy tính đang chạy nó",
+    "kicker": "Về máy tính này",
+    "gotIt": "Đã hiểu",
+    "seen": "Đã xem",
+    "details": "Chi tiết",
+    "changeTrust": "Đổi những gì trợ lý mới được làm",
+    "allGood": "Không có gì cần sửa trên máy tính này.",
+    "windows-no-sandbox": {
+      "title": "Trợ lý trên máy Windows này không có hộp an toàn",
+      "text": "Trên Windows, PasaBot chưa thể giữ trợ lý trong thư mục riêng của nó, nên một trợ lý có thể mở bất kỳ tệp nào bạn mở được. Vì vậy trợ lý mới sẽ hỏi bạn trước khi làm bất cứ điều gì bên ngoài thư mục của nó. Chỉ thêm những trợ lý bạn tin tưởng."
+    },
+    "linux-sandbox-missing": {
+      "title": "Trợ lý chưa thể bắt đầu",
+      "text": "Máy tính này thiếu một công cụ an toàn nhỏ tên là bubblewrap. Hãy nhờ người quản lý máy tính này cài đặt nó, rồi mở lại PasaBot."
+    },
+    "linux-sandbox-userns": {
+      "title": "Trợ lý chưa thể bắt đầu",
+      "text": "Bản Linux này chặn hộp an toàn mà trợ lý chạy bên trong. Người quản lý máy tính này có thể cho phép bằng một cài đặt, rồi mở lại PasaBot."
+    },
+    "linux-sandbox-other": {
+      "title": "Trợ lý chưa thể bắt đầu",
+      "text": "Hộp an toàn của trợ lý không khởi động được trên máy tính này. Hãy nhờ người quản lý máy tính này kiểm tra."
+    },
+    "vault-unavailable": {
+      "title": "Khóa và mật khẩu đã lưu đang bị khóa",
+      "text": "Lần này PasaBot không mở được két của nó, nên không thể lưu hay dùng khóa và mật khẩu. Hãy mở lại PasaBot. Nếu vẫn bị, hãy chạy kiểm tra trên trang này."
+    },
+    "vault-key-file": {
+      "title": "Chìa khóa két của bạn nằm trong một tệp",
+      "text": "Máy tính này không có keyring, nên PasaBot giữ chìa khóa két trong một tệp mà chỉ tài khoản của bạn mở được. Các chương trình bạn tự chạy vẫn có thể đọc nó."
+    },
+    "data-folder-open": {
+      "title": "Thư mục của PasaBot có thể đang mở cho người khác",
+      "text": "Windows không cho PasaBot khóa thư mục của nó cho riêng tài khoản của bạn, nên các tài khoản khác trên máy này có thể thấy cuộc trò chuyện và khóa của bạn. Hãy chạy kiểm tra trên trang này để biết thêm."
+    },
+    "signin-links": {
+      "title": "Codex và OpenCode cần một cài đặt Windows",
+      "text": "Để trợ lý dùng được đăng nhập Codex hoặc OpenCode của bạn, hãy bật Chế độ nhà phát triển trong Cài đặt Windows, rồi mở lại PasaBot. Claude vẫn chạy mà không cần nó."
+    },
+    "check": {
+      "title": "Kiểm tra máy tính này",
+      "text": "Kiểm tra nhanh xem PasaBot có chạy trên máy này không và cho biết mục nào đạt. Dùng một thư mục thử, không bao giờ dùng dữ liệu của bạn.",
+      "notInstalled": "Bản kiểm tra đi kèm ứng dụng Windows đã cài. Hãy cài PasaBot để dùng nó.",
+      "run": "Kiểm tra máy tính này",
+      "started": "Bản kiểm tra đã mở trong cửa sổ riêng.",
+      "failed": "Bản kiểm tra không bắt đầu được. Hãy thử lại."
+    }
+  }
+}

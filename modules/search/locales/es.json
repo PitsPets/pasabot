@@ -1,0 +1,26 @@
+{
+  "nav": "Buscar",
+  "title": "Buscar mensajes",
+  "label": "Busca en tus chats",
+  "placeholder": "Escribe una palabra",
+  "hint": "Encuentra palabras en todos los chats en los que participas, de más reciente a más antiguo.",
+  "empty": "No se encontró nada.",
+  "untitled": "Chat",
+  "count_one": "{{count}} mensaje",
+  "count_many": "{{count}} de mensajes",
+  "count_other": "{{count}} mensajes",
+  "author": {
+    "user": "Persona",
+    "agent": "Agente",
+    "system": "PasaBot",
+    "external": "Externo"
+  },
+  "error": "La búsqueda falló. {{reason}}",
+  "tools": {
+    "search_messages": "Buscar mensajes"
+  },
+  "find": {
+    "navHint": "Encuentra cualquier mensaje en tus chats",
+    "navKeywords": "buscar, encontrar, mensajes, historial"
+  }
+}

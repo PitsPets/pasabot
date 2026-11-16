@@ -1,0 +1,119 @@
+{
+  "title": "Kho bí mật",
+  "intro": "Khóa và mật khẩu mà các agent sử dụng. Agent chỉ nhận một tham chiếu như {{example}}; giá trị thật nằm lại trên máy chủ này và bị ẩn khỏi mọi phản hồi, nhật ký và channel.",
+  "loading": "Đang tải vault…",
+  "error": "Không thể tải vault: {{reason}}",
+  "unavailable": "Vault đang bị khóa trên máy chủ này (không có cụm mật khẩu hoặc chuỗi khóa). Hãy khởi động máy chủ với cụm mật khẩu vault để dùng.",
+  "requests": {
+    "title": "Agent đang xin khóa",
+    "asks": "{{agent}} xin {{name}}",
+    "untrusted": "Người khác ngoài bạn đã bắt đầu lượt yêu cầu này. Hãy kiểm tra xem có thật sự cần không trước khi điền.",
+    "fill": "Cấp khóa",
+    "decline": "Từ chối",
+    "filled": "{{agent}} giờ có thể dùng {{reference}}.",
+    "declined": "Đã từ chối yêu cầu."
+  },
+  "secrets": {
+    "title": "Bí mật đã lưu",
+    "empty": "Chưa có bí mật nào.",
+    "shared": "Dùng chung (máy chủ)",
+    "for": "Cho {{agent}}",
+    "remove": "Xóa",
+    "confirmRemove": "Xóa {{name}}? Các agent đang dùng nó sẽ ngừng hoạt động cho đến khi bạn thêm lại.",
+    "module": "{{count}} mục khác thuộc về các channel và trình quản lý mật khẩu.",
+    "backend_local": "Lưu tại đây",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "Khóa cho {{brain}}. Các agent chạy trên đó có thể thấy khóa này."
+  },
+  "add": {
+    "title": "Thêm bí mật",
+    "open": "Thêm bí mật",
+    "name": "Tên",
+    "nameHint": "Chữ cái, chữ số, _ . - (agent viết là {{example}}).",
+    "who": "Ai có thể dùng",
+    "shared": "Dùng chung (chỉ máy chủ, không có agent)",
+    "source": "Nguồn của giá trị",
+    "source_local": "Nhập giá trị",
+    "source_bitwarden": "Mục Bitwarden",
+    "source_1password": "Tham chiếu 1Password",
+    "value": "Giá trị",
+    "valueHint": "Chỉ ghi: sẽ không bao giờ hiển thị lại.",
+    "ref_bitwarden": "ID mục Bitwarden",
+    "refHint_bitwarden": "ID mục, hoặc id/trường (password, username, notes, totp hoặc một trường tùy chỉnh).",
+    "ref_1password": "Tham chiếu bí mật",
+    "refHint_1password": "Ví dụ op://Private/GitHub/token",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "saved": "Đã lưu {{name}}.",
+    "brainOption": "Khóa cho {{brain}}"
+  },
+  "backends": {
+    "title": "Trình quản lý mật khẩu",
+    "intro": "PasaBot đọc giá trị thông qua công cụ dòng lệnh Bitwarden (bw) hoặc 1Password (op) trên máy chủ này. Chỉ tham chiếu được lưu tại đây.",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "Khóa phiên (từ bw unlock)",
+    "token_1password": "Token tài khoản dịch vụ",
+    "tokenHint": "Chỉ ghi. Để trống rồi lưu để xóa.",
+    "set": "Đã lưu khóa",
+    "notSet": "Chưa lưu khóa",
+    "save": "Lưu khóa",
+    "test": "Kiểm tra",
+    "state_ready": "Sẵn sàng",
+    "state_locked": "Bị khóa hoặc chưa đăng nhập",
+    "state_not_installed": "Công cụ dòng lệnh chưa được cài trên máy chủ",
+    "state_unsafe_bin": "Đã tắt (vị trí công cụ không an toàn)",
+    "unsafeHint": "Đã tắt: người dùng của máy chủ này có thể sửa tệp của công cụ, nên một agent có thể tráo nó. Hãy cài vào thư mục hệ thống (hoặc đặt PASABOT_BW_BIN / PASABOT_OP_BIN trỏ đến đường dẫn như vậy) rồi khởi động lại.",
+    "state_error": "Không hoạt động"
+  },
+  "rotate": {
+    "title": "Xoay khóa vault",
+    "intro": "Tạo khóa mã hóa mới và mã hóa lại mọi bí mật bằng khóa đó. Các giá trị không thay đổi.",
+    "button": "Xoay khóa",
+    "confirm": "Mã hóa lại mọi bí mật bằng khóa mới ngay bây giờ?",
+    "yes": "Xoay ngay",
+    "cancel": "Hủy",
+    "done": "Đã mã hóa lại {{count}} bí mật bằng khóa mới.",
+    "last": "Lần xoay gần nhất: {{when}}."
+  },
+  "tools": {
+    "vault_request_secret": "Xin chủ sở hữu một khóa",
+    "vault_list_secrets": "Liệt kê khóa của tôi"
+  },
+  "server": {
+    "asksForKey": "{{agent}} xin một khóa: {{name}}"
+  },
+  "find": {
+    "settingsHint": "Mật khẩu và khóa, được khóa kỹ",
+    "settingsKeywords": "mật khẩu, khóa, bí mật, token, thông tin đăng nhập"
+  },
+  "plain": {
+    "title": "Bí mật đã lưu",
+    "intro": "Khóa và mật khẩu mà các trợ lý sử dụng. Trợ lý chỉ nhận một tham chiếu như {{example}}; giá trị thật nằm lại trên máy chủ này và bị ẩn khỏi mọi phản hồi, nhật ký và channel.",
+    "backends": {
+      "intro": "PasaBot đọc giá trị thông qua công cụ dòng lệnh Bitwarden (bw) hoặc 1Password (op) trên máy chủ này. Chỉ tham chiếu được lưu tại đây.",
+      "token_1password": "Token tài khoản dịch vụ"
+    },
+    "rotate": {
+      "title": "Xoay khóa vault"
+    },
+    "secrets": {
+      "title": "Những gì đã lưu ở đây",
+      "forBrain": "Khóa cho {{brain}}. Các trợ lý suy nghĩ bằng nó có thể dùng khóa này.",
+      "confirmRemove": "Xóa {{name}}? Các trợ lý đang dùng nó sẽ ngừng hoạt động cho đến khi bạn thêm lại."
+    },
+    "requests": {
+      "title": "Trợ lý đang xin khóa"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} cần khóa {{name}} của bạn",
+      "text": "{{agent}} dùng được nhưng không bao giờ thấy nó. Chỉ bạn mới đưa được, trong két an toàn.",
+      "give": "Đưa khóa",
+      "given": "Đã lưu khóa. Giờ đã dùng được",
+      "declined": "Không đưa"
+    }
+  }
+}

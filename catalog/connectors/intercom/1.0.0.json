@@ -1,0 +1,30 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "intercom",
+  "name": "Intercom",
+  "version": "1.0.0",
+  "category": "social-chat",
+  "summary": "Intercom's own hosted MCP server for US-hosted workspaces. Sign in with Intercom in your browser.",
+  "homepage": "https://www.intercom.com",
+  "source": "https://developers.intercom.com/docs/guides/mcp",
+  "group": "social-chat",
+  "kind": "mcp-http",
+  "mcp": {
+    "url": "https://mcp.intercom.com/mcp",
+    "headers": {
+      "Authorization": "Bearer {{secret:oauth_token}}"
+    }
+  },
+  "auth": {
+    "type": "oauth2_pkce",
+    "oauth": {
+      "discover": "mcp",
+      "clientIdFrom": "register"
+    }
+  },
+  "network": {
+    "allowHosts": []
+  },
+  "defaultTier": 2,
+  "toolClasses": {}
+}

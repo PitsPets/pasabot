@@ -1,0 +1,50 @@
+{
+  "country": "ID",
+  "name": "Indonesia",
+  "stores": [
+    {
+      "id": "tokopedia",
+      "name": "Tokopedia",
+      "homeUrl": "https://www.tokopedia.com/",
+      "searchUrl": "https://www.tokopedia.com/search?st=product&q={query}",
+      "allowedHosts": ["tokopedia.com", "*.tokopedia.com", "*.tokopedia.net"],
+      "currency": "IDR",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "shopee",
+      "name": "Shopee",
+      "homeUrl": "https://shopee.co.id/",
+      "searchUrl": "https://shopee.co.id/search?keyword={query}",
+      "allowedHosts": ["shopee.co.id", "*.shopee.co.id", "*.susercontent.com"],
+      "currency": "IDR",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "lazada",
+      "name": "Lazada",
+      "homeUrl": "https://www.lazada.co.id/",
+      "searchUrl": "https://www.lazada.co.id/catalog/?q={query}",
+      "allowedHosts": ["lazada.co.id", "*.lazada.co.id", "*.slatic.net", "*.lazcdn.com"],
+      "currency": "IDR",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "tiktok-shop",
+      "name": "TikTok Shop",
+      "homeUrl": "https://shop.tiktok.com/",
+      "searchUrl": "https://www.tiktok.com/search?q={query}",
+      "allowedHosts": ["tiktok.com", "*.tiktok.com", "*.tiktokcdn.com"],
+      "currency": "IDR",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    }
+  ]
+}

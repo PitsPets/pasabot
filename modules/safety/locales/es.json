@@ -1,0 +1,183 @@
+{
+  "nav": "Seguridad",
+  "stop": {
+    "button": "Detener todo",
+    "buttonLabel": "Detener todos los agentes ahora",
+    "stopped": "En pausa",
+    "resume": "Volver a empezar",
+    "failed": "No se pudo detener: {{reason}}",
+    "resumeLabel": "Todo está en pausa. Volver a empezar"
+  },
+  "report": {
+    "title": "Todo está en pausa",
+    "intro": "Nada se ejecutará hasta que pulses Volver a empezar. Esto es lo que se detuvo.",
+    "by": "Detenido por {{who}} el {{when}}.",
+    "who": {
+      "owner": "ti",
+      "linked-machine": "una máquina vinculada",
+      "channel": "un comando de canal",
+      "automation": "un token de automatización",
+      "agent": "un agente",
+      "system": "el servidor"
+    },
+    "empty": "No había nada en ejecución ni en espera.",
+    "kind": {
+      "run": "Turno en ejecución",
+      "queued": "Turno en espera",
+      "browser": "Sesión de navegador",
+      "computer": "Sesión de computadora",
+      "voice": "Llamada de voz",
+      "approval": "Solicitud de aprobación",
+      "other": "Otro"
+    },
+    "outcome": {
+      "cancelled": "detenido",
+      "held": "en pausa",
+      "closed": "cerrado"
+    },
+    "agent": "Agente {{name}}",
+    "close": "OK",
+    "resume": "Volver a empezar",
+    "queue": {
+      "message": "Mensaje",
+      "task": "Tarea",
+      "handoff": "Traspaso",
+      "routine": "Rutina",
+      "workflow": "Flujo de trabajo",
+      "automation-run": "Automatización"
+    },
+    "run": "ejecución {{id}}",
+    "chat": "conversación {{id}}"
+  },
+  "resume": {
+    "title": "Vuelve a poner en marcha tus agentes",
+    "intro": "Escribe tu contraseña para volver a poner en marcha tus agentes. Así nadie más puede reiniciarlos. El trabajo que esperaba vuelve a empezar.",
+    "password": "Contraseña",
+    "submit": "Volver a empezar",
+    "cancel": "Cancelar",
+    "wrong": "Esa contraseña no es correcta.",
+    "forbidden": "Solo el dueño puede volver a empezar.",
+    "error": "No se pudo volver a empezar: {{reason}}"
+  },
+  "page": {
+    "title": "Seguridad",
+    "intro": "Lo que hicieron tus agentes, paso a paso, y los controles que los mantienen a raya."
+  },
+  "receipts": {
+    "title": "Recibos",
+    "intro": "Cada tarea de un agente deja un recibo: sus pasos, llamadas a herramientas, aprobaciones y quién decidió, y los tokens que usó.",
+    "empty": "Aún no hay recibos. Aparecen en cuanto un agente trabaja en algo.",
+    "steps": "{{count}} pasos",
+    "tokens": "{{input}} tokens de entrada / {{output}} de salida",
+    "open": "Abrir recibo",
+    "back": "Todos los recibos",
+    "timeline": "Cronología",
+    "step": "Paso {{n}} de {{total}}",
+    "scrub": "Recorrer los pasos",
+    "export": "Exportar",
+    "exportJson": "Descargar JSON",
+    "exportHtml": "Abrir copia legible",
+    "exporting": "Preparando…",
+    "decidedBy": "Decidido por {{who}}",
+    "you": "ti",
+    "duration": "{{s}} s",
+    "cost": "Costo {{amount}} {{currency}}",
+    "state": {
+      "running": "en ejecución",
+      "done": "listo",
+      "failed": "fallido",
+      "cancelled": "detenido",
+      "interrupted": "interrumpido"
+    },
+    "kind": {
+      "run.started": "Iniciado",
+      "run.finished": "Finalizado",
+      "tool.call": "Llamada a herramienta",
+      "tool.result": "Resultado de herramienta",
+      "permission": "Permiso solicitado",
+      "approval.requested": "Te preguntó",
+      "approval.decided": "Tu decisión",
+      "usage": "Tokens usados",
+      "reply": "Respuesta",
+      "error": "Error",
+      "subagent": "Ayudante",
+      "screenshot": "Captura de pantalla",
+      "link": "Enlace",
+      "refused": "Rechazado por una comprobación de seguridad"
+    },
+    "youNamed": "{{name}} (tú)",
+    "nobody": "nadie (expiró)",
+    "someoneElse": "otra sesión del propietario"
+  },
+  "retention": {
+    "title": "Conservar recibos durante",
+    "days": "Días",
+    "hint": "Los recibos más antiguos y sus capturas se eliminan definitivamente.",
+    "save": "Guardar",
+    "saved": "Guardado. Se eliminaron {{count}} recibos antiguos."
+  },
+  "scan": {
+    "title": "Revisa una habilidad antes de instalarla",
+    "intro": "Pega el texto de una habilidad. Buscamos cosas riesgosas: descargar y ejecutar programas, leer claves o contraseñas, texto oculto y envío de datos al exterior.",
+    "label": "Texto de la habilidad",
+    "run": "Revisar",
+    "running": "Revisando…",
+    "clean": "No notamos nada riesgoso.",
+    "noticed": "Notamos lo siguiente:",
+    "timeout": "La revisión tardó demasiado y se detuvo. Lee la habilidad tú mismo antes de instalarla.",
+    "error": "La revisión falló: {{reason}}",
+    "line": "línea {{line}}",
+    "kind": {
+      "download-and-run": "descarga y ejecuta un programa",
+      "credential-path": "lee claves, contraseñas o datos del navegador",
+      "hidden-text": "tiene texto oculto",
+      "exfiltration": "puede enviar tus datos al exterior",
+      "model-instruction": "intenta darle órdenes secretas al agente"
+    }
+  },
+  "decision": {
+    "proposal": "La habilidad “{{skill}}” solicita permisos",
+    "proposalText": "Abre Habilidades para ver cada herramienta, sitio web y archivo que solicita antes de decidir.",
+    "proposalWiden": "Solicita más de lo que aprobaste. Abre Habilidades para ver qué cambia antes de decidir."
+  },
+  "find": {
+    "navHint": "Qué pueden hacer los agentes y su registro",
+    "navKeywords": "aprobaciones, permisos, permitir, registro, auditoría"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Lo que pueden hacer los ayudantes y su registro"
+    },
+    "stop": {
+      "buttonLabel": "Detener ya a todos los ayudantes"
+    },
+    "page": {
+      "intro": "Lo que hicieron tus ayudantes, paso a paso, y los controles que los vigilan."
+    },
+    "receipts": {
+      "intro": "Cada trabajo de un ayudante deja un recibo: sus pasos, lo que usó, lo que aprobaste y quién decidió, y cuánto gastó.",
+      "empty": "Aún no hay recibos. Aparecen en cuanto un ayudante trabaja en algo.",
+      "tokens": "{{input}} leído / {{output}} escrito",
+      "kind": {
+        "usage": "Cantidad usada"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "algo que funciona solo",
+        "agent": "un ayudante",
+        "system": "el propio PasaBot"
+      },
+      "agent": "Ayudante {{name}}"
+    },
+    "scan": {
+      "title": "Revisa una habilidad antes de añadirla",
+      "intro": "Pega su texto. Buscamos cosas arriesgadas: descargar y ejecutar programas, leer claves o contraseñas, texto oculto y enviar datos fuera.",
+      "label": "Su texto",
+      "timeout": "La revisión tardó demasiado y se detuvo. Léelo tú antes de añadirlo.",
+      "kind": {
+        "model-instruction": "intenta dar órdenes secretas al ayudante"
+      }
+    }
+  }
+}

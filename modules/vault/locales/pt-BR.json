@@ -1,0 +1,119 @@
+{
+  "title": "Cofre",
+  "intro": "Chaves e senhas que seus agentes usam. Os agentes recebem apenas uma referência como {{example}}; o valor fica neste servidor e é ocultado de toda resposta, log e canal.",
+  "loading": "Carregando o cofre…",
+  "error": "Não foi possível carregar o cofre: {{reason}}",
+  "unavailable": "O cofre está bloqueado neste servidor (sem senha mestra nem chaveiro). Inicie o servidor com uma senha do cofre para usá-lo.",
+  "requests": {
+    "title": "Agentes pedindo uma chave",
+    "asks": "{{agent}} pede {{name}}",
+    "untrusted": "Outra pessoa, e não você, iniciou a conversa que fez este pedido. Confirme se ele é realmente necessário antes de preencher.",
+    "fill": "Fornecer a chave",
+    "decline": "Recusar",
+    "filled": "{{agent}} agora pode usar {{reference}}.",
+    "declined": "Pedido recusado."
+  },
+  "secrets": {
+    "title": "Segredos salvos",
+    "empty": "Nenhum segredo ainda.",
+    "shared": "Compartilhado (servidor)",
+    "for": "Para {{agent}}",
+    "remove": "Remover",
+    "confirmRemove": "Remover {{name}}? Os agentes que o usam vão parar de funcionar até você adicioná-lo de novo.",
+    "module": "Mais {{count}} entradas pertencem a canais e gerenciadores de senhas.",
+    "backend_local": "Guardado aqui",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "Chave do {{brain}}. Os agentes que rodam nele podem ver esta chave."
+  },
+  "add": {
+    "title": "Adicionar um segredo",
+    "open": "Adicionar segredo",
+    "name": "Nome",
+    "nameHint": "Letras, números, _ . - (os agentes o escrevem como {{example}}).",
+    "who": "Quem pode usar",
+    "shared": "Compartilhado (só o servidor, nenhum agente)",
+    "source": "De onde vem o valor",
+    "source_local": "Digitar o valor",
+    "source_bitwarden": "Item do Bitwarden",
+    "source_1password": "Referência do 1Password",
+    "value": "Valor",
+    "valueHint": "Somente gravação: ele nunca é exibido novamente.",
+    "ref_bitwarden": "ID do item do Bitwarden",
+    "refHint_bitwarden": "ID do item, ou id/campo (password, username, notes, totp ou um campo personalizado).",
+    "ref_1password": "Referência do segredo",
+    "refHint_1password": "Como op://Private/GitHub/token",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "saved": "{{name}} salvo.",
+    "brainOption": "Chave do {{brain}}"
+  },
+  "backends": {
+    "title": "Gerenciadores de senhas",
+    "intro": "O PasaBot lê os valores pela ferramenta de linha de comando do Bitwarden (bw) ou do 1Password (op) neste servidor. Só a referência fica guardada aqui.",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "Chave de sessão (de bw unlock)",
+    "token_1password": "Token da conta de serviço",
+    "tokenHint": "Somente gravação. Deixe vazio e salve para removê-la.",
+    "set": "Chave salva",
+    "notSet": "Nenhuma chave salva",
+    "save": "Salvar chave",
+    "test": "Testar",
+    "state_ready": "Pronto",
+    "state_locked": "Bloqueado ou sem login",
+    "state_not_installed": "Ferramenta de linha de comando não instalada no servidor",
+    "state_unsafe_bin": "Desativado (local da ferramenta inseguro)",
+    "unsafeHint": "Desativado: o usuário deste servidor pode alterar o arquivo da ferramenta, então um agente poderia trocá-lo. Instale-a em uma pasta do sistema (ou defina PASABOT_BW_BIN / PASABOT_OP_BIN com um caminho assim) e reinicie.",
+    "state_error": "Com falha"
+  },
+  "rotate": {
+    "title": "Trocar a chave do cofre",
+    "intro": "Cria uma nova chave de criptografia e criptografa todos os segredos novamente com ela. Os valores não mudam.",
+    "button": "Trocar chave",
+    "confirm": "Criptografar todos os segredos novamente com uma nova chave agora?",
+    "yes": "Trocar agora",
+    "cancel": "Cancelar",
+    "done": "{{count}} segredos criptografados novamente com uma nova chave.",
+    "last": "Última troca: {{when}}."
+  },
+  "tools": {
+    "vault_request_secret": "Pedir uma chave ao proprietário",
+    "vault_list_secrets": "Listar minhas chaves"
+  },
+  "server": {
+    "asksForKey": "{{agent}} pede uma chave: {{name}}"
+  },
+  "find": {
+    "settingsHint": "Senhas e chaves, bem guardadas",
+    "settingsKeywords": "senhas, chaves, segredos, tokens, credenciais"
+  },
+  "plain": {
+    "title": "Segredos guardados",
+    "intro": "Chaves e senhas que seus ajudantes usam. Os ajudantes recebem apenas uma referência como {{example}}; o valor fica neste servidor e é ocultado de toda resposta, log e canal.",
+    "backends": {
+      "intro": "O PasaBot lê os valores pela ferramenta de linha de comando do Bitwarden (bw) ou do 1Password (op) neste servidor. Só a referência fica guardada aqui.",
+      "token_1password": "Token da conta de serviço"
+    },
+    "rotate": {
+      "title": "Trocar a chave do cofre"
+    },
+    "secrets": {
+      "title": "O que está guardado aqui",
+      "forBrain": "Chave para {{brain}}. Os ajudantes que pensam com ele podem usá-la.",
+      "confirmRemove": "Remover {{name}}? Os ajudantes que o usam vão parar até você adicioná-lo de novo."
+    },
+    "requests": {
+      "title": "Ajudantes pedindo uma chave"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} precisa da sua chave {{name}}",
+      "text": "{{agent}} pode usá-la, mas nunca a vê. Só você pode dá-la, no cofre.",
+      "give": "Dar a chave",
+      "given": "Chave salva. Já pode usá-la",
+      "declined": "Não foi dada"
+    }
+  }
+}

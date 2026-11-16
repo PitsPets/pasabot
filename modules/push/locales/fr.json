@@ -1,0 +1,40 @@
+{
+  "title": "Notifications sur cet appareil",
+  "intro": "Recevez une notification sur ce téléphone ou cet ordinateur, même quand PasaBot est fermé.",
+  "state": {
+    "loading": "Vérification…",
+    "off": "Désactivées",
+    "on": "Activées",
+    "unsupported": "Non pris en charge ici",
+    "blocked": "Bloquées dans le navigateur",
+    "unavailable": "Indisponibles sur ce serveur"
+  },
+  "turnOn": "Activer les notifications",
+  "turnOff": "Désactiver sur cet appareil",
+  "prefs": {
+    "title": "Me prévenir quand",
+    "approval": "Un agent attend mon accord",
+    "error": "Une exécution échoue",
+    "finished": "Un agent répond",
+    "progress": "Une tâche longue est toujours en cours",
+    "alert": "Autres alertes (serveur, sécurité)"
+  },
+  "test": {
+    "button": "Envoyer un test",
+    "sent": "Envoyé. Il devrait apparaître dans un instant.",
+    "failed": "Le test n'a pas abouti. Désactivez puis réactivez les notifications."
+  },
+  "help": {
+    "unsupported": "Ce navigateur ne peut pas recevoir de notifications de sites web.",
+    "blocked": "Les notifications sont bloquées pour PasaBot. Autorisez-les dans les paramètres du site du navigateur, puis revenez.",
+    "unavailable": "Le serveur ne peut pas envoyer de notifications pour le moment (son coffre de secrets est verrouillé).",
+    "iphone": "Sur iPhone et iPad, ajoutez d'abord PasaBot à l'écran d'accueil (Partager → Sur l'écran d'accueil), puis activez cette option depuis là."
+  },
+  "errors": {
+    "subscribe": "Impossible d'activer les notifications. Réessayez."
+  },
+  "find": {
+    "settingsHint": "Notifications sur cet appareil",
+    "settingsKeywords": "notifications, alertes, avis, son"
+  }
+}

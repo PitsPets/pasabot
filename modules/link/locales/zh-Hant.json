@@ -1,0 +1,102 @@
+{
+  "nav": "機器",
+  "settings": "機器",
+  "page": {
+    "title": "已連結的機器",
+    "intro": "你的其他 PasaBot 機器。選擇一台即可查看其 agent 並與它們聊天；工作會依該機器自己的規則在其上執行。",
+    "empty": "尚未連結任何機器。請在「設定 → 機器」中連結。",
+    "agents": "{{name}} 上的 agent",
+    "noAgents": "那裡還沒有 agent。",
+    "back": "所有機器",
+    "open": "開啟",
+    "refresh": "重新整理"
+  },
+  "chat": {
+    "title": "{{machine}} 上的 {{agent}}",
+    "placeholder": "傳訊息給 {{agent}}",
+    "send": "傳送",
+    "waiting": "等待 {{agent}} 回應…",
+    "me": "你",
+    "empty": "打聲招呼吧。你的訊息會在 {{machine}} 上執行，視為來自已連結機器的請求。"
+  },
+  "state": {
+    "active": "已連結",
+    "awaiting": "等待對方擁有者確認",
+    "requested": "想要連結",
+    "revoked": "已解除連結"
+  },
+  "grant": {
+    "label": "它在這台機器上可執行的操作",
+    "view": "檢視",
+    "chat": "聊天",
+    "manage": "管理",
+    "hint": "檢視：機器名稱與 agent 名稱。聊天：另可在此與你的 agent 聊天。管理：另可管理例行工作與工作流程，且遵循這台機器自己的規則。它不會成為這裡的擁有者。"
+  },
+  "status": {
+    "this": "這台機器：{{name}}",
+    "fingerprint": "金鑰指紋 {{fp}}",
+    "unavailable": "目前尚無法連結",
+    "transport": "連結傳輸：{{transport}}・{{state}}",
+    "transportRunning": "執行中",
+    "transportDown": "正在重新啟動",
+    "transportIdle": "連結機器前保持閒置"
+  },
+  "code": {
+    "title": "連結機器",
+    "intro": "在此顯示一次性代碼，再到另一台機器上輸入。代碼只能使用一次，10 分鐘後失效。",
+    "make": "顯示連結代碼",
+    "expires": "{{time}} 到期",
+    "copy": "複製代碼",
+    "copied": "已複製",
+    "qr": "以 QR 圖片顯示的連結代碼"
+  },
+  "join": {
+    "title": "輸入另一台機器的代碼",
+    "code": "連結代碼",
+    "submit": "連結",
+    "done": "已送出。對方擁有者會在他們的機器上確認。"
+  },
+  "reauth": {
+    "password": "你的密碼（用於確認身分）"
+  },
+  "peers": {
+    "title": "已連結的機器",
+    "empty": "目前沒有。",
+    "confirm": "確認連結",
+    "check": "檢查",
+    "unlink": "解除連結",
+    "unlinkConfirm": "要解除與 {{name}} 的連結嗎？它會立即失去存取權。",
+    "fp": "金鑰 {{fp}}"
+  },
+  "intros": {
+    "title": "引薦",
+    "offer": "{{via}} 想引薦 {{name}}（金鑰 {{fp}}）。在你使用該機器的代碼連結之前，不會建立任何連結。",
+    "accept": "知道了",
+    "dismiss": "略過"
+  },
+  "error": "發生錯誤：{{message}}",
+  "tools": {
+    "link_machines": "列出已連結的機器",
+    "link_message": "傳訊息給已連結機器上的代理"
+  },
+  "server": {
+    "introTitle": "{{peer}} 想為你介紹 {{name}}",
+    "introBody": "在你用那台機器的代碼親自連結之前，不會連結任何東西。",
+    "linkTitle": "{{name}} 想與這台機器連結",
+    "linkBody": "請在 設定 → 機器 中確認，並選擇它在這裡可以做什麼。"
+  },
+  "find": {
+    "navHint": "與本機連接的其他機器",
+    "navKeywords": "機器, 電腦, 伺服器, 連接, 遠端"
+  },
+  "plain": {
+    "page": {
+      "intro": "你裝了 PasaBot 的其他電腦。選一台查看它的助理並和它們聊天；工作在那台電腦上按它自己的規則執行。",
+      "agents": "{{name}} 上的助理",
+      "noAgents": "那裡還沒有助理。"
+    },
+    "grant": {
+      "hint": "查看：電腦名稱和助理名稱。聊天：還能在這裡和你的助理聊天。管理：在這台電腦自己的規則內，還能管例行工作和工作流程。它在這裡永遠不會成為主人。"
+    }
+  }
+}

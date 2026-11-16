@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "Token của bot",
+    "botTokenHint": "Lấy từ bot bạn đã tạo trong Telegram. Được lưu trong vault và sẽ không hiển thị lại.",
+    "apiBase": "Địa chỉ Bot API",
+    "apiBaseHint": "Hãy giữ nguyên trừ khi bạn tự chạy máy chủ Bot API."
+  },
+  "link": {
+    "howTo": "Mở cuộc trò chuyện trực tiếp với bot của bạn và gửi: /link {{code}}",
+    "dmOnly": "Mã liên kết chỉ hoạt động trong cuộc trò chuyện trực tiếp với bot."
+  },
+  "status": {
+    "connected": "Đã kết nối",
+    "reconnecting": "Đang kết nối lại…",
+    "auth_failed": "Token của bot đã bị từ chối",
+    "stopped": "Đã dừng"
+  }
+}

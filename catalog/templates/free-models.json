@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-14",
+  "source": "https://opencode.ai/docs/zen/",
+  "provider": "opencode",
+  "loginRequired": "unverified",
+  "note": "Free OpenCode Zen chat models listed at $0 on the source page on checkedAt; most are free for a limited time. The page does not say whether a login is needed: the free starter tries without one and shows the notice on an auth error. Re-check with PASABOT_LIVE=opencode before each release.",
+  "models": [
+    { "id": "opencode/big-pickle", "name": "Big Pickle", "free": true, "note": "free for a limited time" },
+    { "id": "opencode/glm-5.3-flash-free", "name": "GLM-5.3-Flash Free", "free": true },
+    { "id": "opencode/deepseek-v4.1-flash-free", "name": "DeepSeek V4.1 Flash Free", "free": true },
+    { "id": "opencode/minimax-m3.1-flash-free", "name": "MiniMax M3.1 Flash Free", "free": true },
+    { "id": "opencode/nemotron-3.5-lightning-free", "name": "Nemotron 3.5 Lightning Free", "free": true }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Notifikasi di perangkat ini",
+  "intro": "Terima notifikasi di ponsel atau komputer ini, bahkan saat PasaBot ditutup.",
+  "state": {
+    "loading": "Memeriksa…",
+    "off": "Mati",
+    "on": "Aktif",
+    "unsupported": "Tidak didukung di sini",
+    "blocked": "Diblokir di browser",
+    "unavailable": "Tidak tersedia di server ini"
+  },
+  "turnOn": "Aktifkan notifikasi",
+  "turnOff": "Matikan di perangkat ini",
+  "prefs": {
+    "title": "Beri tahu saya saat",
+    "approval": "Agent butuh persetujuan saya",
+    "error": "Sebuah proses gagal",
+    "finished": "Agent membalas",
+    "progress": "Tugas panjang masih berjalan",
+    "alert": "Peringatan lain (server, keamanan)"
+  },
+  "test": {
+    "button": "Kirim uji coba",
+    "sent": "Terkirim. Notifikasi akan muncul sebentar lagi.",
+    "failed": "Uji coba gagal. Matikan lalu aktifkan kembali notifikasi."
+  },
+  "help": {
+    "unsupported": "Browser ini tidak dapat menerima notifikasi dari situs web.",
+    "blocked": "Notifikasi diblokir untuk PasaBot. Izinkan di pengaturan situs browser, lalu kembali ke sini.",
+    "unavailable": "Server sedang tidak dapat mengirim notifikasi (vault-nya terkunci).",
+    "iphone": "Di iPhone dan iPad, tambahkan PasaBot ke Layar Utama terlebih dahulu (Bagikan → Tambah ke Layar Utama), lalu aktifkan dari sana."
+  },
+  "errors": {
+    "subscribe": "Gagal mengaktifkan notifikasi. Coba lagi."
+  },
+  "find": {
+    "settingsHint": "Notifikasi di perangkat ini",
+    "settingsKeywords": "notifikasi, peringatan, pemberitahuan, suara"
+  }
+}

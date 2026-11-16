@@ -1,0 +1,295 @@
+{
+  "nav": "Inbox",
+  "page": {
+    "title": "Inbox ng bot",
+    "intro": "Sariling mailbox ng bot mo. Ang dumarating na mail ay galing sa labas: puwede itong basahin ng mga agent mo, pero hindi sila susunod sa utos na nakasulat dito. Bawat email na gusto nilang ipadala ay itatanong muna sa iyo."
+  },
+  "setup": {
+    "title": "Ikonekta ang mailbox",
+    "intro": "Ikaw mismo ang gagawa ng mailbox, sa kahit anong provider na gusto mo, sa sarili mong browser.",
+    "step1": "Gumawa ng bagong mailbox para sa bot mo sa provider na pinili mo.",
+    "step2": "Sa settings ng mailbox na iyon, buksan ang IMAP at SMTP at gumawa ng app password. Basahin ang patakaran ng provider mo (may ilan na kailangan ng hiwalay na app para sa IMAP).",
+    "step3": "Ilagay sa ibaba ang detalye ng server at ang app password.",
+    "never": "Hindi gumagawa ang PasaBot ng mailbox, hindi nagsa-sign in sa browser para sa iyo at hindi sumasagot ng captcha. Sa vault lang itinatago ang detalye at ang app password.",
+    "address": "Email address",
+    "username": "Pangalan sa pag-sign in",
+    "usernameHint": "Iwanang blangko kung ito rin ang email address.",
+    "imapHost": "IMAP server",
+    "imapPort": "IMAP port",
+    "imapTls": "Seguridad ng IMAP",
+    "smtpHost": "SMTP server",
+    "smtpPort": "SMTP port",
+    "smtpTls": "Seguridad ng SMTP",
+    "tls": {
+      "implicit": "TLS mula sa simula",
+      "starttls": "STARTTLS (kailangan)"
+    },
+    "password": "App password",
+    "passwordHint": "Ang app password na ginawa ng provider mo para sa bot na ito, hindi ang pangunahing password mo.",
+    "passwordKeep": "Naka-save sa vault. Iwanang blangko para panatilihin.",
+    "save": "I-save ang mailbox",
+    "saved": "Na-save. Nasa vault ang detalye at ang app password."
+  },
+  "mail": {
+    "title": "Mga mail",
+    "intro": "Ipinapakita bilang simpleng teksto. Hindi kailanman nilo-load ang mga larawan at link sa mail.",
+    "check": "Tingnan kung may bagong mail",
+    "fetched_one": "{{count}} bagong mensahe.",
+    "fetched_other": "{{count}} bagong mensahe.",
+    "empty": "Wala pang mail.",
+    "noSubject": "(walang subject)",
+    "wasHtml": "May format ang mail na ito; simpleng teksto ang ipinapakita rito.",
+    "bridgeVerified": "Galing sa ka-pair mong bot na si {{name}}",
+    "bridgeRefused": "Tinanggihan ang mensahe ng bot: {{reason}}",
+    "refused": {
+      "unsigned": "walang pirma",
+      "malformed": "sira ang pirma",
+      "unknown_sender": "hindi kilalang bot",
+      "wrong_from": "maling address ng nagpadala",
+      "wrong_key": "maling key",
+      "bad_signature": "hindi tugma ang pirma",
+      "wrong_recipient": "para sa ibang bot",
+      "body_changed": "binago ang teksto",
+      "stale": "masyado nang luma",
+      "replayed": "naipadala nang dalawang beses"
+    }
+  },
+  "bridge": {
+    "title": "Makipag-pair sa ibang PasaBot",
+    "intro": "Puwedeng magsulatan ang dalawang bot sa email. Ibigay sa kabilang may-ari ang address at key sa ibaba (nang personal o sa paraang pinagkakatiwalaan mo). Galing pa rin sa labas ang mga mensahe nila, at bawat sagot ay itatanong muna sa iyo.",
+    "yourAddress": "Address ng bot mo: {{address}}",
+    "noAddress": "ikonekta muna ang mailbox",
+    "yourKey": "Key ng bot mo:",
+    "peerName": "Pangalan ng bot nila",
+    "peerAddress": "Email address ng bot nila",
+    "peerKey": "Key ng bot nila",
+    "peerKeyHint": "Ang key na nakikita ng kabilang may-ari sa Inbox page nila.",
+    "add": "I-pair",
+    "added": "Naka-pair na.",
+    "remove": "Alisin"
+  },
+  "error": {
+    "not_configured": "Ikonekta muna ang mailbox.",
+    "bad_host": "Mukhang mali ang pangalan ng server.",
+    "password_required": "Ilagay ang app password.",
+    "blocked_address": "Nasa pribado o naka-block na network address ang server, kaya hindi kokonekta ang PasaBot.",
+    "host_not_allowed": "Hindi ito ang server na inilagay mo.",
+    "starttls_unavailable": "Walang ligtas na koneksyon ang server, kaya hindi nag-sign in ang PasaBot.",
+    "tls_failed": "Hindi ma-check ang security certificate ng server.",
+    "auth_failed": "Tinanggihan ng mail server ang pag-sign in. Tingnan ang app password.",
+    "timeout": "Hindi sumagot ang mail server.",
+    "stopped": "Nakahinto ang lahat ngayon.",
+    "bad_key": "Hindi iyan key ng PasaBot bot.",
+    "exists": "Naka-pair na ang address na iyan.",
+    "forbidden": "Ang may-ari lang ang puwedeng gumawa nito.",
+    "other": "May nangyaring mali. Subukan ulit."
+  },
+  "tools": {
+    "inbox_list": "Ilista ang mga mail sa inbox",
+    "inbox_read": "Basahin ang isang mail",
+    "inbox_send": "Magpadala ng email",
+    "inbox_bridge_send": "Mag-message sa naka-pair na PasaBot bot"
+  },
+  "find": {
+    "navHint": "Email na binabasa at sinasagot ng agent",
+    "navKeywords": "email, sulat, mensahe, inbox"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Email na binabasa at sinasagot ng mga katulong mo"
+    },
+    "page": {
+      "intro": "Sariling mailbox ng bot mo. Ang dumarating na mail ay galing sa labas: puwede itong basahin ng mga katulong mo, pero hindi sila susunod sa utos na nakasulat dito. Bawat email na gusto nilang ipadala ay itatanong muna sa iyo."
+    },
+    "setup": {
+      "intro": "Ikaw mismo ang gagawa ng mailbox, sa kahit anong email company na gusto mo, sa sarili mong browser.",
+      "step1": "Gumawa ng bagong mailbox para sa bot mo sa email company na pinili mo.",
+      "step2": "Sa settings ng mailbox na iyon, payagang makapasok ang mga mail app at gumawa ng app password. Basahin ang patakaran ng email company mo (may ilan na kailangan ng hiwalay na app para dito).",
+      "step3": "Ilagay sa ibaba ang detalye ng mail at ang app password.",
+      "never": "Hindi gumagawa ang PasaBot ng mailbox, hindi nagsa-sign in sa browser para sa iyo at hindi sumasagot ng captcha. Ligtas na nakatago sa computer na ito lang ang detalye at ang app password.",
+      "imapHost": "Address ng papasok na mail",
+      "smtpHost": "Address ng palabas na mail",
+      "passwordHint": "Ang app password na ginawa ng email company mo para sa bot na ito, hindi ang pangunahing password mo.",
+      "passwordKeep": "Ligtas na nakatago sa computer na ito. Iwanang blangko para hindi ito mapalitan.",
+      "saved": "Na-save. Ligtas na nakatago sa computer na ito ang detalye at ang app password.",
+      "imapPort": "Port ng papasok na mail",
+      "smtpPort": "Port ng palabas na mail",
+      "imapTls": "Seguridad ng papasok na mail",
+      "smtpTls": "Seguridad ng palabas na mail"
+    },
+    "error": {
+      "bad_host": "Mukhang mali ang address ng papasok o palabas na mail.",
+      "blocked_address": "Nasa pribado o naka-block na network ang address na iyan, kaya hindi kokonekta ang PasaBot dito.",
+      "host_not_allowed": "Hindi iyan ang address na inilagay mo.",
+      "starttls_unavailable": "Hindi nag-alok ng ligtas na koneksyon ang mail service, kaya hindi nag-sign in ang PasaBot.",
+      "tls_failed": "Hindi ma-check ang safety certificate ng mail service.",
+      "auth_failed": "Tinanggihan ng mail service ang pag-sign in. I-check ang app password.",
+      "timeout": "Hindi sumagot ang mail service."
+    },
+    "guide": {
+      "manual": {
+        "intro": "Nasa help pages ng mail service mo ang mga detalyeng ito (hanapin ang settings para sa mga mail app). Gumamit ng app password kung mayroon sila."
+      }
+    }
+  },
+  "guide": {
+    "count": "Hakbang {{n}} sa {{total}}",
+    "back": "Bumalik",
+    "next": "Susunod",
+    "done": "Tapos na",
+    "moved": "Lumipat na ang email setup na ito. Ituloy mo ito sa Settings, sa Mailbox mo.",
+    "badAddress": "Mukhang hindi iyan email address. Tingnan ulit at subukan muli.",
+    "pageTitle": "Ikonekta ang email mo",
+    "openChat": "Bumalik sa chat kay {{name}}",
+    "cardNew": "Gumawa ng bagong email",
+    "cardConnect": "Ikonekta ang email mo",
+    "service": {
+      "title": "Anong email ang gamit mo?",
+      "other": "Ibang email"
+    },
+    "ideas": {
+      "title": "Mga ideya ng address",
+      "note": "Mga ideya lang ito. Sasabihin ng Google kung alin ang bakante pag nag-sign up ka.",
+      "nameLabel": "Pangalan ng negosyo o team mo",
+      "nameHint": "Gaya ng Reyes Hardware. Gagawa ako ng ilang ideya ng address mula rito.",
+      "show": "Ipakita ang mga ideya",
+      "copy": "Kopyahin",
+      "copyOne": "Kopyahin ang {{address}}",
+      "copied": "Nakopya na"
+    },
+    "signup": {
+      "title": "Gumawa ng account sa Gmail",
+      "open": "Buksan ang Gmail sign-up",
+      "asks": "Hihingin ng Google ang:",
+      "ask1": "pangalan mo",
+      "ask2": "ang bagong address na gusto mo (puwede ang isang ideya sa itaas)",
+      "ask3": "isang password na ikaw ang pipili at itatago mo. Hindi ko ito makikita",
+      "ask4": "isang phone check: magte-text ang Google ng code sa iyo",
+      "onlyYou": "Ikaw lang ang gagawa nito, sa sarili mong browser. Hindi ako nagsa-sign up, hindi ko tina-type ang password mo, at hindi ko sinasagot ang phone check para sa iyo.",
+      "done": "Tapos na, may bago na akong email"
+    },
+    "address": {
+      "label": "Ang email address mo",
+      "newLabel": "Ang bago mong email address",
+      "hint": "Ang buong address, gaya ng {{example}}",
+      "looksLike": "Mukhang {{name}} address iyan.",
+      "switch": "Lumipat sa {{name}}",
+      "work": "Email ba ito ng trabaho o paaralan? Baka kailangan munang payagan ng namamahala nito ang app password. Tanungin sila kung paulit-ulit na hindi tinatanggap ang code mo."
+    },
+    "apppw": {
+      "title": "Gumawa ng app password para sa PasaBot",
+      "why": "Ang app password ay espesyal na code na ginagawa ng {{company}} para lang sa PasaBot. Ito ang gagamitin ko imbes na ang tunay mong password, at puwede mo itong tanggalin kahit kailan.",
+      "s1": "I-on ang 2-step verification kung naka-off pa. Hinihingi ito ng {{company}} bago gumawa ng app password, at magpapadala ito ng code sa phone mo.",
+      "s1Open": "Buksan ang 2-step page ng {{company}}",
+      "s2": {
+        "gmail": "Sa App passwords page ng Google, i-type ang PasaBot bilang pangalan at pindutin ang Create.",
+        "outlook": "Sa security page ng Microsoft, piliin ang “Create a new app password”.",
+        "yahoo": "Sa account security page ng Yahoo, pindutin ang “Generate app password”, i-type ang PasaBot at pindutin ang Generate.",
+        "icloud": "Sa account page ng Apple, buksan ang Sign-In and Security, tapos App-Specific Passwords. Pindutin ang plus at i-type ang PasaBot."
+      },
+      "s2Open": "Buksan ang page ng {{company}}",
+      "s3": "Kopyahin ang code na lalabas: {{letters}} na letra, sa maliliit na grupo. Tapos bumalik dito.",
+      "haveCode": "May code na ako"
+    },
+    "code": {
+      "title": "I-paste ang code mo",
+      "label": "App password ({{letters}} na letra)",
+      "hint": "Okay lang ang mga space. Dito mo lang ito i-paste, hindi sa chat.",
+      "tech": "Mga server: {{imap}} at {{smtp}}, secure na koneksyon lang.",
+      "connect": "Ikonekta",
+      "checking": "Tinitingnan sa {{company}}…",
+      "ok": "Konektado na. Kaya ko nang magbasa at gumawa ng draft para sa iyo."
+    },
+    "reason": {
+      "wrong_code": "Hindi tinanggap ng {{company}} ang code na iyan. Gumawa ng bagong app password at i-paste ulit ang {{letters}} na letra.",
+      "two_step_off": "Gusto muna ng {{company}} na naka-on ang 2-step verification. I-on ito, gumawa ng bagong app password, tapos i-paste dito.",
+      "imap_off": "Hindi pinapapasok ng {{company}} ang mga mail app sa account na ito. Kung kompanya o paaralan ang namamahala nito, hilingin sa kanila na payagan ang mga mail app. Tapos pindutin ulit ang Ikonekta. Nandiyan pa rin ang code mo.",
+      "no_internet": "Hindi ko maabot ang {{company}}. Tingnan kung online ang computer na ito, tapos subukan ulit.",
+      "server_trouble": "Hindi makakonekta nang ligtas sa mail server ng {{company}}. Maghintay ng isang minuto at subukan ulit.",
+      "code_shape": "Hindi iyan {{letters}} na letra. Kopyahin ulit ang code mula sa page ng {{company}}.",
+      "stopped": "Naka-stop ang lahat ngayon. Buksan ulit, tapos subukan muli.",
+      "tooMany": "Ang dami nang subok nang sunud-sunod. Maghintay ng ilang minuto, tapos subukan ulit.",
+      "busy": "Tinitingnan ko pa ang huling subok mo. Sandali lang."
+    },
+    "manual": {
+      "intro": "Nasa help pages ng mail service mo ang mga detalyeng ito (hanapin ang IMAP at SMTP). Gumamit ng app password kung mayroon sila.",
+      "plain": "Para sa ibang email, sabihin kay {{name}} sa chat kung aling kompanya ang may hawak ng email mo. Tutulungan ka niyang hanapin ang settings nito. Para ma-type ang mga ito, i-on ang Teknikal na salita sa Settings.",
+      "plainNoName": "Para sa ibang email, sabihin sa katulong mo sa chat kung aling kompanya ang may hawak ng email mo. Tutulungan ka niyang hanapin ang settings nito. Para ma-type ang mga ito, i-on ang Teknikal na salita sa Settings."
+    },
+    "access": {
+      "title": "Ano ang puwedeng gawin ng mga katulong mo sa email na ito?",
+      "read": "Magbasa lang",
+      "readHint": "Binabasa at inaayos nila ang mail mo. Walang isinusulat o ipinapadala.",
+      "draft": "Magbasa at gumawa ng draft (pinakamainam sa simula)",
+      "draftHint": "Binabasa nila ang mail mo at gumagawa ng sagot na susuriin mo. Walang ipinapadala.",
+      "send": "Magpadala pag inaprubahan ko",
+      "sendHint": "Puwede silang magpadala ng email, pero pagkatapos mo lang pindutin ang Approve, bawat beses."
+    },
+    "test": {
+      "title": "Maliit na test",
+      "body": "Magpadala ng email sa {{address}} na may ganitong salita sa subject. Puwede kahit galing sa phone mo. Ipapakita ko pag dumating na.",
+      "check": "Tingnan ngayon",
+      "arrived": "Dumating na: “{{subject}}” mula kay {{from}}.",
+      "none": "Wala pang email na may salitang {{word}}. Minsan isang minuto bago dumating ang mail, kaya subukan ulit mamaya.",
+      "finish": "Tapusin",
+      "proves": "Ibig sabihin, nababasa ko ang inbox mo."
+    },
+    "finished": {
+      "title": "Konektado na ang email mo",
+      "body": "Konektado na ang {{address}}.",
+      "read": "Kaya itong basahin ng mga katulong mo.",
+      "draft": "Kaya itong basahin ng mga katulong mo at gumawa ng draft ng sagot para sa iyo.",
+      "send": "Kaya itong basahin ng mga katulong mo, gumawa ng draft, at magpadala pag inaprubahan mo.",
+      "change": "Mababago mo ito kahit kailan sa Settings, sa Mailbox mo."
+    },
+    "say": {
+      "introNew": "Sabay nating gawin ang bagong email ng team mo. Isa-isang hakbang tayo; pindutin ang button sa dulo ng bawat hakbang pag handa ka na.",
+      "introConnect": "Ikonekta natin ang email mo. Mga 3 minuto lang, isa-isang hakbang.",
+      "service": "Una, anong email ang gamit mo?",
+      "ideas": "Una, ano ang pangalan ng negosyo o team mo? Magmumungkahi ako ng ilang address.",
+      "signup": "Ngayon, buksan ang Gmail sign-up at gumawa ng account. Pindutin ang Tapos na pag nakita mo na ang bago mong inbox.",
+      "address_new": "Ayos! I-type dito ang bago mong address.",
+      "address_connect": "Ano ang email address mo?",
+      "guide": "Ngayon, gagawa tayo ng espesyal na code para sa akin, para hindi ko kailangan ang password mo.",
+      "code": "I-paste dito ang code. Titingnan ko ito sa {{company}}.",
+      "manual": "I-type ang mga detalye ng server na binigay ng mail service mo.",
+      "access": "Konektado na! Ano ang puwedeng gawin ng mga katulong mo dito?",
+      "test": "Huli, isang maliit na test.",
+      "done": "Ayos na lahat!",
+      "manualPlain": "Aling kompanya ang may hawak ng email mo? Sabihin mo sa akin sa chat at tutulungan kitang hanapin ang settings nito."
+    },
+    "settings": {
+      "title": "Ang mailbox mo",
+      "hint": "Ikonekta ang email na binabasa ng mga katulong mo",
+      "keywords": "email, gmail, outlook, yahoo, icloud, app password, mailbox, ikonekta",
+      "none": "Wala pang nakakonektang email.",
+      "connected": "Konektado: {{address}}.",
+      "helper": "Si {{name}} ang bahala dito.",
+      "connect": "Ikonekta ang email ko",
+      "makeNew": "Gumawa ng bagong email",
+      "change": "Ikonekta ang ibang email",
+      "saved": "Na-save na."
+    },
+    "withMe": {
+      "do": "Gawin natin nang sabay",
+      "mine": "Ako na lang sa sarili kong browser",
+      "intro": "Bubuksan ni {{name}} ang sign-up page sa sarili niyang browser at ilalagay ang pangalan mo at ang address na pipiliin mo. Ikaw ang bahala sa password at sa phone check.",
+      "first": "Pangalan",
+      "last": "Apelyido",
+      "pick": "Address na susubukan",
+      "working": "Binubuksan ang sign-up page…",
+      "badName": "I-type ang pangalan at apelyido mo.",
+      "noBrowser": "Hindi gumana rito ang browser ni {{name}}. Sa sarili mong browser mo na lang gawin.",
+      "yourTurn": "Ikaw na: pumili ng password at gawin ang phone check. Hindi ko ito nakikita o nata-type.",
+      "yourTurnText": "Pindutin ang Ako na para gamitin ang browser. Pindutin ang Tapos na pag nagawa na ang bago mong email.",
+      "liveAlt": "Browser ni {{name}}, live",
+      "wait": "Lalabas ang larawan maya-maya…",
+      "taken": "Ikaw na ang gumagamit ng browser. Walang nakikita o nagagawa si {{name}} dito.",
+      "address": "Address na tinype niya: {{address}}",
+      "take": "Ako na",
+      "done": "Tapos na",
+      "settled": "Naka-sign up na. Susunod: ang bago mong address",
+      "settledMine": "Sa sarili mong browser"
+    }
+  }
+}

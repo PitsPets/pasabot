@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "Frage vom Agenten",
+    "send": "Antwort senden",
+    "answered": "Beantwortet: {{answer}}",
+    "expired": "Keine rechtzeitige Antwort. Der Agent hat ohne sie weitergemacht.",
+    "cancelled": "Der Agent wartet nicht mehr darauf.",
+    "pickMany": "Wähle eine oder mehrere Optionen"
+  },
+  "form": {
+    "submit": "Senden",
+    "sent": "Gesendet",
+    "required": "Pflichtfeld",
+    "invalid": "Prüfe {{field}}.",
+    "expired": "Dieses Formular wurde geschlossen, bevor es gesendet wurde.",
+    "yes": "Ja",
+    "no": "Nein"
+  },
+  "html": {
+    "note": "Vom Agenten erstellt. Läuft getrennt von PasaBot und kann dein Konto nicht sehen.",
+    "frame": "Agentenseite: {{title}}"
+  },
+  "files": {
+    "open": "{{name}} öffnen",
+    "download": "{{name}} herunterladen",
+    "close": "Schließen",
+    "zip": "ZIP-Archiv",
+    "file": "Datei",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "Dateien anhängen",
+    "title": "Dateien senden",
+    "caption": "Nachricht (optional)",
+    "send": "Senden",
+    "cancel": "Abbrechen",
+    "remove": "{{name}} entfernen",
+    "uploading": "Wird hochgeladen: {{pct}} %",
+    "tooBig": "{{name}} ist größer als 100 MB.",
+    "tooMuch": "Die Dateien einer Nachricht dürfen zusammen höchstens 250 MB groß sein.",
+    "failed": "Hochladen fehlgeschlagen. {{reason}}",
+    "limits": "Bis zu 100 MB pro Datei, 250 MB pro Nachricht."
+  },
+  "error": "Senden nicht möglich. {{reason}}",
+  "tools": {
+    "richchat_ask": "Die Person fragen",
+    "richchat_form": "Formular anfragen",
+    "richchat_html": "HTML anzeigen",
+    "richchat_share_file": "Dem Besitzer eine Datei geben"
+  },
+  "card": {
+    "file": {
+      "title": "{{name}} ist fertig",
+      "text": "Gerade von {{agent}} erstellt."
+    }
+  }
+}

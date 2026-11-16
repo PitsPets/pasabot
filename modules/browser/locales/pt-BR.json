@@ -1,0 +1,113 @@
+{
+  "nav": "Navegador",
+  "page": {
+    "title": "Navegador",
+    "intro": "Perfis de navegador que seus agentes podem usar. Cada um guarda seus próprios cookies e logins, cor e proxy. Acompanhe um ao vivo, conduza você mesmo ou destaque-o enquanto conversa.",
+    "empty": "Ainda não há perfis de navegador. Os agentes criam um na primeira vez que navegam, ou você pode adicionar um agora.",
+    "ownerOnly": "Somente o owner pode ver e usar perfis de navegador."
+  },
+  "badge": {
+    "running": "Em execução",
+    "loggedIn": "Tem seus logins",
+    "proxy": "Proxy"
+  },
+  "profile": {
+    "via": "Por meio de {{server}}",
+    "loggedInNote": "Os agentes precisam pedir a você, com sua senha ou passkey, antes de usar este perfil.",
+    "defaultName": "Navegador do agente"
+  },
+  "actions": {
+    "new": "Novo perfil",
+    "watch": "Assistir",
+    "start": "Iniciar",
+    "stop": "Parar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "deleteConfirm": "Excluir {{name}} com seus cookies e logins? Isso não pode ser desfeito.",
+    "pip": "Destacar",
+    "full": "Tela cheia",
+    "closePip": "Fechar",
+    "closeView": "Fechar visualização"
+  },
+  "form": {
+    "newTitle": "Novo perfil de navegador",
+    "editTitle": "Editar perfil de navegador",
+    "name": "Nome",
+    "color": "Cor",
+    "proxy": "Proxy (opcional)",
+    "proxyHint": "http://, https:// ou socks5:// com host e porta. Vale a partir da próxima vez que o navegador iniciar.",
+    "bypass": "Não usar o proxy para",
+    "username": "Usuário do proxy",
+    "password": "Senha do proxy",
+    "passwordVault": "Guardada no cofre, nunca mais exibida.",
+    "passwordKeep": "Deixe vazio para manter a senha salva.",
+    "loggedIn": "Este perfil tem meus logins (os agentes precisam pedir antes)",
+    "save": "Salvar",
+    "cancel": "Cancelar"
+  },
+  "live": {
+    "title": "{{name}} ao vivo",
+    "alt": "Visualização ao vivo do navegador {{name}}",
+    "waiting": "Aguardando a primeira imagem…",
+    "stopped": "Este navegador não está em execução."
+  },
+  "steer": {
+    "address": "Endereço",
+    "go": "Abrir",
+    "type": "Digitar na página",
+    "typeHint": "Clique antes em um campo na imagem. Digitar marca este perfil como tendo seus logins.",
+    "send": "Digitar"
+  },
+  "keys": {
+    "Enter": "Enter",
+    "Tab": "Tab",
+    "Backspace": "Backspace",
+    "Escape": "Esc",
+    "up": "Rolar para cima",
+    "down": "Rolar para baixo"
+  },
+  "network": {
+    "title": "Endereços locais",
+    "allowHosts": "Hosts que o navegador pode abrir na sua rede",
+    "hint": "Endereços privados e de loopback são bloqueados, a menos que estejam listados aqui, separados por vírgulas.",
+    "save": "Salvar",
+    "saved": "Salvo."
+  },
+  "pip": {
+    "label": "Navegador em picture-in-picture"
+  },
+  "dock": {
+    "label": "Navegador",
+    "idle": "Nenhum navegador em execução no momento."
+  },
+  "tools": {
+    "browser_navigate": "Navegador: abrir uma página",
+    "browser_snapshot": "Navegador: ler a página",
+    "browser_click": "Navegador: clicar",
+    "browser_type": "Navegador: digitar em um campo"
+  },
+  "server": {
+    "yourTurn": "Sua vez no navegador"
+  },
+  "find": {
+    "navHint": "Deixe um agente usar o navegador",
+    "navKeywords": "web, navegar, site, internet"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Deixe um ajudante usar o navegador"
+    },
+    "page": {
+      "intro": "Navegadores que seus ajudantes podem usar. Cada um guarda os próprios logins, cor e ajustes. Assista ao vivo, conduza você mesmo ou destaque-o enquanto conversa.",
+      "empty": "Nenhum navegador ainda. Um ajudante cria um na primeira vez que navega, ou você pode adicionar agora."
+    },
+    "profile": {
+      "loggedInNote": "Os ajudantes precisam pedir a você, com sua senha ou chave de acesso, antes de usar este navegador.",
+      "defaultName": "Navegador do ajudante"
+    },
+    "form": {
+      "passwordVault": "Guardado com segurança neste computador, nunca mais mostrado.",
+      "loggedIn": "Este navegador tem meus logins (os ajudantes precisam perguntar antes)"
+    }
+  }
+}

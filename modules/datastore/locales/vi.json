@@ -1,0 +1,66 @@
+{
+  "nav": "Dữ liệu",
+  "page": {
+    "title": "Dữ liệu dùng chung",
+    "intro": "Các bảng mà agent của bạn dùng chung. Mọi agent đều đọc được mọi bảng, nên ghi chú riêng tư hãy để trong bộ nhớ của agent, không phải ở đây.",
+    "size": "Đang dùng {{used}} trên {{max}}",
+    "details": "Agent tạo bảng được tự do thêm và sửa các dòng; thay đổi của agent khác tuân theo quy tắc phê duyệt của bạn dành cho agent đó (xóa dòng luôn hỏi bạn). Chỉ người tạo mới được thay đổi cấu trúc hoặc xóa bảng, và việc xóa luôn hỏi bạn.",
+    "more": "Tìm hiểu thêm"
+  },
+  "refresh": "Làm mới",
+  "loading": "Đang tải…",
+  "empty": "Chưa có bảng nào. Khi agent tạo bảng, nó sẽ hiện ở đây.",
+  "error": "Không tải được dữ liệu. {{reason}}",
+  "table": {
+    "rows_other": "{{count}} dòng",
+    "columns_other": "{{count}} cột",
+    "by": "Tạo bởi {{name}}",
+    "byUnknown": "Không rõ người tạo",
+    "removedAgent": "một agent đã bị xóa",
+    "ddl": "Cách bảng được định nghĩa",
+    "showRows": "Hiện các dòng",
+    "hideRows": "Ẩn các dòng",
+    "rowsOf": "Các dòng của {{name}}"
+  },
+  "cell": {
+    "null": "trống",
+    "blob": "(dữ liệu tệp)"
+  },
+  "result": {
+    "count_other": "{{count}} dòng",
+    "countMore_other": "{{count}} dòng đầu tiên; còn nữa"
+  },
+  "query": {
+    "title": "Tra cứu",
+    "label": "Truy vấn (chỉ đọc)",
+    "hint": "Một câu lệnh SELECT. Màn hình này không bao giờ thay đổi dữ liệu.",
+    "run": "Chạy truy vấn",
+    "result": "Kết quả truy vấn",
+    "error": "Không chạy được truy vấn. {{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "Liệt kê bảng dùng chung",
+    "datastore_create_table": "Tạo bảng dùng chung",
+    "datastore_query": "Truy vấn bảng dùng chung",
+    "datastore_write": "Ghi hàng",
+    "datastore_alter_table": "Sửa bảng bạn đã tạo",
+    "datastore_drop_table": "Xóa bảng bạn đã tạo"
+  },
+  "find": {
+    "navHint": "Bảng và dữ liệu tác tử lưu",
+    "navKeywords": "dữ liệu, bảng, cơ sở dữ liệu, bản ghi"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Bảng và danh sách trợ lý lưu giữ"
+    },
+    "page": {
+      "intro": "Các bảng mà trợ lý dùng chung. Trợ lý nào cũng đọc được mọi bảng, nên ghi chú riêng hãy để trong trí nhớ của trợ lý, không phải ở đây.",
+      "details": "Trợ lý tạo bảng được tự do thêm và sửa hàng; thay đổi của trợ lý khác theo quy tắc duyệt của bạn cho trợ lý đó (xóa hàng luôn hỏi bạn). Chỉ người tạo mới đổi cấu trúc hoặc xóa bảng, và xóa luôn hỏi bạn."
+    },
+    "empty": "Chưa có bảng. Khi trợ lý tạo một bảng, nó hiện ở đây.",
+    "table": {
+      "removedAgent": "một trợ lý đã xóa"
+    }
+  }
+}

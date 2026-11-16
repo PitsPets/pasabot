@@ -1,0 +1,110 @@
+{
+  "nav": "Agent-Aufgaben",
+  "page": {
+    "title": "Agent-Aufgaben",
+    "intro": "Arbeit, die sich deine Agents gegenseitig gegeben haben: Nachrichten, delegierte Aufgaben, Übergaben und Dateien. Jede läuft mit der niedrigeren Vertrauensstufe der beiden Agents.",
+    "empty": "Noch kein Agent hat einem anderen Agent Arbeit gegeben.",
+    "reload": "Aktualisieren"
+  },
+  "kind": {
+    "delegate": "Delegiert",
+    "message": "Nachricht",
+    "handoff": "Übergabe",
+    "file": "Datei"
+  },
+  "state": {
+    "queued": "Wartet",
+    "leased": "Startet",
+    "running": "Arbeitet",
+    "done": "Erledigt",
+    "failed": "Fehlgeschlagen",
+    "cancelled": "Gestoppt",
+    "interrupted": "Unterbrochen"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "Läuft mit Vertrauensstufe {{trust}}",
+    "acked": "Bestätigt",
+    "ackWaiting": "Wartet auf Bestätigung",
+    "reply": "Antwort"
+  },
+  "trust": {
+    "guarded": "geschützt",
+    "standard": "Standard",
+    "trusted": "vertrauenswürdig"
+  },
+  "team": {
+    "open": "Team",
+    "openLead": "Team · {{lead}} leitet",
+    "title": "Wer diesen Agenten nutzen darf",
+    "lead": "Leitung (beantwortet neue Nachrichten)",
+    "leadHint": "Nur die Leitung antwortet hier den Leuten. Wähle einen anderen Agent, um die Leitung zu übergeben.",
+    "makeLead": "Zur Leitung machen",
+    "isLead": "Leitet gerade",
+    "state": {
+      "active": "Aktiv",
+      "stopped": "Gestoppt",
+      "archived": "Archiviert"
+    },
+    "stop": "Alle Arbeit stoppen",
+    "stopHint": "Bricht ab, was die Agents hier gerade tun, und hält neue Nachrichten zurück, bis du fortfährst.",
+    "resume": "Fortsetzen",
+    "archive": "Kanal archivieren",
+    "archiveConfirm": "Zum Archivieren nochmal tippen",
+    "silentTitle": "Wenn die Leitung schweigt",
+    "silentRetry": "Leitung noch einmal fragen",
+    "on": "An",
+    "off": "Aus",
+    "backup": "Dann antworten mit",
+    "backupNone": "Niemand (sag mir stattdessen Bescheid)",
+    "backupModel": "Ersatzmodell (optional)",
+    "backupHint": "Wenn die Leitung nach dem neuen Versuch nicht antwortet, beantwortet dieser Anbieter die Nachricht an ihrer Stelle.",
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "error": "Das hat nicht geklappt: {{message}}"
+  },
+  "subagent": {
+    "start": "Sub-Agent {{name}} gestartet",
+    "end": "Sub-Agent {{name}} fertig"
+  },
+  "reactions": {
+    "label": "{{emoji}} von {{count}}",
+    "group": "Reaktionen",
+    "button": "Reagieren",
+    "add": "Reaktion hinzufügen",
+    "pick": "Reaktion auswählen",
+    "react": "Mit {{emoji}} reagieren",
+    "remove": "Dein {{emoji}} entfernen"
+  },
+  "tools": {
+    "collab_agents": "Agenten auflisten",
+    "collab_delegate": "Aufgabe abgeben",
+    "collab_message": "Agenten anschreiben",
+    "collab_handoff": "Übergeben",
+    "collab_status": "Aufgabenstatus",
+    "collab_wait": "Auf eine Aufgabe warten",
+    "collab_interrupt": "Aufgabe unterbrechen",
+    "collab_ack": "Aufgabe bestätigen",
+    "collab_react": "Auf eine Nachricht reagieren",
+    "collab_send_file": "Datei an einen Agenten senden"
+  },
+  "server": {
+    "silent": "{{name}} antwortet nicht in {{chat}}",
+    "aChannel": "einem Kanal"
+  },
+  "find": {
+    "navHint": "Agenten arbeiten gemeinsam an einer Aufgabe",
+    "navKeywords": "Team, gemeinsam, Gruppe, zusammenarbeiten"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Helfer, die gemeinsam an einer Aufgabe arbeiten"
+    },
+    "nav": "Aufgaben der Helfer",
+    "page": {
+      "title": "Aufgaben der Helfer",
+      "intro": "Arbeit, die deine Helfer einander gegeben haben: Nachrichten, weitergegebene Aufgaben, Übergaben und Dateien. Jede läuft mit der vorsichtigeren Einstellung der beiden Helfer.",
+      "empty": "Noch hat kein Helfer einem anderen Arbeit gegeben."
+    }
+  }
+}

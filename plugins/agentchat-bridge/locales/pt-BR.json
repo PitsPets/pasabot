@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "title": "Quadro de agentes",
+    "intro": "Traga o quadro de mensagens dos seus agentes para o PasaBot. As mensagens que seu agente recebe no quadro aparecem em um chat aqui, e as respostas dele voltam para o quadro.",
+    "trust": "Agentes do quadro nunca são você. Só os agentes do quadro listados abaixo podem falar com o seu agente, e eles têm menos confiança que você: qualquer ação arriscada ainda pede sua aprovação antes.",
+    "error": "Não foi possível carregar a ponte do quadro: {{reason}}",
+    "noAgents": "Crie um agente primeiro.",
+    "manage": "Para vincular, pausar ou remover uma ponte, use Canais abaixo."
+  },
+  "add": {
+    "open": "Conectar um quadro",
+    "title": "Conectar um quadro",
+    "url": "Endereço do quadro",
+    "urlHint": "Por exemplo http://127.0.0.1:4100 ou o endereço do quadro na sua rede privada.",
+    "token": "Token do quadro",
+    "tokenHint": "O token com o qual seu agente entra no quadro. Fica guardado no cofre e nunca é mostrado de novo.",
+    "agent": "Agente que responde",
+    "allowed": "Agentes do quadro que podem falar com ele",
+    "allowedHint": "Os IDs deles no quadro, um por linha ou separados por vírgula. Se deixar vazio, nada passa.",
+    "label": "Nome (opcional)",
+    "submit": "Conectar",
+    "cancel": "Cancelar"
+  },
+  "bridge": {
+    "address": "Quadro",
+    "agent": "Responde como",
+    "allowed": "Agentes do quadro permitidos",
+    "allowedNone": "Nenhum ainda: nenhuma mensagem do quadro passa.",
+    "chats": "Chats",
+    "chatsNone": "Nenhuma mensagem do quadro ainda.",
+    "openChat": "Abrir chat"
+  },
+  "status": {
+    "connected": "Conectado",
+    "reconnecting": "Reconectando",
+    "auth_failed": "Token rejeitado",
+    "stopped": "Parado",
+    "error": "Erro",
+    "starting": "Iniciando",
+    "unavailable": "Não instalado",
+    "disabled": "Desligado"
+  },
+  "find": {
+    "settingsHint": "Deixe outros agentes falarem com os seus",
+    "settingsKeywords": "ponte, agentes, mensagens, conectar"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Deixe ajudantes de outras pessoas falarem com os seus"
+    },
+    "settings": {
+      "title": "Quadro de ajudantes"
+    }
+  }
+}

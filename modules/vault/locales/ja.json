@@ -1,0 +1,119 @@
+{
+  "title": "シークレットボールト",
+  "intro": "エージェントが使うキーやパスワードです。エージェントには {{example}} のような参照だけが渡され、値はこのサーバーに残り、返信、ログ、チャンネルのいずれにも表示されません。",
+  "loading": "ボールトを読み込み中…",
+  "error": "ボールトを読み込めませんでした：{{reason}}",
+  "unavailable": "このサーバーではボールトがロックされています（パスフレーズもキーチェーンもありません）。ボールトを使うには、ボールトのパスフレーズを指定してサーバーを起動してください。",
+  "requests": {
+    "title": "キーを求めているエージェント",
+    "asks": "{{agent}}が{{name}}を求めています",
+    "untrusted": "このリクエストの発端となったやり取りは、オーナー以外が開始したものです。入力する前に、本当に必要か確認してください。",
+    "fill": "キーを渡す",
+    "decline": "拒否",
+    "filled": "{{agent}}は{{reference}}を使えるようになりました。",
+    "declined": "リクエストを拒否しました。"
+  },
+  "secrets": {
+    "title": "保存済みのシークレット",
+    "empty": "シークレットはまだありません。",
+    "shared": "共有（サーバー）",
+    "for": "{{agent}}用",
+    "remove": "削除",
+    "confirmRemove": "{{name}}を削除しますか？これを使っているエージェントは、再び追加するまで動作しなくなります。",
+    "module": "このほか {{count}} 件のエントリがチャンネルとパスワードマネージャーに属しています。",
+    "backend_local": "ここに保存",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "{{brain}} のキー。これで動くエージェントはこのキーを見ることができます。"
+  },
+  "add": {
+    "title": "シークレットを追加",
+    "open": "シークレットを追加",
+    "name": "名前",
+    "nameHint": "英字、数字、_ . - が使えます（エージェントは {{example}} と記述します）。",
+    "who": "使用できる対象",
+    "shared": "共有（サーバーのみ、エージェントは不可）",
+    "source": "値の取得元",
+    "source_local": "値を入力",
+    "source_bitwarden": "Bitwarden のアイテム",
+    "source_1password": "1Password の参照",
+    "value": "値",
+    "valueHint": "書き込み専用：再表示はされません。",
+    "ref_bitwarden": "Bitwarden のアイテム ID",
+    "refHint_bitwarden": "アイテム ID、または ID/フィールド（password、username、notes、totp、またはカスタムフィールド）。",
+    "ref_1password": "シークレット参照",
+    "refHint_1password": "例：op://Private/GitHub/token",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "saved": "{{name}}を保存しました。",
+    "brainOption": "{{brain}} のキー"
+  },
+  "backends": {
+    "title": "パスワードマネージャー",
+    "intro": "PasaBot は、このサーバー上の Bitwarden（bw）または 1Password（op）のコマンドラインツールを通じて値を読み取ります。ここには参照のみが保存されます。",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "セッションキー（bw unlock で取得）",
+    "token_1password": "サービスアカウントトークン",
+    "tokenHint": "書き込み専用です。削除するには、空欄のまま保存してください。",
+    "set": "キー保存済み",
+    "notSet": "キー未保存",
+    "save": "キーを保存",
+    "test": "テスト",
+    "state_ready": "準備完了",
+    "state_locked": "ロック中、またはサインインしていません",
+    "state_not_installed": "サーバーにコマンドラインツールがインストールされていません",
+    "state_unsafe_bin": "オフ（ツールの場所が安全ではありません）",
+    "unsafeHint": "オフになっています：このサーバーのユーザーがツールのファイルを変更できるため、エージェントがすり替えられる可能性があります。システムフォルダーにインストールし（または PASABOT_BW_BIN / PASABOT_OP_BIN にそのパスを設定し）、再起動してください。",
+    "state_error": "動作していません"
+  },
+  "rotate": {
+    "title": "ボールトのキーをローテーション",
+    "intro": "新しい暗号化キーを作成し、すべてのシークレットを再暗号化します。値は変わりません。",
+    "button": "キーをローテーション",
+    "confirm": "新しいキーですべてのシークレットを今すぐ再暗号化しますか？",
+    "yes": "今すぐローテーション",
+    "cancel": "キャンセル",
+    "done": "{{count}}件のシークレットを新しいキーで再暗号化しました。",
+    "last": "前回のローテーション：{{when}}。"
+  },
+  "tools": {
+    "vault_request_secret": "オーナーにキーを頼む",
+    "vault_list_secrets": "自分のキー一覧"
+  },
+  "server": {
+    "asksForKey": "{{agent}}がキーを求めています: {{name}}"
+  },
+  "find": {
+    "settingsHint": "パスワードと鍵を安全に保管",
+    "settingsKeywords": "パスワード, 鍵, シークレット, トークン, 認証情報"
+  },
+  "plain": {
+    "title": "保存した秘密",
+    "intro": "お手伝いが使うキーやパスワードです。お手伝いには {{example}} のような参照だけが渡され、値はこのサーバーに残り、返信、ログ、チャンネルのいずれにも表示されません。",
+    "backends": {
+      "intro": "PasaBot は、このサーバー上の Bitwarden（bw）または 1Password（op）のコマンドラインツールを通じて値を読み取ります。ここには参照のみが保存されます。",
+      "token_1password": "サービスアカウントトークン"
+    },
+    "rotate": {
+      "title": "ボールトのキーをローテーション"
+    },
+    "secrets": {
+      "title": "ここに保存しているもの",
+      "forBrain": "{{brain}} のキー。これで考えるお手伝いが使えます。",
+      "confirmRemove": "{{name}} を削除しますか？使っているお手伝いは、もう一度追加するまで動かなくなります。"
+    },
+    "requests": {
+      "title": "キーを求めているお手伝い"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} があなたの {{name}} のキーを必要としています",
+      "text": "{{agent}} は使えますが、見ることはありません。渡せるのはあなただけ（金庫で）。",
+      "give": "キーを渡す",
+      "given": "キーを保存しました。もう使えます",
+      "declined": "渡していません"
+    }
+  }
+}

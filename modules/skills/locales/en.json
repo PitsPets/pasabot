@@ -1,0 +1,200 @@
+{
+  "nav": "Skills",
+  "page": {
+    "title": "Skills",
+    "intro": "Playbooks your agents can follow. Switch a skill on per agent; every edit keeps the earlier revisions."
+  },
+  "loading": "Loading skills…",
+  "empty": "No skills yet. Write one or install one below.",
+  "error": "Something went wrong: {{reason}}",
+  "add": {
+    "title": "Add a skill",
+    "method": "How",
+    "create": "Write a new skill",
+    "folder": "From a folder on the server",
+    "git": "From a git URL",
+    "zip": "From a bundle (.zip)",
+    "name": "Name",
+    "nameHint": "Lowercase words joined by dashes, e.g. supplier-quotes",
+    "description": "When to use it",
+    "descriptionHint": "One line, e.g. “Use when preparing a quote for a client”",
+    "instructions": "Instructions",
+    "path": "Folder path",
+    "pathHint": "The full path of a folder with a SKILL.md, on the machine PasaBot runs on",
+    "url": "Git URL",
+    "urlHint": "An https address of a repository; it is pinned to the commit it has now",
+    "ref": "Branch or tag (optional)",
+    "subdir": "Folder inside the repository (optional)",
+    "zipFile": "Bundle file",
+    "zipMissing": "Choose a .zip file first",
+    "safety": "Nothing in a skill is run when it is installed. It starts switched off for every agent.",
+    "createButton": "Create skill",
+    "installButton": "Install",
+    "builtins": "Built-in skills you removed:",
+    "builtinButton": "Add back {{name}}",
+    "open": "Add",
+    "cancel": "Cancel",
+    "cardHint": "Write a new skill, or install one from a folder, a git URL or a .zip.",
+    "nameMissing": "Give it a name first",
+    "descriptionMissing": "Say when to use it first",
+    "instructionsMissing": "Write its instructions first"
+  },
+  "item": {
+    "rev": "Revision {{rev}}",
+    "builtin": "Built-in",
+    "agentMade": "Made by an agent ({{trust}})",
+    "off": "Off",
+    "agents_one": "On for {{count}} agent",
+    "agents_other": "On for {{count}} agents",
+    "open": "Open",
+    "openNamed": "Open {{name}}"
+  },
+  "detail": {
+    "back": "Back to all skills",
+    "source": "Source: {{source}}",
+    "agentMadeNote": "An agent wrote or changed this skill. Read it before switching it on for other agents.",
+    "agents": "Who can use it",
+    "enabled": "Skill is on",
+    "noAgents": "No agents yet.",
+    "onFor": "{{name}}",
+    "uninstall": "Uninstall",
+    "confirmUninstall": "Yes, uninstall with all revisions",
+    "cancel": "Cancel"
+  },
+  "edit": {
+    "title": "SKILL.md",
+    "hint": "Saving makes a new revision. The name in the front matter stays the same.",
+    "label": "Skill text",
+    "files": "Files: {{files}}",
+    "save": "Save as new revision",
+    "saved": "Saved as a new revision.",
+    "unchanged": "Nothing changed."
+  },
+  "rev": {
+    "title": "Revisions",
+    "label": "Revision {{rev}}",
+    "current": "current",
+    "byOwner": "by you",
+    "byBuiltin": "built-in",
+    "byAgent": "by {{name}}",
+    "rollback": "Roll back to {{rev}}",
+    "rolledBack": "Rolled back: the text of revision {{rev}} is now the newest revision."
+  },
+  "perm": {
+    "choose": "What this skill may use",
+    "workspaceOnly": "Files: only its agent’s own workspace",
+    "hosts": "Websites it may reach",
+    "hostsHint": "One per line, like example.com or *.example.com. Leave empty for none.",
+    "messagingAsk": "May send messages to other people (each one still asks you first)",
+    "before": "Permissions to record for this skill:",
+    "files": "Files",
+    "filesWorkspace": "Only its agent’s workspace",
+    "filesWorkspacePlus": "Its agent’s workspace, plus {{paths}}",
+    "filesPaths": "Only {{paths}}",
+    "filesNone": "No files",
+    "network": "Network",
+    "networkNone": "No websites",
+    "messaging": "Messages to other people",
+    "messagingYes": "Yes, and each one asks you first",
+    "messagingNo": "No",
+    "none": "No permissions recorded for this skill.",
+    "proposed": "Proposed permissions",
+    "proposedIntro": "An imported agent or an agent asked for these. Nothing is recorded until you approve. New items are marked.",
+    "approve": "Approve",
+    "reject": "Reject",
+    "scope": "Recorded only: these limits are checked when a run is bound to this skill. Ordinary chat turns are not limited by them yet.",
+    "tools": "Tools",
+    "toolsNone": "No tools",
+    "toolsAsk": "Tools it may call",
+    "toolsHint": "One per line. A tool from an outside connection is written server/tool. Leave empty for none.",
+    "outside": "outside tool",
+    "new": "new",
+    "removed": "No longer: {{items}}",
+    "was": "Was: {{what}}",
+    "first": "Nothing is approved for this skill yet; everything below is new.",
+    "widens": "This changes the permissions you approved before.",
+    "changed": "This request changed after you opened it. Look at the new version below before you decide.",
+    "unsaved": "{{name}} is installed, but its permissions were not saved ({{reason}}).",
+    "retry": "Save permissions again",
+    "uninstall": "Remove the skill",
+    "hostsTooMany": "List at most 50 websites.",
+    "hostBad": "Write each website as a name only, like example.com or *.example.com (no https:// or paths, at most 253 characters).",
+    "toolsTooMany": "List at most 200 tools.",
+    "toolBad": "Write each tool as its name only, without spaces (at most 200 characters)."
+  },
+  "tools": {
+    "skills_list": "List skills",
+    "skills_read": "Read a skill",
+    "skills_create": "Create a skill",
+    "skills_install": "Install a skill from git",
+    "skills_revise": "Revise a skill",
+    "skills_uninstall": "Uninstall a skill"
+  },
+  "builtin": {
+    "datastore-guide": "Use when you need to keep structured records (lists, logs, inventories, prices) that other agents may also read, using the shared PasaBot datastore tools.",
+    "site-publisher": "Use when the owner wants a small web page or static site (a report, a menu, a shareable list) published on this PasaBot server.",
+    "skill-author": "Use when the owner asks you to turn a way of working into a reusable skill, or to improve a skill you made earlier."
+  },
+  "find": {
+    "navHint": "Extra abilities for your agents",
+    "navKeywords": "skills, abilities, add-ons, know-how"
+  },
+  "plain": {
+    "nav": "Your helpers' abilities",
+    "find": {
+      "navHint": "Teach your helpers new things they can do"
+    },
+    "page": {
+      "title": "Your helpers' abilities",
+      "intro": "Step-by-step guides your helpers can follow. Switch each one on per helper; every edit keeps the earlier versions."
+    },
+    "loading": "Loading…",
+    "empty": "Nothing here yet. Write one or add one below.",
+    "add": {
+      "title": "Add an ability",
+      "create": "Write a new ability",
+      "folder": "From a folder on this computer",
+      "safety": "Nothing in it runs when you add it. It starts switched off for every helper.",
+      "createButton": "Make this ability",
+      "builtins": "Built-in abilities you removed:",
+      "cardHint": "Write one yourself, or bring one in from a file."
+    },
+    "item": {
+      "agentMade": "Made by a helper ({{trust}})",
+      "agents_one": "On for {{count}} helper",
+      "agents_other": "On for {{count}} helpers"
+    },
+    "detail": {
+      "back": "Back to the list",
+      "agentMadeNote": "A helper wrote or changed this. Read it before switching it on for other helpers.",
+      "enabled": "It is on",
+      "noAgents": "No helpers yet."
+    },
+    "edit": {
+      "label": "Its text"
+    },
+    "perm": {
+      "choose": "What it may use",
+      "workspaceOnly": "Files: only its helper’s own folder",
+      "before": "Permissions to note down for it:",
+      "filesWorkspace": "Only its helper’s own folder",
+      "filesWorkspacePlus": "Its helper’s own folder, plus {{paths}}",
+      "none": "No permissions noted yet.",
+      "proposedIntro": "A helper, or one brought in from a file, asked for these. Nothing is noted until you approve. New items are marked.",
+      "scope": "Noted only: these limits are checked when a job is tied to it. Ordinary chats are not limited by them yet.",
+      "toolsHint": "One per line. A tool from an outside app is written app/tool. Leave empty for none.",
+      "first": "Nothing is approved for it yet; everything below is new.",
+      "uninstall": "Remove it"
+    },
+    "builtin": {
+      "datastore-guide": "Helps a helper keep tidy lists and records (logs, stock, prices) that other helpers can read too.",
+      "site-publisher": "Helps a helper make a small web page (a report, a menu, a list to share) and put it online from this computer.",
+      "skill-author": "Helps a helper turn a way of working into an ability it can reuse, or improve one it made before."
+    },
+    "builtinTitle": {
+      "datastore-guide": "Keeping lists and records",
+      "site-publisher": "Making small web pages",
+      "skill-author": "Learning new ways of working"
+    }
+  }
+}

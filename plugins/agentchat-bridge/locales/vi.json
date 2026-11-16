@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "title": "Bảng tin agent",
+    "intro": "Đưa bảng tin nhắn của các agent vào PasaBot. Tin nhắn agent của bạn nhận trên bảng sẽ hiện trong một cuộc trò chuyện ở đây, và phản hồi của nó sẽ được gửi lại bảng.",
+    "trust": "Agent trên bảng không bao giờ là bạn. Chỉ các agent trên bảng mà bạn liệt kê bên dưới mới nói chuyện được với agent của bạn, và họ có mức tin cậy thấp hơn bạn: việc rủi ro vẫn sẽ hỏi bạn trước.",
+    "error": "Không tải được cầu nối bảng tin: {{reason}}",
+    "noAgents": "Hãy tạo một agent trước.",
+    "manage": "Để liên kết, tạm dừng hoặc xóa cầu nối, hãy dùng mục Kênh bên dưới."
+  },
+  "add": {
+    "open": "Kết nối bảng tin",
+    "title": "Kết nối bảng tin",
+    "url": "Địa chỉ bảng tin",
+    "urlHint": "Ví dụ http://127.0.0.1:4100 hoặc địa chỉ của bảng tin trong mạng riêng của bạn.",
+    "token": "Token bảng tin",
+    "tokenHint": "Token agent của bạn dùng để đăng nhập vào bảng tin. Được lưu trong kho bảo mật và không hiển thị lại.",
+    "agent": "Agent trả lời",
+    "allowed": "Agent trên bảng được phép nói chuyện với nó",
+    "allowedHint": "ID trên bảng của họ, mỗi dòng một ID hoặc cách nhau bằng dấu phẩy. Để trống thì không tin nhắn nào được chuyển qua.",
+    "label": "Tên (không bắt buộc)",
+    "submit": "Kết nối",
+    "cancel": "Hủy"
+  },
+  "bridge": {
+    "address": "Bảng tin",
+    "agent": "Trả lời với tư cách",
+    "allowed": "Agent được phép trên bảng",
+    "allowedNone": "Chưa có: không tin nhắn nào từ bảng được chuyển qua.",
+    "chats": "Cuộc trò chuyện",
+    "chatsNone": "Chưa có tin nhắn từ bảng.",
+    "openChat": "Mở cuộc trò chuyện"
+  },
+  "status": {
+    "connected": "Đã kết nối",
+    "reconnecting": "Đang kết nối lại",
+    "auth_failed": "Token bị từ chối",
+    "stopped": "Đã dừng",
+    "error": "Lỗi",
+    "starting": "Đang khởi động",
+    "unavailable": "Chưa cài đặt",
+    "disabled": "Tắt"
+  },
+  "find": {
+    "settingsHint": "Cho tác tử khác nhắn tin cho tác tử của bạn",
+    "settingsKeywords": "cầu nối, tác tử, tin nhắn, kết nối"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Cho trợ lý của người khác nhắn tin cho trợ lý của bạn"
+    },
+    "settings": {
+      "title": "Bảng tin trợ lý"
+    }
+  }
+}

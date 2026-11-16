@@ -1,0 +1,29 @@
+{
+  "name": "@pasabot/provider-opencode",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "pasabot": {
+    "kind": "provider",
+    "entry": "./dist/index.js",
+    "source": "./src/index.ts"
+  },
+  "dependencies": {
+    "@pasabot/core": "workspace:*",
+    "execa": "^9.6.0"
+  },
+  "devDependencies": {
+    "@pasabot/protocol": "workspace:*"
+  }
+}

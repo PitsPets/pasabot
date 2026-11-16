@@ -1,0 +1,64 @@
+{
+  "title": "Modelos locais",
+  "intro": "Rode agentes em um modelo neste computador (Ollama, LM Studio) ou na sua rede local. Nada sai da sua rede, e os agentes nunca podem adicionar um endereço aqui.",
+  "empty": "Nenhum modelo local ainda.",
+  "found": {
+    "text": "{{name}} encontrado em {{url}} ({{count}} modelos).",
+    "use": "Adicionar"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "Compatível com OpenAI (LM Studio)"
+  },
+  "scope": {
+    "loopback": "Este computador",
+    "lan": "Rede local"
+  },
+  "warning": {
+    "lan": "Este endereço está na sua rede local, não neste computador. Quem controla essa máquina vê os prompts e pode responder como se fosse o modelo."
+  },
+  "models": {
+    "loading": "Procurando modelos…",
+    "unreachable": "Sem resposta neste endereço.",
+    "none": "Nenhum modelo encontrado. Baixe um no Ollama ou no LM Studio primeiro.",
+    "tools": "Ferramentas",
+    "toolsTry": "Ferramentas, se houver suporte",
+    "chatOnly": "Só chat: ferramentas desligadas"
+  },
+  "tools": {
+    "label": "Ferramentas",
+    "auto": "Usar ferramentas quando o modelo oferecer suporte",
+    "off": "Só chat (ferramentas desligadas)"
+  },
+  "use": "Agentes e reservas agora podem escolher o cérebro {{id}}.",
+  "refresh": "Atualizar modelos",
+  "remove": {
+    "button": "Remover",
+    "confirm": "Sim, remover",
+    "cancel": "Manter"
+  },
+  "add": {
+    "title": "Adicionar modelo local",
+    "name": "Nome",
+    "api": "Tipo",
+    "url": "Endereço",
+    "urlHint": "Um endereço IP ou localhost, por exemplo http://127.0.0.1:11434 (Ollama) ou http://127.0.0.1:1234/v1 (LM Studio).",
+    "check": "Verificar",
+    "submit": "Adicionar",
+    "reachable": "Respondendo: {{count}} modelos."
+  },
+  "offlineHint": "Coloque um modelo local nas reservas de um agente (Cérebros e reservas) e marque uma rotina como \"Executar mesmo offline\": quando o cérebro principal não puder ser acessado, essa rotina roda no modelo local e avisa.",
+  "find": {
+    "settingsHint": "Rode um cérebro neste computador",
+    "settingsKeywords": "local, offline, modelo, privado"
+  },
+  "plain": {
+    "title": "Cérebros locais",
+    "intro": "Rode ajudantes em um cérebro neste computador (Ollama, LM Studio) ou na sua rede local. Nada sai da sua rede, e os ajudantes nunca podem adicionar um endereço aqui.",
+    "empty": "Nenhum cérebro local ainda.",
+    "add": {
+      "title": "Adicionar cérebro local"
+    },
+    "offlineHint": "Coloque um cérebro local nas reservas de um ajudante (Cérebros e reservas) e marque uma rotina como \"Executar mesmo offline\": quando o cérebro principal não puder ser acessado, essa rotina roda no cérebro local e avisa."
+  }
+}

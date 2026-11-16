@@ -1,0 +1,113 @@
+{
+  "nav": "Navegador",
+  "page": {
+    "title": "Navegador",
+    "intro": "Perfiles de navegador que tus agentes pueden usar. Cada uno guarda sus propias cookies e inicios de sesión, color y proxy. Míralo en vivo, contrólalo tú mismo o ábrelo en una ventana flotante mientras chateas.",
+    "empty": "Aún no hay perfiles de navegador. Los agentes crean uno la primera vez que navegan, o puedes agregar uno ahora.",
+    "ownerOnly": "Solo el owner puede ver y usar los perfiles de navegador."
+  },
+  "badge": {
+    "running": "En ejecución",
+    "loggedIn": "Tiene tus inicios de sesión",
+    "proxy": "Proxy"
+  },
+  "profile": {
+    "via": "A través de {{server}}",
+    "loggedInNote": "Los agentes deben pedirte permiso, con tu contraseña o passkey, antes de usar este perfil.",
+    "defaultName": "Navegador del agente"
+  },
+  "actions": {
+    "new": "Nuevo perfil",
+    "watch": "Ver",
+    "start": "Iniciar",
+    "stop": "Detener",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "deleteConfirm": "¿Eliminar {{name}} con sus cookies e inicios de sesión? Esta acción no se puede deshacer.",
+    "pip": "Abrir flotante",
+    "full": "Vista completa",
+    "closePip": "Cerrar",
+    "closeView": "Cerrar vista"
+  },
+  "form": {
+    "newTitle": "Nuevo perfil de navegador",
+    "editTitle": "Editar perfil de navegador",
+    "name": "Nombre",
+    "color": "Color",
+    "proxy": "Proxy (opcional)",
+    "proxyHint": "http://, https:// o socks5:// con host y puerto. Se aplica la próxima vez que se inicie el navegador.",
+    "bypass": "Omitir el proxy para",
+    "username": "Usuario del proxy",
+    "password": "Contraseña del proxy",
+    "passwordVault": "Se guarda en la bóveda y no se vuelve a mostrar.",
+    "passwordKeep": "Déjalo vacío para conservar la contraseña guardada.",
+    "loggedIn": "Este perfil tiene mis inicios de sesión (los agentes deben pedir permiso primero)",
+    "save": "Guardar",
+    "cancel": "Cancelar"
+  },
+  "live": {
+    "title": "{{name}} en vivo",
+    "alt": "Vista en vivo del navegador {{name}}",
+    "waiting": "Esperando la primera imagen…",
+    "stopped": "Este navegador no está en ejecución."
+  },
+  "steer": {
+    "address": "Dirección",
+    "go": "Abrir",
+    "type": "Escribir en la página",
+    "typeHint": "Primero haz clic en un campo de la imagen. Al escribir, este perfil se marca como que tiene tus inicios de sesión.",
+    "send": "Escribir"
+  },
+  "keys": {
+    "Enter": "Enter",
+    "Tab": "Tab",
+    "Backspace": "Backspace",
+    "Escape": "Esc",
+    "up": "Desplazar hacia arriba",
+    "down": "Desplazar hacia abajo"
+  },
+  "network": {
+    "title": "Direcciones locales",
+    "allowHosts": "Hosts que el navegador puede abrir en tu red",
+    "hint": "Las direcciones privadas y de loopback están bloqueadas a menos que aparezcan aquí, separadas por comas.",
+    "save": "Guardar",
+    "saved": "Guardado."
+  },
+  "pip": {
+    "label": "Navegador en ventana flotante"
+  },
+  "dock": {
+    "label": "Navegador",
+    "idle": "No hay ningún navegador en ejecución ahora."
+  },
+  "tools": {
+    "browser_navigate": "Navegador: abrir una página",
+    "browser_snapshot": "Navegador: leer la página",
+    "browser_click": "Navegador: hacer clic",
+    "browser_type": "Navegador: escribir en un campo"
+  },
+  "server": {
+    "yourTurn": "Te toca en el navegador"
+  },
+  "find": {
+    "navHint": "Deja que un agente use el navegador",
+    "navKeywords": "web, navegar, sitio, internet"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Deja que un ayudante use el navegador"
+    },
+    "page": {
+      "intro": "Navegadores que pueden usar tus ayudantes. Cada uno guarda sus propios inicios de sesión, color y ajustes. Míralo en vivo, guíalo tú o sácalo aparte mientras chateas.",
+      "empty": "Aún no hay navegadores. Un ayudante crea uno la primera vez que navega, o puedes añadirlo ahora."
+    },
+    "profile": {
+      "loggedInNote": "Los ayudantes deben pedírtelo, con tu contraseña o llave de acceso, antes de usar este navegador.",
+      "defaultName": "Navegador del ayudante"
+    },
+    "form": {
+      "passwordVault": "Guardado a salvo en esta computadora, nunca se vuelve a mostrar.",
+      "loggedIn": "Este navegador tiene mis inicios de sesión (los ayudantes deben preguntar antes)"
+    }
+  }
+}

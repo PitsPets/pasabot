@@ -1,0 +1,28 @@
+{
+  "country": "TH",
+  "name": "Thailand",
+  "stores": [
+    {
+      "id": "shopee",
+      "name": "Shopee",
+      "homeUrl": "https://shopee.co.th/",
+      "searchUrl": "https://shopee.co.th/search?keyword={query}",
+      "allowedHosts": ["shopee.co.th", "*.shopee.co.th", "*.susercontent.com"],
+      "currency": "THB",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "lazada",
+      "name": "Lazada",
+      "homeUrl": "https://www.lazada.co.th/",
+      "searchUrl": "https://www.lazada.co.th/catalog/?q={query}",
+      "allowedHosts": ["lazada.co.th", "*.lazada.co.th", "*.slatic.net", "*.lazcdn.com"],
+      "currency": "THB",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "Token ng bot",
+    "botTokenHint": "Kunin sa Bot page ng application mo sa Discord developer portal. I-on doon ang Message Content intent. Nakatago sa vault at hindi na ipapakita ulit.",
+    "apiBase": "Address ng API",
+    "gatewayUrl": "Address ng gateway",
+    "advancedHint": "Huwag nang baguhin ang mga ito maliban kung alam mong kailangan."
+  },
+  "link": {
+    "howTo": "I-direct message ang bot mo ng: /link {{code}}",
+    "dmOnly": "Gumagana lang ang link code sa direct message sa bot."
+  },
+  "status": {
+    "connected": "Nakakonekta",
+    "reconnecting": "Kumokonekta ulit…",
+    "auth_failed": "Hindi tinanggap ng Discord ang bot (tingnan ang token at ang Message Content intent)",
+    "stopped": "Nakahinto"
+  }
+}

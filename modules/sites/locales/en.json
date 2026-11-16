@@ -1,0 +1,58 @@
+{
+  "nav": "Sites",
+  "page": {
+    "title": "Sites",
+    "intro": "Small web pages your agents published. They open on the separate sites address, run in a sandbox and cannot use your sign-in. Each one expires unless it is renewed."
+  },
+  "refresh": "Refresh",
+  "loading": "Loading…",
+  "empty": "No sites yet. When an agent publishes one, it shows up here.",
+  "error": "Could not load the sites. {{reason}}",
+  "tunnel": {
+    "title": "Address from outside",
+    "label": "Tunnel address for sites",
+    "hint": "Optional. If your own tunnel points at the sites address, paste its address here (for example https://sites.example.net). Public sites then show it.",
+    "save": "Save address",
+    "saved": "Saved.",
+    "none": "No tunnel address set, so no site can be public yet."
+  },
+  "site": {
+    "by": "Published by {{name}}",
+    "byRemoved": "Published by a removed agent",
+    "files_one": "{{count}} file",
+    "files_other": "{{count}} files",
+    "expires": "Expires {{when}}",
+    "public": "Public",
+    "private": "Private",
+    "open": "Open site",
+    "openPublic": "Public address",
+    "renew": "Keep 7 more days",
+    "makePublic": "Make public",
+    "makePrivate": "Make private",
+    "remove": "Remove",
+    "confirmRemove": "Remove \"{{title}}\"? Its address stops working at once.",
+    "list": "Files"
+  },
+  "tools": {
+    "sites_publish": "Publish a static site",
+    "sites_list": "List your sites",
+    "sites_renew": "Renew a site",
+    "sites_unpublish": "Remove a site"
+  },
+  "find": {
+    "navHint": "Websites your agents build and host",
+    "navKeywords": "website, web page, publish, host"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Websites your helpers make and put online"
+    },
+    "page": {
+      "intro": "Small web pages your helpers published. They open on their own separate address, are kept apart from the app and cannot use your sign-in. Each one expires unless it is renewed."
+    },
+    "empty": "No sites yet. When a helper publishes one, it shows up here.",
+    "site": {
+      "byRemoved": "Published by a removed helper"
+    }
+  }
+}

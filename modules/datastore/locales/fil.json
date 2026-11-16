@@ -1,0 +1,70 @@
+{
+  "nav": "Data",
+  "page": {
+    "title": "Pinagsasaluhang data",
+    "intro": "Mga table na pinagsasaluhan ng mga agent mo. Nababasa ng lahat ng agent ang bawat table, kaya sa memory ng agent ilagay ang mga pribadong tala, hindi rito.",
+    "size": "Nagamit na ang {{used}} sa {{max}}",
+    "details": "Malayang nakakapagdagdag at nakakapagbago ng row ang agent na gumawa ng table; sumusunod naman sa mga patakaran mo sa approval para sa agent na iyon ang pagbabago ng ibang agent (laging nagtatanong muna sa iyo bago magbura ng row). Ang gumawa lang ang puwedeng magbago ng ayos ng table o magbura nito, at laging nagtatanong muna sa iyo bago magbura.",
+    "more": "Alamin pa"
+  },
+  "refresh": "I-refresh",
+  "loading": "Naglo-load…",
+  "empty": "Wala pang table. Lalabas dito kapag may ginawa ang isang agent.",
+  "error": "Hindi ma-load ang data. {{reason}}",
+  "table": {
+    "rows_one": "{{count}} row",
+    "rows_other": "{{count}} na row",
+    "columns_one": "{{count}} column",
+    "columns_other": "{{count}} na column",
+    "by": "Gawa ni {{name}}",
+    "byUnknown": "Hindi alam kung sino ang gumawa",
+    "removedAgent": "isang inalis na agent",
+    "ddl": "Paano ito naka-define",
+    "showRows": "Ipakita ang mga row",
+    "hideRows": "Itago ang mga row",
+    "rowsOf": "Mga row ng {{name}}"
+  },
+  "cell": {
+    "null": "walang laman",
+    "blob": "(file data)"
+  },
+  "result": {
+    "count_one": "{{count}} row",
+    "count_other": "{{count}} na row",
+    "countMore_one": "Unang {{count}} row; marami pa",
+    "countMore_other": "Unang {{count}} na row; marami pa"
+  },
+  "query": {
+    "title": "Maghanap ng data",
+    "label": "Query (pagbasa lang)",
+    "hint": "Isang SELECT statement. Hindi binabago ng screen na ito ang data.",
+    "run": "Patakbuhin ang query",
+    "result": "Resulta ng query",
+    "error": "Hindi tumakbo ang query. {{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "Ilista ang mga shared table",
+    "datastore_create_table": "Gumawa ng shared table",
+    "datastore_query": "Mag-query sa mga shared table",
+    "datastore_write": "Magsulat ng mga row",
+    "datastore_alter_table": "Baguhin ang table na ginawa mo",
+    "datastore_drop_table": "Burahin ang table na ginawa mo"
+  },
+  "find": {
+    "navHint": "Mga table at datos na iniingatan ng agent",
+    "navKeywords": "datos, table, database, rekord"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Mga table at listahang iniingatan ng mga katulong mo"
+    },
+    "page": {
+      "intro": "Mga table na pinagsasaluhan ng mga katulong mo. Nababasa ng bawat katulong ang lahat ng table, kaya sa alaala ng katulong ilagay ang mga pribadong tala, hindi rito.",
+      "details": "Malayang nakakapagdagdag at nakakapagbago ng row ang katulong na gumawa ng table; sumusunod naman sa mga patakaran mo sa pag-apruba ang pagbabago ng ibang katulong (laging nagtatanong muna sa iyo bago magbura ng row). Ang gumawa lang ang puwedeng magbago ng ayos ng table o magbura nito, at laging nagtatanong muna sa iyo bago magbura."
+    },
+    "empty": "Wala pang table. Lalabas dito kapag may ginawa ang isang katulong.",
+    "table": {
+      "removedAgent": "isang inalis na katulong"
+    }
+  }
+}

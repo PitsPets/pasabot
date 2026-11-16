@@ -1,0 +1,26 @@
+{
+  "nav": "Recherche",
+  "title": "Rechercher des messages",
+  "label": "Rechercher dans vos chats",
+  "placeholder": "Saisissez un mot",
+  "hint": "Trouve les mots dans tous vos chats, du plus récent au plus ancien.",
+  "empty": "Aucun résultat.",
+  "untitled": "Discussion",
+  "count_one": "{{count}} message",
+  "count_many": "{{count}} de messages",
+  "count_other": "{{count}} messages",
+  "author": {
+    "user": "Personne",
+    "agent": "Agent",
+    "system": "PasaBot",
+    "external": "Extérieur"
+  },
+  "error": "Échec de la recherche. {{reason}}",
+  "tools": {
+    "search_messages": "Chercher dans les messages"
+  },
+  "find": {
+    "navHint": "Retrouver un message dans vos discussions",
+    "navKeywords": "trouver, chercher, messages, historique"
+  }
+}

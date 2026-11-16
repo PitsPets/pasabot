@@ -1,0 +1,151 @@
+{
+  "nav": "預算",
+  "page": {
+    "title": "預算",
+    "intro": "你的 agent 花了多少、你付的價格，以及讓它們停下來的上限。價格只來自你的價格表：沒有設定價格的模型，絕不會自行猜測。"
+  },
+  "spend": {
+    "title": "支出",
+    "today": "今天",
+    "month": "本月",
+    "total": "總計",
+    "none": "尚無支出。",
+    "byAgent": "依 agent",
+    "byModel": "依模型",
+    "runs": "{{count}} 次執行",
+    "tokens": "輸入 {{input}}・輸出 {{output}}・快取 {{cache}}",
+    "priceNotSet": "未設定價格",
+    "unpriced": "有 {{count}} 次執行尚未設定價格，未計入。"
+  },
+  "prices": {
+    "title": "價格表",
+    "intro": "以每百萬 token 計價，每個模型使用一種幣別。你的 agent 用過的模型會顯示在這裡；設定價格後才會計入。",
+    "model": "模型",
+    "default": "（預設模型）",
+    "input": "輸入",
+    "output": "輸出",
+    "cached": "快取",
+    "currency": "幣別",
+    "save": "儲存價格",
+    "saved": "價格已儲存。",
+    "remove": "移除價格",
+    "add": "新增模型",
+    "provider": "大腦",
+    "empty": "尚無模型。agent 首次回覆後就會出現。",
+    "providerMissing": "請先寫上大腦的名字"
+  },
+  "caps": {
+    "title": "上限",
+    "intro": "達到上限時，agent 會正常停止、新工作會等待，routine 則會略過。只有你可以調高上限。",
+    "everyone": "所有 agent",
+    "day": "每日",
+    "month": "每月",
+    "none": "無上限",
+    "spent": "{{spent}} / {{cap}} {{currency}}",
+    "save": "儲存上限",
+    "saved": "上限已儲存。",
+    "uncovered": "在上限所用幣別中設定價格之前，不會計入任何上限：{{models}}。",
+    "oneCurrency": "上限與價格必須使用同一種幣別。請先將它們改成相同幣別。"
+  },
+  "card": {
+    "who": {
+      "global": "所有 agent",
+      "agent": "{{name}}"
+    },
+    "reached": "{{who}}已達{{period}}預算上限：{{spent}} / {{cap}} {{currency}}。",
+    "period": {
+      "day": "每日",
+      "month": "每月"
+    },
+    "stopped": "{{name}} 已停止。目前已寫下的內容會保留。",
+    "held": "新工作會等到上限重設或你調高上限後再進行。",
+    "skipped": "已略過一次 routine 執行。",
+    "ask": "要調高上限還是維持不變？",
+    "newCap": "新上限（{{currency}}）",
+    "raise": "調高上限",
+    "keep": "維持上限",
+    "raised": "上限已調高至 {{cap}} {{currency}}。",
+    "kept": "上限維持在 {{cap}} {{currency}}。",
+    "failed": "操作失敗。只有 owner 可以變更上限。"
+  },
+  "bundle": {
+    "title": "轉移 agent（加密）",
+    "intro": "將 agent 的設定、記憶、工作區、skill 與聊天打包成單一檔案，並以密語鎖定。匯入時一律會建立新的 agent。",
+    "agent": "代理",
+    "passphrase": "密語",
+    "passphraseHint": "至少 8 個字元。沒有密語就無法開啟檔案。",
+    "vault": "包含此 agent 的保險庫項目",
+    "vaultHint": "預設關閉。需要再次輸入你的密碼。",
+    "password": "你的密碼",
+    "export": "下載加密檔案",
+    "exported": "檔案已下載。",
+    "file": "封裝檔案",
+    "import": "匯入為新 agent",
+    "imported": "已匯入為 {{name}}。",
+    "open": "開啟其聊天",
+    "error": {
+      "bad_passphrase_or_tampered": "密語錯誤，或檔案已被更動。未匯入任何內容。",
+      "unsafe_path": "檔案含有不安全的路徑。未匯入任何內容。",
+      "unsupported_version": "此檔案由較新版本的 PasaBot 產生。未匯入任何內容。",
+      "not_a_bundle": "這不是 PasaBot 的 agent 檔案。",
+      "reauth_required": "包含保險庫項目需要輸入你的密碼。",
+      "builtin_agent": "團隊建立助手是 PasaBot 的一部分，因此不會儲存為檔案。你的其他代理可以。",
+      "other": "操作失敗。"
+    }
+  },
+  "server": {
+    "allAgents": "所有智慧體",
+    "capHeadDay": "{{what}} 已達到每日預算（{{spent}} / {{cap}} {{currency}}）。",
+    "capHeadMonth": "{{what}} 已達到每月預算（{{spent}} / {{cap}} {{currency}}）。",
+    "capStopped": "{{name}} 已停止；目前寫下的內容會保留。",
+    "capHeld": "新工作會等到上限重設或你調高上限。",
+    "capSkipped": "已跳過一次例行任務執行。",
+    "capCard": "{{head}}{{tail}}"
+  },
+  "find": {
+    "navHint": "代理的支出上限",
+    "navKeywords": "預算, 上限, 錢, 封頂, 支出"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助理的花費上限"
+    },
+    "page": {
+      "intro": "你的助理花多少錢、你付的價格，以及讓它們停下的上限。價格只來自你的表：沒有價格的大腦絕不猜測。"
+    },
+    "spend": {
+      "byAgent": "按助理",
+      "byModel": "按大腦版本"
+    },
+    "prices": {
+      "intro": "每一百萬段文字的價格，每個大腦版本一種貨幣。你的助理用過的版本會顯示在這裡；設定價格才會計算。",
+      "model": "大腦版本",
+      "default": "（常用版本）",
+      "add": "新增版本",
+      "empty": "還沒有。助理第一次回覆後就會出現。"
+    },
+    "caps": {
+      "intro": "達到上限時，助理會穩妥停下，新工作等待，例行工作略過。只有你能提高上限。",
+      "everyone": "所有助理",
+      "uncovered": "在有上限貨幣的價格前，不計入任何上限：{{models}}。"
+    },
+    "card": {
+      "who": {
+        "global": "所有助理"
+      }
+    },
+    "bundle": {
+      "title": "搬移助理（加鎖檔案）",
+      "intro": "一個檔案，包含助理的設定、記憶、檔案、本領和聊天，用通關密語加鎖。匯入時總會新建一個助理。",
+      "agent": "助理",
+      "vault": "包括這個助理儲存的秘密",
+      "file": "助理檔案",
+      "import": "作為新助理匯入",
+      "error": {
+        "not_a_bundle": "這不是 PasaBot 助理檔案。",
+        "reauth_required": "要包括儲存的秘密，需要你的密碼。",
+        "builtin_agent": "團隊搭建者是 PasaBot 的一部分，不會存成檔案。你的其他助理可以。"
+      }
+    }
+  }
+}

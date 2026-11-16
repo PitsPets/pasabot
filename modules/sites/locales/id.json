@@ -1,0 +1,57 @@
+{
+  "nav": "Situs",
+  "page": {
+    "title": "Situs",
+    "intro": "Halaman web kecil yang diterbitkan agent Anda. Dibuka di alamat situs terpisah, berjalan dalam sandbox, dan tidak dapat menggunakan login Anda. Setiap situs akan kedaluwarsa kecuali diperpanjang."
+  },
+  "refresh": "Muat ulang",
+  "loading": "Memuat…",
+  "empty": "Belum ada situs. Saat agent menerbitkannya, situs akan muncul di sini.",
+  "error": "Gagal memuat situs. {{reason}}",
+  "tunnel": {
+    "title": "Alamat dari luar",
+    "label": "Alamat tunnel untuk situs",
+    "hint": "Opsional. Jika tunnel Anda sendiri mengarah ke alamat situs, tempel alamatnya di sini (misalnya https://sites.example.net). Situs publik kemudian akan menampilkannya.",
+    "save": "Simpan alamat",
+    "saved": "Tersimpan.",
+    "none": "Alamat tunnel belum diatur, sehingga belum ada situs yang bisa dibuat publik."
+  },
+  "site": {
+    "by": "Diterbitkan oleh {{name}}",
+    "byRemoved": "Diterbitkan oleh agent yang sudah dihapus",
+    "files_other": "{{count}} file",
+    "expires": "Kedaluwarsa {{when}}",
+    "public": "Publik",
+    "private": "Pribadi",
+    "open": "Buka situs",
+    "openPublic": "Alamat publik",
+    "renew": "Perpanjang 7 hari",
+    "makePublic": "Jadikan publik",
+    "makePrivate": "Jadikan pribadi",
+    "remove": "Hapus",
+    "confirmRemove": "Hapus \"{{title}}\"? Alamatnya langsung berhenti berfungsi.",
+    "list": "File"
+  },
+  "tools": {
+    "sites_publish": "Terbitkan situs statis",
+    "sites_list": "Daftar situs Anda",
+    "sites_renew": "Perpanjang situs",
+    "sites_unpublish": "Hapus situs"
+  },
+  "find": {
+    "navHint": "Situs web buatan agen Anda",
+    "navKeywords": "situs web, halaman, terbitkan, hosting"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Situs web yang dibuat dan dipasang online oleh pembantu Anda"
+    },
+    "page": {
+      "intro": "Halaman web kecil yang diterbitkan pembantumu. Terbuka di alamat terpisah, terpisah dari aplikasi, dan tidak bisa memakai info masukmu. Masing-masing kedaluwarsa kecuali diperpanjang."
+    },
+    "empty": "Belum ada situs. Saat pembantu menerbitkan satu, akan muncul di sini.",
+    "site": {
+      "byRemoved": "Diterbitkan pembantu yang sudah dihapus"
+    }
+  }
+}

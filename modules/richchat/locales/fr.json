@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "Question de l'agent",
+    "send": "Envoyer la réponse",
+    "answered": "Réponse : {{answer}}",
+    "expired": "Pas de réponse à temps. L'agent a continué sans.",
+    "cancelled": "L'agent a cessé d'attendre cette réponse.",
+    "pickMany": "Choisissez une option ou plus"
+  },
+  "form": {
+    "submit": "Envoyer",
+    "sent": "Envoyé",
+    "required": "Obligatoire",
+    "invalid": "Vérifiez {{field}}.",
+    "expired": "Ce formulaire a été fermé avant l'envoi.",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "html": {
+    "note": "Créé par l'agent. S'exécute séparément de PasaBot et ne peut pas voir votre compte.",
+    "frame": "Page de l'agent : {{title}}"
+  },
+  "files": {
+    "open": "Ouvrir {{name}}",
+    "download": "Télécharger {{name}}",
+    "close": "Fermer",
+    "zip": "Archive ZIP",
+    "file": "Fichier",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "Joindre des fichiers",
+    "title": "Envoyer des fichiers",
+    "caption": "Message (facultatif)",
+    "send": "Envoyer",
+    "cancel": "Annuler",
+    "remove": "Retirer {{name}}",
+    "uploading": "Envoi en cours {{pct}} %",
+    "tooBig": "{{name}} dépasse 100 Mo.",
+    "tooMuch": "Les fichiers d'un même message peuvent totaliser 250 Mo au maximum.",
+    "failed": "Échec de l'envoi. {{reason}}",
+    "limits": "Jusqu'à 100 Mo par fichier, 250 Mo par message."
+  },
+  "error": "Envoi impossible. {{reason}}",
+  "tools": {
+    "richchat_ask": "Demander à la personne",
+    "richchat_form": "Demander un formulaire",
+    "richchat_html": "Afficher du HTML",
+    "richchat_share_file": "Remettre un fichier au propriétaire"
+  },
+  "card": {
+    "file": {
+      "title": "{{name}} est prêt",
+      "text": "Fait par {{agent}} à l’instant."
+    }
+  }
+}

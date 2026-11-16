@@ -1,0 +1,55 @@
+{
+  "settings": "Automation",
+  "intro": "Hayaang magpagawa ang mga script sa computer na ito sa isang agent gamit ang pasabot run o ang local API. May sariling switch at mga token ang bawat agent. Hanggang Standard lang ang tiwala ng token, kaya hihingi pa rin muna sa iyo ng pahintulot ang anumang delikado.",
+  "loadError": "Hindi ma-load ang mga setting ng automation.",
+  "noAgents": "Wala pang agent.",
+  "agent": {
+    "switch": "Payagan ang automation para kay {{name}}",
+    "on": "Bukas",
+    "off": "Sarado",
+    "tokens": "{{count}} aktibong token"
+  },
+  "form": {
+    "title": "Bagong token para kay {{name}}",
+    "label": "Pangalan ng token",
+    "labelHint": "Kung saan ito gagamitin, hal. \"mga script sa laptop\".",
+    "expiry": "Mag-e-expire",
+    "days30": "Sa loob ng 30 araw",
+    "days90": "Sa loob ng 90 araw",
+    "days365": "Sa loob ng isang taon",
+    "never": "Hindi kailanman",
+    "remote": "Payagan din mula sa ibang device (hindi lang sa computer na ito)",
+    "remoteHint": "Iwanang sarado maliban kung kailangan ito ng script sa ibang makina. Hindi kailanman magagamit ng web page ang token.",
+    "create": "Gumawa ng token",
+    "creating": "Ginagawa…"
+  },
+  "created": {
+    "title": "Kopyahin na ang token na ito",
+    "body": "Isang beses lang ito ipapakita. Itago sa ligtas na lugar, gaya ng password manager.",
+    "copy": "Kopyahin",
+    "copied": "Nakopya na",
+    "usage": "Subukan:",
+    "done": "Tapos na"
+  },
+  "list": {
+    "title": "Mga token",
+    "empty": "Wala pang token.",
+    "revoke": "Bawiin",
+    "revoked": "Binawi na",
+    "expires": "Mag-e-expire {{when}}",
+    "noExpiry": "Hindi mag-e-expire",
+    "lastUsed": "Huling ginamit {{when}}",
+    "neverUsed": "Hindi pa nagagamit",
+    "remote": "Pinapayagan ang ibang device",
+    "localOnly": "Sa computer na ito lang"
+  },
+  "find": {
+    "settingsHint": "Mga webhook at trigger na nagpapaandar sa agent",
+    "settingsKeywords": "webhook, trigger, awtomasyon, pangyayari"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Pakilusin ang katulong kapag may nangyari"
+    }
+  }
+}

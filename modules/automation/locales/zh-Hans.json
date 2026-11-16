@@ -1,0 +1,55 @@
+{
+  "settings": "自动化",
+  "intro": "允许本机上的脚本通过 pasabot run 命令或本地 API 让智能体开始工作。每个智能体有各自的开关和令牌。令牌最高只有标准信任级别，因此有风险的操作仍会先询问你。",
+  "loadError": "无法加载自动化设置。",
+  "noAgents": "还没有智能体。",
+  "agent": {
+    "switch": "允许对 {{name}} 使用自动化",
+    "on": "开",
+    "off": "关",
+    "tokens": "{{count}} 个有效令牌"
+  },
+  "form": {
+    "title": "{{name}} 的新令牌",
+    "label": "令牌名称",
+    "labelHint": "用在哪里，例如“笔记本脚本”。",
+    "expiry": "有效期",
+    "days30": "30 天后",
+    "days90": "90 天后",
+    "days365": "一年后",
+    "never": "永不过期",
+    "remote": "同时允许其他设备使用（不限于本机）",
+    "remoteHint": "除非其他设备上的脚本需要，否则请保持关闭。浏览器页面永远无法使用令牌。",
+    "create": "创建令牌",
+    "creating": "正在创建…"
+  },
+  "created": {
+    "title": "请立即复制此令牌",
+    "body": "它只会显示这一次。请妥善保存，例如放进密码管理器。",
+    "copy": "复制",
+    "copied": "已复制",
+    "usage": "试一试：",
+    "done": "完成"
+  },
+  "list": {
+    "title": "令牌",
+    "empty": "还没有令牌。",
+    "revoke": "撤销",
+    "revoked": "已撤销",
+    "expires": "{{when}}到期",
+    "noExpiry": "永不过期",
+    "lastUsed": "上次使用：{{when}}",
+    "neverUsed": "从未使用",
+    "remote": "允许其他设备",
+    "localOnly": "仅限本机"
+  },
+  "find": {
+    "settingsHint": "启动智能体的 Webhook 和触发器",
+    "settingsKeywords": "Webhook, 触发器, 自动化, 事件"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "有事发生时让助手开始工作"
+    }
+  }
+}

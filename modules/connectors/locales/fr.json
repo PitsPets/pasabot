@@ -1,0 +1,208 @@
+{
+  "nav": "Connecteurs",
+  "page": {
+    "title": "Connecteurs",
+    "intro": "Des liens prêts à l'emploi vers des services externes. Ajoutez-en un, puis choisissez qui peut l'utiliser.",
+    "introTech": "Des liens prêts à l'emploi vers des services externes. Ajoutez-en un, puis choisissez sur la page Serveurs MCP quels agents peuvent l'utiliser."
+  },
+  "loading": "Chargement…",
+  "kind": {
+    "mcp-stdio": "S'exécute sur cette machine",
+    "mcp-http": "Service hébergé",
+    "oauth-api": "Connexion"
+  },
+  "status": {
+    "ready": "Ajouté",
+    "needs_auth": "Connexion ou clé requise",
+    "error": "Problème"
+  },
+  "oauth": {
+    "connected": "Connecté. Le connecteur est prêt.",
+    "denied": "La connexion a été annulée.",
+    "expired": "Ce lien de connexion a expiré. Réessayez.",
+    "failed": "La connexion a échoué. Vérifiez l'ID client et réessayez.",
+    "connectedApp": "Connecté. {{name}} est prêt.",
+    "failedApp": "La connexion à {{name}} n’a pas abouti. Réessayez."
+  },
+  "catalog": {
+    "title": "En ajouter",
+    "homepage": "À propos de ce service",
+    "install": "Ajouter {{name}}",
+    "custom": "Envie d'ajouter autre chose ?",
+    "customTech": "Vous avez l’adresse d’un serveur d’outils ?"
+  },
+  "install": {
+    "secretHint": "Enregistré dans le coffre. Les agents ne le voient jamais.",
+    "oauthHint": "Ce connecteur se connecte avec votre propre client OAuth. Créez-en un auprès du service et ajoutez-y cette adresse de retour.",
+    "redirect": "Adresse de retour :",
+    "clientId": "ID client OAuth",
+    "clientSecret": "Secret client OAuth (si le service vous en a fourni un)",
+    "clientSecretHint": "Enregistré dans le coffre.",
+    "save": "Ajouter",
+    "cancel": "Annuler"
+  },
+  "installed": {
+    "title": "Connectés",
+    "secrets": "Secrets conservés dans le coffre : {{names}}",
+    "mcpHint": "Choisissez quels agents peuvent l'utiliser :",
+    "foundHint": "Activez-le et choisissez qui peut l'utiliser :",
+    "mcpLink": "Serveurs MCP",
+    "appsLink": "Apps que les agents peuvent utiliser",
+    "signIn": "Se connecter",
+    "signInAgain": "Se reconnecter",
+    "remove": "Supprimer",
+    "removeConfirm": "Oui, supprimer"
+  },
+  "find": {
+    "navHint": "Connecter des apps et services",
+    "navKeywords": "applis, services, connecter, intégrations, comptes"
+  },
+  "search": {
+    "label": "Rechercher des apps",
+    "placeholder": "Rechercher des apps, par ex. « agenda »",
+    "none": "Aucune app ne correspond."
+  },
+  "state": {
+    "added": "Ajouté",
+    "ready": "Prêt à ajouter",
+    "needs_key": "Connexion ou clé requise",
+    "missing": "Absent de cet ordinateur"
+  },
+  "ready": {
+    "title": "Prêt à ajouter"
+  },
+  "missing": {
+    "line": "Nécessite {{name}}, qui n’est pas encore sur cet ordinateur.",
+    "get": "Obtenir {{name}}",
+    "ask": "Il faut {{name}}, qui n’est pas encore sur cet ordinateur. L'ajouter quand même ?",
+    "addAnyway": "Ajouter quand même"
+  },
+  "found": {
+    "title": "Trouvé sur cet ordinateur",
+    "intro": "Des outils que vous avez déjà configurés dans une autre app. Ajoutez-en un pour l'utiliser ici aussi.",
+    "introTech": "Des serveurs d’outils que vous avez déjà configurés dans une autre app. Ajoutez-en un pour l’utiliser ici aussi.",
+    "from": "Configuré dans {{app}}",
+    "keys": "Ses clés vont directement dans votre coffre et ne sont jamais affichées : {{names}}",
+    "keysAsk": "Il a des clés. Les copier aussi dans votre coffre ? Les agents ne les voient jamais.",
+    "confirm": "Oui, l’ajouter",
+    "blocked": {
+      "key-in-command": "Celui-ci garde une clé dans sa commande. Ajoutez-le plutôt vous-même :",
+      "unsupported": "PasaBot ne peut pas reprendre celui-ci tel quel. Ajoutez-le plutôt vous-même :"
+    }
+  },
+  "describe": {
+    "filesystem": "Permet aux agents de lire et modifier les fichiers d’un dossier de votre choix.",
+    "git": "Permet aux agents de consulter l’historique et les changements d’un dossier de code.",
+    "github": "Permet aux agents de travailler avec votre code, vos issues et vos pull requests GitHub.",
+    "github-remote": "Les mêmes outils GitHub, exécutés en ligne par GitHub. Rien à installer ici.",
+    "google-calendar": "Permet aux agents de lire votre Google Agenda.",
+    "time": "Donne aux agents l’heure partout dans le monde.",
+    "notion": "Les assistants trouvent, lisent et écrivent des pages dans votre Notion.",
+    "atlassian": "Les assistants consultent et mettent à jour votre travail Jira et vos pages Confluence.",
+    "trello": "Les assistants lisent vos tableaux Trello et déplacent ou ajoutent des cartes.",
+    "clickup": "Les assistants trouvent, ajoutent et mettent à jour vos tâches ClickUp.",
+    "intercom": "Les assistants consultent les discussions et contacts de vos clients dans Intercom.",
+    "stripe": "Les assistants vérifient vos paiements, clients et factures Stripe."
+  },
+  "adding": "Ajout…",
+  "server": {
+    "connected": "{{name}} est connecté. Posez-moi une question à son sujet."
+  },
+  "groups": {
+    "popular": "Populaires",
+    "files-notes": "Fichiers et notes",
+    "calendar-email": "Agenda et e-mail",
+    "work-tasks": "Travail et tâches",
+    "shop-money": "Achats et argent",
+    "social-chat": "Réseaux et discussions",
+    "other": "Autres"
+  },
+  "button": {
+    "add": "Ajouter",
+    "signIn": "Se connecter",
+    "code": "Code nécessaire",
+    "added": "Ajouté"
+  },
+  "signin": {
+    "lead": "{{name}} ouvre sa propre page pour que vous vous connectiez. Vous ne tapez rien ici.",
+    "can": "Votre assistant pourra :",
+    "ask": "Tout ce qui envoie, publie, paie ou supprime vous demande d’abord, à chaque fois.",
+    "go": "Continuer vers {{name}}",
+    "failed": "Impossible d’ouvrir la page de connexion de {{name}}. Réessayez dans un instant.",
+    "insecure": "{{name}} n’accepte la connexion que depuis une adresse sécurisée. Ouvrez PasaBot sur l’ordinateur où il tourne, ou à son adresse sécurisée (https), puis connectez-vous.",
+    "refused": "{{name}} n’a pas accepté la connexion de PasaBot. Réessayer n’y changera rien."
+  },
+  "code": {
+    "lead": "{{name}} vous donne un code à coller ici.",
+    "get": "Obtenir votre code",
+    "paste": "Collez votre code",
+    "test": "Tester et ajouter",
+    "bad": "Ce code n’a pas marché. Vérifiez que vous l’avez copié en entier.",
+    "unreachable": "Impossible de joindre {{name}}. Vérifiez votre connexion et réessayez.",
+    "failed": "Ça n’a pas marché : {{reason}}",
+    "refused": "{{name}} a répondu, mais ne fonctionne pas avec PasaBot pour l'instant. Réessayez plus tard."
+  },
+  "helpers": {
+    "title": "Qui peut l’utiliser",
+    "main": "assistant principal"
+  },
+  "connected": {
+    "title": "{{name}} est connecté",
+    "try": "Essayez de demander :",
+    "who": "Changer qui peut l’utiliser"
+  },
+  "try": {
+    "notion": {
+      "a": "Trouve mes notes Notion sur la prochaine réunion",
+      "b": "Crée une page Notion avec une liste de tâches pour cette semaine"
+    },
+    "atlassian": {
+      "a": "Quels tickets Jira me sont assignés ?",
+      "b": "Résume la dernière page Confluence modifiée par mon équipe"
+    },
+    "trello": {
+      "a": "Qu’y a-t-il sur mon tableau Trello aujourd’hui ?",
+      "b": "Ajoute une carte Trello : appeler le fournisseur vendredi"
+    },
+    "clickup": {
+      "a": "Quelles tâches ClickUp sont à rendre cette semaine ?",
+      "b": "Ajoute une tâche ClickUp : envoyer le devis demain"
+    },
+    "intercom": {
+      "a": "Montre mes dernières discussions Intercom",
+      "b": "Qui nous a écrit sur Intercom au sujet d’un remboursement ?"
+    },
+    "stripe": {
+      "a": "Combien ai-je encaissé sur Stripe cette semaine ?",
+      "b": "Liste mes factures Stripe impayées"
+    },
+    "generic": {
+      "a": "Que peux-tu faire avec {{name}} ?",
+      "b": "Montre-moi ce que tu vois dans {{name}}"
+    }
+  },
+  "plain": {
+    "nav": "Applis des assistants",
+    "page": {
+      "title": "Applis des assistants"
+    },
+    "oauth": {
+      "connected": "Connecté. L'appli est prête."
+    },
+    "install": {
+      "secretHint": "Gardé en sûreté sur cet ordinateur. Les assistants ne le voient jamais.",
+      "oauthHint": "Cette appli se connecte avec votre propre appli de connexion. Créez-en une sur le site du service et ajoutez-y cette adresse de retour.",
+      "clientId": "Identifiant de l'appli de connexion",
+      "clientSecret": "Mot de passe de l'appli de connexion (si le service vous en a donné un)",
+      "clientSecretHint": "Gardé en sûreté sur cet ordinateur."
+    },
+    "installed": {
+      "mcpHint": "Choisissez quels assistants peuvent l'utiliser :",
+      "appsLink": "Applis et outils des assistants"
+    },
+    "found": {
+      "keys": "Ses codes secrets sont gardés en sûreté et jamais affichés : {{names}}",
+      "keysAsk": "Il a des codes secrets. En garder aussi une copie ici ? Les assistants ne les voient jamais."
+    }
+  }
+}

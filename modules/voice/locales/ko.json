@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "눌러서 말하기",
+    "listening": "듣는 중… 손을 떼면 종료돼요",
+    "working": "음성을 텍스트로 변환하는 중…",
+    "title": "내 메시지",
+    "text": "말한 내용",
+    "send": "보내기",
+    "cancel": "취소",
+    "empty": "아무 소리도 들리지 않았어요. 마이크에 조금 더 가까이 대고 다시 시도하세요.",
+    "noMic": "이 브라우저에서는 마이크를 사용할 수 없어요.",
+    "denied": "마이크 접근이 차단되었어요. 말하려면 브라우저에서 허용해 주세요.",
+    "unavailable": "음성 입력이 설정되지 않았어요. 오너는 설정 → 음성에서 음성 인식 모델을 다운로드할 수 있어요.",
+    "failed": "녹음을 텍스트로 변환하지 못했어요. {{reason}}",
+    "browserNote": "브라우저의 음성 인식을 사용 중이에요."
+  },
+  "listen": {
+    "play": "듣기",
+    "stop": "중지",
+    "loading": "오디오 준비 중…",
+    "failed": "소리 내어 읽지 못했어요. {{reason}}"
+  },
+  "settings": {
+    "title": "음성",
+    "intro": "에이전트와 대화하고 답변을 소리로 들어 보세요. 음성 처리는 이 서버에서 실행되므로 내 목소리가 서버 밖으로 나가지 않아요.",
+    "engine": "음성 엔진",
+    "engineFake": "테스트 엔진",
+    "engineLocal": "이 서버",
+    "noPackage": "이 서버에 음성 엔진이 설치되어 있지 않아 브라우저 대체 기능을 사용해요.",
+    "stt": "음성 입력",
+    "tts": "음성 답변",
+    "ready": "준비됨: {{model}}",
+    "notReady": "모델 없음",
+    "models": "음성 모델",
+    "modelsIntro": "모델은 요청할 때만 음성 엔진의 공식 릴리스에서 다운로드돼요.",
+    "kindStt": "음성 입력",
+    "kindTts": "음성 답변",
+    "size": "약 {{mb}}MB",
+    "languages": "언어: {{list}}",
+    "installed": "설치됨",
+    "download": "{{name}} 다운로드",
+    "remove": "{{name}} 삭제",
+    "modelName": "{{model}} ({{note}})",
+    "noteMultilingual": "다국어",
+    "noteEnglish": "영어",
+    "downloading": "다운로드 중… {{pct}}",
+    "unpacking": "압축 푸는 중…",
+    "failedDownload": "다운로드 실패: {{reason}}",
+    "disabledUnpinned": "아직 사용할 수 없어요. PasaBot에 이 다운로드를 검증할 체크섬이 없어 꺼져 있어요.",
+    "ownerOnly": "모델 다운로드와 삭제는 오너만 할 수 있어요.",
+    "autoRead": "새 답변 자동으로 읽어 주기",
+    "autoReadHint": "이 기기에만 적용돼요.",
+    "browserStt": "설치된 모델이 없으면 브라우저의 음성 인식 사용",
+    "browserSttHint": "일부 브라우저는 음성을 인식하기 위해 제조사 서버로 음성을 보내요. 기본값은 꺼짐이에요.",
+    "loading": "불러오는 중…",
+    "error": "음성 설정을 불러오지 못했어요. {{reason}}"
+  },
+  "find": {
+    "settingsHint": "에이전트와 말하고 듣기",
+    "settingsKeywords": "음성, 말하기, 마이크, 듣기, 오디오"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "도우미와 말하고 듣기"
+    },
+    "settings": {
+      "intro": "도우미와 대화하고 답변을 소리로 들어 보세요. 음성 처리는 이 서버에서 실행되므로 내 목소리가 서버 밖으로 나가지 않아요.",
+      "engineLocal": "이 서버",
+      "notReady": "두뇌 없음",
+      "models": "음성 두뇌",
+      "modelsIntro": "두뇌은 요청할 때만 음성 엔진의 공식 릴리스에서 다운로드돼요.",
+      "browserStt": "설치된 두뇌이 없으면 브라우저의 음성 인식 사용",
+      "browserSttHint": "일부 브라우저는 음성을 인식하기 위해 제조사 서버로 음성을 보내요. 기본값은 꺼짐이에요."
+    }
+  }
+}

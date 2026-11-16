@@ -1,0 +1,119 @@
+{
+  "title": "보관함",
+  "intro": "agent가 사용하는 키와 비밀번호예요. agent는 {{example}} 같은 참조만 받아요. 값은 이 서버에만 남고 모든 답변, 로그, channel에서 가려져요.",
+  "loading": "vault를 불러오는 중…",
+  "error": "vault를 불러오지 못했어요: {{reason}}",
+  "unavailable": "이 서버의 vault가 잠겨 있어요(암호나 키체인이 없어요). vault를 쓰려면 vault 암호를 지정해 서버를 시작하세요.",
+  "requests": {
+    "title": "키를 요청한 agent",
+    "asks": "{{agent}}이(가) {{name}}을(를) 요청했어요",
+    "untrusted": "owner가 아닌 다른 사람이 이 요청이 나온 턴을 시작했어요. 정말 필요한지 확인한 뒤에 입력하세요.",
+    "fill": "키 제공",
+    "decline": "거절",
+    "filled": "이제 {{agent}}이(가) {{reference}}을(를) 사용할 수 있어요.",
+    "declined": "요청을 거절했어요."
+  },
+  "secrets": {
+    "title": "저장된 비밀",
+    "empty": "아직 비밀이 없어요.",
+    "shared": "공유 (서버)",
+    "for": "{{agent}} 전용",
+    "remove": "삭제",
+    "confirmRemove": "{{name}}을(를) 삭제할까요? 이를 사용하는 agent는 다시 추가하기 전까지 작동하지 않아요.",
+    "module": "channel과 비밀번호 관리자에 속한 항목이 {{count}}개 더 있어요.",
+    "backend_local": "여기에 저장됨",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "{{brain}} 키. 이 위에서 실행되는 에이전트는 이 키를 볼 수 있습니다."
+  },
+  "add": {
+    "title": "비밀 추가",
+    "open": "비밀 추가",
+    "name": "이름",
+    "nameHint": "영문, 숫자, _ . - 를 쓸 수 있어요(agent는 {{example}}처럼 써요).",
+    "who": "사용 가능한 대상",
+    "shared": "공유 (서버 전용, agent 제외)",
+    "source": "값의 출처",
+    "source_local": "값 직접 입력",
+    "source_bitwarden": "Bitwarden 항목",
+    "source_1password": "1Password 참조",
+    "value": "값",
+    "valueHint": "입력 전용이며 다시 표시되지 않아요.",
+    "ref_bitwarden": "Bitwarden 항목 ID",
+    "refHint_bitwarden": "항목 ID 또는 id/field(password, username, notes, totp 또는 사용자 지정 필드)예요.",
+    "ref_1password": "비밀 참조",
+    "refHint_1password": "예: op://Private/GitHub/token",
+    "save": "저장",
+    "cancel": "취소",
+    "saved": "{{name}}을(를) 저장했어요.",
+    "brainOption": "{{brain}} 키"
+  },
+  "backends": {
+    "title": "비밀번호 관리자",
+    "intro": "PasaBot은 이 서버의 Bitwarden(bw) 또는 1Password(op) 명령줄 도구로 값을 읽어요. 여기에는 참조만 저장돼요.",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "세션 키 (bw unlock에서 발급)",
+    "token_1password": "서비스 계정 토큰",
+    "tokenHint": "입력 전용이에요. 비운 채 저장하면 삭제돼요.",
+    "set": "키 저장됨",
+    "notSet": "저장된 키 없음",
+    "save": "키 저장",
+    "test": "테스트",
+    "state_ready": "준비됨",
+    "state_locked": "잠겼거나 로그인되지 않음",
+    "state_not_installed": "서버에 명령줄 도구가 설치되지 않음",
+    "state_unsafe_bin": "꺼짐 (안전하지 않은 도구 위치)",
+    "unsafeHint": "꺼짐: 이 서버의 사용자가 도구 파일을 바꿀 수 있어서 agent가 바꿔치기할 수 있어요. 시스템 폴더에 설치하거나(또는 PASABOT_BW_BIN / PASABOT_OP_BIN을 해당 경로로 지정하고) 다시 시작하세요.",
+    "state_error": "작동하지 않음"
+  },
+  "rotate": {
+    "title": "vault 키 교체",
+    "intro": "새 암호화 키를 만들어 모든 비밀을 다시 암호화해요. 값은 바뀌지 않아요.",
+    "button": "키 교체",
+    "confirm": "지금 새 키로 모든 비밀을 다시 암호화할까요?",
+    "yes": "지금 교체",
+    "cancel": "취소",
+    "done": "비밀 {{count}}개를 새 키로 다시 암호화했어요.",
+    "last": "마지막 교체: {{when}}"
+  },
+  "tools": {
+    "vault_request_secret": "소유자에게 키 요청",
+    "vault_list_secrets": "내 키 목록"
+  },
+  "server": {
+    "asksForKey": "{{agent}}이(가) 키를 요청해요: {{name}}"
+  },
+  "find": {
+    "settingsHint": "비밀번호와 키를 잠가 보관",
+    "settingsKeywords": "비밀번호, 키, 비밀, 토큰, 자격 증명"
+  },
+  "plain": {
+    "title": "저장된 비밀",
+    "intro": "agent가 사용하는 키와 비밀번호예요. agent는 {{example}} 같은 참조만 받아요. 값은 이 서버에만 남고 모든 답변, 로그, channel에서 가려져요.",
+    "backends": {
+      "intro": "PasaBot은 이 서버의 Bitwarden(bw) 또는 1Password(op) 명령줄 도구로 값을 읽어요. 여기에는 참조만 저장돼요.",
+      "token_1password": "서비스 계정 토큰"
+    },
+    "rotate": {
+      "title": "vault 키 교체"
+    },
+    "secrets": {
+      "title": "여기 저장된 것",
+      "forBrain": "{{brain}}용 키예요. 이것으로 생각하는 도우미가 쓸 수 있어요.",
+      "confirmRemove": "{{name}}을(를) 지울까요? 이걸 쓰는 도우미는 다시 추가할 때까지 멈춰요."
+    },
+    "requests": {
+      "title": "키를 요청한 도우미"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}}에게 {{name}} 키가 필요해요",
+      "text": "{{agent}}은(는) 쓸 수는 있지만 볼 수는 없어요. 금고에서 당신만 줄 수 있어요.",
+      "give": "키 주기",
+      "given": "키를 저장했어요. 이제 쓸 수 있어요",
+      "declined": "주지 않음"
+    }
+  }
+}

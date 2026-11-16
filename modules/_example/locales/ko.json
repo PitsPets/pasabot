@@ -1,0 +1,15 @@
+{
+  "nav": "예시",
+  "page": {
+    "title": "예시 모듈",
+    "body": "이 모듈은 Module SDK의 모든 슬롯을 채우고 있어요."
+  },
+  "settings": "예시 설정",
+  "composer": "메모 삽입",
+  "dock": "예시 패널",
+  "onboarding": "예시 온보딩 단계",
+  "note": "메모",
+  "tools": {
+    "example_echo": "에코"
+  }
+}

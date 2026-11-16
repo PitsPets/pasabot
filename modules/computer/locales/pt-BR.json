@@ -1,0 +1,143 @@
+{
+  "nav": "Computador",
+  "page": {
+    "title": "Uso do computador",
+    "intro": "Agentes que usam um computador ganham a própria tela. Cada captura de tela, clique e tecla pede sua aprovação antes. Acompanhe aqui e assuma o controle quando precisar.",
+    "empty": "Nenhum agente está usando uma tela agora. Uma é iniciada na primeira vez que você aprovar uma ação de computador de um agente."
+  },
+  "setup": {
+    "title": "Configurar o uso do computador",
+    "missing_bins": "Este servidor não tem {{list}}. Instale-os ou execute o PasaBot a partir da imagem de computador (deploy/computer).",
+    "unsupported": "O uso do computador não está disponível neste sistema operacional.",
+    "off": "O uso do computador está desativado neste servidor.",
+    "practice": "Tela de prática: um app de teste integrado, não um desktop real.",
+    "windows_soon": "Ainda não disponível no Windows. Os ajudantes não podem ver nem usar a tela num PC com Windows; todo o resto funciona."
+  },
+  "mac": {
+    "title": "Permitir que um agente use este Mac",
+    "warning": "Um Mac não tem uma tela separada para ajudantes: o que você permitir aqui vê a tela inteira e move o seu próprio ponteiro e teclado. Cada ação ainda pergunta antes. As permissões são do PasaBot Screen Helper, não do PasaBot.",
+    "perAgent": "O uso do computador neste Mac fica desativado para todos os agentes até você ativá-lo para cada agente aqui, com sua senha.",
+    "permissions": "O macOS vai pedir que você permita Gravação de Tela e Acessibilidade. O macOS concede essa permissão ao programa que executa o PasaBot, então as ferramentas de linha de comando de qualquer agente poderiam usar sua tela sem pedir. Só permita se confiar em todos os agentes deste servidor e remova em Ajustes do Sistema → Privacidade e Segurança quando terminar.",
+    "password": "Sua senha",
+    "enable": "Permitir",
+    "enableFor": "Permitir que {{name}} use este Mac",
+    "disable": "Desativar",
+    "disableFor": "Desativar {{name}} neste Mac",
+    "agentOn": "Permitido",
+    "agentOff": "Desativado",
+    "noAgents": "Ainda não há agentes.",
+    "wrong": "Não confere. Tente de novo."
+  },
+  "display": {
+    "shared": "Sua própria tela",
+    "own": "Tela própria {{label}}",
+    "live": "Ao vivo",
+    "control": "Assumir controle",
+    "release": "Parar de controlar",
+    "controlHint": "Clique na imagem para clicar na tela do agente.",
+    "stop": "Parar tela",
+    "typeLabel": "Digitar na tela",
+    "send": "Enviar texto",
+    "alt": "Tela de {{name}}",
+    "started": "Iniciada {{time}}"
+  },
+  "activity": {
+    "title": "Ações recentes",
+    "empty": "Ainda não há ações.",
+    "you": "Você",
+    "failed": "Falhou"
+  },
+  "error": "Algo deu errado: {{msg}}",
+  "tools": {
+    "computer_display": "Computador: dados da tela",
+    "computer_screenshot": "Computador: tirar uma captura de tela",
+    "computer_click": "Computador: clicar",
+    "computer_move": "Computador: mover o ponteiro",
+    "computer_type": "Computador: digitar texto",
+    "computer_key": "Computador: pressionar teclas"
+  },
+  "find": {
+    "navHint": "Deixe um agente usar um computador",
+    "navKeywords": "área de trabalho, tela, mouse, teclado, controle"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Deixe um ajudante usar um computador"
+    },
+    "page": {
+      "intro": "Ajudantes que usam um computador ganham a própria tela. Cada foto da tela, clique e tecla pede sua aprovação antes. Acompanhe aqui e assuma o controle quando precisar.",
+      "empty": "Nenhum ajudante está usando uma tela agora. Uma é iniciada na primeira vez que você aceitar uma ação de computador de um ajudante."
+    },
+    "setup": {
+      "missing_bins": "Falta {{list}} neste computador. Instale ou peça a quem configurou o PasaBot para usar a configuração de computador dele.",
+      "off": "O uso do computador está desativado neste PasaBot."
+    },
+    "mac": {
+      "noAgents": "Ainda não há ajudantes."
+    },
+    "display": {
+      "controlHint": "Clique na imagem para clicar na tela do ajudante.",
+      "release": "Parar de controlar"
+    }
+  },
+  "card": {
+    "ask": {
+      "title": "Deixar {{name}} usar este computador?",
+      "body": "{{name}} veria a tela inteira e moveria o seu próprio ponteiro e teclado. Cada clique e tecla ainda pergunta antes, e você pode parar a qualquer momento segurando Esc por um segundo.",
+      "password": "Sua senha",
+      "yes": "Sim, configurar",
+      "no": "Agora não"
+    },
+    "steps": {
+      "title": "Configurar este computador para {{name}}",
+      "stopped": "Você parou o controle deste computador. Ele fica parado até você ligar de novo aqui.",
+      "helper": "O PasaBot Screen Helper está rodando",
+      "helperHint": "Ele abre junto com o app PasaBot neste Mac. Se continuar vazio, abra o PasaBot.",
+      "screen": "Ative a Gravação de Tela",
+      "screenHint": "Os Ajustes vão abrir. Encontre o PasaBot Screen Helper na lista e ative.",
+      "openScreen": "Abrir ajustes de Gravação de Tela",
+      "access": "Ative a Acessibilidade",
+      "accessHint": "Os Ajustes vão abrir. Encontre o PasaBot Screen Helper na lista e ative.",
+      "openAccess": "Abrir ajustes de Acessibilidade",
+      "try": "Teste",
+      "tryHint": "Tira uma única imagem da sua tela, nada mais.",
+      "tryButton": "Tirar uma imagem de teste",
+      "tryDone": "Funciona. É isto que {{name}} veria.",
+      "ready": "{{name}} já pode pedir para usar este computador. Cada ação mostra um cartão antes.",
+      "off": "Desligar para {{name}}",
+      "done": "Pronto",
+      "waiting": "Ainda não"
+    },
+    "live": {
+      "title": "{{name}} está usando o seu computador",
+      "idle": "{{name}} não está usando o computador agora.",
+      "takeOver": "Assumir",
+      "stop": "Parar",
+      "stopHint": "Ou segure Esc por um segundo.",
+      "alt": "Tela de {{name}} ao vivo"
+    }
+  },
+  "preview": {
+    "click": "Vai clicar no anel vermelho.",
+    "rightClick": "Vai clicar com o botão direito no anel vermelho.",
+    "move": "Vai mover o ponteiro até o anel vermelho.",
+    "type": "Vai digitar {{count}} caracteres:",
+    "key": "Vai pressionar: {{keys}}",
+    "screenshot": "Vai tirar uma imagem da tela.",
+    "alt": "Onde vai agir na tela",
+    "none": "Ainda não há imagem da tela.",
+    "noCurrent": "Não há uma imagem atual da tela. Olhe sua tela antes de dizer sim."
+  },
+  "server": {
+    "setupCard": "{{name}} quer usar este computador. Configure no cartão abaixo ou ignore.",
+    "liveCard": "{{name}} começou a usar o computador. Assista ao vivo aqui."
+  },
+  "watch": {
+    "title": "Confirme que é você para ver sua tela",
+    "body": "Esta é a tela do seu próprio Mac. Digite sua senha para assistir e assumir o controle aqui.",
+    "again": "Já se passaram alguns minutos. Digite sua senha de novo para continuar controlando sua tela.",
+    "password": "Sua senha",
+    "button": "Mostrar minha tela",
+    "wrong": "Não confere. Tente de novo."
+  }
+}

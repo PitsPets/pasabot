@@ -1,0 +1,20 @@
+{
+  "nav": "Processos",
+  "page": {
+    "title": "Processos em segundo plano",
+    "intro": "Processos iniciados pelos seus agentes por meio das ferramentas do PasaBot. Parar um deles encerra também tudo o que ele iniciou.",
+    "empty": "Nada está rodando em segundo plano."
+  },
+  "proc": {
+    "since": "Em execução desde",
+    "stop": "Parar"
+  },
+  "tools": {
+    "procs_list": "Listar meus processos em segundo plano",
+    "procs_stop": "Parar um dos meus processos em segundo plano"
+  },
+  "find": {
+    "navHint": "Processos e tarefas em execução",
+    "navKeywords": "processos, tarefas, em execução, trabalhos"
+  }
+}

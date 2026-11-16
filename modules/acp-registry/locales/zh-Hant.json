@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "ACP 代理",
+    "intro": "安裝支援 Agent Client Protocol 的代理 CLI。每個已安裝的代理都會成為你建立或編輯代理時可選的大腦。",
+    "ownerOnly": "只有擁有者能管理 ACP 代理。"
+  },
+  "index": {
+    "label": "登錄索引",
+    "hint": "本機索引檔的絕對路徑，或 https URL。",
+    "save": "儲存",
+    "saved": "已儲存。",
+    "none": "請設定登錄索引以瀏覽代理。"
+  },
+  "search": {
+    "label": "搜尋代理",
+    "placeholder": "名稱或說明",
+    "empty": "索引中沒有符合的代理。",
+    "install": "安裝",
+    "reinstall": "更新",
+    "installing": "安裝中…",
+    "installed": "已安裝",
+    "remoteCommand": "遠端索引只能安裝套件，不能安裝本機指令。",
+    "available": "索引中可用"
+  },
+  "installed": {
+    "title": "已安裝",
+    "empty": "尚未安裝 ACP 代理。",
+    "remove": "移除",
+    "removing": "移除中…",
+    "confirmRemove": "要移除 {{name}} 嗎？代理將無法再以它作為大腦。",
+    "ready": "就緒",
+    "missing": "找不到",
+    "version": "版本 {{version}}",
+    "provider": "大腦 ID",
+    "command": "指令"
+  },
+  "error": {
+    "generic": "發生錯誤（{{code}}）。",
+    "in_use": "仍有代理在使用。請先為該代理改選其他大腦。",
+    "command_missing": "這台機器上沒有該程式。",
+    "command_from_remote": "遠端索引無法安裝本機指令。",
+    "bad_index_source": "請使用絕對檔案路徑或 https URL。",
+    "index_unreadable": "無法讀取索引。",
+    "index_invalid": "索引格式不符預期。",
+    "install_failed": "安裝失敗。",
+    "no_index": "請先設定登錄索引。"
+  },
+  "find": {
+    "settingsHint": "把程式設計代理加為大腦",
+    "settingsKeywords": "程式設計, 程式碼, 大腦, 命令列, 開發者"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "用程式設計應用程式作助理的大腦"
+    },
+    "settings": {
+      "title": "作大腦的程式設計應用程式"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "settings": "Automatisierung",
+  "intro": "Lass Skripte auf diesem Computer mit dem Befehl pasabot run oder der lokalen API Arbeit für einen Agent starten. Jeder Agent hat seinen eigenen Schalter und eigene Tokens. Tokens wirken höchstens mit Standard-Vertrauen, alles Riskante fragt also trotzdem zuerst dich.",
+  "loadError": "Die Automatisierungs-Einstellungen konnten nicht geladen werden.",
+  "noAgents": "Noch keine Agents.",
+  "agent": {
+    "switch": "Automatisierung für {{name}} erlauben",
+    "on": "An",
+    "off": "Aus",
+    "tokens": "{{count}} aktive(r) Token"
+  },
+  "form": {
+    "title": "Neuer Token für {{name}}",
+    "label": "Token-Name",
+    "labelHint": "Wo er genutzt wird, z. B. „Laptop-Skripte“.",
+    "expiry": "Läuft ab",
+    "days30": "In 30 Tagen",
+    "days90": "In 90 Tagen",
+    "days365": "In einem Jahr",
+    "never": "Nie",
+    "remote": "Auch von anderen Geräten erlauben (nicht nur von diesem Computer)",
+    "remoteHint": "Lass das aus, außer ein Skript auf einem anderen Rechner braucht es. Browserseiten können nie einen Token nutzen.",
+    "create": "Token erstellen",
+    "creating": "Wird erstellt…"
+  },
+  "created": {
+    "title": "Kopiere diesen Token jetzt",
+    "body": "Er wird nur einmal angezeigt. Bewahre ihn sicher auf, z. B. in einem Passwortmanager.",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "usage": "Probier es aus:",
+    "done": "Fertig"
+  },
+  "list": {
+    "title": "Tokens",
+    "empty": "Noch keine Tokens.",
+    "revoke": "Widerrufen",
+    "revoked": "Widerrufen",
+    "expires": "Läuft ab: {{when}}",
+    "noExpiry": "Läuft nie ab",
+    "lastUsed": "Zuletzt genutzt: {{when}}",
+    "neverUsed": "Nie genutzt",
+    "remote": "Andere Geräte erlaubt",
+    "localOnly": "Nur dieser Computer"
+  },
+  "find": {
+    "settingsHint": "Webhooks und Auslöser, die Agenten starten",
+    "settingsKeywords": "Webhook, Auslöser, Automatisierung, Ereignisse"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Einen Helfer starten, wenn etwas passiert"
+    }
+  }
+}

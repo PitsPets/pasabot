@@ -1,0 +1,295 @@
+{
+  "nav": "Inbox",
+  "page": {
+    "title": "Bot inbox",
+    "intro": "Your bot's own mailbox. Mail that comes in is outside data: your agents can read it, but never take orders from it. Every email they want to send asks you first."
+  },
+  "setup": {
+    "title": "Connect a mailbox",
+    "intro": "You make the mailbox yourself, at any provider you choose, in your own browser.",
+    "step1": "Create a new mailbox for your bot at the provider of your choice.",
+    "step2": "In that mailbox's settings, turn on IMAP and SMTP and make an app password. Check your provider's terms (some need a helper app for IMAP).",
+    "step3": "Enter the server details and the app password below.",
+    "never": "PasaBot never creates a mailbox, never signs in through a browser for you and never solves captchas. The details and the app password are kept in the vault only.",
+    "address": "Email address",
+    "username": "Sign-in name",
+    "usernameHint": "Leave empty when it is the email address.",
+    "imapHost": "IMAP server",
+    "imapPort": "IMAP port",
+    "imapTls": "IMAP security",
+    "smtpHost": "SMTP server",
+    "smtpPort": "SMTP port",
+    "smtpTls": "SMTP security",
+    "tls": {
+      "implicit": "TLS from the start",
+      "starttls": "STARTTLS (required)"
+    },
+    "password": "App password",
+    "passwordHint": "The app password your provider made for this bot, not your main password.",
+    "passwordKeep": "Saved in the vault. Leave empty to keep it.",
+    "save": "Save mailbox",
+    "saved": "Saved. The details and the app password are in the vault."
+  },
+  "mail": {
+    "title": "Mail",
+    "intro": "Shown as plain text. Pictures and links in mail are never loaded.",
+    "check": "Check for new mail",
+    "fetched_one": "{{count}} new message.",
+    "fetched_other": "{{count}} new messages.",
+    "empty": "No mail yet.",
+    "noSubject": "(no subject)",
+    "wasHtml": "This mail was formatted; it is shown here as plain text.",
+    "bridgeVerified": "From your paired bot {{name}}",
+    "bridgeRefused": "Bot message refused: {{reason}}",
+    "refused": {
+      "unsigned": "not signed",
+      "malformed": "damaged signature",
+      "unknown_sender": "unknown bot",
+      "wrong_from": "wrong sender address",
+      "wrong_key": "wrong key",
+      "bad_signature": "signature does not match",
+      "wrong_recipient": "meant for another bot",
+      "body_changed": "the text was changed",
+      "stale": "too old",
+      "replayed": "sent twice"
+    }
+  },
+  "bridge": {
+    "title": "Pair with another PasaBot",
+    "intro": "Two bots can write to each other by email. Exchange the address and key below with the other owner (in person or another way you trust). Their messages still count as outside data, and every reply asks you first.",
+    "yourAddress": "Your bot's address: {{address}}",
+    "noAddress": "connect a mailbox first",
+    "yourKey": "Your bot's key:",
+    "peerName": "Their bot's name",
+    "peerAddress": "Their bot's email address",
+    "peerKey": "Their bot's key",
+    "peerKeyHint": "The key the other owner sees on their Inbox page.",
+    "add": "Pair",
+    "added": "Paired.",
+    "remove": "Remove"
+  },
+  "error": {
+    "not_configured": "Connect a mailbox first.",
+    "bad_host": "That server name does not look right.",
+    "password_required": "Enter the app password.",
+    "blocked_address": "That server is on a private or blocked network address, so PasaBot will not connect to it.",
+    "host_not_allowed": "That server is not one you entered.",
+    "starttls_unavailable": "The server did not offer a secure connection, so PasaBot did not sign in.",
+    "tls_failed": "The server's security certificate could not be checked.",
+    "auth_failed": "The mail server refused the sign-in. Check the app password.",
+    "timeout": "The mail server did not answer.",
+    "stopped": "Everything is stopped right now.",
+    "bad_key": "That is not a PasaBot bot key.",
+    "exists": "That address is already paired.",
+    "forbidden": "Only the owner can do this.",
+    "other": "Something went wrong. Try again."
+  },
+  "tools": {
+    "inbox_list": "List inbox mail",
+    "inbox_read": "Read one mail",
+    "inbox_send": "Send an email",
+    "inbox_bridge_send": "Message a paired PasaBot bot"
+  },
+  "find": {
+    "navHint": "Email your agents read and answer",
+    "navKeywords": "email, mail, messages, inbox"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Email your helpers read and answer"
+    },
+    "page": {
+      "intro": "Your bot's own mailbox. Mail that comes in is from outside: your helpers can read it, but never take orders from it. Every email they want to send asks you first."
+    },
+    "setup": {
+      "intro": "You make the mailbox yourself, at any email company you choose, in your own browser.",
+      "step1": "Make a new mailbox for your bot at the email company you choose.",
+      "step2": "In that mailbox's settings, turn on access for mail apps and make an app password. Check your email company's rules (some need a helper app for this).",
+      "step3": "Type the mail details and the app password below.",
+      "never": "PasaBot never makes a mailbox, never signs in through a browser for you and never solves captchas. The details and the app password are kept safe on this computer only.",
+      "imapHost": "Incoming mail address",
+      "smtpHost": "Outgoing mail address",
+      "passwordHint": "The app password your email company made for this bot, not your main password.",
+      "passwordKeep": "Kept safe on this computer. Leave empty to keep it.",
+      "saved": "Saved. The details and the app password are kept safe on this computer.",
+      "imapPort": "Incoming mail port",
+      "smtpPort": "Outgoing mail port",
+      "imapTls": "Incoming mail security",
+      "smtpTls": "Outgoing mail security"
+    },
+    "error": {
+      "bad_host": "That incoming or outgoing mail address does not look right.",
+      "blocked_address": "That address is on a private or blocked network, so PasaBot will not connect to it.",
+      "host_not_allowed": "That is not an address you typed.",
+      "starttls_unavailable": "The mail service did not offer a secure connection, so PasaBot did not sign in.",
+      "tls_failed": "The mail service's safety certificate could not be checked.",
+      "auth_failed": "The mail service refused the sign-in. Check the app password.",
+      "timeout": "The mail service did not answer."
+    },
+    "guide": {
+      "manual": {
+        "intro": "Your mail service's help pages list these details (look for the settings for mail apps). Use an app password if it offers one."
+      }
+    }
+  },
+  "guide": {
+    "count": "Step {{n}} of {{total}}",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "moved": "This email setup moved on. You can pick it up in Settings, under Your mailbox.",
+    "badAddress": "That doesn't look like an email address. Check it and try again.",
+    "pageTitle": "Connect your email",
+    "openChat": "Back to the chat with {{name}}",
+    "cardNew": "Make a new email",
+    "cardConnect": "Connect your email",
+    "service": {
+      "title": "Which email do you use?",
+      "other": "Other email"
+    },
+    "ideas": {
+      "title": "Address ideas",
+      "note": "These are only ideas. Google tells you which ones are free when you sign up.",
+      "nameLabel": "Your business or team name",
+      "nameHint": "Like Reyes Hardware. I'll make a few address ideas from it.",
+      "show": "Show ideas",
+      "copy": "Copy",
+      "copyOne": "Copy {{address}}",
+      "copied": "Copied"
+    },
+    "signup": {
+      "title": "Make the account at Gmail",
+      "open": "Open Gmail sign-up",
+      "asks": "Google will ask you for:",
+      "ask1": "your name",
+      "ask2": "the new address you want (an idea above is fine)",
+      "ask3": "a password you choose and keep safe. I never see it",
+      "ask4": "a phone check: Google texts you a code",
+      "onlyYou": "Only you do this part, in your own browser. I never sign up, type your password or answer the phone check for you.",
+      "done": "Done, I have my new email"
+    },
+    "address": {
+      "label": "Your email address",
+      "newLabel": "Your new email address",
+      "hint": "The whole address, like {{example}}",
+      "looksLike": "That looks like a {{name}} address.",
+      "switch": "Switch to {{name}}",
+      "work": "Is this a work or school email? Whoever manages it may need to allow app passwords first. Ask them if your code keeps being refused."
+    },
+    "apppw": {
+      "title": "Make an app password for PasaBot",
+      "why": "An app password is a special code that {{company}} makes just for PasaBot. I use it instead of your real password, and you can remove it any time.",
+      "s1": "Turn on 2-step verification if it is off. {{company}} asks for this before it makes app passwords, and sends a code to your phone.",
+      "s1Open": "Open {{company}}'s 2-step page",
+      "s2": {
+        "gmail": "On Google's App passwords page, type PasaBot as the name and tap Create.",
+        "outlook": "On Microsoft's security page, choose “Create a new app password”.",
+        "yahoo": "On Yahoo's account security page, tap “Generate app password”, type PasaBot and tap Generate.",
+        "icloud": "On Apple's account page, open Sign-In and Security, then App-Specific Passwords. Tap the plus button and type PasaBot."
+      },
+      "s2Open": "Open {{company}}'s page",
+      "s3": "Copy the code it shows: {{letters}} letters, in small groups. Then come back here.",
+      "haveCode": "I have my code"
+    },
+    "code": {
+      "title": "Paste your code",
+      "label": "App password ({{letters}} letters)",
+      "hint": "Spaces are fine. Paste it only here, never in a chat.",
+      "tech": "Servers: {{imap}} and {{smtp}}, secure connection only.",
+      "connect": "Connect",
+      "checking": "Checking with {{company}}…",
+      "ok": "Connected. I can now read and draft for you."
+    },
+    "reason": {
+      "wrong_code": "{{company}} said no to that code. Make a new app password and paste the {{letters}} letters again.",
+      "two_step_off": "{{company}} wants 2-step verification turned on first. Turn it on, make a new app password, then paste it here.",
+      "imap_off": "{{company}} isn't letting mail apps into this account. If a company or school manages it, ask them to allow mail apps. Then tap Connect again. Your code is still in the box.",
+      "no_internet": "I couldn't reach {{company}}. Check that this computer is online, then try again.",
+      "server_trouble": "{{company}}'s mail server didn't answer safely. Wait a minute and try again.",
+      "code_shape": "That isn't {{letters}} letters. Copy the code again from {{company}}'s page.",
+      "stopped": "Everything is stopped right now. Turn it back on, then try again.",
+      "tooMany": "That's a lot of tries in a row. Wait a few minutes, then try again.",
+      "busy": "Still checking your last try. Wait a moment."
+    },
+    "manual": {
+      "intro": "Your mail service's help pages list these details (look for IMAP and SMTP). Use an app password if it offers one.",
+      "plain": "For other email services, tell {{name}} in the chat which company runs your email. They'll help you find its settings. To type them in, turn on Technical words in Settings.",
+      "plainNoName": "For other email services, tell your helper in the chat which company runs your email. They'll help you find its settings. To type them in, turn on Technical words in Settings."
+    },
+    "access": {
+      "title": "What may your helpers do with this email?",
+      "read": "Read only",
+      "readHint": "They read and sort your mail. Nothing is written or sent.",
+      "draft": "Read and draft (best to start)",
+      "draftHint": "They read your mail and write replies for you to check. Nothing is sent.",
+      "send": "Send after I approve",
+      "sendHint": "They may send email, but only after you tap Approve, every time."
+    },
+    "test": {
+      "title": "A tiny test",
+      "body": "Send an email to {{address}} with this word in the subject. From your phone is fine. I'll show you when it arrives.",
+      "check": "Check now",
+      "arrived": "It arrived: “{{subject}}” from {{from}}.",
+      "none": "Nothing with the word {{word}} yet. Mail can take a minute, so try again soon.",
+      "finish": "Finish",
+      "proves": "This shows I can read your inbox."
+    },
+    "finished": {
+      "title": "Your email is connected",
+      "body": "{{address}} is connected.",
+      "read": "Your helpers can read it.",
+      "draft": "Your helpers can read it and draft replies for you.",
+      "send": "Your helpers can read it, draft replies, and send after you approve.",
+      "change": "You can change this any time in Settings, under Your mailbox."
+    },
+    "say": {
+      "introNew": "Let's make your team's new email together. I'll go one step at a time; tap the button at the end of each step when you're ready.",
+      "introConnect": "Let's connect your email. It takes about 3 minutes, one step at a time.",
+      "service": "First, which email do you use?",
+      "ideas": "First, what's your business or team called? I'll suggest a few addresses.",
+      "signup": "Now open Gmail sign-up and make the account. Tap Done when you see your new inbox.",
+      "address_new": "Nice! Type your new address here.",
+      "address_connect": "What's your email address?",
+      "guide": "Now we make a special code for me, so I never need your password.",
+      "code": "Paste the code here. I'll check it with {{company}}.",
+      "manual": "Type the server details your mail service gives.",
+      "access": "Connected! What may your helpers do with it?",
+      "test": "Last, a tiny test.",
+      "done": "All set!",
+      "manualPlain": "Which company runs your email? Tell me in the chat and I'll help find its settings."
+    },
+    "settings": {
+      "title": "Your mailbox",
+      "hint": "Connect the email your helpers read",
+      "keywords": "email, gmail, outlook, yahoo, icloud, app password, mailbox, connect",
+      "none": "No email connected yet.",
+      "connected": "Connected: {{address}}.",
+      "helper": "{{name}} looks after it.",
+      "connect": "Connect my email",
+      "makeNew": "Make a new email",
+      "change": "Connect a different email",
+      "saved": "Saved."
+    },
+    "withMe": {
+      "do": "Do it with me",
+      "mine": "I’ll do it in my own browser",
+      "intro": "{{name}} opens the sign-up page in its own browser and fills in your name and the address you pick. You do the password and the phone check.",
+      "first": "First name",
+      "last": "Last name",
+      "pick": "Address to try",
+      "working": "Opening the sign-up page…",
+      "badName": "Type your first and last name.",
+      "noBrowser": "{{name}}’s browser couldn’t start here. Do it in your own browser instead.",
+      "yourTurn": "Your turn: choose a password and do the phone check. I can’t see or type these.",
+      "yourTurnText": "Tap Take over to use the browser. Tap Done when your new email is made.",
+      "liveAlt": "{{name}}’s browser, live",
+      "wait": "The picture shows up in a moment…",
+      "taken": "You’re using the browser now. {{name}} can’t see or do anything in it.",
+      "address": "Address it typed: {{address}}",
+      "take": "Take over",
+      "done": "Done",
+      "settled": "Signed up. Next: your new address",
+      "settledMine": "Doing it in your own browser"
+    }
+  }
+}

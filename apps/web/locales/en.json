@@ -1,0 +1,804 @@
+{
+  "app": {
+    "skip": "Skip to content",
+    "tagline": "Sabihin mo lang. Ako na bahala.",
+    "taglineTranslation": "Just say it. I'll take care of it."
+  },
+  "lang": {
+    "label": "Language",
+    "unreviewed": "unreviewed translation",
+    "unreviewedNote": "{{language}} is a machine translation that no fluent speaker has checked yet.",
+    "helpImprove": "Help improve it"
+  },
+  "conn": {
+    "connecting": "Connecting…",
+    "live": "Online",
+    "reconnecting": "Reconnecting…",
+    "offline": "Offline",
+    "banner": "Reconnecting… Your messages are safe.",
+    "bannerLong": "Can't reach PasaBot on this computer.",
+    "tryNow": "Try now"
+  },
+  "counts": {
+    "needs_one": "{{count}} needs you",
+    "needs_other": "{{count}} need you",
+    "working_one": "{{count}} working",
+    "working_other": "{{count}} working",
+    "idle_one": "{{count}} ready",
+    "idle_other": "{{count}} ready"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "rateLimited": "Too many tries. Wait a minute and try again."
+  },
+  "setup": {
+    "title": "Claim your PasaBot",
+    "intro": "Pick a name and a password. You'll use them to open PasaBot.",
+    "token": "Setup code",
+    "tokenHint": "It's in the setup link PasaBot showed when it started. For a new one, open the PasaBot app on that computer, or run `pasabot setup-link` there.",
+    "name": "Your name",
+    "password": "Password",
+    "passwordHint": "At least 8 characters. You can add a passkey later.",
+    "confirm": "Password again",
+    "submit": "Create owner account",
+    "tooShort": "Use at least 8 characters.",
+    "mismatch": "The two passwords don't match.",
+    "badToken": "This setup code is used up or expired. For a new one, click the PasaBot icon on your taskbar or menu bar and choose Open PasaBot (on Linux, start PasaBot again from your app menu), or run `pasabot setup-link` on that computer.",
+    "gettingReady": "Getting things ready…",
+    "reopen": "Close and reopen PasaBot.",
+    "ownerExists": "This server already has an owner. Sign in instead.",
+    "bossNote": "This makes you the boss of this PasaBot.",
+    "trustLine": "Your agents check with you before dangerous things, like deleting data.",
+    "trustHow": "How it asks you"
+  },
+  "login": {
+    "title": "Welcome back",
+    "intro": "Sign in to your PasaBot.",
+    "password": "Password",
+    "submit": "Sign in",
+    "passkey": "Sign in with a passkey",
+    "failed": "That password didn't work.",
+    "passkeyCancelled": "The passkey check didn't finish.",
+    "pairInstead": "Pair this device with a code instead",
+    "asPerson": "Signing in as {{name}}.",
+    "notYou": "Not you?",
+    "otherWays": "Other ways to sign in"
+  },
+  "pair": {
+    "title": "Pair this device",
+    "intro": "On a device that's already signed in, open Devices and tap \"Pair a phone\". Scan the QR code, or type the code here.",
+    "code": "Pairing code",
+    "deviceName": "Name for this device",
+    "submit": "Pair",
+    "waitingTitle": "Almost there",
+    "waiting": "Confirm this device on your other screen.",
+    "fingerprint": "Server fingerprint",
+    "checkOther": "Check that the other screen shows the same fingerprint, then tap Confirm there.",
+    "rejected": "The pairing was declined.",
+    "expired": "The pairing expired. Ask for a new code.",
+    "invalid": "That code is wrong or expired.",
+    "backToLogin": "Back to sign in"
+  },
+  "devices": {
+    "title": "Devices & sign-in",
+    "pairTitle": "Pair a phone",
+    "pairIntro": "Scan the QR code with your phone's camera. It opens PasaBot there; then confirm the phone here.",
+    "newCode": "Pair a phone",
+    "qrAlt": "QR code for pairing a device",
+    "codeLabel": "Or type this code",
+    "expires_one": "Expires in {{count}} second",
+    "expires_other": "Expires in {{count}} seconds",
+    "claims": "Waiting for you",
+    "confirm": "Confirm",
+    "reject": "Decline",
+    "list": "Paired devices",
+    "none": "No paired devices yet.",
+    "revoked": "Removed",
+    "revoke": "Remove",
+    "passkeys": "Passkeys",
+    "passkeysIntro": "Sign in and confirm risky actions with your fingerprint, face or device PIN.",
+    "passkeyN": "Passkey {{n}} · added {{date}}",
+    "remove": "Remove",
+    "addPasskey": "Add a passkey",
+    "passkeyAdded": "Passkey added.",
+    "reauthPair": "pair a new phone",
+    "reauthConfirm": "let a new device in",
+    "reauthPasskey": "add a passkey",
+    "reauthNeeded": "Not done: this needs your password or passkey again."
+  },
+  "agents": {
+    "add": "+ Add",
+    "newTitle": "New agent",
+    "editTitle": "Edit {{name}}",
+    "name": "Name",
+    "instructions": "What it does",
+    "instructionsHint": "Plain words: its job, what to check, when to ask you first.",
+    "provider": "Brain",
+    "notInstalled": "not installed",
+    "notReachable": "not reachable",
+    "model": "Model",
+    "trust": "Trust level",
+    "trustLevels": {
+      "guarded": "Guarded: asks before anything outside its folder",
+      "standard": "Standard: asks before outside or risky actions",
+      "trusted": "Trusted: asks only before dangerous actions"
+    },
+    "trustHint": "A trusted agent whose brain has its own shell can do anything this computer's user can.",
+    "save": "Save",
+    "avatar": "Look",
+    "avatarAlt": "Avatar of {{name}}",
+    "shuffle": "Shuffle",
+    "avatarHint": "Shuffle until you like it. It changes only when you press Save.",
+    "create": "Create agent",
+    "unknownProvider": "That brain isn't available on this server.",
+    "empty": "No agents yet.",
+    "emptyTitle": "Start your team",
+    "emptyIntro": "Add your first agent. Give it a name, a job, and a brain.",
+    "emptyCta": "Add your first agent",
+    "trustWarning": "New agents start at Trusted. Once you create one, it does its work without asking you each time, even for things like posting outside, using the web or installing tools. It still asks before dangerous actions (reading a secret, deleting data, using your computer), and a message that reaches it through Telegram or another chat app never gets more than Standard. To be asked more often, choose Standard or Guarded for that agent, or change the level new agents start at in Settings.",
+    "askShellWeb": "Ask before terminal and raw web commands",
+    "askShellWebHint": "When on, this agent asks you before every shell command and every raw web request its brain runs. Off by default for Trusted agents, on for Standard and Guarded.",
+    "needsSignIn": "needs sign-in",
+    "setUpBrains": "Set up or fix a brain",
+    "backup": "Backup",
+    "backupNone": "None",
+    "backupHint": "Used when the main brain hits a limit or can't be reached. Your agent keeps the conversation.",
+    "brainReady": "Ready",
+    "fixInstall": "Install",
+    "fixSignIn": "Sign in",
+    "fixCheck": "Check again",
+    "modelAuto": "Automatic",
+    "modelAutoHint": "The brain picks its usual model",
+    "modelHints": {
+      "fast": "Fast",
+      "balanced": "Good for everyday work",
+      "smart": "Smart",
+      "smartest": "Smartest",
+      "free": "Free"
+    },
+    "modelsRefresh": "Refresh the model list",
+    "modelsLoading": "Loading models…",
+    "modelsError": "Couldn't load this brain's models. Automatic still works, or press Refresh.",
+    "modelsCurated": "This list may not show every model this brain has.",
+    "trustShort": "This agent works without asking each time. It still asks before dangerous things, like deleting data.",
+    "helpWith": "What should it help with?",
+    "helpPlaceholder": "e.g. Help me plan my meals and ask me before buying anything.",
+    "helpIdeas": {
+      "week": "Plan my week",
+      "shopping": "Shopping list",
+      "messages": "Write messages",
+      "questions": "Answer questions"
+    },
+    "helpFill": {
+      "week": "Help me plan my week and remind me what is coming up.",
+      "shopping": "Keep my shopping list and ask me before buying anything.",
+      "messages": "Help me write and answer messages. Show me before anything is sent.",
+      "questions": "Answer my questions in plain words."
+    },
+    "moreOptions": "More options"
+  },
+  "nav": {
+    "sidebar": "Agents and chats",
+    "yourTeam": "Your team",
+    "channels": "Channels",
+    "devices": "Devices",
+    "settings": "Settings",
+    "chats": "Chats",
+    "new": "New",
+    "newAgent": "New agent",
+    "newGroup": "New group chat",
+    "pinned": "Pinned",
+    "searchChats": "Search chats",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "unpin": "Remove from sidebar",
+    "pinMenu": "Options for {{feature}}",
+    "openSettings": "Open Settings",
+    "teamTalk": "Team talk",
+    "teamTalkHint": "Your helpers talking to each other",
+    "workingFor": "Working for {{name}}",
+    "newRequest": "New request"
+  },
+  "status": {
+    "working": "Working…",
+    "waiting": "Needs your OK",
+    "idle": "Ready",
+    "needsSignIn": "Needs sign-in"
+  },
+  "details": {
+    "label": "Agent details",
+    "hide": "Hide",
+    "show": "Details",
+    "since": "since {{date}}",
+    "does": "What {{name}} does",
+    "edit": "Edit",
+    "noInstructions": "No instructions yet.",
+    "brain": "Brain",
+    "main": "Main",
+    "backup": "Backup",
+    "none": "None",
+    "trust": "Trust level",
+    "change": "Change",
+    "about": "About {{name}}",
+    "thinksWith": "Thinks with",
+    "more": "More",
+    "instructions": "Full instructions",
+    "backupBrains": "Backup brains",
+    "noSummary": "Nothing written about this helper yet."
+  },
+  "chat": {
+    "notFound": "This chat isn't here.",
+    "members_one": "{{count}} agent",
+    "members_other": "{{count}} agents",
+    "logLabel": "Messages with {{name}}",
+    "empty": "Say hi to {{name}}.",
+    "selectTitle": "Pick a chat",
+    "select": "Choose an agent or a channel on the left.",
+    "someone": "Agent",
+    "thinking": "{{name}} is thinking…",
+    "replyFailed": "This reply didn't finish.",
+    "activity_one": "Used {{count}} tool: {{names}}",
+    "activity_other": "Used {{count}} tools: {{names}}",
+    "seconds_one": "{{count}} s",
+    "seconds_other": "{{count}} s",
+    "partialLabel": "Partial reply: this is all that was written before it stopped.",
+    "interruptedHandled": "Done: this turn was retried or skipped.",
+    "steered": "Added to what {{name}} is doing now.",
+    "queueFull": "{{name}}'s queue is full. Try again in a bit.",
+    "mode": {
+      "steer": "Add to what it's doing",
+      "queue": "Send after it finishes",
+      "interrupt": "Stop it and send this",
+      "more": "More ways to send"
+    },
+    "placeholder": "Message {{name}}…",
+    "send": "Send",
+    "queued_one": "{{count}} queued",
+    "queued_other": "{{count}} queued",
+    "failedCount_one": "{{count}} failed",
+    "failedCount_other": "{{count}} failed",
+    "queueHint": "{{name}} reads these next",
+    "queueItem": "Message {{n}}",
+    "qstate": {
+      "queued": "waiting",
+      "held": "on hold until the limit resets",
+      "failed": "failed",
+      "interrupted": "interrupted"
+    },
+    "readOnlyNote": "You can read this chat, but not write in it. Ask the owner if you need to.",
+    "readOnlyLabel": "Read only",
+    "more": "More",
+    "searchThis": "Search this chat",
+    "editAgent": "Edit agent",
+    "copy": "Copy",
+    "copied": "Copied",
+    "paused": {
+      "since": "Everything is paused (since {{when}}).",
+      "now": "Everything is paused.",
+      "hint": "Start again to send.",
+      "hintMember": "Only the owner can start things again.",
+      "start": "Start again"
+    },
+    "editNamed": "Edit {{name}}",
+    "startersLabel": "Ideas to start with",
+    "startersTitle": "Not sure where to start? Tap one:",
+    "starters": {
+      "can": "What can you do for me?",
+      "week": "Help me plan my week",
+      "message": "Help me write a message",
+      "dinner": "What should I cook for dinner?"
+    },
+    "model": {
+      "thinksWith": "Thinks with",
+      "auto": "Auto",
+      "change": "{{name}} thinks with {{brain}}, {{model}}. Change",
+      "readOnly": "{{name}} thinks with {{brain}}, {{model}}",
+      "title": "How should {{name}} think?",
+      "brain": "Brain",
+      "models": "Models",
+      "best": "Best for most",
+      "autoHint": "Picks the right one for each message",
+      "hints": {
+        "smartest": "Smartest, for hard work. Slower, uses more of your plan",
+        "smart": "Smart and careful",
+        "balanced": "Fast and smart. Good for most things",
+        "fast": "Quickest, for simple questions",
+        "free": "Free to use"
+      },
+      "own": "This brain picks its own model",
+      "more": "Set up another brain",
+      "error": "Couldn't load the list of models.",
+      "retry": "Try again"
+    },
+    "toolsMore": "+{{n}} more",
+    "tools": {
+      "team": "Checked the team",
+      "askHelper": "Asked a helper",
+      "noteHelper": "Sent a helper a note",
+      "checkHelper": "Checked on a helper",
+      "stopHelper": "Stopped a helper's task",
+      "noted": "Noted your answer",
+      "plan": "Showed the plan",
+      "makeTeam": "Made your team",
+      "memoryRead": "Looked in memory",
+      "memorySave": "Saved to memory",
+      "memoryForget": "Removed from memory",
+      "searchChats": "Searched past chats",
+      "browser": "Used the browser",
+      "computer": "Used the computer",
+      "webSearch": "Searched the web",
+      "webPage": "Opened a web page",
+      "fileRead": "Read a file",
+      "fileChange": "Changed a file",
+      "fileSearch": "Looked through files",
+      "command": "Ran a command",
+      "todo": "Made a to-do list",
+      "dataRead": "Read a data table",
+      "dataChange": "Changed a data table",
+      "inbox": "Checked the inbox",
+      "machines": "Talked to another computer",
+      "askYou": "Asked you a question",
+      "card": "Made a card",
+      "routine": "Worked on a routine",
+      "workflow": "Worked on a workflow",
+      "site": "Worked on a website",
+      "shop": "Looked at shops",
+      "shopBuy": "Got a purchase ready",
+      "skills": "Worked on skills",
+      "findTool": "Looked for a tool",
+      "connections": "Checked connections",
+      "secrets": "Asked about a saved secret",
+      "programs": "Checked running programs",
+      "permission": "Asked for permission",
+      "other": "Used a tool"
+    },
+    "handoff": {
+      "asked": "{{from}} asked {{to}} to help",
+      "noted": "{{from}} sent {{to}} a note",
+      "whatAsked": "What was asked",
+      "reply": "{{name}}'s reply",
+      "waiting": "Waiting for {{name}}…",
+      "failed": "This didn't go through.",
+      "later": "{{name}}'s reply comes in a later message.",
+      "open": "Open their conversation",
+      "openThread": "Open in {{name}}’s chat"
+    },
+    "teamNote": "{{from}} and {{to}} talk here. You can read along, and write too.",
+    "stopAll": "Stop all helpers now",
+    "thread": {
+      "from": "From {{name}}",
+      "label": "Request from {{name}}",
+      "summary": "{{from}} asked · {{to}} answered",
+      "working": "{{name}} is working on it…",
+      "show": "Show the whole thread",
+      "hide": "Fold the thread",
+      "reply": "Reply in thread",
+      "replying": "Replying to {{name}}’s request",
+      "stopReply": "Write a normal message instead"
+    },
+    "report": {
+      "workingOne": "{{name}} is working on it…",
+      "workingMany": "{{names}} are working on it…",
+      "reading": "{{name}} is putting the answers together…",
+      "fromOne": "Answer from {{name}}",
+      "fromMany": "Answers from {{names}}",
+      "fullOne": "Show the full answer",
+      "fullMany": "Show the full answers",
+      "finished": "{{name}} finished:",
+      "failed": "{{name}} couldn’t finish.",
+      "stoppedOne": "{{name}} was stopped before finishing.",
+      "stillOne": "{{name}} is still working on it.",
+      "stillMany": "{{names}} are still working on it.",
+      "openFull": "Open the full answer",
+      "openThread": "Open in {{name}}’s chat",
+      "stopped": "Stopped here: the helpers passed this back and forth too many times. Ask again if you want them to go on."
+    }
+  },
+  "approval": {
+    "wants": "{{name}} wants to: {{tool}}",
+    "waiting_one": "{{count}} decision waiting",
+    "waiting_other": "{{count}} decisions waiting",
+    "review": "Review",
+    "asking": "{{name}} is asking first",
+    "tier0": "Just looking",
+    "tier1": "Only in its own folder",
+    "tier2": "Needs your OK",
+    "tier3": "Risky",
+    "state": {
+      "pending": "Waiting for you",
+      "approved": "Approved",
+      "denied": "Denied",
+      "expired": "Expired: treated as denied"
+    },
+    "approve": "Approve",
+    "deny": "Deny",
+    "reauthNote": "You'll confirm it's you before this goes ahead.",
+    "reauthTitle": "Confirm it's you",
+    "reauthIntro": "This is a risky step: {{summary}}. Type your password so we know it's you.",
+    "reauthSubmit": "Confirm and approve",
+    "reauthPasskey": "Use a passkey",
+    "reauthFailed": "That didn't match. Try again.",
+    "screenBusy": "Wait a moment — a helper just used the screen",
+    "workflow": "Workflow \"{{name}}\" asks: {{message}}",
+    "askClass": {
+      "money": "Money: always asks",
+      "outbound-message": "Message to other people: always asks",
+      "delete": "Deleting: always asks",
+      "publish": "Publishing: always asks"
+    },
+    "fact": {
+      "items": "Item(s)",
+      "merchant": "Merchant",
+      "total": "Total",
+      "paymentMethod": "Payment method",
+      "recipients": "To",
+      "channel": "Channel",
+      "subject": "Subject",
+      "text": "Full text",
+      "target": "What",
+      "where": "Where",
+      "count": "How many",
+      "tool": "Tool",
+      "arguments": "Exact request",
+      "cc": "Cc",
+      "bcc": "Bcc",
+      "attachments": "Attachments",
+      "server": "Runs",
+      "request": "Request details"
+    },
+    "notStated": "not stated",
+    "undeclared": "The helper did not say this would pay or send anything, but this page looks like it does.",
+    "unshown": "More details are not shown in this summary: {{names}}. Read the exact request below before you approve.",
+    "askNote": "This kind of action always asks you, however often the helper is set to ask. Only you can approve it here in the app.",
+    "reauthContinue": "Confirm and continue",
+    "wantsTo": "{{name}} wants to {{verb}}",
+    "verb": {
+      "read": "read a file",
+      "write": "save a file",
+      "edit": "change a file",
+      "command": "run a command on your computer",
+      "page": "open a web page",
+      "webSearch": "search the web",
+      "findFiles": "look for files",
+      "searchFiles": "search inside files",
+      "notebook": "change a notebook",
+      "task": "hand a task to a helper",
+      "other": "use a tool"
+    },
+    "target": {
+      "file": "File: {{v}}",
+      "command": "Command: {{v}}",
+      "page": "Web page: {{v}}",
+      "search": "Looking for: {{v}}",
+      "tool": "Tool: {{v}}"
+    },
+    "tierAdv0": "Tier 0 · read only",
+    "tierAdv1": "Tier 1 · own folder",
+    "tierAdv2": "Tier 2 · needs your OK",
+    "tierAdv3": "Tier 3 · risky",
+    "reauthIntroPasskey": "This is a risky step: {{summary}}. Type your password or use your passkey so we know it's you.",
+    "unshownPlain": "This request has more details than shown here: {{names}}. Turn on Technical words in Settings to see all of it before you approve.",
+    "unshownShown": "The summary doesn't cover every detail ({{names}}). Read the request details before you approve."
+  },
+  "onboarding": {
+    "next": "Next",
+    "step": "Step {{n}} of {{total}}",
+    "brainTitle": "Pick a brain",
+    "brainIntro": "A brain is the AI your agent thinks with. The best one is already picked.",
+    "working": "Getting your agent ready…",
+    "starterName": "Free starter",
+    "starterSub": "No key, no sign-in, no payment",
+    "starterBody": "PasaBot will download a small free app so your agent can think. It takes about a minute.",
+    "details": "Details",
+    "starterWhat": "What: {{what}}",
+    "starterWhere": "Where: {{where}} (for your user only, no admin rights)",
+    "starterFrom": "From: {{from}}",
+    "starterCheck": "The download is checked against its published SHA-256 before anything is written.",
+    "starterGo": "Download and continue",
+    "starterWorking": "Downloading… about a minute",
+    "noBrain": "No brain is ready on this computer yet. Set one up, then come back here.",
+    "setUpBrain": "Set up a brain",
+    "otherBrain": "Use another brain",
+    "defaultName": "Tala",
+    "meetTitle": "Meet your first agent",
+    "meetIntro": "Give it a name you like. You can change everything later.",
+    "meetSafe": "{{name}} asks you first before dangerous things, like deleting data.",
+    "start": "Get me started",
+    "localSub": "On this computer. Private, works offline",
+    "starterFailedPlain": "The free starter didn't install. Try again, or pick another brain."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "languageHint": "Switches every screen of this app.",
+    "modules": "Modules",
+    "account": "Account",
+    "signOut": "Sign out",
+    "newAgents": "New agents",
+    "newAgentsHint": "The trust level a new agent starts at. You can still change it for each agent.",
+    "alwaysAsks": "Always asks",
+    "alwaysAsksIntro": "Even a trusted agent asks you first, every time, before it does these. There is no \"always allow\" for them, and a chat channel or an automation cannot approve them.",
+    "alwaysAsksMoney": "Money: buying, paying, checking out, placing an order, subscribing, using payment details, sending money or crypto.",
+    "alwaysAsksMessage": "Messages to other people: an email, chat, DM or post to anyone other than your own linked chats. An agent replying to you in your own chat does not ask.",
+    "alwaysAsksDelete": "Deleting outside the agent's own workspace: files or folders of another agent or anywhere else on this computer, another agent's or a shared data table, and anything an outside tool or connector marks as destructive. Deleting inside the agent's own workspace does not ask.",
+    "alwaysAsksFixed": "Always on",
+    "alwaysAsksAdd": "You can also make these always ask:",
+    "alwaysAsksClass": {
+      "delete": "Deleting files or data",
+      "publish": "Publishing (sites, posts)"
+    },
+    "alwaysAsksLimit": "An agent you give a terminal can do anything a terminal can; the always-ask cards cover tools PasaBot can see. A shell command or a raw web request can send a message or pay without a card. To be asked first, turn on \"Ask before terminal and raw web commands\" for that agent.",
+    "search": "Search settings",
+    "back": "Back to chats",
+    "intro": "Everything that isn't a chat lives here. Pin what you use every day to the sidebar.",
+    "pin": "Show in sidebar",
+    "pinAria": "Show {{feature}} in sidebar",
+    "hide": "Not using this",
+    "hideTitle": "Hide {{feature}}?",
+    "hideBody": "It disappears from Settings and the sidebar for everyone. Nothing is deleted. Turn it back on in Settings › Advanced.",
+    "hideConfirm": "Hide {{feature}}",
+    "showAgain": "Show again",
+    "hiddenNote": "You hid this feature. It still works; it is only left out of lists.",
+    "notUsing": "Features you're not using",
+    "notUsingEmpty": "You're using everything. Hide a feature from its page when you don't need it.",
+    "groupEmpty": "Nothing here right now. Hidden features are in Advanced.",
+    "searchEmpty": "Nothing matches \"{{q}}\". Try a simpler word.",
+    "resetSidebar": "Reset sidebar",
+    "resetSidebarHint": "Takes every pin off the sidebar. Nothing else changes.",
+    "pinnedCount": "Pinned: {{count}}",
+    "saveFailed": "Couldn't save that. Try again.",
+    "tidied": "We tidied up. Everything is in Settings now — pin what you use to the sidebar.",
+    "gotIt": "Got it",
+    "where": "You are here",
+    "advancedSwitch": "Technical words",
+    "advancedHint": "Shows names like \"Trust level\" and \"MCP server\", and the pages for technical setup.",
+    "moreOptions": "More options",
+    "switchOn": "On",
+    "switchOff": "Off",
+    "sections": {
+      "everyday": "Everyday",
+      "helpers": "What your helpers can use",
+      "own": "Running on their own"
+    },
+    "technicalOnly": "For technical setup — turn on {{switch}} to see these",
+    "technicalOnlyPage": "This page is for technical setup — turn on {{switch}} to see it."
+  },
+  "offline": {
+    "title": "Can't reach PasaBot",
+    "body": "PasaBot can't reach your server right now. Your chats are safe on the server and come back when you reconnect.",
+    "retry": "Try again"
+  },
+  "decisions": {
+    "title": "Decisions waiting",
+    "intro": "Everything waiting on you, from every chat, workflow and module.",
+    "showInChat": "Show in the chat",
+    "openChat": "Open the chat",
+    "open": "Open",
+    "ownerOnly": "Only the owner can decide these. You can see them here."
+  },
+  "roles": {
+    "ownerOnlyPage": "Only the owner can use this page.",
+    "ownerOnlyBack": "Back to your chats"
+  },
+  "account": {
+    "menu": "Account",
+    "look": "Look",
+    "lookAuto": "Auto",
+    "lookLight": "Light",
+    "lookDark": "Dark",
+    "thisDevice": "This device",
+    "role": {
+      "owner": "Owner",
+      "member": "Member",
+      "guest": "Guest"
+    }
+  },
+  "features": {
+    "agents": "Agents",
+    "agentsHint": "Edit, add or archive your agents"
+  },
+  "groups": {
+    "agents": {
+      "name": "Agents & brains",
+      "hint": "Your agents and the AI that powers them"
+    },
+    "tools": {
+      "name": "Skills & tools",
+      "hint": "What your agents can use"
+    },
+    "automations": {
+      "name": "Automations",
+      "hint": "Things that run on their own"
+    },
+    "safety": {
+      "name": "Safety & approvals",
+      "hint": "What needs your OK"
+    },
+    "spending": {
+      "name": "Spending",
+      "hint": "Limits and what you've used"
+    },
+    "people": {
+      "name": "People & devices",
+      "hint": "Who can use PasaBot and where"
+    },
+    "machines": {
+      "name": "Machines",
+      "hint": "Other computers linked to this one"
+    },
+    "shopping": {
+      "name": "Shopping",
+      "hint": "Stores, carts and prices"
+    },
+    "inbox": {
+      "name": "Inbox & mail",
+      "hint": "Mail your agents read for you"
+    },
+    "memory": {
+      "name": "Memory & data",
+      "hint": "What your agents remember and keep"
+    },
+    "look": {
+      "name": "Language & look",
+      "hint": "Language, theme and voice"
+    },
+    "advanced": {
+      "name": "Advanced",
+      "hint": "For tinkerers"
+    }
+  },
+  "plain": {
+    "agents": {
+      "trust": "How often it asks you",
+      "trustLevels": {
+        "guarded": "Asks before anything outside its own folder",
+        "standard": "Asks before risky things",
+        "trusted": "Asks only before dangerous things"
+      },
+      "trustHint": "A helper that asks only before dangerous things can do anything you can do on this computer.",
+      "askShellWeb": "Ask before computer commands and direct web requests",
+      "askShellWebHint": "When on, this helper asks you before every command it runs on your computer and every direct web request, since such a request can send your data or pay for something. Off at first for helpers that ask only before dangerous things.",
+      "model": "Version",
+      "modelsRefresh": "Check for new versions",
+      "modelsError": "Couldn't load this brain's versions. Automatic still works, or check again.",
+      "trustShort": "This helper works without asking each time. It still asks before dangerous things, like deleting data.",
+      "newTitle": "New helper",
+      "unknownProvider": "That brain isn’t set up on this computer.",
+      "backupHint": "Used when the main brain hits a limit or can’t be reached. Your helper keeps the conversation.",
+      "modelAutoHint": "The brain picks its usual version",
+      "modelsCurated": "This list may not show every version this brain has.",
+      "trustWarning": "New helpers start at “Asks only before dangerous things”. Once you make one, it does its work without asking you each time, even for things like posting outside, using the web or installing tools. It still asks before dangerous things (reading a secret, deleting data, using your computer), and a message that reaches it through Telegram or another chat app never gets more than “Asks before risky things”. To be asked more often, choose “Asks before risky things” or “Asks before anything outside its own folder” for that helper, or change where new helpers start in Settings.",
+      "create": "Create helper"
+    },
+    "details": {
+      "trust": "How often it asks"
+    },
+    "settings": {
+      "newAgentsHint": "How often a new helper asks you when it starts. You can still change it for each helper.",
+      "alwaysAsksLimit": "A helper that may run commands on your computer can do anything those commands can. These cards cover what PasaBot can see: a command or a direct web request can send a message or pay without a card. To be asked first, turn on \"Ask before computer commands and direct web requests\" for that helper.",
+      "advancedHint": "Shows the technical names of things too, and the pages for technical setup.",
+      "newAgents": "New helpers",
+      "alwaysAsksIntro": "Even a helper you trust asks you first, every time, before it does these. There is no \"always allow\" for them, and a chat app or something that runs by itself cannot approve them.",
+      "alwaysAsksMessage": "Messages to other people: an email, chat, DM or post to anyone other than your own linked chats. A helper replying to you in your own chat does not ask.",
+      "alwaysAsksDelete": "Deleting outside the helper's own workspace: files or folders of another helper or anywhere else on this computer, another helper's or a shared data table, and anything an outside app marks as destructive. Deleting inside the helper's own workspace does not ask."
+    },
+    "pair": {
+      "fingerprint": "Safety code",
+      "checkOther": "Check that the other screen shows the same safety code, then tap Confirm there."
+    },
+    "features": {
+      "agents": "Helpers",
+      "agentsHint": "Change, add or put away your helpers"
+    },
+    "groups": {
+      "agents": {
+        "name": "Helpers & brains",
+        "hint": "Your helpers and the AI they think with"
+      },
+      "inbox": {
+        "hint": "Mail your helpers read for you"
+      },
+      "memory": {
+        "hint": "What your helpers remember and keep"
+      },
+      "tools": {
+        "hint": "What your helpers can use",
+        "name": "Abilities & tools"
+      }
+    },
+    "nav": {
+      "newAgent": "New helper"
+    }
+  },
+  "cards": {
+    "needsOk": "Needs your OK",
+    "stale": "This was already answered.",
+    "failed": "That didn’t work. Please try again.",
+    "details": "Details",
+    "settled": {
+      "open": "Open",
+      "done": "Done",
+      "later": "Later",
+      "dismissed": "Closed",
+      "failed": "Didn’t work"
+    },
+    "open": "Open",
+    "download": "Download",
+    "browserAlt": "The helper’s browser, live",
+    "browserWait": "Waiting for the picture…",
+    "stillNeed": "Things that still need your OK: {{count}}",
+    "suggest": {
+      "title": "What you can ask next",
+      "send": "Try this",
+      "plan": {
+        "title": "Plan my week",
+        "send": "Help me plan my week"
+      },
+      "remind": {
+        "title": "Remind me",
+        "send": "Remind me tomorrow at 9 to pay the bills"
+      },
+      "write": {
+        "title": "Write a message",
+        "send": "Help me write a short, friendly message to a customer"
+      },
+      "find": {
+        "title": "See what the team can do",
+        "send": "What can you and the team do for me?"
+      },
+      "hint": "Tap one to put it in the message box, then change it and send."
+    },
+    "idea": "Idea",
+    "more": "{{count}} more"
+  },
+  "system": {
+    "pageTitle": "This computer",
+    "pageHint": "What PasaBot found about the computer it runs on",
+    "kicker": "About this computer",
+    "gotIt": "Got it",
+    "seen": "Seen",
+    "details": "Details",
+    "changeTrust": "Change what new helpers may do",
+    "allGood": "Nothing to fix on this computer.",
+    "windows-no-sandbox": {
+      "title": "Helpers on this Windows PC have no safety box",
+      "text": "On Windows, PasaBot cannot keep helpers inside their own folder yet, so a helper could open any file you can. That is why new helpers ask you before they do anything outside their folder. Only add helpers you trust."
+    },
+    "linux-sandbox-missing": {
+      "title": "Helpers cannot start yet",
+      "text": "This computer is missing a small safety tool called bubblewrap. Ask whoever looks after this computer to install it, then start PasaBot again."
+    },
+    "linux-sandbox-userns": {
+      "title": "Helpers cannot start yet",
+      "text": "This Linux blocks the safety box that helpers run in. Whoever looks after this computer can allow it with one setting, then start PasaBot again."
+    },
+    "linux-sandbox-other": {
+      "title": "Helpers cannot start yet",
+      "text": "The safety box that helpers run in would not start on this computer. Ask whoever looks after this computer to check it."
+    },
+    "vault-unavailable": {
+      "title": "Saved keys and passwords are locked",
+      "text": "PasaBot could not open its safe this time, so it cannot save or use keys and passwords. Start PasaBot again. If it keeps happening, run the check on this page."
+    },
+    "vault-key-file": {
+      "title": "Your safe’s key is kept in a file",
+      "text": "This computer has no keyring, so PasaBot keeps the key to its safe in a file only your account can open. Programs you run yourself could still read it."
+    },
+    "data-folder-open": {
+      "title": "PasaBot’s folder may be open to others",
+      "text": "Windows did not let PasaBot lock its folder to your account, so other accounts on this PC might see your chats and keys. Run the check on this page to see more."
+    },
+    "signin-links": {
+      "title": "Codex and OpenCode need one Windows setting",
+      "text": "To let helpers use your Codex or OpenCode sign-in, turn on Developer Mode in Windows Settings, then start PasaBot again. Claude works without it."
+    },
+    "check": {
+      "title": "Check this computer",
+      "text": "Runs a short check that PasaBot works on this PC and shows what passed. It uses a test folder, never your own data.",
+      "notInstalled": "The check comes with the installed Windows app. Install PasaBot to use it.",
+      "run": "Check this computer",
+      "started": "The check opened in its own window.",
+      "failed": "The check did not start. Please try again."
+    }
+  }
+}

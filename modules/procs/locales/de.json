@@ -1,0 +1,20 @@
+{
+  "nav": "Prozesse",
+  "page": {
+    "title": "Hintergrundprozesse",
+    "intro": "Prozesse, die deine Agenten über PasaBot-Tools gestartet haben. Wenn du einen stoppst, wird er samt allem, was er gestartet hat, beendet.",
+    "empty": "Im Hintergrund läuft nichts."
+  },
+  "proc": {
+    "since": "Läuft seit",
+    "stop": "Stoppen"
+  },
+  "tools": {
+    "procs_list": "Meine Hintergrundprozesse auflisten",
+    "procs_stop": "Einen meiner Hintergrundprozesse beenden"
+  },
+  "find": {
+    "navHint": "Prozesse und Aufträge, die gerade laufen",
+    "navKeywords": "Prozesse, Aufträge, läuft, Aufgaben"
+  }
+}

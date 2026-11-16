@@ -1,0 +1,295 @@
+{
+  "nav": "Postfach",
+  "page": {
+    "title": "Bot-Postfach",
+    "intro": "Das eigene Postfach deines Bots. Eingehende Mails sind externe Daten: Deine Agents können sie lesen, nehmen aber nie Befehle daraus entgegen. Bei jeder E-Mail, die sie senden wollen, fragen sie zuerst dich."
+  },
+  "setup": {
+    "title": "Postfach verbinden",
+    "intro": "Das Postfach richtest du selbst ein, bei einem Anbieter deiner Wahl, in deinem eigenen Browser.",
+    "step1": "Erstelle beim Anbieter deiner Wahl ein neues Postfach für deinen Bot.",
+    "step2": "Aktiviere in den Einstellungen dieses Postfachs IMAP und SMTP und erstelle ein App-Passwort. Prüfe die Bedingungen deines Anbieters (manche brauchen für IMAP eine Hilfs-App).",
+    "step3": "Gib unten die Serverdaten und das App-Passwort ein.",
+    "never": "PasaBot erstellt nie ein Postfach, meldet sich nie für dich im Browser an und löst nie Captchas. Die Zugangsdaten und das App-Passwort werden nur im Vault gespeichert.",
+    "address": "E-Mail-Adresse",
+    "username": "Anmeldename",
+    "usernameHint": "Leer lassen, wenn es die E-Mail-Adresse ist.",
+    "imapHost": "IMAP-Server",
+    "imapPort": "IMAP-Port",
+    "imapTls": "IMAP-Sicherheit",
+    "smtpHost": "SMTP-Server",
+    "smtpPort": "SMTP-Port",
+    "smtpTls": "SMTP-Sicherheit",
+    "tls": {
+      "implicit": "TLS von Anfang an",
+      "starttls": "STARTTLS (erforderlich)"
+    },
+    "password": "App-Passwort",
+    "passwordHint": "Das App-Passwort, das dein Anbieter für diesen Bot erstellt hat, nicht dein Hauptpasswort.",
+    "passwordKeep": "Im Vault gespeichert. Leer lassen, um es zu behalten.",
+    "save": "Postfach speichern",
+    "saved": "Gespeichert. Die Zugangsdaten und das App-Passwort liegen im Vault."
+  },
+  "mail": {
+    "title": "Mails",
+    "intro": "Wird als reiner Text angezeigt. Bilder und Links in Mails werden nie geladen.",
+    "check": "Nach neuen Mails suchen",
+    "fetched_one": "{{count}} neue Nachricht.",
+    "fetched_other": "{{count}} neue Nachrichten.",
+    "empty": "Noch keine Mails.",
+    "noSubject": "(kein Betreff)",
+    "wasHtml": "Diese Mail war formatiert; hier wird sie als reiner Text angezeigt.",
+    "bridgeVerified": "Von deinem gekoppelten Bot {{name}}",
+    "bridgeRefused": "Bot-Nachricht abgelehnt: {{reason}}",
+    "refused": {
+      "unsigned": "nicht signiert",
+      "malformed": "beschädigte Signatur",
+      "unknown_sender": "unbekannter Bot",
+      "wrong_from": "falsche Absenderadresse",
+      "wrong_key": "falscher Schlüssel",
+      "bad_signature": "Signatur stimmt nicht überein",
+      "wrong_recipient": "für einen anderen Bot bestimmt",
+      "body_changed": "der Text wurde verändert",
+      "stale": "zu alt",
+      "replayed": "doppelt gesendet"
+    }
+  },
+  "bridge": {
+    "title": "Mit einem anderen PasaBot koppeln",
+    "intro": "Zwei Bots können sich per E-Mail schreiben. Tausche unten Adresse und Schlüssel mit dem anderen Owner aus (persönlich oder auf einem anderen Weg, dem du vertraust). Ihre Nachrichten zählen weiterhin als externe Daten, und bei jeder Antwort wirst du zuerst gefragt.",
+    "yourAddress": "Adresse deines Bots: {{address}}",
+    "noAddress": "verbinde zuerst ein Postfach",
+    "yourKey": "Schlüssel deines Bots:",
+    "peerName": "Name des anderen Bots",
+    "peerAddress": "E-Mail-Adresse des anderen Bots",
+    "peerKey": "Schlüssel des anderen Bots",
+    "peerKeyHint": "Der Schlüssel, den der andere Owner auf seiner Postfach-Seite sieht.",
+    "add": "Koppeln",
+    "added": "Gekoppelt.",
+    "remove": "Entfernen"
+  },
+  "error": {
+    "not_configured": "Verbinde zuerst ein Postfach.",
+    "bad_host": "Dieser Servername sieht nicht richtig aus.",
+    "password_required": "Gib das App-Passwort ein.",
+    "blocked_address": "Dieser Server liegt in einem privaten oder gesperrten Netzwerk, daher verbindet sich PasaBot nicht damit.",
+    "host_not_allowed": "Dieser Server wurde nicht von dir eingegeben.",
+    "starttls_unavailable": "Der Server hat keine sichere Verbindung angeboten, daher hat sich PasaBot nicht angemeldet.",
+    "tls_failed": "Das Sicherheitszertifikat des Servers konnte nicht geprüft werden.",
+    "auth_failed": "Der Mailserver hat die Anmeldung abgelehnt. Prüfe das App-Passwort.",
+    "timeout": "Der Mailserver hat nicht geantwortet.",
+    "stopped": "Gerade ist alles angehalten.",
+    "bad_key": "Das ist kein PasaBot-Bot-Schlüssel.",
+    "exists": "Diese Adresse ist bereits gekoppelt.",
+    "forbidden": "Das kann nur der Owner tun.",
+    "other": "Etwas ist schiefgelaufen. Versuche es erneut."
+  },
+  "tools": {
+    "inbox_list": "Posteingang auflisten",
+    "inbox_read": "Eine Mail lesen",
+    "inbox_send": "E-Mail senden",
+    "inbox_bridge_send": "Gekoppelten PasaBot-Bot anschreiben"
+  },
+  "find": {
+    "navHint": "E-Mails, die deine Agenten lesen",
+    "navKeywords": "E-Mail, Post, Nachrichten, Posteingang"
+  },
+  "plain": {
+    "find": {
+      "navHint": "E-Mails, die deine Helfer lesen und beantworten"
+    },
+    "page": {
+      "intro": "Das eigene Postfach deines Bots. Eingehende Mails kommen von außen: Deine Helfer dürfen sie lesen, nehmen aber nie Anweisungen daraus an. Jede E-Mail, die sie senden wollen, fragt dich zuerst."
+    },
+    "setup": {
+      "intro": "Du legst das Postfach selbst an, bei einem E-Mail-Anbieter deiner Wahl, in deinem eigenen Browser.",
+      "step1": "Lege bei einem E-Mail-Anbieter deiner Wahl ein neues Postfach für deinen Bot an.",
+      "step2": "Schalte in den Einstellungen dieses Postfachs IMAP und SMTP ein (damit lassen sich Mail-Apps verbinden) und erstelle ein App-Passwort. Prüfe die Regeln deines E-Mail-Anbieters (manche brauchen für IMAP eine Hilfs-App).",
+      "step3": "Gib unten die Mail-Angaben und das App-Passwort ein.",
+      "never": "PasaBot legt nie ein Postfach an, meldet sich nie für dich im Browser an und löst nie Captchas. Die Angaben und das App-Passwort bleiben nur sicher auf diesem Computer.",
+      "imapHost": "Adresse für eingehende Mails (IMAP)",
+      "smtpHost": "Adresse für ausgehende Mails (SMTP)",
+      "passwordHint": "Das App-Passwort, das dein E-Mail-Anbieter für diesen Bot erstellt hat, nicht dein Hauptpasswort.",
+      "passwordKeep": "Sicher auf diesem Computer verwahrt. Leer lassen, um es zu behalten.",
+      "saved": "Gespeichert. Die Angaben und das App-Passwort sind sicher auf diesem Computer verwahrt.",
+      "imapPort": "Port für eingehende Mail",
+      "smtpPort": "Port für ausgehende Mail",
+      "imapTls": "Sicherheit für eingehende Mail",
+      "smtpTls": "Sicherheit für ausgehende Mail"
+    },
+    "error": {
+      "bad_host": "Diese Adresse für eingehende oder ausgehende Mails sieht nicht richtig aus.",
+      "blocked_address": "Diese Adresse liegt in einem privaten oder gesperrten Netz, daher verbindet sich PasaBot nicht damit.",
+      "host_not_allowed": "Das ist keine Adresse, die du eingegeben hast.",
+      "starttls_unavailable": "Der Mail-Dienst bot keine sichere Verbindung an, daher hat sich PasaBot nicht angemeldet.",
+      "tls_failed": "Das Sicherheitszertifikat des Mail-Dienstes konnte nicht geprüft werden.",
+      "auth_failed": "Der Mail-Dienst hat die Anmeldung abgelehnt. Prüfe das App-Passwort.",
+      "timeout": "Der Mail-Dienst hat nicht geantwortet."
+    },
+    "guide": {
+      "manual": {
+        "intro": "Die Hilfeseiten deines Maildienstes nennen diese Angaben (such nach den Einstellungen für Mail-Apps). Nutze ein App-Passwort, wenn es eines gibt."
+      }
+    }
+  },
+  "guide": {
+    "count": "Schritt {{n}} von {{total}}",
+    "back": "Zurück",
+    "next": "Weiter",
+    "done": "Fertig",
+    "moved": "Diese E-Mail-Einrichtung ging weiter. Du findest sie in den Einstellungen unter Dein Postfach.",
+    "badAddress": "Das sieht nicht wie eine E-Mail-Adresse aus. Prüfe sie und versuche es erneut.",
+    "pageTitle": "Deine E-Mail verbinden",
+    "openChat": "Zurück zum Chat mit {{name}}",
+    "cardNew": "Neue E-Mail anlegen",
+    "cardConnect": "Deine E-Mail verbinden",
+    "service": {
+      "title": "Welche E-Mail nutzt du?",
+      "other": "Andere E-Mail"
+    },
+    "ideas": {
+      "title": "Ideen für die Adresse",
+      "note": "Das sind nur Ideen. Google zeigt dir bei der Anmeldung, welche frei sind.",
+      "nameLabel": "Name deines Geschäfts oder Teams",
+      "nameHint": "Zum Beispiel Reyes Hardware. Ich mache daraus ein paar Adressideen.",
+      "show": "Ideen zeigen",
+      "copy": "Kopieren",
+      "copyOne": "{{address}} kopieren",
+      "copied": "Kopiert"
+    },
+    "signup": {
+      "title": "Das Konto bei Gmail anlegen",
+      "open": "Gmail-Anmeldung öffnen",
+      "asks": "Google fragt dich nach:",
+      "ask1": "deinem Namen",
+      "ask2": "der neuen Adresse, die du willst (eine Idee oben geht auch)",
+      "ask3": "einem Passwort, das du wählst und sicher aufbewahrst. Ich sehe es nie",
+      "ask4": "einer Prüfung per Telefon: Google schickt dir einen Code per SMS",
+      "onlyYou": "Diesen Teil machst nur du, in deinem eigenen Browser. Ich melde dich nie an, tippe nie dein Passwort und beantworte nie die Telefonprüfung für dich.",
+      "done": "Fertig, ich habe meine neue E-Mail"
+    },
+    "address": {
+      "label": "Deine E-Mail-Adresse",
+      "newLabel": "Deine neue E-Mail-Adresse",
+      "hint": "Die ganze Adresse, z. B. {{example}}",
+      "looksLike": "Das sieht nach einer {{name}}-Adresse aus.",
+      "switch": "Zu {{name}} wechseln",
+      "work": "Ist das eine E-Mail von der Arbeit oder Schule? Wer sie verwaltet, muss App-Passwörter vielleicht erst erlauben. Frag nach, wenn dein Code immer wieder abgelehnt wird."
+    },
+    "apppw": {
+      "title": "Ein App-Passwort für PasaBot erstellen",
+      "why": "Ein App-Passwort ist ein besonderer Code, den {{company}} nur für PasaBot erstellt. Ich nutze ihn statt deines echten Passworts, und du kannst ihn jederzeit löschen.",
+      "s1": "Schalte die Bestätigung in zwei Schritten ein, falls sie aus ist. {{company}} verlangt das vor App-Passwörtern und schickt einen Code an dein Telefon.",
+      "s1Open": "Zweistufen-Seite von {{company}} öffnen",
+      "s2": {
+        "gmail": "Gib auf Googles Seite „App-Passwörter“ PasaBot als Namen ein und tippe auf Erstellen.",
+        "outlook": "Wähle auf der Sicherheitsseite von Microsoft, ein neues App-Passwort zu erstellen.",
+        "yahoo": "Tippe auf Yahoos Seite zur Kontosicherheit auf App-Passwort erstellen, gib PasaBot ein und tippe auf Erstellen.",
+        "icloud": "Öffne auf Apples Kontoseite Anmeldung und Sicherheit, dann App-spezifische Passwörter. Tippe auf Plus und gib PasaBot ein."
+      },
+      "s2Open": "Seite von {{company}} öffnen",
+      "s3": "Kopiere den Code, der erscheint: {{letters}} Buchstaben in kleinen Gruppen. Komm dann hierher zurück.",
+      "haveCode": "Ich habe meinen Code"
+    },
+    "code": {
+      "title": "Code einfügen",
+      "label": "App-Passwort ({{letters}} Buchstaben)",
+      "hint": "Leerzeichen sind okay. Füge ihn nur hier ein, nie in einen Chat.",
+      "tech": "Server: {{imap}} und {{smtp}}, nur sichere Verbindung.",
+      "connect": "Verbinden",
+      "checking": "Prüfe bei {{company}} …",
+      "ok": "Verbunden. Ich kann jetzt für dich lesen und Entwürfe schreiben."
+    },
+    "reason": {
+      "wrong_code": "{{company}} hat diesen Code abgelehnt. Erstelle ein neues App-Passwort und füge die {{letters}} Buchstaben erneut ein.",
+      "two_step_off": "{{company}} möchte zuerst die Bestätigung in zwei Schritten. Schalte sie ein, erstelle ein neues App-Passwort und füge es hier ein.",
+      "imap_off": "{{company}} lässt keine Mail-Apps in dieses Konto. Wenn eine Firma oder Schule es verwaltet, bitte sie, Mail-Apps zu erlauben. Tippe dann erneut auf Verbinden. Dein Code steht noch im Feld.",
+      "no_internet": "Ich konnte {{company}} nicht erreichen. Prüfe, ob dieser Computer online ist, und versuche es erneut.",
+      "server_trouble": "Der Mailserver von {{company}} hat nicht sicher geantwortet. Warte eine Minute und versuche es erneut.",
+      "code_shape": "Das sind keine {{letters}} Buchstaben. Kopiere den Code noch einmal von der Seite von {{company}}.",
+      "stopped": "Gerade ist alles angehalten. Schalte es wieder ein und versuche es erneut.",
+      "tooMany": "Das waren viele Versuche hintereinander. Warte ein paar Minuten und versuch es dann noch einmal.",
+      "busy": "Ich prüfe noch deinen letzten Versuch. Einen Moment."
+    },
+    "manual": {
+      "intro": "Die Hilfeseiten deines Maildienstes nennen diese Angaben (such nach IMAP und SMTP). Nutze ein App-Passwort, wenn es eins gibt.",
+      "plain": "Bei anderen E-Mail-Diensten sag {{name}} im Chat, welche Firma deine E-Mail betreibt. Du bekommst Hilfe, die Einstellungen zu finden. Zum Eintippen schalte in den Einstellungen Fachbegriffe ein.",
+      "plainNoName": "Bei anderen E-Mail-Diensten sag deinem Helfer im Chat, welche Firma deine E-Mail betreibt. Du bekommst Hilfe, die Einstellungen zu finden. Zum Eintippen schalte in den Einstellungen Fachbegriffe ein."
+    },
+    "access": {
+      "title": "Was dürfen deine Helfer mit dieser E-Mail tun?",
+      "read": "Nur lesen",
+      "readHint": "Sie lesen und sortieren deine Mail. Nichts wird geschrieben oder gesendet.",
+      "draft": "Lesen und Entwürfe (am besten zum Start)",
+      "draftHint": "Sie lesen deine Mail und schreiben Antworten, die du prüfst. Nichts wird gesendet.",
+      "send": "Senden, wenn ich zustimme",
+      "sendHint": "Sie dürfen E-Mails senden, aber nur nachdem du auf Zustimmen tippst, jedes Mal."
+    },
+    "test": {
+      "title": "Ein kleiner Test",
+      "body": "Schick eine E-Mail an {{address}} mit diesem Wort im Betreff. Gern vom Telefon. Ich zeige dir, wenn sie ankommt.",
+      "check": "Jetzt prüfen",
+      "arrived": "Sie ist da: „{{subject}}“ von {{from}}.",
+      "none": "Noch nichts mit dem Wort {{word}}. Mails brauchen manchmal eine Minute, versuch es gleich noch einmal.",
+      "finish": "Abschließen",
+      "proves": "Das zeigt, dass ich dein Postfach lesen kann."
+    },
+    "finished": {
+      "title": "Deine E-Mail ist verbunden",
+      "body": "{{address}} ist verbunden.",
+      "read": "Deine Helfer können sie lesen.",
+      "draft": "Deine Helfer können sie lesen und Antworten für dich entwerfen.",
+      "send": "Deine Helfer können sie lesen, Antworten entwerfen und senden, nachdem du zugestimmt hast.",
+      "change": "Du kannst das jederzeit in den Einstellungen unter Dein Postfach ändern."
+    },
+    "say": {
+      "introNew": "Lass uns die neue E-Mail deines Teams zusammen anlegen. Ich gehe Schritt für Schritt vor; tippe am Ende jedes Schritts auf den Knopf, wenn du so weit bist.",
+      "introConnect": "Lass uns deine E-Mail verbinden. Das dauert etwa 3 Minuten, Schritt für Schritt.",
+      "service": "Zuerst: Welche E-Mail nutzt du?",
+      "ideas": "Zuerst: Wie heißt dein Geschäft oder Team? Ich schlage ein paar Adressen vor.",
+      "signup": "Öffne jetzt die Gmail-Anmeldung und lege das Konto an. Tippe auf Fertig, wenn du dein neues Postfach siehst.",
+      "address_new": "Super! Gib hier deine neue Adresse ein.",
+      "address_connect": "Wie lautet deine E-Mail-Adresse?",
+      "guide": "Jetzt erstellen wir einen besonderen Code für mich, damit ich dein Passwort nie brauche.",
+      "code": "Füge den Code hier ein. Ich prüfe ihn bei {{company}}.",
+      "manual": "Gib die Serverangaben deines Maildienstes ein.",
+      "access": "Verbunden! Was dürfen deine Helfer damit tun?",
+      "test": "Zum Schluss ein kleiner Test.",
+      "done": "Alles fertig!",
+      "manualPlain": "Welche Firma betreibt deine E-Mail? Sag es mir im Chat, dann suche ich die Einstellungen mit dir."
+    },
+    "settings": {
+      "title": "Dein Postfach",
+      "hint": "Die E-Mail verbinden, die deine Helfer lesen",
+      "keywords": "E-Mail, gmail, outlook, yahoo, icloud, App-Passwort, Postfach, verbinden",
+      "none": "Noch keine E-Mail verbunden.",
+      "connected": "Verbunden: {{address}}.",
+      "helper": "{{name}} kümmert sich darum.",
+      "connect": "Meine E-Mail verbinden",
+      "makeNew": "Neue E-Mail anlegen",
+      "change": "Andere E-Mail verbinden",
+      "saved": "Gespeichert."
+    },
+    "withMe": {
+      "do": "Mach es mit mir",
+      "mine": "Ich mache es in meinem eigenen Browser",
+      "intro": "{{name}} öffnet die Anmeldeseite im eigenen Browser und trägt deinen Namen und die gewählte Adresse ein. Passwort und Telefonprüfung machst du.",
+      "first": "Vorname",
+      "last": "Nachname",
+      "pick": "Adresse zum Ausprobieren",
+      "working": "Die Anmeldeseite wird geöffnet…",
+      "badName": "Gib deinen Vor- und Nachnamen ein.",
+      "noBrowser": "{{name}}s Browser konnte hier nicht starten. Mach es stattdessen in deinem eigenen Browser.",
+      "yourTurn": "Du bist dran: Wähle ein Passwort und mach die Telefonprüfung. Das kann ich weder sehen noch eintippen.",
+      "yourTurnText": "Tippe auf Übernehmen, um den Browser zu nutzen. Tippe auf Fertig, wenn deine neue E-Mail steht.",
+      "liveAlt": "{{name}}s Browser, live",
+      "wait": "Das Bild erscheint gleich…",
+      "taken": "Du nutzt den Browser jetzt. {{name}} sieht darin nichts und kann nichts tun.",
+      "address": "Eingetragene Adresse: {{address}}",
+      "take": "Übernehmen",
+      "done": "Fertig",
+      "settled": "Angemeldet. Weiter: deine neue Adresse",
+      "settledMine": "Im eigenen Browser"
+    }
+  }
+}

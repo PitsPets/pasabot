@@ -1,0 +1,57 @@
+{
+  "nav": "站点",
+  "page": {
+    "title": "站点",
+    "intro": "由 agent 发布的小型网页。它们在独立的站点地址中打开，在沙盒中运行，无法使用你的登录状态。每个站点到期后会失效，除非续期。"
+  },
+  "refresh": "刷新",
+  "loading": "正在加载…",
+  "empty": "还没有站点。agent 发布后会显示在这里。",
+  "error": "无法加载站点。{{reason}}",
+  "tunnel": {
+    "title": "外部访问地址",
+    "label": "站点的隧道地址",
+    "hint": "可选。如果你自己的隧道指向站点地址，请在此粘贴该地址（例如 https://sites.example.net），公开站点将显示此地址。",
+    "save": "保存地址",
+    "saved": "已保存。",
+    "none": "尚未设置隧道地址，因此暂时无法公开任何站点。"
+  },
+  "site": {
+    "by": "发布者：{{name}}",
+    "byRemoved": "发布者：已移除的 agent",
+    "files_other": "{{count}} 个文件",
+    "expires": "到期时间：{{when}}",
+    "public": "公开",
+    "private": "私有",
+    "open": "打开站点",
+    "openPublic": "公开地址",
+    "renew": "再保留 7 天",
+    "makePublic": "设为公开",
+    "makePrivate": "设为私有",
+    "remove": "移除",
+    "confirmRemove": "移除“{{title}}”？其地址将立即失效。",
+    "list": "文件"
+  },
+  "tools": {
+    "sites_publish": "发布静态网站",
+    "sites_list": "列出你的网站",
+    "sites_renew": "续期网站",
+    "sites_unpublish": "移除网站"
+  },
+  "find": {
+    "navHint": "智能体建立并托管的网站",
+    "navKeywords": "网站, 网页, 发布, 托管"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助手制作并上线的网站"
+    },
+    "page": {
+      "intro": "你的助手发布的小网页。它们在单独的地址打开，与应用隔开，不能使用你的登录。不续期就会过期。"
+    },
+    "empty": "还没有网站。助手发布后会显示在这里。",
+    "site": {
+      "byRemoved": "由已删除的助手发布"
+    }
+  }
+}

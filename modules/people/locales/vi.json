@@ -1,0 +1,107 @@
+{
+  "nav": "Mọi người",
+  "page": {
+    "title": "Mọi người",
+    "introOwner": "Mời người thân, bạn bè hoặc đồng nghiệp. Khách chỉ thấy các chat bạn thêm họ vào; thành viên còn dùng được các agent bạn chia sẻ. Bạn vẫn là chủ sở hữu duy nhất.",
+    "introOther": "Bạn được mời vào PasaBot này. Chủ sở hữu quyết định những gì bạn có thể xem."
+  },
+  "kind": {
+    "owner": "Chủ sở hữu",
+    "member": "Thành viên",
+    "guest": "Khách"
+  },
+  "role": {
+    "member": "Được viết",
+    "observer": "Chỉ đọc"
+  },
+  "invite": {
+    "title": "Mời ai đó",
+    "intro": "Bạn sẽ nhận một liên kết để gửi cho họ. Liên kết chỉ dùng được một lần và hết hạn sau 3 ngày.",
+    "kind": "Mời với vai trò",
+    "guestHint": "Khách chỉ thấy các chat bạn chọn bên dưới.",
+    "memberHint": "Thành viên thấy các chat bạn chọn và có thể mở chat với các agent bạn chia sẻ.",
+    "chats": "Các chat họ tham gia",
+    "noChats": "Chưa có chat nào. Hãy tạo một agent trước.",
+    "pickChat": "Chọn ít nhất một chat cho khách.",
+    "role": "Trong các chat đó, họ",
+    "create": "Tạo liên kết mời",
+    "link": "Liên kết mời",
+    "linkHint": "Chỉ gửi cho người bạn mời: ai mở trước sẽ là người tham gia.",
+    "copy": "Sao chép liên kết",
+    "copied": "Đã sao chép"
+  },
+  "invites": {
+    "title": "Lời mời đang mở",
+    "noChats": "Không có chat",
+    "expires": "hết hạn {{when}}",
+    "revoke": "Hủy lời mời"
+  },
+  "list": {
+    "title": "Mọi người trên PasaBot này",
+    "disabled": "Đã tắt",
+    "disable": "Tắt",
+    "enable": "Bật lại"
+  },
+  "agents": {
+    "title": "Agent thành viên có thể dùng",
+    "intro": "Thành viên có thể bắt đầu chat riêng với các agent này. Tin nhắn của họ chạy dưới danh nghĩa của họ, không phải của bạn, nên việc rủi ro vẫn sẽ hỏi bạn trước.",
+    "none": "Chưa có agent nào.",
+    "share": "Cho thành viên dùng {{name}}"
+  },
+  "member": {
+    "title": "Agent bạn có thể dùng",
+    "intro": "Bắt đầu chat riêng với một agent mà chủ sở hữu đã chia sẻ.",
+    "none": "Chủ sở hữu chưa chia sẻ agent nào cho bạn.",
+    "open": "Chat với {{name}}"
+  },
+  "guest": {
+    "title": "Chat của bạn",
+    "body": "Các chat của bạn nằm trong danh sách. Chủ sở hữu sẽ thêm bạn vào nhiều chat hơn khi cần."
+  },
+  "chat": {
+    "button": "Mọi người",
+    "title": "Mọi người trong chat này",
+    "readOnly": "Chuyển sang chỉ đọc",
+    "letWrite": "Cho phép viết",
+    "remove": "Xóa {{name}}",
+    "add": "Thêm người",
+    "addPerson": "Thêm {{name}}",
+    "invite": "Mời người mới vào chat này",
+    "close": "Xong"
+  },
+  "join": {
+    "title": "Tham gia PasaBot",
+    "loading": "Đang kiểm tra lời mời…",
+    "invalid": "Liên kết mời này không còn dùng được. Hãy xin liên kết mới.",
+    "introGuest": "{{name}} đã mời bạn làm khách vào: {{chats}}.",
+    "introMember": "{{name}} đã mời bạn làm thành viên.",
+    "name": "Tên của bạn",
+    "password": "Chọn mật khẩu",
+    "again": "Nhập lại mật khẩu",
+    "short": "Dùng ít nhất 8 ký tự.",
+    "mismatch": "Mật khẩu không khớp.",
+    "badName": "Hãy dùng tên đơn giản, không có ký tự đặc biệt.",
+    "submit": "Tham gia"
+  },
+  "errors": {
+    "generic": "Đã xảy ra lỗi. Hãy thử lại."
+  },
+  "find": {
+    "navHint": "Mời mọi người và chọn ai được tham gia",
+    "navKeywords": "mời, thành viên, khách, gia đình, bạn bè"
+  },
+  "plain": {
+    "page": {
+      "introOwner": "Mời gia đình, bạn bè hoặc đồng nghiệp. Khách chỉ thấy các cuộc trò chuyện bạn thêm họ vào; thành viên còn dùng được các trợ lý bạn chia sẻ. Bạn vẫn là chủ duy nhất."
+    },
+    "invite": {
+      "memberHint": "Thành viên thấy các cuộc trò chuyện bạn chọn và có thể trò chuyện với các trợ lý bạn chia sẻ.",
+      "noChats": "Chưa có cuộc trò chuyện. Hãy tạo một trợ lý trước."
+    },
+    "agents": {
+      "title": "Trợ lý mà thành viên dùng được",
+      "intro": "Thành viên có thể tự mở cuộc trò chuyện với các trợ lý này. Tin nhắn của họ chạy dưới tên họ, không bao giờ dưới tên bạn, nên việc rủi ro vẫn hỏi bạn trước.",
+      "none": "Chưa có trợ lý."
+    }
+  }
+}

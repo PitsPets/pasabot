@@ -1,0 +1,136 @@
+{
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "Tentar de novo",
+    "skip": "Pular",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "loading": "Carregando…"
+  },
+  "queue": {
+    "interrupted": "Esta execução foi interrompida por uma reinicialização do servidor.",
+    "interruptedHint": "Tente de novo ou pule para continuar com a próxima mensagem.",
+    "routineInterrupted": "Uma execução de rotina de {{agent}} foi interrompida por uma reinicialização do servidor."
+  },
+  "blocks": {
+    "fallback": "Esta mensagem tem conteúdo que o app não consegue exibir ({{kind}})."
+  },
+  "meta": {
+    "name": "Português (Brasil)",
+    "dir": "ltr",
+    "status": "unreviewed"
+  },
+  "server": {
+    "approvalNeeded": "Aprovação necessária",
+    "wantsToUse": "{{name}} quer: {{tool}}",
+    "interrupted": "Execução interrompida por um reinício do servidor",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}: a execução falhou",
+    "unknownError": "erro desconhecido",
+    "devicePaired": "Um dispositivo foi pareado",
+    "devicePairedBody": "{{what}} agora pode entrar na sua conta."
+  },
+  "provider": {
+    "fakeName": "Falso (testes)",
+    "hint": {
+      "notOnPath": "{{cli}} não encontrado no PATH",
+      "notFound": "{{cli}} não encontrado",
+      "versionFailed": "`{{cmd}} --version` falhou",
+      "runToSignIn": "execute `{{cmd}}` uma vez para entrar",
+      "runToSignInOrKey": "execute `{{cmd}}` uma vez para entrar (ou defina {{env}} pelo cofre)",
+      "runToAddProvider": "execute `{{cmd}}` uma vez para adicionar um provedor",
+      "checkedFirstTurn": "o login é verificado no primeiro turno",
+      "notAnswering": "{{name}} ({{url}}) não está respondendo",
+      "turnSignIn": "O login não funcionou da última vez. Entre de novo na página Cérebros."
+    }
+  },
+  "channel": {
+    "linked": "Vinculado. Você pode falar com {{agent}} aqui.",
+    "linkInvalid": "Esse código de vinculação é inválido ou expirou. Crie um novo no PasaBot: Configurações → Canais.",
+    "failed": "Desculpe, não funcionou. Os detalhes estão no app PasaBot.",
+    "empty": "(sem resposta)",
+    "interrupted": "Interrompido por um reinício. Tente de novo no app PasaBot.",
+    "approvalAsk": "Aprovação necessária: {{summary}}\nResponda /approve {{id}} ou /deny {{id}}",
+    "approvalDevice": "Aprovação necessária: {{summary}}\nEsta só pode ser aprovada no app PasaBot em um dispositivo pareado.",
+    "approvalNone": "Não há aprovação pendente com esse id nesta conversa.",
+    "approvalOwnerOnly": "Só o proprietário vinculado pode responder às aprovações.",
+    "approvalDeviceOnly": "Esta aprovação só pode ser respondida no app PasaBot em um dispositivo pareado.",
+    "approved": "{{id}} aprovado.",
+    "denied": "{{id}} recusado."
+  },
+  "card": {
+    "action": {
+      "open": "Abrir",
+      "dismiss": "Dispensar",
+      "signIn": "Entrar de novo",
+      "retry": "Tentar de novo",
+      "otherBrain": "Usar outro cérebro",
+      "wait": "Continuar esperando",
+      "notNow": "Agora não",
+      "takeOver": "Assumir",
+      "imDone": "Pronto, continue",
+      "ok": "Certo",
+      "remind": "Me lembre"
+    },
+    "signIn": {
+      "title": "O cérebro de {{name}} precisa que você entre",
+      "text": "{{brain}} saiu da conta, então {{name}} ainda não pode responder. Entre uma vez e tente de novo."
+    },
+    "failed": {
+      "title": "{{name}} não conseguiu terminar esta resposta",
+      "offline": "Não conseguiu chegar ao cérebro. Verifique a internet e tente de novo.",
+      "timeout": "Demorou demais, então parou.",
+      "auth": "O cérebro saiu da conta.",
+      "ratelimit": "O cérebro atingiu o limite de uso por enquanto.",
+      "quota": "O cérebro não tem mais uso neste plano.",
+      "contextoverflow": "A conversa ficou longa demais para o cérebro.",
+      "other": "O cérebro parou antes de terminar a resposta."
+    },
+    "limit": {
+      "title": "{{name}} está em pausa até {{untilAt}}",
+      "text": "O cérebro atingiu o limite de uso. Sua mensagem espera e sai sozinha.",
+      "offline": "O cérebro não está acessível agora. Sua mensagem espera e sai sozinha.",
+      "remindNow": "{{name}} já pode continuar",
+      "offlineTitle": "{{name}} está em pausa até {{untilAt}}"
+    },
+    "settled": {
+      "retrying": "Tentando de novo",
+      "signedIn": "Conectado de novo",
+      "resumed": "Funcionando de novo",
+      "remind": "Vou te lembrar às {{untilAt}}"
+    },
+    "member": {
+      "failed": "{{name}} não conseguiu terminar esta resposta.",
+      "approvalWaiting": "{{name}} está esperando o OK do dono.",
+      "approvalApproved": "{{name}} recebeu o OK.",
+      "approvalRefused": "{{name}} não recebeu permissão."
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}} precisa que você entre de novo",
+        "text": "A mente de {{name}} saiu da conta, então ainda não dá para responder. Entre uma vez e envie sua mensagem de novo."
+      },
+      "action": {
+        "otherBrain": "Usar outra mente"
+      },
+      "limit": {
+        "title": "{{name}} usou todas as vezes que podia por agora",
+        "text": "Pode continuar às {{untilAt}}. Sua mensagem espera e sai sozinha.",
+        "offlineTitle": "{{name}} não alcança a mente agora",
+        "offline": "Tenta de novo às {{untilAt}}. Sua mensagem espera e sai sozinha."
+      },
+      "failed": {
+        "offline": "Não conseguiu alcançar a mente. Confira a internet e tente de novo.",
+        "auth": "A mente saiu da conta.",
+        "ratelimit": "Usou todas as vezes que podia por agora.",
+        "quota": "Não sobrou nenhuma vez neste plano.",
+        "contextoverflow": "A conversa ficou longa demais para a mente.",
+        "other": "Parou antes de terminar a resposta."
+      }
+    }
+  }
+}

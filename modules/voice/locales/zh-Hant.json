@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "按住說話",
+    "listening": "聆聽中…放開即停止",
+    "working": "正在將語音轉成文字…",
+    "title": "您的訊息",
+    "text": "您說的內容",
+    "send": "傳送",
+    "cancel": "取消",
+    "empty": "沒有聽到聲音。請靠近麥克風一點，再試一次。",
+    "noMic": "此瀏覽器在這裡無法使用麥克風。",
+    "denied": "麥克風存取已被封鎖。請在瀏覽器中允許後再說話。",
+    "unavailable": "尚未設定語音輸入。Owner 可以在「設定 → 語音」中下載語音模型。",
+    "failed": "無法將錄音轉成文字。{{reason}}",
+    "browserNote": "使用瀏覽器的語音辨識。"
+  },
+  "listen": {
+    "play": "聆聽",
+    "stop": "停止",
+    "loading": "正在準備音訊…",
+    "failed": "無法朗讀此內容。{{reason}}"
+  },
+  "settings": {
+    "title": "語音",
+    "intro": "與您的 agent 對話並聆聽它們的回覆。語音處理在此伺服器上執行，您的聲音不會外流。",
+    "engine": "語音引擎",
+    "engineFake": "測試引擎",
+    "engineLocal": "在此伺服器上",
+    "noPackage": "此伺服器尚未安裝語音引擎，因此改用瀏覽器的備用方案。",
+    "stt": "語音輸入",
+    "tts": "語音回覆",
+    "ready": "已就緒：{{model}}",
+    "notReady": "尚無模型",
+    "models": "語音模型",
+    "modelsIntro": "模型只會在您要求時，從語音引擎的官方發行版下載。",
+    "kindStt": "語音輸入",
+    "kindTts": "語音回覆",
+    "size": "約 {{mb}} MB",
+    "languages": "語言：{{list}}",
+    "installed": "已安裝",
+    "download": "下載 {{name}}",
+    "remove": "移除 {{name}}",
+    "modelName": "{{model}}（{{note}}）",
+    "noteMultilingual": "多語言",
+    "noteEnglish": "英語",
+    "downloading": "下載中…{{pct}}",
+    "unpacking": "解壓縮中…",
+    "failedDownload": "下載失敗：{{reason}}",
+    "disabledUnpinned": "目前無法使用：PasaBot 沒有可用來驗證此下載內容的檢查碼，因此保持停用。",
+    "ownerOnly": "只有 owner 可以下載或移除模型。",
+    "autoRead": "自動朗讀新回覆",
+    "autoReadHint": "僅限此裝置。",
+    "browserStt": "未安裝模型時，使用瀏覽器的語音辨識",
+    "browserSttHint": "部分瀏覽器會將您的語音傳送到其開發商的伺服器進行辨識。預設為關閉。",
+    "loading": "載入中…",
+    "error": "無法載入語音設定。{{reason}}"
+  },
+  "find": {
+    "settingsHint": "和代理對話並收聽",
+    "settingsKeywords": "語音, 說話, 麥克風, 收聽, 音訊"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "和助理說話、聽它們說"
+    },
+    "settings": {
+      "intro": "與您的 助理 對話並聆聽它們的回覆。語音處理在此伺服器上執行，您的聲音不會外流。",
+      "engineLocal": "在此伺服器上",
+      "notReady": "尚無大腦",
+      "models": "語音大腦",
+      "modelsIntro": "大腦只會在您要求時，從語音引擎的官方發行版下載。",
+      "browserStt": "未安裝大腦時，使用瀏覽器的語音辨識",
+      "browserSttHint": "部分瀏覽器會將您的語音傳送到其開發商的伺服器進行辨識。預設為關閉。"
+    }
+  }
+}

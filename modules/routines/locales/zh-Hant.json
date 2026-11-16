@@ -1,0 +1,139 @@
+{
+  "nav": "例行任務",
+  "page": {
+    "title": "例行任務",
+    "intro": "例行任務可手動、依排程，或在有外部呼叫時執行 agent。若回覆內容恰為 (quiet)，代表沒有新消息，也不會通知您。",
+    "calendar": "行事曆訂閱",
+    "empty": "尚無例行任務。"
+  },
+  "hook": {
+    "title": "Webhook 位址與密鑰",
+    "once": "請立即複製。密鑰只會顯示一次；重新產生密鑰時，位址也會一併更新。",
+    "saved": "我已儲存"
+  },
+  "create": {
+    "title": "新增例行任務",
+    "name": "名稱",
+    "agent": "代理",
+    "prompt": "要 agent 做什麼？",
+    "promptHint": "每次執行時，都會作為例行任務的訊息傳送。",
+    "trigger": "執行方式",
+    "cron": "排程（cron）",
+    "cronHint": "分 時 日 月 星期，例如 0 9 * * 1-5 = 平日 9:00",
+    "tz": "時區",
+    "target": "執行位置",
+    "submit": "建立例行任務",
+    "workflow": "工作流程",
+    "noWorkflows": "尚無工作流程。請先到「工作流程」頁面建立。",
+    "offline": "離線時也執行",
+    "offlineHint": "若無法連線到 agent 的主要模型來源，就改用下一個來源（例如本機模型），並在結果中註明。"
+  },
+  "kind": {
+    "schedule": "依排程",
+    "manual": "手動",
+    "webhook": "Webhook",
+    "github": "GitHub",
+    "event": "發生事件時"
+  },
+  "target": {
+    "chat": "在 agent 的聊天中",
+    "thread": "在新的討論串中",
+    "workflow": "啟動工作流程"
+  },
+  "state": {
+    "paused": "已暫停"
+  },
+  "routine": {
+    "next": "下次",
+    "last": "上次"
+  },
+  "result": {
+    "pending": "執行中",
+    "ok": "完成",
+    "silent": "沒有新消息",
+    "failed": "失敗",
+    "interrupted": "已中斷",
+    "skipped": "已略過",
+    "held": "已保留"
+  },
+  "source": {
+    "manual": "手動",
+    "schedule": "排程",
+    "webhook": "Webhook",
+    "event": "事件",
+    "github": "GitHub",
+    "test": "測試執行"
+  },
+  "action": {
+    "run": "立即執行",
+    "test": "測試執行",
+    "pause": "暫停",
+    "resume": "恢復",
+    "rotate": "重新產生密鑰",
+    "rotateConfirm": "要重新產生密鑰與位址嗎？使用舊密鑰與位址的傳送端將無法再使用。",
+    "delete": "刪除",
+    "deleteConfirm": "要刪除此例行任務嗎？其活動紀錄會保留在動態中。"
+  },
+  "activity": {
+    "title": "活動",
+    "empty": "尚未執行任何任務。",
+    "open": "開啟聊天",
+    "silent": "已執行，沒有新內容可回報。",
+    "offlineFallback": "主要模型來源離線：改以 {{to}} 執行",
+    "rateLimited": "已達速率限制：免費模型忙碌或額度已用完，因此略過此次執行。下一次將照常執行。"
+  },
+  "tools": {
+    "routines_list": "列出我的例行工作",
+    "routines_create": "建立例行工作",
+    "routines_pause": "暫停我的一個例行工作",
+    "routines_delete": "刪除我的一個例行工作"
+  },
+  "server": {
+    "finished": "例行工作「{{name}}」已完成"
+  },
+  "find": {
+    "navHint": "依排程執行代理",
+    "navKeywords": "排程, 每天, 定時, 重複, 每日, 每週",
+    "stillOn_other": "仍有 {{count}} 個例行程序開啟，並會繼續執行。"
+  },
+  "plain": {
+    "find": {
+      "navHint": "按時間表執行助理"
+    },
+    "page": {
+      "intro": "例行工作可以手動、按時間表或在有東西呼叫時啟動助理。回覆正好是 (quiet) 表示沒有新消息，不會通知你。"
+    },
+    "create": {
+      "agent": "助理",
+      "prompt": "助理應該做什麼？",
+      "offlineHint": "如果連不上助理的主大腦，就用它的下一個大腦（比如這台電腦上的），並在結果裡說明。"
+    },
+    "kind": {
+      "webhook": "有連結被呼叫時"
+    },
+    "source": {
+      "webhook": "連結"
+    },
+    "hook": {
+      "title": "它的連結和密鑰"
+    },
+    "target": {
+      "chat": "在助理的聊天裡"
+    },
+    "activity": {
+      "rateLimited": "已略過：免費大腦現在忙或已用完。下一次照常執行。"
+    }
+  },
+  "card": {
+    "created": {
+      "title": "新例行任務：{{name}}",
+      "text": "它會自己執行。你可以暫停，不需要的話也可以刪除。"
+    },
+    "pause": "暫停",
+    "undo": "刪除",
+    "open": "查看例行任務",
+    "paused": "已暫停",
+    "undone": "已移除",
+    "gone": "這個例行任務已不存在"
+  }
+}

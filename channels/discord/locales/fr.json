@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "Jeton du bot",
+    "botTokenHint": "Disponible sur la page Bot de votre application dans le portail développeur Discord. Activez-y l'intent Message Content. Stocké dans le coffre, jamais affiché à nouveau.",
+    "apiBase": "Adresse de l'API",
+    "gatewayUrl": "Adresse de la passerelle",
+    "advancedHint": "Laissez ces valeurs telles quelles, sauf si vous savez que vous devez les modifier."
+  },
+  "link": {
+    "howTo": "Envoyez un message privé à votre bot : /link {{code}}",
+    "dmOnly": "Le code de liaison ne fonctionne que dans un message privé au bot."
+  },
+  "status": {
+    "connected": "Connecté",
+    "reconnecting": "Reconnexion…",
+    "auth_failed": "Discord a refusé le bot (vérifiez le jeton et l'intent Message Content)",
+    "stopped": "Arrêté"
+  }
+}

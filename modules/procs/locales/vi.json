@@ -1,0 +1,20 @@
+{
+  "nav": "Tiến trình",
+  "page": {
+    "title": "Tiến trình nền",
+    "intro": "Các tiến trình mà agent của bạn đã khởi chạy qua công cụ của PasaBot. Dừng một tiến trình sẽ kết thúc nó và mọi thứ nó đã khởi chạy.",
+    "empty": "Không có gì đang chạy nền."
+  },
+  "proc": {
+    "since": "Chạy từ",
+    "stop": "Dừng"
+  },
+  "tools": {
+    "procs_list": "Liệt kê tiến trình nền của tôi",
+    "procs_stop": "Dừng một tiến trình nền của tôi"
+  },
+  "find": {
+    "navHint": "Tiến trình và công việc đang chạy",
+    "navKeywords": "tiến trình, công việc, đang chạy, tác vụ"
+  }
+}

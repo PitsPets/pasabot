@@ -1,0 +1,119 @@
+{
+  "title": "Vault",
+  "intro": "Keys and passwords your agents use. Agents only get a reference like {{example}}; the value stays on this server and is hidden from every reply, log and channel.",
+  "loading": "Loading the vault…",
+  "error": "Could not load the vault: {{reason}}",
+  "unavailable": "The vault is locked on this server (no passphrase or keychain). Start the server with a vault passphrase to use it.",
+  "requests": {
+    "title": "Agents asking for a key",
+    "asks": "{{agent}} asks for {{name}}",
+    "untrusted": "Someone other than you started the turn that asked for this. Check it is really needed before you fill it.",
+    "fill": "Give the key",
+    "decline": "Decline",
+    "filled": "{{agent}} can now use {{reference}}.",
+    "declined": "Request declined."
+  },
+  "secrets": {
+    "title": "Saved secrets",
+    "empty": "No secrets yet.",
+    "shared": "Shared (server)",
+    "for": "For {{agent}}",
+    "remove": "Remove",
+    "confirmRemove": "Remove {{name}}? Agents using it will stop working until you add it again.",
+    "module": "{{count}} more entries belong to channels and password managers.",
+    "backend_local": "Stored here",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "Key for {{brain}}. Agents running on it can see this key."
+  },
+  "add": {
+    "title": "Add a secret",
+    "open": "Add secret",
+    "name": "Name",
+    "nameHint": "Letters, digits, _ . - (agents write it as {{example}}).",
+    "who": "Who can use it",
+    "shared": "Shared (server only, no agent)",
+    "source": "Where the value comes from",
+    "source_local": "Type the value",
+    "source_bitwarden": "Bitwarden item",
+    "source_1password": "1Password reference",
+    "value": "Value",
+    "valueHint": "Write-only: it is never shown again.",
+    "ref_bitwarden": "Bitwarden item id",
+    "refHint_bitwarden": "Item id, or id/field (password, username, notes, totp or a custom field).",
+    "ref_1password": "Secret reference",
+    "refHint_1password": "Like op://Private/GitHub/token",
+    "save": "Save",
+    "cancel": "Cancel",
+    "saved": "Saved {{name}}.",
+    "brainOption": "Key for {{brain}}"
+  },
+  "backends": {
+    "title": "Password managers",
+    "intro": "PasaBot reads values through the Bitwarden (bw) or 1Password (op) command-line tool on this server. Only the reference is stored here.",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "Session key (from bw unlock)",
+    "token_1password": "Service account token",
+    "tokenHint": "Write-only. Leave empty and save to remove it.",
+    "set": "Key saved",
+    "notSet": "No key saved",
+    "save": "Save key",
+    "test": "Test",
+    "state_ready": "Ready",
+    "state_locked": "Locked or not signed in",
+    "state_not_installed": "Command-line tool not installed on the server",
+    "state_unsafe_bin": "Turned off (unsafe tool location)",
+    "unsafeHint": "Turned off: this server's user can change the tool's file, so an agent could swap it. Install it in a system folder (or set PASABOT_BW_BIN / PASABOT_OP_BIN to such a path) and restart.",
+    "state_error": "Not working"
+  },
+  "rotate": {
+    "title": "Rotate the vault key",
+    "intro": "Makes a new encryption key and re-encrypts every secret with it. Values do not change.",
+    "button": "Rotate key",
+    "confirm": "Re-encrypt every secret with a new key now?",
+    "yes": "Rotate now",
+    "cancel": "Cancel",
+    "done": "Re-encrypted {{count}} secrets with a new key.",
+    "last": "Last rotated {{when}}."
+  },
+  "tools": {
+    "vault_request_secret": "Ask the owner for a key",
+    "vault_list_secrets": "List my keys"
+  },
+  "server": {
+    "asksForKey": "{{agent}} asks for a key: {{name}}"
+  },
+  "find": {
+    "settingsHint": "Passwords and keys, kept locked",
+    "settingsKeywords": "passwords, keys, secrets, tokens, credentials"
+  },
+  "plain": {
+    "title": "Saved secrets",
+    "intro": "Keys and passwords your helpers use. Helpers only get a stand-in like {{example}}; the real value stays on this computer and is hidden from every reply, log and chat.",
+    "backends": {
+      "intro": "PasaBot reads values through the Bitwarden (bw) or 1Password (op) app on this computer. Only the stand-in is kept here.",
+      "token_1password": "1Password secret code"
+    },
+    "rotate": {
+      "title": "Change the lock on your saved secrets"
+    },
+    "secrets": {
+      "title": "What is saved here",
+      "forBrain": "Key for {{brain}}. Helpers that think with it can use this key.",
+      "confirmRemove": "Remove {{name}}? Helpers using it will stop working until you add it again."
+    },
+    "requests": {
+      "title": "Helpers asking for a key"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} needs your {{name}} key",
+      "text": "{{agent}} can use it but never sees it. Only you can give it, in the safe box.",
+      "give": "Give the key",
+      "given": "Key saved. It can use it now",
+      "declined": "Not given"
+    }
+  }
+}

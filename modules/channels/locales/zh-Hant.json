@@ -1,0 +1,146 @@
+{
+  "settings": {
+    "title": "頻道",
+    "intro": "透過 Telegram、Discord、Slack 或 WhatsApp 與 agent 交談。該應用程式中的每個聊天都會成為獨立的 PasaBot 聊天。",
+    "empty": "尚無頻道。",
+    "loading": "正在載入頻道…",
+    "error": "無法載入頻道：{{reason}}"
+  },
+  "add": {
+    "title": "新增頻道",
+    "open": "新增頻道",
+    "kind": "應用程式",
+    "label": "名稱（選填）",
+    "labelHint": "僅在此處顯示，例如「家人群組機器人」。",
+    "agent": "負責回覆的 agent",
+    "token": "機器人權杖",
+    "tokenHint": "只需貼上一次。權杖會存放在保險庫中，之後不再顯示。",
+    "allowed": "允許的傳送者（選填）",
+    "allowedHint": "平台使用者 ID，每行一個或以逗號分隔。留空則只有您可以與它交談。",
+    "submit": "新增頻道",
+    "cancel": "取消",
+    "noKinds": "此伺服器尚未安裝任何頻道應用程式。",
+    "noAgents": "請先建立 agent。",
+    "pairingNext": "新增後，用手機掃描 QR code 即可連結。"
+  },
+  "kind": {
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "whatsapp": "WhatsApp",
+    "fake": "測試頻道",
+    "agentchat": "AgentChat"
+  },
+  "status": {
+    "connected": "已連線",
+    "reconnecting": "重新連線中",
+    "auth_failed": "權杖遭拒",
+    "stopped": "已停止",
+    "error": "錯誤",
+    "starting": "啟動中",
+    "unavailable": "應用程式未安裝",
+    "disabled": "已關閉",
+    "not_linked": "尚未連結"
+  },
+  "binding": {
+    "agent": "回覆身分",
+    "lastEvent": "最近訊息",
+    "never": "尚無",
+    "dropped_other": "已捨棄 {{count}} 則陌生人的訊息",
+    "owner": "您的帳號",
+    "ownerNone": "尚未連結：只有已連結或允許的傳送者會收到回覆。",
+    "ownerLinked": "已連結至 {{name}}（{{id}}）",
+    "places": "聊天",
+    "placesNone": "尚無聊天。傳訊息給機器人即可開始。",
+    "openChat": "開啟聊天",
+    "allowed": "允許的傳送者",
+    "allowedNone": "僅限您",
+    "token": "機器人權杖",
+    "tokenSet": "已存放於保險庫",
+    "tokenReplace": "更換權杖",
+    "tokenNew": "新的機器人權杖",
+    "save": "儲存",
+    "saved": "已儲存",
+    "restart": "重新連線",
+    "turnOff": "關閉",
+    "turnOn": "開啟",
+    "remove": "移除",
+    "removeConfirm": "要移除此頻道嗎？機器人將停止回覆；其聊天仍會保留在 PasaBot 中。",
+    "confirm": "是，移除",
+    "unlink": "取消連結",
+    "error": "最近的錯誤：{{error}}",
+    "which": "哪一個"
+  },
+  "link": {
+    "start": "連結我的帳號",
+    "again": "新的連結碼",
+    "how": "請在 10 分鐘內以私訊將此內容傳給機器人：",
+    "warn": "僅限私訊。張貼在群組中的連結碼會失效。",
+    "copy": "複製",
+    "copied": "已複製",
+    "ownNumber": "自己的號碼：請在您自己的「傳訊息給自己」聊天中傳送連結碼。"
+  },
+  "field": {
+    "botToken": "機器人權杖",
+    "signingSecret": "簽署密鑰"
+  },
+  "option": {
+    "ownNumber": {
+      "label": "使用哪個號碼",
+      "off": "為 agent 使用獨立號碼",
+      "on": "我自己的號碼（我在「傳訊息給自己」中與它交談）"
+    }
+  },
+  "events": {
+    "title": "事件 URL",
+    "how": "請將此內容貼到您 {{app}} 應用程式的事件設定中。每個請求都會以簽署密鑰驗證。"
+  },
+  "pairing": {
+    "title": "連結 {{app}}",
+    "riskTitle": "連結前請注意：這不是官方連線。",
+    "riskBody": "PasaBot 會以已連結裝置的身分加入您的 {{app}} 帳號，方式與電腦相同。{{app}} 的服務條款不允許以自動化方式使用個人帳號，因此該號碼可能遭到限制或封鎖。",
+    "riskAdvice": "請使用您可承受失去的號碼，並降低訊息數量。",
+    "accept": "我了解風險，顯示 QR code",
+    "scan": "在手機上開啟 {{app}} →「已連結的裝置」→「連結裝置」，然後掃描此代碼。代碼每隔幾秒就會變更。",
+    "qrAlt": "用於連結此裝置的 QR code",
+    "waiting": "正在取得 QR code…",
+    "linked": "已連結。連線中…",
+    "failed": "連結未完成（{{reason}}）。請再試一次。"
+  },
+  "find": {
+    "settingsHint": "從其他應用程式和代理聊天",
+    "settingsKeywords": "頻道, 電報, 聊天應用程式, 訊息"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "在其他聊天應用程式裡和助理說話"
+    },
+    "settings": {
+      "title": "聊天應用程式",
+      "intro": "在 Telegram、Discord、Slack 或 WhatsApp 裡和助理說話。那邊的每個聊天都會成為這裡的一個聊天。",
+      "empty": "還沒有聊天應用程式。"
+    },
+    "add": {
+      "title": "新增聊天應用程式",
+      "open": "新增聊天應用程式",
+      "submit": "新增這個應用程式",
+      "kind": "哪個聊天應用程式？",
+      "agent": "負責回覆的助理",
+      "token": "應用程式給的秘密代碼",
+      "tokenHint": "只需貼上一次。它會安全地保存在這台電腦上，不再顯示。",
+      "allowed": "還有誰可以傳訊息（選填）",
+      "allowedHint": "每個人在那個應用程式裡的號碼或使用者名稱，每行一個。留空則只有你能和它說話。",
+      "noAgents": "請先建立一個助理。"
+    },
+    "field": {
+      "botToken": "應用程式給的秘密代碼",
+      "signingSecret": "應用程式給的第二個秘密代碼"
+    },
+    "binding": {
+      "token": "應用程式給的秘密代碼",
+      "tokenSet": "已安全保存在這台電腦上",
+      "tokenReplace": "更換秘密代碼",
+      "tokenNew": "應用程式給的新秘密代碼"
+    }
+  }
+}

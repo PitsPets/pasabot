@@ -1,0 +1,140 @@
+{
+  "nav": "Routinen",
+  "page": {
+    "title": "Routinen",
+    "intro": "Routinen starten einen Agenten von Hand, nach Zeitplan oder wenn etwas anruft. Eine Antwort von genau (quiet) bedeutet: nichts Neues, und du wirst nicht benachrichtigt.",
+    "calendar": "Kalender-Feed",
+    "empty": "Noch keine Routinen."
+  },
+  "hook": {
+    "title": "Webhook-Adresse und Geheimnis",
+    "once": "Kopiere sie jetzt. Das Geheimnis wird nur einmal angezeigt; beim Erneuern ändert sich auch die Adresse.",
+    "saved": "Ich habe sie gespeichert"
+  },
+  "create": {
+    "title": "Neue Routine",
+    "name": "Name",
+    "agent": "Agent",
+    "prompt": "Was soll der Agent tun?",
+    "promptHint": "Wird bei jedem Lauf als Nachricht der Routine gesendet.",
+    "trigger": "Läuft",
+    "cron": "Zeitplan (Cron)",
+    "cronHint": "Minute Stunde Tag Monat Wochentag, z. B. 0 9 * * 1-5 = 9:00 Uhr an Werktagen",
+    "tz": "Zeitzone",
+    "target": "Wo sie läuft",
+    "submit": "Routine erstellen",
+    "workflow": "Workflow",
+    "noWorkflows": "Noch keine Workflows. Erstelle zuerst einen auf der Workflows-Seite.",
+    "offline": "Auch offline ausführen",
+    "offlineHint": "Ist das Hauptgehirn des Agenten nicht erreichbar, wird sein nächstes Gehirn (z. B. ein lokales Modell) genutzt und im Ergebnis vermerkt."
+  },
+  "kind": {
+    "schedule": "Nach Zeitplan",
+    "manual": "Von Hand",
+    "webhook": "Webhook",
+    "github": "GitHub",
+    "event": "Bei einem Ereignis"
+  },
+  "target": {
+    "chat": "Im Chat des Agenten",
+    "thread": "In einem neuen Thread",
+    "workflow": "Startet einen Workflow"
+  },
+  "state": {
+    "paused": "Pausiert"
+  },
+  "routine": {
+    "next": "Nächste",
+    "last": "Letzte"
+  },
+  "result": {
+    "pending": "Läuft",
+    "ok": "Fertig",
+    "silent": "Nichts Neues",
+    "failed": "Fehlgeschlagen",
+    "interrupted": "Unterbrochen",
+    "skipped": "Übersprungen",
+    "held": "Zurückgehalten"
+  },
+  "source": {
+    "manual": "von Hand",
+    "schedule": "Zeitplan",
+    "webhook": "Webhook",
+    "event": "Ereignis",
+    "github": "GitHub",
+    "test": "Testlauf"
+  },
+  "action": {
+    "run": "Jetzt ausführen",
+    "test": "Testlauf",
+    "pause": "Pausieren",
+    "resume": "Fortsetzen",
+    "rotate": "Neues Geheimnis",
+    "rotateConfirm": "Neues Geheimnis und neue Adresse erstellen? Absender mit den alten Daten funktionieren dann nicht mehr.",
+    "delete": "Löschen",
+    "deleteConfirm": "Diese Routine löschen? Ihre Aktivität bleibt im Feed."
+  },
+  "activity": {
+    "title": "Aktivität",
+    "empty": "Noch nichts gelaufen.",
+    "open": "Chat öffnen",
+    "silent": "Gelaufen, nichts Neues zu melden.",
+    "offlineFallback": "Hauptgehirn offline: lief auf {{to}}",
+    "rateLimited": "Ratenlimit: Das kostenlose Modell ist ausgelastet oder das Kontingent ist aufgebraucht, daher wurde dieser Lauf übersprungen. Der nächste läuft wie gewohnt."
+  },
+  "tools": {
+    "routines_list": "Meine Routinen auflisten",
+    "routines_create": "Routine anlegen",
+    "routines_pause": "Eine meiner Routinen pausieren",
+    "routines_delete": "Eine meiner Routinen löschen"
+  },
+  "server": {
+    "finished": "Routine „{{name}}“ ist fertig"
+  },
+  "find": {
+    "navHint": "Einen Agenten nach Zeitplan starten",
+    "navKeywords": "Zeitplan, jeden Tag, Timer, wiederholen, täglich, wöchentlich",
+    "stillOn_one": "{{count}} Routine ist noch an und läuft weiter.",
+    "stillOn_other": "{{count}} Routinen sind noch an und laufen weiter."
+  },
+  "plain": {
+    "find": {
+      "navHint": "Einen Helfer nach Zeitplan laufen lassen"
+    },
+    "page": {
+      "intro": "Routinen starten einen Helfer von Hand, nach Zeitplan oder wenn etwas anruft. Die Antwort genau (quiet) heißt: nichts Neues, und du wirst nicht benachrichtigt."
+    },
+    "create": {
+      "agent": "Helfer",
+      "prompt": "Was soll der Helfer tun?",
+      "offlineHint": "Wenn das Hauptgehirn des Helfers nicht erreichbar ist, nimm sein nächstes Gehirn (zum Beispiel eins auf diesem Computer) und sag es im Ergebnis."
+    },
+    "kind": {
+      "webhook": "Wenn ein Link aufgerufen wird"
+    },
+    "source": {
+      "webhook": "ein Link"
+    },
+    "hook": {
+      "title": "Sein Link und Geheimnis"
+    },
+    "target": {
+      "chat": "Im Chat des Helfers"
+    },
+    "activity": {
+      "rateLimited": "Übersprungen: Das kostenlose Gehirn ist gerade beschäftigt oder aufgebraucht. Das nächste Mal läuft es normal."
+    }
+  },
+  "card": {
+    "created": {
+      "title": "Neue Routine: {{name}}",
+      "text": "Sie läuft von selbst. Du kannst sie pausieren oder löschen, wenn du sie nicht willst."
+    },
+    "pause": "Pausieren",
+    "undo": "Löschen",
+    "open": "Routinen ansehen",
+    "paused": "Pausiert",
+    "undone": "Entfernt",
+    "gone": "Diese Routine gibt es nicht mehr"
+  }
+}

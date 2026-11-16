@@ -1,0 +1,294 @@
+{
+  "nav": "Kotak Masuk",
+  "page": {
+    "title": "Kotak masuk bot",
+    "intro": "Kotak surat milik bot Anda sendiri. Email yang masuk dianggap data luar: agent Anda boleh membacanya, tetapi tidak pernah menuruti perintah di dalamnya. Setiap email yang ingin mereka kirim akan meminta persetujuan Anda dulu."
+  },
+  "setup": {
+    "title": "Hubungkan kotak surat",
+    "intro": "Anda membuat kotak surat sendiri, di penyedia mana pun yang Anda pilih, lewat browser Anda sendiri.",
+    "step1": "Buat kotak surat baru untuk bot Anda di penyedia pilihan Anda.",
+    "step2": "Di pengaturan kotak surat itu, aktifkan IMAP dan SMTP lalu buat sandi aplikasi. Periksa ketentuan penyedia Anda (beberapa memerlukan aplikasi pendamping untuk IMAP).",
+    "step3": "Masukkan detail server dan sandi aplikasi di bawah ini.",
+    "never": "PasaBot tidak pernah membuat kotak surat, tidak pernah masuk lewat browser untuk Anda, dan tidak pernah memecahkan captcha. Detail dan sandi aplikasi hanya disimpan di brankas.",
+    "address": "Alamat email",
+    "username": "Nama masuk",
+    "usernameHint": "Kosongkan jika sama dengan alamat email.",
+    "imapHost": "Server IMAP",
+    "imapPort": "Port IMAP",
+    "imapTls": "Keamanan IMAP",
+    "smtpHost": "Server SMTP",
+    "smtpPort": "Port SMTP",
+    "smtpTls": "Keamanan SMTP",
+    "tls": {
+      "implicit": "TLS sejak awal",
+      "starttls": "STARTTLS (wajib)"
+    },
+    "password": "Sandi aplikasi",
+    "passwordHint": "Sandi aplikasi yang dibuat penyedia Anda untuk bot ini, bukan sandi utama Anda.",
+    "passwordKeep": "Tersimpan di brankas. Kosongkan untuk tetap memakainya.",
+    "save": "Simpan kotak surat",
+    "saved": "Tersimpan. Detail dan sandi aplikasi ada di brankas."
+  },
+  "mail": {
+    "title": "Email",
+    "intro": "Ditampilkan sebagai teks biasa. Gambar dan tautan di dalam email tidak pernah dimuat.",
+    "check": "Periksa email baru",
+    "fetched_other": "{{count}} pesan baru.",
+    "empty": "Belum ada email.",
+    "noSubject": "(tanpa subjek)",
+    "wasHtml": "Email ini berformat; di sini ditampilkan sebagai teks biasa.",
+    "bridgeVerified": "Dari bot Anda yang terhubung, {{name}}",
+    "bridgeRefused": "Pesan bot ditolak: {{reason}}",
+    "refused": {
+      "unsigned": "tidak bertanda tangan",
+      "malformed": "tanda tangan rusak",
+      "unknown_sender": "bot tidak dikenal",
+      "wrong_from": "alamat pengirim salah",
+      "wrong_key": "kunci salah",
+      "bad_signature": "tanda tangan tidak cocok",
+      "wrong_recipient": "ditujukan untuk bot lain",
+      "body_changed": "teks telah diubah",
+      "stale": "terlalu lama",
+      "replayed": "terkirim dua kali"
+    }
+  },
+  "bridge": {
+    "title": "Pasangkan dengan PasaBot lain",
+    "intro": "Dua bot bisa saling menulis lewat email. Tukar alamat dan kunci di bawah dengan pemilik lainnya (bertemu langsung atau cara lain yang Anda percaya). Pesan mereka tetap dianggap data luar, dan setiap balasan akan meminta persetujuan Anda dulu.",
+    "yourAddress": "Alamat bot Anda: {{address}}",
+    "noAddress": "hubungkan kotak surat dulu",
+    "yourKey": "Kunci bot Anda:",
+    "peerName": "Nama bot mereka",
+    "peerAddress": "Alamat email bot mereka",
+    "peerKey": "Kunci bot mereka",
+    "peerKeyHint": "Kunci yang dilihat pemilik lainnya di halaman Kotak Masuk mereka.",
+    "add": "Pasangkan",
+    "added": "Terpasangkan.",
+    "remove": "Hapus"
+  },
+  "error": {
+    "not_configured": "Hubungkan kotak surat dulu.",
+    "bad_host": "Nama server itu tampaknya tidak benar.",
+    "password_required": "Masukkan sandi aplikasi.",
+    "blocked_address": "Server itu berada di alamat jaringan pribadi atau yang diblokir, jadi PasaBot tidak akan terhubung ke sana.",
+    "host_not_allowed": "Server itu bukan yang Anda masukkan.",
+    "starttls_unavailable": "Server tidak menawarkan koneksi aman, jadi PasaBot tidak masuk.",
+    "tls_failed": "Sertifikat keamanan server tidak dapat diperiksa.",
+    "auth_failed": "Server email menolak proses masuk. Periksa sandi aplikasi.",
+    "timeout": "Server email tidak menjawab.",
+    "stopped": "Semuanya sedang dihentikan.",
+    "bad_key": "Itu bukan kunci bot PasaBot.",
+    "exists": "Alamat itu sudah dipasangkan.",
+    "forbidden": "Hanya pemilik yang dapat melakukan ini.",
+    "other": "Terjadi kesalahan. Coba lagi."
+  },
+  "tools": {
+    "inbox_list": "Daftar email masuk",
+    "inbox_read": "Baca satu email",
+    "inbox_send": "Kirim email",
+    "inbox_bridge_send": "Kirim pesan ke bot PasaBot yang dipasangkan"
+  },
+  "find": {
+    "navHint": "Email yang dibaca dan dibalas agen",
+    "navKeywords": "email, surel, pesan, kotak masuk"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Email yang dibaca dan dibalas pembantu Anda"
+    },
+    "page": {
+      "intro": "Kotak surat milik bot Anda. Surat yang masuk berasal dari luar: pembantu Anda boleh membacanya, tetapi tidak pernah menuruti perintah di dalamnya. Setiap email yang ingin mereka kirim selalu ditanyakan dulu kepada Anda."
+    },
+    "setup": {
+      "intro": "Anda sendiri yang membuat kotak surat, di layanan email pilihan Anda, di browser Anda sendiri.",
+      "step1": "Buat kotak surat baru untuk bot Anda di layanan email pilihan Anda.",
+      "step2": "Di pengaturan kotak surat itu, nyalakan IMAP dan SMTP (agar aplikasi email bisa masuk) dan buat sandi aplikasi. Baca aturan layanan email Anda (ada yang butuh aplikasi bantu untuk IMAP).",
+      "step3": "Ketik detail email dan sandi aplikasi di bawah.",
+      "never": "PasaBot tidak pernah membuat kotak surat, tidak pernah masuk lewat browser untuk Anda, dan tidak pernah menjawab captcha. Detail dan sandi aplikasi hanya disimpan aman di komputer ini.",
+      "imapHost": "Alamat email masuk (IMAP)",
+      "smtpHost": "Alamat email keluar (SMTP)",
+      "passwordHint": "Sandi aplikasi yang dibuat layanan email Anda untuk bot ini, bukan sandi utama Anda.",
+      "passwordKeep": "Disimpan aman di komputer ini. Biarkan kosong untuk mempertahankannya.",
+      "saved": "Tersimpan. Detail dan sandi aplikasi disimpan aman di komputer ini.",
+      "imapPort": "Port surel masuk",
+      "smtpPort": "Port surel keluar",
+      "imapTls": "Keamanan surel masuk",
+      "smtpTls": "Keamanan surel keluar"
+    },
+    "error": {
+      "bad_host": "Alamat email masuk atau keluar itu sepertinya tidak benar.",
+      "blocked_address": "Alamat itu ada di jaringan pribadi atau terblokir, jadi PasaBot tidak akan terhubung ke sana.",
+      "host_not_allowed": "Itu bukan alamat yang Anda ketik.",
+      "starttls_unavailable": "Layanan email tidak menawarkan sambungan aman, jadi PasaBot tidak masuk.",
+      "tls_failed": "Sertifikat keamanan layanan email tidak bisa diperiksa.",
+      "auth_failed": "Layanan email menolak masuk. Periksa sandi aplikasi.",
+      "timeout": "Layanan email tidak menjawab."
+    },
+    "guide": {
+      "manual": {
+        "intro": "Halaman bantuan layanan surelmu mencantumkan detail ini (cari pengaturan untuk aplikasi surel). Gunakan kata sandi aplikasi jika tersedia."
+      }
+    }
+  },
+  "guide": {
+    "count": "Langkah {{n}} dari {{total}}",
+    "back": "Kembali",
+    "next": "Lanjut",
+    "done": "Selesai",
+    "moved": "Pengaturan email ini sudah berganti. Kamu bisa melanjutkannya di Setelan, di Kotak suratmu.",
+    "badAddress": "Itu tidak terlihat seperti alamat email. Periksa lalu coba lagi.",
+    "pageTitle": "Hubungkan emailmu",
+    "openChat": "Kembali ke obrolan dengan {{name}}",
+    "cardNew": "Buat email baru",
+    "cardConnect": "Hubungkan emailmu",
+    "service": {
+      "title": "Email apa yang kamu pakai?",
+      "other": "Email lain"
+    },
+    "ideas": {
+      "title": "Ide alamat",
+      "note": "Ini hanya ide. Google memberi tahu mana yang masih kosong saat kamu mendaftar.",
+      "nameLabel": "Nama usaha atau tim kamu",
+      "nameHint": "Misalnya Reyes Hardware. Aku buatkan beberapa ide alamat dari nama itu.",
+      "show": "Lihat ide",
+      "copy": "Salin",
+      "copyOne": "Salin {{address}}",
+      "copied": "Tersalin"
+    },
+    "signup": {
+      "title": "Buat akunnya di Gmail",
+      "open": "Buka pendaftaran Gmail",
+      "asks": "Google akan menanyakan:",
+      "ask1": "namamu",
+      "ask2": "alamat baru yang kamu mau (ide di atas juga boleh)",
+      "ask3": "kata sandi yang kamu pilih dan simpan baik-baik. Aku tidak pernah melihatnya",
+      "ask4": "pemeriksaan lewat ponsel: Google mengirim kode lewat SMS",
+      "onlyYou": "Bagian ini hanya kamu yang mengerjakan, di browsermu sendiri. Aku tidak pernah mendaftar, mengetik kata sandimu, atau menjawab pemeriksaan ponsel untukmu.",
+      "done": "Selesai, aku sudah punya email baru"
+    },
+    "address": {
+      "label": "Alamat emailmu",
+      "newLabel": "Alamat email barumu",
+      "hint": "Alamat lengkap, seperti {{example}}",
+      "looksLike": "Sepertinya itu alamat {{name}}.",
+      "switch": "Ganti ke {{name}}",
+      "work": "Apakah ini email kantor atau sekolah? Pengelolanya mungkin perlu mengizinkan sandi aplikasi dulu. Tanyakan kalau kodemu terus ditolak."
+    },
+    "apppw": {
+      "title": "Buat sandi aplikasi untuk PasaBot",
+      "why": "Sandi aplikasi adalah kode khusus yang dibuat {{company}} hanya untuk PasaBot. Aku memakainya sebagai ganti kata sandi aslimu, dan kamu bisa menghapusnya kapan saja.",
+      "s1": "Aktifkan verifikasi 2 langkah kalau masih mati. {{company}} memintanya sebelum membuat sandi aplikasi, dan mengirim kode ke ponselmu.",
+      "s1Open": "Buka halaman 2 langkah {{company}}",
+      "s2": {
+        "gmail": "Di halaman Sandi aplikasi Google, ketik PasaBot sebagai nama lalu ketuk Buat.",
+        "outlook": "Di halaman keamanan Microsoft, pilih untuk membuat sandi aplikasi baru.",
+        "yahoo": "Di halaman keamanan akun Yahoo, ketuk Buat sandi aplikasi, ketik PasaBot lalu ketuk Buat.",
+        "icloud": "Di halaman akun Apple, buka Masuk dan Keamanan, lalu Kata Sandi Khusus App. Ketuk tombol plus dan ketik PasaBot."
+      },
+      "s2Open": "Buka halaman {{company}}",
+      "s3": "Salin kode yang muncul: {{letters}} huruf, dalam kelompok kecil. Lalu kembali ke sini.",
+      "haveCode": "Aku sudah punya kodenya"
+    },
+    "code": {
+      "title": "Tempel kodemu",
+      "label": "Sandi aplikasi ({{letters}} huruf)",
+      "hint": "Spasi tidak masalah. Tempel hanya di sini, jangan di obrolan.",
+      "tech": "Server: {{imap}} dan {{smtp}}, hanya koneksi aman.",
+      "connect": "Hubungkan",
+      "checking": "Memeriksa ke {{company}}…",
+      "ok": "Terhubung. Sekarang aku bisa membaca dan membuat draf untukmu."
+    },
+    "reason": {
+      "wrong_code": "{{company}} menolak kode itu. Buat sandi aplikasi baru lalu tempel lagi {{letters}} hurufnya.",
+      "two_step_off": "{{company}} ingin verifikasi 2 langkah aktif dulu. Aktifkan, buat sandi aplikasi baru, lalu tempel di sini.",
+      "imap_off": "{{company}} tidak mengizinkan aplikasi email masuk ke akun ini. Kalau akun ini dikelola kantor atau sekolah, minta mereka mengizinkan aplikasi email. Lalu ketuk Hubungkan lagi. Kodemu masih ada di kotak.",
+      "no_internet": "Aku tidak bisa menjangkau {{company}}. Periksa apakah komputer ini terhubung internet, lalu coba lagi.",
+      "server_trouble": "Server email {{company}} tidak menjawab dengan aman. Tunggu sebentar lalu coba lagi.",
+      "code_shape": "Itu bukan {{letters}} huruf. Salin lagi kodenya dari halaman {{company}}.",
+      "stopped": "Semua sedang dihentikan. Nyalakan lagi, lalu coba lagi.",
+      "tooMany": "Sudah banyak percobaan berturut-turut. Tunggu beberapa menit, lalu coba lagi.",
+      "busy": "Aku masih memeriksa percobaan terakhirmu. Tunggu sebentar."
+    },
+    "manual": {
+      "intro": "Halaman bantuan layanan emailmu mencantumkan data ini (cari IMAP dan SMTP). Pakai sandi aplikasi kalau tersedia.",
+      "plain": "Untuk layanan email lain, beri tahu {{name}} di chat perusahaan mana yang mengelola emailmu. Kamu akan dibantu mencari pengaturannya. Untuk mengetiknya, nyalakan Istilah teknis di Pengaturan.",
+      "plainNoName": "Untuk layanan email lain, beri tahu asistenmu di chat perusahaan mana yang mengelola emailmu. Kamu akan dibantu mencari pengaturannya. Untuk mengetiknya, nyalakan Istilah teknis di Pengaturan."
+    },
+    "access": {
+      "title": "Apa yang boleh dilakukan pembantumu dengan email ini?",
+      "read": "Hanya membaca",
+      "readHint": "Mereka membaca dan merapikan emailmu. Tidak ada yang ditulis atau dikirim.",
+      "draft": "Membaca dan membuat draf (terbaik untuk mulai)",
+      "draftHint": "Mereka membaca emailmu dan menulis balasan untuk kamu periksa. Tidak ada yang dikirim.",
+      "send": "Kirim setelah aku setujui",
+      "sendHint": "Mereka boleh mengirim email, tapi hanya setelah kamu mengetuk Setujui, setiap kali."
+    },
+    "test": {
+      "title": "Tes kecil",
+      "body": "Kirim email ke {{address}} dengan kata ini di subjek. Dari ponsel juga boleh. Aku kabari kalau sudah sampai.",
+      "check": "Periksa sekarang",
+      "arrived": "Sudah tiba: “{{subject}}” dari {{from}}.",
+      "none": "Belum ada email dengan kata {{word}}. Email bisa butuh semenit, coba lagi sebentar lagi.",
+      "finish": "Selesaikan",
+      "proves": "Ini menunjukkan aku bisa membaca kotak masukmu."
+    },
+    "finished": {
+      "title": "Emailmu sudah terhubung",
+      "body": "{{address}} sudah terhubung.",
+      "read": "Pembantumu bisa membacanya.",
+      "draft": "Pembantumu bisa membacanya dan membuat draf balasan untukmu.",
+      "send": "Pembantumu bisa membacanya, membuat draf, dan mengirim setelah kamu setujui.",
+      "change": "Kamu bisa mengubahnya kapan saja di Setelan, di Kotak suratmu."
+    },
+    "say": {
+      "introNew": "Ayo buat email baru timmu bersama. Kita jalan satu langkah demi satu; ketuk tombol di akhir tiap langkah kalau sudah siap.",
+      "introConnect": "Ayo hubungkan emailmu. Sekitar 3 menit, satu langkah demi satu.",
+      "service": "Pertama, email apa yang kamu pakai?",
+      "ideas": "Pertama, apa nama usaha atau timmu? Aku akan menyarankan beberapa alamat.",
+      "signup": "Sekarang buka pendaftaran Gmail dan buat akunnya. Ketuk Selesai saat kamu melihat kotak masuk barumu.",
+      "address_new": "Bagus! Ketik alamat barumu di sini.",
+      "address_connect": "Apa alamat emailmu?",
+      "guide": "Sekarang kita buat kode khusus untukku, jadi aku tidak pernah butuh kata sandimu.",
+      "code": "Tempel kodenya di sini. Aku akan memeriksanya ke {{company}}.",
+      "manual": "Ketik data server yang diberikan layanan emailmu.",
+      "access": "Terhubung! Apa yang boleh dilakukan pembantumu?",
+      "test": "Terakhir, tes kecil.",
+      "done": "Semua beres!",
+      "manualPlain": "Perusahaan mana yang mengelola emailmu? Beri tahu aku di chat, nanti aku bantu cari pengaturannya."
+    },
+    "settings": {
+      "title": "Kotak suratmu",
+      "hint": "Hubungkan email yang dibaca pembantumu",
+      "keywords": "email, gmail, outlook, yahoo, icloud, sandi aplikasi, kotak surat, hubungkan",
+      "none": "Belum ada email yang terhubung.",
+      "connected": "Terhubung: {{address}}.",
+      "helper": "{{name}} yang mengurusnya.",
+      "connect": "Hubungkan emailku",
+      "makeNew": "Buat email baru",
+      "change": "Hubungkan email lain",
+      "saved": "Tersimpan."
+    },
+    "withMe": {
+      "do": "Lakukan bersamaku",
+      "mine": "Saya lakukan di browser sendiri",
+      "intro": "{{name}} membuka halaman pendaftaran di browsernya sendiri dan mengisi nama serta alamat yang kamu pilih. Kata sandi dan cek ponsel kamu yang kerjakan.",
+      "first": "Nama depan",
+      "last": "Nama belakang",
+      "pick": "Alamat yang dicoba",
+      "working": "Membuka halaman pendaftaran…",
+      "badName": "Ketik nama depan dan belakangmu.",
+      "noBrowser": "Browser {{name}} tidak bisa dibuka di sini. Lakukan di browsermu sendiri saja.",
+      "yourTurn": "Giliranmu: pilih kata sandi dan lakukan cek ponsel. Aku tidak bisa melihat atau mengetiknya.",
+      "yourTurnText": "Ketuk Ambil alih untuk memakai browser. Ketuk Selesai saat email barumu sudah jadi.",
+      "liveAlt": "Browser {{name}}, langsung",
+      "wait": "Gambarnya muncul sebentar lagi…",
+      "taken": "Sekarang kamu yang memakai browser. {{name}} tidak bisa melihat atau melakukan apa pun di sana.",
+      "address": "Alamat yang diketik: {{address}}",
+      "take": "Ambil alih",
+      "done": "Selesai",
+      "settled": "Sudah daftar. Berikutnya: alamat barumu",
+      "settledMine": "Di browsermu sendiri"
+    }
+  }
+}

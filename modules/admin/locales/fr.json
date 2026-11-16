@@ -1,0 +1,76 @@
+{
+  "nav": "Admin",
+  "page": {
+    "title": "Administration du serveur",
+    "intro": "L'identité, l'état, les limites et les journaux de ce serveur. Seul vous, le propriétaire, pouvez voir cette page."
+  },
+  "host": {
+    "title": "Ce serveur",
+    "name": "Nom du serveur",
+    "save": "Enregistrer le nom",
+    "id": "ID du serveur",
+    "hostname": "Nom d'hôte",
+    "system": "Système",
+    "uptime": "En marche depuis",
+    "minutes": "{{count}} min"
+  },
+  "metrics": {
+    "title": "État de la machine",
+    "cpu": "CPU",
+    "mem": "Mémoire",
+    "disk": "Disque",
+    "load": "Charge",
+    "none": "Aucune mesure pour l'instant.",
+    "sample": "Vérifier maintenant",
+    "at": "Vérifié"
+  },
+  "alerts": {
+    "title": "Règles d'alerte",
+    "intro": "Vous recevez une notification lorsqu'une mesure reste au-dessus de la limite.",
+    "empty": "Aucune règle d'alerte pour l'instant.",
+    "name": "Nom de la règle",
+    "metric": "Mesure",
+    "above": "Alerter au-dessus de",
+    "forSamples": "Vérifications consécutives",
+    "cooldown": "Silence pendant (minutes)",
+    "add": "Ajouter la règle",
+    "remove": "Supprimer",
+    "fired": "Dernière alerte",
+    "never": "Jamais alerté",
+    "rule": "{{metric}} au-dessus de {{above}}"
+  },
+  "limits": {
+    "title": "Limites des agents",
+    "intro": "Plafonds de mémoire et de CPU pour le travail de chaque agent. Laissez un champ vide pour ne pas plafonner.",
+    "mem": "Mémoire (Mo)",
+    "cpu": "CPU (%)",
+    "save": "Enregistrer les limites",
+    "saved": "Enregistré",
+    "usage": "Utilisation actuelle : {{mem}} Mo, {{cpu}} % de CPU",
+    "empty": "Aucun agent pour l'instant."
+  },
+  "bundle": {
+    "title": "Déplacer un agent",
+    "intro": "Exportez un agent avec ses conversations dans un fichier, puis importez-le sur ce serveur PasaBot ou sur un autre. Les secrets, fichiers et dossiers ne sont pas inclus.",
+    "export": "Exporter {{name}}",
+    "import": "Importer un fichier d'agent",
+    "imported": "Importé. L'agent et ses conversations figurent dans votre liste.",
+    "failed": "Ce fichier n'a pas pu être importé."
+  },
+  "diag": {
+    "title": "Diagnostics",
+    "intro": "Une archive zip avec les mesures d'état, des résumés de paramètres et les journaux récents pour le dépannage. Les valeurs secrètes sont retirées avant qu'elle ne quitte le serveur.",
+    "download": "Télécharger les diagnostics"
+  },
+  "audit": {
+    "title": "Journal d'audit",
+    "filter": "Filtrer par action",
+    "empty": "Rien d'enregistré.",
+    "older": "Afficher plus ancien",
+    "by": "par {{actor}}"
+  },
+  "find": {
+    "navHint": "Entretien de ce PasaBot",
+    "navKeywords": "administration, maintenance, sauvegarde, journaux, mise à jour"
+  }
+}

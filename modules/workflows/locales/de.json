@@ -1,0 +1,142 @@
+{
+  "nav": "Workflows",
+  "page": {
+    "title": "Workflows",
+    "intro": "Ein Workflow verkettet Schritte: Agenten, Modellaufrufe ohne Tools, Bedingungen, deine Freigabe, Wartezeiten und Ausgaben. Baue ihn auf der Arbeitsfläche und starte ihn dann.",
+    "empty": "Noch keine Workflows.",
+    "new": "Neuer Workflow",
+    "fromTemplate": "Antworten, dann teilen",
+    "templateHint": "Der erste Agent beantwortet deinen Prompt, danach bekommen alle anderen Agenten diese Antwort gleichzeitig."
+  },
+  "list": {
+    "steps": "{{count}} Schritte",
+    "run": "Starten",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "deleteConfirm": "Diesen Workflow löschen? Bereits laufende Durchläufe laufen weiter."
+  },
+  "approvals": {
+    "title": "Wartet auf dich",
+    "approve": "Genehmigen",
+    "reject": "Ablehnen",
+    "rejectConfirm": "Ablehnen? Der Durchlauf endet hier."
+  },
+  "runs": {
+    "title": "Letzte Durchläufe",
+    "empty": "Noch keine Durchläufe.",
+    "show": "Schritte anzeigen",
+    "hide": "Schritte ausblenden",
+    "cancel": "Durchlauf stoppen",
+    "loops": "Schleifenwiederholungen: {{count}}"
+  },
+  "state": {
+    "running": "Läuft",
+    "waiting": "Wartet",
+    "done": "Fertig",
+    "failed": "Fehlgeschlagen",
+    "rejected": "Abgelehnt",
+    "stopped": "Gestoppt",
+    "cancelled": "Abgebrochen",
+    "skipped": "Übersprungen"
+  },
+  "type": {
+    "agent": "Agent",
+    "model": "Modell (ohne Tools)",
+    "condition": "Bedingung",
+    "approval": "Freigabe",
+    "transform": "Umwandlung",
+    "wait": "Warten",
+    "parallel": "Parallel",
+    "output": "Ausgabe"
+  },
+  "editor": {
+    "name": "Workflow-Name",
+    "add": "Schritt hinzufügen",
+    "addHint": "Ein neuer Schritt folgt auf den ausgewählten.",
+    "save": "Speichern",
+    "back": "Zurück zur Liste",
+    "saved": "Gespeichert.",
+    "canvas": "Workflow-Arbeitsfläche",
+    "maxIterations": "Schleifenlimit pro Durchlauf",
+    "selected": "Ausgewählter Schritt",
+    "none": "Tippe auf der Arbeitsfläche auf einen Schritt, um ihn zu bearbeiten.",
+    "label": "Schrittname",
+    "remove": "Diesen Schritt entfernen",
+    "next": "Danach weiter zu",
+    "branch": "Wenn die Bedingung lautet",
+    "link": "Verbindung hinzufügen",
+    "links": "Ausgehende Verbindungen",
+    "unlink": "Verbindung entfernen",
+    "pick": "Schritt wählen"
+  },
+  "field": {
+    "agent": "Agent",
+    "pickAgent": "Agent wählen",
+    "prompt": "Prompt",
+    "op": "Prüfung",
+    "value": "Wert",
+    "message": "Was du gefragt wirst",
+    "template": "Text ({{input}} = Eingabe des Schritts)",
+    "seconds": "Wartezeit in Sekunden",
+    "to": "Senden an",
+    "title": "Titel",
+    "channel": "Channel-Binding-ID"
+  },
+  "op": {
+    "contains": "enthält",
+    "not_contains": "enthält nicht",
+    "equals": "ist gleich",
+    "matches": "passt zum Muster",
+    "empty": "ist leer",
+    "not_empty": "ist nicht leer"
+  },
+  "branch": {
+    "true": "ja",
+    "false": "nein"
+  },
+  "to": {
+    "notification": "Benachrichtigung",
+    "channel": "Channel-Beitrag"
+  },
+  "template": {
+    "title": "Antworten, dann teilen",
+    "name": "Name",
+    "agents": "Agenten (der erste antwortet)",
+    "prompt": "Prompt für den ersten Agenten",
+    "followUp": "Was die anderen mit der Antwort tun",
+    "create": "Workflow erstellen"
+  },
+  "tools": {
+    "workflows_list": "Meine Workflows auflisten",
+    "workflows_create": "Workflow anlegen",
+    "workflows_update": "Einen meiner Workflows bearbeiten",
+    "workflows_run": "Einen meiner Workflows ausführen",
+    "workflows_delete": "Einen meiner Workflows löschen"
+  },
+  "server": {
+    "failed": "Workflow „{{name}}“ ist fehlgeschlagen",
+    "stopped": "Workflow „{{name}}“ wurde gestoppt"
+  },
+  "find": {
+    "navHint": "Schritte zu einem Ablauf verbinden",
+    "navKeywords": "Schritte, Ablauf, Kette, automatisieren"
+  },
+  "plain": {
+    "page": {
+      "intro": "Ein Ablauf verkettet Schritte: Helfer, schnelle Gehirn-Antworten, Bedingungen, deine Freigabe, Wartezeiten und Ergebnisse. Bau ihn auf der Fläche und starte ihn.",
+      "templateHint": "Der erste Helfer beantwortet deine Bitte, dann bekommen alle anderen Helfer diese Antwort gleichzeitig."
+    },
+    "type": {
+      "agent": "Helfer",
+      "model": "Nur Gehirn (ohne Werkzeuge)"
+    },
+    "field": {
+      "agent": "Helfer",
+      "pickAgent": "Helfer wählen"
+    },
+    "template": {
+      "agents": "Helfer (der erste antwortet)",
+      "prompt": "Bitte an den ersten Helfer"
+    }
+  }
+}

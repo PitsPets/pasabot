@@ -1,0 +1,299 @@
+{
+  "defaultName": "Tala",
+  "summary": "Mengajukan beberapa pertanyaan singkat, lalu menyiapkan tim kecil berisi pembantu untuk kamu setujui.",
+  "hello": "Hai, aku {{name}}! Aku akan menyiapkan tim kecil berisi pembantu untukmu. Cuma beberapa pertanyaan singkat: ketuk jawaban, atau ketik jawabanmu sendiri.",
+  "again": "Ayo siapkan timmu lagi. Beberapa pertanyaan singkat, seperti sebelumnya.",
+  "change": "Tidak masalah, kita ulangi.",
+  "skipped": "Oke, untuk sekarang hanya aku. Kamu bisa menyiapkan timmu kapan saja di Pengaturan, di Agen & otak.",
+  "q": {
+    "help": {
+      "text": "Kamu mau dibantu soal apa dulu?",
+      "options": {
+        "shop": "Toko atau usahaku",
+        "home": "Rumah dan keluarga",
+        "work": "Pekerjaanku",
+        "study": "Sekolah dan belajar"
+      }
+    },
+    "people": {
+      "text": "Siapa lagi yang akan memakai PasaBot?",
+      "options": {
+        "solo": "Hanya aku",
+        "family": "Keluargaku",
+        "team": "Tim kerjaku"
+      }
+    },
+    "chat": {
+      "text": "Mau juga bicara dengan pembantumu dari aplikasi chat?",
+      "options": {
+        "none": "Nanti saja",
+        "telegram": "Telegram",
+        "whatsapp": "WhatsApp",
+        "discord": "Discord",
+        "slack": "Slack"
+      }
+    },
+    "email": {
+      "text": "Perlukah timmu punya email?",
+      "options": {
+        "new": "Buat email baru (aku pandu)",
+        "connect": "Hubungkan emailku sendiri",
+        "skip": "Tanpa email dulu"
+      }
+    },
+    "askFirst": {
+      "text": "Terakhir: ada hal yang harus selalu mereka tanyakan dulu padamu?",
+      "options": {
+        "none": "Itu saja",
+        "money": "Pengeluaran apa pun",
+        "contact": "Menghubungi siapa pun",
+        "files": "Mengubah fileku"
+      }
+    }
+  },
+  "plan": {
+    "intro": "Ini tim yang akan kusiapkan. Setujui, atau ubah.",
+    "base": "Balas dalam bahasa yang dipakai orang itu. Jawaban singkat dan sederhana. Selalu tanya pemilik dulu sebelum mengeluarkan uang, mengirim pesan ke orang lain, atau menghapus apa pun.",
+    "detail": "Yang dikatakan pemilik tentang ini: {{what}}",
+    "roles": {
+      "shop": {
+        "job": "Mengurus pesanan dan pertanyaan pelanggan tokomu."
+      },
+      "money": {
+        "job": "Mencatat penjualan, biaya, dan siapa yang masih berutang padamu.",
+        "why": "penjualan dan biaya"
+      },
+      "home": {
+        "job": "Merencanakan menu, jadwal, dan pengingat untuk keluarga."
+      },
+      "work": {
+        "job": "Membuat draf pesan, mencatat, dan memantau tugasmu."
+      },
+      "study": {
+        "job": "Menjelaskan pelajaran, memberi kuis, dan menjagamu tetap sesuai jadwal."
+      },
+      "custom": {
+        "job": "Membantumu dengan: {{what}}",
+        "anything": "apa pun yang kamu perlukan"
+      },
+      "mail": {
+        "job": "Merapikan emailmu dan membuat draf balasan untuk kamu periksa.",
+        "why": "emailmu, dengan pengaturan terpandu yang singkat"
+      }
+    },
+    "steps": {
+      "email-new": "Buat email baru bersama, langkah demi langkah",
+      "email-connect": "Hubungkan emailmu (sekitar 3 menit)",
+      "telegram": "Hubungkan Telegram",
+      "whatsapp": "Hubungkan WhatsApp",
+      "discord": "Hubungkan Discord",
+      "slack": "Hubungkan Slack",
+      "people": "Undang orang-orang yang akan memakainya"
+    },
+    "askFirst": {
+      "money": "Tanya juga pemilik sebelum pengeluaran apa pun, sekecil apa pun.",
+      "contact": "Tanya juga pemilik sebelum menghubungi siapa pun.",
+      "files": "Tanya juga pemilik sebelum mengubah file miliknya.",
+      "custom": "Selalu tanya pemilik dulu soal: {{what}}"
+    },
+    "language": "Pemilik memilih {{language}}: selalu balas dalam bahasa itu, kecuali mereka meminta bahasa lain.",
+    "taglish": "Pemilik memilih Taglish: balas dalam Taglish, campuran santai dan alami antara bahasa Filipino dan Inggris, kecuali mereka meminta bahasa lain."
+  },
+  "team": {
+    "ready": "Timmu siap! Buka salah satu pembantu untuk menyapa."
+  },
+  "tools": {
+    "orchestrator_answer": "Simpan jawaban penyiapan",
+    "orchestrator_show_plan": "Tampilkan rencana tim",
+    "orchestrator_create_team": "Buat tim yang disetujui"
+  },
+  "web": {
+    "skip": "Lewati dulu",
+    "typeOwn": "Atau ketik jawabanmu sendiri di bawah.",
+    "quick": "Jawaban cepat",
+    "closed": "Penyiapan dilewati",
+    "step": "Pertanyaan {{n}} dari {{total}}",
+    "planTitle": "Ini tim yang akan kusiapkan",
+    "brain": "Otak: {{name}}",
+    "stepsTitle": "Langkah penyiapan yang akan kubuka untukmu",
+    "approve": "Setujui",
+    "changePlan": "Ubah",
+    "plan_approved": "Disetujui",
+    "plan_changed": "Diubah",
+    "plan_skipped": "Dilewati",
+    "open": "Chat dengan {{name}}",
+    "stepsNext": "Langkah berikutnya",
+    "secretsNote": "Kata sandi dan kode hanya diisi di halaman penyiapan itu, tidak pernah di chat.",
+    "ownerOnly": "Hanya pemilik yang bisa menjawab ini.",
+    "failed": "Gagal. Coba lagi.",
+    "settings": {
+      "title": "Siapkan timku",
+      "hint": "Jawab beberapa pertanyaan dan dapatkan tim pembantu",
+      "keywords": "tim, penyiapan, pembantu, pertanyaan, mulai lagi, orkestrator",
+      "body": "Penyusun timmu mengajukan beberapa pertanyaan singkat, lalu menunjukkan rencana untuk kamu setujui.",
+      "again": "Siapkan timku lagi",
+      "working": "Membuka…",
+      "openChat": "Buka penyusun tim",
+      "noBrain": "Siapkan otak dulu, lalu coba lagi.",
+      "continue": "Lanjutkan menyiapkan timku"
+    },
+    "summaryTitle": "Yang kamu ceritakan"
+  },
+  "stage": {
+    "title": "Siapkan timmu",
+    "brand": "PasaBot",
+    "skip": "Lewati dulu",
+    "back": "Kembali",
+    "next": "Lanjut",
+    "progress": "Langkah {{n}} dari {{total}}",
+    "progressShort": "{{n}} dari {{total}}",
+    "last": "Terakhir!",
+    "wait": "Sebentar…",
+    "slow": "Ini lebih lama dari biasanya.",
+    "retry": "Coba lagi",
+    "skipped": "Oke, kita selesaikan timmu nanti. Buka Pengaturan dan ketuk “Lanjutkan menyiapkan timku” untuk melanjutkan dari tempat terakhir.",
+    "welcome": {
+      "tag": "{{name}} · penyusun timmu",
+      "title": "Hai! Ayo bangun tim pembantumu sendiri.",
+      "body": "Aku akan bertanya beberapa hal mudah, lalu menyiapkan pembantu yang bekerja untukmu. Sekitar 2 menit.",
+      "start": "Ayo mulai",
+      "p1": "Tanpa istilah teknis",
+      "p2": "Tidak ada yang terjadi tanpa persetujuanmu",
+      "p3": "Bisa diubah nanti"
+    },
+    "lang": {
+      "title": "Bahasa apa yang dipakai para pembantumu?",
+      "body": "Mau bahasa apa? Semua setelah ini memakai pilihanmu.",
+      "other": "Lainnya…",
+      "otherSub": "{{names}} dan lainnya",
+      "seeAll": "Lihat semua bahasa",
+      "listTitle": "Semua bahasa",
+      "taglish": "Taglish",
+      "taglishSample": "Hi! Ano’ng kailangan mo today?",
+      "sample": "Hai! Ada yang bisa aku bantu hari ini?"
+    },
+    "name": {
+      "title": "Mau panggil aku apa?",
+      "body": "Aku yang memimpin timmu. Bawaannya “{{name}}”, tapi terserah kamu.",
+      "label": "Nama pembantu utamamu",
+      "hint": "Wajahku juga berubah!",
+      "newLook": "Tampilan baru!",
+      "ideas": "Ide:",
+      "go": "Pakai {{name}}!",
+      "errors": {
+        "empty": "Ketik nama dulu.",
+        "long": "Nama itu terlalu panjang. Paling banyak {{max}} huruf.",
+        "bad": "Pakai huruf biasa saja, tanpa tanda khusus.",
+        "taken": "Nama itu sudah dipakai. Coba yang lain."
+      }
+    },
+    "q": {
+      "sub": "Ketuk satu, atau ceritakan dengan kata-katamu.",
+      "typeLabel": "Atau ketik di sini",
+      "typePlaceholder": "Katakan dengan caramu…",
+      "other": "Hal lain",
+      "subMulti": "Pilih sebanyak yang kamu mau, atau ceritakan dengan kata-katamu."
+    },
+    "plan": {
+      "title": "Ini tim yang akan aku siapkan untukmu",
+      "lead": "Aku pemimpinnya. Kamu bicara denganku, aku yang membagi tugas.",
+      "because": "Karena: {{what}}",
+      "arriving": "Sedang datang…",
+      "change": "Aku mau mengubah sesuatu",
+      "approve": "Setujui tim",
+      "picks": "Pilihanmu",
+      "pick": {
+        "language": "Berbicara {{language}}",
+        "people": {
+          "solo": "Hanya aku yang memakai",
+          "family": "Keluargaku juga memakai",
+          "team": "Tim kerjaku juga memakai"
+        },
+        "chat": {
+          "none": "Belum pakai aplikasi chat",
+          "telegram": "Ngobrol lewat Telegram",
+          "whatsapp": "Ngobrol lewat WhatsApp",
+          "discord": "Ngobrol lewat Discord",
+          "slack": "Ngobrol lewat Slack"
+        },
+        "email": {
+          "new": "Email baru, dibuat bersama langkah demi langkah",
+          "connect": "Hubungkan emailku sendiri (sekitar 3 menit)",
+          "skip": "Belum pakai email"
+        },
+        "askFirst": {
+          "none": "Tidak ada lagi yang perlu ditanyakan dulu",
+          "money": "Bertanya dulu sebelum ada pengeluaran",
+          "contact": "Bertanya dulu sebelum menghubungi siapa pun",
+          "files": "Bertanya dulu sebelum mengubah fileku"
+        }
+      }
+    },
+    "done": {
+      "title": "Timmu sudah siap!",
+      "body": "Semua siap. Cukup bicara dengan {{name}}, sisanya diurus.",
+      "open": "Buka PasaBot",
+      "chats": "Obrolanmu",
+      "lead": "Pemimpin tim · Siap",
+      "ready": "Siap",
+      "pinned": "{{name}} selalu di paling atas",
+      "next": {
+        "title": "Langkah berikutnya",
+        "new": "{{name}} akan membantumu membuat email baru, langkah demi langkah, di obrolan kalian.",
+        "newGo": "Buat email baru bersama {{name}}",
+        "connect": "Hubungkan emailmu sekarang. Sekitar 3 menit.",
+        "connectGo": "Hubungkan emailku"
+      }
+    },
+    "summary": {
+      "body": "Timmu sudah siap! Ini yang kamu ceritakan dan para pembantumu.",
+      "language": "Bahasa"
+    }
+  },
+  "summaryLead": "Mengurus timmu: memberikan setiap tugas ke pembantu yang tepat, dan bisa menambah atau mengganti pembantu saat kamu minta.",
+  "oks": {
+    "title": "Beberapa hal perlu persetujuanmu",
+    "sub": "{{name}} dan tim bisa berbuat lebih dengan ini. Semua pilihanmu, dan tidak ada yang aktif sampai kamu ketuk.",
+    "email": {
+      "title": "Sambungkan emailmu",
+      "why": "Agar pembantu email bisa membaca email baru dan memberi tahu yang penting.",
+      "yes": "Sambungkan"
+    },
+    "chat": {
+      "title": "Sambungkan {{app}}",
+      "why": "Agar kamu bisa bicara dengan pembantumu di {{app}} juga.",
+      "yes": "Sambungkan"
+    },
+    "apps": {
+      "title": "Sambungkan {{app}}",
+      "why": "Pembantumu bisa memakai {{app}} untukmu setelah tersambung.",
+      "yes": "Sambungkan"
+    },
+    "browser": {
+      "title": "Izinkan pembantu memakai browser sendiri",
+      "why": "Mereka membuka situs di browser terpisah yang bisa kamu tonton. Mereka tidak pernah masuk atau membayar untukmu.",
+      "yes": "Izinkan"
+    },
+    "computer": {
+      "title": "Izinkan pembantu memakai komputer ini",
+      "why": "Ia bisa melihat layar dan memakai mouse serta keyboard. Ia selalu bertanya dulu.",
+      "yes": "Siapkan"
+    },
+    "ask": {
+      "title": "Pilih seberapa sering pembantu bertanya dulu",
+      "why": "Pilih kapan mereka bertanya sebelum bertindak. Uang dan pesan selalu ditanyakan.",
+      "yes": "Pilih"
+    },
+    "alerts": {
+      "title": "Dapat notifikasi saat pembantu membutuhkanmu",
+      "why": "Kami beri tahu di perangkat ini saat ada yang perlu persetujuanmu.",
+      "yes": "Nyalakan"
+    },
+    "laterBtn": "Nanti",
+    "notNow": "Nanti saja",
+    "opened": "Sudah dibuka. Selesaikan di halaman itu",
+    "later": "Nanti: {{name}} akan mengingatkan di chat",
+    "continue": "Lanjut",
+    "continueLater": "Lanjut, sisanya nanti"
+  }
+}

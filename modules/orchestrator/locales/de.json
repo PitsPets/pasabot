@@ -1,0 +1,299 @@
+{
+  "defaultName": "Tala",
+  "summary": "Stellt dir ein paar kurze Fragen und stellt dann ein kleines Helferteam zusammen, das du bestätigst.",
+  "hello": "Hallo, ich bin {{name}}! Ich stelle ein kleines Team von Helfern für dich zusammen. Nur ein paar kurze Fragen: Tippe auf eine Antwort oder schreib deine eigene.",
+  "again": "Stellen wir dein Team neu zusammen. Ein paar kurze Fragen, wie beim letzten Mal.",
+  "change": "Kein Problem, gehen wir es noch einmal durch.",
+  "skipped": "Okay, vorerst bin nur ich da. Du kannst dein Team jederzeit in den Einstellungen unter Agenten & Gehirne zusammenstellen.",
+  "q": {
+    "help": {
+      "text": "Wobei möchtest du zuerst Hilfe?",
+      "options": {
+        "shop": "Mein Laden oder Geschäft",
+        "home": "Haushalt und Familie",
+        "work": "Meine Arbeit",
+        "study": "Schule und Lernen"
+      }
+    },
+    "people": {
+      "text": "Wer nutzt PasaBot noch?",
+      "options": {
+        "solo": "Nur ich",
+        "family": "Meine Familie",
+        "team": "Mein Team bei der Arbeit"
+      }
+    },
+    "chat": {
+      "text": "Möchtest du auch über eine Chat-App mit deinen Helfern sprechen?",
+      "options": {
+        "none": "Jetzt nicht",
+        "telegram": "Telegram",
+        "whatsapp": "WhatsApp",
+        "discord": "Discord",
+        "slack": "Slack"
+      }
+    },
+    "email": {
+      "text": "Soll dein Team E-Mail haben?",
+      "options": {
+        "new": "Eine neue E-Mail anlegen (ich führe dich)",
+        "connect": "Meine eigene E-Mail verbinden",
+        "skip": "Vorerst keine E-Mail"
+      }
+    },
+    "askFirst": {
+      "text": "Letzte Frage: Gibt es etwas, wofür sie dich immer zuerst fragen müssen?",
+      "options": {
+        "none": "Das ist alles",
+        "money": "Jede Ausgabe",
+        "contact": "Jemanden kontaktieren",
+        "files": "Meine Dateien ändern"
+      }
+    }
+  },
+  "plan": {
+    "intro": "Das ist das Team, das ich zusammenstelle. Genehmige es oder ändere es.",
+    "base": "Antworte in der Sprache, in der die Person schreibt. Kurze, einfache Antworten. Frag den Besitzer immer, bevor du Geld ausgibst, anderen Personen Nachrichten schickst oder etwas löschst.",
+    "detail": "Was der Inhaber dazu gesagt hat: {{what}}",
+    "roles": {
+      "shop": {
+        "job": "Kümmert sich um Bestellungen und Kundenfragen deines Ladens."
+      },
+      "money": {
+        "job": "Behält Verkäufe, Kosten und offene Beträge im Blick.",
+        "why": "Verkäufe und Kosten"
+      },
+      "home": {
+        "job": "Plant Mahlzeiten, Termine und Erinnerungen für die Familie."
+      },
+      "work": {
+        "job": "Entwirft Nachrichten, macht Notizen und behält deine Aufgaben im Blick."
+      },
+      "study": {
+        "job": "Erklärt Lernstoff, fragt dich ab und hilft dir, im Zeitplan zu bleiben."
+      },
+      "custom": {
+        "job": "Hilft dir bei: {{what}}",
+        "anything": "allem, was du brauchst"
+      },
+      "mail": {
+        "job": "Sortiert deine E-Mails und entwirft Antworten, die du prüfst.",
+        "why": "deine E-Mail, mit einer kurzen geführten Einrichtung"
+      }
+    },
+    "steps": {
+      "email-new": "Zusammen eine neue E-Mail anlegen, Schritt für Schritt",
+      "email-connect": "Deine E-Mail verbinden (etwa 3 Minuten)",
+      "telegram": "Telegram verbinden",
+      "whatsapp": "WhatsApp verbinden",
+      "discord": "Discord verbinden",
+      "slack": "Slack verbinden",
+      "people": "Die Leute einladen, die es nutzen"
+    },
+    "askFirst": {
+      "money": "Frag den Besitzer auch vor jeder Ausgabe, egal wie klein.",
+      "contact": "Frag den Besitzer auch, bevor du jemanden kontaktierst.",
+      "files": "Frag den Besitzer auch, bevor du eine seiner Dateien änderst.",
+      "custom": "Frag den Besitzer immer zuerst bei: {{what}}"
+    },
+    "language": "Der Besitzer hat {{language}} gewählt: antworte immer in dieser Sprache, außer er bittet um eine andere.",
+    "taglish": "Der Besitzer hat Taglish gewählt: antworte auf Taglish, einer natürlichen, lockeren Mischung aus Filipino und Englisch, außer er bittet um eine andere Sprache."
+  },
+  "team": {
+    "ready": "Dein Team ist bereit! Öffne einen Helfer und sag Hallo."
+  },
+  "tools": {
+    "orchestrator_answer": "Setup-Antwort speichern",
+    "orchestrator_show_plan": "Team-Plan zeigen",
+    "orchestrator_create_team": "Genehmigtes Team anlegen"
+  },
+  "web": {
+    "skip": "Vorerst überspringen",
+    "typeOwn": "Oder schreib unten deine eigene Antwort.",
+    "quick": "Schnelle Antworten",
+    "closed": "Einrichtung übersprungen",
+    "step": "Frage {{n}} von {{total}}",
+    "planTitle": "Das ist das Team, das ich zusammenstelle",
+    "brain": "Gehirn: {{name}}",
+    "stepsTitle": "Einrichtungsschritte, die ich für dich öffne",
+    "approve": "Genehmigen",
+    "changePlan": "Ändern",
+    "plan_approved": "Genehmigt",
+    "plan_changed": "Geändert",
+    "plan_skipped": "Übersprungen",
+    "open": "Mit {{name}} chatten",
+    "stepsNext": "Nächste Schritte",
+    "secretsNote": "Passwörter und Codes gehören nur auf diese Einrichtungsseiten, nie in einen Chat.",
+    "ownerOnly": "Nur der Besitzer kann das beantworten.",
+    "failed": "Das hat nicht geklappt. Versuch es noch einmal.",
+    "settings": {
+      "title": "Mein Team einrichten",
+      "hint": "Ein paar Fragen beantworten und ein Team von Helfern bekommen",
+      "keywords": "Team, Einrichtung, Helfer, Fragen, neu starten, Orchestrator",
+      "body": "Dein Team-Bauer stellt ein paar kurze Fragen und zeigt dir dann einen Plan zum Genehmigen.",
+      "again": "Mein Team neu einrichten",
+      "working": "Wird geöffnet…",
+      "openChat": "Team-Bauer öffnen",
+      "noBrain": "Richte zuerst ein Gehirn ein und versuch es dann erneut.",
+      "continue": "Team-Einrichtung fortsetzen"
+    },
+    "summaryTitle": "Das hast du mir erzählt"
+  },
+  "stage": {
+    "title": "Dein Team einrichten",
+    "brand": "PasaBot",
+    "skip": "Jetzt überspringen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "progress": "Schritt {{n}} von {{total}}",
+    "progressShort": "{{n}} von {{total}}",
+    "last": "Die letzte!",
+    "wait": "Einen Moment…",
+    "slow": "Das dauert länger als sonst.",
+    "retry": "Nochmal versuchen",
+    "skipped": "Okay, wir machen dein Team später fertig. Öffne die Einstellungen und tippe auf „Team-Einrichtung fortsetzen“, um dort weiterzumachen.",
+    "welcome": {
+      "tag": "{{name}} · baut dein Team",
+      "title": "Hallo! Lass uns dein eigenes Team aus Helfern bauen.",
+      "body": "Ich stelle ein paar einfache Fragen und richte dann Helfer ein, die die Arbeit für dich machen. Etwa 2 Minuten.",
+      "start": "Los geht’s",
+      "p1": "Keine Fachwörter",
+      "p2": "Nichts passiert ohne dein OK",
+      "p3": "Alles später änderbar"
+    },
+    "lang": {
+      "title": "Welche Sprache sollen deine Helfer sprechen?",
+      "body": "Welche Sprache möchtest du? Alles danach nutzt deine Wahl.",
+      "other": "Andere…",
+      "otherSub": "{{names}} und mehr",
+      "seeAll": "Alle Sprachen ansehen",
+      "listTitle": "Alle Sprachen",
+      "taglish": "Taglish",
+      "taglishSample": "Hi! Ano’ng kailangan mo today?",
+      "sample": "Hallo! Wobei kann ich dir heute helfen?"
+    },
+    "name": {
+      "title": "Wie willst du mich nennen?",
+      "body": "Ich leite dein Team. „{{name}}“ ist der Standard, aber du entscheidest.",
+      "label": "Name deines Haupthelfers",
+      "hint": "Mein Gesicht ändert sich auch!",
+      "newLook": "Neuer Look!",
+      "ideas": "Ideen:",
+      "go": "{{name}} soll es sein!",
+      "errors": {
+        "empty": "Gib zuerst einen Namen ein.",
+        "long": "Der Name ist zu lang. Nimm höchstens {{max}} Buchstaben.",
+        "bad": "Nur einfache Buchstaben, ohne Sonderzeichen.",
+        "taken": "Der Name ist schon vergeben. Nimm einen anderen."
+      }
+    },
+    "q": {
+      "sub": "Tippe eine Antwort an oder sag es mit eigenen Worten.",
+      "typeLabel": "Oder schreib es hier",
+      "typePlaceholder": "Sag es auf deine Art…",
+      "other": "Etwas anderes",
+      "subMulti": "Wähle so viele du willst, oder sag es mit eigenen Worten."
+    },
+    "plan": {
+      "title": "Dieses Team richte ich für dich ein",
+      "lead": "Ich leite das Team. Du sprichst mit mir, und ich verteile die Aufgaben.",
+      "because": "Weil: {{what}}",
+      "arriving": "Kommt gleich…",
+      "change": "Ich will etwas ändern",
+      "approve": "Team bestätigen",
+      "picks": "Deine Auswahl",
+      "pick": {
+        "language": "Spricht {{language}}",
+        "people": {
+          "solo": "Nur ich nutze es",
+          "family": "Meine Familie nutzt es auch",
+          "team": "Mein Team bei der Arbeit nutzt es auch"
+        },
+        "chat": {
+          "none": "Vorerst keine Chat-App",
+          "telegram": "Chatten über Telegram",
+          "whatsapp": "Chatten über WhatsApp",
+          "discord": "Chatten über Discord",
+          "slack": "Chatten über Slack"
+        },
+        "email": {
+          "new": "Eine neue E-Mail, Schritt für Schritt zusammen angelegt",
+          "connect": "Meine eigene E-Mail verbinden (etwa 3 Minuten)",
+          "skip": "Vorerst keine E-Mail"
+        },
+        "askFirst": {
+          "none": "Sonst nichts vorher fragen",
+          "money": "Fragt vor jeder Ausgabe",
+          "contact": "Fragt, bevor jemand kontaktiert wird",
+          "files": "Fragt, bevor meine Dateien geändert werden"
+        }
+      }
+    },
+    "done": {
+      "title": "Dein Team ist bereit!",
+      "body": "Alles ist fertig. Sprich einfach mit {{name}}, der Rest wird erledigt.",
+      "open": "PasaBot öffnen",
+      "chats": "Deine Chats",
+      "lead": "Teamleitung · Bereit",
+      "ready": "Bereit",
+      "pinned": "{{name}} bleibt immer oben",
+      "next": {
+        "title": "Nächster Schritt",
+        "new": "{{name}} hilft dir in eurem Chat, deine neue E-Mail Schritt für Schritt anzulegen.",
+        "newGo": "Neue E-Mail mit {{name}} anlegen",
+        "connect": "Verbinde jetzt deine E-Mail. Das dauert etwa 3 Minuten.",
+        "connectGo": "Meine E-Mail verbinden"
+      }
+    },
+    "summary": {
+      "body": "Dein Team ist eingerichtet! Das hast du mir erzählt, und das sind deine Helfer.",
+      "language": "Sprache"
+    }
+  },
+  "summaryLead": "Kümmert sich um dein Team: gibt jede Aufgabe an den passenden Helfer weiter und kann Helfer hinzufügen oder ändern, wenn du es willst.",
+  "oks": {
+    "title": "Ein paar Dinge brauchen dein OK",
+    "sub": "{{name}} und das Team können damit mehr tun. Du entscheidest jedes Mal, und nichts wird aktiv, bevor du tippst.",
+    "email": {
+      "title": "Verbinde deine E-Mail",
+      "why": "Damit der Mail-Helfer neue Mails liest und dir sagt, was wichtig ist.",
+      "yes": "Verbinden"
+    },
+    "chat": {
+      "title": "{{app}} verbinden",
+      "why": "Damit du auch in {{app}} mit deinen Helfern reden kannst.",
+      "yes": "Verbinden"
+    },
+    "apps": {
+      "title": "{{app}} verbinden",
+      "why": "Deine Helfer können {{app}} für dich nutzen, sobald es verbunden ist.",
+      "yes": "Verbinden"
+    },
+    "browser": {
+      "title": "Helfer ihren eigenen Browser nutzen lassen",
+      "why": "Sie öffnen Webseiten in einem eigenen Browser, dem du zusehen kannst. Sie melden sich nie an und zahlen nie für dich.",
+      "yes": "Erlauben"
+    },
+    "computer": {
+      "title": "Einen Helfer diesen Computer nutzen lassen",
+      "why": "Er könnte den Bildschirm sehen und Maus und Tastatur benutzen. Er fragt dich jedes Mal vorher.",
+      "yes": "Einrichten"
+    },
+    "ask": {
+      "title": "Wähle, wie oft Helfer vorher fragen",
+      "why": "Leg fest, wann sie dich vorher fragen. Bei Geld und Nachrichten fragen sie immer.",
+      "yes": "Auswählen"
+    },
+    "alerts": {
+      "title": "Eine Nachricht, wenn ein Helfer dich braucht",
+      "why": "Wir sagen dir auf diesem Gerät Bescheid, wenn etwas dein OK braucht.",
+      "yes": "Einschalten"
+    },
+    "laterBtn": "Später",
+    "notNow": "Nicht jetzt",
+    "opened": "Geöffnet. Mach es auf der Seite fertig",
+    "later": "Später: {{name}} erinnert dich im Chat",
+    "continue": "Weiter",
+    "continueLater": "Weiter, den Rest später"
+  }
+}

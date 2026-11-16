@@ -1,0 +1,39 @@
+{
+  "name": "@pasabot/mod-admin",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": {
+    "./server": {
+      "source": "./src/server.ts",
+      "types": "./dist/server.d.ts",
+      "default": "./dist/server.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test:e2e": "playwright test"
+  },
+  "pasabot": {
+    "kind": "module",
+    "entry": "./dist/server.js",
+    "source": "./src/server.ts",
+    "web": "./web/index.tsx"
+  },
+  "dependencies": {
+    "@pasabot/core": "workspace:*",
+    "@pasabot/protocol": "workspace:*",
+    "zod": "^4.6.7",
+    "@pasabot/ui": "workspace:*",
+    "@pasabot/i18n": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "react": "^19.0.0",
+    "@types/react": "^19.0.0",
+    "@playwright/test": "1.63.0"
+  }
+}

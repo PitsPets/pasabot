@@ -1,0 +1,20 @@
+{
+  "nav": "Processus",
+  "page": {
+    "title": "Processus en arrière-plan",
+    "intro": "Processus lancés par vos agents via les outils PasaBot. En arrêter un met fin à celui-ci et à tout ce qu'il a lancé.",
+    "empty": "Rien ne s'exécute en arrière-plan."
+  },
+  "proc": {
+    "since": "En cours depuis",
+    "stop": "Arrêter"
+  },
+  "tools": {
+    "procs_list": "Lister mes processus en arrière-plan",
+    "procs_stop": "Arrêter un de mes processus en arrière-plan"
+  },
+  "find": {
+    "navHint": "Processus et tâches en cours",
+    "navKeywords": "processus, tâches, en cours, travaux"
+  }
+}

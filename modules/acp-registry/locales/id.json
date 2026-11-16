@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "Agent ACP",
+    "intro": "Instal CLI agent yang menggunakan Agent Client Protocol. Setiap agent yang terinstal menjadi otak yang dapat Anda pilih saat membuat atau mengedit agent.",
+    "ownerOnly": "Hanya owner yang dapat mengelola agent ACP."
+  },
+  "index": {
+    "label": "Indeks registri",
+    "hint": "Path absolut ke file indeks lokal, atau URL https.",
+    "save": "Simpan",
+    "saved": "Tersimpan.",
+    "none": "Atur indeks registri untuk menelusuri agent."
+  },
+  "search": {
+    "label": "Cari agent",
+    "placeholder": "Nama atau deskripsi",
+    "empty": "Tidak ada agent di indeks yang cocok.",
+    "install": "Instal",
+    "reinstall": "Perbarui",
+    "installing": "Menginstal…",
+    "installed": "Terinstal",
+    "remoteCommand": "Indeks jarak jauh hanya dapat menginstal paket, bukan perintah lokal.",
+    "available": "Tersedia di indeks"
+  },
+  "installed": {
+    "title": "Terinstal",
+    "empty": "Belum ada agent ACP yang terinstal.",
+    "remove": "Hapus",
+    "removing": "Menghapus…",
+    "confirmRemove": "Hapus {{name}}? Agent tidak akan bisa lagi memakainya sebagai otak.",
+    "ready": "Siap",
+    "missing": "Tidak ditemukan",
+    "version": "Versi {{version}}",
+    "provider": "ID otak",
+    "command": "Perintah"
+  },
+  "error": {
+    "generic": "Terjadi kesalahan ({{code}}).",
+    "in_use": "Masih dipakai oleh sebuah agent. Pilih otak lain untuknya terlebih dahulu.",
+    "command_missing": "Program itu tidak ada di mesin ini.",
+    "command_from_remote": "Indeks jarak jauh tidak dapat menginstal perintah lokal.",
+    "bad_index_source": "Gunakan path file absolut atau URL https.",
+    "index_unreadable": "Indeks tidak dapat dibaca.",
+    "index_invalid": "Indeks tidak dalam format yang diharapkan.",
+    "install_failed": "Instalasi gagal.",
+    "no_index": "Atur indeks registri terlebih dahulu."
+  },
+  "find": {
+    "settingsHint": "Tambahkan agen koding sebagai otak",
+    "settingsKeywords": "koding, kode, otak, terminal, pengembang"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Pakai aplikasi koding sebagai otak pembantu"
+    },
+    "settings": {
+      "title": "Aplikasi koding sebagai otak"
+    }
+  }
+}

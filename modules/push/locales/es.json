@@ -1,0 +1,40 @@
+{
+  "title": "Notificaciones en este dispositivo",
+  "intro": "Recibe una notificación en este teléfono o computadora aunque PasaBot esté cerrado.",
+  "state": {
+    "loading": "Comprobando…",
+    "off": "Desactivadas",
+    "on": "Activadas",
+    "unsupported": "No compatible aquí",
+    "blocked": "Bloqueadas en el navegador",
+    "unavailable": "No disponible en este servidor"
+  },
+  "turnOn": "Activar notificaciones",
+  "turnOff": "Desactivar en este dispositivo",
+  "prefs": {
+    "title": "Avisarme cuando",
+    "approval": "Un agente necesite mi aprobación",
+    "error": "Falle una ejecución",
+    "finished": "Un agente responda",
+    "progress": "Una tarea larga siga en curso",
+    "alert": "Otras alertas (servidor, seguridad)"
+  },
+  "test": {
+    "button": "Enviar una prueba",
+    "sent": "Enviada. Debería aparecer en un momento.",
+    "failed": "La prueba no se envió. Desactiva las notificaciones y vuelve a activarlas."
+  },
+  "help": {
+    "unsupported": "Este navegador no puede recibir notificaciones de sitios web.",
+    "blocked": "Las notificaciones de PasaBot están bloqueadas. Permítelas en la configuración de sitios del navegador y vuelve aquí.",
+    "unavailable": "El servidor no puede enviar notificaciones ahora mismo (su almacén de secretos está bloqueado).",
+    "iphone": "En iPhone y iPad, primero añade PasaBot a la pantalla de inicio (Compartir → Añadir a pantalla de inicio) y activa esto desde allí."
+  },
+  "errors": {
+    "subscribe": "No se pudieron activar las notificaciones. Inténtalo de nuevo."
+  },
+  "find": {
+    "settingsHint": "Notificaciones en este dispositivo",
+    "settingsKeywords": "notificaciones, avisos, alertas, sonido"
+  }
+}

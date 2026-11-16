@@ -1,0 +1,107 @@
+{
+  "nav": "Personen",
+  "page": {
+    "title": "Personen",
+    "introOwner": "Lade Familie, Freunde oder Kollegen ein. Gäste sehen nur die Chats, zu denen du sie hinzufügst; Mitglieder können außerdem die Agenten nutzen, die du teilst. Du bleibst der einzige Owner.",
+    "introOther": "Du wurdest zu diesem PasaBot eingeladen. Der Owner entscheidet, was du sehen kannst."
+  },
+  "kind": {
+    "owner": "Inhaber",
+    "member": "Mitglied",
+    "guest": "Gast"
+  },
+  "role": {
+    "member": "Darf schreiben",
+    "observer": "Nur lesen"
+  },
+  "invite": {
+    "title": "Jemanden einladen",
+    "intro": "Du bekommst einen Link zum Weitergeben. Er funktioniert nur einmal und läuft nach 3 Tagen ab.",
+    "kind": "Einladen als",
+    "guestHint": "Ein Gast sieht nur die Chats, die du unten auswählst.",
+    "memberHint": "Ein Mitglied sieht die ausgewählten Chats und kann Chats mit den Agenten öffnen, die du teilst.",
+    "chats": "Chats, denen die Person beitritt",
+    "noChats": "Noch keine Chats. Erstelle zuerst einen Agenten.",
+    "pickChat": "Wähle mindestens einen Chat für einen Gast aus.",
+    "role": "In diesen Chats darf die Person",
+    "create": "Einladungslink erstellen",
+    "link": "Einladungslink",
+    "linkHint": "Sende ihn nur an die Person, die du einlädst: Wer ihn zuerst öffnet, tritt bei.",
+    "copy": "Link kopieren",
+    "copied": "Kopiert"
+  },
+  "invites": {
+    "title": "Offene Einladungen",
+    "noChats": "Keine Chats",
+    "expires": "läuft {{when}} ab",
+    "revoke": "Einladung widerrufen"
+  },
+  "list": {
+    "title": "Alle bei diesem PasaBot",
+    "disabled": "Deaktiviert",
+    "disable": "Deaktivieren",
+    "enable": "Wieder aktivieren"
+  },
+  "agents": {
+    "title": "Agenten für Mitglieder",
+    "intro": "Mitglieder können mit diesen Agenten eigene Chats starten. Ihre Nachrichten laufen auf ihren Namen, nie auf deinen, daher fragt alles Riskante weiterhin zuerst dich.",
+    "none": "Noch keine Agenten.",
+    "share": "Mitgliedern {{name}} freigeben"
+  },
+  "member": {
+    "title": "Agenten, die du nutzen kannst",
+    "intro": "Starte einen eigenen Chat mit einem Agenten, den der Owner geteilt hat.",
+    "none": "Der Owner hat noch keinen Agenten mit dir geteilt.",
+    "open": "Mit {{name}} chatten"
+  },
+  "guest": {
+    "title": "Deine Chats",
+    "body": "Deine Chats findest du in der Liste. Der Owner fügt dich bei Bedarf weiteren hinzu."
+  },
+  "chat": {
+    "button": "Personen",
+    "title": "Personen in diesem Chat",
+    "readOnly": "Auf „Nur lesen“ setzen",
+    "letWrite": "Schreiben erlauben",
+    "remove": "{{name}} entfernen",
+    "add": "Jemanden hinzufügen",
+    "addPerson": "{{name}} hinzufügen",
+    "invite": "Neue Person zu diesem Chat einladen",
+    "close": "Fertig"
+  },
+  "join": {
+    "title": "PasaBot beitreten",
+    "loading": "Einladung wird geprüft…",
+    "invalid": "Dieser Einladungslink funktioniert nicht mehr. Bitte um einen neuen.",
+    "introGuest": "{{name}} hat dich als Gast eingeladen zu: {{chats}}.",
+    "introMember": "{{name}} hat dich als Mitglied eingeladen.",
+    "name": "Dein Name",
+    "password": "Passwort wählen",
+    "again": "Passwort wiederholen",
+    "short": "Verwende mindestens 8 Zeichen.",
+    "mismatch": "Die Passwörter stimmen nicht überein.",
+    "badName": "Verwende einen einfachen Namen ohne Sonderzeichen.",
+    "submit": "Beitreten"
+  },
+  "errors": {
+    "generic": "Etwas ist schiefgelaufen. Versuch es nochmal."
+  },
+  "find": {
+    "navHint": "Leute einladen und Zugang festlegen",
+    "navKeywords": "einladen, Mitglieder, Gäste, Familie, Freunde"
+  },
+  "plain": {
+    "page": {
+      "introOwner": "Lade Familie, Freunde oder Kollegen ein. Gäste sehen nur die Chats, zu denen du sie hinzufügst; Mitglieder können auch die Helfer nutzen, die du teilst. Du bleibst der einzige Besitzer."
+    },
+    "invite": {
+      "memberHint": "Ein Mitglied sieht die Chats, die du wählst, und kann mit den Helfern chatten, die du teilst.",
+      "noChats": "Noch keine Chats. Leg zuerst einen Helfer an."
+    },
+    "agents": {
+      "title": "Helfer, die Mitglieder nutzen können",
+      "intro": "Mitglieder können mit diesen Helfern eigene Chats beginnen. Ihre Nachrichten laufen als sie, nie als du, also fragt alles Riskante weiter zuerst dich.",
+      "none": "Noch keine Helfer."
+    }
+  }
+}

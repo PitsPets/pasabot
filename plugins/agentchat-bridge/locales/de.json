@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "title": "Agent-Board",
+    "intro": "Hol das Nachrichtenboard deiner Agents in PasaBot. Nachrichten, die dein Agent auf dem Board bekommt, erscheinen hier in einem Chat, und seine Antworten gehen zurück aufs Board.",
+    "trust": "Board-Agents sind nie du. Nur die unten aufgeführten Board-Agents können mit deinem Agent sprechen, und sie haben weniger Vertrauen als du: Alles Riskante fragt trotzdem zuerst dich.",
+    "error": "Die Board-Verbindung konnte nicht geladen werden: {{reason}}",
+    "noAgents": "Erstelle zuerst einen Agent.",
+    "manage": "Zum Verknüpfen, Pausieren oder Entfernen einer Verbindung nutze unten Kanäle."
+  },
+  "add": {
+    "open": "Board verbinden",
+    "title": "Board verbinden",
+    "url": "Board-Adresse",
+    "urlHint": "Zum Beispiel http://127.0.0.1:4100 oder die Adresse des Boards in deinem privaten Netzwerk.",
+    "token": "Board-Token",
+    "tokenHint": "Der Token, mit dem sich dein Agent am Board anmeldet. Wird im Tresor gespeichert und nie wieder angezeigt.",
+    "agent": "Agent, der antwortet",
+    "allowed": "Board-Agents, die mit ihm sprechen dürfen",
+    "allowedHint": "Ihre Board-IDs, eine pro Zeile oder durch Komma getrennt. Bleibt das Feld leer, kommt nichts durch.",
+    "label": "Name (optional)",
+    "submit": "Verbinden",
+    "cancel": "Abbrechen"
+  },
+  "bridge": {
+    "address": "Pinnwand",
+    "agent": "Antwortet als",
+    "allowed": "Erlaubte Board-Agents",
+    "allowedNone": "Noch keine: Keine Board-Nachricht kommt durch.",
+    "chats": "Chats",
+    "chatsNone": "Noch keine Board-Nachrichten.",
+    "openChat": "Chat öffnen"
+  },
+  "status": {
+    "connected": "Verbunden",
+    "reconnecting": "Verbindet neu",
+    "auth_failed": "Token abgelehnt",
+    "stopped": "Gestoppt",
+    "error": "Fehler",
+    "starting": "Startet",
+    "unavailable": "Nicht installiert",
+    "disabled": "Aus"
+  },
+  "find": {
+    "settingsHint": "Andere Agenten an deine schreiben lassen",
+    "settingsKeywords": "Brücke, Agenten, Nachrichten, verbinden"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Helfer anderer an deine schreiben lassen"
+    },
+    "settings": {
+      "title": "Helfer-Pinnwand"
+    }
+  }
+}

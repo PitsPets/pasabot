@@ -1,0 +1,110 @@
+{
+  "nav": "Tâches des agents",
+  "page": {
+    "title": "Tâches des agents",
+    "intro": "Le travail que vos agents se sont confié : messages, tâches déléguées, transferts et fichiers. Chaque tâche s'exécute au niveau de confiance le plus bas des deux agents.",
+    "empty": "Aucun agent n'a encore confié de travail à un autre agent.",
+    "reload": "Actualiser"
+  },
+  "kind": {
+    "delegate": "Déléguée",
+    "message": "Message",
+    "handoff": "Transfert",
+    "file": "Fichier"
+  },
+  "state": {
+    "queued": "En attente",
+    "leased": "Démarrage",
+    "running": "En cours",
+    "done": "Terminée",
+    "failed": "Échouée",
+    "cancelled": "Arrêtée",
+    "interrupted": "Interrompue"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "Confiance : {{trust}}",
+    "acked": "Accusé de réception",
+    "ackWaiting": "En attente d'accusé de réception",
+    "reply": "Répondre"
+  },
+  "trust": {
+    "guarded": "prudent",
+    "standard": "standard",
+    "trusted": "de confiance"
+  },
+  "team": {
+    "open": "Équipe",
+    "openLead": "Équipe · {{lead}} dirige",
+    "title": "Qui peut utiliser cet agent",
+    "lead": "Responsable (répond aux nouveaux messages)",
+    "leadHint": "Seul le responsable répond aux personnes ici. Choisissez un autre agent pour lui passer la main.",
+    "makeLead": "Nommer responsable",
+    "isLead": "Responsable actuel",
+    "state": {
+      "active": "Actif",
+      "stopped": "Arrêté",
+      "archived": "Archivé"
+    },
+    "stop": "Tout arrêter",
+    "stopHint": "Annule ce que font les agents ici et met les nouveaux messages en attente jusqu'à la reprise.",
+    "resume": "Reprendre",
+    "archive": "Archiver le canal",
+    "archiveConfirm": "Touchez à nouveau pour archiver",
+    "silentTitle": "Si le responsable reste silencieux",
+    "silentRetry": "Relancer le responsable une fois",
+    "on": "Activé",
+    "off": "Désactivé",
+    "backup": "Répondre ensuite avec",
+    "backupNone": "Personne (me prévenir)",
+    "backupModel": "Modèle de secours (facultatif)",
+    "backupHint": "Si le responsable ne répond pas après la relance, ce fournisseur répond à ce message à sa place.",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "error": "Cela n'a pas fonctionné : {{message}}"
+  },
+  "subagent": {
+    "start": "Sous-agent {{name}} démarré",
+    "end": "Sous-agent {{name}} terminé"
+  },
+  "reactions": {
+    "label": "{{emoji}} de {{count}}",
+    "group": "Réactions",
+    "button": "Réagir",
+    "add": "Ajouter une réaction",
+    "pick": "Choisir une réaction",
+    "react": "Réagir avec {{emoji}}",
+    "remove": "Retirer votre {{emoji}}"
+  },
+  "tools": {
+    "collab_agents": "Lister les agents",
+    "collab_delegate": "Déléguer une tâche",
+    "collab_message": "Écrire à un agent",
+    "collab_handoff": "Passer la main",
+    "collab_status": "État de la tâche",
+    "collab_wait": "Attendre une tâche",
+    "collab_interrupt": "Interrompre une tâche",
+    "collab_ack": "Accuser réception d’une tâche",
+    "collab_react": "Réagir à un message",
+    "collab_send_file": "Envoyer un fichier à un agent"
+  },
+  "server": {
+    "silent": "{{name}} ne répond pas dans {{chat}}",
+    "aChannel": "un canal"
+  },
+  "find": {
+    "navHint": "Des agents qui travaillent ensemble",
+    "navKeywords": "équipe, ensemble, groupe, collaborer"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Des assistants qui travaillent ensemble sur une tâche"
+    },
+    "nav": "Tâches des assistants",
+    "page": {
+      "title": "Tâches des assistants",
+      "intro": "Le travail que vos assistants se sont confié : messages, tâches passées, relais et fichiers. Chacun s’exécute avec le réglage le plus prudent des deux assistants.",
+      "empty": "Aucun assistant n’a encore confié de travail à un autre."
+    }
+  }
+}

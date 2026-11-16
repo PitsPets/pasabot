@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=PasaBot
+Comment=Your local AI agent workspace
+Exec="__DIR__/pasabot-desktop"
+Icon=__DIR__/pasabot.svg
+Terminal=false
+Categories=Utility;Network;
+StartupNotify=false

@@ -1,0 +1,27 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "git",
+  "name": "Git repository",
+  "version": "1.0.0",
+  "category": "Developer tools",
+  "summary": "Read history, diffs and status of one local git repository, with the reference MCP git server (needs uv).",
+  "homepage": "https://github.com/modelcontextprotocol/servers",
+  "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+  "group": "other",
+  "kind": "mcp-stdio",
+  "mcp": {
+    "command": "uvx",
+    "args": ["mcp-server-git==2026.10.28", "--repository", "{{field:repository}}"]
+  },
+  "auth": {
+    "type": "none",
+    "fields": [
+      {
+        "key": "repository",
+        "label": "Repository folder",
+        "secret": false
+      }
+    ]
+  },
+  "defaultTier": 2
+}

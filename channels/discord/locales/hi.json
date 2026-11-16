@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "बॉट टोकन",
+    "botTokenHint": "Discord डेवलपर पोर्टल में आपके एप्लिकेशन के Bot पेज से। वहाँ Message Content intent चालू करें। वॉल्ट में सहेजा जाता है, दोबारा नहीं दिखाया जाएगा।",
+    "apiBase": "API पता",
+    "gatewayUrl": "गेटवे पता",
+    "advancedHint": "जब तक आपको बदलाव की ज़रूरत न हो, इन्हें जैसा है वैसा ही रहने दें।"
+  },
+  "link": {
+    "howTo": "अपने बॉट को सीधा संदेश भेजें: /link {{code}}",
+    "dmOnly": "लिंक कोड सिर्फ़ बॉट को भेजे गए सीधे संदेश में काम करता है।"
+  },
+  "status": {
+    "connected": "कनेक्ट है",
+    "reconnecting": "दोबारा कनेक्ट हो रहा है…",
+    "auth_failed": "Discord ने बॉट को अस्वीकार कर दिया (टोकन और Message Content intent जाँचें)",
+    "stopped": "रुका हुआ"
+  }
+}

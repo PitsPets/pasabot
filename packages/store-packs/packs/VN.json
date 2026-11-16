@@ -1,0 +1,39 @@
+{
+  "country": "VN",
+  "name": "Vietnam",
+  "stores": [
+    {
+      "id": "shopee",
+      "name": "Shopee",
+      "homeUrl": "https://shopee.vn/",
+      "searchUrl": "https://shopee.vn/search?keyword={query}",
+      "allowedHosts": ["shopee.vn", "*.shopee.vn", "*.susercontent.com"],
+      "currency": "VND",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "lazada",
+      "name": "Lazada",
+      "homeUrl": "https://www.lazada.vn/",
+      "searchUrl": "https://www.lazada.vn/catalog/?q={query}",
+      "allowedHosts": ["lazada.vn", "*.lazada.vn", "*.slatic.net", "*.lazcdn.com"],
+      "currency": "VND",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "tiki",
+      "name": "Tiki",
+      "homeUrl": "https://tiki.vn/",
+      "searchUrl": "https://tiki.vn/search?q={query}",
+      "allowedHosts": ["tiki.vn", "*.tiki.vn", "*.tikicdn.com"],
+      "currency": "VND",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    }
+  ]
+}

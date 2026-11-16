@@ -1,0 +1,209 @@
+{
+  "nav": "用量",
+  "page": {
+    "title": "用量",
+    "intro": "您的 agent 所使用的 token 數，僅統計此伺服器上的紀錄。",
+    "days": "最近 {{count}} 天",
+    "agents": "依 agent 統計",
+    "providers": "依模型來源統計",
+    "empty": "尚無含 token 數的執行紀錄。",
+    "agent": "代理",
+    "provider": "模型來源",
+    "runs": "執行次數",
+    "input": "輸入",
+    "output": "輸出",
+    "cache": "快取",
+    "limits": "已暫停的模型來源",
+    "noLimits": "所有模型來源皆可使用。",
+    "limitUntil": "{{provider}}：{{reason}}，將於 {{time}} 後重試",
+    "check": "立即檢查",
+    "checked": "已檢查：{{count}} 個模型來源已恢復可用。"
+  },
+  "gauge": {
+    "label": "上下文 {{pct}}%",
+    "title": "已使用 {{used}} / {{window}} 個 token 的上下文（{{provider}}）",
+    "full": "記憶已用 {{pct}}%",
+    "menu": "這個聊天有多滿",
+    "none": "此聊天還沒有上下文報告。"
+  },
+  "notice": {
+    "switched": "已從 {{from}} 切換至 {{to}}（{{reason}}），聊天將繼續進行。",
+    "back": "已切換回 {{to}}。",
+    "compactedNative": "上下文已達 {{pct}}%：已壓縮。",
+    "compactedReseed": "上下文已達 {{pct}}%：下一則回覆將以摘要開啟新的工作階段。",
+    "overflow": "上下文已滿：已以摘要開啟新的工作階段。",
+    "stopped": "壓縮已停止：最近兩次幾乎沒有釋出空間。請開啟新的聊天，或到設定中恢復壓縮。",
+    "reason": {
+      "rate_limit": "速率限制",
+      "quota": "用量上限",
+      "auth": "登入問題",
+      "context_overflow": "上下文已滿",
+      "offline": "主要來源離線"
+    }
+  },
+  "settings": {
+    "title": "模型來源與備援",
+    "intro": "當某個模型來源達到上限時，agent 會改用清單中的下一個，並在上限重置後切換回來。",
+    "fallback": "備援 {{n}}",
+    "none": "無",
+    "model": "模型（選填）",
+    "account": "{{provider}} 的帳號",
+    "defaultAccount": "預設帳號",
+    "compactPct": "壓縮時機（上下文的 %）",
+    "compactHint": "留空 = {{pct}}%",
+    "save": "儲存",
+    "saved": "已儲存",
+    "stopped": "此 agent 的壓縮已停止。",
+    "resume": "恢復壓縮",
+    "accounts": "帳號",
+    "accountsIntro": "每個帳號都有各自的登入資料夾，供該模型來源的 CLI 使用。",
+    "accountLabel": "帳號名稱",
+    "accountProvider": "模型來源",
+    "addAccount": "新增帳號",
+    "remove": "移除",
+    "noAccounts": "沒有額外的帳號。",
+    "accountSignIn": "若要登入，請在伺服器的終端機中執行一次：",
+    "accountFolder": "此模型來源 CLI 的登入資料夾：",
+    "accountChecking": "檢查中…",
+    "accountSignedIn": "已登入",
+    "accountSignedOut": "未登入",
+    "accountUnknown": "尚未檢查登入狀態",
+    "primary": "使用 {{provider}}"
+  },
+  "server": {
+    "stoppedTitle": "{{name}}：壓縮已停止",
+    "stoppedBody": "連續兩次壓縮釋放的上下文不到 10 %。請開始新的聊天，或在設定中恢復壓縮。"
+  },
+  "find": {
+    "navHint": "代理的用量和費用",
+    "navKeywords": "用量, 費用, 權杖, 支出, 帳單",
+    "settingsHint": "AI 大腦的限制和檢查",
+    "settingsKeywords": "大腦, 模型, 限制, 供應商, 人工智慧",
+    "brainsHint": "設定你的代理用來思考的 AI",
+    "brainsKeywords": "大腦, AI, 模型, 登入, 安裝, Claude, Codex, Gemini, Grok, OpenCode, 本機, 免費"
+  },
+  "brains": {
+    "title": "大腦",
+    "intro": "大腦是你的代理用來思考的 AI。設定一個或多個；每個代理選擇一個主大腦和一個備用大腦。",
+    "name": {
+      "opencode": "免費入門（OpenCode）",
+      "local": "本機模型",
+      "acp": "其他 ACP 代理"
+    },
+    "desc": {
+      "claude": "Anthropic 的 Claude Code 應用程式，使用你的 Claude 帳號",
+      "codex": "OpenAI 的 Codex 應用程式，使用你的 ChatGPT 帳號",
+      "opencode": "免費模型，不需金鑰，不需付費。適合入門",
+      "gemini": "Google 的 Gemini CLI，使用你的 Google 帳號",
+      "grok": "xAI 的 Grok CLI，使用 xAI 金鑰",
+      "local": "本機上的 Ollama 或 LM Studio。私密，可離線使用",
+      "acp": "任何支援 Agent Client Protocol 的應用程式",
+      "other": "由外掛加入或用於測試的大腦"
+    },
+    "state": {
+      "ready": "就緒",
+      "needs_sign_in": "需要登入",
+      "not_installed": "未安裝",
+      "unreachable": "無法連線",
+      "not_running": "未執行",
+      "needs_model": "需要模型",
+      "checking": "檢查中…"
+    },
+    "unconfirmed": "無法確認登入狀態。執行測試以確認。",
+    "notFound": "找不到",
+    "install": "安裝",
+    "signIn": "登入",
+    "test": "測試",
+    "testing": "測試中…",
+    "useNew": "用於新代理",
+    "checkAgain": "重新檢查",
+    "steps": "步驟",
+    "browse": "瀏覽並安裝",
+    "close": "關閉",
+    "copy": "複製",
+    "copied": "已複製",
+    "details": "詳細資料",
+    "works": "可用。回覆：「{{reply}}」· {{secs}} 秒",
+    "usedBy": "{{names}} 正在使用",
+    "backupFor": "{{names}} 的備用",
+    "noneReady": "還沒有就緒的大腦。免費入門一鍵即可。",
+    "useStarter": "使用免費入門",
+    "stepsTitle": "設定 {{name}}",
+    "step": {
+      "terminal": "在這台電腦上開啟終端機。",
+      "paste": "貼上此指令並按 Return：",
+      "signIn": "貼上此指令並依照開啟的登入步驟操作：",
+      "back": "回到這裡並按「重新檢查」。",
+      "noPassword": "PasaBot 從不索取你的密碼，登入在應用程式內完成。",
+      "geminiChoose": "詢問時選擇「Sign in with Google」。",
+      "grokInstall": "依照 xAI 的說明安裝 Grok CLI。",
+      "starter": "或讓 PasaBot 替你安裝（執行前會驗證下載）：",
+      "starterCta": "安裝免費入門",
+      "vault": "把你的 xAI 金鑰以 {{name}} 存入 PasaBot 保險庫。儲存後不會再顯示於任何頁面。",
+      "local": "安裝 Ollama 或 LM Studio，下載一個模型並保持應用程式開啟。",
+      "localCta": "設定本機模型",
+      "acp": "從清單中選擇一個代理並安裝。",
+      "acpCta": "開啟 ACP 代理",
+      "keyLabel": "{{brain}} 的金鑰",
+      "keyWho": "在此大腦上執行的代理可以看到該金鑰。",
+      "keySave": "儲存金鑰",
+      "keySaved": "金鑰已儲存到保險庫。",
+      "keyErr": "無法儲存金鑰。請重試。",
+      "tokenTitle": "或貼上設定權杖",
+      "tokenWhy": "如果登入總是失效，或 PasaBot 在另一台電腦上執行，就用這個。",
+      "tokenRun": "打開終端機，貼上這一行並按 Return。瀏覽器開啟後登入：",
+      "tokenPaste": "複製最後顯示的那串長代碼，貼到下面。",
+      "tokenLabel": "設定權杖",
+      "tokenWho": "鎖在 PasaBot 的保險庫裡。用 Claude 執行的代理能看到它。",
+      "tokenSave": "儲存權杖",
+      "tokenSaved": "權杖已儲存。正在檢查 Claude…",
+      "tokenErr": "無法儲存權杖。請再試一次。",
+      "starterFailed": "免費入門版沒有裝好。請稍後再試一次。",
+      "starterPlain": "PasaBot 可以一鍵幫你安裝：一個免費的小 App，只給這台電腦上的你用，執行前會先檢查。大約需要一分鐘。",
+      "terminalWindows": "在這台電腦上開啟 PowerShell（在開始功能表中輸入 PowerShell）。",
+      "pasteWindows": "貼上這個指令並按 Enter：",
+      "nodeFirstWindows": "如果提示找不到 npm，請先從 nodejs.org 安裝 Node.js，然後開啟新的 PowerShell 視窗。"
+    },
+    "err": {
+      "auth": "未登入或登入已過期。請重新登入。",
+      "limit": "此帳號已達用量上限。請稍後再試。",
+      "limitAt": "此帳戶已達到使用上限，將於 {{time}} 重設。",
+      "offline": "無法連線到大腦。請檢查網路，或確認 Ollama / LM Studio 已開啟。",
+      "crash": "應用程式在回答前停止了。",
+      "timeout": "一分鐘內沒有回答。應用程式可能忙碌或卡住了。",
+      "model": "此帳號無法使用該模型。請換一個模型。",
+      "notInstalled": "這台電腦上未安裝。",
+      "busy": "連續測試太多次。請等一分鐘再試。",
+      "failed": "無法執行測試。請重試。",
+      "load": "無法載入大腦清單。請重試。"
+    },
+    "inUse": "使用中：{{name}}",
+    "notHere": "不在這台電腦上"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "設定助理用來思考的 AI",
+      "navHint": "助理用了多少、花了多少"
+    },
+    "brains": {
+      "intro": "大腦是你的代理用來思考的 AI。設定一個或多個；每個代理選擇一個主大腦和一個備用大腦。",
+      "useNew": "用於新代理",
+      "desc": {
+        "opencode": "免費大腦，不需金鑰，不需付費。適合入門",
+        "gemini": "Google 的 Gemini CLI，使用你的 Google 帳號",
+        "grok": "xAI 的 Grok CLI，使用 xAI 金鑰",
+        "acp": "任何支援 助理 Client Protocol 的應用程式"
+      },
+      "name": {
+        "local": "本機大腦",
+        "acp": "其他 ACP 代理"
+      }
+    },
+    "page": {
+      "intro": "你的助理用了多少，只在這台電腦上計算。",
+      "agents": "按助理",
+      "empty": "還沒有用量。",
+      "agent": "助理"
+    }
+  }
+}

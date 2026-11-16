@@ -1,0 +1,40 @@
+{
+  "title": "Thông báo trên thiết bị này",
+  "intro": "Nhận thông báo trên điện thoại hoặc máy tính này ngay cả khi PasaBot đã đóng.",
+  "state": {
+    "loading": "Đang kiểm tra…",
+    "off": "Tắt",
+    "on": "Bật",
+    "unsupported": "Không được hỗ trợ ở đây",
+    "blocked": "Bị chặn trong trình duyệt",
+    "unavailable": "Không khả dụng trên máy chủ này"
+  },
+  "turnOn": "Bật thông báo",
+  "turnOff": "Tắt trên thiết bị này",
+  "prefs": {
+    "title": "Thông báo cho tôi khi",
+    "approval": "Agent cần tôi đồng ý",
+    "error": "Một lượt chạy thất bại",
+    "finished": "Agent trả lời",
+    "progress": "Một tác vụ dài vẫn đang chạy",
+    "alert": "Cảnh báo khác (máy chủ, bảo mật)"
+  },
+  "test": {
+    "button": "Gửi thử",
+    "sent": "Đã gửi. Thông báo sẽ hiện ra trong giây lát.",
+    "failed": "Gửi thử không thành công. Hãy tắt rồi bật lại thông báo."
+  },
+  "help": {
+    "unsupported": "Trình duyệt này không thể nhận thông báo từ trang web.",
+    "blocked": "Thông báo của PasaBot đang bị chặn. Hãy cho phép trong phần cài đặt trang web của trình duyệt, rồi quay lại đây.",
+    "unavailable": "Máy chủ hiện không thể gửi thông báo (kho bí mật của máy chủ đang bị khóa).",
+    "iphone": "Trên iPhone và iPad, hãy thêm PasaBot vào Màn hình chính trước (Chia sẻ → Thêm vào Màn hình chính), rồi bật tính năng này từ đó."
+  },
+  "errors": {
+    "subscribe": "Không thể bật thông báo. Hãy thử lại."
+  },
+  "find": {
+    "settingsHint": "Thông báo trên thiết bị này",
+    "settingsKeywords": "thông báo, cảnh báo, đẩy, âm thanh"
+  }
+}

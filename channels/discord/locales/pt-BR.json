@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "Token do bot",
+    "botTokenHint": "Disponível na página Bot do seu aplicativo no portal de desenvolvedores do Discord. Ative lá a intent Message Content. Fica guardado no cofre e nunca é exibido novamente.",
+    "apiBase": "Endereço da API",
+    "gatewayUrl": "Endereço do gateway",
+    "advancedHint": "Deixe como está, a menos que você saiba que precisa alterar."
+  },
+  "link": {
+    "howTo": "Envie uma mensagem direta ao seu bot: /link {{code}}",
+    "dmOnly": "O código de vinculação só funciona em uma mensagem direta ao bot."
+  },
+  "status": {
+    "connected": "Conectado",
+    "reconnecting": "Reconectando…",
+    "auth_failed": "O Discord recusou o bot (verifique o token e a intent Message Content)",
+    "stopped": "Parado"
+  }
+}

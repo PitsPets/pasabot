@@ -1,0 +1,804 @@
+{
+  "app": {
+    "skip": "Diretso sa laman",
+    "tagline": "Sabihin mo lang. Ako na bahala.",
+    "taglineTranslation": "Sabihin mo lang. Ako na bahala."
+  },
+  "lang": {
+    "label": "Wika",
+    "unreviewed": "hindi pa nasusuri",
+    "unreviewedNote": "Machine translation pa ang {{language}} at wala pang marunong sa wikang ito ang nag-check.",
+    "helpImprove": "Tumulong na ayusin"
+  },
+  "conn": {
+    "connecting": "Kumokonekta…",
+    "live": "Online",
+    "reconnecting": "Kumokonekta ulit…",
+    "offline": "Offline",
+    "banner": "Kumokonekta ulit… Ligtas ang mga mensahe mo.",
+    "bannerLong": "Hindi maabot ang PasaBot sa computer na ito.",
+    "tryNow": "Subukan ngayon"
+  },
+  "counts": {
+    "needs_one": "{{count}} naghihintay sa'yo",
+    "needs_other": "{{count}} naghihintay sa'yo",
+    "working_one": "{{count}} may ginagawa",
+    "working_other": "{{count}} may ginagawa",
+    "idle_one": "{{count}} handa",
+    "idle_other": "{{count}} handa"
+  },
+  "errors": {
+    "generic": "May nagkaproblema. Pakisubukan ulit.",
+    "rateLimited": "Masyadong maraming subok. Maghintay ng isang minuto."
+  },
+  "setup": {
+    "title": "Angkinin ang PasaBot mo",
+    "intro": "Pumili ng pangalan at password. Ito ang gagamitin mo para buksan ang PasaBot.",
+    "token": "Setup code",
+    "tokenHint": "Nasa setup link na ipinakita ng PasaBot pagbukas nito. Para sa bago, buksan ang PasaBot app sa computer na iyon, o i-run doon ang `pasabot setup-link`.",
+    "name": "Pangalan mo",
+    "password": "Password",
+    "passwordHint": "Hindi bababa sa 8 character. Puwede kang magdagdag ng passkey mamaya.",
+    "confirm": "Ulitin ang password",
+    "submit": "Gawin ang owner account",
+    "tooShort": "Gumamit ng hindi bababa sa 8 character.",
+    "mismatch": "Hindi magkapareho ang dalawang password.",
+    "badToken": "Nagamit na o expired na ang setup code na ito. Para sa bago, i-click ang PasaBot icon sa taskbar o menu bar at piliin ang “Buksan ang PasaBot” (sa Linux, buksan ulit ang PasaBot mula sa app menu), o i-run ang `pasabot setup-link` sa computer na iyon.",
+    "gettingReady": "Inihahanda na ang lahat…",
+    "reopen": "Isara at buksan ulit ang PasaBot.",
+    "ownerExists": "May owner na ang server na ito. Mag-sign in na lang.",
+    "bossNote": "Ikaw na ang may-ari ng PasaBot na ito.",
+    "trustLine": "Magtatanong muna ang mga agent mo bago gumawa ng mapanganib, tulad ng pagbura ng data.",
+    "trustHow": "Paano ito nagtatanong sa'yo"
+  },
+  "login": {
+    "title": "Welcome back",
+    "intro": "Mag-sign in sa PasaBot mo.",
+    "password": "Password",
+    "submit": "Mag-sign in",
+    "passkey": "Mag-sign in gamit ang passkey",
+    "failed": "Mali ang password.",
+    "passkeyCancelled": "Hindi natapos ang passkey check.",
+    "pairInstead": "I-pair na lang ang device na ito gamit ang code",
+    "asPerson": "Magsa-sign in bilang si {{name}}.",
+    "notYou": "Hindi ikaw?",
+    "otherWays": "Ibang paraan ng pag-sign in"
+  },
+  "pair": {
+    "title": "I-pair ang device na ito",
+    "intro": "Sa device na naka-sign in na, buksan ang Devices at i-tap ang \"I-pair ang phone\". I-scan ang QR code, o i-type dito ang code.",
+    "code": "Pairing code",
+    "deviceName": "Pangalan ng device na ito",
+    "submit": "I-pair",
+    "waitingTitle": "Konti na lang",
+    "waiting": "Kumpirmahin ang device na ito sa kabilang screen mo.",
+    "fingerprint": "Fingerprint ng server",
+    "checkOther": "Siguraduhing pareho ang fingerprint sa kabilang screen, tapos i-tap ang Kumpirmahin doon.",
+    "rejected": "Tinanggihan ang pairing.",
+    "expired": "Nag-expire ang pairing. Humingi ng bagong code.",
+    "invalid": "Mali o expired na ang code na iyan.",
+    "backToLogin": "Bumalik sa sign in"
+  },
+  "devices": {
+    "title": "Mga device at sign-in",
+    "pairTitle": "I-pair ang phone",
+    "pairIntro": "I-scan ang QR code gamit ang camera ng phone mo. Bubukas doon ang PasaBot; tapos kumpirmahin dito ang phone.",
+    "newCode": "I-pair ang phone",
+    "qrAlt": "QR code para i-pair ang device",
+    "codeLabel": "O i-type ang code na ito",
+    "expires_one": "Mag-e-expire sa {{count}} segundo",
+    "expires_other": "Mag-e-expire sa {{count}} segundo",
+    "claims": "Naghihintay sa'yo",
+    "confirm": "Kumpirmahin",
+    "reject": "Tanggihan",
+    "list": "Mga naka-pair na device",
+    "none": "Wala pang naka-pair na device.",
+    "revoked": "Tinanggal na",
+    "revoke": "Tanggalin",
+    "passkeys": "Mga passkey",
+    "passkeysIntro": "Mag-sign in at kumpirmahin ang mga delikadong gawain gamit ang fingerprint, mukha o PIN ng device mo.",
+    "passkeyN": "Passkey {{n}} · idinagdag {{date}}",
+    "remove": "Tanggalin",
+    "addPasskey": "Magdagdag ng passkey",
+    "passkeyAdded": "Naidagdag na ang passkey.",
+    "reauthPair": "mag-pair ng bagong telepono",
+    "reauthConfirm": "papasukin ang bagong device",
+    "reauthPasskey": "magdagdag ng passkey",
+    "reauthNeeded": "Hindi natuloy: kailangan ulit ang password o passkey mo."
+  },
+  "agents": {
+    "add": "+ Dagdag",
+    "newTitle": "Bagong agent",
+    "editTitle": "I-edit si {{name}}",
+    "name": "Pangalan",
+    "instructions": "Ano ang trabaho niya",
+    "instructionsHint": "Simpleng salita lang: ang trabaho niya, ano ang titingnan, kailan muna magtatanong sa'yo.",
+    "provider": "Utak",
+    "notInstalled": "hindi pa naka-install",
+    "notReachable": "hindi maabot ngayon",
+    "model": "Model",
+    "trust": "Antas ng tiwala",
+    "trustLevels": {
+      "guarded": "Bantay: nagtatanong muna bago gumalaw sa labas ng folder niya",
+      "standard": "Karaniwan: nagtatanong muna bago ang palabas o delikadong gawain",
+      "trusted": "Tiwala: nagtatanong lang bago ang talagang delikado"
+    },
+    "trustHint": "Ang trusted agent na may sariling shell ang utak ay kayang gawin lahat ng kaya ng user ng computer na ito.",
+    "save": "I-save",
+    "avatar": "Itsura",
+    "avatarAlt": "Avatar ni {{name}}",
+    "shuffle": "Iba naman",
+    "avatarHint": "Pindutin hanggang magustuhan mo. Mapapalitan lang pag pinindot mo ang I-save.",
+    "create": "Gawin ang agent",
+    "unknownProvider": "Wala sa server na ito ang utak na iyan.",
+    "empty": "Wala pang agent.",
+    "emptyTitle": "Simulan ang team mo",
+    "emptyIntro": "Idagdag ang una mong agent. Bigyan ng pangalan, trabaho, at utak.",
+    "emptyCta": "Idagdag ang unang agent",
+    "trustWarning": "Nagsisimula sa Tiwala ang mga bagong agent. Kapag nagawa mo na ang isang agent, gagawin na nito ang trabaho nang hindi ka tinatanong sa bawat hakbang, kahit sa pag-post sa labas, paggamit ng web o pag-install ng tool. Magtatanong pa rin ito bago ang delikadong gawain (pagbasa ng secret, pagbura ng data, paggamit ng computer mo), at ang mensaheng dumaan sa Telegram o ibang chat app ay hindi kailanman lalampas sa Karaniwan. Kung gusto mong mas madalas kang tanungin, piliin ang Karaniwan o Bantay para sa agent na iyon, o palitan sa Settings ang antas na pagsisimulan ng mga bagong agent.",
+    "askShellWeb": "Magtanong muna bago ang terminal at raw web na command",
+    "askShellWebHint": "Kapag naka-on, magtatanong muna sa iyo ang agent na ito bago ang bawat shell command at bawat raw web request ng utak nito. Naka-off ito sa simula para sa Trusted na agent, naka-on para sa Standard at Guarded.",
+    "needsSignIn": "kailangang mag-sign in",
+    "setUpBrains": "Mag-set up o ayusin ang isang utak",
+    "backup": "Backup na utak",
+    "backupNone": "Wala",
+    "backupHint": "Gagamitin kapag naubos ang limit o hindi maabot ang pangunahing utak. Tuloy pa rin ang usapan.",
+    "brainReady": "Handa na",
+    "fixInstall": "I-install",
+    "fixSignIn": "Mag-sign in",
+    "fixCheck": "Tingnan ulit",
+    "modelAuto": "Awtomatiko",
+    "modelAutoHint": "Ang utak ang pipili ng karaniwan nitong model",
+    "modelHints": {
+      "fast": "Mabilis",
+      "balanced": "Pang-araw-araw na trabaho",
+      "smart": "Matalino",
+      "smartest": "Pinakamatalino",
+      "free": "Libre"
+    },
+    "modelsRefresh": "I-refresh ang listahan ng model",
+    "modelsLoading": "Kinukuha ang mga model…",
+    "modelsError": "Hindi makuha ang mga model ng utak na ito. Gumagana pa rin ang Awtomatiko, o pindutin ang I-refresh.",
+    "modelsCurated": "Baka hindi lahat ng model ng utak na ito ang nasa listahan.",
+    "trustShort": "Gagawa ang agent na ito nang hindi nagtatanong sa bawat hakbang. Magtatanong pa rin ito bago ang mapanganib, tulad ng pagbura ng data.",
+    "helpWith": "Saan ka niya tutulungan?",
+    "helpPlaceholder": "hal. Tulungan mo akong magplano ng ulam at magtanong muna bago bumili.",
+    "helpIdeas": {
+      "week": "Plano ng linggo ko",
+      "shopping": "Listahan ng bibilhin",
+      "messages": "Pagsulat ng mensahe",
+      "questions": "Pagsagot sa tanong"
+    },
+    "helpFill": {
+      "week": "Tulungan mo akong planuhin ang linggo ko at ipaalala sa akin ang mga darating.",
+      "shopping": "Ikaw ang bahala sa listahan ng bibilhin ko, at magtanong muna bago bumili ng kahit ano.",
+      "messages": "Tulungan mo akong sumulat at sumagot ng mga mensahe. Ipakita mo muna sa akin bago ipadala.",
+      "questions": "Sagutin mo ang mga tanong ko sa simpleng salita."
+    },
+    "moreOptions": "Iba pang opsyon"
+  },
+  "nav": {
+    "sidebar": "Mga agent at chat",
+    "yourTeam": "Ang team mo",
+    "channels": "Mga channel",
+    "devices": "Mga device",
+    "settings": "Mga setting",
+    "chats": "Mga chat",
+    "new": "Bago",
+    "newAgent": "Bagong agent",
+    "newGroup": "Bagong group chat",
+    "pinned": "Naka-pin",
+    "searchChats": "Hanapin ang mga chat",
+    "moveUp": "Iakyat",
+    "moveDown": "Ibaba",
+    "unpin": "Alisin sa sidebar",
+    "pinMenu": "Mga opsyon para sa {{feature}}",
+    "openSettings": "Buksan ang Settings",
+    "teamTalk": "Usapan ng team",
+    "teamTalkHint": "Nag-uusap ang mga katulong mo",
+    "workingFor": "Tinutulungan si {{name}}",
+    "newRequest": "May bagong hiling"
+  },
+  "status": {
+    "working": "Gumagawa…",
+    "waiting": "Hinihintay ang OK mo",
+    "idle": "Handa",
+    "needsSignIn": "Kailangang mag-sign in"
+  },
+  "details": {
+    "label": "Detalye ng agent",
+    "hide": "Itago",
+    "show": "Detalye",
+    "since": "mula {{date}}",
+    "does": "Ano ang ginagawa ni {{name}}",
+    "edit": "I-edit",
+    "noInstructions": "Wala pang instructions.",
+    "brain": "Utak",
+    "main": "Pangunahin",
+    "backup": "Reserba",
+    "none": "Wala",
+    "trust": "Antas ng tiwala",
+    "change": "Palitan",
+    "about": "Tungkol kay {{name}}",
+    "thinksWith": "Nag-iisip gamit ang",
+    "more": "Iba pa",
+    "instructions": "Buong instructions",
+    "backupBrains": "Mga reserbang utak",
+    "noSummary": "Wala pang nakasulat tungkol sa katulong na ito."
+  },
+  "chat": {
+    "notFound": "Wala dito ang chat na ito.",
+    "members_one": "{{count}} agent",
+    "members_other": "{{count}} agent",
+    "logLabel": "Mga mensahe kay {{name}}",
+    "empty": "Mag-hi ka kay {{name}}.",
+    "selectTitle": "Pumili ng chat",
+    "select": "Pumili ng agent o channel sa kaliwa.",
+    "someone": "Agent",
+    "thinking": "Nag-iisip si {{name}}…",
+    "replyFailed": "Hindi natapos ang sagot na ito.",
+    "activity_one": "Gumamit ng {{count}} tool: {{names}}",
+    "activity_other": "Gumamit ng {{count}} tool: {{names}}",
+    "seconds_one": "{{count}} s",
+    "seconds_other": "{{count}} s",
+    "partialLabel": "Bahagi lang ng sagot: ito lang ang naisulat bago ito naputol.",
+    "interruptedHandled": "Ayos na: inulit o nilaktawan ang turn na ito.",
+    "steered": "Naidagdag sa ginagawa ngayon ni {{name}}.",
+    "queueFull": "Puno na ang pila ni {{name}}. Subukan ulit mamaya.",
+    "mode": {
+      "steer": "Idagdag sa ginagawa niya",
+      "queue": "Ipadala pagkatapos niya",
+      "interrupt": "Ihinto siya at ipadala ito",
+      "more": "Iba pang paraan ng pagpapadala"
+    },
+    "placeholder": "Mag-message kay {{name}}…",
+    "send": "Ipadala",
+    "queued_one": "{{count}} nakapila",
+    "queued_other": "{{count}} nakapila",
+    "failedCount_one": "{{count}} pumalya",
+    "failedCount_other": "{{count}} pumalya",
+    "queueHint": "Ito ang susunod na babasahin ni {{name}}",
+    "queueItem": "Mensahe {{n}}",
+    "qstate": {
+      "queued": "naghihintay",
+      "held": "naka-hold hanggang ma-reset ang limit",
+      "failed": "pumalya",
+      "interrupted": "naputol"
+    },
+    "readOnlyNote": "Mababasa mo ang chat na ito, pero hindi ka makakasulat dito. Magtanong sa may-ari kung kailangan.",
+    "readOnlyLabel": "Pagbasa lang",
+    "more": "Iba pa",
+    "searchThis": "Hanapin sa chat na ito",
+    "editAgent": "I-edit ang agent",
+    "copy": "Kopyahin",
+    "copied": "Nakopya na",
+    "paused": {
+      "since": "Naka-pause pa rin ang lahat (mula {{when}}).",
+      "now": "Naka-pause ang lahat.",
+      "hint": "Ituloy ulit para makapagpadala.",
+      "hintMember": "Ang may-ari lang ang puwedeng magtuloy ulit.",
+      "start": "Ituloy ulit"
+    },
+    "editNamed": "I-edit si {{name}}",
+    "startersLabel": "Mga ideya para magsimula",
+    "startersTitle": "Hindi alam kung saan magsisimula? Pumili ng isa:",
+    "starters": {
+      "can": "Ano'ng kaya mong gawin para sa akin?",
+      "week": "Tulungan mo akong planuhin ang linggo ko",
+      "message": "Tulungan mo akong sumulat ng mensahe",
+      "dinner": "Ano'ng magandang lutuin para sa hapunan?"
+    },
+    "model": {
+      "thinksWith": "Nag-iisip gamit ang",
+      "auto": "Awtomatiko",
+      "change": "Gamit ni {{name}} ang {{brain}}, {{model}}. Palitan",
+      "readOnly": "Gamit ni {{name}} ang {{brain}}, {{model}}",
+      "title": "Paano mag-iisip si {{name}}?",
+      "brain": "Piliin ang brain",
+      "models": "Mga model",
+      "best": "Bagay sa karamihan",
+      "autoHint": "Siya na ang pipili ng bagay sa bawat mensahe",
+      "hints": {
+        "smartest": "Pinakamatalino, para sa mabibigat na trabaho. Mas mabagal at mas malakas kumain sa plan mo",
+        "smart": "Matalino at maingat",
+        "balanced": "Mabilis at matalino. Bagay sa karamihan ng gawain",
+        "fast": "Pinakamabilis, para sa simpleng tanong",
+        "free": "Libre gamitin"
+      },
+      "own": "Ang brain na ito ang pipili ng sarili niyang model",
+      "more": "Mag-set up ng ibang brain",
+      "error": "Hindi ma-load ang listahan ng mga model.",
+      "retry": "Subukan ulit"
+    },
+    "toolsMore": "+{{n}} pa",
+    "tools": {
+      "team": "Tiningnan ang team",
+      "askHelper": "Nagpatulong sa isang katulong",
+      "noteHelper": "Nag-iwan ng mensahe sa katulong",
+      "checkHelper": "Kinumusta ang isang katulong",
+      "stopHelper": "Pinahinto ang gawain ng katulong",
+      "noted": "Itinala ang sagot mo",
+      "plan": "Ipinakita ang plano",
+      "makeTeam": "Binuo ang team mo",
+      "memoryRead": "Tumingin sa alaala",
+      "memorySave": "Itinabi sa alaala",
+      "memoryForget": "Inalis sa alaala",
+      "searchChats": "Hinanap sa mga lumang usapan",
+      "browser": "Gumamit ng browser",
+      "computer": "Gumamit ng computer",
+      "webSearch": "Naghanap sa web",
+      "webPage": "Nagbukas ng web page",
+      "fileRead": "Nagbasa ng file",
+      "fileChange": "Binago ang isang file",
+      "fileSearch": "Naghalughog ng mga file",
+      "command": "Nagpatakbo ng utos",
+      "todo": "Gumawa ng listahan ng gagawin",
+      "dataRead": "Nagbasa ng talaan ng datos",
+      "dataChange": "Binago ang talaan ng datos",
+      "inbox": "Tiningnan ang inbox",
+      "machines": "Kinausap ang ibang computer",
+      "askYou": "Nagtanong sa iyo",
+      "card": "Gumawa ng card",
+      "routine": "Inayos ang isang routine",
+      "workflow": "Inayos ang isang workflow",
+      "site": "Inayos ang isang website",
+      "shop": "Tumingin sa mga tindahan",
+      "shopBuy": "Inihanda ang isang bilihin",
+      "skills": "Inayos ang mga skill",
+      "findTool": "Naghanap ng tool",
+      "connections": "Tiningnan ang mga koneksyon",
+      "secrets": "Nagtanong tungkol sa nakatagong sikreto",
+      "programs": "Tiningnan ang mga tumatakbong program",
+      "permission": "Humingi ng pahintulot",
+      "other": "Gumamit ng tool"
+    },
+    "handoff": {
+      "asked": "Nagpatulong si {{from}} kay {{to}}",
+      "noted": "Nag-iwan ng mensahe si {{from}} kay {{to}}",
+      "whatAsked": "Ang ipinagawa",
+      "reply": "Sagot ni {{name}}",
+      "waiting": "Hinihintay si {{name}}…",
+      "failed": "Hindi ito natuloy.",
+      "later": "Darating ang sagot ni {{name}} sa susunod na mensahe.",
+      "open": "Buksan ang usapan nila",
+      "openThread": "Buksan sa chat ni {{name}}"
+    },
+    "teamNote": "Dito nag-uusap sina {{from}} at {{to}}. Puwede kang makibasa, at sumulat din.",
+    "stopAll": "Ihinto na ang lahat ng katulong",
+    "thread": {
+      "from": "Mula kay {{name}}",
+      "label": "Hiling mula kay {{name}}",
+      "summary": "Nagtanong si {{from}} · Sumagot si {{to}}",
+      "working": "Ginagawa na ito ni {{name}}…",
+      "show": "Ipakita ang buong usapan",
+      "hide": "Itiklop ang usapan",
+      "reply": "Sumagot dito",
+      "replying": "Sumasagot sa hiling ni {{name}}",
+      "stopReply": "Ordinaryong mensahe na lang"
+    },
+    "report": {
+      "workingOne": "Ginagawa na ito ni {{name}}…",
+      "workingMany": "Ginagawa na ito nina {{names}}…",
+      "reading": "Pinagsasama-sama na ni {{name}} ang mga sagot…",
+      "fromOne": "Sagot ni {{name}}",
+      "fromMany": "Mga sagot nina {{names}}",
+      "fullOne": "Ipakita ang buong sagot",
+      "fullMany": "Ipakita ang lahat ng sagot",
+      "finished": "Tapos na si {{name}}:",
+      "failed": "Hindi ito natapos ni {{name}}.",
+      "stoppedOne": "Pinahinto si {{name}} bago matapos.",
+      "stillOne": "Ginagawa pa ito ni {{name}}.",
+      "stillMany": "Ginagawa pa ito nina {{names}}.",
+      "openFull": "Buksan ang buong sagot",
+      "openThread": "Buksan sa chat ni {{name}}",
+      "stopped": "Huminto muna rito: masyado nang maraming beses nagpasahan ang mga katulong. Magtanong ulit kung gusto mong ituloy nila."
+    }
+  },
+  "approval": {
+    "wants": "Gusto ni {{name}}: {{tool}}",
+    "waiting_one": "{{count}} desisyong naghihintay",
+    "waiting_other": "{{count}} desisyong naghihintay",
+    "review": "Tingnan",
+    "asking": "Nagpapaalam muna si {{name}}",
+    "tier0": "Titingin lang",
+    "tier1": "Sa sarili niyang folder lang",
+    "tier2": "Kailangan ng OK mo",
+    "tier3": "Delikado",
+    "state": {
+      "pending": "Hinihintay ka",
+      "approved": "Inaprubahan",
+      "denied": "Tinanggihan",
+      "expired": "Nag-expire: bilang tinanggihan"
+    },
+    "approve": "Aprubahan",
+    "deny": "Tanggihan",
+    "reauthNote": "Kukumpirmahin mo munang ikaw talaga bago ito ituloy.",
+    "reauthTitle": "Kumpirmahing ikaw ito",
+    "reauthIntro": "Delikadong hakbang ito: {{summary}}. I-type ang password mo para sigurado kaming ikaw ito.",
+    "reauthSubmit": "Kumpirmahin at aprubahan",
+    "reauthPasskey": "Gamitin ang passkey",
+    "reauthFailed": "Hindi tugma. Subukan ulit.",
+    "screenBusy": "Sandali lang — kagagamit lang ng isang katulong sa screen",
+    "workflow": "Nagtatanong ang workflow na \"{{name}}\": {{message}}",
+    "askClass": {
+      "money": "Pera: laging nagtatanong",
+      "outbound-message": "Mensahe sa ibang tao: laging nagtatanong",
+      "delete": "Pagbura: laging nagtatanong",
+      "publish": "Paglalathala: laging nagtatanong"
+    },
+    "fact": {
+      "items": "Mga bibilhin",
+      "merchant": "Tindahan",
+      "total": "Kabuuan",
+      "paymentMethod": "Paraan ng bayad",
+      "recipients": "Para kay",
+      "channel": "Daan",
+      "subject": "Paksa",
+      "text": "Buong mensahe",
+      "target": "Ano",
+      "where": "Saan",
+      "count": "Ilan",
+      "tool": "Tool",
+      "arguments": "Buong hiling",
+      "cc": "Cc",
+      "bcc": "Bcc",
+      "attachments": "Mga kalakip",
+      "server": "Pinapatakbo",
+      "request": "Detalye ng request"
+    },
+    "notStated": "hindi sinabi",
+    "undeclared": "Hindi sinabi ng katulong na magbabayad o magpapadala ito, pero mukhang ganoon ang page na ito.",
+    "unshown": "May iba pang detalye na wala sa buod na ito: {{names}}. Basahin muna ang eksaktong request sa ibaba bago ka mag-approve.",
+    "askNote": "Laging nagtatanong sa iyo ang ganitong aksyon, gaano man kadalas nakatakdang magtanong ang katulong. Ikaw lang ang puwedeng pumayag dito sa app.",
+    "reauthContinue": "Kumpirmahin at magpatuloy",
+    "wantsTo": "Gusto ni {{name}} na {{verb}}",
+    "verb": {
+      "read": "magbasa ng file",
+      "write": "mag-save ng file",
+      "edit": "magbago ng file",
+      "command": "magpatakbo ng utos sa computer mo",
+      "page": "magbukas ng web page",
+      "webSearch": "maghanap sa web",
+      "findFiles": "maghanap ng mga file",
+      "searchFiles": "maghanap sa loob ng mga file",
+      "notebook": "magbago ng notebook",
+      "task": "magpasa ng gawain sa isang katulong",
+      "other": "gumamit ng tool"
+    },
+    "target": {
+      "file": "Ang file: {{v}}",
+      "command": "Utos: {{v}}",
+      "page": "Ang web page: {{v}}",
+      "search": "Hinahanap: {{v}}",
+      "tool": "Ang tool: {{v}}"
+    },
+    "tierAdv0": "Tier 0 · basa lang",
+    "tierAdv1": "Tier 1 · sariling folder",
+    "tierAdv2": "Tier 2 · kailangan ng OK mo",
+    "tierAdv3": "Tier 3 · delikado",
+    "reauthIntroPasskey": "Delikadong hakbang ito: {{summary}}. I-type ang password mo o gamitin ang passkey mo para sigurado kaming ikaw ito.",
+    "unshownPlain": "May iba pang detalye ang request na ito na hindi nakikita rito: {{names}}. I-on ang \"Teknikal na salita\" sa Settings para makita lahat bago ka mag-approve.",
+    "unshownShown": "Hindi sakop ng buod ang lahat ng detalye ({{names}}). Basahin ang detalye ng request bago ka mag-approve."
+  },
+  "onboarding": {
+    "next": "Susunod",
+    "step": "Hakbang {{n}} sa {{total}}",
+    "brainTitle": "Pumili ng utak",
+    "brainIntro": "Ang utak ang AI na ginagamit ng agent mo sa pag-iisip. Napili na namin ang pinakamagaling.",
+    "working": "Inihahanda ang agent mo…",
+    "starterName": "Libreng simula",
+    "starterSub": "Walang key, walang sign-in, walang bayad",
+    "starterBody": "Magda-download ang PasaBot ng maliit na libreng app para makapag-isip ang agent mo. Mga isang minuto lang.",
+    "details": "Detalye",
+    "starterWhat": "Ano: {{what}}",
+    "starterWhere": "Saan: {{where}} (para sa user mo lang, hindi kailangan ng admin)",
+    "starterFrom": "Galing sa: {{from}}",
+    "starterCheck": "Sinusuri muna ang download laban sa nakalathalang SHA-256 nito bago may isulat.",
+    "starterGo": "I-download at ituloy",
+    "starterWorking": "Nagda-download… mga isang minuto",
+    "noBrain": "Wala pang handang utak sa computer na ito. Mag-set up muna ng isa, saka bumalik dito.",
+    "setUpBrain": "Mag-set up ng utak",
+    "otherBrain": "Gumamit ng ibang utak",
+    "defaultName": "Tala",
+    "meetTitle": "Kilalanin ang una mong agent",
+    "meetIntro": "Bigyan mo siya ng pangalang gusto mo. Puwede mong baguhin ang lahat mamaya.",
+    "meetSafe": "Magtatanong muna sa iyo si {{name}} bago ang mapanganib, tulad ng pagbura ng data.",
+    "start": "Simulan na natin",
+    "localSub": "Nasa computer na ito. Pribado, gumagana kahit offline",
+    "starterFailedPlain": "Hindi na-install ang Libreng simula. Subukan ulit, o pumili ng ibang brain."
+  },
+  "settings": {
+    "title": "Mga setting",
+    "language": "Wika",
+    "languageHint": "Papalitan nito ang lahat ng screen ng app na ito.",
+    "modules": "Mga module",
+    "account": "Account",
+    "signOut": "Mag-sign out",
+    "newAgents": "Mga bagong agent",
+    "newAgentsHint": "Ang antas ng tiwala na pagsisimulan ng bagong agent. Mapapalitan mo pa rin ito sa bawat agent.",
+    "alwaysAsks": "Laging nagtatanong",
+    "alwaysAsksIntro": "Kahit pinagkakatiwalaang agent ay magtatanong muna sa iyo, bawat beses, bago gawin ang mga ito. Walang \"laging payagan\" para dito, at hindi ito mapapayagan ng chat channel o ng automation.",
+    "alwaysAsksMoney": "Pera: pagbili, pagbabayad, checkout, pag-order, pag-subscribe, paggamit ng detalye ng bayad, pagpapadala ng pera o crypto.",
+    "alwaysAsksMessage": "Mensahe sa ibang tao: email, chat, DM o post sa kahit sino maliban sa sarili mong naka-link na chat. Hindi nagtatanong ang agent kapag sumasagot lang ito sa iyo sa sarili mong chat.",
+    "alwaysAsksDelete": "Pagbura sa labas ng sariling workspace ng agent: mga file o folder ng ibang agent o kahit saan pa sa computer na ito, data table ng ibang agent o pinaghahatiang table, at anumang minarkahan ng panlabas na tool o connector na nakakasira. Hindi nagtatanong kapag sa loob lang ng sarili niyang workspace ito nagbubura.",
+    "alwaysAsksFixed": "Laging bukas",
+    "alwaysAsksAdd": "Puwede mo ring gawing laging nagtatanong ang mga ito:",
+    "alwaysAsksClass": {
+      "delete": "Pagbura ng mga file o data",
+      "publish": "Paglalathala (site, post)"
+    },
+    "alwaysAsksLimit": "Ang agent na binigyan mo ng terminal ay kayang gawin ang lahat ng kaya ng terminal; ang mga always-ask card ay para lang sa mga tool na nakikita ng PasaBot. Puwedeng magpadala ng mensahe o magbayad ang isang shell command o raw web request nang walang card. Para matanong ka muna, i-on ang \"Magtanong muna bago ang terminal at raw web na command\" sa agent na iyon.",
+    "search": "Hanapin sa settings",
+    "back": "Balik sa mga chat",
+    "intro": "Nandito ang lahat ng hindi chat. I-pin sa sidebar ang ginagamit mo araw-araw.",
+    "pin": "Ipakita sa sidebar",
+    "pinAria": "Ipakita ang {{feature}} sa sidebar",
+    "hide": "Hindi ko ginagamit ito",
+    "hideTitle": "Itago ang {{feature}}?",
+    "hideBody": "Mawawala ito sa Settings at sidebar para sa lahat. Walang mabubura. Ibalik ito sa Settings › Advanced.",
+    "hideConfirm": "Itago ang {{feature}}",
+    "showAgain": "Ipakita ulit",
+    "hiddenNote": "Itinago mo ang feature na ito. Gumagana pa rin ito; hindi lang ipinapakita sa mga listahan.",
+    "notUsing": "Mga feature na hindi mo ginagamit",
+    "notUsingEmpty": "Ginagamit mo lahat. Itago ang feature mula sa page nito kapag hindi mo kailangan.",
+    "groupEmpty": "Walang laman dito ngayon. Nasa Advanced ang mga nakatagong feature.",
+    "searchEmpty": "Walang tugma sa \"{{q}}\". Subukan ang mas simpleng salita.",
+    "resetSidebar": "I-reset ang sidebar",
+    "resetSidebarHint": "Inaalis ang lahat ng naka-pin sa sidebar. Walang ibang nagbabago.",
+    "pinnedCount": "Naka-pin: {{count}}",
+    "saveFailed": "Hindi ito na-save. Subukan ulit.",
+    "tidied": "Inayos namin. Nasa Settings na lahat — i-pin ang ginagamit mo sa sidebar.",
+    "gotIt": "Sige",
+    "where": "Nandito ka",
+    "advancedSwitch": "Teknikal na salita",
+    "advancedHint": "Ipinapakita ang mga pangalang tulad ng \"Trust level\" at \"MCP server\", pati ang mga pahina para sa teknikal na setup.",
+    "moreOptions": "Iba pang opsyon",
+    "switchOn": "Bukas",
+    "switchOff": "Sarado",
+    "sections": {
+      "everyday": "Pang-araw-araw",
+      "helpers": "Mga magagamit ng mga katulong mo",
+      "own": "Kusang tumatakbo"
+    },
+    "technicalOnly": "Para sa teknikal na setup — i-on ang {{switch}} para makita ang mga ito",
+    "technicalOnlyPage": "Para sa teknikal na setup ang pahinang ito — i-on ang {{switch}} para makita ito."
+  },
+  "offline": {
+    "title": "Hindi maabot ang PasaBot",
+    "body": "Hindi maabot ng PasaBot ang server mo ngayon. Ligtas ang mga chat mo sa server, at babalik sila pag naka-connect ka ulit.",
+    "retry": "Subukan ulit"
+  },
+  "decisions": {
+    "title": "Mga desisyong naghihintay",
+    "intro": "Lahat ng naghihintay sa iyo, mula sa bawat chat, workflow at module.",
+    "showInChat": "Ipakita sa chat",
+    "openChat": "Buksan ang chat",
+    "open": "Buksan",
+    "ownerOnly": "Ang may-ari lang ang makakapagdesisyon dito. Nakikita mo lang sila."
+  },
+  "roles": {
+    "ownerOnlyPage": "Ang may-ari lang ang makakagamit ng pahinang ito.",
+    "ownerOnlyBack": "Bumalik sa mga chat mo"
+  },
+  "account": {
+    "menu": "Account",
+    "look": "Itsura",
+    "lookAuto": "Awtomatiko",
+    "lookLight": "Maliwanag",
+    "lookDark": "Madilim",
+    "thisDevice": "Device na ito",
+    "role": {
+      "owner": "May-ari",
+      "member": "Miyembro",
+      "guest": "Bisita"
+    }
+  },
+  "features": {
+    "agents": "Mga agent",
+    "agentsHint": "I-edit, magdagdag o i-archive ang mga agent mo"
+  },
+  "groups": {
+    "agents": {
+      "name": "Mga agent at utak",
+      "hint": "Ang mga agent mo at ang AI na nagpapatakbo sa kanila"
+    },
+    "tools": {
+      "name": "Skills at tools",
+      "hint": "Ang magagamit ng mga agent mo"
+    },
+    "automations": {
+      "name": "Mga automation",
+      "hint": "Mga bagay na kusang tumatakbo"
+    },
+    "safety": {
+      "name": "Kaligtasan at pag-apruba",
+      "hint": "Ang kailangan ng OK mo"
+    },
+    "spending": {
+      "name": "Gastos",
+      "hint": "Mga limit at nagamit mo"
+    },
+    "people": {
+      "name": "Tao at device",
+      "hint": "Sino ang puwedeng gumamit ng PasaBot at saan"
+    },
+    "machines": {
+      "name": "Mga machine",
+      "hint": "Ibang computer na naka-link dito"
+    },
+    "shopping": {
+      "name": "Pamimili",
+      "hint": "Mga tindahan, cart at presyo"
+    },
+    "inbox": {
+      "name": "Inbox at mail",
+      "hint": "Mga mail na binabasa ng agent para sa’yo"
+    },
+    "memory": {
+      "name": "Memory at data",
+      "hint": "Ang naaalala at itinatago ng mga agent mo"
+    },
+    "look": {
+      "name": "Wika at itsura",
+      "hint": "Wika, tema at boses"
+    },
+    "advanced": {
+      "name": "Masusing setting",
+      "hint": "Para sa mahilig mag-kalikot"
+    }
+  },
+  "plain": {
+    "agents": {
+      "trust": "Kailan ito magtatanong sa'yo",
+      "trustLevels": {
+        "guarded": "Nagtatanong bago ang lahat ng nasa labas ng sarili niyang folder",
+        "standard": "Nagtatanong bago ang delikado",
+        "trusted": "Nagtatanong lang sa mapanganib"
+      },
+      "trustHint": "Ang katulong na nagtatanong lang sa mapanganib ay kayang gawin ang lahat ng kaya mong gawin sa computer na ito.",
+      "askShellWeb": "Magtanong bago ang mga utos sa computer at direktang paggamit ng web",
+      "askShellWebHint": "Kapag naka-on, magtatanong muna ang katulong na ito bago ang bawat utos sa computer mo at bawat direktang paggamit ng web, dahil puwede itong magpadala ng data mo o magbayad. Naka-off sa simula para sa mga katulong na nagtatanong lang sa mapanganib.",
+      "model": "Bersyon",
+      "modelsRefresh": "Tingnan kung may bagong bersyon",
+      "modelsError": "Hindi ma-load ang mga bersyon ng utak na ito. Gumagana pa rin ang Awtomatiko, o subukan ulit.",
+      "trustShort": "Gagawa ang katulong na ito nang hindi nagtatanong sa bawat hakbang. Magtatanong pa rin ito bago ang mapanganib, tulad ng pagbura ng data.",
+      "newTitle": "Bagong katulong",
+      "unknownProvider": "Hindi naka-set up ang utak na iyan sa computer na ito.",
+      "backupHint": "Gagamitin kapag naubos ang limit o hindi maabot ang pangunahing utak. Tuloy pa rin ang usapan ng katulong mo.",
+      "modelAutoHint": "Ang utak ang pipili ng karaniwan nitong bersyon",
+      "modelsCurated": "Baka hindi lahat ng bersyon ng utak na ito ang nasa listahan.",
+      "trustWarning": "Nagsisimula ang mga bagong katulong sa “Nagtatanong lang sa mapanganib”. Kapag nagawa mo na ang isa, ginagawa nito ang trabaho nang hindi ka tinatanong bawat beses, kahit sa pag-post sa labas, paggamit ng web o pag-install ng mga gamit. Nagtatanong pa rin ito bago ang mapanganib (pagbasa ng lihim, pagbura ng data, paggamit ng computer mo), at ang mensaheng dumating dito mula sa Telegram o ibang chat app ay hindi lalampas sa “Nagtatanong bago ang delikado”. Para mas madalas kang matanong, piliin ang “Nagtatanong bago ang delikado” o “Nagtatanong bago ang lahat ng nasa labas ng sarili niyang folder” para sa katulong na iyon, o baguhin sa Mga setting kung saan nagsisimula ang mga bagong katulong.",
+      "create": "Gumawa ng katulong"
+    },
+    "details": {
+      "trust": "Kailan ito nagtatanong"
+    },
+    "settings": {
+      "newAgentsHint": "Kung gaano kadalas magtatanong sa iyo ang bagong katulong sa simula. Puwede mo pa rin itong baguhin sa bawat katulong.",
+      "alwaysAsksLimit": "Ang katulong na puwedeng magpatakbo ng utos sa computer mo ay kayang gawin ang lahat ng kaya ng mga utos na iyon. Para lang sa nakikita ng PasaBot ang mga card na ito: puwedeng magpadala ng mensahe o magbayad ang isang utos o direktang paggamit ng web nang walang card. Para matanong ka muna, i-on ang \"Magtanong bago ang mga utos sa computer at direktang paggamit ng web\" sa katulong na iyon.",
+      "advancedHint": "Ipinapakita rin ang mga teknikal na pangalan at ang mga pahina para sa teknikal na setup.",
+      "newAgents": "Mga bagong katulong",
+      "alwaysAsksIntro": "Kahit ang katulong na pinagkakatiwalaan mo ay magtatanong muna sa iyo, bawat beses, bago gawin ang mga ito. Walang \"laging payagan\" para dito, at hindi ito mapapayagan ng chat app o ng kusang tumatakbo.",
+      "alwaysAsksMessage": "Mensahe sa ibang tao: email, chat, DM o post sa kahit sino maliban sa sarili mong naka-link na chat. Hindi nagtatanong ang katulong kapag sumasagot lang ito sa iyo sa sarili mong chat.",
+      "alwaysAsksDelete": "Pagbura sa labas ng sariling workspace ng katulong: mga file o folder ng ibang katulong o kahit saan pa sa computer na ito, data table ng ibang katulong o pinaghahatiang table, at anumang minarkahan ng ibang app na nakakasira. Hindi nagtatanong kapag sa loob lang ng sarili niyang workspace ito nagbubura."
+    },
+    "pair": {
+      "fingerprint": "Code pangkaligtasan",
+      "checkOther": "Siguraduhing pareho ang code pangkaligtasan sa kabilang screen, tapos i-tap ang Kumpirmahin doon."
+    },
+    "features": {
+      "agents": "Mga katulong",
+      "agentsHint": "Baguhin, dagdagan o itabi ang mga katulong mo"
+    },
+    "groups": {
+      "agents": {
+        "name": "Mga katulong at utak",
+        "hint": "Ang mga katulong mo at ang AI na ginagamit nila sa pag-iisip"
+      },
+      "inbox": {
+        "hint": "Mga mail na binabasa ng mga katulong para sa’yo"
+      },
+      "memory": {
+        "hint": "Ang naaalala at itinatago ng mga katulong mo"
+      },
+      "tools": {
+        "hint": "Ang magagamit ng mga katulong mo",
+        "name": "Kakayahan at gamit"
+      }
+    },
+    "nav": {
+      "newAgent": "Bagong katulong"
+    }
+  },
+  "cards": {
+    "needsOk": "Kailangan ng OK mo",
+    "stale": "Nasagot na ito.",
+    "failed": "Hindi gumana. Pakisubukan ulit.",
+    "details": "Detalye",
+    "settled": {
+      "open": "Bukas",
+      "done": "Tapos na",
+      "later": "Mamaya",
+      "dismissed": "Isinara",
+      "failed": "Hindi gumana"
+    },
+    "open": "Buksan",
+    "download": "I-download",
+    "browserAlt": "Ang browser ng katulong, live",
+    "browserWait": "Hinihintay ang larawan…",
+    "stillNeed": "Mga kailangan pa ng OK mo: {{count}}",
+    "suggest": {
+      "title": "Puwede mo ring itanong",
+      "send": "Subukan",
+      "plan": {
+        "title": "Planuhin ang linggo ko",
+        "send": "Tulungan mo akong planuhin ang linggo ko"
+      },
+      "remind": {
+        "title": "Paalalahanan mo ako",
+        "send": "Paalalahanan mo ako bukas ng 9 na magbayad ng bills"
+      },
+      "write": {
+        "title": "Sumulat ng mensahe",
+        "send": "Tulungan mo akong sumulat ng maikli at magiliw na mensahe sa customer"
+      },
+      "find": {
+        "title": "Alamin ang kaya ng team",
+        "send": "Ano ang kaya ninyong gawin ng team para sa akin?"
+      },
+      "hint": "Pindutin ang isa para mailagay sa kahon ng mensahe, tapos baguhin at ipadala."
+    },
+    "idea": "Mungkahi",
+    "more": "{{count}} pa"
+  },
+  "system": {
+    "pageTitle": "Ang computer na ito",
+    "pageHint": "Ang nakita ng PasaBot tungkol sa computer na pinagtatakbuhan nito",
+    "kicker": "Tungkol sa computer na ito",
+    "gotIt": "Sige, gets ko",
+    "seen": "Nakita na",
+    "details": "Detalye",
+    "changeTrust": "Baguhin ang puwedeng gawin ng mga bagong helper",
+    "allGood": "Walang kailangang ayusin sa computer na ito.",
+    "windows-no-sandbox": {
+      "title": "Walang safety box ang mga helper sa Windows PC na ito",
+      "text": "Sa Windows, hindi pa kayang ikulong ng PasaBot ang mga helper sa sarili nilang folder, kaya puwedeng mabuksan ng helper ang kahit anong file na nabubuksan mo. Kaya nagpapaalam muna sa iyo ang mga bagong helper bago gumawa ng kahit ano sa labas ng folder nila. Magdagdag lang ng helper na pinagkakatiwalaan mo."
+    },
+    "linux-sandbox-missing": {
+      "title": "Hindi pa makapagsimula ang mga helper",
+      "text": "Kulang ang computer na ito ng maliit na safety tool na tinatawag na bubblewrap. Pakiusapan ang nag-aasikaso ng computer na ito na i-install ito, tapos buksan ulit ang PasaBot."
+    },
+    "linux-sandbox-userns": {
+      "title": "Hindi pa makapagsimula ang mga helper",
+      "text": "Hinaharang ng Linux na ito ang safety box na pinagtatakbuhan ng mga helper. Kaya itong payagan ng nag-aasikaso ng computer gamit ang isang setting, tapos buksan ulit ang PasaBot."
+    },
+    "linux-sandbox-other": {
+      "title": "Hindi pa makapagsimula ang mga helper",
+      "text": "Ayaw gumana ng safety box ng mga helper sa computer na ito. Pakiusapan ang nag-aasikaso ng computer na ito na tingnan ito."
+    },
+    "vault-unavailable": {
+      "title": "Naka-lock ang mga naka-save na key at password",
+      "text": "Hindi nabuksan ng PasaBot ang safe nito ngayon, kaya hindi ito makapag-save o makagamit ng mga key at password. Buksan ulit ang PasaBot. Kung paulit-ulit, patakbuhin ang check sa page na ito."
+    },
+    "vault-key-file": {
+      "title": "Nasa isang file ang susi ng safe mo",
+      "text": "Walang keyring ang computer na ito, kaya nasa isang file ang susi ng safe ng PasaBot na account mo lang ang makakabukas. Pero mababasa pa rin ito ng mga program na ikaw mismo ang nagpapatakbo."
+    },
+    "data-folder-open": {
+      "title": "Baka bukas sa iba ang folder ng PasaBot",
+      "text": "Hindi pinayagan ng Windows na i-lock ng PasaBot ang folder nito sa account mo, kaya baka makita ng ibang account sa PC na ito ang mga chat at key mo. Patakbuhin ang check sa page na ito para malaman pa."
+    },
+    "signin-links": {
+      "title": "May isang Windows setting na kailangan ng Codex at OpenCode",
+      "text": "Para magamit ng mga helper ang sign-in mo sa Codex o OpenCode, i-on ang Developer Mode sa Windows Settings, tapos buksan ulit ang PasaBot. Gumagana ang Claude kahit wala nito."
+    },
+    "check": {
+      "title": "I-check ang computer na ito",
+      "text": "Mabilis na sinusuri kung gumagana ang PasaBot sa PC na ito at ipinapakita kung ano ang pumasa. Gumagamit ito ng test folder, hindi ng sarili mong data.",
+      "notInstalled": "Kasama ang check sa naka-install na Windows app. I-install ang PasaBot para magamit ito.",
+      "run": "I-check ang computer na ito",
+      "started": "Bumukas ang check sa sarili nitong window.",
+      "failed": "Hindi nagsimula ang check. Pakisubukan ulit."
+    }
+  }
+}

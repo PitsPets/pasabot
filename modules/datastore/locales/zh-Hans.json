@@ -1,0 +1,66 @@
+{
+  "nav": "数据",
+  "page": {
+    "title": "共享数据",
+    "intro": "智能体共享的数据表。每个智能体都能读取所有表，因此私人笔记应放在智能体的记忆中，而不是这里。",
+    "size": "已用 {{used}}，上限 {{max}}",
+    "details": "创建数据表的智能体可以随意增改其中的行；其他智能体的更改则遵循你为该智能体设定的审批规则（删除行始终会询问你）。只有创建者能修改表结构或删除数据表，删除时始终会询问你。",
+    "more": "了解更多"
+  },
+  "refresh": "刷新",
+  "loading": "正在加载…",
+  "empty": "还没有数据表。智能体创建后会显示在这里。",
+  "error": "无法加载数据。{{reason}}",
+  "table": {
+    "rows_other": "{{count}} 行",
+    "columns_other": "{{count}} 列",
+    "by": "创建者：{{name}}",
+    "byUnknown": "创建者未知",
+    "removedAgent": "已移除的智能体",
+    "ddl": "定义方式",
+    "showRows": "显示行",
+    "hideRows": "隐藏行",
+    "rowsOf": "{{name}} 的行"
+  },
+  "cell": {
+    "null": "空",
+    "blob": "（文件数据）"
+  },
+  "result": {
+    "count_other": "{{count}} 行",
+    "countMore_other": "前 {{count}} 行；还有更多"
+  },
+  "query": {
+    "title": "查询数据",
+    "label": "查询（只读）",
+    "hint": "一条 SELECT 语句。此界面不会更改数据。",
+    "run": "运行查询",
+    "result": "查询结果",
+    "error": "查询未能运行。{{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "列出共享表",
+    "datastore_create_table": "创建共享表",
+    "datastore_query": "查询共享表",
+    "datastore_write": "写入行",
+    "datastore_alter_table": "修改你创建的表",
+    "datastore_drop_table": "删除你创建的表"
+  },
+  "find": {
+    "navHint": "智能体保存的表格和数据",
+    "navKeywords": "数据, 表格, 数据库, 记录"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助手保存的表格和清单"
+    },
+    "page": {
+      "intro": "你的助手共用的表格。每个助手都能读所有表格，所以私人笔记应放在助手的记忆里，不要放这里。",
+      "details": "建表的助手可以随意增改行；其他助手的修改按你给那个助手定的批准规则（删除行总会问你）。只有建表者能改结构或删除表格，删除总会问你。"
+    },
+    "empty": "还没有表格。助手建好后会显示在这里。",
+    "table": {
+      "removedAgent": "已删除的助手"
+    }
+  }
+}

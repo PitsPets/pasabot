@@ -1,0 +1,151 @@
+{
+  "nav": "Ngân sách",
+  "page": {
+    "title": "Ngân sách",
+    "intro": "Chi phí của các agent, giá bạn trả và hạn mức để dừng chúng. Giá chỉ lấy từ bảng của bạn: mô hình chưa có giá sẽ không bao giờ bị đoán."
+  },
+  "spend": {
+    "title": "Chi tiêu",
+    "today": "Hôm nay",
+    "month": "Tháng này",
+    "total": "Tổng",
+    "none": "Chưa chi tiêu gì.",
+    "byAgent": "Theo agent",
+    "byModel": "Theo mô hình",
+    "runs": "{{count}} lượt chạy",
+    "tokens": "{{input}} vào · {{output}} ra · {{cache}} đã lưu đệm",
+    "priceNotSet": "chưa đặt giá",
+    "unpriced": "{{count}} lượt chạy chưa có giá và không được tính."
+  },
+  "prices": {
+    "title": "Bảng giá",
+    "intro": "Tính theo mỗi triệu token, một loại tiền tệ cho mỗi mô hình. Các mô hình agent đã dùng sẽ hiện ở đây; hãy đặt giá để tính chúng.",
+    "model": "Mô hình",
+    "default": "(mô hình mặc định)",
+    "input": "Đầu vào",
+    "output": "Đầu ra",
+    "cached": "Đã lưu đệm",
+    "currency": "Tiền tệ",
+    "save": "Lưu giá",
+    "saved": "Đã lưu giá.",
+    "remove": "Xóa giá",
+    "add": "Thêm mô hình",
+    "provider": "Bộ não",
+    "empty": "Chưa có mô hình nào. Chúng sẽ xuất hiện sau phản hồi đầu tiên của agent.",
+    "providerMissing": "Hãy viết tên bộ não trước"
+  },
+  "caps": {
+    "title": "Hạn mức",
+    "intro": "Khi chạm hạn mức, agent sẽ dừng gọn gàng, việc mới phải chờ và các routine bị bỏ qua. Chỉ bạn mới có thể nâng hạn mức.",
+    "everyone": "Tất cả agent",
+    "day": "Mỗi ngày",
+    "month": "Mỗi tháng",
+    "none": "Không giới hạn",
+    "spent": "{{spent}} / {{cap}} {{currency}}",
+    "save": "Lưu hạn mức",
+    "saved": "Đã lưu hạn mức.",
+    "uncovered": "Chưa được tính vào hạn mức nào cho đến khi có giá theo đúng tiền tệ của hạn mức: {{models}}.",
+    "oneCurrency": "Hạn mức và giá phải dùng chung một loại tiền tệ. Hãy đổi về cùng một loại trước."
+  },
+  "card": {
+    "who": {
+      "global": "Tất cả agent",
+      "agent": "{{name}}"
+    },
+    "reached": "{{who}} đã chạm hạn mức {{period}}: {{spent}} / {{cap}} {{currency}}.",
+    "period": {
+      "day": "hằng ngày",
+      "month": "hằng tháng"
+    },
+    "stopped": "{{name}} đã dừng. Những gì đã viết được giữ lại.",
+    "held": "Việc mới sẽ chờ đến khi hạn mức đặt lại hoặc bạn nâng nó lên.",
+    "skipped": "Một lượt chạy routine đã bị bỏ qua.",
+    "ask": "Nâng hạn mức hay giữ nguyên?",
+    "newCap": "Hạn mức mới ({{currency}})",
+    "raise": "Nâng hạn mức",
+    "keep": "Giữ hạn mức",
+    "raised": "Đã nâng hạn mức lên {{cap}} {{currency}}.",
+    "kept": "Đã giữ hạn mức ở {{cap}} {{currency}}.",
+    "failed": "Không thành công. Chỉ owner mới có thể đổi hạn mức."
+  },
+  "bundle": {
+    "title": "Chuyển một agent (đã mã hóa)",
+    "intro": "Một tệp chứa cài đặt, bộ nhớ, không gian làm việc, skill và các chat của agent, được khóa bằng cụm mật khẩu. Nhập tệp luôn tạo ra một agent mới.",
+    "agent": "Tác nhân",
+    "passphrase": "Cụm mật khẩu",
+    "passphraseHint": "Ít nhất 8 ký tự. Không có nó thì không thể mở tệp.",
+    "vault": "Bao gồm các mục vault của agent này",
+    "vaultHint": "Mặc định tắt. Cần nhập lại mật khẩu của bạn.",
+    "password": "Mật khẩu của bạn",
+    "export": "Tải xuống tệp đã mã hóa",
+    "exported": "Đã tải xuống tệp.",
+    "file": "Tệp gói",
+    "import": "Nhập thành agent mới",
+    "imported": "Đã nhập thành {{name}}.",
+    "open": "Mở chat của agent",
+    "error": {
+      "bad_passphrase_or_tampered": "Sai cụm mật khẩu, hoặc tệp đã bị thay đổi. Chưa nhập gì cả.",
+      "unsafe_path": "Tệp có đường dẫn không an toàn. Chưa nhập gì cả.",
+      "unsupported_version": "Tệp này được tạo bởi phiên bản PasaBot mới hơn. Chưa nhập gì cả.",
+      "not_a_bundle": "Đây không phải tệp agent của PasaBot.",
+      "reauth_required": "Cần mật khẩu của bạn để bao gồm các mục vault.",
+      "builtin_agent": "Trình tạo nhóm là một phần của PasaBot nên không được lưu thành tệp. Các tác nhân khác của bạn thì được.",
+      "other": "Không thành công."
+    }
+  },
+  "server": {
+    "allAgents": "Tất cả tác tử",
+    "capHeadDay": "{{what}} đã chạm ngân sách ngày ({{spent}} trên {{cap}} {{currency}}).",
+    "capHeadMonth": "{{what}} đã chạm ngân sách tháng ({{spent}} trên {{cap}} {{currency}}).",
+    "capStopped": "{{name}} đã dừng; nội dung đã viết vẫn được giữ.",
+    "capHeld": "Việc mới sẽ chờ đến khi hạn mức được đặt lại hoặc bạn nâng nó lên.",
+    "capSkipped": "Đã bỏ qua một lượt chạy quy trình.",
+    "capCard": "{{head}} {{tail}}"
+  },
+  "find": {
+    "navHint": "Giới hạn chi tiêu của tác tử",
+    "navKeywords": "ngân sách, giới hạn, tiền, mức trần, chi tiêu"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Giới hạn chi tiêu cho trợ lý của bạn"
+    },
+    "page": {
+      "intro": "Trợ lý tốn bao nhiêu, giá bạn trả và các giới hạn dừng họ lại. Giá chỉ lấy từ bảng của bạn: bộ não không có giá thì không bao giờ đoán."
+    },
+    "spend": {
+      "byAgent": "Theo trợ lý",
+      "byModel": "Theo phiên bản bộ não"
+    },
+    "prices": {
+      "intro": "Giá cho mỗi triệu mẩu chữ, một loại tiền cho mỗi phiên bản bộ não. Các phiên bản trợ lý đã dùng hiện ở đây; đặt giá để tính.",
+      "model": "Phiên bản bộ não",
+      "default": "(phiên bản thường dùng)",
+      "add": "Thêm phiên bản",
+      "empty": "Chưa có. Chúng xuất hiện sau câu trả lời đầu tiên của trợ lý."
+    },
+    "caps": {
+      "intro": "Khi chạm giới hạn, trợ lý dừng gọn gàng, việc mới phải chờ và thói quen bị bỏ qua. Chỉ bạn mới nâng được giới hạn.",
+      "everyone": "Tất cả trợ lý",
+      "uncovered": "Chưa tính vào giới hạn nào cho đến khi có giá theo loại tiền của giới hạn: {{models}}."
+    },
+    "card": {
+      "who": {
+        "global": "Tất cả trợ lý"
+      }
+    },
+    "bundle": {
+      "title": "Chuyển trợ lý (tệp có khóa)",
+      "intro": "Một tệp chứa cài đặt, trí nhớ, tệp, khả năng và cuộc trò chuyện của trợ lý, khóa bằng cụm mật khẩu. Đưa vào luôn tạo trợ lý mới.",
+      "agent": "Trợ lý",
+      "vault": "Kèm bí mật đã lưu của trợ lý này",
+      "file": "Tệp trợ lý",
+      "import": "Đưa vào như trợ lý mới",
+      "error": {
+        "not_a_bundle": "Đây không phải tệp trợ lý PasaBot.",
+        "reauth_required": "Cần mật khẩu của bạn để kèm bí mật đã lưu.",
+        "builtin_agent": "Người dựng nhóm là một phần của PasaBot nên không lưu ra tệp. Các trợ lý khác thì được."
+      }
+    }
+  }
+}

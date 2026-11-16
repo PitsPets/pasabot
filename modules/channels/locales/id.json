@@ -1,0 +1,146 @@
+{
+  "settings": {
+    "title": "Channel",
+    "intro": "Bicaralah dengan agen dari Telegram, Discord, Slack, atau WhatsApp. Setiap chat di aplikasi itu menjadi chat PasaBot tersendiri.",
+    "empty": "Belum ada channel.",
+    "loading": "Memuat channel…",
+    "error": "Tidak dapat memuat channel: {{reason}}"
+  },
+  "add": {
+    "title": "Tambah channel",
+    "open": "Tambah channel",
+    "kind": "Aplikasi",
+    "label": "Nama (opsional)",
+    "labelHint": "Hanya ditampilkan di sini, mis. “Bot grup keluarga”.",
+    "agent": "Agen yang menjawab",
+    "token": "Token bot",
+    "tokenHint": "Tempel sekali saja. Token disimpan di vault dan tidak pernah ditampilkan lagi.",
+    "allowed": "Pengirim yang diizinkan (opsional)",
+    "allowedHint": "ID pengguna platform, satu per baris atau dipisah koma. Kosongkan agar hanya Anda yang dapat berbicara dengannya.",
+    "submit": "Tambah channel",
+    "cancel": "Batal",
+    "noKinds": "Tidak ada aplikasi channel yang terinstal di server ini.",
+    "noAgents": "Buat agen terlebih dahulu.",
+    "pairingNext": "Setelah menambahkannya, Anda menautkannya dengan memindai kode QR menggunakan ponsel."
+  },
+  "kind": {
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "whatsapp": "WhatsApp",
+    "fake": "Channel uji",
+    "agentchat": "AgentChat"
+  },
+  "status": {
+    "connected": "Terhubung",
+    "reconnecting": "Menghubungkan ulang",
+    "auth_failed": "Token ditolak",
+    "stopped": "Dihentikan",
+    "error": "Kesalahan",
+    "starting": "Memulai",
+    "unavailable": "Aplikasi belum terinstal",
+    "disabled": "Nonaktif",
+    "not_linked": "Belum tertaut"
+  },
+  "binding": {
+    "agent": "Menjawab sebagai",
+    "lastEvent": "Pesan terakhir",
+    "never": "belum ada",
+    "dropped_other": "{{count}} pesan dari orang asing diabaikan",
+    "owner": "Akun Anda",
+    "ownerNone": "Belum tertaut: hanya pengirim yang tertaut atau diizinkan yang mendapat jawaban.",
+    "ownerLinked": "Tertaut ke {{name}} ({{id}})",
+    "places": "Chat",
+    "placesNone": "Belum ada chat. Kirim pesan ke bot untuk memulai.",
+    "openChat": "Buka chat",
+    "allowed": "Pengirim yang diizinkan",
+    "allowedNone": "Hanya Anda",
+    "token": "Token bot",
+    "tokenSet": "Tersimpan di vault",
+    "tokenReplace": "Ganti token",
+    "tokenNew": "Token bot baru",
+    "save": "Simpan",
+    "saved": "Tersimpan",
+    "restart": "Hubungkan ulang",
+    "turnOff": "Matikan",
+    "turnOn": "Aktifkan",
+    "remove": "Hapus",
+    "removeConfirm": "Hapus channel ini? Bot berhenti menjawab; chat-nya tetap ada di PasaBot.",
+    "confirm": "Ya, hapus",
+    "unlink": "Putuskan tautan",
+    "error": "Kesalahan terakhir: {{error}}",
+    "which": "Yang mana"
+  },
+  "link": {
+    "start": "Tautkan akun saya",
+    "again": "Kode tautan baru",
+    "how": "Kirim ini ke bot lewat pesan langsung dalam 10 menit:",
+    "warn": "Hanya lewat pesan langsung. Kode yang diposting di grup akan dibatalkan.",
+    "copy": "Salin",
+    "copied": "Disalin",
+    "ownNumber": "Nomor sendiri: kirim kode di chat “Kirim pesan ke diri sendiri” Anda."
+  },
+  "field": {
+    "botToken": "Token bot",
+    "signingSecret": "Rahasia penandatanganan"
+  },
+  "option": {
+    "ownNumber": {
+      "label": "Nomor yang mana",
+      "off": "Nomor terpisah untuk agen",
+      "on": "Nomor saya sendiri (saya berbicara dengannya di “Kirim pesan ke diri sendiri”)"
+    }
+  },
+  "events": {
+    "title": "URL peristiwa",
+    "how": "Tempel ini ke pengaturan peristiwa aplikasi {{app}} Anda. Setiap permintaan diperiksa terhadap rahasia penandatanganan."
+  },
+  "pairing": {
+    "title": "Tautkan {{app}}",
+    "riskTitle": "Sebelum menautkan: ini bukan koneksi resmi.",
+    "riskBody": "PasaBot masuk ke akun {{app}} Anda sebagai perangkat tertaut, sama seperti komputer. {{app}} tidak mengizinkan penggunaan otomatis akun pribadi dalam ketentuan layanannya, sehingga nomor Anda dapat dibatasi atau diblokir.",
+    "riskAdvice": "Gunakan nomor yang rela Anda risikokan, dan jaga jumlah pesan tetap sedikit.",
+    "accept": "Saya mengerti risikonya, tampilkan kode QR",
+    "scan": "Di ponsel Anda, buka {{app}} → Perangkat tertaut → Tautkan perangkat, lalu pindai kode ini. Kode berganti setiap beberapa detik.",
+    "qrAlt": "Kode QR untuk menautkan perangkat ini",
+    "waiting": "Mengambil kode QR…",
+    "linked": "Tertaut. Menghubungkan…",
+    "failed": "Penautan tidak selesai ({{reason}}). Coba lagi."
+  },
+  "find": {
+    "settingsHint": "Mengobrol dengan agen dari aplikasi lain",
+    "settingsKeywords": "kanal, aplikasi obrolan, perpesanan, aplikasi lain"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Bicara dengan pembantu Anda dari aplikasi chat lain"
+    },
+    "settings": {
+      "title": "Aplikasi chat",
+      "intro": "Bicara dengan pembantu Anda dari Telegram, Discord, Slack, atau WhatsApp. Tiap chat di sana jadi chat tersendiri di sini.",
+      "empty": "Belum ada aplikasi chat."
+    },
+    "add": {
+      "title": "Tambah aplikasi chat",
+      "open": "Tambah aplikasi chat",
+      "submit": "Tambahkan aplikasi ini",
+      "kind": "Aplikasi chat yang mana?",
+      "agent": "Pembantu yang menjawab",
+      "token": "Kode rahasia dari aplikasi",
+      "tokenHint": "Tempel sekali saja. Disimpan aman di komputer ini dan tidak ditampilkan lagi.",
+      "allowed": "Siapa lagi yang boleh mengirim pesan (opsional)",
+      "allowedHint": "Nomor atau nama pengguna tiap orang di aplikasi itu, satu per baris. Biarkan kosong agar hanya Anda yang bisa bicara dengannya.",
+      "noAgents": "Buat pembantu dulu."
+    },
+    "field": {
+      "botToken": "Kode rahasia dari aplikasi",
+      "signingSecret": "Kode rahasia kedua dari aplikasi"
+    },
+    "binding": {
+      "token": "Kode rahasia dari aplikasi",
+      "tokenSet": "Disimpan aman di komputer ini",
+      "tokenReplace": "Ganti kode rahasia",
+      "tokenNew": "Kode rahasia baru dari aplikasi"
+    }
+  }
+}

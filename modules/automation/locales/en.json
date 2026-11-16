@@ -1,0 +1,55 @@
+{
+  "settings": "Automation",
+  "intro": "Let scripts on this computer start work on an agent with the pasabot run command or the local API. Each agent has its own switch and tokens. Tokens act at Standard trust at most, so anything risky still asks you first.",
+  "loadError": "Could not load automation settings.",
+  "noAgents": "No agents yet.",
+  "agent": {
+    "switch": "Allow automation for {{name}}",
+    "on": "On",
+    "off": "Off",
+    "tokens": "{{count}} active token(s)"
+  },
+  "form": {
+    "title": "New token for {{name}}",
+    "label": "Token name",
+    "labelHint": "Where it will be used, e.g. \"laptop scripts\".",
+    "expiry": "Expires",
+    "days30": "In 30 days",
+    "days90": "In 90 days",
+    "days365": "In a year",
+    "never": "Never",
+    "remote": "Also allow from other devices (not just this computer)",
+    "remoteHint": "Leave off unless a script on another machine needs it. Browser pages can never use a token.",
+    "create": "Create token",
+    "creating": "Creating…"
+  },
+  "created": {
+    "title": "Copy this token now",
+    "body": "It is shown only once. Keep it somewhere safe, like a password manager.",
+    "copy": "Copy",
+    "copied": "Copied",
+    "usage": "Try it:",
+    "done": "Done"
+  },
+  "list": {
+    "title": "Tokens",
+    "empty": "No tokens yet.",
+    "revoke": "Revoke",
+    "revoked": "Revoked",
+    "expires": "Expires {{when}}",
+    "noExpiry": "Never expires",
+    "lastUsed": "Last used {{when}}",
+    "neverUsed": "Never used",
+    "remote": "Other devices allowed",
+    "localOnly": "This computer only"
+  },
+  "find": {
+    "settingsHint": "Webhooks and triggers that start agents",
+    "settingsKeywords": "webhook, trigger, automation, events"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Start a helper when something happens"
+    }
+  }
+}

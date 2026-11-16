@@ -1,0 +1,294 @@
+{
+  "nav": "Hộp thư",
+  "page": {
+    "title": "Hộp thư của bot",
+    "intro": "Hộp thư riêng của bot bạn. Thư gửi đến là dữ liệu bên ngoài: các agent có thể đọc nhưng không bao giờ nghe theo lệnh trong đó. Mọi email họ muốn gửi đều hỏi bạn trước."
+  },
+  "setup": {
+    "title": "Kết nối hộp thư",
+    "intro": "Bạn tự tạo hộp thư ở bất kỳ nhà cung cấp nào bạn chọn, ngay trong trình duyệt của bạn.",
+    "step1": "Tạo hộp thư mới cho bot của bạn tại nhà cung cấp bạn chọn.",
+    "step2": "Trong phần cài đặt của hộp thư đó, bật IMAP và SMTP rồi tạo mật khẩu ứng dụng. Hãy xem điều khoản của nhà cung cấp (một số yêu cầu ứng dụng hỗ trợ để dùng IMAP).",
+    "step3": "Nhập thông tin máy chủ và mật khẩu ứng dụng bên dưới.",
+    "never": "PasaBot không bao giờ tạo hộp thư, không đăng nhập qua trình duyệt thay bạn và không giải captcha. Thông tin và mật khẩu ứng dụng chỉ được lưu trong vault.",
+    "address": "Địa chỉ email",
+    "username": "Tên đăng nhập",
+    "usernameHint": "Để trống nếu trùng với địa chỉ email.",
+    "imapHost": "Máy chủ IMAP",
+    "imapPort": "Cổng IMAP",
+    "imapTls": "Bảo mật IMAP",
+    "smtpHost": "Máy chủ SMTP",
+    "smtpPort": "Cổng SMTP",
+    "smtpTls": "Bảo mật SMTP",
+    "tls": {
+      "implicit": "TLS ngay từ đầu",
+      "starttls": "STARTTLS (bắt buộc)"
+    },
+    "password": "Mật khẩu ứng dụng",
+    "passwordHint": "Mật khẩu ứng dụng mà nhà cung cấp tạo cho bot này, không phải mật khẩu chính của bạn.",
+    "passwordKeep": "Đã lưu trong vault. Để trống để giữ nguyên.",
+    "save": "Lưu hộp thư",
+    "saved": "Đã lưu. Thông tin và mật khẩu ứng dụng nằm trong vault."
+  },
+  "mail": {
+    "title": "Thư",
+    "intro": "Hiển thị dạng văn bản thuần. Hình ảnh và liên kết trong thư không bao giờ được tải.",
+    "check": "Kiểm tra thư mới",
+    "fetched_other": "{{count}} thư mới.",
+    "empty": "Chưa có thư.",
+    "noSubject": "(không có tiêu đề)",
+    "wasHtml": "Thư này có định dạng; ở đây được hiển thị dạng văn bản thuần.",
+    "bridgeVerified": "Từ bot đã ghép nối của bạn {{name}}",
+    "bridgeRefused": "Đã từ chối thư của bot: {{reason}}",
+    "refused": {
+      "unsigned": "chưa được ký",
+      "malformed": "chữ ký bị hỏng",
+      "unknown_sender": "bot không xác định",
+      "wrong_from": "sai địa chỉ người gửi",
+      "wrong_key": "sai khóa",
+      "bad_signature": "chữ ký không khớp",
+      "wrong_recipient": "dành cho bot khác",
+      "body_changed": "nội dung đã bị thay đổi",
+      "stale": "quá cũ",
+      "replayed": "đã gửi hai lần"
+    }
+  },
+  "bridge": {
+    "title": "Ghép nối với PasaBot khác",
+    "intro": "Hai bot có thể nhắn cho nhau qua email. Hãy trao đổi địa chỉ và khóa bên dưới với owner kia (gặp trực tiếp hoặc cách khác mà bạn tin cậy). Thư của họ vẫn được coi là dữ liệu bên ngoài, và mọi phản hồi đều hỏi bạn trước.",
+    "yourAddress": "Địa chỉ bot của bạn: {{address}}",
+    "noAddress": "hãy kết nối hộp thư trước",
+    "yourKey": "Khóa bot của bạn:",
+    "peerName": "Tên bot của họ",
+    "peerAddress": "Địa chỉ email bot của họ",
+    "peerKey": "Khóa bot của họ",
+    "peerKeyHint": "Khóa mà owner kia thấy trên trang Hộp thư của họ.",
+    "add": "Ghép nối",
+    "added": "Đã ghép nối.",
+    "remove": "Xóa"
+  },
+  "error": {
+    "not_configured": "Hãy kết nối hộp thư trước.",
+    "bad_host": "Tên máy chủ này có vẻ không đúng.",
+    "password_required": "Nhập mật khẩu ứng dụng.",
+    "blocked_address": "Máy chủ đó nằm trên địa chỉ mạng riêng hoặc bị chặn, nên PasaBot sẽ không kết nối.",
+    "host_not_allowed": "Máy chủ đó không phải máy chủ bạn đã nhập.",
+    "starttls_unavailable": "Máy chủ không cung cấp kết nối an toàn, nên PasaBot đã không đăng nhập.",
+    "tls_failed": "Không thể kiểm tra chứng chỉ bảo mật của máy chủ.",
+    "auth_failed": "Máy chủ thư từ chối đăng nhập. Hãy kiểm tra mật khẩu ứng dụng.",
+    "timeout": "Máy chủ thư không phản hồi.",
+    "stopped": "Mọi thứ hiện đang tạm dừng.",
+    "bad_key": "Đây không phải khóa bot của PasaBot.",
+    "exists": "Địa chỉ này đã được ghép nối.",
+    "forbidden": "Chỉ owner mới có thể thực hiện việc này.",
+    "other": "Đã xảy ra lỗi. Hãy thử lại."
+  },
+  "tools": {
+    "inbox_list": "Liệt kê thư đến",
+    "inbox_read": "Đọc một thư",
+    "inbox_send": "Gửi email",
+    "inbox_bridge_send": "Nhắn cho bot PasaBot đã ghép đôi"
+  },
+  "find": {
+    "navHint": "Email tác tử đọc và trả lời",
+    "navKeywords": "email, thư, tin nhắn, hộp thư"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Email trợ lý đọc và trả lời"
+    },
+    "page": {
+      "intro": "Hộp thư riêng của bot. Thư đến là từ bên ngoài: trợ lý có thể đọc, nhưng không bao giờ làm theo lệnh trong thư. Mỗi email họ muốn gửi đều hỏi bạn trước."
+    },
+    "setup": {
+      "intro": "Bạn tự tạo hộp thư, ở dịch vụ email bạn chọn, trên trình duyệt của chính bạn.",
+      "step1": "Tạo hộp thư mới cho bot ở dịch vụ email bạn chọn.",
+      "step2": "Trong cài đặt của hộp thư đó, bật IMAP và SMTP (để ứng dụng thư vào được) và tạo mật khẩu ứng dụng. Xem quy định của dịch vụ email (một số cần ứng dụng hỗ trợ cho IMAP).",
+      "step3": "Nhập thông tin thư và mật khẩu ứng dụng bên dưới.",
+      "never": "PasaBot không bao giờ tạo hộp thư, không bao giờ đăng nhập trình duyệt thay bạn và không bao giờ giải captcha. Thông tin và mật khẩu ứng dụng chỉ được giữ an toàn trên máy này.",
+      "imapHost": "Địa chỉ thư đến (IMAP)",
+      "smtpHost": "Địa chỉ thư đi (SMTP)",
+      "passwordHint": "Mật khẩu ứng dụng mà dịch vụ email tạo cho bot này, không phải mật khẩu chính của bạn.",
+      "passwordKeep": "Được giữ an toàn trên máy này. Để trống để giữ nguyên.",
+      "saved": "Đã lưu. Thông tin và mật khẩu ứng dụng được giữ an toàn trên máy này.",
+      "imapPort": "Cổng thư đến",
+      "smtpPort": "Cổng thư đi",
+      "imapTls": "Bảo mật thư đến",
+      "smtpTls": "Bảo mật thư đi"
+    },
+    "error": {
+      "bad_host": "Địa chỉ thư đến hoặc thư đi đó có vẻ không đúng.",
+      "blocked_address": "Địa chỉ đó nằm trong mạng riêng hoặc bị chặn, nên PasaBot sẽ không kết nối.",
+      "host_not_allowed": "Đó không phải địa chỉ bạn đã nhập.",
+      "starttls_unavailable": "Dịch vụ thư không cung cấp kết nối an toàn, nên PasaBot không đăng nhập.",
+      "tls_failed": "Không kiểm tra được chứng chỉ an toàn của dịch vụ thư.",
+      "auth_failed": "Dịch vụ thư từ chối đăng nhập. Hãy kiểm tra mật khẩu ứng dụng.",
+      "timeout": "Dịch vụ thư không trả lời."
+    },
+    "guide": {
+      "manual": {
+        "intro": "Trang trợ giúp của dịch vụ thư có các thông tin này (tìm phần cài đặt cho ứng dụng thư). Dùng mật khẩu ứng dụng nếu có."
+      }
+    }
+  },
+  "guide": {
+    "count": "Bước {{n}} trên {{total}}",
+    "back": "Quay lại",
+    "next": "Tiếp",
+    "done": "Xong",
+    "moved": "Phần cài email này đã chuyển đi. Bạn có thể tiếp tục trong Cài đặt, mục Hộp thư của bạn.",
+    "badAddress": "Đó không giống địa chỉ email. Hãy kiểm tra và thử lại.",
+    "pageTitle": "Kết nối email của bạn",
+    "openChat": "Quay lại trò chuyện với {{name}}",
+    "cardNew": "Tạo email mới",
+    "cardConnect": "Kết nối email của bạn",
+    "service": {
+      "title": "Bạn dùng email nào?",
+      "other": "Email khác"
+    },
+    "ideas": {
+      "title": "Ý tưởng địa chỉ",
+      "note": "Đây chỉ là ý tưởng. Google sẽ cho biết địa chỉ nào còn trống khi bạn đăng ký.",
+      "nameLabel": "Tên cửa hàng hoặc nhóm của bạn",
+      "nameHint": "Ví dụ Reyes Hardware. Mình sẽ gợi ý vài địa chỉ từ tên này.",
+      "show": "Xem gợi ý",
+      "copy": "Sao chép",
+      "copyOne": "Sao chép {{address}}",
+      "copied": "Đã sao chép"
+    },
+    "signup": {
+      "title": "Tạo tài khoản ở Gmail",
+      "open": "Mở trang đăng ký Gmail",
+      "asks": "Google sẽ hỏi bạn:",
+      "ask1": "tên của bạn",
+      "ask2": "địa chỉ mới bạn muốn (dùng một ý tưởng ở trên cũng được)",
+      "ask3": "một mật khẩu do bạn chọn và giữ kỹ. Tôi không bao giờ thấy nó",
+      "ask4": "một bước kiểm tra điện thoại: Google nhắn mã cho bạn",
+      "onlyYou": "Phần này chỉ bạn làm, trong trình duyệt của chính bạn. Tôi không bao giờ đăng ký, gõ mật khẩu hay trả lời bước kiểm tra điện thoại thay bạn.",
+      "done": "Xong, tôi đã có email mới"
+    },
+    "address": {
+      "label": "Địa chỉ email của bạn",
+      "newLabel": "Địa chỉ email mới của bạn",
+      "hint": "Toàn bộ địa chỉ, ví dụ {{example}}",
+      "looksLike": "Có vẻ đây là địa chỉ {{name}}.",
+      "switch": "Chuyển sang {{name}}",
+      "work": "Đây là email công ty hay trường học? Người quản lý có thể cần cho phép mật khẩu ứng dụng trước. Hãy hỏi họ nếu mã của bạn cứ bị từ chối."
+    },
+    "apppw": {
+      "title": "Tạo mật khẩu ứng dụng cho PasaBot",
+      "why": "Mật khẩu ứng dụng là một mã đặc biệt {{company}} tạo riêng cho PasaBot. Tôi dùng nó thay cho mật khẩu thật của bạn, và bạn có thể xóa nó bất cứ lúc nào.",
+      "s1": "Bật xác minh 2 bước nếu đang tắt. {{company}} cần điều này trước khi tạo mật khẩu ứng dụng, và sẽ gửi mã tới điện thoại của bạn.",
+      "s1Open": "Mở trang xác minh 2 bước của {{company}}",
+      "s2": {
+        "gmail": "Trên trang Mật khẩu ứng dụng của Google, gõ PasaBot làm tên rồi chạm Tạo.",
+        "outlook": "Trên trang bảo mật của Microsoft, chọn tạo mật khẩu ứng dụng mới.",
+        "yahoo": "Trên trang bảo mật tài khoản Yahoo, chạm Tạo mật khẩu ứng dụng, gõ PasaBot rồi chạm Tạo.",
+        "icloud": "Trên trang tài khoản Apple, mở Đăng nhập và Bảo mật, rồi Mật khẩu dành riêng cho ứng dụng. Chạm nút cộng và gõ PasaBot."
+      },
+      "s2Open": "Mở trang của {{company}}",
+      "s3": "Sao chép mã hiện ra: {{letters}} chữ cái, chia thành nhóm nhỏ. Rồi quay lại đây.",
+      "haveCode": "Tôi đã có mã"
+    },
+    "code": {
+      "title": "Dán mã của bạn",
+      "label": "Mật khẩu ứng dụng ({{letters}} chữ cái)",
+      "hint": "Có dấu cách cũng được. Chỉ dán ở đây, đừng dán vào trò chuyện.",
+      "tech": "Máy chủ: {{imap}} và {{smtp}}, chỉ kết nối an toàn.",
+      "connect": "Kết nối",
+      "checking": "Đang kiểm tra với {{company}}…",
+      "ok": "Đã kết nối. Giờ tôi có thể đọc và soạn nháp cho bạn."
+    },
+    "reason": {
+      "wrong_code": "{{company}} không nhận mã đó. Hãy tạo mật khẩu ứng dụng mới và dán lại {{letters}} chữ cái.",
+      "two_step_off": "{{company}} muốn bật xác minh 2 bước trước. Hãy bật lên, tạo mật khẩu ứng dụng mới, rồi dán vào đây.",
+      "imap_off": "{{company}} không cho ứng dụng thư vào tài khoản này. Nếu công ty hoặc trường học quản lý tài khoản, hãy nhờ họ cho phép ứng dụng thư. Rồi chạm Kết nối lần nữa. Mã của bạn vẫn còn trong ô.",
+      "no_internet": "Tôi không liên lạc được với {{company}}. Kiểm tra máy tính này có mạng không, rồi thử lại.",
+      "server_trouble": "Máy chủ thư của {{company}} không trả lời một cách an toàn. Đợi một phút rồi thử lại.",
+      "code_shape": "Đó không phải {{letters}} chữ cái. Hãy sao chép lại mã từ trang của {{company}}.",
+      "stopped": "Mọi thứ đang dừng. Bật lại rồi thử lần nữa.",
+      "tooMany": "Bạn đã thử nhiều lần liên tiếp. Hãy đợi vài phút rồi thử lại.",
+      "busy": "Mình vẫn đang kiểm tra lần thử trước. Đợi một chút nhé."
+    },
+    "manual": {
+      "intro": "Trang trợ giúp của dịch vụ email có các thông tin này (tìm IMAP và SMTP). Dùng mật khẩu ứng dụng nếu họ có.",
+      "plain": "Với dịch vụ email khác, hãy nói với {{name}} trong chat công ty nào quản lý email của bạn. Bạn sẽ được giúp tìm phần cài đặt. Để gõ vào, hãy bật Từ ngữ kỹ thuật trong Cài đặt.",
+      "plainNoName": "Với dịch vụ email khác, hãy nói với trợ lý của bạn trong chat công ty nào quản lý email của bạn. Bạn sẽ được giúp tìm phần cài đặt. Để gõ vào, hãy bật Từ ngữ kỹ thuật trong Cài đặt."
+    },
+    "access": {
+      "title": "Trợ lý của bạn được làm gì với email này?",
+      "read": "Chỉ đọc",
+      "readHint": "Họ đọc và sắp xếp thư của bạn. Không viết, không gửi gì.",
+      "draft": "Đọc và soạn nháp (tốt nhất để bắt đầu)",
+      "draftHint": "Họ đọc thư và viết thư trả lời để bạn xem lại. Không gửi gì.",
+      "send": "Gửi sau khi tôi duyệt",
+      "sendHint": "Họ được gửi email, nhưng chỉ sau khi bạn chạm Duyệt, mỗi lần."
+    },
+    "test": {
+      "title": "Một bài thử nhỏ",
+      "body": "Gửi một email tới {{address}} có từ này trong tiêu đề. Gửi từ điện thoại cũng được. Mình sẽ báo khi thư tới.",
+      "check": "Kiểm tra ngay",
+      "arrived": "Đã tới: “{{subject}}” từ {{from}}.",
+      "none": "Chưa có thư nào có từ {{word}}. Thư có thể mất một phút, hãy thử lại sau ít phút.",
+      "finish": "Hoàn tất",
+      "proves": "Điều này cho thấy mình đọc được hộp thư của bạn."
+    },
+    "finished": {
+      "title": "Email của bạn đã được kết nối",
+      "body": "{{address}} đã được kết nối.",
+      "read": "Trợ lý của bạn có thể đọc nó.",
+      "draft": "Trợ lý của bạn có thể đọc và soạn nháp thư trả lời cho bạn.",
+      "send": "Trợ lý của bạn có thể đọc, soạn nháp và gửi sau khi bạn duyệt.",
+      "change": "Bạn có thể đổi điều này bất cứ lúc nào trong Cài đặt, mục Hộp thư của bạn."
+    },
+    "say": {
+      "introNew": "Cùng tạo email mới cho nhóm của bạn nhé. Mình đi từng bước; khi xong mỗi bước, hãy chạm nút ở cuối bước đó.",
+      "introConnect": "Cùng kết nối email của bạn nhé. Mất khoảng 3 phút, từng bước một.",
+      "service": "Trước tiên, bạn dùng email nào?",
+      "ideas": "Trước tiên, cửa hàng hoặc nhóm của bạn tên là gì? Mình sẽ gợi ý vài địa chỉ.",
+      "signup": "Giờ hãy mở trang đăng ký Gmail và tạo tài khoản. Chạm Xong khi bạn thấy hộp thư mới.",
+      "address_new": "Tuyệt! Gõ địa chỉ mới của bạn vào đây.",
+      "address_connect": "Địa chỉ email của bạn là gì?",
+      "guide": "Giờ chúng ta tạo một mã đặc biệt cho tôi, để tôi không bao giờ cần mật khẩu của bạn.",
+      "code": "Dán mã vào đây. Tôi sẽ kiểm tra với {{company}}.",
+      "manual": "Gõ thông tin máy chủ mà dịch vụ email của bạn cung cấp.",
+      "access": "Đã kết nối! Trợ lý của bạn được làm gì với nó?",
+      "test": "Cuối cùng, một bài thử nhỏ.",
+      "done": "Xong hết rồi!",
+      "manualPlain": "Công ty nào quản lý email của bạn? Nói với mình trong chat, mình sẽ giúp tìm phần cài đặt."
+    },
+    "settings": {
+      "title": "Hộp thư của bạn",
+      "hint": "Kết nối email mà trợ lý của bạn đọc",
+      "keywords": "email, gmail, outlook, yahoo, icloud, mật khẩu ứng dụng, hộp thư, kết nối",
+      "none": "Chưa kết nối email nào.",
+      "connected": "Đã kết nối: {{address}}.",
+      "helper": "{{name}} lo phần này.",
+      "connect": "Kết nối email của tôi",
+      "makeNew": "Tạo email mới",
+      "change": "Kết nối email khác",
+      "saved": "Đã lưu."
+    },
+    "withMe": {
+      "do": "Làm cùng tôi",
+      "mine": "Tôi tự làm trên trình duyệt của mình",
+      "intro": "{{name}} mở trang đăng ký trong trình duyệt riêng và điền tên bạn cùng địa chỉ bạn chọn. Mật khẩu và bước xác minh điện thoại do bạn làm.",
+      "first": "Tên",
+      "last": "Họ",
+      "pick": "Địa chỉ muốn thử",
+      "working": "Đang mở trang đăng ký…",
+      "badName": "Hãy nhập tên và họ của bạn.",
+      "noBrowser": "Trình duyệt của {{name}} không mở được ở đây. Hãy làm trên trình duyệt của bạn.",
+      "yourTurn": "Đến lượt bạn: chọn mật khẩu và làm bước xác minh điện thoại. Tôi không thấy và không gõ được những thứ này.",
+      "yourTurnText": "Chạm Tự làm để dùng trình duyệt. Chạm Xong khi email mới đã được tạo.",
+      "liveAlt": "Trình duyệt của {{name}}, trực tiếp",
+      "wait": "Hình sẽ hiện ra trong giây lát…",
+      "taken": "Bạn đang dùng trình duyệt. {{name}} không thấy và không làm được gì trong đó.",
+      "address": "Địa chỉ đã gõ: {{address}}",
+      "take": "Tự làm",
+      "done": "Xong",
+      "settled": "Đã đăng ký. Tiếp theo: địa chỉ mới của bạn",
+      "settledMine": "Trên trình duyệt của bạn"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "card": {
+    "noImage": "無圖片",
+    "seenAt": "{{time}} 時所見",
+    "rating": "評分 {{rating}}",
+    "ratingCount": "評分 {{rating}}（共 {{count}} 則評價）",
+    "open": "前往 {{store}}"
+  },
+  "compare": {
+    "title": "比較 {{count}} 項商品"
+  },
+  "buy": {
+    "button": "購買",
+    "qty_other": "{{count}} 件",
+    "less": "減少一件",
+    "more": "增加一件",
+    "note": "你在應用程式中核准。PasaBot 只會把商品加入購物車，之後由你確認總額並自行付款。",
+    "ask": "請求購買",
+    "cancel": "取消",
+    "asked": "等待你的核准。付款核准卡片在你的核准清單中。",
+    "error": "無法送出此項請求。請再試一次。",
+    "state": {
+      "running": "已核准。正在加入購物車…",
+      "handedOver": "已在你的購物車中。請在瀏覽器中確認總額並自行付款。",
+      "denied": "你已拒絕，因此沒有購買任何商品。",
+      "paused": "已暫停：商店需要你在瀏覽器中操作。",
+      "stopped": "已停止。沒有商品加入購物車；原因請見聊天。",
+      "ended": "此購買已結束；詳情請見聊天。"
+    }
+  },
+  "settings": {
+    "title": "購物",
+    "intro": "你的 agent 搜尋商品的地方。價格依商店頁面顯示的內容呈現，不會換算。",
+    "country": "國家或地區",
+    "webOnly": "其他國家或地區（網頁搜尋）",
+    "stores": "商店",
+    "fallback": "此國家或地區尚無商店清單。Agent 會搜尋網頁，並只為描述商品的頁面顯示卡片。",
+    "custom": "你的商店",
+    "remove": "移除",
+    "rules": "Agent 絕不會付款、下訂單、輸入卡片資料、處理驗證碼、破解 CAPTCHA 或建立商店帳號。購買前一律會先詢問你。",
+    "loading": "載入中…",
+    "error": "無法載入購物設定。"
+  },
+  "custom": {
+    "add": "新增商店",
+    "name": "商店名稱",
+    "id": "簡短 ID",
+    "idHint": "小寫字母、數字與連字號，例如 corner-shop",
+    "home": "首頁",
+    "search": "搜尋網址",
+    "searchHint": "在搜尋關鍵字的位置放入 {query}",
+    "hosts": "允許的網址",
+    "hostsHint": "主機名稱，以逗號分隔，例如 shop.example 或 *.example",
+    "currency": "貨幣",
+    "currencyHint": "三個字母，例如 PHP 或 USD",
+    "save": "儲存商店",
+    "error": "請檢查欄位：網址必須在允許的主機上，且不含追蹤碼。"
+  },
+  "onboarding": {
+    "title": "你都在哪裡購物？",
+    "body": "請選擇你的國家或地區，讓 agent 知道要查看哪些商店。之後可在「設定 → 購物」中變更。"
+  },
+  "orders": {
+    "title": "訂單",
+    "empty": "還沒有訂單。你核准的每次購買都會顯示在這裡。",
+    "error": "無法載入訂單。",
+    "line": "{{qty}} × {{item}}",
+    "unknownItem": "已不再儲存的商品",
+    "each": "每件 {{price}}（所見價格）",
+    "state": {
+      "pending": "等待你的核准",
+      "denied": "你已拒絕",
+      "running": "正在加入購物車",
+      "handed-over": "已在購物車中，由你付款",
+      "paused": "已暫停，需要你處理",
+      "stopped": "已停止",
+      "failed": "失敗",
+      "other": "已結束"
+    }
+  },
+  "tools": {
+    "shop_stores": "購物商店",
+    "shop_search": "在商店中搜尋",
+    "shop_capture": "記錄商品",
+    "shop_show": "顯示商品卡片",
+    "shop_compare": "比較商品",
+    "shop_buy": "把商品加入購物車"
+  },
+  "server": {
+    "noBrowser": "瀏覽器無法使用，所以沒有加入購物車。",
+    "storeOff": "這家商店在「設定 → 購物」中已關閉，所以沒有加入購物車。",
+    "badAddress": "這個商品網址不屬於這家商店。",
+    "stoppedBefore": "在操作瀏覽器之前已停止。",
+    "stoppedNothing": "已停止。沒有加入購物車。",
+    "priceChanged": "你核准後價格變了：當時 {{before}}，現在 {{after}}。沒有加入購物車。新的卡片會按新價格再次詢問你。",
+    "pageDiffers": "商店頁面上的商品或價格與你核准的（{{price}}）不同，所以沒有加入購物車。請重新記錄後再詢問。",
+    "openNoCartHandOver": "已在 {{store}} 開啟 {{name}}。請自己把 {{quantity}} 件加入購物車並付款。",
+    "openNoCart": "已在瀏覽器中開啟 {{store}} 的 {{name}}。這家商店沒有購物車步驟，請自己加入 {{quantity}} 件並付款。",
+    "stoppedAfterAdd": "加入購物車後已停止；沒有開啟結帳頁面。",
+    "checkoutSignUp": "結帳網址是註冊頁面。",
+    "stoppedInCart": "已停止。商品已在購物車中，沒有做其他操作。",
+    "inCartHandOver": "{{quantity}} × {{name}} 已在你 {{store}} 的購物車中。請檢查後自己付款。",
+    "inCart": "{{quantity}} × {{name}} 已在你 {{store}} 的購物車中，結帳頁面已在瀏覽器中開啟。請核對總價後自己付款；PasaBot 不會下單。",
+    "stoppedCheck": "已停止。繼續之前請檢查瀏覽器。",
+    "buyFailed": "購買已停止：{{error}}",
+    "captcha": "商店顯示了真人驗證（驗證碼）。請開啟瀏覽器自己完成。",
+    "signIn": "商店要求你登入。請開啟瀏覽器自己登入（PasaBot 從不建立商店帳號）。",
+    "denied": "你拒絕了，所以沒有操作瀏覽器。",
+    "buySummary": "在 {{store}} 購買 {{quantity}} × {{name}}",
+    "buyLabel": "購買",
+    "askItems": "{{quantity}} × {{name}} — 每件 {{price}}，{{time}} 時所見",
+    "askTotal": "{{total}}（所見價格，非最終）",
+    "askPayment": "你在瀏覽器中自行付款；PasaBot 只到購物車為止"
+  },
+  "find": {
+    "settingsHint": "經你同意後讓代理購物",
+    "settingsKeywords": "購物, 購買, 訂單, 商店"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "經你同意，讓助理買東西"
+    },
+    "settings": {
+      "intro": "你的 助理 搜尋商品的地方。價格依商店頁面顯示的內容呈現，不會換算。",
+      "rules": "助理 絕不會付款、下訂單、輸入卡片資料、處理驗證碼、破解 CAPTCHA 或建立商店帳號。購買前一律會先詢問你。"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "Jeton du bot",
+    "botTokenHint": "Fourni par le bot que vous avez créé dans Telegram. Stocké dans le coffre, jamais affiché à nouveau.",
+    "apiBase": "Adresse de l'API Bot",
+    "apiBaseHint": "Laissez tel quel, sauf si vous utilisez votre propre serveur d'API Bot."
+  },
+  "link": {
+    "howTo": "Ouvrez une conversation privée avec votre bot et envoyez : /link {{code}}",
+    "dmOnly": "Le code de liaison ne fonctionne que dans une conversation privée avec le bot."
+  },
+  "status": {
+    "connected": "Connecté",
+    "reconnecting": "Reconnexion…",
+    "auth_failed": "Le jeton du bot a été rejeté",
+    "stopped": "Arrêté"
+  }
+}

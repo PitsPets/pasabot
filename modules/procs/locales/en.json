@@ -1,0 +1,20 @@
+{
+  "nav": "Processes",
+  "page": {
+    "title": "Background processes",
+    "intro": "Processes your agents started through PasaBot tools. Stopping one ends it and everything it started.",
+    "empty": "Nothing is running in the background."
+  },
+  "proc": {
+    "since": "Running since",
+    "stop": "Stop"
+  },
+  "tools": {
+    "procs_list": "List my background processes",
+    "procs_stop": "Stop one of my background processes"
+  },
+  "find": {
+    "navHint": "Processes and jobs running now",
+    "navKeywords": "processes, jobs, running, tasks"
+  }
+}

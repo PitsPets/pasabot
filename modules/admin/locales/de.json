@@ -1,0 +1,76 @@
+{
+  "nav": "Admin",
+  "page": {
+    "title": "Server-Verwaltung",
+    "intro": "Identität, Zustand, Limits und Protokolle dieses Servers. Nur du als Inhaber:in siehst diese Seite."
+  },
+  "host": {
+    "title": "Dieser Server",
+    "name": "Servername",
+    "save": "Namen speichern",
+    "id": "Server-ID",
+    "hostname": "Hostname",
+    "system": "System",
+    "uptime": "Läuft seit",
+    "minutes": "{{count}} Min."
+  },
+  "metrics": {
+    "title": "Zustand des Geräts",
+    "cpu": "CPU",
+    "mem": "Speicher",
+    "disk": "Festplatte",
+    "load": "Auslastung",
+    "none": "Noch keine Messung.",
+    "sample": "Jetzt prüfen",
+    "at": "Geprüft"
+  },
+  "alerts": {
+    "title": "Alarmregeln",
+    "intro": "Du bekommst eine Benachrichtigung, wenn ein Messwert über dem Limit bleibt.",
+    "empty": "Noch keine Alarmregeln.",
+    "name": "Regelname",
+    "metric": "Messwert",
+    "above": "Alarm über",
+    "forSamples": "Prüfungen in Folge",
+    "cooldown": "Ruhe für (Minuten)",
+    "add": "Regel hinzufügen",
+    "remove": "Entfernen",
+    "fired": "Letzter Alarm",
+    "never": "Noch nie ausgelöst",
+    "rule": "{{metric}} über {{above}}"
+  },
+  "limits": {
+    "title": "Agent-Limits",
+    "intro": "Obergrenzen für Speicher und CPU bei der Arbeit jedes Agents. Lass ein Feld leer für keine Grenze.",
+    "mem": "Speicher (MB)",
+    "cpu": "CPU (%)",
+    "save": "Limits speichern",
+    "saved": "Gespeichert",
+    "usage": "Aktuell: {{mem}} MB, {{cpu}}% CPU",
+    "empty": "Noch keine Agents."
+  },
+  "bundle": {
+    "title": "Agent umziehen",
+    "intro": "Exportiere einen Agent mit seinen Chats in eine Datei und importiere sie auf diesem oder einem anderen PasaBot-Server. Geheimnisse, Dateien und Ordner sind nicht enthalten.",
+    "export": "{{name}} exportieren",
+    "import": "Agent-Datei importieren",
+    "imported": "Importiert. Der Agent und seine Chats sind in deiner Liste.",
+    "failed": "Diese Datei konnte nicht importiert werden."
+  },
+  "diag": {
+    "title": "Diagnose",
+    "intro": "Ein Zip mit Zustandsdaten, Einstellungsübersichten und aktuellen Logs zur Fehlersuche. Geheime Werte werden entfernt, bevor es den Server verlässt.",
+    "download": "Diagnose herunterladen"
+  },
+  "audit": {
+    "title": "Protokoll",
+    "filter": "Nach Aktion filtern",
+    "empty": "Nichts aufgezeichnet.",
+    "older": "Ältere anzeigen",
+    "by": "von {{actor}}"
+  },
+  "find": {
+    "navHint": "Pflege dieses PasaBot",
+    "navKeywords": "Verwaltung, Wartung, Sicherung, Protokolle, Update"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "nav": "Navigateur",
+  "page": {
+    "title": "Navigateur",
+    "intro": "Les profils de navigateur que vos agents peuvent utiliser. Chacun garde ses propres cookies et connexions, sa couleur et son proxy. Regardez-en un en direct, pilotez-le vous-même ou détachez-le pendant que vous discutez.",
+    "empty": "Aucun profil de navigateur pour l'instant. Les agents en créent un lors de leur première navigation, ou vous pouvez en ajouter un maintenant.",
+    "ownerOnly": "Seul le propriétaire peut voir et utiliser les profils de navigateur."
+  },
+  "badge": {
+    "running": "En cours",
+    "loggedIn": "Contient vos connexions",
+    "proxy": "Proxy"
+  },
+  "profile": {
+    "via": "Via {{server}}",
+    "loggedInNote": "Les agents doivent vous demander, avec votre mot de passe ou votre passkey, avant d'utiliser ce profil.",
+    "defaultName": "Navigateur de l’agent"
+  },
+  "actions": {
+    "new": "Nouveau profil",
+    "watch": "Regarder",
+    "start": "Démarrer",
+    "stop": "Arrêter",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "deleteConfirm": "Supprimer {{name}} avec ses cookies et connexions ? Cette action est irréversible.",
+    "pip": "Détacher",
+    "full": "Vue complète",
+    "closePip": "Fermer",
+    "closeView": "Fermer la vue"
+  },
+  "form": {
+    "newTitle": "Nouveau profil de navigateur",
+    "editTitle": "Modifier le profil de navigateur",
+    "name": "Nom",
+    "color": "Couleur",
+    "proxy": "Proxy (facultatif)",
+    "proxyHint": "http://, https:// ou socks5:// avec hôte et port. S'applique au prochain démarrage du navigateur.",
+    "bypass": "Ne pas utiliser le proxy pour",
+    "username": "Nom d'utilisateur du proxy",
+    "password": "Mot de passe du proxy",
+    "passwordVault": "Conservé dans le coffre, jamais affiché de nouveau.",
+    "passwordKeep": "Laissez vide pour garder le mot de passe enregistré.",
+    "loggedIn": "Ce profil contient mes connexions (les agents doivent d'abord demander)",
+    "save": "Enregistrer",
+    "cancel": "Annuler"
+  },
+  "live": {
+    "title": "{{name}} en direct",
+    "alt": "Vue en direct du navigateur {{name}}",
+    "waiting": "En attente de la première image…",
+    "stopped": "Ce navigateur n'est pas en cours d'exécution."
+  },
+  "steer": {
+    "address": "Adresse",
+    "go": "Ouvrir",
+    "type": "Saisir dans la page",
+    "typeHint": "Cliquez d'abord sur un champ dans l'image. Saisir du texte marque ce profil comme contenant vos connexions.",
+    "send": "Saisir"
+  },
+  "keys": {
+    "Enter": "Entrée",
+    "Tab": "Tab",
+    "Backspace": "Retour arrière",
+    "Escape": "Échap",
+    "up": "Défiler vers le haut",
+    "down": "Défiler vers le bas"
+  },
+  "network": {
+    "title": "Adresses locales",
+    "allowHosts": "Hôtes que le navigateur peut ouvrir sur votre réseau",
+    "hint": "Les adresses privées et de bouclage sont bloquées sauf si elles sont listées ici, séparées par des virgules.",
+    "save": "Enregistrer",
+    "saved": "Enregistré."
+  },
+  "pip": {
+    "label": "Navigateur en incrustation"
+  },
+  "dock": {
+    "label": "Navigateur",
+    "idle": "Aucun navigateur n'est en cours d'exécution."
+  },
+  "tools": {
+    "browser_navigate": "Navigateur : ouvrir une page",
+    "browser_snapshot": "Navigateur : lire la page",
+    "browser_click": "Navigateur : cliquer",
+    "browser_type": "Navigateur : saisir dans un champ"
+  },
+  "server": {
+    "yourTurn": "À vous dans le navigateur"
+  },
+  "find": {
+    "navHint": "Laisser un agent utiliser un navigateur",
+    "navKeywords": "web, naviguer, site, internet"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Laisser un assistant utiliser un navigateur"
+    },
+    "page": {
+      "intro": "Les navigateurs que vos assistants peuvent utiliser. Chacun garde ses connexions, sa couleur et ses réglages. Regardez en direct, pilotez vous-même ou détachez-le pendant la discussion.",
+      "empty": "Pas encore de navigateur. Un assistant en crée un à sa première navigation, ou ajoutez-en un maintenant."
+    },
+    "profile": {
+      "loggedInNote": "Les assistants doivent vous demander, avec votre mot de passe ou clé d’accès, avant d’utiliser ce navigateur.",
+      "defaultName": "Navigateur de l’assistant"
+    },
+    "form": {
+      "passwordVault": "Gardé en sécurité sur cet ordinateur, plus jamais affiché.",
+      "loggedIn": "Ce navigateur a mes connexions (les assistants doivent demander d’abord)"
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "defaultName": "Tala",
+  "summary": "Hỏi bạn vài câu nhanh, rồi lập một nhóm trợ lý nhỏ để bạn duyệt.",
+  "hello": "Chào bạn, mình là {{name}}! Mình sẽ lập một nhóm trợ lý nhỏ cho bạn. Chỉ vài câu hỏi nhanh: chạm vào một câu trả lời, hoặc tự gõ câu của bạn.",
+  "again": "Cùng lập lại nhóm của bạn nhé. Vài câu hỏi nhanh, như lần trước.",
+  "change": "Không sao, mình làm lại nhé.",
+  "skipped": "Được rồi, tạm thời chỉ có mình thôi. Bạn có thể lập nhóm bất cứ lúc nào trong Cài đặt, mục Tác nhân & bộ não.",
+  "q": {
+    "help": {
+      "text": "Bạn muốn được giúp việc gì trước?",
+      "options": {
+        "shop": "Cửa hàng hoặc việc kinh doanh",
+        "home": "Nhà cửa và gia đình",
+        "work": "Công việc của tôi",
+        "study": "Học tập"
+      }
+    },
+    "people": {
+      "text": "Còn ai khác sẽ dùng PasaBot?",
+      "options": {
+        "solo": "Chỉ mình tôi",
+        "family": "Gia đình tôi",
+        "team": "Nhóm làm việc của tôi"
+      }
+    },
+    "chat": {
+      "text": "Bạn có muốn trò chuyện với trợ lý qua ứng dụng nhắn tin không?",
+      "options": {
+        "none": "Để sau",
+        "telegram": "Telegram",
+        "whatsapp": "WhatsApp",
+        "discord": "Discord",
+        "slack": "Slack"
+      }
+    },
+    "email": {
+      "text": "Nhóm của bạn có cần email không?",
+      "options": {
+        "new": "Tạo email mới (tôi sẽ hướng dẫn)",
+        "connect": "Kết nối email của chính tôi",
+        "skip": "Tạm thời không cần email"
+      }
+    },
+    "askFirst": {
+      "text": "Câu cuối: có việc gì họ luôn phải hỏi bạn trước không?",
+      "options": {
+        "none": "Vậy là đủ",
+        "money": "Mọi khoản chi tiêu",
+        "contact": "Liên hệ với bất kỳ ai",
+        "files": "Thay đổi tệp của tôi"
+      }
+    }
+  },
+  "plan": {
+    "intro": "Đây là nhóm mình sẽ lập. Hãy duyệt hoặc thay đổi.",
+    "base": "Trả lời bằng ngôn ngữ người đó dùng. Trả lời ngắn gọn, dễ hiểu. Luôn hỏi chủ trước khi tiêu tiền, gửi tin nhắn cho người khác hoặc xoá bất cứ thứ gì.",
+    "detail": "Điều chủ nhân đã nói về việc này: {{what}}",
+    "roles": {
+      "shop": {
+        "job": "Lo đơn hàng và câu hỏi của khách cho cửa hàng của bạn."
+      },
+      "money": {
+        "job": "Theo dõi doanh thu, chi phí và ai còn nợ bạn.",
+        "why": "doanh thu và chi phí"
+      },
+      "home": {
+        "job": "Lên thực đơn, lịch và lời nhắc cho gia đình."
+      },
+      "work": {
+        "job": "Soạn tin nhắn, ghi chú và theo dõi việc cần làm."
+      },
+      "study": {
+        "job": "Giảng bài, đố bạn và giúp bạn theo đúng lịch."
+      },
+      "custom": {
+        "job": "Giúp bạn về: {{what}}",
+        "anything": "bất cứ việc gì bạn cần"
+      },
+      "mail": {
+        "job": "Sắp xếp email và soạn sẵn thư trả lời để bạn kiểm tra.",
+        "why": "email của bạn, với phần cài đặt có hướng dẫn ngắn"
+      }
+    },
+    "steps": {
+      "email-new": "Cùng tạo email mới, từng bước",
+      "email-connect": "Kết nối email của bạn (khoảng 3 phút)",
+      "telegram": "Kết nối Telegram",
+      "whatsapp": "Kết nối WhatsApp",
+      "discord": "Kết nối Discord",
+      "slack": "Kết nối Slack",
+      "people": "Mời những người sẽ dùng"
+    },
+    "askFirst": {
+      "money": "Cũng hỏi chủ trước mọi khoản chi tiêu, dù nhỏ.",
+      "contact": "Cũng hỏi chủ trước khi liên hệ với bất kỳ ai.",
+      "files": "Cũng hỏi chủ trước khi thay đổi tệp của họ.",
+      "custom": "Luôn hỏi chủ trước về: {{what}}"
+    },
+    "language": "Chủ đã chọn {{language}}: luôn trả lời bằng ngôn ngữ đó, trừ khi họ yêu cầu ngôn ngữ khác.",
+    "taglish": "Chủ đã chọn Taglish: trả lời bằng Taglish, cách nói pha trộn tự nhiên, thoải mái giữa tiếng Philippines và tiếng Anh, trừ khi họ yêu cầu ngôn ngữ khác."
+  },
+  "team": {
+    "ready": "Nhóm của bạn đã sẵn sàng! Mở một trợ lý để chào nhé."
+  },
+  "tools": {
+    "orchestrator_answer": "Lưu câu trả lời thiết lập",
+    "orchestrator_show_plan": "Hiện kế hoạch nhóm",
+    "orchestrator_create_team": "Tạo nhóm đã duyệt"
+  },
+  "web": {
+    "skip": "Bỏ qua lúc này",
+    "typeOwn": "Hoặc tự gõ câu trả lời bên dưới.",
+    "quick": "Trả lời nhanh",
+    "closed": "Đã bỏ qua thiết lập",
+    "step": "Câu hỏi {{n}}/{{total}}",
+    "planTitle": "Đây là nhóm mình sẽ lập",
+    "brain": "Bộ não: {{name}}",
+    "stepsTitle": "Các bước thiết lập mình sẽ mở cho bạn",
+    "approve": "Duyệt",
+    "changePlan": "Thay đổi",
+    "plan_approved": "Đã duyệt",
+    "plan_changed": "Đã thay đổi",
+    "plan_skipped": "Đã bỏ qua",
+    "open": "Trò chuyện với {{name}}",
+    "stepsNext": "Bước tiếp theo",
+    "secretsNote": "Mật khẩu và mã chỉ nhập ở các trang thiết lập đó, không bao giờ trong cuộc trò chuyện.",
+    "ownerOnly": "Chỉ chủ mới trả lời được câu này.",
+    "failed": "Không thành công. Hãy thử lại.",
+    "settings": {
+      "title": "Lập nhóm của tôi",
+      "hint": "Trả lời vài câu hỏi và có ngay một nhóm trợ lý",
+      "keywords": "nhóm, thiết lập, trợ lý, câu hỏi, làm lại, điều phối",
+      "body": "Người lập nhóm sẽ hỏi vài câu ngắn, rồi cho bạn xem kế hoạch để duyệt.",
+      "again": "Lập lại nhóm của tôi",
+      "working": "Đang mở…",
+      "openChat": "Mở người lập nhóm",
+      "noBrain": "Hãy thiết lập bộ não trước rồi thử lại.",
+      "continue": "Tiếp tục lập nhóm của tôi"
+    },
+    "summaryTitle": "Những gì bạn kể"
+  },
+  "stage": {
+    "title": "Lập nhóm của bạn",
+    "brand": "PasaBot",
+    "skip": "Để sau",
+    "back": "Quay lại",
+    "next": "Tiếp tục",
+    "progress": "Bước {{n}} / {{total}}",
+    "progressShort": "{{n}}/{{total}} bước",
+    "last": "Câu cuối!",
+    "wait": "Chờ một chút…",
+    "slow": "Việc này lâu hơn bình thường.",
+    "retry": "Thử lại",
+    "skipped": "Được, mình sẽ lập nhóm sau. Mở Cài đặt và chạm “Tiếp tục lập nhóm của tôi” để làm tiếp từ chỗ đã dừng.",
+    "welcome": {
+      "tag": "{{name}} · người lập nhóm",
+      "title": "Xin chào! Cùng lập nhóm trợ lý của riêng bạn nhé.",
+      "body": "Mình sẽ hỏi vài câu dễ, rồi tạo các trợ lý làm việc thay bạn. Khoảng 2 phút.",
+      "start": "Bắt đầu thôi",
+      "p1": "Không dùng từ kỹ thuật",
+      "p2": "Không gì xảy ra khi bạn chưa đồng ý",
+      "p3": "Đổi gì cũng được sau này"
+    },
+    "lang": {
+      "title": "Các trợ lý của bạn nên nói ngôn ngữ nào?",
+      "body": "Bạn muốn ngôn ngữ nào? Mọi thứ sau đó sẽ theo lựa chọn của bạn.",
+      "other": "Khác…",
+      "otherSub": "{{names}} và thêm nữa",
+      "seeAll": "Xem tất cả ngôn ngữ",
+      "listTitle": "Tất cả ngôn ngữ",
+      "taglish": "Taglish",
+      "taglishSample": "Hi! Ano’ng kailangan mo today?",
+      "sample": "Xin chào! Hôm nay mình giúp gì được cho bạn?"
+    },
+    "name": {
+      "title": "Bạn sẽ gọi mình là gì?",
+      "body": "Mình sẽ dẫn dắt nhóm của bạn. Tên mặc định là “{{name}}”, nhưng tùy bạn.",
+      "label": "Tên trợ lý chính của bạn",
+      "hint": "Gương mặt mình cũng đổi theo!",
+      "newLook": "Diện mạo mới!",
+      "ideas": "Gợi ý:",
+      "go": "Chọn {{name}}!",
+      "errors": {
+        "empty": "Hãy nhập một cái tên trước.",
+        "long": "Tên quá dài. Tối đa {{max}} chữ cái.",
+        "bad": "Chỉ dùng chữ cái thường, không ký hiệu đặc biệt.",
+        "taken": "Tên này đã có người dùng. Thử tên khác."
+      }
+    },
+    "q": {
+      "sub": "Chạm một lựa chọn, hoặc kể bằng lời của bạn.",
+      "typeLabel": "Hoặc nhập ở đây",
+      "typePlaceholder": "Nói theo cách của bạn…",
+      "other": "Điều khác",
+      "subMulti": "Chọn bao nhiêu tùy bạn, hoặc kể bằng lời của bạn."
+    },
+    "plan": {
+      "title": "Đây là nhóm mình sẽ lập cho bạn",
+      "lead": "Mình là trưởng nhóm. Bạn nói với mình, mình giao việc cho họ.",
+      "because": "Vì: {{what}}",
+      "arriving": "Đang đến…",
+      "change": "Tôi muốn đổi một chút",
+      "approve": "Duyệt nhóm",
+      "picks": "Lựa chọn của bạn",
+      "pick": {
+        "language": "Nói {{language}}",
+        "people": {
+          "solo": "Chỉ mình tôi dùng",
+          "family": "Gia đình tôi cũng dùng",
+          "team": "Đồng nghiệp của tôi cũng dùng"
+        },
+        "chat": {
+          "none": "Chưa dùng ứng dụng chat",
+          "telegram": "Trò chuyện qua Telegram",
+          "whatsapp": "Trò chuyện qua WhatsApp",
+          "discord": "Trò chuyện qua Discord",
+          "slack": "Trò chuyện qua Slack"
+        },
+        "email": {
+          "new": "Một email mới, cùng tạo từng bước",
+          "connect": "Kết nối email của chính tôi (khoảng 3 phút)",
+          "skip": "Chưa dùng email"
+        },
+        "askFirst": {
+          "none": "Không cần hỏi trước gì thêm",
+          "money": "Hỏi trước khi chi tiêu",
+          "contact": "Hỏi trước khi liên hệ ai",
+          "files": "Hỏi trước khi đổi tệp của tôi"
+        }
+      }
+    },
+    "done": {
+      "title": "Nhóm của bạn đã sẵn sàng!",
+      "body": "Mọi thứ đã xong. Chỉ cần nói với {{name}}, phần còn lại có người lo.",
+      "open": "Mở PasaBot",
+      "chats": "Các cuộc trò chuyện",
+      "lead": "Trưởng nhóm · Sẵn sàng",
+      "ready": "Sẵn sàng",
+      "pinned": "{{name}} luôn ở trên cùng",
+      "next": {
+        "title": "Bước tiếp theo",
+        "new": "{{name}} sẽ giúp bạn tạo email mới, từng bước, trong cuộc trò chuyện của hai bạn.",
+        "newGo": "Tạo email mới cùng {{name}}",
+        "connect": "Kết nối email của bạn ngay. Mất khoảng 3 phút.",
+        "connectGo": "Kết nối email của tôi"
+      }
+    },
+    "summary": {
+      "body": "Nhóm của bạn đã lập xong! Đây là những gì bạn kể và các trợ lý của bạn.",
+      "language": "Ngôn ngữ"
+    }
+  },
+  "summaryLead": "Chăm lo cho nhóm của bạn: giao mỗi việc cho đúng trợ lý, và có thể thêm hoặc đổi trợ lý khi bạn muốn.",
+  "oks": {
+    "title": "Vài việc cần bạn đồng ý",
+    "sub": "{{name}} và nhóm làm được nhiều hơn với những thứ này. Mỗi việc là do bạn chọn, và không gì bật lên cho tới khi bạn chạm.",
+    "email": {
+      "title": "Kết nối email của bạn",
+      "why": "Để trợ lý thư đọc thư mới và báo bạn điều quan trọng.",
+      "yes": "Kết nối"
+    },
+    "chat": {
+      "title": "Kết nối {{app}}",
+      "why": "Để bạn trò chuyện với các trợ lý trên {{app}} nữa.",
+      "yes": "Kết nối"
+    },
+    "apps": {
+      "title": "Kết nối {{app}}",
+      "why": "Trợ lý có thể dùng {{app}} giúp bạn khi đã kết nối.",
+      "yes": "Kết nối"
+    },
+    "browser": {
+      "title": "Cho trợ lý dùng trình duyệt riêng",
+      "why": "Họ mở trang web trong một trình duyệt riêng mà bạn xem được. Họ không bao giờ đăng nhập hay thanh toán thay bạn.",
+      "yes": "Cho phép"
+    },
+    "computer": {
+      "title": "Cho trợ lý dùng máy tính này",
+      "why": "Nó có thể thấy màn hình và dùng chuột, bàn phím. Lần nào nó cũng hỏi bạn trước.",
+      "yes": "Thiết lập"
+    },
+    "ask": {
+      "title": "Chọn mức trợ lý hỏi trước",
+      "why": "Chọn khi nào họ hỏi bạn trước khi làm. Tiền và tin nhắn thì luôn hỏi.",
+      "yes": "Chọn"
+    },
+    "alerts": {
+      "title": "Nhận thông báo khi trợ lý cần bạn",
+      "why": "Chúng tôi sẽ báo trên thiết bị này khi có việc cần bạn đồng ý.",
+      "yes": "Bật"
+    },
+    "laterBtn": "Để sau",
+    "notNow": "Để sau",
+    "opened": "Đã mở. Hoàn tất ở trang đó",
+    "later": "Để sau: {{name}} sẽ nhắc bạn trong chat",
+    "continue": "Tiếp tục",
+    "continueLater": "Tiếp tục, phần còn lại để sau"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "nav": "Dados",
+  "page": {
+    "title": "Dados compartilhados",
+    "intro": "Tabelas que seus agentes compartilham. Todo agente pode ler todas as tabelas, então anotações privadas devem ficar na memória de um agente, não aqui.",
+    "size": "Usando {{used}} de {{max}}",
+    "details": "O agente que criou uma tabela adiciona e altera as linhas dela livremente; as alterações de outro agente seguem suas regras de aprovação para esse agente (remover linhas sempre pede a sua aprovação). Só quem criou pode remodelar ou excluir uma tabela, e excluir sempre pede a sua aprovação.",
+    "more": "Saiba mais"
+  },
+  "refresh": "Atualizar",
+  "loading": "Carregando…",
+  "empty": "Nenhuma tabela ainda. Quando um agente criar uma, ela aparece aqui.",
+  "error": "Não foi possível carregar os dados. {{reason}}",
+  "table": {
+    "rows_one": "{{count}} linha",
+    "rows_many": "{{count}} de linhas",
+    "rows_other": "{{count}} linhas",
+    "columns_one": "{{count}} coluna",
+    "columns_many": "{{count}} de colunas",
+    "columns_other": "{{count}} colunas",
+    "by": "Criada por {{name}}",
+    "byUnknown": "Criador desconhecido",
+    "removedAgent": "um agente removido",
+    "ddl": "Como está definida",
+    "showRows": "Mostrar linhas",
+    "hideRows": "Ocultar linhas",
+    "rowsOf": "Linhas de {{name}}"
+  },
+  "cell": {
+    "null": "vazio",
+    "blob": "(dados de arquivo)"
+  },
+  "result": {
+    "count_one": "{{count}} linha",
+    "count_many": "{{count}} de linhas",
+    "count_other": "{{count}} linhas",
+    "countMore_one": "Primeira {{count}} linha; há mais",
+    "countMore_many": "Primeiras {{count}} de linhas; há mais",
+    "countMore_other": "Primeiras {{count}} linhas; há mais"
+  },
+  "query": {
+    "title": "Consultar algo",
+    "label": "Consulta (somente leitura)",
+    "hint": "Uma instrução SELECT. Esta tela nunca altera os dados.",
+    "run": "Executar consulta",
+    "result": "Resultado da consulta",
+    "error": "A consulta não foi executada. {{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "Listar tabelas compartilhadas",
+    "datastore_create_table": "Criar uma tabela compartilhada",
+    "datastore_query": "Consultar tabelas compartilhadas",
+    "datastore_write": "Gravar linhas",
+    "datastore_alter_table": "Alterar uma tabela que você criou",
+    "datastore_drop_table": "Excluir uma tabela que você criou"
+  },
+  "find": {
+    "navHint": "Tabelas e dados dos seus agentes",
+    "navKeywords": "dados, tabelas, banco de dados, registros"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Tabelas e listas que seus ajudantes guardam"
+    },
+    "page": {
+      "intro": "Tabelas que seus ajudantes compartilham. Todo ajudante lê todas as tabelas, então notas privadas ficam na memória de um ajudante, não aqui.",
+      "details": "O ajudante que criou a tabela adiciona e muda linhas livremente; mudanças de outro ajudante seguem suas regras de aprovação para ele (apagar linhas sempre pergunta a você). Só quem criou pode mudar o formato ou apagar a tabela, e apagar sempre pergunta a você."
+    },
+    "empty": "Nenhuma tabela ainda. Quando um ajudante criar uma, ela aparece aqui.",
+    "table": {
+      "removedAgent": "um ajudante removido"
+    }
+  }
+}

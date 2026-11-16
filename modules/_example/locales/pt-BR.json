@@ -1,0 +1,15 @@
+{
+  "nav": "Exemplo",
+  "page": {
+    "title": "Módulo de exemplo",
+    "body": "Todos os slots do SDK de módulos são preenchidos por este módulo."
+  },
+  "settings": "Configurações de exemplo",
+  "composer": "Inserir uma nota",
+  "dock": "Painel de exemplo",
+  "onboarding": "Etapa de integração de exemplo",
+  "note": "Nota",
+  "tools": {
+    "example_echo": "Eco"
+  }
+}

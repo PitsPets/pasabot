@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "customConditions": ["source"],
+    "types": ["node", "vite/client"]
+  },
+  "include": [
+    "apps/*/src",
+    "packages/*/src",
+    "providers/*/src",
+    "channels/*/src",
+    "modules/*/src",
+    "modules/*/web",
+    "plugins/*/src",
+    "plugins/*/web",
+    "vitest.config.ts",
+    "apps/web/e2e",
+    "apps/web/vite.config.ts",
+    "apps/web/playwright.config.ts"
+  ]
+}

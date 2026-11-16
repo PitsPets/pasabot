@@ -1,0 +1,39 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "atlassian",
+  "name": "Jira and Confluence",
+  "version": "1.0.0",
+  "category": "work-tasks",
+  "summary": "Atlassian's own hosted MCP server for Jira and Confluence. Sign in with Atlassian in your browser.",
+  "homepage": "https://www.atlassian.com",
+  "source": "https://github.com/atlassian/atlassian-mcp-server",
+  "group": "work-tasks",
+  "kind": "mcp-http",
+  "mcp": {
+    "url": "https://mcp.atlassian.com/v2/mcp",
+    "headers": {
+      "Authorization": "Bearer {{secret:oauth_token}}"
+    }
+  },
+  "auth": {
+    "type": "oauth2_pkce",
+    "oauth": {
+      "discover": "mcp",
+      "clientIdFrom": "register"
+    }
+  },
+  "network": {
+    "allowHosts": []
+  },
+  "defaultTier": 2,
+  "toolClasses": {
+    "addCommentToJiraIssue": "outbound-message",
+    "createJiraIssue": "outbound-message",
+    "createConfluencePage": "publish",
+    "createConfluenceFooterComment": "outbound-message",
+    "createConfluenceInlineComment": "outbound-message",
+    "updateConfluencePage": "delete",
+    "editJiraIssue": "delete",
+    "transitionJiraIssue": "publish"
+  }
+}

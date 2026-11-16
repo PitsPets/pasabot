@@ -1,0 +1,129 @@
+{
+  "card": {
+    "noImage": "Kein Bild",
+    "seenAt": "gesehen um {{time}}",
+    "rating": "Bewertet mit {{rating}}",
+    "ratingCount": "Bewertet mit {{rating}} aus {{count}} Bewertungen",
+    "open": "Bei {{store}} öffnen"
+  },
+  "compare": {
+    "title": "Vergleich von {{count}} Produkten"
+  },
+  "buy": {
+    "button": "Kaufen",
+    "qty_one": "{{count}} Stück",
+    "qty_other": "{{count}} Stück",
+    "less": "Eins weniger",
+    "more": "Eins mehr",
+    "note": "Du genehmigst das in der App. PasaBot legt es nur in deinen Warenkorb, dann prüfst du die Summe und bezahlst selbst.",
+    "ask": "Kauf anfragen",
+    "cancel": "Abbrechen",
+    "asked": "Wartet auf deine Genehmigung. Die Geldkarte findest du bei deinen Genehmigungen.",
+    "error": "Die Anfrage dafür ging nicht durch. Versuch es nochmal.",
+    "state": {
+      "running": "Genehmigt. Wird in den Warenkorb gelegt…",
+      "handedOver": "Es liegt in deinem Warenkorb. Prüfe die Summe und bezahle selbst im Browser.",
+      "denied": "Du hast abgelehnt, es wurde also nichts gekauft.",
+      "paused": "Pausiert: Der Shop braucht dich im Browser.",
+      "stopped": "Gestoppt. Nichts wurde in den Warenkorb gelegt; der Chat nennt den Grund.",
+      "ended": "Dieser Kauf ist beendet; der Chat sagt, wie."
+    }
+  },
+  "settings": {
+    "title": "Einkaufen",
+    "intro": "Wo deine Agenten nach Produkten suchen. Preise werden so angezeigt, wie die Shopseite sie zeigte, nie umgerechnet.",
+    "country": "Land",
+    "webOnly": "Anderes Land (Websuche)",
+    "stores": "Shops",
+    "fallback": "Für dieses Land gibt es noch keine Shopliste. Agenten durchsuchen das Web und zeigen Karten nur für Seiten, die ein Produkt beschreiben.",
+    "custom": "Dein Shop",
+    "remove": "Entfernen",
+    "rules": "Agenten bezahlen nie, geben keine Bestellungen auf, tippen keine Kartendaten ein, behandeln keine Codes, lösen keine Captchas und legen keine Shop-Konten an. Kaufen fragt immer zuerst dich.",
+    "loading": "Wird geladen…",
+    "error": "Die Einkaufseinstellungen konnten nicht geladen werden."
+  },
+  "custom": {
+    "add": "Shop hinzufügen",
+    "name": "Shopname",
+    "id": "Kurz-ID",
+    "idHint": "Kleinbuchstaben, Zahlen und Bindestriche, z. B. corner-shop",
+    "home": "Startseite",
+    "search": "Suchadresse",
+    "searchHint": "Setze {query} dorthin, wo die Suchbegriffe hinkommen",
+    "hosts": "Erlaubte Adressen",
+    "hostsHint": "Hostnamen, durch Kommas getrennt, z. B. shop.example oder *.example",
+    "currency": "Währung",
+    "currencyHint": "Drei Buchstaben, z. B. PHP oder USD",
+    "save": "Shop speichern",
+    "error": "Prüfe die Felder: Die Adressen müssen auf den erlaubten Hosts liegen und dürfen keine Tracking-Codes enthalten."
+  },
+  "onboarding": {
+    "title": "Wo kaufst du ein?",
+    "body": "Wähle dein Land, damit deine Agenten wissen, welche Shops sie durchsuchen sollen. Du kannst es später unter Einstellungen → Einkaufen ändern."
+  },
+  "orders": {
+    "title": "Bestellungen",
+    "empty": "Noch keine Bestellungen. Ein Kauf, den du genehmigst, erscheint hier.",
+    "error": "Die Bestellungen konnten nicht geladen werden.",
+    "line": "{{qty}} × {{item}}",
+    "unknownItem": "Ein nicht mehr gespeichertes Produkt",
+    "each": "{{price}} pro Stück, wie gesehen",
+    "state": {
+      "pending": "Wartet auf deine Genehmigung",
+      "denied": "Du hast abgelehnt",
+      "running": "Wird in den Warenkorb gelegt",
+      "handed-over": "Im Warenkorb, du bezahlst",
+      "paused": "Pausiert, braucht dich",
+      "stopped": "Gestoppt",
+      "failed": "Fehlgeschlagen",
+      "other": "Beendet"
+    }
+  },
+  "tools": {
+    "shop_stores": "Shops",
+    "shop_search": "Shop durchsuchen",
+    "shop_capture": "Produkt erfassen",
+    "shop_show": "Produktkarte zeigen",
+    "shop_compare": "Produkte vergleichen",
+    "shop_buy": "Produkt in den Warenkorb legen"
+  },
+  "server": {
+    "noBrowser": "Der Browser ist nicht verfügbar, daher wurde nichts in den Warenkorb gelegt.",
+    "storeOff": "Dieser Shop ist unter Einstellungen → Einkaufen ausgeschaltet, daher wurde nichts in den Warenkorb gelegt.",
+    "badAddress": "Diese Produktadresse ist für diesen Shop nicht erlaubt.",
+    "stoppedBefore": "Gestoppt, bevor der Browser benutzt wurde.",
+    "stoppedNothing": "Gestoppt. Nichts wurde in den Warenkorb gelegt.",
+    "priceChanged": "Der Preis hat sich seit deiner Freigabe geändert: damals {{before}}, jetzt {{after}}. Nichts wurde in den Warenkorb gelegt. Eine neue Karte fragt dich zum neuen Preis.",
+    "pageDiffers": "Artikel oder Preis auf der Shopseite weichen von deiner Freigabe ab ({{price}}), daher wurde nichts in den Warenkorb gelegt. Erfasse es neu und frag erneut.",
+    "openNoCartHandOver": "{{name}} ist bei {{store}} geöffnet. Lege {{quantity}} in den Warenkorb und bezahle selbst.",
+    "openNoCart": "{{name}} ist bei {{store}} im Browser geöffnet. Dieser Shop hat keine Warenkorb-Schritte, also lege {{quantity}} selbst hinein und bezahle selbst.",
+    "stoppedAfterAdd": "Nach dem Hinzufügen zum Warenkorb gestoppt; die Kassenseite wurde nicht geöffnet.",
+    "checkoutSignUp": "Die Kassenadresse ist eine Registrierungsseite.",
+    "stoppedInCart": "Gestoppt. Der Artikel liegt im Warenkorb; sonst wurde nichts getan.",
+    "inCartHandOver": "{{quantity}} × {{name}} liegt in deinem Warenkorb bei {{store}}. Prüfe ihn und bezahle selbst.",
+    "inCart": "{{quantity}} × {{name}} liegt in deinem Warenkorb bei {{store}}, und die Kassenseite ist im Browser geöffnet. Prüfe die Summe und bezahle selbst; PasaBot gibt die Bestellung nicht auf.",
+    "stoppedCheck": "Gestoppt. Prüfe den Browser, bevor du weitermachst.",
+    "buyFailed": "Der Kauf wurde abgebrochen: {{error}}",
+    "captcha": "Der Shop zeigt eine Prüfung für Menschen (ein Captcha). Öffne den Browser und erledige sie selbst.",
+    "signIn": "Der Shop möchte, dass du dich anmeldest. Öffne den Browser und melde dich selbst an (PasaBot legt nie Shopkonten an).",
+    "denied": "Du hast abgelehnt, daher wurde der Browser nicht benutzt.",
+    "buySummary": "{{quantity}} × {{name}} bei {{store}} kaufen",
+    "buyLabel": "Kauf",
+    "askItems": "{{quantity}} × {{name}} — je {{price}}, Stand {{time}}",
+    "askTotal": "{{total}} laut Anzeige, nicht endgültig",
+    "askPayment": "Du bezahlst selbst im Browser; PasaBot hält beim Warenkorb an"
+  },
+  "find": {
+    "settingsHint": "Agenten einkaufen lassen, mit deinem OK",
+    "settingsKeywords": "Einkauf, kaufen, Bestellungen, Laden"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Helfer einkaufen lassen, mit deinem OK"
+    },
+    "settings": {
+      "intro": "Wo deine Helfer nach Produkten suchen. Preise werden so angezeigt, wie die Shopseite sie zeigte, nie umgerechnet.",
+      "rules": "Helfer bezahlen nie, geben keine Bestellungen auf, tippen keine Kartendaten ein, behandeln keine Codes, lösen keine Captchas und legen keine Shop-Konten an. Kaufen fragt immer zuerst dich."
+    }
+  }
+}

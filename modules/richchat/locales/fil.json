@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "Tanong ng agent",
+    "send": "Ipadala ang sagot",
+    "answered": "Sinagot: {{answer}}",
+    "expired": "Walang sumagot sa oras. Nagpatuloy na ang agent.",
+    "cancelled": "Hindi na ito hinihintay ng agent.",
+    "pickMany": "Pumili ng isa o higit pa"
+  },
+  "form": {
+    "submit": "Ipadala",
+    "sent": "Naipadala na",
+    "required": "Kailangan",
+    "invalid": "Pakitingnan ang {{field}}.",
+    "expired": "Nagsara ang form bago ito naipadala.",
+    "yes": "Oo",
+    "no": "Hindi"
+  },
+  "html": {
+    "note": "Gawa ng agent. Hiwalay ito sa PasaBot at hindi nito makikita ang account mo.",
+    "frame": "Pahina ng agent: {{title}}"
+  },
+  "files": {
+    "open": "Buksan ang {{name}}",
+    "download": "I-download ang {{name}}",
+    "close": "Isara",
+    "zip": "ZIP archive",
+    "file": "File",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "Mag-attach ng file",
+    "title": "Magpadala ng file",
+    "caption": "Mensahe (hindi kailangan)",
+    "send": "Ipadala",
+    "cancel": "Huwag na",
+    "remove": "Alisin ang {{name}}",
+    "uploading": "Ina-upload {{pct}}%",
+    "tooBig": "Lampas 100 MB ang {{name}}.",
+    "tooMuch": "Hanggang 250 MB lang ang lahat ng file sa isang mensahe.",
+    "failed": "Hindi na-upload. {{reason}}",
+    "limits": "Hanggang 100 MB bawat file, 250 MB bawat mensahe."
+  },
+  "error": "Hindi naipadala. {{reason}}",
+  "tools": {
+    "richchat_ask": "Tanungin ang user",
+    "richchat_form": "Humingi ng form",
+    "richchat_html": "Ipakita ang HTML",
+    "richchat_share_file": "Bigyan ng file ang may-ari"
+  },
+  "card": {
+    "file": {
+      "title": "Handa na ang {{name}}",
+      "text": "Ginawa ni {{agent}} ngayon lang."
+    }
+  }
+}

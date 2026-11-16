@@ -1,0 +1,20 @@
+{
+  "nav": "Mga proseso",
+  "page": {
+    "title": "Mga prosesong tumatakbo sa likod",
+    "intro": "Mga prosesong sinimulan ng mga agent mo gamit ang mga tool ng PasaBot. Kapag pinahinto mo, titigil ito pati ang lahat ng sinimulan nito.",
+    "empty": "Walang tumatakbo sa likod ngayon."
+  },
+  "proc": {
+    "since": "Tumatakbo mula",
+    "stop": "Ihinto"
+  },
+  "tools": {
+    "procs_list": "Ilista ang mga background process ko",
+    "procs_stop": "Itigil ang isa sa mga background process ko"
+  },
+  "find": {
+    "navHint": "Mga proseso at trabahong tumatakbo ngayon",
+    "navKeywords": "proseso, trabaho, tumatakbo, gawain"
+  }
+}

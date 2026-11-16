@@ -1,0 +1,794 @@
+{
+  "app": {
+    "skip": "跳至主要內容",
+    "tagline": "Sabihin mo lang. Ako na bahala.",
+    "taglineTranslation": "只要說一聲，剩下的交給我。"
+  },
+  "lang": {
+    "label": "語言",
+    "unreviewed": "未經審閱的翻譯",
+    "unreviewedNote": "{{language}}為機器翻譯，尚未經過熟悉該語言的人員檢查。",
+    "helpImprove": "協助改善翻譯"
+  },
+  "conn": {
+    "connecting": "連線中…",
+    "live": "已連線",
+    "reconnecting": "重新連線中…",
+    "offline": "離線",
+    "banner": "正在重新連線…你的訊息很安全。",
+    "bannerLong": "無法連線到這台電腦上的 PasaBot。",
+    "tryNow": "立即重試"
+  },
+  "counts": {
+    "needs_other": "{{count}} 位需要你",
+    "working_other": "{{count}} 位工作中",
+    "idle_other": "{{count}} 位有空"
+  },
+  "errors": {
+    "generic": "發生錯誤，請再試一次。",
+    "rateLimited": "嘗試次數過多，請稍等一分鐘後再試。"
+  },
+  "setup": {
+    "title": "認領你的 PasaBot",
+    "intro": "設定一個名字和密碼，以後用它們開啟 PasaBot。",
+    "token": "設定碼",
+    "tokenHint": "它在 PasaBot 啟動時顯示的設定連結裡。要取得新的，請在那台電腦上開啟 PasaBot 應用程式，或在那裡執行 `pasabot setup-link`。",
+    "name": "你的名稱",
+    "password": "密碼",
+    "passwordHint": "至少 8 個字元。之後可以新增 passkey。",
+    "confirm": "再次輸入密碼",
+    "submit": "建立擁有者帳號",
+    "tooShort": "請至少使用 8 個字元。",
+    "mismatch": "兩次輸入的密碼不一致。",
+    "badToken": "這個設定碼已用過或已過期。要取得新的，請點選工作列或選單列上的 PasaBot 圖示並選擇「開啟 PasaBot」（在 Linux 上請從應用程式選單再次啟動 PasaBot），或在那台電腦上執行 `pasabot setup-link`。",
+    "gettingReady": "正在準備…",
+    "reopen": "請關閉 PasaBot 後重新開啟。",
+    "ownerExists": "這台伺服器已有擁有者，請直接登入。",
+    "bossNote": "這樣你就是這個 PasaBot 的主人。",
+    "trustLine": "遇到危險操作（例如刪除資料）前，你的智慧體會先問你。",
+    "trustHow": "它如何詢問你"
+  },
+  "login": {
+    "title": "歡迎回來",
+    "intro": "登入你的 PasaBot。",
+    "password": "密碼",
+    "submit": "登入",
+    "passkey": "使用 passkey 登入",
+    "failed": "密碼不正確。",
+    "passkeyCancelled": "passkey 驗證未完成。",
+    "pairInstead": "改用配對碼配對此裝置",
+    "asPerson": "正在以 {{name}} 的身分登入。",
+    "notYou": "不是你嗎？",
+    "otherWays": "其他登入方式"
+  },
+  "pair": {
+    "title": "配對此裝置",
+    "intro": "在已登入的裝置上開啟「裝置」，點選「配對手機」，然後掃描 QR code，或在此輸入配對碼。",
+    "code": "配對碼",
+    "deviceName": "此裝置的名稱",
+    "submit": "配對",
+    "waitingTitle": "快完成了",
+    "waiting": "請在另一個螢幕上確認此裝置。",
+    "fingerprint": "伺服器指紋",
+    "checkOther": "請確認另一個螢幕顯示相同的指紋，再在該處點選「確認」。",
+    "rejected": "配對已被拒絕。",
+    "expired": "配對已過期，請重新取得配對碼。",
+    "invalid": "配對碼錯誤或已過期。",
+    "backToLogin": "返回登入"
+  },
+  "devices": {
+    "title": "裝置與登入",
+    "pairTitle": "配對手機",
+    "pairIntro": "用手機相機掃描 QR code，即可在手機上開啟 PasaBot，然後在此確認該手機。",
+    "newCode": "配對手機",
+    "qrAlt": "用於配對裝置的 QR code",
+    "codeLabel": "或輸入此配對碼",
+    "expires_other": "{{count}} 秒後到期",
+    "claims": "等待你確認",
+    "confirm": "確認",
+    "reject": "拒絕",
+    "list": "已配對的裝置",
+    "none": "尚無已配對的裝置。",
+    "revoked": "已移除",
+    "revoke": "移除",
+    "passkeys": "Passkey",
+    "passkeysIntro": "使用指紋、臉部或裝置 PIN 登入並確認高風險動作。",
+    "passkeyN": "Passkey {{n}}・新增於 {{date}}",
+    "remove": "移除",
+    "addPasskey": "新增 passkey",
+    "passkeyAdded": "已新增 passkey。",
+    "reauthPair": "配對新手機",
+    "reauthConfirm": "允許新裝置進入",
+    "reauthPasskey": "新增通行金鑰",
+    "reauthNeeded": "未完成：需要再次輸入你的密碼或使用通行金鑰。"
+  },
+  "agents": {
+    "add": "+ 新增",
+    "newTitle": "新增 agent",
+    "editTitle": "編輯 {{name}}",
+    "name": "名稱",
+    "instructions": "負責的工作",
+    "instructionsHint": "用白話描述：它的工作、要檢查什麼、何時先問你。",
+    "provider": "大腦",
+    "notInstalled": "未安裝",
+    "notReachable": "無法連線",
+    "model": "模型",
+    "trust": "信任等級",
+    "trustLevels": {
+      "guarded": "嚴格：資料夾以外的任何動作都先詢問",
+      "standard": "標準：外部或高風險動作先詢問",
+      "trusted": "信任：僅在危險動作前詢問"
+    },
+    "trustHint": "若信任的 agent 其大腦具備自己的 shell，它能執行這台電腦的使用者可執行的任何操作。",
+    "save": "儲存",
+    "avatar": "外觀",
+    "avatarAlt": "{{name}} 的大頭貼",
+    "shuffle": "隨機換一個",
+    "avatarHint": "一直換到喜歡為止。只有在按下「儲存」後才會變更。",
+    "create": "建立 agent",
+    "unknownProvider": "這台伺服器沒有該大腦。",
+    "empty": "尚無 agent。",
+    "emptyTitle": "組成你的團隊",
+    "emptyIntro": "新增你的第一個 agent，為它取名、指派工作並選擇大腦。",
+    "emptyCta": "新增第一個 agent",
+    "trustWarning": "新的 agent 預設為「信任」等級。建立後，它會直接完成工作，不會每次都詢問你，即使是對外發布、使用網路或安裝工具等動作。遇到危險動作（讀取機密、刪除資料、使用你的電腦）時仍會先詢問，而透過 Telegram 或其他聊天應用程式傳給它的訊息，權限最高只會是「標準」。若想被更常詢問，請為該 agent 選擇「標準」或「嚴格」，或在「設定」中變更新 agent 的預設等級。",
+    "askShellWeb": "執行終端機與原始網路指令前先詢問",
+    "askShellWebHint": "開啟後，此 agent 的大腦每次執行 shell 指令或原始網路請求前都會先詢問你。「信任」等級的 agent 預設為關閉，「標準」與「嚴格」則為開啟。",
+    "needsSignIn": "需要登入",
+    "setUpBrains": "設定或修復大腦",
+    "backup": "備用大腦",
+    "backupNone": "無",
+    "backupHint": "主大腦達到上限或無法連線時使用。代理會保留對話。",
+    "brainReady": "就緒",
+    "fixInstall": "安裝",
+    "fixSignIn": "登入",
+    "fixCheck": "再次檢查",
+    "modelAuto": "自動",
+    "modelAutoHint": "由大腦選擇它常用的模型",
+    "modelHints": {
+      "fast": "快速",
+      "balanced": "適合日常工作",
+      "smart": "聰明",
+      "smartest": "最聰明",
+      "free": "免費"
+    },
+    "modelsRefresh": "重新整理模型清單",
+    "modelsLoading": "正在載入模型…",
+    "modelsError": "無法載入這個大腦的模型。「自動」仍然可用，或者點「重新整理」。",
+    "modelsCurated": "這個清單可能沒有列出這個大腦的全部模型。",
+    "trustShort": "這個智慧體不會每次都問你就開始工作。遇到危險的事，例如刪除資料，它仍會先問你。",
+    "helpWith": "它應該幫你做什麼？",
+    "helpPlaceholder": "例如：幫我規劃三餐，買任何東西之前先問我。",
+    "helpIdeas": {
+      "week": "規劃我的一週",
+      "shopping": "購物清單",
+      "messages": "寫訊息",
+      "questions": "回答問題"
+    },
+    "helpFill": {
+      "week": "幫我規劃這一週，並提醒我接下來要做的事。",
+      "shopping": "幫我管理購物清單，買任何東西之前先問我。",
+      "messages": "幫我寫訊息和回覆訊息。傳送之前先給我看。",
+      "questions": "用簡單的話回答我的問題。"
+    },
+    "moreOptions": "更多選項"
+  },
+  "nav": {
+    "sidebar": "Agent 與聊天",
+    "yourTeam": "你的團隊",
+    "channels": "頻道",
+    "devices": "裝置",
+    "settings": "設定",
+    "chats": "聊天",
+    "new": "新增",
+    "newAgent": "新增助理",
+    "newGroup": "新增群組聊天",
+    "pinned": "已釘選",
+    "searchChats": "搜尋聊天",
+    "moveUp": "上移",
+    "moveDown": "下移",
+    "unpin": "從側邊欄移除",
+    "pinMenu": "{{feature}} 的選項",
+    "openSettings": "開啟設定",
+    "teamTalk": "團隊對話",
+    "teamTalkHint": "你的助手之間的對話",
+    "workingFor": "正在為 {{name}} 工作",
+    "newRequest": "新請求"
+  },
+  "status": {
+    "working": "忙碌中",
+    "waiting": "需要你同意",
+    "idle": "就緒",
+    "needsSignIn": "需要登入"
+  },
+  "details": {
+    "label": "Agent 詳細資料",
+    "hide": "隱藏",
+    "show": "詳細資料",
+    "since": "自 {{date}} 起",
+    "does": "{{name}} 負責的工作",
+    "edit": "編輯",
+    "noInstructions": "尚無指示。",
+    "brain": "大腦",
+    "main": "主要",
+    "backup": "備用",
+    "none": "無",
+    "trust": "信任等級",
+    "change": "變更",
+    "about": "關於{{name}}",
+    "thinksWith": "使用的大腦",
+    "more": "更多",
+    "instructions": "完整說明",
+    "backupBrains": "備用大腦",
+    "noSummary": "還沒有關於這個助理的介紹。"
+  },
+  "chat": {
+    "notFound": "找不到這個聊天。",
+    "members_other": "{{count}} 位 agent",
+    "logLabel": "與 {{name}} 的訊息",
+    "empty": "跟 {{name}} 打聲招呼吧。",
+    "selectTitle": "選擇聊天",
+    "select": "請從左側選擇 agent 或頻道。",
+    "someone": "代理",
+    "thinking": "{{name}} 思考中…",
+    "replyFailed": "這則回覆未能完成。",
+    "activity_other": "使用了 {{count}} 個工具：{{names}}",
+    "seconds_other": "{{count}} 秒",
+    "partialLabel": "部分回覆：這是中斷前已寫下的全部內容。",
+    "interruptedHandled": "已處理：這一輪已重試或略過。",
+    "steered": "已加入 {{name}} 目前進行的工作。",
+    "queueFull": "{{name}} 的佇列已滿，請稍後再試。",
+    "mode": {
+      "steer": "加入正在做的事",
+      "queue": "等它做完再傳送",
+      "interrupt": "停下它並傳送這則",
+      "more": "其他傳送方式"
+    },
+    "placeholder": "傳訊息給 {{name}}…",
+    "send": "傳送",
+    "queued_other": "{{count}} 則排隊中",
+    "failedCount_other": "{{count}} 則失敗",
+    "queueHint": "{{name}} 接下來會讀取這些訊息",
+    "queueItem": "訊息 {{n}}",
+    "qstate": {
+      "queued": "等待中",
+      "held": "保留中，待額度重置",
+      "failed": "失敗",
+      "interrupted": "已中斷"
+    },
+    "readOnlyNote": "你可以閱讀這個聊天，但無法發言。如有需要，請洽詢擁有者。",
+    "readOnlyLabel": "唯讀",
+    "more": "更多",
+    "searchThis": "在此聊天中搜尋",
+    "editAgent": "編輯助理",
+    "copy": "複製",
+    "copied": "已複製",
+    "paused": {
+      "since": "一切都已暫停（自 {{when}} 起）。",
+      "now": "一切都已暫停。",
+      "hint": "重新開始後才能傳送。",
+      "hintMember": "只有擁有者能重新開始。",
+      "start": "重新開始"
+    },
+    "editNamed": "編輯 {{name}}",
+    "startersLabel": "開頭的點子",
+    "startersTitle": "不知道從哪裡開始？點一個試試：",
+    "starters": {
+      "can": "你能幫我做什麼？",
+      "week": "幫我規劃這一週",
+      "message": "幫我寫一則訊息",
+      "dinner": "晚餐煮什麼好？"
+    },
+    "model": {
+      "thinksWith": "使用的大腦",
+      "auto": "自動",
+      "change": "{{name}}使用{{brain}}，{{model}}。變更",
+      "readOnly": "{{name}}使用{{brain}}，{{model}}",
+      "title": "{{name}}該怎麼思考？",
+      "brain": "大腦",
+      "models": "模型",
+      "best": "適合大多數人",
+      "autoHint": "為每則訊息挑選合適的",
+      "hints": {
+        "smartest": "最聰明，適合困難的工作。較慢，更耗方案",
+        "smart": "聰明又細心",
+        "balanced": "又快又聰明，適合大多數事情",
+        "fast": "最快，適合簡單問題",
+        "free": "免費使用"
+      },
+      "own": "這個大腦會自己選擇模型",
+      "more": "設定另一個大腦",
+      "error": "無法載入模型清單。",
+      "retry": "再試一次"
+    },
+    "toolsMore": "另外 {{n}} 項",
+    "tools": {
+      "team": "查看了團隊",
+      "askHelper": "請了一位助手幫忙",
+      "noteHelper": "給助手留了言",
+      "checkHelper": "問了問助手的進度",
+      "stopHelper": "停止了助手的任務",
+      "noted": "記下了你的回答",
+      "plan": "展示了計畫",
+      "makeTeam": "組建了你的團隊",
+      "memoryRead": "查了記憶",
+      "memorySave": "存進了記憶",
+      "memoryForget": "從記憶中刪除",
+      "searchChats": "搜尋了以前的對話",
+      "browser": "用了瀏覽器",
+      "computer": "用了電腦",
+      "webSearch": "在網路上搜尋",
+      "webPage": "打開了網頁",
+      "fileRead": "讀了一個檔案",
+      "fileChange": "改了一個檔案",
+      "fileSearch": "翻查了檔案",
+      "command": "執行了一條指令",
+      "todo": "列了待辦清單",
+      "dataRead": "讀了資料表",
+      "dataChange": "改了資料表",
+      "inbox": "查看了收件匣",
+      "machines": "和另一台電腦溝通",
+      "askYou": "問了你一個問題",
+      "card": "做了一張卡片",
+      "routine": "處理了一個例行任務",
+      "workflow": "處理了一個工作流程",
+      "site": "處理了一個網站",
+      "shop": "逛了商店",
+      "shopBuy": "準備了一筆購買",
+      "skills": "處理了技能",
+      "findTool": "找了一個工具",
+      "connections": "檢查了連線",
+      "secrets": "詢問了儲存的密鑰",
+      "programs": "查看了正在執行的程式",
+      "permission": "請求了許可",
+      "other": "用了一個工具"
+    },
+    "handoff": {
+      "asked": "{{from}} 請 {{to}} 幫忙",
+      "noted": "{{from}} 給 {{to}} 留了言",
+      "whatAsked": "請求的內容",
+      "reply": "{{name}} 的回覆",
+      "waiting": "正在等 {{name}}…",
+      "failed": "這次沒有完成。",
+      "later": "{{name}} 的回覆會在之後的訊息裡到。",
+      "open": "打開他們的對話",
+      "openThread": "在與 {{name}} 的聊天中打開"
+    },
+    "teamNote": "{{from}} 和 {{to}} 在這裡對話。你可以一起看，也可以發言。",
+    "stopAll": "立即停止所有助理",
+    "thread": {
+      "from": "來自 {{name}}",
+      "label": "{{name}} 的請求",
+      "summary": "{{from}} 提問 · {{to}} 回答",
+      "working": "{{name}} 正在處理…",
+      "show": "顯示整段對話",
+      "hide": "收起對話",
+      "reply": "在此回覆",
+      "replying": "正在回覆 {{name}} 的請求",
+      "stopReply": "改為一般訊息"
+    },
+    "report": {
+      "workingOne": "{{name}} 正在處理…",
+      "workingMany": "{{names}} 正在處理…",
+      "reading": "{{name}} 正在整理回答…",
+      "fromOne": "{{name}} 的回答",
+      "fromMany": "{{names}} 的回答",
+      "fullOne": "顯示完整回答",
+      "fullMany": "顯示全部回答",
+      "finished": "{{name}} 已完成：",
+      "failed": "{{name}} 沒能完成。",
+      "stoppedOne": "{{name}} 在完成前被停止了。",
+      "stillOne": "{{name}} 還在處理。",
+      "stillMany": "{{names}} 還在處理。",
+      "openFull": "打開完整回答",
+      "openThread": "在與 {{name}} 的聊天中打開",
+      "stopped": "已在此停止：助手之間來回傳遞的次數太多了。如果想讓它們繼續，請再問一次。"
+    }
+  },
+  "approval": {
+    "wants": "{{name}} 想要：{{tool}}",
+    "waiting_other": "{{count}} 項決定待處理",
+    "review": "查看",
+    "asking": "{{name}} 先來詢問",
+    "tier0": "只是查看",
+    "tier1": "只在它自己的資料夾裡",
+    "tier2": "需要你同意",
+    "tier3": "有風險",
+    "state": {
+      "pending": "等待你處理",
+      "approved": "已核准",
+      "denied": "已拒絕",
+      "expired": "已過期：視同拒絕"
+    },
+    "approve": "核准",
+    "deny": "拒絕",
+    "reauthNote": "執行前需要先確認是你本人。",
+    "reauthTitle": "確認是你本人",
+    "reauthIntro": "這是有風險的一步：{{summary}}。請輸入密碼，確認是你本人。",
+    "reauthSubmit": "確認並核准",
+    "reauthPasskey": "使用 passkey",
+    "reauthFailed": "驗證不符，請再試一次。",
+    "screenBusy": "請稍等，有個助手剛剛操作了螢幕",
+    "workflow": "工作流程「{{name}}」詢問：{{message}}",
+    "askClass": {
+      "money": "金錢：一律詢問",
+      "outbound-message": "傳給其他人的訊息：一律詢問",
+      "delete": "刪除：一律詢問",
+      "publish": "發布：一律詢問"
+    },
+    "fact": {
+      "items": "項目",
+      "merchant": "商家",
+      "total": "總額",
+      "paymentMethod": "付款方式",
+      "recipients": "收件者",
+      "channel": "頻道",
+      "subject": "主旨",
+      "text": "完整內容",
+      "target": "對象",
+      "where": "位置",
+      "count": "數量",
+      "tool": "工具",
+      "arguments": "完整請求",
+      "cc": "副本",
+      "bcc": "密件副本",
+      "attachments": "附件",
+      "server": "執行",
+      "request": "請求內容"
+    },
+    "notStated": "未說明",
+    "undeclared": "助理沒說這會付款或傳送任何東西，但這個頁面看起來會。",
+    "unshown": "此摘要未顯示更多詳細資料：{{names}}。核准前請先閱讀下方的完整請求。",
+    "askNote": "這類操作總會問你，不管助理被設成多常詢問。只有你能在這個應用程式裡核准。",
+    "reauthContinue": "確認並繼續",
+    "wantsTo": "{{name}} 想要{{verb}}",
+    "verb": {
+      "read": "讀取一個檔案",
+      "write": "儲存一個檔案",
+      "edit": "修改一個檔案",
+      "command": "在你的電腦上執行一條指令",
+      "page": "開啟一個網頁",
+      "webSearch": "搜尋網路",
+      "findFiles": "尋找檔案",
+      "searchFiles": "在檔案裡搜尋",
+      "notebook": "修改一個筆記本",
+      "task": "把任務交給一個助手",
+      "other": "使用一個工具"
+    },
+    "target": {
+      "file": "檔案：{{v}}",
+      "command": "指令：{{v}}",
+      "page": "網頁：{{v}}",
+      "search": "尋找：{{v}}",
+      "tool": "工具：{{v}}"
+    },
+    "tierAdv0": "級別 0 · 唯讀",
+    "tierAdv1": "級別 1 · 自己的資料夾",
+    "tierAdv2": "級別 2 · 需要你同意",
+    "tierAdv3": "級別 3 · 有風險",
+    "reauthIntroPasskey": "這是有風險的一步：{{summary}}。請輸入密碼或使用通行金鑰，確認是你本人。",
+    "unshownPlain": "這個請求還有這裡沒顯示的內容：{{names}}。核准前請在設定裡開啟「技術用語」查看全部。",
+    "unshownShown": "摘要沒有涵蓋所有內容（{{names}}）。核准前請閱讀請求內容。"
+  },
+  "onboarding": {
+    "next": "下一步",
+    "step": "第 {{n}} 步，共 {{total}} 步",
+    "brainTitle": "選擇一個大腦",
+    "brainIntro": "大腦是你的代理用來思考的 AI。已為你選好最合適的一個。",
+    "working": "正在準備你的代理…",
+    "starterName": "免費入門",
+    "starterSub": "無需金鑰、無需登入、無需付費",
+    "starterBody": "PasaBot 會下載一個免費的小應用程式，讓你的代理能夠思考。大約需要一分鐘。",
+    "details": "詳細資訊",
+    "starterWhat": "內容：{{what}}",
+    "starterWhere": "位置：{{where}}（僅限你的使用者，不需管理員權限）",
+    "starterFrom": "來源：{{from}}",
+    "starterCheck": "寫入任何檔案之前，會先以公布的 SHA-256 檢查下載內容。",
+    "starterGo": "下載並繼續",
+    "starterWorking": "正在下載… 大約一分鐘",
+    "noBrain": "這台電腦上還沒有可用的大腦。請先設定一個，再回到這裡。",
+    "setUpBrain": "設定大腦",
+    "otherBrain": "使用其他大腦",
+    "defaultName": "Tala",
+    "meetTitle": "認識你的第一個代理",
+    "meetIntro": "幫它取個你喜歡的名字。之後都可以再改。",
+    "meetSafe": "遇到危險的事，例如刪除資料，{{name}} 會先問你。",
+    "start": "開始吧",
+    "localSub": "在這台電腦上。私密，離線也能用",
+    "starterFailedPlain": "免費入門版沒有裝好。請再試一次，或換一個大腦。"
+  },
+  "settings": {
+    "title": "設定",
+    "language": "語言",
+    "languageHint": "會切換此應用程式所有畫面的語言。",
+    "modules": "模組",
+    "account": "帳號",
+    "signOut": "登出",
+    "newAgents": "新 agent",
+    "newAgentsHint": "新 agent 起始的信任等級。之後仍可個別調整。",
+    "alwaysAsks": "一律詢問",
+    "alwaysAsksIntro": "即使是信任的 agent，執行以下動作前也一定每次都先問你。這些動作沒有「一律允許」，聊天頻道或自動化也無法代為核准。",
+    "alwaysAsksMoney": "金錢：購買、付款、結帳、下單、訂閱、使用付款資料、轉帳或傳送加密貨幣。",
+    "alwaysAsksMessage": "傳給其他人的訊息：寄給你自己已連結聊天以外對象的電子郵件、聊天、私訊或貼文。agent 在你自己的聊天中回覆你時不會詢問。",
+    "alwaysAsksDelete": "刪除 agent 自己工作區以外的內容：另一個 agent 或這台電腦其他位置的檔案或資料夾、另一個 agent 或共用的資料表，以及外部工具或連接器標示為破壞性的任何項目。刪除 agent 自己工作區內的內容則不會詢問。",
+    "alwaysAsksFixed": "永遠開啟",
+    "alwaysAsksAdd": "你也可以讓以下動作一律詢問：",
+    "alwaysAsksClass": {
+      "delete": "刪除檔案或資料",
+      "publish": "發布（網站、貼文）"
+    },
+    "alwaysAsksLimit": "獲得終端機的 agent 能執行終端機能做的任何事；一律詢問的卡片只涵蓋 PasaBot 看得到的工具。shell 指令或原始網路請求可能不經卡片就傳送訊息或付款。若要先被詢問，請為該 agent 開啟「執行終端機與原始網路指令前先詢問」。",
+    "search": "搜尋設定",
+    "back": "返回聊天",
+    "intro": "聊天以外的一切都在這裡。把每天用的功能釘選到側邊欄。",
+    "pin": "在側邊欄顯示",
+    "pinAria": "在側邊欄顯示{{feature}}",
+    "hide": "我不用這個",
+    "hideTitle": "隱藏{{feature}}?",
+    "hideBody": "它會從所有人的設定和側邊欄中消失。不會刪除任何內容。可在 設定 › 進階 中重新開啟。",
+    "hideConfirm": "隱藏{{feature}}",
+    "showAgain": "重新顯示",
+    "hiddenNote": "你隱藏了此功能。它仍在運作，只是不出現在清單中。",
+    "notUsing": "你不用的功能",
+    "notUsingEmpty": "你在使用所有功能。不需要時可在功能頁面中隱藏。",
+    "groupEmpty": "這裡暫時沒有內容。隱藏的功能在「進階」中。",
+    "searchEmpty": "沒有與「{{q}}」相符的內容。試試更簡單的詞。",
+    "resetSidebar": "重設側邊欄",
+    "resetSidebarHint": "取消側邊欄上的所有釘選項目。其他內容不變。",
+    "pinnedCount": "已釘選：{{count}}",
+    "saveFailed": "無法儲存。請再試一次。",
+    "tidied": "我們整理了一下。現在一切都在設定裡——把常用的釘選到側邊欄。",
+    "gotIt": "知道了",
+    "where": "目前位置",
+    "advancedSwitch": "技術用語",
+    "advancedHint": "顯示「信任等級」「MCP 伺服器」等名稱，以及技術設定頁面。",
+    "moreOptions": "更多選項",
+    "switchOn": "開",
+    "switchOff": "關",
+    "sections": {
+      "everyday": "日常",
+      "helpers": "助手可以用的",
+      "own": "自動執行"
+    },
+    "technicalOnly": "用於技術設定——開啟「{{switch}}」即可看到",
+    "technicalOnlyPage": "此頁面用於技術設定——開啟「{{switch}}」即可看到。"
+  },
+  "offline": {
+    "title": "無法連線到 PasaBot",
+    "body": "PasaBot 目前無法連線到你的伺服器。你的聊天安全地保存在伺服器上，重新連線後就會回來。",
+    "retry": "再試一次"
+  },
+  "decisions": {
+    "title": "待處理的決定",
+    "intro": "所有聊天、工作流程與模組中等你處理的事項。",
+    "showInChat": "在聊天中顯示",
+    "openChat": "開啟聊天",
+    "open": "開啟",
+    "ownerOnly": "只有擁有者能做出這些決定，你可以在此查看。"
+  },
+  "roles": {
+    "ownerOnlyPage": "只有擁有者可以使用此頁面。",
+    "ownerOnlyBack": "返回你的聊天"
+  },
+  "account": {
+    "menu": "帳戶",
+    "look": "外觀",
+    "lookAuto": "自動",
+    "lookLight": "淺色",
+    "lookDark": "深色",
+    "thisDevice": "此裝置",
+    "role": {
+      "owner": "擁有者",
+      "member": "成員",
+      "guest": "訪客"
+    }
+  },
+  "features": {
+    "agents": "助理",
+    "agentsHint": "編輯、新增或封存你的助理"
+  },
+  "groups": {
+    "agents": {
+      "name": "助理與大腦",
+      "hint": "你的助理和驅動它們的 AI"
+    },
+    "tools": {
+      "name": "技能與工具",
+      "hint": "你的助理可以使用的東西"
+    },
+    "automations": {
+      "name": "自動化",
+      "hint": "自動執行的項目"
+    },
+    "safety": {
+      "name": "安全與審核",
+      "hint": "需要你同意的事項"
+    },
+    "spending": {
+      "name": "支出",
+      "hint": "限額和用量"
+    },
+    "people": {
+      "name": "成員與裝置",
+      "hint": "誰可以在哪裡使用 PasaBot"
+    },
+    "machines": {
+      "name": "機器",
+      "hint": "與這台電腦連結的其他電腦"
+    },
+    "shopping": {
+      "name": "購物",
+      "hint": "商店、購物車和價格"
+    },
+    "inbox": {
+      "name": "收件匣與郵件",
+      "hint": "你的助理替你閱讀的郵件"
+    },
+    "memory": {
+      "name": "記憶與資料",
+      "hint": "你的助理記住和保存的內容"
+    },
+    "look": {
+      "name": "語言與外觀",
+      "hint": "語言、主題和語音"
+    },
+    "advanced": {
+      "name": "進階",
+      "hint": "給愛動手調整的人"
+    }
+  },
+  "plain": {
+    "agents": {
+      "trust": "多久問你一次",
+      "trustLevels": {
+        "guarded": "在自己資料夾以外做任何事前都問",
+        "standard": "有風險的事前會問",
+        "trusted": "只在危險的事前問"
+      },
+      "trustHint": "只在危險的事前問的助理，可以在這台電腦上做你能做的任何事。",
+      "askShellWeb": "執行電腦指令和直接網路請求前先問",
+      "askShellWebHint": "開啟後，這個助理在電腦上執行每條指令、發出每個直接網路請求前都會先問你，這類請求可能傳送你的資料或付款。對只在危險的事前問的助理，一開始是關閉的。",
+      "model": "版本",
+      "modelsRefresh": "查看新版本",
+      "modelsError": "無法載入這個大腦的版本。「自動」仍可使用，也可以再查看一次。",
+      "trustShort": "這個助理不會每次都問你就開始工作。遇到危險的事，例如刪除資料，它仍會先問你。",
+      "newTitle": "新增助理",
+      "unknownProvider": "這台電腦上沒有設定那個大腦。",
+      "backupHint": "主大腦到達上限或連不上時使用。你的助理會接著聊。",
+      "modelAutoHint": "由大腦選它常用的版本",
+      "modelsCurated": "這個清單可能沒有列出這個大腦的所有版本。",
+      "trustWarning": "新助理從「只在危險的事前問」開始。建立後，它做事不會每次都問你，連對外發文、上網或安裝工具也一樣。在危險的事（讀取祕密、刪除資料、使用你的電腦）之前它仍會問你；從 Telegram 或其他聊天應用傳來的訊息，最多只有「有風險的事前會問」。想被問得更多，請為該助理選擇「有風險的事前會問」或「在自己資料夾以外做任何事前都問」，或在設定裡改新助理的起點。",
+      "create": "建立助理"
+    },
+    "details": {
+      "trust": "多久問一次"
+    },
+    "settings": {
+      "newAgentsHint": "新助理開始時多久問你一次。你仍可為每個助理單獨更改。",
+      "alwaysAsksLimit": "能在你的電腦上執行指令的助理，可以做那些指令能做的任何事。這些卡片只涵蓋 PasaBot 看得到的操作：一條指令或一個直接網路請求可能不經卡片就傳送訊息或付款。想先被詢問，請為該助理開啟「執行電腦指令和直接網路請求前先問」。",
+      "advancedHint": "也顯示技術名稱和技術設定頁面。",
+      "newAgents": "新助理",
+      "alwaysAsksIntro": "即使是信任的 助理，執行以下動作前也一定每次都先問你。這些動作沒有「一律允許」，聊天頻道或自動化也無法代為核准。",
+      "alwaysAsksMessage": "傳給其他人的訊息：寄給你自己已連結聊天以外對象的電子郵件、聊天、私訊或貼文。助理 在你自己的聊天中回覆你時不會詢問。",
+      "alwaysAsksDelete": "刪除 助理 自己工作區以外的內容：另一個 助理 或這台電腦其他位置的檔案或資料夾、另一個 助理 或共用的資料表，以及外部工具或連接器標示為破壞性的任何項目。刪除 助理 自己工作區內的內容則不會詢問。"
+    },
+    "pair": {
+      "fingerprint": "安全碼",
+      "checkOther": "確認另一個螢幕顯示的是同一個安全碼，然後在那邊點「確認」。"
+    },
+    "features": {
+      "agents": "助理",
+      "agentsHint": "修改、新增或收起助理"
+    },
+    "groups": {
+      "agents": {
+        "name": "助理和大腦",
+        "hint": "你的助理和它們用來思考的 AI"
+      },
+      "inbox": {
+        "hint": "助理替你讀的郵件"
+      },
+      "memory": {
+        "hint": "助理記住和保存的內容"
+      },
+      "tools": {
+        "hint": "助理能用的東西",
+        "name": "本領和工具"
+      }
+    },
+    "nav": {
+      "newAgent": "新增助理"
+    }
+  },
+  "cards": {
+    "needsOk": "需要你同意",
+    "stale": "這個已經處理過了。",
+    "failed": "沒成功，請再試一次。",
+    "details": "詳情",
+    "settled": {
+      "open": "待處理",
+      "done": "已完成",
+      "later": "稍後",
+      "dismissed": "已關閉",
+      "failed": "沒成功"
+    },
+    "open": "開啟",
+    "download": "下載",
+    "browserAlt": "助手的瀏覽器，即時畫面",
+    "browserWait": "正在等待畫面…",
+    "stillNeed": "還需要你同意的事：{{count}}",
+    "suggest": {
+      "title": "接下來可以請他們做的事",
+      "send": "試試這個",
+      "plan": {
+        "title": "安排我的一週",
+        "send": "幫我安排這一週"
+      },
+      "remind": {
+        "title": "提醒我",
+        "send": "明天 9 點提醒我繳帳單"
+      },
+      "write": {
+        "title": "寫一則訊息",
+        "send": "幫我給客戶寫一則簡短友善的訊息"
+      },
+      "find": {
+        "title": "看看團隊能做什麼",
+        "send": "你和團隊能幫我做什麼？"
+      },
+      "hint": "點一個，它會放進訊息框，改好後再傳送。"
+    },
+    "idea": "建議",
+    "more": "還有 {{count}} 個"
+  },
+  "system": {
+    "pageTitle": "這台電腦",
+    "pageHint": "PasaBot 對執行它的這台電腦的發現",
+    "kicker": "關於這台電腦",
+    "gotIt": "知道了",
+    "seen": "已看過",
+    "details": "詳細資料",
+    "changeTrust": "變更新助手可以做的事",
+    "allGood": "這台電腦沒有需要修正的地方。",
+    "windows-no-sandbox": {
+      "title": "這台 Windows 電腦上的助手沒有安全箱",
+      "text": "在 Windows 上，PasaBot 還無法把助手限制在它自己的資料夾裡，所以助手可能開啟你能開啟的任何檔案。因此，新助手在資料夾之外做任何事之前都會先問你。只新增你信任的助手。"
+    },
+    "linux-sandbox-missing": {
+      "title": "助手還不能開始工作",
+      "text": "這台電腦缺少一個叫 bubblewrap 的小安全工具。請管理這台電腦的人安裝它，然後重新開啟 PasaBot。"
+    },
+    "linux-sandbox-userns": {
+      "title": "助手還不能開始工作",
+      "text": "這個 Linux 擋住了助手執行所需的安全箱。管理這台電腦的人可以改一個設定來允許它，然後重新開啟 PasaBot。"
+    },
+    "linux-sandbox-other": {
+      "title": "助手還不能開始工作",
+      "text": "助手的安全箱在這台電腦上無法啟動。請管理這台電腦的人檢查一下。"
+    },
+    "vault-unavailable": {
+      "title": "儲存的金鑰和密碼已被鎖住",
+      "text": "PasaBot 這次沒能開啟它的保險箱，所以無法儲存或使用金鑰和密碼。請重新開啟 PasaBot。如果一直這樣，請執行本頁的檢查。"
+    },
+    "vault-key-file": {
+      "title": "你的保險箱鑰匙存在一個檔案裡",
+      "text": "這台電腦沒有鑰匙圈，所以 PasaBot 把保險箱的鑰匙放在只有你的帳戶能開啟的檔案裡。你自己執行的程式仍可能讀取它。"
+    },
+    "data-folder-open": {
+      "title": "PasaBot 的資料夾可能對其他人開放",
+      "text": "Windows 沒有讓 PasaBot 把資料夾鎖定給你的帳戶，所以這台電腦上的其他帳戶可能看到你的聊天和金鑰。執行本頁的檢查了解更多。"
+    },
+    "signin-links": {
+      "title": "Codex 和 OpenCode 需要一個 Windows 設定",
+      "text": "要讓助手使用你的 Codex 或 OpenCode 登入，請在 Windows 設定中開啟開發人員模式，然後重新開啟 PasaBot。Claude 不需要這個設定。"
+    },
+    "check": {
+      "title": "檢查這台電腦",
+      "text": "快速檢查 PasaBot 能否在這台電腦上執行，並顯示通過的項目。它使用測試資料夾，絕不使用你的資料。",
+      "notInstalled": "這個檢查隨已安裝的 Windows 應用程式提供。請安裝 PasaBot 後使用。",
+      "run": "檢查這台電腦",
+      "started": "檢查已在獨立的視窗中開啟。",
+      "failed": "檢查沒有開始。請再試一次。"
+    }
+  }
+}

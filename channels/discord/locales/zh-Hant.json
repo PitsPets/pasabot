@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "Bot 權杖",
+    "botTokenHint": "請至 Discord 開發者入口網站，在應用程式的 Bot 頁面取得，並在該處開啟 Message Content intent。權杖會儲存在保險庫中，之後不會再顯示。",
+    "apiBase": "API 位址",
+    "gatewayUrl": "Gateway 位址",
+    "advancedHint": "除非確定需要變更，否則請保持原樣。"
+  },
+  "link": {
+    "howTo": "傳送私訊給你的 bot：/link {{code}}",
+    "dmOnly": "連結碼僅能在傳給 bot 的私訊中使用。"
+  },
+  "status": {
+    "connected": "已連線",
+    "reconnecting": "重新連線中…",
+    "auth_failed": "Discord 拒絕了此 bot（請檢查權杖和 Message Content intent）",
+    "stopped": "已停止"
+  }
+}

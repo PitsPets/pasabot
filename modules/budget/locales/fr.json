@@ -1,0 +1,151 @@
+{
+  "nav": "Budget",
+  "page": {
+    "title": "Budget",
+    "intro": "Ce que coûtent vos agents, les prix que vous payez et les plafonds qui les arrêtent. Les prix viennent uniquement de votre tableau : un modèle sans prix n'est jamais estimé."
+  },
+  "spend": {
+    "title": "Dépenses",
+    "today": "Aujourd'hui",
+    "month": "Ce mois-ci",
+    "total": "Total",
+    "none": "Rien dépensé pour l'instant.",
+    "byAgent": "Par agent",
+    "byModel": "Par modèle",
+    "runs": "{{count}} exécutions",
+    "tokens": "{{input}} en entrée · {{output}} en sortie · {{cache}} en cache",
+    "priceNotSet": "prix non défini",
+    "unpriced": "{{count}} exécutions n'ont pas encore de prix et ne sont pas comptées."
+  },
+  "prices": {
+    "title": "Tableau des prix",
+    "intro": "Par million de jetons, dans une seule devise par modèle. Les modèles utilisés par vos agents apparaissent ici ; définissez un prix pour les comptabiliser.",
+    "model": "Modèle",
+    "default": "(modèle par défaut)",
+    "input": "Entrée",
+    "output": "Sortie",
+    "cached": "En cache",
+    "currency": "Devise",
+    "save": "Enregistrer le prix",
+    "saved": "Prix enregistré.",
+    "remove": "Supprimer le prix",
+    "add": "Ajouter un modèle",
+    "provider": "Cerveau",
+    "empty": "Aucun modèle pour l'instant. Ils apparaissent après la première réponse d'un agent.",
+    "providerMissing": "Écrivez d’abord le nom du cerveau"
+  },
+  "caps": {
+    "title": "Plafonds",
+    "intro": "Quand un plafond est atteint, l'agent s'arrête proprement, les nouvelles tâches attendent et les routines sont ignorées. Seul le propriétaire peut relever un plafond.",
+    "everyone": "Tous les agents",
+    "day": "Par jour",
+    "month": "Par mois",
+    "none": "Aucun plafond",
+    "spent": "{{spent}} sur {{cap}} {{currency}}",
+    "save": "Enregistrer les plafonds",
+    "saved": "Plafonds enregistrés.",
+    "uncovered": "Non comptés dans un plafond tant qu'ils n'ont pas de prix dans la devise des plafonds : {{models}}.",
+    "oneCurrency": "Les plafonds et les prix doivent tous utiliser la même devise. Changez-les d'abord pour une devise commune."
+  },
+  "card": {
+    "who": {
+      "global": "Tous les agents",
+      "agent": "{{name}}"
+    },
+    "reached": "{{who}} a atteint le budget {{period}} : {{spent}} sur {{cap}} {{currency}}.",
+    "period": {
+      "day": "quotidien",
+      "month": "mensuel"
+    },
+    "stopped": "{{name}} s'est arrêté. Ce qu'il a écrit jusqu'ici est conservé.",
+    "held": "Les nouvelles tâches attendent que le plafond se réinitialise ou que vous le releviez.",
+    "skipped": "Une exécution de routine a été ignorée.",
+    "ask": "Relever le plafond ou le conserver ?",
+    "newCap": "Nouveau plafond ({{currency}})",
+    "raise": "Relever le plafond",
+    "keep": "Conserver le plafond",
+    "raised": "Plafond relevé à {{cap}} {{currency}}.",
+    "kept": "Plafond conservé à {{cap}} {{currency}}.",
+    "failed": "Cela n'a pas fonctionné. Seul le propriétaire peut modifier un plafond."
+  },
+  "bundle": {
+    "title": "Déplacer un agent (chiffré)",
+    "intro": "Un seul fichier avec les réglages, la mémoire, l'espace de travail, les skills et les chats de l'agent, verrouillé par une phrase secrète. Une importation crée toujours un nouvel agent.",
+    "agent": "Agent",
+    "passphrase": "Phrase secrète",
+    "passphraseHint": "Au moins 8 caractères. Sans elle, le fichier ne peut pas être ouvert.",
+    "vault": "Inclure les entrées du coffre de cet agent",
+    "vaultHint": "Désactivé par défaut. Nécessite à nouveau votre mot de passe.",
+    "password": "Votre mot de passe",
+    "export": "Télécharger le fichier chiffré",
+    "exported": "Fichier téléchargé.",
+    "file": "Fichier d'export",
+    "import": "Importer comme nouvel agent",
+    "imported": "Importé sous le nom {{name}}.",
+    "open": "Ouvrir son chat",
+    "error": {
+      "bad_passphrase_or_tampered": "Phrase secrète incorrecte ou fichier modifié. Rien n'a été importé.",
+      "unsafe_path": "Le fichier contient des chemins non sûrs. Rien n'a été importé.",
+      "unsupported_version": "Ce fichier a été créé par une version plus récente de PasaBot. Rien n'a été importé.",
+      "not_a_bundle": "Ce n'est pas un fichier d'agent PasaBot.",
+      "reauth_required": "Votre mot de passe est nécessaire pour inclure les entrées du coffre.",
+      "builtin_agent": "Le créateur d'équipe fait partie de PasaBot : il n'est donc pas enregistré dans un fichier. Vos autres agents peuvent l'être.",
+      "other": "Cela n'a pas fonctionné."
+    }
+  },
+  "server": {
+    "allAgents": "Tous les agents",
+    "capHeadDay": "{{what}} a atteint le budget quotidien ({{spent}} sur {{cap}} {{currency}}).",
+    "capHeadMonth": "{{what}} a atteint le budget mensuel ({{spent}} sur {{cap}} {{currency}}).",
+    "capStopped": "{{name}} s’est arrêté ; ce qu’il a écrit jusqu’ici est conservé.",
+    "capHeld": "Le nouveau travail attend que le plafond se réinitialise ou que vous le releviez.",
+    "capSkipped": "Une exécution de routine a été sautée.",
+    "capCard": "{{head}} {{tail}}"
+  },
+  "find": {
+    "navHint": "Limites de dépenses de vos agents",
+    "navKeywords": "budget, limite, argent, plafond, dépenses"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Limites de dépenses de vos assistants"
+    },
+    "page": {
+      "intro": "Ce que coûtent vos assistants, les prix que vous payez et les limites qui les arrêtent. Les prix viennent seulement de votre tableau : un cerveau sans prix n’est jamais deviné."
+    },
+    "spend": {
+      "byAgent": "Par assistant",
+      "byModel": "Par version du cerveau"
+    },
+    "prices": {
+      "intro": "Prix par million de morceaux de texte, dans une devise par version de cerveau. Les versions utilisées par vos assistants apparaissent ici ; fixez un prix pour les compter.",
+      "model": "Version du cerveau",
+      "default": "(version habituelle)",
+      "add": "Ajouter une version",
+      "empty": "Rien pour l’instant. Elles apparaissent après la première réponse d’un assistant."
+    },
+    "caps": {
+      "intro": "Quand une limite est atteinte, l’assistant s’arrête proprement, le nouveau travail attend et les routines sautent. Vous seul pouvez relever une limite.",
+      "everyone": "Tous les assistants",
+      "uncovered": "Non compté dans les limites tant qu’il n’a pas de prix dans leur devise : {{models}}."
+    },
+    "card": {
+      "who": {
+        "global": "Tous les assistants"
+      }
+    },
+    "bundle": {
+      "title": "Déplacer un assistant (fichier verrouillé)",
+      "intro": "Un fichier avec les réglages, la mémoire, les fichiers, les compétences et les discussions de l’assistant, verrouillé par une phrase secrète. L’importer crée toujours un nouvel assistant.",
+      "agent": "Assistant",
+      "vault": "Inclure les secrets enregistrés de cet assistant",
+      "file": "Fichier de l’assistant",
+      "import": "Importer comme nouvel assistant",
+      "error": {
+        "not_a_bundle": "Ce n’est pas un fichier d’assistant PasaBot.",
+        "reauth_required": "Votre mot de passe est nécessaire pour inclure les secrets enregistrés.",
+        "builtin_agent": "Votre bâtisseur d’équipe fait partie de PasaBot : il n’est pas enregistré dans un fichier. Vos autres assistants, si."
+      }
+    }
+  }
+}

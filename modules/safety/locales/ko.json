@@ -1,0 +1,183 @@
+{
+  "nav": "안전",
+  "stop": {
+    "button": "모두 중지",
+    "buttonLabel": "모든 에이전트 지금 중지",
+    "stopped": "일시 중지됨",
+    "resume": "다시 시작",
+    "failed": "중지하지 못했어요: {{reason}}",
+    "resumeLabel": "모두 일시 중지됨. 다시 시작"
+  },
+  "report": {
+    "title": "모든 것이 일시 중지되었습니다",
+    "intro": "다시 시작을 누를 때까지 아무것도 실행되지 않습니다. 멈춘 항목은 다음과 같습니다.",
+    "by": "{{when}}에 {{who}}이(가) 중지했어요.",
+    "who": {
+      "owner": "내가",
+      "linked-machine": "연결된 컴퓨터가",
+      "channel": "채널 명령이",
+      "automation": "자동화 토큰이",
+      "agent": "에이전트가",
+      "system": "서버가"
+    },
+    "empty": "실행 중이거나 대기 중인 작업이 없었어요.",
+    "kind": {
+      "run": "실행 중인 턴",
+      "queued": "대기 중인 턴",
+      "browser": "브라우저 세션",
+      "computer": "컴퓨터 세션",
+      "voice": "음성 통화",
+      "approval": "승인 요청",
+      "other": "기타"
+    },
+    "outcome": {
+      "cancelled": "중지됨",
+      "held": "보류됨",
+      "closed": "종료됨"
+    },
+    "agent": "에이전트 {{name}}",
+    "close": "확인",
+    "resume": "다시 시작",
+    "queue": {
+      "message": "메시지",
+      "task": "작업",
+      "handoff": "인계",
+      "routine": "루틴",
+      "workflow": "워크플로",
+      "automation-run": "자동화"
+    },
+    "run": "실행 {{id}}",
+    "chat": "채팅 {{id}}"
+  },
+  "resume": {
+    "title": "에이전트 다시 시작",
+    "intro": "에이전트를 다시 시작하려면 비밀번호를 입력하세요. 다른 사람이 다시 시작하지 못하게 하기 위해서입니다. 기다리던 작업도 다시 시작됩니다.",
+    "password": "비밀번호",
+    "submit": "다시 시작",
+    "cancel": "취소",
+    "wrong": "비밀번호가 올바르지 않아요.",
+    "forbidden": "소유자만 다시 시작할 수 있습니다.",
+    "error": "다시 시작하지 못했습니다: {{reason}}"
+  },
+  "page": {
+    "title": "안전",
+    "intro": "에이전트가 한 일을 단계별로 보여 주고, 에이전트를 통제하는 기능을 제공해요."
+  },
+  "receipts": {
+    "title": "영수증",
+    "intro": "에이전트의 모든 작업은 영수증을 남겨요. 단계, 도구 호출, 승인, 결정한 사람, 사용한 토큰이 담겨요.",
+    "empty": "아직 영수증이 없어요. 에이전트가 작업을 시작하면 바로 나타나요.",
+    "steps": "{{count}}단계",
+    "tokens": "입력 {{input}} / 출력 {{output}} 토큰",
+    "open": "영수증 열기",
+    "back": "모든 영수증",
+    "timeline": "타임라인",
+    "step": "{{total}}단계 중 {{n}}단계",
+    "scrub": "단계 이동",
+    "export": "내보내기",
+    "exportJson": "JSON 다운로드",
+    "exportHtml": "읽기용 사본 열기",
+    "exporting": "준비 중…",
+    "decidedBy": "결정한 사람: {{who}}",
+    "you": "나",
+    "duration": "{{s}}초",
+    "cost": "비용 {{amount}} {{currency}}",
+    "state": {
+      "running": "실행 중",
+      "done": "완료",
+      "failed": "실패",
+      "cancelled": "중지됨",
+      "interrupted": "중단됨"
+    },
+    "kind": {
+      "run.started": "시작됨",
+      "run.finished": "종료됨",
+      "tool.call": "도구 호출",
+      "tool.result": "도구 결과",
+      "permission": "권한 요청",
+      "approval.requested": "나에게 요청",
+      "approval.decided": "내 결정",
+      "usage": "사용한 토큰",
+      "reply": "답변",
+      "error": "오류",
+      "subagent": "도우미",
+      "screenshot": "스크린샷",
+      "link": "링크",
+      "refused": "안전 검사에서 거부됨"
+    },
+    "youNamed": "{{name}} (나)",
+    "nobody": "아무도 없음 (만료됨)",
+    "someoneElse": "다른 owner 세션"
+  },
+  "retention": {
+    "title": "영수증 보관 기간",
+    "days": "일",
+    "hint": "기간이 지난 영수증과 스크린샷은 영구적으로 삭제돼요.",
+    "save": "저장",
+    "saved": "저장했어요. 오래된 영수증 {{count}}개를 삭제했어요."
+  },
+  "scan": {
+    "title": "설치 전 스킬 검사",
+    "intro": "스킬의 텍스트를 붙여 넣으세요. 프로그램 다운로드 및 실행, 키나 비밀번호 읽기, 숨겨진 텍스트, 데이터 전송 같은 위험 요소를 찾아봐요.",
+    "label": "스킬 텍스트",
+    "run": "검사",
+    "running": "검사 중…",
+    "clean": "위험한 요소는 발견되지 않았어요.",
+    "noticed": "발견된 항목:",
+    "timeout": "검사 시간이 너무 오래 걸려 중단되었어요. 설치하기 전에 스킬을 직접 읽어 보세요.",
+    "error": "검사에 실패했어요: {{reason}}",
+    "line": "{{line}}번째 줄",
+    "kind": {
+      "download-and-run": "프로그램을 다운로드해 실행해요",
+      "credential-path": "키, 비밀번호 또는 브라우저 데이터를 읽어요",
+      "hidden-text": "숨겨진 텍스트가 있어요",
+      "exfiltration": "데이터를 외부로 보낼 수 있어요",
+      "model-instruction": "에이전트에게 몰래 명령을 내리려고 해요"
+    }
+  },
+  "decision": {
+    "proposal": "스킬 “{{skill}}”이(가) 권한을 요청해요",
+    "proposalText": "결정하기 전에 스킬을 열어 요청하는 모든 도구, 웹사이트, 파일을 확인하세요.",
+    "proposalWiden": "승인한 것보다 더 많은 권한을 요청해요. 결정하기 전에 스킬을 열어 변경 내용을 확인하세요."
+  },
+  "find": {
+    "navHint": "에이전트가 할 수 있는 일과 기록",
+    "navKeywords": "승인, 권한, 허용, 로그, 감사"
+  },
+  "plain": {
+    "find": {
+      "navHint": "도우미가 할 수 있는 일과 그 기록"
+    },
+    "stop": {
+      "buttonLabel": "모든 도우미 지금 멈추기"
+    },
+    "page": {
+      "intro": "도우미가 한 일을 단계별로 보여 주고, 도우미를 지켜보는 장치도 있어요."
+    },
+    "receipts": {
+      "intro": "도우미가 한 일마다 기록이 남아요: 단계, 사용한 것, 승인한 내용과 결정한 사람, 사용량.",
+      "empty": "아직 기록이 없어요. 도우미가 일을 시작하면 바로 나타나요.",
+      "tokens": "읽은 양 {{input}} / 쓴 양 {{output}}",
+      "kind": {
+        "usage": "사용량"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "스스로 돌아가는 것",
+        "agent": "도우미",
+        "system": "PasaBot 자체"
+      },
+      "agent": "도우미 {{name}}"
+    },
+    "scan": {
+      "title": "추가하기 전에 능력 확인",
+      "intro": "내용을 붙여 넣어 주세요. 위험한 점을 찾아요: 프로그램 내려받기와 실행, 키나 비밀번호 읽기, 숨긴 글, 데이터 밖으로 보내기.",
+      "label": "내용",
+      "timeout": "확인이 너무 오래 걸려 멈췄어요. 추가하기 전에 직접 읽어 보세요.",
+      "kind": {
+        "model-instruction": "도우미에게 몰래 지시하려고 해요"
+      }
+    }
+  }
+}

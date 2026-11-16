@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "name": "Filipino",
+    "dir": "ltr",
+    "status": "reviewed"
+  },
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "Subukan ulit",
+    "skip": "Laktawan",
+    "cancel": "Kanselahin",
+    "save": "I-save",
+    "loading": "Naglo-load…"
+  },
+  "queue": {
+    "interrupted": "Naputol ang run na ito dahil nag-restart ang server.",
+    "interruptedHint": "Subukan ulit, o laktawan para tumuloy sa susunod na mensahe.",
+    "routineInterrupted": "Naputol ang isang routine run ni {{agent}} dahil nag-restart ang server."
+  },
+  "blocks": {
+    "fallback": "May laman ang mensaheng ito na hindi kayang ipakita ng app ({{kind}})."
+  },
+  "server": {
+    "approvalNeeded": "Kailangan ng pag-apruba",
+    "wantsToUse": "Gusto ni {{name}}: {{tool}}",
+    "interrupted": "Naputol ang takbo dahil nag-restart ang server",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}: pumalya ang takbo",
+    "unknownError": "hindi kilalang error",
+    "devicePaired": "May device na na-pair",
+    "devicePairedBody": "Makakapag-sign in na ang {{what}} sa account mo."
+  },
+  "provider": {
+    "fakeName": "Pekeng utak (pang-test)",
+    "hint": {
+      "notOnPath": "Hindi makita ang {{cli}} sa PATH",
+      "notFound": "Hindi makita ang {{cli}}",
+      "versionFailed": "Pumalya ang `{{cmd}} --version`",
+      "runToSignIn": "patakbuhin ang `{{cmd}}` nang isang beses para mag-sign in",
+      "runToSignInOrKey": "patakbuhin ang `{{cmd}}` nang isang beses para mag-sign in (o itakda ang {{env}} sa vault)",
+      "runToAddProvider": "patakbuhin ang `{{cmd}}` nang isang beses para magdagdag ng provider",
+      "checkedFirstTurn": "sa unang turn titingnan kung naka-sign in",
+      "notAnswering": "Hindi sumasagot ang {{name}} ({{url}})",
+      "turnSignIn": "Hindi gumana ang sign-in noong huling takbo. Mag-sign in ulit sa page ng Brains."
+    }
+  },
+  "channel": {
+    "linked": "Naka-link na. Puwede mo nang kausapin si {{agent}} dito.",
+    "linkInvalid": "Hindi valid o expired na ang link code na iyan. Gumawa ng bago sa PasaBot: Settings → Channels.",
+    "failed": "Pasensya, hindi iyon gumana. Nasa PasaBot app ang detalye.",
+    "empty": "(walang sagot)",
+    "interrupted": "Naputol dahil sa restart. Subukan ulit sa PasaBot app.",
+    "approvalAsk": "Kailangan ng pag-apruba: {{summary}}\nSumagot ng /approve {{id}} o /deny {{id}}",
+    "approvalDevice": "Kailangan ng pag-apruba: {{summary}}\nSa PasaBot app lang sa naka-pair na device ito maaaprubahan.",
+    "approvalNone": "Walang naghihintay na pag-apruba na may ganyang id sa usapang ito.",
+    "approvalOwnerOnly": "Ang naka-link na may-ari lang ang puwedeng sumagot sa mga pag-apruba.",
+    "approvalDeviceOnly": "Sa PasaBot app lang sa naka-pair na device masasagot ang pag-aprubang ito.",
+    "approved": "Inaprubahan ang {{id}}.",
+    "denied": "Tinanggihan ang {{id}}."
+  },
+  "card": {
+    "action": {
+      "open": "Buksan",
+      "dismiss": "Isara",
+      "signIn": "Mag-sign in ulit",
+      "retry": "Subukan ulit",
+      "otherBrain": "Ibang utak ang gamitin",
+      "wait": "Hintayin na lang",
+      "notNow": "Mamaya na",
+      "takeOver": "Ako na",
+      "imDone": "Tapos na ako, ituloy mo",
+      "ok": "Sige",
+      "remind": "Paalalahanan mo ako"
+    },
+    "signIn": {
+      "title": "Kailangan mong mag-sign in para sa utak ni {{name}}",
+      "text": "Naka-sign out ang {{brain}}, kaya hindi pa makasagot si {{name}}. Mag-sign in nang isang beses, tapos subukan ulit."
+    },
+    "failed": {
+      "title": "Hindi natapos ni {{name}} ang sagot na ito",
+      "offline": "Hindi nito naabot ang utak niya. Tingnan ang internet, tapos subukan ulit.",
+      "timeout": "Masyadong natagalan, kaya huminto.",
+      "auth": "Naka-sign out ang utak nito.",
+      "ratelimit": "Naabot na ng utak nito ang limit sa ngayon.",
+      "quota": "Wala nang natitirang gamit ang utak nito sa plan na ito.",
+      "contextoverflow": "Masyado nang mahaba ang usapan para sa utak nito.",
+      "other": "Huminto ang utak nito bago matapos ang sagot."
+    },
+    "limit": {
+      "title": "Naka-pause si {{name}} hanggang {{untilAt}}",
+      "text": "Naabot na ang limit ng utak nito. Maghihintay ang mensahe mo at kusang ipapadala.",
+      "offline": "Hindi maabot ang utak nito ngayon. Maghihintay ang mensahe mo at kusang ipapadala.",
+      "remindNow": "Puwede nang magpatuloy si {{name}}",
+      "offlineTitle": "Naka-pause si {{name}} hanggang {{untilAt}}"
+    },
+    "settled": {
+      "retrying": "Sinusubukan ulit",
+      "signedIn": "Naka-sign in na ulit",
+      "resumed": "Gumagana na ulit",
+      "remind": "Ipapaalala ko sa iyo pagsapit ng {{untilAt}}"
+    },
+    "member": {
+      "failed": "Hindi natapos ni {{name}} ang sagot na ito.",
+      "approvalWaiting": "Hinihintay ni {{name}} ang OK ng may-ari.",
+      "approvalApproved": "Nakuha ni {{name}} ang OK.",
+      "approvalRefused": "Hindi pinayagan si {{name}}."
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "Kailangan mong mag-sign in ulit para kay {{name}}",
+        "text": "Naka-sign out ang isip ni {{name}}, kaya hindi pa siya makasagot. Mag-sign in nang isang beses, tapos ipadala ulit ang mensahe mo."
+      },
+      "action": {
+        "otherBrain": "Ibang isip ang gamitin"
+      },
+      "limit": {
+        "title": "Ubos na muna ang mga turn ni {{name}} sa ngayon",
+        "text": "Puwede siyang magpatuloy pagsapit ng {{untilAt}}. Maghihintay ang mensahe mo at kusang ipapadala.",
+        "offlineTitle": "Hindi maabot ni {{name}} ang isip niya ngayon",
+        "offline": "Susubukan ulit pagsapit ng {{untilAt}}. Maghihintay ang mensahe mo at kusang ipapadala."
+      },
+      "failed": {
+        "offline": "Hindi nito naabot ang isip niya. Tingnan ang internet, tapos subukan ulit.",
+        "auth": "Naka-sign out ang isip nito.",
+        "ratelimit": "Ubos na muna ang mga turn nito sa ngayon.",
+        "quota": "Wala na itong natitirang turn sa plan na ito.",
+        "contextoverflow": "Masyado nang mahaba ang usapan para sa isip nito.",
+        "other": "Huminto ito bago matapos ang sagot."
+      }
+    }
+  }
+}

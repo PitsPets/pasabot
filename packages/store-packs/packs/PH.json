@@ -1,0 +1,39 @@
+{
+  "country": "PH",
+  "name": "Philippines",
+  "stores": [
+    {
+      "id": "shopee",
+      "name": "Shopee",
+      "homeUrl": "https://shopee.ph/",
+      "searchUrl": "https://shopee.ph/search?keyword={query}",
+      "allowedHosts": ["shopee.ph", "*.shopee.ph", "*.susercontent.com"],
+      "currency": "PHP",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "lazada",
+      "name": "Lazada",
+      "homeUrl": "https://www.lazada.com.ph/",
+      "searchUrl": "https://www.lazada.com.ph/catalog/?q={query}",
+      "allowedHosts": ["lazada.com.ph", "*.lazada.com.ph", "*.slatic.net", "*.lazcdn.com"],
+      "currency": "PHP",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "tiktok-shop",
+      "name": "TikTok Shop",
+      "homeUrl": "https://shop.tiktok.com/",
+      "searchUrl": "https://www.tiktok.com/search?q={query}",
+      "allowedHosts": ["tiktok.com", "*.tiktok.com", "*.tiktokcdn.com"],
+      "currency": "PHP",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    }
+  ]
+}

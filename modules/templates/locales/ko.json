@@ -1,0 +1,109 @@
+{
+  "nav": "템플릿",
+  "page": {
+    "title": "템플릿",
+    "starterTitle": "무료 스타터"
+  },
+  "onboarding": {
+    "title": "첫 agent의 두뇌 고르기",
+    "intro": "agent가 생각하려면 두뇌, 즉 AI 모델이 필요해요. 어떻게 마련할지 선택하세요.",
+    "freeTitle": "무료 스타터, 설정 없음",
+    "freeBody": "OpenCode 앱의 무료 모델을 사용해요. 키도, 로그인도, 결제도 필요 없어요.",
+    "freeCta": "무료 스타터 사용",
+    "freeUnavailable": "지금은 무료 스타터를 사용할 수 없어요. 아래에서 직접 두뇌를 설정하세요.",
+    "guidedTitle": "이미 있는 두뇌 사용",
+    "guidedBody": "이 컴퓨터에 로그인된 Claude, Codex, OpenCode 등의 앱을 사용해요.",
+    "found": "이 컴퓨터에서 발견됨",
+    "notFound": "설치되지 않음",
+    "installHint": "설치 방법: {{cmd}}",
+    "guidedCta": "첫 agent 추가",
+    "localTitle": "이 컴퓨터의 로컬 모델",
+    "localBody": "이 컴퓨터에서 모델 서버가 실행 중이에요. agent가 그곳에서 생각하므로 계정이 필요 없고 데이터가 컴퓨터 밖으로 나가지 않아요.",
+    "localFound": "{{name}}이(가) {{url}}에서 응답하며 모델 {{count}}개가 있어요.",
+    "localCta": "{{name}} 사용",
+    "localAdded": "{{name}}을(를) 추가했어요. 첫 agent의 두뇌로 선택하세요.",
+    "useThis": "이것 사용",
+    "setUp": "설정"
+  },
+  "consent": {
+    "title": "무료 스타터를 위해 OpenCode를 설치할까요?",
+    "what": "설치 대상: {{what}}",
+    "where": "설치 위치: {{where}} (현재 사용자 전용, 관리자 권한 불필요)",
+    "from": "출처: {{from}}",
+    "check": "파일을 쓰기 전에 다운로드한 파일을 공개된 SHA-256과 대조해 확인해요.",
+    "models": "{{date}}에 확인한 무료 모델이에요. 무료 모델은 언제든 종료될 수 있으며, 사용 중인 모델이 작동하지 않으면 PasaBot이 알려드려요.",
+    "agree": "설치하고 agent 만들기",
+    "back": "뒤로",
+    "working": "설치 중…",
+    "failed": "OpenCode를 설치하지 못했어요: {{reason}}. 아무것도 만들어지지 않았어요. 직접 두뇌를 설정할 수는 있어요.",
+    "agentName": "스타터",
+    "agentInstructions": "당신은 친절한 도우미입니다. 답변은 짧고 명확하게 해 주세요."
+  },
+  "notice": {
+    "title": "무료 모델이 작동하지 않아요",
+    "body": "{{model}} {{reason}}. agent에 다른 두뇌가 필요해요.",
+    "action": "다른 두뇌 선택",
+    "notFreeTitle": "무료 모델이 더 이상 무료가 아니에요",
+    "not_free": "{{name}}은(는) 더 이상 무료가 아니에요. agent에 다른 두뇌가 필요해요. 직접 설정하거나 로컬 모델을 사용하세요.",
+    "needs_key": "{{name}}에 이제 키나 로그인이 필요해요. agent에 다른 두뇌가 필요해요.",
+    "unavailable": "{{name}}은(는) 더 이상 사용할 수 없어요. agent에 다른 두뇌가 필요해요.",
+    "none": "무료 스타터가 정상 작동 중이에요.",
+    "busy": "무료 모델이 사용 중이거나 할당량을 다 썼어요. {{time}}에 다시 시도하세요."
+  },
+  "catalog": {
+    "title": "템플릿으로 시작",
+    "use": "사용",
+    "useNamed": "{{name}} 사용",
+    "export": "내보내기",
+    "exportNamed": "{{name}} 내보내기",
+    "empty": "아직 템플릿이 없어요."
+  },
+  "describe": {
+    "title": "agent 설명하기",
+    "label": "agent가 무엇을 해야 하나요?",
+    "placeholder": "이런 agent를 만들어 줘…",
+    "submit": "초안 만들기"
+  },
+  "import": {
+    "title": "agent 파일 가져오기",
+    "hint": ".pasabot-template.json, agent .md 파일 또는 어시스턴트 .json 파일이에요.",
+    "label": "agent 파일"
+  },
+  "review": {
+    "title": "새 agent 검토",
+    "hint": "만들기를 누르기 전에는 아무것도 만들어지지 않아요.",
+    "name": "이름",
+    "instructions": "지침",
+    "brain": "두뇌",
+    "create": "agent 만들기",
+    "cancel": "취소"
+  },
+  "error": "문제가 생겼어요: {{msg}}",
+  "server": {
+    "skippedTitle": "루틴을 건너뛰었습니다: 무료 모델이 사용 한도에 걸렸습니다",
+    "skippedBody": "그때까지 무료 모델의 루틴은 실행을 건너뜁니다. 다음 실행은 평소대로 진행됩니다."
+  },
+  "find": {
+    "navHint": "바로 쓰는 에이전트 템플릿",
+    "navKeywords": "템플릿, 예시, 시작, 프리셋"
+  },
+  "plain": {
+    "find": {
+      "navHint": "바로 시작할 수 있는 도우미"
+    },
+    "describe": {
+      "title": "도우미를 설명해 주세요",
+      "label": "도우미가 무엇을 하면 될까요?",
+      "placeholder": "이런 도우미를 만들어 줘…"
+    },
+    "import": {
+      "title": "파일에서 도우미 가져오기",
+      "hint": "PasaBot이나 다른 어시스턴트 앱에서 저장한 도우미 파일.",
+      "label": "도우미 파일"
+    },
+    "review": {
+      "title": "새 도우미 확인",
+      "create": "이 도우미 만들기"
+    }
+  }
+}

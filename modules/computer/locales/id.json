@@ -1,0 +1,143 @@
+{
+  "nav": "Komputer",
+  "page": {
+    "title": "Penggunaan komputer",
+    "intro": "Agent yang memakai komputer mendapat layarnya sendiri. Setiap tangkapan layar, klik, dan ketukan tombol meminta izin Anda dulu. Pantau di sini, dan ambil alih saat perlu.",
+    "empty": "Belum ada agent yang memakai layar. Satu layar dimulai saat pertama kali Anda menyetujui tindakan komputer dari agent."
+  },
+  "setup": {
+    "title": "Siapkan penggunaan komputer",
+    "missing_bins": "Server ini tidak memiliki {{list}}. Pasang, atau jalankan PasaBot dari image komputer (deploy/computer).",
+    "unsupported": "Penggunaan komputer tidak tersedia di sistem operasi ini.",
+    "off": "Penggunaan komputer dimatikan di server ini.",
+    "practice": "Layar latihan: aplikasi uji bawaan, bukan desktop sungguhan.",
+    "windows_soon": "Belum tersedia di Windows. Pembantu belum bisa melihat atau memakai layar di PC Windows; semua yang lain berjalan."
+  },
+  "mac": {
+    "title": "Izinkan agent memakai Mac ini",
+    "warning": "Mac tidak punya layar terpisah untuk asisten: asisten yang kamu izinkan di sini melihat seluruh layarmu dan menggerakkan penunjuk serta keyboard milikmu. Setiap tindakan tetap bertanya dulu. Izinnya milik PasaBot Screen Helper, bukan PasaBot sendiri.",
+    "perAgent": "Penggunaan komputer di Mac ini nonaktif untuk semua agent sampai Anda mengaktifkannya untuk satu agent di sini, dengan kata sandi Anda.",
+    "permissions": "macOS akan meminta Anda mengizinkan Screen Recording dan Accessibility. macOS memberikan izin itu kepada program yang menjalankan PasaBot, sehingga alat baris perintah milik setiap agent kemudian bisa memakai layar Anda tanpa bertanya. Izinkan hanya jika Anda memercayai semua agent di server ini, dan cabut di System Settings → Privacy & Security setelah selesai.",
+    "password": "Kata sandi Anda",
+    "enable": "Izinkan",
+    "enableFor": "Izinkan {{name}} memakai Mac ini",
+    "disable": "Matikan",
+    "disableFor": "Matikan {{name}} di Mac ini",
+    "agentOn": "Diizinkan",
+    "agentOff": "Nonaktif",
+    "noAgents": "Belum ada agent.",
+    "wrong": "Tidak cocok. Coba lagi."
+  },
+  "display": {
+    "shared": "Layar Anda sendiri",
+    "own": "Layar sendiri {{label}}",
+    "live": "Langsung",
+    "control": "Ambil kendali",
+    "release": "Berhenti mengendalikan",
+    "controlHint": "Klik gambar untuk mengeklik di layar agent.",
+    "stop": "Hentikan layar",
+    "typeLabel": "Ketik di layar",
+    "send": "Kirim teks",
+    "alt": "Layar {{name}}",
+    "started": "Dimulai {{time}}"
+  },
+  "activity": {
+    "title": "Tindakan terbaru",
+    "empty": "Belum ada tindakan.",
+    "you": "Anda",
+    "failed": "Gagal"
+  },
+  "error": "Terjadi kesalahan: {{msg}}",
+  "tools": {
+    "computer_display": "Komputer: info layar",
+    "computer_screenshot": "Komputer: ambil tangkapan layar",
+    "computer_click": "Komputer: klik",
+    "computer_move": "Komputer: gerakkan penunjuk",
+    "computer_type": "Komputer: ketik teks",
+    "computer_key": "Komputer: tekan tombol"
+  },
+  "find": {
+    "navHint": "Biarkan agen memakai komputer",
+    "navKeywords": "desktop, layar, tetikus, papan ketik, kendali"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Biarkan pembantu memakai komputer"
+    },
+    "page": {
+      "intro": "Pembantu yang memakai komputer mendapat layarnya sendiri. Setiap gambar layar, klik, dan ketukan tombol meminta izin Anda dulu. Pantau di sini, dan ambil alih saat perlu.",
+      "empty": "Belum ada pembantu yang memakai layar. Satu layar dimulai saat pertama kali Anda menyetujui tindakan komputer dari pembantu."
+    },
+    "setup": {
+      "missing_bins": "Komputer ini tidak punya {{list}}. Pasang dulu, atau minta orang yang menyiapkan PasaBot untuk memakai penyiapan komputernya.",
+      "off": "Penggunaan komputer dimatikan di PasaBot ini."
+    },
+    "mac": {
+      "noAgents": "Belum ada pembantu."
+    },
+    "display": {
+      "controlHint": "Klik gambar untuk mengeklik di layar pembantu.",
+      "release": "Berhenti mengendalikan"
+    }
+  },
+  "card": {
+    "ask": {
+      "title": "Izinkan {{name}} memakai komputer ini?",
+      "body": "{{name}} akan melihat seluruh layarmu dan menggerakkan penunjuk serta keyboard milikmu. Setiap klik dan tombol tetap bertanya dulu, dan kamu bisa menghentikannya kapan saja dengan menahan Esc selama satu detik.",
+      "password": "Kata sandimu",
+      "yes": "Ya, siapkan",
+      "no": "Nanti saja"
+    },
+    "steps": {
+      "title": "Siapkan komputer ini untuk {{name}}",
+      "stopped": "Kamu menghentikan kontrol komputer ini. Tetap berhenti sampai kamu menyalakannya lagi di sini.",
+      "helper": "PasaBot Screen Helper sedang berjalan",
+      "helperHint": "Ia ikut terbuka bersama aplikasi PasaBot di Mac ini. Jika tetap kosong, buka PasaBot.",
+      "screen": "Nyalakan Perekaman Layar",
+      "screenHint": "Pengaturan akan terbuka. Cari PasaBot Screen Helper di daftar lalu nyalakan.",
+      "openScreen": "Buka pengaturan Perekaman Layar",
+      "access": "Nyalakan Aksesibilitas",
+      "accessHint": "Pengaturan akan terbuka. Cari PasaBot Screen Helper di daftar lalu nyalakan.",
+      "openAccess": "Buka pengaturan Aksesibilitas",
+      "try": "Coba",
+      "tryHint": "Mengambil satu gambar layarmu, tidak lebih.",
+      "tryButton": "Ambil gambar uji",
+      "tryDone": "Berhasil. Inilah yang akan dilihat {{name}}.",
+      "ready": "{{name}} sekarang bisa meminta memakai komputer ini. Setiap tindakan menampilkan kartu dulu.",
+      "off": "Matikan untuk {{name}}",
+      "done": "Selesai",
+      "waiting": "Belum"
+    },
+    "live": {
+      "title": "{{name}} sedang memakai komputermu",
+      "idle": "{{name}} sedang tidak memakai komputer.",
+      "takeOver": "Ambil alih",
+      "stop": "Hentikan",
+      "stopHint": "Atau tahan Esc selama satu detik.",
+      "alt": "Tampilan langsung layar {{name}}"
+    }
+  },
+  "preview": {
+    "click": "Akan mengeklik cincin merah.",
+    "rightClick": "Akan mengeklik kanan cincin merah.",
+    "move": "Akan memindahkan penunjuk ke cincin merah.",
+    "type": "Akan mengetik {{count}} karakter:",
+    "key": "Akan menekan: {{keys}}",
+    "screenshot": "Akan mengambil gambar layar.",
+    "alt": "Tempat ia bertindak di layar",
+    "none": "Belum ada gambar layar.",
+    "noCurrent": "Tidak ada gambar layar yang terbaru. Lihat layar Anda sebelum menyetujui."
+  },
+  "server": {
+    "setupCard": "{{name}} ingin memakai komputer ini. Siapkan di kartu di bawah, atau abaikan.",
+    "liveCard": "{{name}} mulai memakai komputer. Tonton langsung di sini."
+  },
+  "watch": {
+    "title": "Pastikan ini Anda untuk melihat layar Anda",
+    "body": "Ini layar Mac Anda sendiri. Ketik kata sandi Anda untuk menontonnya dan mengambil alih di sini.",
+    "again": "Sudah beberapa menit. Ketik kata sandi Anda lagi untuk terus mengendalikan layar Anda.",
+    "password": "Kata sandi Anda",
+    "button": "Tampilkan layar saya",
+    "wrong": "Tidak cocok. Coba lagi."
+  }
+}

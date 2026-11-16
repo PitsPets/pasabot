@@ -1,0 +1,102 @@
+{
+  "nav": "Machines",
+  "settings": "Machines",
+  "page": {
+    "title": "Machines liées",
+    "intro": "Vos autres machines PasaBot. Choisissez-en une pour voir ses agents et discuter avec eux ; le travail s’exécute sur cette machine, selon ses propres règles.",
+    "empty": "Aucune machine liée pour l’instant. Liez-en une dans Réglages → Machines.",
+    "agents": "Agents sur {{name}}",
+    "noAgents": "Aucun agent là-bas pour l’instant.",
+    "back": "Toutes les machines",
+    "open": "Ouvrir",
+    "refresh": "Actualiser"
+  },
+  "chat": {
+    "title": "{{agent}} sur {{machine}}",
+    "placeholder": "Écrire à {{agent}}",
+    "send": "Envoyer",
+    "waiting": "En attente de {{agent}}…",
+    "me": "Vous",
+    "empty": "Dites bonjour. Votre message s’exécute sur {{machine}}, comme une demande d’une machine liée."
+  },
+  "state": {
+    "active": "Liée",
+    "awaiting": "En attente de l’autre propriétaire",
+    "requested": "Souhaite se lier",
+    "revoked": "Déliée"
+  },
+  "grant": {
+    "label": "Ce qu’elle peut faire sur cette machine",
+    "view": "Voir",
+    "chat": "Discuter",
+    "manage": "Gérer",
+    "hint": "Voir : nom de la machine et noms des agents. Discuter : aussi discuter ici avec vos agents. Gérer : aussi les routines et les workflows, selon les règles propres à cette machine. Elle ne devient jamais propriétaire ici."
+  },
+  "status": {
+    "this": "Cette machine : {{name}}",
+    "fingerprint": "Empreinte de la clé {{fp}}",
+    "unavailable": "La liaison n’est pas encore disponible",
+    "transport": "Transport de la liaison : {{transport}} · {{state}}",
+    "transportRunning": "actif",
+    "transportDown": "redémarrage",
+    "transportIdle": "en veille jusqu’à la liaison d’une machine"
+  },
+  "code": {
+    "title": "Lier une machine",
+    "intro": "Affichez ici un code à usage unique, puis saisissez-le sur l’autre machine. Il ne fonctionne qu’une fois et expire au bout de 10 minutes.",
+    "make": "Afficher un code de liaison",
+    "expires": "Expire à {{time}}",
+    "copy": "Copier le code",
+    "copied": "Copié",
+    "qr": "Code de liaison sous forme de QR code"
+  },
+  "join": {
+    "title": "Saisir un code d’une autre machine",
+    "code": "Code de liaison",
+    "submit": "Lier",
+    "done": "Envoyé. L’autre propriétaire confirme sur sa machine."
+  },
+  "reauth": {
+    "password": "Votre mot de passe (pour confirmer que c’est vous)"
+  },
+  "peers": {
+    "title": "Machines liées",
+    "empty": "Aucune pour l’instant.",
+    "confirm": "Confirmer la liaison",
+    "check": "Vérifier",
+    "unlink": "Délier",
+    "unlinkConfirm": "Délier {{name}} ? Elle perd l’accès immédiatement.",
+    "fp": "Clé {{fp}}"
+  },
+  "intros": {
+    "title": "Présentations",
+    "offer": "{{via}} propose de vous présenter {{name}} (clé {{fp}}). Rien n’est lié tant que vous ne la liez pas avec un code de cette machine.",
+    "accept": "Noté",
+    "dismiss": "Ignorer"
+  },
+  "error": "Une erreur s’est produite : {{message}}",
+  "tools": {
+    "link_machines": "Lister les machines liées",
+    "link_message": "Écrire à un agent d’une machine liée"
+  },
+  "server": {
+    "introTitle": "{{peer}} propose de vous présenter {{name}}",
+    "introBody": "Rien n’est lié tant que vous ne le liez pas vous-même avec un code de cette machine.",
+    "linkTitle": "{{name}} veut se lier à cette machine",
+    "linkBody": "Confirmez-le dans Réglages → Machines et choisissez ce qu’elle peut faire ici."
+  },
+  "find": {
+    "navHint": "Autres machines reliées à celle-ci",
+    "navKeywords": "machines, ordinateurs, serveurs, relier, distant"
+  },
+  "plain": {
+    "page": {
+      "intro": "Vos autres ordinateurs avec PasaBot. Choisissez-en un pour voir ses assistants et discuter avec eux ; le travail se fait sur cet ordinateur, selon ses propres règles.",
+      "agents": "Assistants sur {{name}}",
+      "noAgents": "Pas encore d’assistant là-bas."
+    },
+    "grant": {
+      "hint": "Voir : le nom de l’ordinateur et de ses assistants. Discuter : aussi discuter avec vos assistants ici. Gérer : aussi les routines et enchaînements, selon les règles de cet ordinateur. Il ne devient jamais propriétaire ici."
+    }
+  }
+}

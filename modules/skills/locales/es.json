@@ -1,0 +1,202 @@
+{
+  "nav": "Habilidades",
+  "page": {
+    "title": "Habilidades",
+    "intro": "Guías que tus agentes pueden seguir. Activa una habilidad por agente; cada edición conserva las revisiones anteriores."
+  },
+  "loading": "Cargando habilidades…",
+  "empty": "Aún no hay habilidades. Escribe una o instala una abajo.",
+  "error": "Algo salió mal: {{reason}}",
+  "add": {
+    "title": "Añadir una habilidad",
+    "method": "Cómo",
+    "create": "Escribir una habilidad nueva",
+    "folder": "Desde una carpeta del servidor",
+    "git": "Desde una URL de git",
+    "zip": "Desde un paquete (.zip)",
+    "name": "Nombre",
+    "nameHint": "Palabras en minúsculas unidas por guiones, p. ej. cotizaciones-proveedores",
+    "description": "Cuándo usarla",
+    "descriptionHint": "Una línea, p. ej. “Úsala al preparar una cotización para un cliente”",
+    "instructions": "Instrucciones",
+    "path": "Ruta de la carpeta",
+    "pathHint": "La ruta completa de una carpeta con un SKILL.md, en la máquina donde se ejecuta PasaBot",
+    "url": "URL de git",
+    "urlHint": "Una dirección https de un repositorio; se fija al commit que tiene ahora",
+    "ref": "Rama o etiqueta (opcional)",
+    "subdir": "Carpeta dentro del repositorio (opcional)",
+    "zipFile": "Archivo del paquete",
+    "zipMissing": "Elige primero un archivo .zip",
+    "safety": "Nada de una habilidad se ejecuta al instalarla. Empieza desactivada para todos los agentes.",
+    "createButton": "Crear habilidad",
+    "installButton": "Instalar",
+    "builtins": "Habilidades integradas que quitaste:",
+    "builtinButton": "Volver a añadir {{name}}",
+    "open": "Añadir",
+    "cancel": "Cancelar",
+    "cardHint": "Escribe una habilidad nueva o instala una desde una carpeta, una URL de git o un .zip.",
+    "nameMissing": "Ponle un nombre primero",
+    "descriptionMissing": "Di primero cuándo usarla",
+    "instructionsMissing": "Escribe primero las instrucciones"
+  },
+  "item": {
+    "rev": "Revisión {{rev}}",
+    "builtin": "Integrada",
+    "agentMade": "Creada por un agente ({{trust}})",
+    "off": "Desactivada",
+    "agents_one": "Activada para {{count}} agente",
+    "agents_many": "Activada para {{count}} de agentes",
+    "agents_other": "Activada para {{count}} agentes",
+    "open": "Abrir",
+    "openNamed": "Abrir {{name}}"
+  },
+  "detail": {
+    "back": "Volver a todas las habilidades",
+    "source": "Origen: {{source}}",
+    "agentMadeNote": "Un agente escribió o modificó esta habilidad. Léela antes de activarla para otros agentes.",
+    "agents": "Quién puede usarla",
+    "enabled": "Habilidad activada",
+    "noAgents": "Aún no hay agentes.",
+    "onFor": "{{name}}",
+    "uninstall": "Desinstalar",
+    "confirmUninstall": "Sí, desinstalar con todas las revisiones",
+    "cancel": "Cancelar"
+  },
+  "edit": {
+    "title": "SKILL.md",
+    "hint": "Al guardar se crea una revisión nueva. El nombre del encabezado no cambia.",
+    "label": "Texto de la habilidad",
+    "files": "Archivos: {{files}}",
+    "save": "Guardar como revisión nueva",
+    "saved": "Guardado como revisión nueva.",
+    "unchanged": "No hubo cambios."
+  },
+  "rev": {
+    "title": "Revisiones",
+    "label": "Revisión {{rev}}",
+    "current": "actual",
+    "byOwner": "por ti",
+    "byBuiltin": "integrada",
+    "byAgent": "por {{name}}",
+    "rollback": "Volver a {{rev}}",
+    "rolledBack": "Restaurado: el texto de la revisión {{rev}} ahora es la revisión más reciente."
+  },
+  "perm": {
+    "choose": "Qué puede usar esta habilidad",
+    "workspaceOnly": "Archivos: solo el espacio de trabajo de su agente",
+    "hosts": "Sitios web a los que puede acceder",
+    "hostsHint": "Uno por línea, como example.com o *.example.com. Déjalo vacío para ninguno.",
+    "messagingAsk": "Puede enviar mensajes a otras personas (cada uno te pedirá aprobación antes)",
+    "before": "Permisos que se registrarán para esta habilidad:",
+    "files": "Archivos",
+    "filesWorkspace": "Solo el espacio de trabajo de su agente",
+    "filesWorkspacePlus": "El espacio de trabajo de su agente, más {{paths}}",
+    "filesPaths": "Solo {{paths}}",
+    "filesNone": "Sin archivos",
+    "network": "Red",
+    "networkNone": "Sin sitios web",
+    "messaging": "Mensajes a otras personas",
+    "messagingYes": "Sí, y cada uno te pide aprobación antes",
+    "messagingNo": "No",
+    "none": "No hay permisos registrados para esta habilidad.",
+    "proposed": "Permisos propuestos",
+    "proposedIntro": "Un agente importado o un agente pidió esto. No se registra nada hasta que lo apruebes. Los elementos nuevos están marcados.",
+    "approve": "Aprobar",
+    "reject": "Rechazar",
+    "scope": "Solo se registran: estos límites se comprueban cuando una ejecución se vincula a esta habilidad. Los turnos de chat normales aún no están limitados por ellos.",
+    "tools": "Herramientas",
+    "toolsNone": "Sin herramientas",
+    "toolsAsk": "Herramientas que puede invocar",
+    "toolsHint": "Una por línea. Una herramienta de una conexión externa se escribe servidor/herramienta. Déjalo vacío para ninguna.",
+    "outside": "herramienta externa",
+    "new": "nuevo",
+    "removed": "Ya no: {{items}}",
+    "was": "Antes: {{what}}",
+    "first": "Aún no hay nada aprobado para esta habilidad; todo lo de abajo es nuevo.",
+    "widens": "Esto cambia los permisos que aprobaste antes.",
+    "changed": "Esta solicitud cambió después de que la abriste. Revisa la versión nueva de abajo antes de decidir.",
+    "unsaved": "{{name}} está instalada, pero sus permisos no se guardaron ({{reason}}).",
+    "retry": "Guardar permisos de nuevo",
+    "uninstall": "Quitar la habilidad",
+    "hostsTooMany": "Indica 50 sitios web como máximo.",
+    "hostBad": "Escribe cada sitio web solo con su nombre, como example.com o *.example.com (sin https:// ni rutas, máximo 253 caracteres).",
+    "toolsTooMany": "Indica 200 herramientas como máximo.",
+    "toolBad": "Escribe cada herramienta solo con su nombre, sin espacios (máximo 200 caracteres)."
+  },
+  "tools": {
+    "skills_list": "Ver habilidades",
+    "skills_read": "Leer una habilidad",
+    "skills_create": "Crear una habilidad",
+    "skills_install": "Instalar una habilidad desde git",
+    "skills_revise": "Revisar una habilidad",
+    "skills_uninstall": "Desinstalar una habilidad"
+  },
+  "builtin": {
+    "datastore-guide": "Úsala cuando necesites guardar registros estructurados (listas, bitácoras, inventarios, precios) que otros agentes también puedan leer, con las herramientas compartidas de almacén de datos de PasaBot.",
+    "site-publisher": "Úsala cuando el propietario quiera publicar en este servidor de PasaBot una página web pequeña o un sitio estático (un informe, un menú, una lista para compartir).",
+    "skill-author": "Úsala cuando el propietario te pida convertir una forma de trabajar en una habilidad reutilizable, o mejorar una habilidad que hiciste antes."
+  },
+  "find": {
+    "navHint": "Habilidades extra para tus agentes",
+    "navKeywords": "habilidades, capacidades, complementos, saber"
+  },
+  "plain": {
+    "nav": "Habilidades de tus ayudantes",
+    "find": {
+      "navHint": "Enseña a tus ayudantes cosas nuevas que pueden hacer"
+    },
+    "page": {
+      "title": "Habilidades de tus ayudantes",
+      "intro": "Guías paso a paso que tus ayudantes pueden seguir. Activa cada una por ayudante; cada cambio guarda las versiones anteriores."
+    },
+    "loading": "Cargando…",
+    "empty": "Aún no hay nada. Escribe una o añade una abajo.",
+    "add": {
+      "title": "Añadir una habilidad",
+      "create": "Escribir una habilidad nueva",
+      "folder": "Desde una carpeta de esta computadora",
+      "safety": "Nada de esto se ejecuta al añadirlo. Empieza apagado para todos los ayudantes.",
+      "createButton": "Crear esta habilidad",
+      "builtins": "Habilidades incluidas que quitaste:",
+      "cardHint": "Escríbela tú, o tráela desde un archivo."
+    },
+    "item": {
+      "agentMade": "Hecha por un ayudante ({{trust}})",
+      "agents_one": "Activa para {{count}} ayudante",
+      "agents_many": "Activa para {{count}} ayudantes",
+      "agents_other": "Activa para {{count}} ayudantes"
+    },
+    "detail": {
+      "back": "Volver a la lista",
+      "agentMadeNote": "Un ayudante escribió o cambió esto. Léelo antes de activarlo para otros ayudantes.",
+      "enabled": "Está activada",
+      "noAgents": "Aún no hay ayudantes."
+    },
+    "edit": {
+      "label": "Su texto"
+    },
+    "perm": {
+      "choose": "Qué puede usar",
+      "workspaceOnly": "Archivos: solo la carpeta propia de su ayudante",
+      "before": "Permisos que se anotan para ella:",
+      "filesWorkspace": "Solo la carpeta propia de su ayudante",
+      "filesWorkspacePlus": "La carpeta de su ayudante, y además {{paths}}",
+      "none": "Aún no hay permisos anotados.",
+      "proposedIntro": "Un ayudante, o uno traído de un archivo, pidió esto. No se anota nada hasta que lo apruebes. Lo nuevo está marcado.",
+      "scope": "Solo anotado: estos límites se revisan cuando un trabajo está ligado a ella. Los chats normales aún no se limitan.",
+      "toolsHint": "Uno por línea. Una herramienta de una app externa se escribe app/herramienta. Déjalo vacío si no hay.",
+      "first": "Aún no hay nada aprobado; todo lo de abajo es nuevo.",
+      "uninstall": "Quitarla"
+    },
+    "builtin": {
+      "datastore-guide": "Ayuda a un ayudante a llevar listas y registros ordenados (bitácoras, existencias, precios) que otros ayudantes también pueden leer.",
+      "site-publisher": "Ayuda a un ayudante a hacer una pequeña página web (un informe, un menú, una lista para compartir) y publicarla desde esta computadora.",
+      "skill-author": "Ayuda a un ayudante a convertir una forma de trabajar en una habilidad reutilizable, o a mejorar una que hizo antes."
+    },
+    "builtinTitle": {
+      "datastore-guide": "Llevar listas y registros",
+      "site-publisher": "Hacer páginas web pequeñas",
+      "skill-author": "Aprender nuevas formas de trabajar"
+    }
+  }
+}

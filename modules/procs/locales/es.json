@@ -1,0 +1,20 @@
+{
+  "nav": "Procesos",
+  "page": {
+    "title": "Procesos en segundo plano",
+    "intro": "Procesos que tus agentes iniciaron con las herramientas de PasaBot. Detener uno lo finaliza junto con todo lo que inició.",
+    "empty": "No hay nada ejecutándose en segundo plano."
+  },
+  "proc": {
+    "since": "En ejecución desde",
+    "stop": "Detener"
+  },
+  "tools": {
+    "procs_list": "Ver mis procesos en segundo plano",
+    "procs_stop": "Detener uno de mis procesos en segundo plano"
+  },
+  "find": {
+    "navHint": "Procesos y trabajos en marcha",
+    "navKeywords": "procesos, trabajos, en marcha, tareas"
+  }
+}

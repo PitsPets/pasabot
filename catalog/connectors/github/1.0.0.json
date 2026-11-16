@@ -1,0 +1,47 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "github",
+  "name": "GitHub",
+  "version": "1.0.0",
+  "category": "Developer tools",
+  "summary": "Repositories, issues, pull requests and code search through GitHub's official MCP server (runs locally in Docker).",
+  "homepage": "https://github.com/github/github-mcp-server",
+  "source": "https://github.com/github/github-mcp-server",
+  "group": "other",
+  "kind": "mcp-stdio",
+  "mcp": {
+    "command": "docker",
+    "args": [
+      "run",
+      "-i",
+      "--rm",
+      "-e",
+      "GITHUB_PERSONAL_ACCESS_TOKEN",
+      "ghcr.io/github/github-mcp-server@sha256:250bc6ce70788207608ef74cef4397230ff2e8481218da74d6093e4bd9101132"
+    ],
+    "env": {
+      "GITHUB_PERSONAL_ACCESS_TOKEN": "{{secret:token}}"
+    }
+  },
+  "auth": {
+    "type": "api_key",
+    "fields": [
+      {
+        "key": "token",
+        "label": "Personal access token",
+        "secret": true
+      }
+    ],
+    "keyPage": "https://github.com/settings/personal-access-tokens/new"
+  },
+  "defaultTier": 2,
+  "toolClasses": {
+    "add_issue_comment": "outbound-message",
+    "add_reply_to_pull_request_comment": "outbound-message",
+    "add_comment_to_pending_review": "outbound-message",
+    "create_issue": "outbound-message",
+    "issue_write": "outbound-message",
+    "create_pull_request": "outbound-message",
+    "pull_request_review_write": "outbound-message"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "time",
+  "name": "Time and time zones",
+  "version": "1.0.0",
+  "category": "Utilities",
+  "summary": "Current time and time-zone conversion, with the reference MCP time server (needs uv).",
+  "homepage": "https://github.com/modelcontextprotocol/servers",
+  "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+  "group": "other",
+  "kind": "mcp-stdio",
+  "mcp": {
+    "command": "uvx",
+    "args": ["mcp-server-time==2026.10.28"]
+  },
+  "auth": {
+    "type": "none"
+  },
+  "defaultTier": 1
+}

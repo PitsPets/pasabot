@@ -1,0 +1,151 @@
+{
+  "nav": "Orçamento",
+  "page": {
+    "title": "Orçamento",
+    "intro": "Quanto seus agentes custam, os preços que você paga e os limites que os fazem parar. Os preços vêm só da sua tabela: um modelo sem preço nunca é estimado."
+  },
+  "spend": {
+    "title": "Gastos",
+    "today": "Hoje",
+    "month": "Este mês",
+    "total": "Total",
+    "none": "Nada gasto ainda.",
+    "byAgent": "Por agente",
+    "byModel": "Por modelo",
+    "runs": "{{count}} execuções",
+    "tokens": "{{input}} entrada · {{output}} saída · {{cache}} em cache",
+    "priceNotSet": "preço não definido",
+    "unpriced": "{{count}} execuções ainda não têm preço e não são contabilizadas."
+  },
+  "prices": {
+    "title": "Tabela de preços",
+    "intro": "Por milhão de tokens, em uma moeda por modelo. Os modelos usados pelos seus agentes aparecem aqui; defina um preço para contabilizá-los.",
+    "model": "Modelo",
+    "default": "(modelo padrão)",
+    "input": "Entrada",
+    "output": "Saída",
+    "cached": "Em cache",
+    "currency": "Moeda",
+    "save": "Salvar preço",
+    "saved": "Preço salvo.",
+    "remove": "Remover preço",
+    "add": "Adicionar um modelo",
+    "provider": "Cérebro",
+    "empty": "Nenhum modelo ainda. Eles aparecem depois da primeira resposta de um agente.",
+    "providerMissing": "Escreva primeiro o nome do cérebro"
+  },
+  "caps": {
+    "title": "Limites",
+    "intro": "Quando um limite é atingido, o agente para com segurança, novas tarefas esperam e as rotinas são puladas. Só você pode aumentar um limite.",
+    "everyone": "Todos os agentes",
+    "day": "Por dia",
+    "month": "Por mês",
+    "none": "Sem limite",
+    "spent": "{{spent}} de {{cap}} {{currency}}",
+    "save": "Salvar limites",
+    "saved": "Limites salvos.",
+    "uncovered": "Não conta para nenhum limite até ter um preço na moeda dos limites: {{models}}.",
+    "oneCurrency": "Limites e preços devem usar a mesma moeda. Altere-os para a mesma moeda primeiro."
+  },
+  "card": {
+    "who": {
+      "global": "Todos os agentes",
+      "agent": "{{name}}"
+    },
+    "reached": "{{who}} atingiu o orçamento {{period}}: {{spent}} de {{cap}} {{currency}}.",
+    "period": {
+      "day": "diário",
+      "month": "mensal"
+    },
+    "stopped": "{{name}} parou. O que ele escreveu até agora foi mantido.",
+    "held": "Novas tarefas esperam até o limite reiniciar ou você aumentá-lo.",
+    "skipped": "Uma execução de rotina foi pulada.",
+    "ask": "Aumentar o limite ou mantê-lo?",
+    "newCap": "Novo limite ({{currency}})",
+    "raise": "Aumentar limite",
+    "keep": "Manter limite",
+    "raised": "Limite aumentado para {{cap}} {{currency}}.",
+    "kept": "Limite mantido em {{cap}} {{currency}}.",
+    "failed": "Não funcionou. Só o proprietário pode alterar um limite."
+  },
+  "bundle": {
+    "title": "Mover um agente (criptografado)",
+    "intro": "Um arquivo com as configurações, a memória, o espaço de trabalho, as skills e os chats do agente, protegido por uma senha. Importar sempre cria um novo agente.",
+    "agent": "Agente",
+    "passphrase": "Senha do arquivo",
+    "passphraseHint": "Pelo menos 8 caracteres. Sem ela, o arquivo não pode ser aberto.",
+    "vault": "Incluir as entradas do cofre deste agente",
+    "vaultHint": "Desativado por padrão. Pede sua senha novamente.",
+    "password": "Sua senha",
+    "export": "Baixar arquivo criptografado",
+    "exported": "Arquivo baixado.",
+    "file": "Arquivo do pacote",
+    "import": "Importar como novo agente",
+    "imported": "Importado como {{name}}.",
+    "open": "Abrir o chat dele",
+    "error": {
+      "bad_passphrase_or_tampered": "Senha incorreta ou o arquivo foi alterado. Nada foi importado.",
+      "unsafe_path": "O arquivo contém caminhos inseguros. Nada foi importado.",
+      "unsupported_version": "Este arquivo foi criado por um PasaBot mais novo. Nada foi importado.",
+      "not_a_bundle": "Este não é um arquivo de agente do PasaBot.",
+      "reauth_required": "Sua senha é necessária para incluir as entradas do cofre.",
+      "builtin_agent": "O criador de equipes faz parte do PasaBot, então não é salvo em arquivo. Seus outros agentes podem ser.",
+      "other": "Não funcionou."
+    }
+  },
+  "server": {
+    "allAgents": "Todos os agentes",
+    "capHeadDay": "{{what}} atingiu o orçamento diário ({{spent}} de {{cap}} {{currency}}).",
+    "capHeadMonth": "{{what}} atingiu o orçamento mensal ({{spent}} de {{cap}} {{currency}}).",
+    "capStopped": "{{name}} parou; o que escreveu até agora foi mantido.",
+    "capHeld": "Trabalho novo espera até o limite reiniciar ou você aumentá-lo.",
+    "capSkipped": "Uma execução de rotina foi pulada.",
+    "capCard": "{{head}} {{tail}}"
+  },
+  "find": {
+    "navHint": "Limites de gasto dos seus agentes",
+    "navKeywords": "orçamento, limite, dinheiro, teto, gastos"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Limites de gasto dos seus ajudantes"
+    },
+    "page": {
+      "intro": "Quanto custam seus ajudantes, os preços que você paga e os limites que os param. Os preços vêm só da sua tabela: um cérebro sem preço nunca é adivinhado."
+    },
+    "spend": {
+      "byAgent": "Por ajudante",
+      "byModel": "Por versão do cérebro"
+    },
+    "prices": {
+      "intro": "Preço por milhão de pedaços de texto, em uma moeda por versão do cérebro. Versões que seus ajudantes usaram aparecem aqui; defina um preço para contá-las.",
+      "model": "Versão do cérebro",
+      "default": "(versão de sempre)",
+      "add": "Adicionar uma versão",
+      "empty": "Nada ainda. Elas aparecem depois da primeira resposta de um ajudante."
+    },
+    "caps": {
+      "intro": "Quando um limite é atingido, o ajudante para direitinho, o trabalho novo espera e as rotinas pulam. Só você pode aumentar um limite.",
+      "everyone": "Todos os ajudantes",
+      "uncovered": "Não conta para nenhum limite até ter um preço na moeda dos limites: {{models}}."
+    },
+    "card": {
+      "who": {
+        "global": "Todos os ajudantes"
+      }
+    },
+    "bundle": {
+      "title": "Mover um ajudante (arquivo trancado)",
+      "intro": "Um arquivo com os ajustes, a memória, os arquivos, as habilidades e as conversas do ajudante, trancado com uma frase. Trazer sempre cria um ajudante novo.",
+      "agent": "Ajudante",
+      "vault": "Incluir os segredos guardados deste ajudante",
+      "file": "Arquivo do ajudante",
+      "import": "Trazer como novo ajudante",
+      "error": {
+        "not_a_bundle": "Este não é um arquivo de ajudante do PasaBot.",
+        "reauth_required": "Sua senha é necessária para incluir os segredos guardados.",
+        "builtin_agent": "Seu montador de equipe faz parte do PasaBot, então não é salvo em arquivo. Seus outros ajudantes podem ser."
+      }
+    }
+  }
+}

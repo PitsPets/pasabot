@@ -1,0 +1,208 @@
+{
+  "nav": "连接器",
+  "page": {
+    "title": "连接器",
+    "intro": "与外部服务的现成连接。添加后，选择谁可以使用。",
+    "introTech": "与外部服务的现成连接。添加后，请在 MCP 服务器页面选择哪些智能体可以使用。"
+  },
+  "loading": "正在加载…",
+  "kind": {
+    "mcp-stdio": "在本机运行",
+    "mcp-http": "托管服务",
+    "oauth-api": "登录"
+  },
+  "status": {
+    "ready": "已添加",
+    "needs_auth": "需要登录或密钥",
+    "error": "出现问题"
+  },
+  "oauth": {
+    "connected": "已登录。连接器已就绪。",
+    "denied": "登录已取消。",
+    "expired": "该登录链接已过期，请重试。",
+    "failed": "登录失败。请检查客户端 ID 后重试。",
+    "connectedApp": "已登录。{{name}} 已就绪。",
+    "failedApp": "{{name}} 的登录没有完成。请再试一次。"
+  },
+  "catalog": {
+    "title": "添加更多",
+    "homepage": "关于此服务",
+    "install": "添加 {{name}}",
+    "custom": "想添加别的吗？",
+    "customTech": "有工具服务器地址？"
+  },
+  "install": {
+    "secretHint": "已保存在保险库中，智能体看不到。",
+    "oauthHint": "此连接器使用你自己的 OAuth 客户端登录。请在该服务中创建一个，并把下面的回调地址添加进去。",
+    "redirect": "回调地址：",
+    "clientId": "OAuth 客户端 ID",
+    "clientSecret": "OAuth 客户端密钥（如果服务提供了）",
+    "clientSecretHint": "保存在保险库中。",
+    "save": "添加",
+    "cancel": "取消"
+  },
+  "installed": {
+    "title": "已连接",
+    "secrets": "保险库中保存的密钥：{{names}}",
+    "mcpHint": "选择哪些智能体可以使用：",
+    "foundHint": "打开它，并选择谁可以使用：",
+    "mcpLink": "MCP 服务器",
+    "appsLink": "智能体可用的应用",
+    "signIn": "登录",
+    "signInAgain": "重新登录",
+    "remove": "移除",
+    "removeConfirm": "是，移除"
+  },
+  "find": {
+    "navHint": "连接应用和服务",
+    "navKeywords": "应用, 服务, 连接, 集成, 账户"
+  },
+  "search": {
+    "label": "搜索应用",
+    "placeholder": "搜索应用，例如“日历”",
+    "none": "没有匹配的应用。"
+  },
+  "state": {
+    "added": "已添加",
+    "ready": "可以添加",
+    "needs_key": "需要登录或密钥",
+    "missing": "这台电脑上没有"
+  },
+  "ready": {
+    "title": "可以添加"
+  },
+  "missing": {
+    "line": "需要 {{name}}，这台电脑上还没有。",
+    "get": "获取 {{name}}",
+    "ask": "需要 {{name}}，这台电脑上还没有。仍要添加吗？",
+    "addAnyway": "仍要添加"
+  },
+  "found": {
+    "title": "在这台电脑上找到",
+    "intro": "你已经在其他应用里设置好的工具。添加后在这里也能用。",
+    "introTech": "你已在其他应用里设置好的工具服务器。添加后这里也能用。",
+    "from": "设置于 {{app}}",
+    "keys": "它的密钥会直接存入你的保险库，永远不会显示：{{names}}",
+    "keysAsk": "它带有密钥。也复制到你的保险库吗？智能体永远看不到。",
+    "confirm": "好，添加",
+    "blocked": {
+      "key-in-command": "它的命令里直接写着密钥。请自己手动添加：",
+      "unsupported": "PasaBot 无法原样搬过来。请自己手动添加："
+    }
+  },
+  "describe": {
+    "filesystem": "让智能体读取和修改你选定的一个文件夹里的文件。",
+    "git": "让智能体查看一个代码文件夹的历史和改动。",
+    "github": "让智能体处理你的 GitHub 代码、议题和拉取请求。",
+    "github-remote": "同样的 GitHub 工具，由 GitHub 在线运行。这里无需设置。",
+    "google-calendar": "让智能体读取你的 Google 日历。",
+    "time": "告诉智能体世界任何地方的时间。",
+    "notion": "助手可以查找、阅读和编写你 Notion 里的页面。",
+    "atlassian": "助手可以查看并更新你在 Jira 的工作和 Confluence 页面。",
+    "trello": "助手可以读取你的 Trello 看板，移动或添加卡片。",
+    "clickup": "助手可以查找、添加和更新你的 ClickUp 任务。",
+    "intercom": "助手可以查看你在 Intercom 的客户聊天和联系人。",
+    "stripe": "助手可以查看你在 Stripe 的收款、客户和发票。"
+  },
+  "adding": "正在添加…",
+  "server": {
+    "connected": "{{name}} 已连接。试着问我一些相关的问题。"
+  },
+  "groups": {
+    "popular": "热门",
+    "files-notes": "文件和笔记",
+    "calendar-email": "日历和邮件",
+    "work-tasks": "工作和任务",
+    "shop-money": "购物和钱",
+    "social-chat": "社交和聊天",
+    "other": "其他"
+  },
+  "button": {
+    "add": "添加",
+    "signIn": "登录",
+    "code": "需要代码",
+    "added": "已添加"
+  },
+  "signin": {
+    "lead": "{{name}} 会打开自己的页面让你登录。这里不用输入任何内容。",
+    "can": "你的助手将能够：",
+    "ask": "凡是发送、发布、付款或删除，每次都会先问你。",
+    "go": "继续前往 {{name}}",
+    "failed": "无法打开 {{name}} 的登录页面。请稍后再试。",
+    "insecure": "{{name}} 只允许从安全地址登录。请在运行 PasaBot 的电脑上，或通过它的安全（https）地址打开 PasaBot，然后再登录。",
+    "refused": "{{name}} 没有接受 PasaBot 的登录。再试一次也不会改变。"
+  },
+  "code": {
+    "lead": "{{name}} 会给你一个代码，粘贴到这里。",
+    "get": "获取代码",
+    "paste": "粘贴代码",
+    "test": "测试并添加",
+    "bad": "这个代码不能用。请确认你复制完整了。",
+    "unreachable": "无法连接 {{name}}。请检查网络后再试。",
+    "failed": "没成功：{{reason}}",
+    "refused": "{{name}} 有回应，但现在无法和 PasaBot 一起工作。请稍后再试。"
+  },
+  "helpers": {
+    "title": "谁可以使用",
+    "main": "主助手"
+  },
+  "connected": {
+    "title": "{{name}} 已连接",
+    "try": "试着问：",
+    "who": "更改谁可以使用"
+  },
+  "try": {
+    "notion": {
+      "a": "在 Notion 里找我关于下次会议的笔记",
+      "b": "建一个 Notion 页面，写上本周待办"
+    },
+    "atlassian": {
+      "a": "有哪些 Jira 问题分配给我？",
+      "b": "总结一下我团队最近改过的 Confluence 页面"
+    },
+    "trello": {
+      "a": "我今天的 Trello 看板上有什么？",
+      "b": "添加 Trello 卡片：周五给供应商打电话"
+    },
+    "clickup": {
+      "a": "哪些 ClickUp 任务本周到期？",
+      "b": "添加 ClickUp 任务：明天发报价"
+    },
+    "intercom": {
+      "a": "显示我最新的 Intercom 聊天",
+      "b": "谁在 Intercom 上问过退款？"
+    },
+    "stripe": {
+      "a": "我这周在 Stripe 收了多少钱？",
+      "b": "列出我在 Stripe 未付的发票"
+    },
+    "generic": {
+      "a": "你能用 {{name}} 做什么？",
+      "b": "给我看看你在 {{name}} 里能看到什么"
+    }
+  },
+  "plain": {
+    "nav": "助手能用的应用",
+    "page": {
+      "title": "助手能用的应用"
+    },
+    "oauth": {
+      "connected": "已登录。应用已就绪。"
+    },
+    "install": {
+      "secretHint": "安全保存在这台电脑上。助手永远看不到。",
+      "oauthHint": "这个应用用你自己的登录应用登录。请在该服务的网站上创建一个，并把这个返回地址加进去。",
+      "clientId": "登录应用 ID",
+      "clientSecret": "登录应用密码（如果服务给了你）",
+      "clientSecretHint": "安全保存在这台电脑上。"
+    },
+    "installed": {
+      "mcpHint": "选择哪些助手可以使用：",
+      "appsLink": "助手能用的应用和工具"
+    },
+    "found": {
+      "keys": "它的秘密代码会安全保存，永不显示：{{names}}",
+      "keysAsk": "它有秘密代码。也在这里保存一份吗？助手永远看不到。"
+    }
+  }
+}

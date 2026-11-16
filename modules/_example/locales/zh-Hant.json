@@ -1,0 +1,15 @@
+{
+  "nav": "範例",
+  "page": {
+    "title": "範例模組",
+    "body": "Module SDK 的每個插槽都由此模組填入。"
+  },
+  "settings": "範例設定",
+  "composer": "插入備註",
+  "dock": "範例面板",
+  "onboarding": "範例引導步驟",
+  "note": "備註",
+  "tools": {
+    "example_echo": "回顯"
+  }
+}

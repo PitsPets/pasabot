@@ -1,0 +1,74 @@
+{
+  "nav": "Datos",
+  "page": {
+    "title": "Datos compartidos",
+    "intro": "Tablas que comparten tus agentes. Todos los agentes pueden leer todas las tablas, así que las notas privadas van en la memoria de un agente, no aquí.",
+    "size": "Usando {{used}} de {{max}}",
+    "details": "El agente que creó una tabla agrega y cambia sus filas libremente; los cambios de otro agente siguen tus reglas de aprobación para ese agente (quitar filas siempre te lo pregunta). Solo quien la creó puede reestructurar o eliminar una tabla, y eliminarla siempre te lo pregunta.",
+    "more": "Saber más"
+  },
+  "refresh": "Actualizar",
+  "loading": "Cargando…",
+  "empty": "Aún no hay tablas. Cuando un agente cree una, aparecerá aquí.",
+  "error": "No se pudieron cargar los datos. {{reason}}",
+  "table": {
+    "rows_one": "{{count}} fila",
+    "rows_many": "{{count}} de filas",
+    "rows_other": "{{count}} filas",
+    "columns_one": "{{count}} columna",
+    "columns_many": "{{count}} de columnas",
+    "columns_other": "{{count}} columnas",
+    "by": "Creada por {{name}}",
+    "byUnknown": "Autor desconocido",
+    "removedAgent": "un agente eliminado",
+    "ddl": "Cómo está definida",
+    "showRows": "Mostrar filas",
+    "hideRows": "Ocultar filas",
+    "rowsOf": "Filas de {{name}}"
+  },
+  "cell": {
+    "null": "vacío",
+    "blob": "(datos de archivo)"
+  },
+  "result": {
+    "count_one": "{{count}} fila",
+    "count_many": "{{count}} de filas",
+    "count_other": "{{count}} filas",
+    "countMore_one": "Solo {{count}} fila; hay más",
+    "countMore_many": "Primeras {{count}} de filas; hay más",
+    "countMore_other": "Primeras {{count}} filas; hay más"
+  },
+  "query": {
+    "title": "Consultar algo",
+    "label": "Consulta (solo lectura)",
+    "hint": "Una sola instrucción SELECT. Esta pantalla nunca modifica los datos.",
+    "run": "Ejecutar consulta",
+    "result": "Resultado de la consulta",
+    "error": "La consulta no se ejecutó. {{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "Ver tablas compartidas",
+    "datastore_create_table": "Crear una tabla compartida",
+    "datastore_query": "Consultar tablas compartidas",
+    "datastore_write": "Escribir filas",
+    "datastore_alter_table": "Cambiar una tabla que creaste",
+    "datastore_drop_table": "Eliminar una tabla que creaste"
+  },
+  "find": {
+    "navHint": "Tablas y datos que guardan tus agentes",
+    "navKeywords": "datos, tablas, base de datos, registros"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Tablas y listas que guardan tus ayudantes"
+    },
+    "page": {
+      "intro": "Tablas que comparten tus ayudantes. Todos los ayudantes pueden leer todas las tablas, así que las notas privadas van en la memoria de un ayudante, no aquí.",
+      "details": "El ayudante que creó una tabla añade y cambia sus filas libremente; los cambios de otro ayudante siguen tus reglas de aprobación para ese ayudante (borrar filas siempre te pregunta). Solo quien la creó puede cambiar su forma o borrarla, y borrar siempre te pregunta."
+    },
+    "empty": "Aún no hay tablas. Cuando un ayudante cree una, aparecerá aquí.",
+    "table": {
+      "removedAgent": "un ayudante eliminado"
+    }
+  }
+}

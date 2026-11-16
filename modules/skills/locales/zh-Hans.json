@@ -1,0 +1,198 @@
+{
+  "nav": "技能",
+  "page": {
+    "title": "技能",
+    "intro": "智能体可以照着执行的操作手册。可为每个智能体单独开启技能；每次编辑都会保留之前的修订版本。"
+  },
+  "loading": "正在加载技能…",
+  "empty": "还没有技能。可在下方编写或安装一个。",
+  "error": "出错了：{{reason}}",
+  "add": {
+    "title": "添加技能",
+    "method": "方式",
+    "create": "编写新技能",
+    "folder": "从服务器上的文件夹",
+    "git": "从 git URL",
+    "zip": "从压缩包（.zip）",
+    "name": "名称",
+    "nameHint": "小写单词，用短横线连接，例如 supplier-quotes",
+    "description": "使用时机",
+    "descriptionHint": "一句话，例如“为客户准备报价时使用”",
+    "instructions": "说明",
+    "path": "文件夹路径",
+    "pathHint": "包含 SKILL.md 的文件夹在 PasaBot 所在设备上的完整路径",
+    "url": "git URL",
+    "urlHint": "仓库的 https 地址；会固定在当前的提交版本",
+    "ref": "分支或标签（可选）",
+    "subdir": "仓库内的文件夹（可选）",
+    "zipFile": "压缩包文件",
+    "zipMissing": "请先选择一个 .zip 文件",
+    "safety": "安装技能时不会运行其中任何内容。它对所有智能体默认关闭。",
+    "createButton": "创建技能",
+    "installButton": "安装",
+    "builtins": "你已移除的内置技能：",
+    "builtinButton": "重新添加 {{name}}",
+    "open": "添加",
+    "cancel": "取消",
+    "cardHint": "编写新技能，或从文件夹、git 网址或 .zip 安装。",
+    "nameMissing": "请先起个名字",
+    "descriptionMissing": "请先写明什么时候用",
+    "instructionsMissing": "请先写说明"
+  },
+  "item": {
+    "rev": "修订版 {{rev}}",
+    "builtin": "内置",
+    "agentMade": "由智能体创建（{{trust}}）",
+    "off": "已关闭",
+    "agents_other": "已对 {{count}} 个智能体开启",
+    "open": "打开",
+    "openNamed": "打开 {{name}}"
+  },
+  "detail": {
+    "back": "返回全部技能",
+    "source": "来源：{{source}}",
+    "agentMadeNote": "此技能由智能体编写或修改。请先阅读内容，再决定是否对其他智能体开启。",
+    "agents": "可使用的智能体",
+    "enabled": "技能已开启",
+    "noAgents": "还没有智能体。",
+    "onFor": "{{name}}",
+    "uninstall": "卸载",
+    "confirmUninstall": "确认卸载，并删除所有修订版本",
+    "cancel": "取消"
+  },
+  "edit": {
+    "title": "SKILL.md",
+    "hint": "保存会生成新的修订版本。前置信息中的名称保持不变。",
+    "label": "技能内容",
+    "files": "文件：{{files}}",
+    "save": "保存为新修订版本",
+    "saved": "已保存为新修订版本。",
+    "unchanged": "没有任何更改。"
+  },
+  "rev": {
+    "title": "修订版本",
+    "label": "修订版 {{rev}}",
+    "current": "当前",
+    "byOwner": "由你修改",
+    "byBuiltin": "内置",
+    "byAgent": "由 {{name}} 修改",
+    "rollback": "回滚到 {{rev}}",
+    "rolledBack": "已回滚：修订版 {{rev}} 的内容现为最新修订版本。"
+  },
+  "perm": {
+    "choose": "此技能可使用的内容",
+    "workspaceOnly": "文件：仅限所属智能体自己的工作区",
+    "hosts": "可访问的网站",
+    "hostsHint": "每行一个，例如 example.com 或 *.example.com。留空表示不允许任何网站。",
+    "messagingAsk": "可向其他人发送消息（每条仍会先征求你的同意）",
+    "before": "将为此技能记录的权限：",
+    "files": "文件",
+    "filesWorkspace": "仅限所属智能体的工作区",
+    "filesWorkspacePlus": "所属智能体的工作区，以及 {{paths}}",
+    "filesPaths": "仅限 {{paths}}",
+    "filesNone": "无文件",
+    "network": "网络",
+    "networkNone": "无网站",
+    "messaging": "向其他人发送消息",
+    "messagingYes": "允许，且每条都会先征求你的同意",
+    "messagingNo": "不允许",
+    "none": "此技能没有已记录的权限。",
+    "proposed": "申请的权限",
+    "proposedIntro": "这些权限由导入的智能体或某个智能体申请。在你批准之前不会记录。新增项会特别标出。",
+    "approve": "批准",
+    "reject": "拒绝",
+    "scope": "仅作记录：当运行与此技能绑定时才会检查这些限制。目前普通聊天回合不受其约束。",
+    "tools": "工具",
+    "toolsNone": "无工具",
+    "toolsAsk": "可调用的工具",
+    "toolsHint": "每行一个。外部连接的工具写作 server/tool。留空表示不允许任何工具。",
+    "outside": "外部工具",
+    "new": "新增",
+    "removed": "不再包含：{{items}}",
+    "was": "原来：{{what}}",
+    "first": "此技能尚未获得任何批准；以下均为新增。",
+    "widens": "这会改变你之前批准的权限。",
+    "changed": "此申请在你打开后发生了变化。请先查看下方的新版本再做决定。",
+    "unsaved": "{{name}} 已安装，但其权限未能保存（{{reason}}）。",
+    "retry": "重新保存权限",
+    "uninstall": "移除技能",
+    "hostsTooMany": "最多列出 50 个网站。",
+    "hostBad": "每个网站只写域名，例如 example.com 或 *.example.com（不要带 https:// 或路径，最长 253 个字符）。",
+    "toolsTooMany": "最多列出 200 个工具。",
+    "toolBad": "每个工具只写名称，不含空格（最长 200 个字符）。"
+  },
+  "tools": {
+    "skills_list": "列出技能",
+    "skills_read": "阅读技能",
+    "skills_create": "创建技能",
+    "skills_install": "从 git 安装技能",
+    "skills_revise": "修订技能",
+    "skills_uninstall": "卸载技能"
+  },
+  "builtin": {
+    "datastore-guide": "需要用 PasaBot 共享数据存储工具保存其他智能体也能读取的结构化记录（列表、日志、库存、价格）时使用。",
+    "site-publisher": "当所有者想在这台 PasaBot 服务器上发布一个小网页或静态网站（报告、菜单、可分享的列表）时使用。",
+    "skill-author": "当所有者让你把一种工作方式做成可复用的技能，或改进你之前做的技能时使用。"
+  },
+  "find": {
+    "navHint": "为智能体增加技能",
+    "navKeywords": "技能, 能力, 扩展, 知识"
+  },
+  "plain": {
+    "nav": "助手的本领",
+    "find": {
+      "navHint": "教助手学会新的本事"
+    },
+    "page": {
+      "title": "助手的本领",
+      "intro": "你的助手可以照着做的分步指南。按助手逐个打开；每次修改都会保留旧版本。"
+    },
+    "loading": "正在加载…",
+    "empty": "这里还没有。写一个，或在下面添加。",
+    "add": {
+      "title": "添加一项本领",
+      "create": "写一项新本领",
+      "folder": "从这台电脑上的文件夹",
+      "safety": "添加时不会运行任何东西。开始时对每个助手都是关闭的。",
+      "createButton": "创建这项本领",
+      "builtins": "你移除的内置本领：",
+      "cardHint": "自己写一个，或从文件导入。"
+    },
+    "item": {
+      "agentMade": "由助手制作（{{trust}}）",
+      "agents_other": "已为 {{count}} 个助手打开"
+    },
+    "detail": {
+      "back": "返回列表",
+      "agentMadeNote": "这是助手写的或改过的。为其他助手打开前请先读一遍。",
+      "enabled": "已打开",
+      "noAgents": "还没有助手。"
+    },
+    "edit": {
+      "label": "它的文字"
+    },
+    "perm": {
+      "choose": "它可以用什么",
+      "workspaceOnly": "文件：只限它的助手自己的文件夹",
+      "before": "为它记下的权限：",
+      "filesWorkspace": "只限它的助手自己的文件夹",
+      "filesWorkspacePlus": "它的助手自己的文件夹，加上 {{paths}}",
+      "none": "还没有记下权限。",
+      "proposedIntro": "一个助手（或从文件导入的助手）要求了这些。你批准前不会记下任何东西。新的项目有标记。",
+      "scope": "仅记录：工作与它绑定时才检查这些限制。普通聊天暂不受限。",
+      "toolsHint": "每行一个。外部应用的工具写成 应用/工具。没有就留空。",
+      "first": "还没有批准任何东西；下面全是新的。",
+      "uninstall": "移除"
+    },
+    "builtin": {
+      "datastore-guide": "帮助助手整理清单和记录（日志、库存、价格），其他助手也能读。",
+      "site-publisher": "帮助助手做一个小网页（报告、菜单、要分享的清单），并从这台电脑发布上线。",
+      "skill-author": "帮助助手把一种做事方法变成可重复使用的本领，或改进以前做的。"
+    },
+    "builtinTitle": {
+      "datastore-guide": "整理清单和记录",
+      "site-publisher": "做小网页",
+      "skill-author": "学会新的做事方法"
+    }
+  }
+}

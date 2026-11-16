@@ -1,0 +1,24 @@
+{
+  "nav": "搜尋",
+  "title": "搜尋訊息",
+  "label": "搜尋你的聊天",
+  "placeholder": "輸入關鍵字",
+  "hint": "在你參與的所有聊天中尋找，最新的排在最前面。",
+  "empty": "找不到結果。",
+  "untitled": "聊天",
+  "count_other": "{{count}} 則訊息",
+  "author": {
+    "user": "使用者",
+    "agent": "agent",
+    "system": "PasaBot",
+    "external": "外部"
+  },
+  "error": "搜尋失敗。{{reason}}",
+  "tools": {
+    "search_messages": "搜尋訊息"
+  },
+  "find": {
+    "navHint": "在聊天中尋找任何訊息",
+    "navKeywords": "尋找, 搜尋, 訊息, 歷史"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nav": "Tìm kiếm",
+  "title": "Tìm tin nhắn",
+  "label": "Tìm trong các chat của bạn",
+  "placeholder": "Nhập một từ",
+  "hint": "Tìm từ trong mọi chat bạn tham gia, mới nhất trước.",
+  "empty": "Không tìm thấy gì.",
+  "untitled": "Trò chuyện",
+  "count_other": "{{count}} tin nhắn",
+  "author": {
+    "user": "Người",
+    "agent": "Tác nhân",
+    "system": "PasaBot",
+    "external": "Bên ngoài"
+  },
+  "error": "Tìm kiếm thất bại. {{reason}}",
+  "tools": {
+    "search_messages": "Tìm tin nhắn"
+  },
+  "find": {
+    "navHint": "Tìm bất kỳ tin nhắn nào trong cuộc trò chuyện",
+    "navKeywords": "tìm, tìm kiếm, tin nhắn, lịch sử"
+  }
+}

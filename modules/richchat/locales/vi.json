@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "Câu hỏi từ agent",
+    "send": "Gửi câu trả lời",
+    "answered": "Đã trả lời: {{answer}}",
+    "expired": "Không có câu trả lời kịp lúc. Agent đã tiếp tục mà không có nó.",
+    "cancelled": "Agent đã ngừng chờ câu trả lời này.",
+    "pickMany": "Chọn một hoặc nhiều mục"
+  },
+  "form": {
+    "submit": "Gửi",
+    "sent": "Đã gửi",
+    "required": "Bắt buộc",
+    "invalid": "Hãy kiểm tra {{field}}.",
+    "expired": "Biểu mẫu này đã đóng trước khi được gửi.",
+    "yes": "Có",
+    "no": "Không"
+  },
+  "html": {
+    "note": "Do agent tạo ra. Chạy tách biệt với PasaBot và không thể xem tài khoản của bạn.",
+    "frame": "Trang của agent: {{title}}"
+  },
+  "files": {
+    "open": "Mở {{name}}",
+    "download": "Tải xuống {{name}}",
+    "close": "Đóng",
+    "zip": "Tệp nén ZIP",
+    "file": "Tệp",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "Đính kèm tệp",
+    "title": "Gửi tệp",
+    "caption": "Tin nhắn (không bắt buộc)",
+    "send": "Gửi",
+    "cancel": "Hủy",
+    "remove": "Xóa {{name}}",
+    "uploading": "Đang tải lên {{pct}}%",
+    "tooBig": "{{name}} vượt quá 100 MB.",
+    "tooMuch": "Các tệp trong một tin nhắn có tổng tối đa 250 MB.",
+    "failed": "Tải lên thất bại. {{reason}}",
+    "limits": "Tối đa 100 MB mỗi tệp, 250 MB mỗi tin nhắn."
+  },
+  "error": "Không thể gửi. {{reason}}",
+  "tools": {
+    "richchat_ask": "Hỏi người dùng",
+    "richchat_form": "Yêu cầu điền biểu mẫu",
+    "richchat_html": "Hiển thị HTML",
+    "richchat_share_file": "Gửi tệp cho chủ"
+  },
+  "card": {
+    "file": {
+      "title": "{{name}} đã xong",
+      "text": "{{agent}} vừa làm xong."
+    }
+  }
+}

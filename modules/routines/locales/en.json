@@ -1,0 +1,140 @@
+{
+  "nav": "Routines",
+  "page": {
+    "title": "Routines",
+    "intro": "Routines run an agent by hand, on a schedule or when something calls in. A reply of exactly (quiet) means nothing new, and you won't be notified.",
+    "calendar": "Calendar feed",
+    "empty": "No routines yet."
+  },
+  "hook": {
+    "title": "Webhook address and secret",
+    "once": "Copy these now. The secret is shown only once; rotating it gives a new address too.",
+    "saved": "I've saved them"
+  },
+  "create": {
+    "title": "New routine",
+    "name": "Name",
+    "agent": "Agent",
+    "prompt": "What should the agent do?",
+    "promptHint": "Sent as the routine's message each time it runs.",
+    "trigger": "Runs",
+    "cron": "Schedule (cron)",
+    "cronHint": "minute hour day month weekday, e.g. 0 9 * * 1-5 = 9:00 on weekdays",
+    "tz": "Time zone",
+    "target": "Where it runs",
+    "submit": "Create routine",
+    "workflow": "Workflow",
+    "noWorkflows": "No workflows yet. Make one on the Workflows page first.",
+    "offline": "Run even offline",
+    "offlineHint": "If the agent's main brain can't be reached, use its next brain (for example a local model) and say so in the result."
+  },
+  "kind": {
+    "schedule": "On a schedule",
+    "manual": "By hand",
+    "webhook": "Webhook",
+    "github": "GitHub",
+    "event": "On an event"
+  },
+  "target": {
+    "chat": "In the agent's chat",
+    "thread": "In a new thread",
+    "workflow": "Starts a workflow"
+  },
+  "state": {
+    "paused": "Paused"
+  },
+  "routine": {
+    "next": "Next",
+    "last": "Last"
+  },
+  "result": {
+    "pending": "Running",
+    "ok": "Done",
+    "silent": "Nothing new",
+    "failed": "Failed",
+    "interrupted": "Interrupted",
+    "skipped": "Skipped",
+    "held": "Held"
+  },
+  "source": {
+    "manual": "by hand",
+    "schedule": "schedule",
+    "webhook": "webhook",
+    "event": "event",
+    "github": "GitHub",
+    "test": "test run"
+  },
+  "action": {
+    "run": "Run now",
+    "test": "Test run",
+    "pause": "Pause",
+    "resume": "Resume",
+    "rotate": "New secret",
+    "rotateConfirm": "Make a new secret and address? Senders using the old ones will stop working.",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this routine? Its activity stays in the feed."
+  },
+  "activity": {
+    "title": "Activity",
+    "empty": "Nothing has run yet.",
+    "open": "Open chat",
+    "silent": "Ran, nothing new to report.",
+    "offlineFallback": "Main brain offline: ran on {{to}}",
+    "rateLimited": "Rate limited: the free model is busy or out of quota, so this run was skipped. The next one runs as usual."
+  },
+  "tools": {
+    "routines_list": "List my routines",
+    "routines_create": "Create a routine",
+    "routines_pause": "Pause one of my routines",
+    "routines_delete": "Delete one of my routines"
+  },
+  "server": {
+    "finished": "Routine \"{{name}}\" finished"
+  },
+  "find": {
+    "navHint": "Run an agent on a schedule",
+    "navKeywords": "schedule, every day, cron, timer, repeat, daily, weekly",
+    "stillOn_one": "{{count}} routine is still on and will keep running.",
+    "stillOn_other": "{{count}} routines are still on and will keep running."
+  },
+  "plain": {
+    "find": {
+      "navHint": "Run a helper on a schedule"
+    },
+    "page": {
+      "intro": "Routines start a helper by hand, on a schedule or when something calls in. A reply of exactly (quiet) means nothing new, and you won’t be notified."
+    },
+    "create": {
+      "agent": "Helper",
+      "prompt": "What should the helper do?",
+      "offlineHint": "If the helper’s main brain can’t be reached, use its next brain (for example one on this computer) and say so in the result."
+    },
+    "kind": {
+      "webhook": "When a link is called"
+    },
+    "source": {
+      "webhook": "a link"
+    },
+    "hook": {
+      "title": "Its link and secret"
+    },
+    "target": {
+      "chat": "In the helper’s chat"
+    },
+    "activity": {
+      "rateLimited": "Skipped: the free brain is busy or used up for now. The next one runs as usual."
+    }
+  },
+  "card": {
+    "created": {
+      "title": "New routine: {{name}}",
+      "text": "It runs by itself. You can pause it, or delete it if you don’t want it."
+    },
+    "pause": "Pause it",
+    "undo": "Delete it",
+    "open": "See routines",
+    "paused": "Paused",
+    "undone": "Removed",
+    "gone": "This routine is gone"
+  }
+}

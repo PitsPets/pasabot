@@ -1,0 +1,1147 @@
+/* The team builder's Stage (onboarding direction A): full screen, one calm question, the helper big in the middle. */
+.app-bare {
+  min-block-size: 100dvh;
+  background: var(--bk-bg);
+  outline: none;
+}
+.stg {
+  --stg-gutter: 48px;
+  position: relative;
+  min-block-size: 100dvh;
+  display: flex;
+  flex-direction: column;
+  color: var(--bk-ink);
+  font-family: var(--bk-sans);
+  background:
+    radial-gradient(
+      640px 420px at 50% 34%,
+      color-mix(in srgb, var(--bk-primary) 9%, transparent),
+      transparent 70%
+    ),
+    var(--bk-bg);
+  padding-block-end: 132px;
+}
+.stg-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  min-block-size: 84px;
+  padding-inline: var(--stg-gutter);
+}
+.stg-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font: 700 20px var(--bk-head);
+}
+.stg-prog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-inline-size: 0;
+}
+.stg-segs {
+  display: flex;
+  gap: 6px;
+}
+.stg-segs i {
+  inline-size: 52px;
+  block-size: 6px;
+  border-radius: 6px;
+  background: var(--bk-line);
+  transition: background 0.3s ease;
+}
+.stg-segs i.done {
+  background: var(--bk-primary);
+}
+.stg-segs i.now {
+  background: linear-gradient(90deg, var(--bk-primary) 50%, var(--bk-line) 50%);
+}
+[dir="rtl"] .stg-segs i.now {
+  background: linear-gradient(-90deg, var(--bk-primary) 50%, var(--bk-line) 50%);
+}
+.stg-prog small {
+  color: var(--bk-muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+.stg-short {
+  display: none;
+}
+.stg-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.stg-skip {
+  min-block-size: 44px;
+  padding-inline: 14px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--bk-muted);
+  font: 600 15px var(--bk-sans);
+  cursor: pointer;
+}
+.stg-skip:hover {
+  color: var(--bk-ink);
+  background: var(--bk-soft);
+}
+.stg-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-inline: var(--stg-gutter);
+  padding-block-start: 40px;
+  animation: stg-in 0.35s ease both;
+}
+.stg-welcome {
+  justify-content: center;
+  padding-block-start: 0;
+}
+.stg-say {
+  margin: 24px 0 0;
+  font: 700 46px / 1.12 var(--bk-head);
+  letter-spacing: -0.01em;
+  max-inline-size: 860px;
+  outline: none;
+  overflow-wrap: anywhere;
+}
+.stg-sub {
+  margin: 14px 0 0;
+  color: var(--bk-ink-2);
+  font-size: 20px;
+  max-inline-size: 640px;
+}
+.stg-hero {
+  position: relative;
+  line-height: 0;
+}
+.stg-hero.mid {
+  margin-block-start: 6px;
+}
+.stg-glow {
+  position: absolute;
+  inset: -60px;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--bk-primary) 16%, transparent),
+    transparent
+  );
+  pointer-events: none;
+}
+.stg-hero > :not(.stg-glow, .stg-react) {
+  position: relative;
+}
+.stg-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--bk-soft);
+  box-shadow: inset 0 0 0 1px var(--bk-line);
+  font-weight: 700;
+  font-size: 16px;
+}
+.stg-dot {
+  inline-size: 10px;
+  block-size: 10px;
+  border-radius: 50%;
+  background: var(--bk-work);
+}
+.stg-react {
+  position: absolute;
+  inset-inline-start: 100%;
+  inset-block-start: -6px;
+  margin-inline-start: 8px;
+  padding: 6px 12px;
+  border-radius: 12px 12px 12px 4px;
+  background: var(--bk-signal);
+  color: var(--bk-signal-ink, #2a1d00);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  white-space: nowrap;
+  animation: stg-pop 0.3s ease both;
+}
+.stg-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-block-start: 36px;
+}
+.stg-cta.start {
+  align-items: flex-start;
+  margin-block-start: 34px;
+}
+.stg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-block-size: 52px;
+  padding-inline: 26px;
+  border: 0;
+  border-radius: 999px;
+  font: 700 17px var(--bk-sans);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.stg-btn.pri {
+  background: var(--bk-primary);
+  color: var(--bk-primary-ink);
+}
+.stg-btn.sec {
+  background: var(--bk-soft);
+  color: var(--bk-ink);
+  box-shadow: inset 0 0 0 1px var(--bk-line);
+}
+.stg-btn.big {
+  min-block-size: 60px;
+  padding-inline: 34px;
+  font-size: 19px;
+}
+.stg-btn:disabled,
+.stg-back:disabled,
+.stg-chip:has(input:disabled),
+.stg-chip:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+[dir="rtl"] .stg-btn .bk-icon,
+[dir="rtl"] .stg-back .bk-icon {
+  transform: scaleX(-1);
+}
+.stg-promises {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.stg-promises li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--bk-panel);
+  box-shadow: inset 0 0 0 1px var(--bk-line);
+  color: var(--bk-ink-2);
+  font-size: 16px;
+  font-weight: 600;
+}
+.stg-promises .bk-icon,
+.stg-promises svg {
+  color: var(--bk-primary);
+}
+
+/* language */
+.stg-langs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 248px));
+  gap: 18px;
+  margin-block-start: 44px;
+  inline-size: 100%;
+  justify-content: center;
+}
+.stg-lang {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-block-size: 150px;
+  padding: 22px 22px 20px;
+  border: 0;
+  border-radius: var(--bk-radius, 20px);
+  background: var(--bk-panel);
+  box-shadow: inset 0 0 0 1px var(--bk-line);
+  color: var(--bk-ink);
+  text-align: start;
+  font: inherit;
+  cursor: pointer;
+  transition:
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+.stg-lang b {
+  font: 700 24px var(--bk-head);
+  padding-inline-end: 36px;
+}
+.stg-eg {
+  padding: 10px 14px;
+  border-radius: 14px 14px 14px 4px;
+  background: var(--bk-soft);
+  color: var(--bk-ink-2);
+  font-size: 16px;
+  line-height: 1.35;
+}
+.stg-lang[data-on] {
+  background: color-mix(in srgb, var(--bk-primary) 12%, var(--bk-panel));
+  box-shadow: inset 0 0 0 2px var(--bk-primary);
+}
+.stg-lang[data-on] .stg-eg {
+  background: var(--bk-me, #24523b);
+  color: var(--bk-me-ink, #fff);
+}
+.stg-lang:has(input:focus-visible),
+.stg-chip:has(input:focus-visible) {
+  outline: 3px solid var(--bk-focus, var(--bk-primary));
+  outline-offset: 2px;
+}
+.stg-tick {
+  position: absolute;
+  inset-block-start: 18px;
+  inset-inline-end: 18px;
+  display: grid;
+  place-items: center;
+  inline-size: 30px;
+  block-size: 30px;
+  border-radius: 50%;
+  background: var(--bk-primary);
+  color: var(--bk-primary-ink);
+}
+.stg-more {
+  color: var(--bk-muted);
+  font-size: 16px;
+}
+.stg-seeall {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-block-start: auto;
+  color: var(--bk-primary);
+  font-weight: 700;
+  font-size: 15px;
+}
+.stg-langlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-block-start: 22px;
+  max-inline-size: 1046px;
+  animation: stg-in 0.25s ease both;
+}
+
+/* name */
+.stg-namefield {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-block-start: 34px;
+  inline-size: min(560px, 100%);
+  min-block-size: 72px;
+  padding-inline: 24px;
+  border-radius: 22px;
+  background: var(--bk-panel);
+  box-shadow: inset 0 0 0 2px var(--bk-primary);
+}
+.stg-namefield[data-bad] {
+  box-shadow: inset 0 0 0 2px var(--bk-danger);
+}
+/* the field's own ring shows focus (the box around it), not a second ring on the input inside */
+.stg .stg-namefield input:focus-visible,
+.stg .stg-free textarea:focus-visible {
+  outline: none;
+}
+.stg-namefield:focus-within {
+  outline: 3px solid var(--bk-focus, var(--bk-primary));
+  outline-offset: 3px;
+}
+.stg-namefield input {
+  flex: 1;
+  min-inline-size: 0;
+  border: 0;
+  background: none;
+  color: var(--bk-ink);
+  font: 700 30px var(--bk-head);
+  outline: none;
+}
+.stg-hint {
+  color: var(--bk-muted);
+  font: 600 15px var(--bk-sans);
+  white-space: nowrap;
+}
+.stg-err {
+  margin: 10px 0 0;
+  color: var(--bk-danger);
+  font-weight: 600;
+  font-size: 16px;
+}
+.stg-ideas {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-inline-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-block-start: 22px;
+}
+.stg-lbl {
+  color: var(--bk-muted);
+  font-weight: 600;
+  font-size: 15px;
+  margin-inline-end: 4px;
+}
+
+/* chips */
+.stg-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-block-size: 48px;
+  padding-inline: 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--bk-soft);
+  box-shadow: inset 0 0 0 1px var(--bk-line);
+  color: var(--bk-ink);
+  font: 600 16px var(--bk-sans);
+  cursor: pointer;
+  transition:
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+.stg-chip.nm {
+  padding-inline-start: 6px;
+}
+.stg-chip[data-on] {
+  background: color-mix(in srgb, var(--bk-primary) 16%, var(--bk-soft));
+  box-shadow: inset 0 0 0 2px var(--bk-primary);
+}
+.stg-chip svg {
+  color: var(--bk-primary);
+}
+
+/* question */
+.stg-q {
+  align-items: stretch;
+  inline-size: min(920px, 100%);
+  margin-inline: auto;
+  text-align: start;
+  padding-block-start: 64px;
+}
+.stg-qrow {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+.stg-qrow .stg-say {
+  margin-block-start: 0;
+  font-size: 44px;
+}
+.stg-qrow .stg-sub {
+  margin-block-start: 8px;
+}
+.stg-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block-start: 34px;
+  padding-inline-start: 110px;
+}
+/* the several-answers question is a fieldset: none of its own frame */
+fieldset.stg-chips {
+  border: 0;
+  margin-inline: 0;
+  margin-block-end: 0;
+  padding-block: 0;
+  padding-inline-end: 0;
+  min-inline-size: 0;
+}
+.stg-free {
+  margin: 26px 0 0 110px;
+  margin-inline-start: 110px;
+  margin-inline-end: 0;
+  padding: 18px 22px;
+  border-radius: 20px;
+  background: var(--bk-panel);
+  box-shadow: inset 0 0 0 1px var(--bk-line);
+  text-align: start;
+}
+.stg-free:focus-within {
+  box-shadow: inset 0 0 0 2px var(--bk-primary);
+}
+.stg-free label {
+  display: block;
+  margin-block-end: 6px;
+  color: var(--bk-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+.stg-free textarea {
+  display: block;
+  inline-size: 100%;
+  min-block-size: 56px;
+  border: 0;
+  resize: vertical;
+  background: none;
+  color: var(--bk-ink);
+  font: 400 18px / 1.5 var(--bk-sans);
+  outline: none;
+}
+
+/* plan */
+.stg-plan {
+  padding-block-start: 30px;
+}
+.stg-plan .stg-say {
+  margin-block-start: 10px;
+  font-size: 42px;
+}
+.stg-lead {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-block-start: 26px;
+  padding: 8px 24px 8px 8px;
+  padding-inline: 8px 24px;
+  border-radius: 999px;
+  background: var(--bk-panel);
+  box-shadow: inset 0 0 0 1px var(--bk-line);
+  text-align: start;
+}
+.stg-lead b {
+  display: block;
+  font: 700 20px var(--bk-head);
+}
+.stg-lead span {
+  color: var(--bk-ink-2);
+  font-size: 15px;
+}
+/* the lead's line down to the rail; the rail and each card's line are drawn by the cards themselves, so the rail
+   always runs from the first card shown to the last one */
+.stg-wires {
+  inline-size: 2px;
+  block-size: 22px;
+  margin-block-start: 0;
+  background: var(--bk-line);
+}
+.stg-team {
+  --stg-wire: 22px;
+  --stg-gap: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* a wrapped row keeps room for its own lines */
+  gap: calc(var(--stg-wire) + var(--stg-gap)) var(--stg-gap);
+  margin: 0;
+  padding: var(--stg-wire) 0 0;
+  list-style: none;
+}
+.stg-team > .stg-hcard::before,
+.stg-team > .stg-hcard::after {
+  position: absolute;
+  inset-block-start: calc(-1 * var(--stg-wire));
+  block-size: var(--stg-wire);
+  box-sizing: border-box;
+  border: 0 solid var(--bk-line);
+  content: "";
+  pointer-events: none;
+}
+/* a card's own line up from its centre */
+.stg-team > .stg-hcard::before {
+  inset-inline-start: calc(50% - 1px);
+  inline-size: 2px;
+  background: var(--bk-line);
+}
+/* the rail over a card: across it and half the gap on each side */
+.stg-team > .stg-hcard::after {
+  inset-inline: calc(-0.5 * var(--stg-gap));
+  border-block-start-width: 2px;
+}
+/* the first and last cards: the rail turns down into them with a round corner */
+.stg-team > .stg-hcard:first-child::after {
+  inset-inline-start: calc(50% - 1px);
+  border-inline-start-width: 2px;
+  border-start-start-radius: 16px;
+}
+.stg-team > .stg-hcard:last-child::after {
+  inset-inline-end: calc(50% - 1px);
+  border-inline-end-width: 2px;
+  border-start-end-radius: 16px;
+}
+.stg-team > .stg-hcard:first-child::before,
+.stg-team > .stg-hcard:last-child::before {
+  display: none;
+}
+/* one card: just the straight line down */
+.stg-team > .stg-hcard:only-child::before {
+  display: block;
+}
+.stg-team > .stg-hcard:only-child::after {
+  display: none;
+}
+.stg-hcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  inline-size: 236px;
+  padding: 24px 20px 20px;
+  border-radius: 22px;
+  background: var(--bk-panel);
+  box-shadow: inset 0 0 0 1px var(--bk-line);
+  text-align: center;
+  animation: stg-arrive 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+/* an arriving card's line is drawn once the card is in (reduced motion: at once, see the end of this file) */
+.stg-team > .stg-hcard[data-arriving]::before,
+.stg-team > .stg-hcard[data-arriving]::after {
+  animation: stg-wire-in 0.3s ease-out 0.35s both;
+}
+@keyframes stg-wire-in {
+  from {
+    opacity: 0;
+  }
+}
+.stg-hcard[data-arriving] {
+  box-shadow:
+    inset 0 0 0 1px var(--bk-line),
+    0 0 0 2px color-mix(in srgb, var(--bk-primary) 60%, transparent);
+}
+.stg-hcard b {
+  margin-block-start: 8px;
+  font: 700 22px var(--bk-head);
+}
+.stg-hcard p {
+  margin: 0;
+  color: var(--bk-ink-2);
+  font-size: 16px;
+  line-height: 1.4;
+}
+/* a short reason on one line: a longer one ends in "…" (the full words are in the final summary) */
+.stg-why {
+  max-inline-size: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-block-start: 6px;
+  color: var(--bk-muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+/* the badge sits over the card's connector line (painted after it), never under it, while the card arrives */
+.stg-arriving {
+  position: absolute;
+  z-index: 1;
+  inset-block-start: -14px;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--bk-primary);
+  color: var(--bk-primary-ink);
+  font-weight: 700;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.stg-picks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.stg-picks li {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--bk-soft);
+  color: var(--bk-ink-2);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* foot: Back on the start side, the main button on the end side (fixed to the bottom) */
+.stg-foot {
+  position: fixed;
+  inset-inline: var(--stg-gutter);
+  inset-block-end: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  z-index: 2;
+}
+.stg-foot.center {
+  flex-direction: column;
+  justify-content: center;
+}
+.stg-pair {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+.stg-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-block-size: 52px;
+  padding-inline: 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--bk-bg);
+  box-shadow: inset 0 0 0 1px var(--bk-line);
+  color: var(--bk-ink-2);
+  font: 600 17px var(--bk-sans);
+  cursor: pointer;
+}
+.stg-status {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-inline-size: 0;
+  color: var(--bk-ink-2);
+  font-size: 16px;
+}
+.stg-status:empty {
+  display: none;
+}
+.stg-foot .stg-status:empty {
+  display: flex;
+}
+.stg-wait {
+  animation: stg-breathe 1.6s ease-in-out infinite;
+}
+.stg-retry {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* done */
+.stg-fin {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  padding-inline: 120px;
+  animation: stg-in 0.4s ease both;
+}
+.stg-fin .stg-say {
+  font-size: 52px;
+  text-align: start;
+}
+.stg-fin .stg-sub {
+  text-align: start;
+}
+.stg-cluster {
+  position: relative;
+  inline-size: 300px;
+  block-size: 210px;
+  margin-block-end: 26px;
+}
+.stg-cl {
+  position: absolute;
+  inline-size: 76px;
+  block-size: 76px;
+  line-height: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px var(--bk-bg);
+  animation: stg-pop 0.45s ease both;
+}
+.stg-cl.main {
+  inline-size: 124px;
+  block-size: 124px;
+  inset-inline-start: 112px;
+  inset-block-start: 58px;
+}
+.stg-listcard {
+  justify-self: center;
+  inline-size: min(440px, 100%);
+  padding: 18px;
+  border-radius: 26px;
+  background: var(--bk-panel);
+  box-shadow:
+    inset 0 0 0 1px var(--bk-line),
+    0 30px 80px rgba(0, 0, 0, 0.3);
+}
+.stg-listcard h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4px 10px 10px;
+  color: var(--bk-muted);
+  font: 700 15px var(--bk-sans);
+}
+.stg-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px;
+  border-radius: 16px;
+  text-align: start;
+}
+.stg-row b {
+  display: block;
+  font-size: 17px;
+  line-height: 1.25;
+}
+.stg-row span {
+  color: var(--bk-muted);
+  font-size: 15px;
+}
+.stg-row.pinned {
+  background: color-mix(in srgb, var(--bk-primary) 12%, var(--bk-panel));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--bk-primary) 30%, var(--bk-line));
+}
+.stg-row.pinned > svg:last-child {
+  margin-inline-start: auto;
+  color: var(--bk-signal);
+}
+.stg-callout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 10px 12px;
+  color: var(--bk-signal);
+  font-weight: 700;
+  font-size: 15px;
+}
+/* the done screen's one next step (the email answer's guided setup) */
+.stg-next {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  margin-block-start: 22px;
+  padding: 16px;
+  max-inline-size: 460px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--bk-primary) 8%, var(--bk-panel));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--bk-primary) 24%, var(--bk-line));
+}
+.stg-next > span {
+  color: var(--bk-ink-2);
+  font-size: 15px;
+}
+.stg-next .stg-btn {
+  min-block-size: 48px;
+  max-inline-size: 100%;
+  white-space: normal;
+  text-align: start;
+}
+.stg-divider {
+  block-size: 1px;
+  margin: 6px 10px;
+  background: var(--bk-line);
+}
+
+@keyframes stg-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+@keyframes stg-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.97);
+  }
+}
+@keyframes stg-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+@keyframes stg-breathe {
+  50% {
+    opacity: 0.55;
+  }
+}
+
+/* a window narrower than the mockup: things wrap and shrink a little */
+@media (max-width: 1180px) {
+  .stg-langs {
+    grid-template-columns: repeat(2, minmax(0, 248px));
+  }
+  .stg-fin {
+    padding-inline: 48px;
+    gap: 40px;
+  }
+}
+
+/* phone (390 px): Back sits top-start as an icon, the main button is full width at the bottom */
+@media (max-width: 600px) {
+  .stg {
+    --stg-gutter: 16px;
+    padding-block-end: 120px;
+  }
+  .stg-top {
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+    min-block-size: 64px;
+  }
+  .stg-brand span {
+    display: none;
+  }
+  .stg-brand {
+    visibility: hidden;
+  }
+  .stg-segs {
+    gap: 4px;
+  }
+  .stg-segs i {
+    inline-size: 18px;
+    block-size: 5px;
+  }
+  .stg-long {
+    display: none;
+  }
+  .stg-short {
+    display: inline;
+  }
+  .stg-skip {
+    padding-inline: 8px;
+    font-size: 14px;
+  }
+  .stg-center {
+    align-items: flex-start;
+    text-align: start;
+    padding-block-start: 16px;
+  }
+  .stg-welcome {
+    align-items: center;
+    text-align: center;
+  }
+  .stg-say,
+  .stg-qrow .stg-say,
+  .stg-plan .stg-say {
+    font-size: 28px;
+    margin-block-start: 16px;
+  }
+  .stg-fin .stg-say {
+    font-size: 34px;
+  }
+  .stg-sub {
+    font-size: 16px;
+    margin-block-start: 8px;
+  }
+  .stg-hero :is(.bk-avatar, span[class*="avatar"]) {
+    max-inline-size: 120px;
+  }
+  .stg-react {
+    inset-inline-start: auto;
+    inset-inline-end: -12px;
+    inset-block-start: -18px;
+  }
+  .stg-langs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-block-start: 22px;
+  }
+  .stg-lang {
+    min-block-size: 0;
+    padding: 14px;
+  }
+  .stg-lang b {
+    font-size: 19px;
+  }
+  .stg-eg,
+  .stg-more {
+    font-size: 14px;
+  }
+  .stg-tick {
+    inset-block-start: 12px;
+    inset-inline-end: 12px;
+    inline-size: 26px;
+    block-size: 26px;
+  }
+  .stg-namefield {
+    min-block-size: 60px;
+    padding-inline: 16px;
+  }
+  .stg-namefield input {
+    font-size: 24px;
+  }
+  .stg-hint {
+    display: none;
+  }
+  .stg-ideas {
+    justify-content: flex-start;
+  }
+  .stg-lbl {
+    inline-size: 100%;
+  }
+  .stg-q {
+    padding-block-start: 16px;
+  }
+  .stg-qrow {
+    flex-direction: column;
+    gap: 0;
+  }
+  .stg-chips {
+    padding-inline-start: 0;
+    gap: 10px;
+    margin-block-start: 22px;
+  }
+  .stg-free {
+    margin: 20px 0 0;
+    padding: 14px 16px;
+  }
+  .stg-free textarea {
+    font-size: 16px;
+  }
+  .stg-lead {
+    border-radius: 22px;
+  }
+  .stg-wires {
+    display: none;
+  }
+  .stg-team {
+    margin-block-start: 16px;
+    gap: var(--stg-gap);
+    padding-block-start: 0;
+    inline-size: 100%;
+  }
+  /* the cards stack: no lines */
+  .stg-team > .stg-hcard:nth-child(n)::before,
+  .stg-team > .stg-hcard:nth-child(n)::after {
+    display: none;
+  }
+  .stg-hcard {
+    inline-size: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: start;
+    padding: 14px;
+    column-gap: 14px;
+  }
+  .stg-hcard > div,
+  .stg-hcard b {
+    margin: 0;
+  }
+  .stg-picks {
+    justify-content: flex-start;
+  }
+  /* the fixed bottom bar: content scrolls under a fade of the page's own colour, never under bare buttons */
+  .stg-foot {
+    inset-inline: 0;
+    inset-block-end: 0;
+    padding: 18px 16px 20px;
+    background: linear-gradient(to top, var(--bk-bg) 78%, transparent);
+  }
+  .stg:has(.stg-pair) {
+    padding-block-end: 190px;
+  }
+  .stg-welcome {
+    justify-content: flex-start;
+    padding-block-start: 16px;
+  }
+  .stg-hav {
+    zoom: 0.6;
+  }
+  .stg-foot .stg-back {
+    position: fixed;
+    inset-block-start: 10px;
+    inset-inline-start: 16px;
+    min-block-size: 44px;
+    inline-size: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+  .stg-back-l {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .stg-foot {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .stg-foot > span:empty {
+    display: none;
+  }
+  .stg-foot .stg-btn.pri,
+  .stg-pair .stg-btn {
+    inline-size: 100%;
+    min-block-size: 56px;
+  }
+  .stg-pair {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .stg-btn {
+    white-space: normal;
+  }
+  .stg-fin {
+    grid-template-columns: 1fr;
+    padding-inline: 16px;
+    gap: 24px;
+    padding-block-start: 8px;
+  }
+  .stg-cluster {
+    transform: scale(0.8);
+    transform-origin: top left;
+    block-size: 170px;
+    margin-block-end: 0;
+  }
+  .stg-cta.start {
+    margin: 0;
+  }
+  .stg-cta.start .stg-btn.big,
+  .stg-welcome .stg-cta .stg-btn.big {
+    position: fixed;
+    inset-inline: 16px;
+    inset-block-end: 20px;
+    z-index: 2;
+  }
+  .stg-promises {
+    margin-block-start: 24px;
+    gap: 8px;
+  }
+  .stg-promises li {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stg *,
+  .stg *::before,
+  .stg *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* W40: "A few things need your OK" (a short stack of cards; one column, full width on a phone) */
+.stg-oks .stg-oks-list {
+  display: grid;
+  gap: 12px;
+  inline-size: min(560px, 100%);
+  margin: 20px auto 8px;
+  text-align: start;
+}
+.stg-oks .bk-hcard {
+  max-inline-size: none;
+}
+
+/* W40: on a phone, Back sits at the top of the OK screen once a card is decided; its row is kept free from the start,
+   so it never covers the title (and the title does not jump when it appears) */
+@media (max-width: 600px) {
+  .stg-center.stg-oks {
+    padding-block-start: 64px;
+  }
+}

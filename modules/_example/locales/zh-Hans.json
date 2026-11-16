@@ -1,0 +1,15 @@
+{
+  "nav": "示例",
+  "page": {
+    "title": "示例模块",
+    "body": "此模块用到了 Module SDK 的每一个插槽。"
+  },
+  "settings": "示例设置",
+  "composer": "插入笔记",
+  "dock": "示例面板",
+  "onboarding": "示例引导步骤",
+  "note": "笔记",
+  "tools": {
+    "example_echo": "回显"
+  }
+}

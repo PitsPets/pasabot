@@ -1,0 +1,198 @@
+{
+  "nav": "Kỹ năng",
+  "page": {
+    "title": "Kỹ năng",
+    "intro": "Các quy trình mà agent của bạn có thể làm theo. Bật kỹ năng cho từng agent; mỗi lần chỉnh sửa đều giữ lại các bản sửa đổi trước đó."
+  },
+  "loading": "Đang tải kỹ năng…",
+  "empty": "Chưa có kỹ năng nào. Hãy viết hoặc cài một kỹ năng ở dưới.",
+  "error": "Đã xảy ra lỗi: {{reason}}",
+  "add": {
+    "title": "Thêm kỹ năng",
+    "method": "Cách thêm",
+    "create": "Viết kỹ năng mới",
+    "folder": "Từ thư mục trên máy chủ",
+    "git": "Từ URL git",
+    "zip": "Từ gói (.zip)",
+    "name": "Tên",
+    "nameHint": "Các từ viết thường nối bằng dấu gạch ngang, ví dụ: supplier-quotes",
+    "description": "Khi nào dùng",
+    "descriptionHint": "Một dòng, ví dụ: “Dùng khi chuẩn bị báo giá cho khách hàng”",
+    "instructions": "Hướng dẫn",
+    "path": "Đường dẫn thư mục",
+    "pathHint": "Đường dẫn đầy đủ của thư mục có tệp SKILL.md, trên máy đang chạy PasaBot",
+    "url": "URL git",
+    "urlHint": "Địa chỉ https của một kho mã; kỹ năng được ghim vào commit hiện tại của kho",
+    "ref": "Nhánh hoặc thẻ (không bắt buộc)",
+    "subdir": "Thư mục trong kho mã (không bắt buộc)",
+    "zipFile": "Tệp gói",
+    "zipMissing": "Hãy chọn tệp .zip trước",
+    "safety": "Không có gì trong kỹ năng được chạy khi cài đặt. Kỹ năng ban đầu ở trạng thái tắt với mọi agent.",
+    "createButton": "Tạo kỹ năng",
+    "installButton": "Cài đặt",
+    "builtins": "Kỹ năng tích hợp bạn đã gỡ:",
+    "builtinButton": "Thêm lại {{name}}",
+    "open": "Thêm",
+    "cancel": "Hủy",
+    "cardHint": "Viết kỹ năng mới, hoặc cài từ một thư mục, URL git hay tệp .zip.",
+    "nameMissing": "Hãy đặt tên trước",
+    "descriptionMissing": "Hãy ghi khi nào dùng trước",
+    "instructionsMissing": "Hãy viết hướng dẫn trước"
+  },
+  "item": {
+    "rev": "Bản sửa đổi {{rev}}",
+    "builtin": "Tích hợp sẵn",
+    "agentMade": "Do agent tạo ({{trust}})",
+    "off": "Tắt",
+    "agents_other": "Bật cho {{count}} agent",
+    "open": "Mở",
+    "openNamed": "Mở {{name}}"
+  },
+  "detail": {
+    "back": "Quay lại tất cả kỹ năng",
+    "source": "Nguồn: {{source}}",
+    "agentMadeNote": "Một agent đã viết hoặc thay đổi kỹ năng này. Hãy đọc kỹ trước khi bật cho các agent khác.",
+    "agents": "Ai có thể dùng",
+    "enabled": "Kỹ năng đang bật",
+    "noAgents": "Chưa có agent nào.",
+    "onFor": "{{name}}",
+    "uninstall": "Gỡ cài đặt",
+    "confirmUninstall": "Có, gỡ cài đặt cùng mọi bản sửa đổi",
+    "cancel": "Hủy"
+  },
+  "edit": {
+    "title": "SKILL.md",
+    "hint": "Lưu sẽ tạo một bản sửa đổi mới. Tên trong phần front matter được giữ nguyên.",
+    "label": "Nội dung kỹ năng",
+    "files": "Tệp: {{files}}",
+    "save": "Lưu thành bản sửa đổi mới",
+    "saved": "Đã lưu thành bản sửa đổi mới.",
+    "unchanged": "Không có thay đổi."
+  },
+  "rev": {
+    "title": "Các bản sửa đổi",
+    "label": "Bản sửa đổi {{rev}}",
+    "current": "hiện tại",
+    "byOwner": "bởi bạn",
+    "byBuiltin": "tích hợp sẵn",
+    "byAgent": "bởi {{name}}",
+    "rollback": "Quay lại {{rev}}",
+    "rolledBack": "Đã quay lại: nội dung của bản sửa đổi {{rev}} giờ là bản sửa đổi mới nhất."
+  },
+  "perm": {
+    "choose": "Những gì kỹ năng này được dùng",
+    "workspaceOnly": "Tệp: chỉ không gian làm việc của agent đó",
+    "hosts": "Các trang web được truy cập",
+    "hostsHint": "Mỗi dòng một trang, như example.com hoặc *.example.com. Để trống nếu không cho trang nào.",
+    "messagingAsk": "Được gửi tin nhắn cho người khác (mỗi tin vẫn hỏi bạn trước)",
+    "before": "Quyền sẽ được ghi lại cho kỹ năng này:",
+    "files": "Tệp",
+    "filesWorkspace": "Chỉ không gian làm việc của agent đó",
+    "filesWorkspacePlus": "Không gian làm việc của agent đó, cộng với {{paths}}",
+    "filesPaths": "Chỉ {{paths}}",
+    "filesNone": "Không có tệp",
+    "network": "Mạng",
+    "networkNone": "Không có trang web",
+    "messaging": "Tin nhắn cho người khác",
+    "messagingYes": "Có, và mỗi tin đều hỏi bạn trước",
+    "messagingNo": "Không",
+    "none": "Chưa ghi nhận quyền nào cho kỹ năng này.",
+    "proposed": "Quyền được đề xuất",
+    "proposedIntro": "Một agent được nhập vào hoặc một agent đã yêu cầu các quyền này. Sẽ không có gì được ghi lại cho đến khi bạn phê duyệt. Các mục mới được đánh dấu.",
+    "approve": "Phê duyệt",
+    "reject": "Từ chối",
+    "scope": "Chỉ được ghi lại: các giới hạn này được kiểm tra khi một lần chạy gắn với kỹ năng này. Các lượt chat thông thường chưa bị giới hạn bởi chúng.",
+    "tools": "Công cụ",
+    "toolsNone": "Không có công cụ",
+    "toolsAsk": "Công cụ được gọi",
+    "toolsHint": "Mỗi dòng một công cụ. Công cụ từ kết nối bên ngoài được viết dạng server/tool. Để trống nếu không cho công cụ nào.",
+    "outside": "công cụ bên ngoài",
+    "new": "mới",
+    "removed": "Không còn: {{items}}",
+    "was": "Trước đó: {{what}}",
+    "first": "Chưa có gì được phê duyệt cho kỹ năng này; mọi mục bên dưới đều mới.",
+    "widens": "Thay đổi này ảnh hưởng đến các quyền bạn đã phê duyệt trước đó.",
+    "changed": "Yêu cầu này đã thay đổi sau khi bạn mở. Hãy xem phiên bản mới bên dưới trước khi quyết định.",
+    "unsaved": "{{name}} đã được cài đặt, nhưng quyền của nó chưa được lưu ({{reason}}).",
+    "retry": "Lưu lại quyền",
+    "uninstall": "Gỡ kỹ năng",
+    "hostsTooMany": "Liệt kê tối đa 50 trang web.",
+    "hostBad": "Chỉ viết tên của từng trang web, như example.com hoặc *.example.com (không có https:// hay đường dẫn, tối đa 253 ký tự).",
+    "toolsTooMany": "Liệt kê tối đa 200 công cụ.",
+    "toolBad": "Chỉ viết tên của từng công cụ, không có dấu cách (tối đa 200 ký tự)."
+  },
+  "tools": {
+    "skills_list": "Liệt kê kỹ năng",
+    "skills_read": "Đọc kỹ năng",
+    "skills_create": "Tạo kỹ năng",
+    "skills_install": "Cài kỹ năng từ git",
+    "skills_revise": "Chỉnh sửa kỹ năng",
+    "skills_uninstall": "Gỡ kỹ năng"
+  },
+  "builtin": {
+    "datastore-guide": "Dùng khi bạn cần lưu bản ghi có cấu trúc (danh sách, nhật ký, tồn kho, giá) mà các tác tử khác cũng có thể đọc, bằng công cụ kho dữ liệu dùng chung của PasaBot.",
+    "site-publisher": "Dùng khi chủ sở hữu muốn đăng một trang web nhỏ hoặc trang tĩnh (báo cáo, thực đơn, danh sách để chia sẻ) trên máy chủ PasaBot này.",
+    "skill-author": "Dùng khi chủ sở hữu nhờ bạn biến một cách làm việc thành kỹ năng dùng lại được, hoặc cải thiện một kỹ năng bạn đã làm trước đó."
+  },
+  "find": {
+    "navHint": "Kỹ năng bổ sung cho tác tử",
+    "navKeywords": "kỹ năng, khả năng, tiện ích, bí quyết"
+  },
+  "plain": {
+    "nav": "Khả năng của trợ lý",
+    "find": {
+      "navHint": "Dạy trợ lý những việc mới"
+    },
+    "page": {
+      "title": "Khả năng của trợ lý",
+      "intro": "Hướng dẫn từng bước mà trợ lý có thể làm theo. Bật từng cái cho từng trợ lý; mỗi lần sửa đều giữ bản cũ."
+    },
+    "loading": "Đang tải…",
+    "empty": "Chưa có gì. Viết một cái hoặc thêm ở dưới.",
+    "add": {
+      "title": "Thêm một khả năng",
+      "create": "Viết một khả năng mới",
+      "folder": "Từ một thư mục trên máy này",
+      "safety": "Không có gì chạy khi bạn thêm. Ban đầu tắt cho mọi trợ lý.",
+      "createButton": "Tạo khả năng này",
+      "builtins": "Khả năng có sẵn bạn đã gỡ:",
+      "cardHint": "Tự viết, hoặc lấy từ một tệp."
+    },
+    "item": {
+      "agentMade": "Do trợ lý tạo ({{trust}})",
+      "agents_other": "Bật cho {{count}} trợ lý"
+    },
+    "detail": {
+      "back": "Quay lại danh sách",
+      "agentMadeNote": "Một trợ lý đã viết hoặc sửa cái này. Hãy đọc trước khi bật cho trợ lý khác.",
+      "enabled": "Đang bật",
+      "noAgents": "Chưa có trợ lý."
+    },
+    "edit": {
+      "label": "Văn bản của nó"
+    },
+    "perm": {
+      "choose": "Nó được dùng gì",
+      "workspaceOnly": "Tệp: chỉ thư mục riêng của trợ lý",
+      "before": "Quyền ghi lại cho nó:",
+      "filesWorkspace": "Chỉ thư mục riêng của trợ lý",
+      "filesWorkspacePlus": "Thư mục riêng của trợ lý, thêm {{paths}}",
+      "none": "Chưa ghi quyền nào.",
+      "proposedIntro": "Một trợ lý, hoặc trợ lý đưa vào từ tệp, đã xin những thứ này. Chưa ghi gì cho đến khi bạn duyệt. Mục mới có đánh dấu.",
+      "scope": "Chỉ ghi lại: các giới hạn này được kiểm tra khi một việc gắn với nó. Trò chuyện thường chưa bị giới hạn.",
+      "toolsHint": "Mỗi dòng một cái. Công cụ từ ứng dụng ngoài viết là ứng-dụng/công-cụ. Để trống nếu không có.",
+      "first": "Chưa duyệt gì; mọi thứ bên dưới đều mới.",
+      "uninstall": "Gỡ bỏ"
+    },
+    "builtin": {
+      "datastore-guide": "Giúp trợ lý giữ danh sách và sổ ghi gọn gàng (nhật ký, hàng tồn, giá) mà trợ lý khác cũng đọc được.",
+      "site-publisher": "Giúp trợ lý làm một trang web nhỏ (báo cáo, thực đơn, danh sách để chia sẻ) và đưa lên mạng từ máy này.",
+      "skill-author": "Giúp trợ lý biến một cách làm việc thành khả năng dùng lại được, hoặc cải thiện cái đã làm trước."
+    },
+    "builtinTitle": {
+      "datastore-guide": "Giữ danh sách và sổ ghi",
+      "site-publisher": "Làm trang web nhỏ",
+      "skill-author": "Học cách làm việc mới"
+    }
+  }
+}

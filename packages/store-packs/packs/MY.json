@@ -1,0 +1,28 @@
+{
+  "country": "MY",
+  "name": "Malaysia",
+  "stores": [
+    {
+      "id": "shopee",
+      "name": "Shopee",
+      "homeUrl": "https://shopee.com.my/",
+      "searchUrl": "https://shopee.com.my/search?keyword={query}",
+      "allowedHosts": ["shopee.com.my", "*.shopee.com.my", "*.susercontent.com"],
+      "currency": "MYR",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "lazada",
+      "name": "Lazada",
+      "homeUrl": "https://www.lazada.com.my/",
+      "searchUrl": "https://www.lazada.com.my/catalog/?q={query}",
+      "allowedHosts": ["lazada.com.my", "*.lazada.com.my", "*.slatic.net", "*.lazcdn.com"],
+      "currency": "MYR",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    }
+  ]
+}

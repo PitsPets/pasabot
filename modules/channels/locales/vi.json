@@ -1,0 +1,146 @@
+{
+  "settings": {
+    "title": "Channel",
+    "intro": "Trò chuyện với agent từ Telegram, Discord, Slack hoặc WhatsApp. Mỗi chat trên ứng dụng đó trở thành một chat PasaBot riêng.",
+    "empty": "Chưa có channel nào.",
+    "loading": "Đang tải channel…",
+    "error": "Không thể tải channel: {{reason}}"
+  },
+  "add": {
+    "title": "Thêm channel",
+    "open": "Thêm channel",
+    "kind": "Ứng dụng",
+    "label": "Tên (không bắt buộc)",
+    "labelHint": "Chỉ hiển thị ở đây, ví dụ: “Bot nhóm gia đình”.",
+    "agent": "Agent trả lời",
+    "token": "Token của bot",
+    "tokenHint": "Chỉ cần dán một lần. Token được lưu trong vault và không hiển thị lại.",
+    "allowed": "Người gửi được phép (không bắt buộc)",
+    "allowedHint": "ID người dùng trên nền tảng, mỗi dòng một ID hoặc ngăn cách bằng dấu phẩy. Để trống thì chỉ mình bạn trò chuyện được với bot.",
+    "submit": "Thêm channel",
+    "cancel": "Hủy",
+    "noKinds": "Máy chủ này chưa cài ứng dụng channel nào.",
+    "noAgents": "Hãy tạo một agent trước.",
+    "pairingNext": "Sau khi thêm, bạn liên kết bằng cách quét mã QR bằng điện thoại."
+  },
+  "kind": {
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "whatsapp": "WhatsApp",
+    "fake": "Channel thử nghiệm",
+    "agentchat": "AgentChat"
+  },
+  "status": {
+    "connected": "Đã kết nối",
+    "reconnecting": "Đang kết nối lại",
+    "auth_failed": "Token bị từ chối",
+    "stopped": "Đã dừng",
+    "error": "Lỗi",
+    "starting": "Đang khởi động",
+    "unavailable": "Chưa cài ứng dụng",
+    "disabled": "Tắt",
+    "not_linked": "Chưa liên kết"
+  },
+  "binding": {
+    "agent": "Trả lời với vai",
+    "lastEvent": "Tin nhắn gần nhất",
+    "never": "chưa có",
+    "dropped_other": "Đã bỏ qua {{count}} tin nhắn từ người lạ",
+    "owner": "Tài khoản của bạn",
+    "ownerNone": "Chưa liên kết: chỉ người gửi đã liên kết hoặc được phép mới nhận được phản hồi.",
+    "ownerLinked": "Đã liên kết với {{name}} ({{id}})",
+    "places": "Chat",
+    "placesNone": "Chưa có chat nào. Hãy nhắn tin cho bot để bắt đầu.",
+    "openChat": "Mở chat",
+    "allowed": "Người gửi được phép",
+    "allowedNone": "Chỉ mình bạn",
+    "token": "Token của bot",
+    "tokenSet": "Đã lưu trong vault",
+    "tokenReplace": "Thay token",
+    "tokenNew": "Token bot mới",
+    "save": "Lưu",
+    "saved": "Đã lưu",
+    "restart": "Kết nối lại",
+    "turnOff": "Tắt",
+    "turnOn": "Bật",
+    "remove": "Xóa",
+    "removeConfirm": "Xóa channel này? Bot sẽ ngừng trả lời; các chat vẫn còn trong PasaBot.",
+    "confirm": "Có, xóa",
+    "unlink": "Hủy liên kết",
+    "error": "Lỗi gần nhất: {{error}}",
+    "which": "Chọn loại nào"
+  },
+  "link": {
+    "start": "Liên kết tài khoản của tôi",
+    "again": "Mã liên kết mới",
+    "how": "Gửi mã này cho bot qua tin nhắn riêng trong vòng 10 phút:",
+    "warn": "Chỉ gửi qua tin nhắn riêng. Mã đăng trong nhóm sẽ bị hủy.",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép",
+    "ownNumber": "Số của chính bạn: gửi mã trong cuộc chat “Nhắn cho chính mình” của bạn."
+  },
+  "field": {
+    "botToken": "Token của bot",
+    "signingSecret": "Khóa ký"
+  },
+  "option": {
+    "ownNumber": {
+      "label": "Dùng số nào",
+      "off": "Một số riêng cho agent",
+      "on": "Số của chính tôi (tôi trò chuyện với agent trong “Nhắn cho chính mình”)"
+    }
+  },
+  "events": {
+    "title": "URL sự kiện",
+    "how": "Dán mục này vào phần cài đặt sự kiện của ứng dụng {{app}} của bạn. Mọi yêu cầu đều được kiểm tra bằng khóa ký."
+  },
+  "pairing": {
+    "title": "Liên kết {{app}}",
+    "riskTitle": "Trước khi liên kết: đây không phải là kết nối chính thức.",
+    "riskBody": "PasaBot tham gia tài khoản {{app}} của bạn như một thiết bị được liên kết, giống như máy tính. Điều khoản dịch vụ của {{app}} không cho phép dùng tự động với tài khoản cá nhân, nên số của bạn có thể bị giới hạn hoặc bị khóa.",
+    "riskAdvice": "Hãy dùng một số bạn có thể chấp nhận mất, và giữ số lượng tin nhắn ở mức thấp.",
+    "accept": "Tôi hiểu rủi ro, hiện mã QR",
+    "scan": "Trên điện thoại, mở {{app}} → Thiết bị đã liên kết → Liên kết thiết bị, rồi quét mã này. Mã thay đổi sau vài giây.",
+    "qrAlt": "Mã QR để liên kết thiết bị này",
+    "waiting": "Đang lấy mã QR…",
+    "linked": "Đã liên kết. Đang kết nối…",
+    "failed": "Liên kết chưa hoàn tất ({{reason}}). Hãy thử lại."
+  },
+  "find": {
+    "settingsHint": "Trò chuyện với tác tử từ ứng dụng khác",
+    "settingsKeywords": "kênh, ứng dụng chat, nhắn tin, ứng dụng khác"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Nói chuyện với trợ lý từ ứng dụng chat khác"
+    },
+    "settings": {
+      "title": "Ứng dụng chat",
+      "intro": "Nói chuyện với trợ lý từ Telegram, Discord, Slack hoặc WhatsApp. Mỗi cuộc chat ở đó thành một cuộc chat riêng ở đây.",
+      "empty": "Chưa có ứng dụng chat nào."
+    },
+    "add": {
+      "title": "Thêm ứng dụng chat",
+      "open": "Thêm ứng dụng chat",
+      "submit": "Thêm ứng dụng này",
+      "kind": "Ứng dụng chat nào?",
+      "agent": "Trợ lý trả lời",
+      "token": "Mã bí mật từ ứng dụng",
+      "tokenHint": "Dán một lần. Mã được giữ an toàn trên máy tính này và không hiện lại.",
+      "allowed": "Ai khác được nhắn tin (không bắt buộc)",
+      "allowedHint": "Số hoặc tên người dùng của từng người trong ứng dụng đó, mỗi dòng một người. Để trống để chỉ mình bạn nói chuyện được.",
+      "noAgents": "Hãy tạo một trợ lý trước."
+    },
+    "field": {
+      "botToken": "Mã bí mật từ ứng dụng",
+      "signingSecret": "Mã bí mật thứ hai từ ứng dụng"
+    },
+    "binding": {
+      "token": "Mã bí mật từ ứng dụng",
+      "tokenSet": "Được giữ an toàn trên máy tính này",
+      "tokenReplace": "Thay mã bí mật",
+      "tokenNew": "Mã bí mật mới từ ứng dụng"
+    }
+  }
+}

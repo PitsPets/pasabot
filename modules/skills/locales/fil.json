@@ -1,0 +1,200 @@
+{
+  "nav": "Mga skill",
+  "page": {
+    "title": "Mga skill",
+    "intro": "Mga playbook na puwedeng sundin ng mga agent mo. I-on ang skill kada agent; bawat edit, nananatili ang mga lumang rebisyon."
+  },
+  "loading": "Kinukuha ang mga skill…",
+  "empty": "Wala pang skill. Sumulat o mag-install ng isa sa ibaba.",
+  "error": "May nagkaproblema: {{reason}}",
+  "add": {
+    "title": "Magdagdag ng skill",
+    "method": "Paano",
+    "create": "Sumulat ng bagong skill",
+    "folder": "Mula sa folder sa server",
+    "git": "Mula sa git URL",
+    "zip": "Mula sa bundle (.zip)",
+    "name": "Pangalan",
+    "nameHint": "Maliliit na titik na pinagdugtong ng gitling, hal. supplier-quotes",
+    "description": "Kailan ito gagamitin",
+    "descriptionHint": "Isang linya, hal. “Gamitin kapag gumagawa ng quote para sa kliyente”",
+    "instructions": "Mga tagubilin",
+    "path": "Path ng folder",
+    "pathHint": "Ang buong path ng folder na may SKILL.md, sa makinang pinapatakbuhan ng PasaBot",
+    "url": "Git URL",
+    "urlHint": "Isang https na address ng repository; naka-pin ito sa commit nito ngayon",
+    "ref": "Branch o tag (opsyonal)",
+    "subdir": "Folder sa loob ng repository (opsyonal)",
+    "zipFile": "File ng bundle",
+    "zipMissing": "Pumili muna ng .zip na file",
+    "safety": "Walang pinapatakbo sa skill kapag ini-install ito. Naka-off muna ito para sa lahat ng agent.",
+    "createButton": "Gawin ang skill",
+    "installButton": "I-install",
+    "builtins": "Mga built-in na skill na tinanggal mo:",
+    "builtinButton": "Ibalik ang {{name}}",
+    "open": "Magdagdag",
+    "cancel": "Huwag na muna",
+    "cardHint": "Sumulat ng bagong skill, o mag-install mula sa folder, git URL o .zip.",
+    "nameMissing": "Lagyan muna ng pangalan",
+    "descriptionMissing": "Isulat muna kung kailan ito gagamitin",
+    "instructionsMissing": "Isulat muna ang mga tagubilin"
+  },
+  "item": {
+    "rev": "Rebisyon {{rev}}",
+    "builtin": "Built-in",
+    "agentMade": "Gawa ng agent ({{trust}})",
+    "off": "Naka-off",
+    "agents_one": "Naka-on sa {{count}} agent",
+    "agents_other": "Naka-on sa {{count}} agent",
+    "open": "Buksan",
+    "openNamed": "Buksan ang {{name}}"
+  },
+  "detail": {
+    "back": "Bumalik sa lahat ng skill",
+    "source": "Pinagmulan: {{source}}",
+    "agentMadeNote": "Agent ang sumulat o nagbago ng skill na ito. Basahin muna bago i-on para sa ibang agent.",
+    "agents": "Sino ang puwedeng gumamit",
+    "enabled": "Naka-on ang skill",
+    "noAgents": "Wala pang agent.",
+    "onFor": "{{name}}",
+    "uninstall": "I-uninstall",
+    "confirmUninstall": "Oo, i-uninstall pati lahat ng rebisyon",
+    "cancel": "Huwag na"
+  },
+  "edit": {
+    "title": "SKILL.md",
+    "hint": "Kapag sine-save, may bagong rebisyon. Hindi nagbabago ang pangalan sa front matter.",
+    "label": "Teksto ng skill",
+    "files": "Mga file: {{files}}",
+    "save": "I-save bilang bagong rebisyon",
+    "saved": "Na-save bilang bagong rebisyon.",
+    "unchanged": "Walang nagbago."
+  },
+  "rev": {
+    "title": "Mga rebisyon",
+    "label": "Rebisyon {{rev}}",
+    "current": "kasalukuyan",
+    "byOwner": "ikaw",
+    "byBuiltin": "built-in",
+    "byAgent": "si {{name}}",
+    "rollback": "Ibalik sa {{rev}}",
+    "rolledBack": "Naibalik: ang teksto ng rebisyon {{rev}} na ang pinakabagong rebisyon."
+  },
+  "perm": {
+    "choose": "Ano ang puwedeng gamitin ng skill na ito",
+    "workspaceOnly": "Mga file: ang sariling workspace lang ng agent nito",
+    "hosts": "Mga website na puwede nitong puntahan",
+    "hostsHint": "Isa bawat linya, gaya ng example.com o *.example.com. Iwanang blangko kung wala.",
+    "messagingAsk": "Puwedeng magpadala ng mensahe sa ibang tao (magtatanong pa rin muna sa iyo bawat isa)",
+    "before": "Mga pahintulot na itatala para sa skill na ito:",
+    "files": "Mga file",
+    "filesWorkspace": "Ang workspace lang ng agent nito",
+    "filesWorkspacePlus": "Ang workspace ng agent nito, at {{paths}}",
+    "filesPaths": "{{paths}} lang",
+    "filesNone": "Walang file",
+    "network": "Network",
+    "networkNone": "Walang website",
+    "messaging": "Mensahe sa ibang tao",
+    "messagingYes": "Oo, at magtatanong muna sa iyo bawat isa",
+    "messagingNo": "Hindi",
+    "none": "Walang nakatalang pahintulot para sa skill na ito.",
+    "proposed": "Mga iminungkahing pahintulot",
+    "proposedIntro": "Hiningi ito ng isang na-import na agent o ng isang agent. Walang maitatala hangga’t hindi mo inaaprubahan. May tanda ang mga bago.",
+    "approve": "Aprubahan",
+    "reject": "Tanggihan",
+    "scope": "Nakatala lang: sinusuri ang mga limitasyong ito kapag nakatali ang isang run sa skill na ito. Hindi pa nila nililimitahan ang karaniwang usapan sa chat.",
+    "tools": "Mga tool",
+    "toolsNone": "Walang tool",
+    "toolsAsk": "Mga tool na puwede nitong gamitin",
+    "toolsHint": "Isa bawat linya. Ang tool mula sa labas na koneksyon ay isinusulat na server/tool. Iwanang blangko kung wala.",
+    "outside": "tool mula sa labas",
+    "new": "bago",
+    "removed": "Wala na: {{items}}",
+    "was": "Dati: {{what}}",
+    "first": "Wala pang naaprubahan para sa skill na ito; bago ang lahat ng nasa ibaba.",
+    "widens": "Binabago nito ang mga pahintulot na inaprubahan mo dati.",
+    "changed": "Nagbago ang hiling na ito pagkabukas mo. Tingnan muna ang bagong bersyon sa ibaba bago ka magpasya.",
+    "unsaved": "Na-install ang {{name}}, pero hindi na-save ang mga pahintulot nito ({{reason}}).",
+    "retry": "I-save ulit ang mga pahintulot",
+    "uninstall": "Alisin ang skill",
+    "hostsTooMany": "Hanggang 50 website lang ang puwedeng ilista.",
+    "hostBad": "Isulat ang bawat website bilang pangalan lang, gaya ng example.com o *.example.com (walang https:// o path, hanggang 253 character).",
+    "toolsTooMany": "Hanggang 200 tool lang ang puwedeng ilista.",
+    "toolBad": "Isulat ang bawat tool bilang pangalan lang, walang espasyo (hanggang 200 character)."
+  },
+  "tools": {
+    "skills_list": "Ilista ang mga skill",
+    "skills_read": "Basahin ang isang skill",
+    "skills_create": "Gumawa ng skill",
+    "skills_install": "Mag-install ng skill mula sa git",
+    "skills_revise": "Baguhin ang skill",
+    "skills_uninstall": "I-uninstall ang skill"
+  },
+  "builtin": {
+    "datastore-guide": "Gamitin kapag kailangang mag-ingat ng maayos na talaan (listahan, log, imbentaryo, presyo) na puwede ring basahin ng ibang agent, gamit ang shared na datastore tools ng PasaBot.",
+    "site-publisher": "Gamitin kapag gusto ng may-ari na mag-publish ng maliit na web page o static site (ulat, menu, listahang maibabahagi) sa PasaBot server na ito.",
+    "skill-author": "Gamitin kapag hiniling ng may-ari na gawing kasanayang magagamit muli ang isang paraan ng pagtatrabaho, o pagandahin ang kasanayang ginawa mo dati."
+  },
+  "find": {
+    "navHint": "Dagdag na kakayahan para sa agent",
+    "navKeywords": "kakayahan, galing, dagdag, kaalaman"
+  },
+  "plain": {
+    "nav": "Mga kakayahan ng mga katulong",
+    "find": {
+      "navHint": "Turuan ang mga katulong mo ng mga bagong kayang gawin"
+    },
+    "page": {
+      "title": "Mga kakayahan ng mga katulong",
+      "intro": "Mga gabay na hakbang-hakbang na puwedeng sundin ng mga katulong mo. I-on ang bawat isa kada katulong; bawat edit, nananatili ang mga lumang bersyon."
+    },
+    "loading": "Kinukuha…",
+    "empty": "Wala pa rito. Sumulat o magdagdag ng isa sa ibaba.",
+    "add": {
+      "title": "Magdagdag ng kakayahan",
+      "create": "Sumulat ng bagong kakayahan",
+      "folder": "Mula sa folder sa computer na ito",
+      "safety": "Walang pinapatakbo rito kapag idinagdag mo. Naka-off muna ito para sa lahat ng katulong.",
+      "createButton": "Gawin ang kakayahang ito",
+      "builtins": "Mga kasamang kakayahan na tinanggal mo:",
+      "cardHint": "Isulat mo mismo, o dalhin mula sa isang file."
+    },
+    "item": {
+      "agentMade": "Gawa ng katulong ({{trust}})",
+      "agents_one": "Naka-on sa {{count}} katulong",
+      "agents_other": "Naka-on sa {{count}} katulong"
+    },
+    "detail": {
+      "back": "Bumalik sa listahan",
+      "agentMadeNote": "Katulong ang sumulat o nagbago nito. Basahin muna bago i-on para sa ibang katulong.",
+      "enabled": "Naka-on ito",
+      "noAgents": "Wala pang katulong."
+    },
+    "edit": {
+      "label": "Teksto nito"
+    },
+    "perm": {
+      "choose": "Ano ang puwede nitong gamitin",
+      "workspaceOnly": "Mga file: ang sariling folder lang ng katulong nito",
+      "before": "Mga pahintulot na itatala para dito:",
+      "filesWorkspace": "Ang sariling folder lang ng katulong nito",
+      "filesWorkspacePlus": "Ang sariling folder ng katulong nito, at {{paths}}",
+      "none": "Wala pang nakatalang pahintulot.",
+      "proposedIntro": "Hiningi ito ng isang katulong, o ng katulong na dinala mula sa file. Walang maitatala hangga’t hindi mo inaaprubahan. May tanda ang mga bago.",
+      "scope": "Nakatala lang: sinusuri ang mga limitasyong ito kapag nakatali rito ang isang trabaho. Hindi pa nila nililimitahan ang karaniwang usapan sa chat.",
+      "toolsHint": "Isa bawat linya. Ang gamit mula sa ibang app ay isinusulat na app/gamit. Iwanang blangko kung wala.",
+      "first": "Wala pang naaprubahan para dito; bago ang lahat ng nasa ibaba.",
+      "uninstall": "Alisin ito"
+    },
+    "builtin": {
+      "datastore-guide": "Tumutulong sa katulong na mag-ingat ng maayos na listahan at talaan (log, stock, presyo) na mababasa rin ng ibang katulong.",
+      "site-publisher": "Tumutulong sa katulong na gumawa ng maliit na web page (ulat, menu, listahang maibabahagi) at ilagay ito online mula sa computer na ito.",
+      "skill-author": "Tumutulong sa katulong na gawing kakayahang magagamit muli ang isang paraan ng pagtatrabaho, o pagandahin ang ginawa nito dati."
+    },
+    "builtinTitle": {
+      "datastore-guide": "Pag-iingat ng listahan at talaan",
+      "site-publisher": "Paggawa ng maliit na web page",
+      "skill-author": "Pag-aaral ng bagong paraan ng pagtatrabaho"
+    }
+  }
+}

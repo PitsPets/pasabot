@@ -1,0 +1,142 @@
+{
+  "nav": "工作流程",
+  "page": {
+    "title": "工作流程",
+    "intro": "工作流程會把多個步驟串起來：agent、不使用工具的模型呼叫、條件、你的核准、等待與輸出。在畫布上建立後即可執行。",
+    "empty": "目前還沒有工作流程。",
+    "new": "新增工作流程",
+    "fromTemplate": "回答後分享",
+    "templateHint": "第一個 agent 會回答你的提示，接著其他所有 agent 會同時收到該回答。"
+  },
+  "list": {
+    "steps": "{{count}} 個步驟",
+    "run": "執行",
+    "edit": "編輯",
+    "delete": "刪除",
+    "deleteConfirm": "要刪除此工作流程嗎？已在執行的流程會繼續執行。"
+  },
+  "approvals": {
+    "title": "等待你處理",
+    "approve": "核准",
+    "reject": "拒絕",
+    "rejectConfirm": "要拒絕嗎？執行會在此停止。"
+  },
+  "runs": {
+    "title": "最近的執行",
+    "empty": "目前還沒有執行紀錄。",
+    "show": "顯示步驟",
+    "hide": "隱藏步驟",
+    "cancel": "停止執行",
+    "loops": "迴圈重複次數：{{count}}"
+  },
+  "state": {
+    "running": "執行中",
+    "waiting": "等待中",
+    "done": "已完成",
+    "failed": "失敗",
+    "rejected": "已拒絕",
+    "stopped": "已停止",
+    "cancelled": "已取消",
+    "skipped": "已略過"
+  },
+  "type": {
+    "agent": "代理",
+    "model": "模型（不使用工具）",
+    "condition": "條件",
+    "approval": "核准",
+    "transform": "轉換",
+    "wait": "等待",
+    "parallel": "平行",
+    "output": "輸出"
+  },
+  "editor": {
+    "name": "工作流程名稱",
+    "add": "新增步驟",
+    "addHint": "新步驟會加在所選步驟之後。",
+    "save": "儲存",
+    "back": "返回清單",
+    "saved": "已儲存。",
+    "canvas": "工作流程畫布",
+    "maxIterations": "每次執行的迴圈上限",
+    "selected": "已選取的步驟",
+    "none": "點選畫布上的步驟即可編輯。",
+    "label": "步驟名稱",
+    "remove": "移除此步驟",
+    "next": "接著前往",
+    "branch": "當條件為",
+    "link": "新增連線",
+    "links": "外送連線",
+    "unlink": "移除連線",
+    "pick": "選擇步驟"
+  },
+  "field": {
+    "agent": "代理",
+    "pickAgent": "選擇 agent",
+    "prompt": "提示",
+    "op": "檢查",
+    "value": "值",
+    "message": "向你詢問的內容",
+    "template": "文字（{{input}} = 該步驟的輸入）",
+    "seconds": "等待秒數",
+    "to": "傳送至",
+    "title": "標題",
+    "channel": "頻道綁定 ID"
+  },
+  "op": {
+    "contains": "包含",
+    "not_contains": "不包含",
+    "equals": "等於",
+    "matches": "符合模式",
+    "empty": "為空",
+    "not_empty": "不為空"
+  },
+  "branch": {
+    "true": "是",
+    "false": "否"
+  },
+  "to": {
+    "notification": "通知",
+    "channel": "頻道貼文"
+  },
+  "template": {
+    "title": "回答後分享",
+    "name": "名稱",
+    "agents": "Agent（第一個負責回答）",
+    "prompt": "給第一個 agent 的提示",
+    "followUp": "其他 agent 如何處理該回答",
+    "create": "建立工作流程"
+  },
+  "tools": {
+    "workflows_list": "列出我的工作流程",
+    "workflows_create": "建立工作流程",
+    "workflows_update": "編輯我的一個工作流程",
+    "workflows_run": "執行我的一個工作流程",
+    "workflows_delete": "刪除我的一個工作流程"
+  },
+  "server": {
+    "failed": "工作流程「{{name}}」失敗",
+    "stopped": "工作流程「{{name}}」已停止"
+  },
+  "find": {
+    "navHint": "把多個步驟串成一個流程",
+    "navKeywords": "步驟, 流程, 串連, 自動化"
+  },
+  "plain": {
+    "page": {
+      "intro": "工作流程把步驟串起來：助理、大腦的快速回答、條件、你的核准、等待和結果。在畫布上搭好，再執行。",
+      "templateHint": "第一個助理回答你的請求，然後其他所有助理同時收到這個回答。"
+    },
+    "type": {
+      "agent": "助理",
+      "model": "僅大腦（不用工具）"
+    },
+    "field": {
+      "agent": "助理",
+      "pickAgent": "選擇一個助理"
+    },
+    "template": {
+      "agents": "助理（第一個回答）",
+      "prompt": "給第一個助理的請求"
+    }
+  }
+}

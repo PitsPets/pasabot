@@ -1,0 +1,76 @@
+{
+  "nav": "Admin",
+  "page": {
+    "title": "Server admin",
+    "intro": "This server's identity, health, limits and records. Only you, the owner, can see this page."
+  },
+  "host": {
+    "title": "This server",
+    "name": "Server name",
+    "save": "Save name",
+    "id": "Server ID",
+    "hostname": "Host name",
+    "system": "System",
+    "uptime": "Up for",
+    "minutes": "{{count}} min"
+  },
+  "metrics": {
+    "title": "Machine health",
+    "cpu": "CPU",
+    "mem": "Memory",
+    "disk": "Disk",
+    "load": "Load",
+    "none": "No sample yet.",
+    "sample": "Check now",
+    "at": "Checked"
+  },
+  "alerts": {
+    "title": "Alert rules",
+    "intro": "You get a notification when a reading stays above the limit.",
+    "empty": "No alert rules yet.",
+    "name": "Rule name",
+    "metric": "Reading",
+    "above": "Alert above",
+    "forSamples": "Checks in a row",
+    "cooldown": "Quiet for (minutes)",
+    "add": "Add rule",
+    "remove": "Remove",
+    "fired": "Last alert",
+    "never": "Never alerted",
+    "rule": "{{metric}} above {{above}}"
+  },
+  "limits": {
+    "title": "Agent limits",
+    "intro": "Memory and CPU caps for each agent's work. Leave a box empty for no cap.",
+    "mem": "Memory (MB)",
+    "cpu": "CPU (%)",
+    "save": "Save limits",
+    "saved": "Saved",
+    "usage": "Using now: {{mem}} MB, {{cpu}}% CPU",
+    "empty": "No agents yet."
+  },
+  "bundle": {
+    "title": "Move an agent",
+    "intro": "Export an agent with its chats to a file, then import it on this or another PasaBot server. Secrets, files and folders are not included.",
+    "export": "Export {{name}}",
+    "import": "Import an agent file",
+    "imported": "Imported. The agent and its chats are in your list.",
+    "failed": "That file could not be imported."
+  },
+  "diag": {
+    "title": "Diagnostics",
+    "intro": "A zip with health readings, settings summaries and recent logs for troubleshooting. Secret values are removed before it leaves the server.",
+    "download": "Download diagnostics"
+  },
+  "audit": {
+    "title": "Audit log",
+    "filter": "Filter by action",
+    "empty": "Nothing recorded.",
+    "older": "Show older",
+    "by": "by {{actor}}"
+  },
+  "find": {
+    "navHint": "Upkeep of this PasaBot",
+    "navKeywords": "admin, maintenance, backup, logs, update"
+  }
+}

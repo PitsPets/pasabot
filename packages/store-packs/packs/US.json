@@ -1,0 +1,50 @@
+{
+  "country": "US",
+  "name": "United States",
+  "stores": [
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "homeUrl": "https://www.amazon.com/",
+      "searchUrl": "https://www.amazon.com/s?k={query}",
+      "allowedHosts": ["amazon.com", "*.amazon.com", "*.media-amazon.com", "*.ssl-images-amazon.com"],
+      "currency": "USD",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "walmart",
+      "name": "Walmart",
+      "homeUrl": "https://www.walmart.com/",
+      "searchUrl": "https://www.walmart.com/search?q={query}",
+      "allowedHosts": ["walmart.com", "*.walmart.com", "*.walmartimages.com"],
+      "currency": "USD",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "ebay",
+      "name": "eBay",
+      "homeUrl": "https://www.ebay.com/",
+      "searchUrl": "https://www.ebay.com/sch/i.html?_nkw={query}",
+      "allowedHosts": ["ebay.com", "*.ebay.com", "*.ebayimg.com"],
+      "currency": "USD",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "target",
+      "name": "Target",
+      "homeUrl": "https://www.target.com/",
+      "searchUrl": "https://www.target.com/s?searchTerm={query}",
+      "allowedHosts": ["target.com", "*.target.com", "*.scene7.com"],
+      "currency": "USD",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    }
+  ]
+}

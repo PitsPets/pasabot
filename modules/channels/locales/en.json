@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "title": "Channels",
+    "intro": "Talk to an agent from Telegram, Discord, Slack or WhatsApp. Each chat on the app becomes its own PasaBot chat.",
+    "empty": "No channels yet.",
+    "loading": "Loading channels…",
+    "error": "Could not load channels: {{reason}}"
+  },
+  "add": {
+    "title": "Add a channel",
+    "open": "Add channel",
+    "kind": "App",
+    "label": "Name (optional)",
+    "labelHint": "Shown only here, e.g. “Family group bot”.",
+    "agent": "Agent that answers",
+    "token": "Bot token",
+    "tokenHint": "Paste it once. It is kept in the vault and never shown again.",
+    "allowed": "Allowed senders (optional)",
+    "allowedHint": "Platform user ids, one per line or comma-separated. Leave empty so only you can talk to it.",
+    "submit": "Add channel",
+    "cancel": "Cancel",
+    "noKinds": "No channel apps are installed on this server.",
+    "noAgents": "Create an agent first.",
+    "pairingNext": "After adding it, you link it by scanning a QR code with your phone."
+  },
+  "kind": {
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "whatsapp": "WhatsApp",
+    "fake": "Test channel",
+    "agentchat": "AgentChat"
+  },
+  "status": {
+    "connected": "Connected",
+    "reconnecting": "Reconnecting",
+    "auth_failed": "Token rejected",
+    "stopped": "Stopped",
+    "error": "Error",
+    "starting": "Starting",
+    "unavailable": "App not installed",
+    "disabled": "Off",
+    "not_linked": "Not linked yet"
+  },
+  "binding": {
+    "agent": "Answers as",
+    "lastEvent": "Last message",
+    "never": "nothing yet",
+    "dropped_one": "{{count}} message from strangers dropped",
+    "dropped_other": "{{count}} messages from strangers dropped",
+    "owner": "Your account",
+    "ownerNone": "Not linked yet: only linked or allowed senders get answers.",
+    "ownerLinked": "Linked to {{name}} ({{id}})",
+    "places": "Chats",
+    "placesNone": "No chats yet. Message the bot to start one.",
+    "openChat": "Open chat",
+    "allowed": "Allowed senders",
+    "allowedNone": "Only you",
+    "token": "Bot token",
+    "tokenSet": "Saved in the vault",
+    "tokenReplace": "Replace token",
+    "tokenNew": "New bot token",
+    "save": "Save",
+    "saved": "Saved",
+    "restart": "Reconnect",
+    "turnOff": "Turn off",
+    "turnOn": "Turn on",
+    "remove": "Remove",
+    "removeConfirm": "Remove this channel? The bot stops answering; its chats stay in PasaBot.",
+    "confirm": "Yes, remove",
+    "unlink": "Unlink",
+    "error": "Last error: {{error}}",
+    "which": "Which one"
+  },
+  "link": {
+    "start": "Link my account",
+    "again": "New link code",
+    "how": "Send this to the bot in a direct message within 10 minutes:",
+    "warn": "Only in a direct message. A code posted in a group is cancelled.",
+    "copy": "Copy",
+    "copied": "Copied",
+    "ownNumber": "Own number: send the code in your own “Message yourself” chat."
+  },
+  "field": {
+    "botToken": "Bot token",
+    "signingSecret": "Signing secret"
+  },
+  "option": {
+    "ownNumber": {
+      "label": "Which number",
+      "off": "A separate number for the agent",
+      "on": "My own number (I talk to it in “Message yourself”)"
+    }
+  },
+  "events": {
+    "title": "Events URL",
+    "how": "Paste this into your {{app}} app’s event settings. Every request is checked against the signing secret."
+  },
+  "pairing": {
+    "title": "Link {{app}}",
+    "riskTitle": "Before you link: this is not an official connection.",
+    "riskBody": "PasaBot joins your {{app}} account as a linked device, the same way a computer does. {{app}} does not allow automated use of personal accounts in its terms of service, so it may limit or ban the number.",
+    "riskAdvice": "Use a number you can afford to lose, and keep the number of messages low.",
+    "accept": "I understand the risk, show the QR code",
+    "scan": "On your phone, open {{app}} → Linked devices → Link a device, then scan this code. It changes every few seconds.",
+    "qrAlt": "QR code to link this device",
+    "waiting": "Getting a QR code…",
+    "linked": "Linked. Connecting…",
+    "failed": "Linking did not finish ({{reason}}). Try again."
+  },
+  "find": {
+    "settingsHint": "Chat with agents from other apps",
+    "settingsKeywords": "channels, Telegram, chat apps, messaging"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Talk to your helpers from other chat apps"
+    },
+    "settings": {
+      "title": "Chat apps",
+      "intro": "Talk to your helpers from Telegram, Discord, Slack or WhatsApp. Each chat there becomes its own chat here.",
+      "empty": "No chat apps yet."
+    },
+    "add": {
+      "title": "Add a chat app",
+      "open": "Add a chat app",
+      "submit": "Add this chat app",
+      "kind": "Which chat app?",
+      "agent": "Helper that answers",
+      "token": "Secret code from the app",
+      "tokenHint": "Paste it once. It is kept safe on this computer and never shown again.",
+      "allowed": "Who else may message it (optional)",
+      "allowedHint": "Each person's number or user name in that app, one per line. Leave it empty so only you can talk to it.",
+      "noAgents": "Make a helper first."
+    },
+    "field": {
+      "botToken": "Secret code from the app",
+      "signingSecret": "Second secret code from the app"
+    },
+    "binding": {
+      "token": "Secret code from the app",
+      "tokenSet": "Kept safe on this computer",
+      "tokenReplace": "Replace the secret code",
+      "tokenNew": "New secret code from the app"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "nav": "MCP-Server",
+  "page": {
+    "title": "MCP-Server",
+    "intro": "Externe Tool-Server, die deine Agenten nutzen können. Füge einen hinzu, teste ihn, schalte ihn ein und lege dann fest, welche Agenten ihn nutzen dürfen."
+  },
+  "loading": "Wird geladen …",
+  "empty": "Noch keine MCP-Server. Füge hier einen hinzu oder installiere einen Connector.",
+  "transport": {
+    "stdio": "Befehl auf diesem Rechner",
+    "http": "Webadresse"
+  },
+  "level": {
+    "none": "Ausgeblendet",
+    "use": "Darf nutzen",
+    "manage": "Darf verwalten",
+    "inherit": "Standard ({{level}})"
+  },
+  "access": {
+    "title": "Wer ihn nutzen darf",
+    "hint": "Ausgeblendete Agenten sehen diesen Server nicht. Agenten, die ihn verwalten dürfen, können ihn umbenennen oder ausschalten und fragen trotzdem vorher bei dir nach.",
+    "all": "Alle Agenten"
+  },
+  "server": {
+    "on": "An",
+    "off": "Aus",
+    "fromConnector": "Von einem Connector",
+    "tools_one": "{{count}} Tool",
+    "tools_other": "{{count}} Tools",
+    "testFailed": "Test fehlgeschlagen",
+    "secrets": "Im Vault gespeicherte Geheimnisse: {{names}}",
+    "test": "Testen",
+    "turnOn": "Einschalten",
+    "turnOff": "Ausschalten",
+    "remove": "Entfernen",
+    "removeConfirm": "Ja, entfernen"
+  },
+  "add": {
+    "open": "MCP-Server hinzufügen",
+    "title": "Neuer MCP-Server",
+    "name": "Name",
+    "transport": "So wird er erreicht",
+    "command": "Befehl",
+    "commandHint": "Das Programm, das gestartet wird, z. B. npx oder docker. Es startet ohne Shell.",
+    "args": "Argumente",
+    "argsHint": "Eines pro Zeile.",
+    "env": "Einstellungen (nicht geheim)",
+    "envHint": "Eine Zeile pro NAME=Wert.",
+    "url": "Adresse (https://…)",
+    "secrets": "Geheime Einstellungen",
+    "secretHeaders": "Geheime Header",
+    "secretsHint": "Im Vault gespeichert. Du kannst sie hier nicht wieder auslesen, und Agenten sehen sie nie.",
+    "secretName": "Name",
+    "headerName": "Header",
+    "secretValue": "Wert",
+    "anotherSecret": "Weiteres hinzufügen",
+    "save": "Server hinzufügen",
+    "cancel": "Abbrechen"
+  },
+  "classes": {
+    "title": "Was jedes Tool tut",
+    "hint": "Bezahlen und Nachrichten an andere fragen auf jeder Vertrauensstufe immer vorher bei dir nach. Die Art jedes Tools wird beim Auflisten aus seinem Namen geraten; korrigiere sie hier, falls sie nicht stimmt.",
+    "default": "Standard: {{class}}",
+    "money": "Geld (Kaufen, Bezahlen)",
+    "outbound-message": "Nachricht an andere",
+    "delete": "Löschen",
+    "publish": "Veröffentlichen",
+    "none": "Nichts Besonderes",
+    "alwaysAsks": "Fragt immer nach"
+  },
+  "tools": {
+    "tools_find": "Werkzeuge finden",
+    "tools_describe": "Werkzeug beschreiben",
+    "tools_invoke": "Externes Werkzeug nutzen",
+    "mcp_servers": "MCP-Server auflisten",
+    "mcp_server_update": "MCP-Server ändern"
+  },
+  "find": {
+    "navHint": "Tool-Server für deine Agenten",
+    "navKeywords": "Werkzeuge, Server, Plugins, Integrationen"
+  },
+  "plain": {
+    "nav": "Apps und Werkzeuge für Helfer",
+    "find": {
+      "navHint": "Zusätzliche Apps, die deine Helfer für dich nutzen können"
+    },
+    "page": {
+      "title": "Apps und Werkzeuge für Helfer",
+      "intro": "Apps und Werkzeuge von außen, die deine Helfer nutzen können. Hinzufügen, testen, einschalten und dann wählen, welche Helfer sie nutzen dürfen."
+    },
+    "empty": "Noch nichts hier. Füge hier eins hinzu oder eine fertige App.",
+    "access": {
+      "hint": "Versteckte Helfer sehen es nicht. Helfer, die es verwalten dürfen, können es umbenennen oder ausschalten und fragen trotzdem zuerst dich.",
+      "all": "Alle Helfer"
+    },
+    "add": {
+      "open": "App oder Werkzeug hinzufügen",
+      "title": "Neue App oder neues Werkzeug",
+      "secretsHint": "Sicher auf diesem Computer aufbewahrt. Du kannst sie hier nicht wieder lesen, und Helfer sehen sie nie.",
+      "save": "Hinzufügen",
+      "command": "Wie es geöffnet wird",
+      "commandHint": "Was hier hingehört, steht auf der Einrichtungsseite der App.",
+      "args": "Weitere Angaben"
+    },
+    "transport": {
+      "stdio": "Ein Programm auf diesem Computer",
+      "http": "Eine Adresse im Web"
+    },
+    "server": {
+      "fromConnector": "Fertige App"
+    }
+  }
+}

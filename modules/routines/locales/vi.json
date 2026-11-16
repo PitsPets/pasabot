@@ -1,0 +1,139 @@
+{
+  "nav": "Routine",
+  "page": {
+    "title": "Routine",
+    "intro": "Routine chạy một agent thủ công, theo lịch hoặc khi có thứ gì đó gọi đến. Câu trả lời đúng là (quiet) nghĩa là không có gì mới, và bạn sẽ không nhận thông báo.",
+    "calendar": "Nguồn cấp lịch",
+    "empty": "Chưa có routine nào."
+  },
+  "hook": {
+    "title": "Địa chỉ webhook và mã bí mật",
+    "once": "Hãy sao chép ngay bây giờ. Mã bí mật chỉ hiển thị một lần; đổi mã mới cũng sẽ tạo địa chỉ mới.",
+    "saved": "Tôi đã lưu rồi"
+  },
+  "create": {
+    "title": "Routine mới",
+    "name": "Tên",
+    "agent": "Tác nhân",
+    "prompt": "Agent nên làm gì?",
+    "promptHint": "Được gửi làm tin nhắn của routine mỗi lần chạy.",
+    "trigger": "Chạy",
+    "cron": "Lịch (cron)",
+    "cronHint": "phút giờ ngày tháng thứ, ví dụ 0 9 * * 1-5 = 9:00 các ngày trong tuần",
+    "tz": "Múi giờ",
+    "target": "Nơi chạy",
+    "submit": "Tạo routine",
+    "workflow": "Quy trình",
+    "noWorkflows": "Chưa có quy trình nào. Hãy tạo một quy trình ở trang Quy trình trước.",
+    "offline": "Chạy cả khi ngoại tuyến",
+    "offlineHint": "Nếu không kết nối được bộ não chính của agent, hãy dùng bộ não kế tiếp (ví dụ mô hình cục bộ) và ghi rõ trong kết quả."
+  },
+  "kind": {
+    "schedule": "Theo lịch",
+    "manual": "Thủ công",
+    "webhook": "Webhook",
+    "github": "GitHub",
+    "event": "Khi có sự kiện"
+  },
+  "target": {
+    "chat": "Trong chat của agent",
+    "thread": "Trong luồng mới",
+    "workflow": "Bắt đầu một quy trình"
+  },
+  "state": {
+    "paused": "Đã tạm dừng"
+  },
+  "routine": {
+    "next": "Tiếp theo",
+    "last": "Gần nhất"
+  },
+  "result": {
+    "pending": "Đang chạy",
+    "ok": "Xong",
+    "silent": "Không có gì mới",
+    "failed": "Thất bại",
+    "interrupted": "Bị gián đoạn",
+    "skipped": "Đã bỏ qua",
+    "held": "Đang giữ"
+  },
+  "source": {
+    "manual": "thủ công",
+    "schedule": "lịch",
+    "webhook": "webhook",
+    "event": "sự kiện",
+    "github": "GitHub",
+    "test": "chạy thử"
+  },
+  "action": {
+    "run": "Chạy ngay",
+    "test": "Chạy thử",
+    "pause": "Tạm dừng",
+    "resume": "Tiếp tục",
+    "rotate": "Mã bí mật mới",
+    "rotateConfirm": "Tạo mã bí mật và địa chỉ mới? Các bên gửi đang dùng mã và địa chỉ cũ sẽ ngừng hoạt động.",
+    "delete": "Xóa",
+    "deleteConfirm": "Xóa routine này? Hoạt động của nó vẫn còn trong nguồn cấp."
+  },
+  "activity": {
+    "title": "Hoạt động",
+    "empty": "Chưa có gì chạy.",
+    "open": "Mở chat",
+    "silent": "Đã chạy, không có gì mới để báo.",
+    "offlineFallback": "Bộ não chính ngoại tuyến: đã chạy trên {{to}}",
+    "rateLimited": "Bị giới hạn tốc độ: mô hình miễn phí đang bận hoặc hết hạn mức, nên lượt chạy này bị bỏ qua. Lượt tiếp theo sẽ chạy bình thường."
+  },
+  "tools": {
+    "routines_list": "Liệt kê thói quen của tôi",
+    "routines_create": "Tạo thói quen",
+    "routines_pause": "Tạm dừng một thói quen của tôi",
+    "routines_delete": "Xóa một thói quen của tôi"
+  },
+  "server": {
+    "finished": "Thói quen \"{{name}}\" đã xong"
+  },
+  "find": {
+    "navHint": "Chạy tác tử theo lịch",
+    "navKeywords": "lịch, mỗi ngày, hẹn giờ, lặp lại, hằng ngày, hằng tuần",
+    "stillOn_other": "{{count}} quy trình vẫn đang bật và sẽ tiếp tục chạy."
+  },
+  "plain": {
+    "find": {
+      "navHint": "Cho trợ lý chạy theo lịch"
+    },
+    "page": {
+      "intro": "Thói quen khởi động trợ lý bằng tay, theo lịch hoặc khi có thứ gọi đến. Trả lời đúng (quiet) nghĩa là không có gì mới, và bạn sẽ không được báo."
+    },
+    "create": {
+      "agent": "Trợ lý",
+      "prompt": "Trợ lý nên làm gì?",
+      "offlineHint": "Nếu không liên lạc được bộ não chính của trợ lý, dùng bộ não kế tiếp (ví dụ một bộ trên máy này) và nói rõ trong kết quả."
+    },
+    "kind": {
+      "webhook": "Khi một liên kết được gọi"
+    },
+    "source": {
+      "webhook": "một liên kết"
+    },
+    "hook": {
+      "title": "Liên kết và bí mật của nó"
+    },
+    "target": {
+      "chat": "Trong cuộc trò chuyện của trợ lý"
+    },
+    "activity": {
+      "rateLimited": "Đã bỏ qua: bộ não miễn phí đang bận hoặc tạm hết. Lần sau chạy như thường."
+    }
+  },
+  "card": {
+    "created": {
+      "title": "Thói quen mới: {{name}}",
+      "text": "Nó tự chạy. Bạn có thể tạm dừng, hoặc xóa nếu không muốn."
+    },
+    "pause": "Tạm dừng",
+    "undo": "Xóa",
+    "open": "Xem thói quen",
+    "paused": "Đã tạm dừng",
+    "undone": "Đã gỡ",
+    "gone": "Thói quen này không còn"
+  }
+}

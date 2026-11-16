@@ -1,0 +1,107 @@
+{
+  "nav": "Orang",
+  "page": {
+    "title": "Orang",
+    "introOwner": "Undang keluarga, teman, atau rekan kerja. Guest hanya melihat chat yang Anda tambahkan untuk mereka; member juga bisa memakai agent yang Anda bagikan. Anda tetap menjadi satu-satunya owner.",
+    "introOther": "Anda diundang ke PasaBot ini. Owner yang menentukan apa yang bisa Anda lihat."
+  },
+  "kind": {
+    "owner": "Pemilik",
+    "member": "Anggota",
+    "guest": "Tamu"
+  },
+  "role": {
+    "member": "Bisa menulis",
+    "observer": "Hanya baca"
+  },
+  "invite": {
+    "title": "Undang seseorang",
+    "intro": "Anda akan mendapat tautan untuk dikirim kepada mereka. Tautan hanya berlaku sekali dan kedaluwarsa setelah 3 hari.",
+    "kind": "Undang sebagai",
+    "guestHint": "Guest hanya melihat chat yang Anda pilih di bawah.",
+    "memberHint": "Member melihat chat yang Anda pilih dan bisa membuka chat dengan agent yang Anda bagikan.",
+    "chats": "Chat yang mereka ikuti",
+    "noChats": "Belum ada chat. Buat agent terlebih dahulu.",
+    "pickChat": "Pilih minimal satu chat untuk guest.",
+    "role": "Di chat tersebut mereka",
+    "create": "Buat tautan undangan",
+    "link": "Tautan undangan",
+    "linkHint": "Kirim hanya kepada orang yang Anda undang: siapa pun yang membukanya lebih dulu akan bergabung.",
+    "copy": "Salin tautan",
+    "copied": "Tersalin"
+  },
+  "invites": {
+    "title": "Undangan terbuka",
+    "noChats": "Tanpa chat",
+    "expires": "kedaluwarsa {{when}}",
+    "revoke": "Batalkan undangan"
+  },
+  "list": {
+    "title": "Semua orang di PasaBot ini",
+    "disabled": "Dinonaktifkan",
+    "disable": "Nonaktifkan",
+    "enable": "Aktifkan kembali"
+  },
+  "agents": {
+    "title": "Agent yang bisa dipakai member",
+    "intro": "Member bisa memulai chat sendiri dengan agent ini. Pesan mereka dijalankan atas nama mereka, bukan Anda, jadi hal berisiko tetap meminta persetujuan Anda dulu.",
+    "none": "Belum ada agent.",
+    "share": "Izinkan member memakai {{name}}"
+  },
+  "member": {
+    "title": "Agent yang bisa Anda pakai",
+    "intro": "Mulai chat Anda sendiri dengan agent yang dibagikan owner.",
+    "none": "Owner belum membagikan agent kepada Anda.",
+    "open": "Chat dengan {{name}}"
+  },
+  "guest": {
+    "title": "Chat Anda",
+    "body": "Chat Anda ada di daftar. Owner akan menambahkan Anda ke chat lain bila perlu."
+  },
+  "chat": {
+    "button": "Orang",
+    "title": "Orang di chat ini",
+    "readOnly": "Jadikan hanya baca",
+    "letWrite": "Izinkan menulis",
+    "remove": "Keluarkan {{name}}",
+    "add": "Tambah seseorang",
+    "addPerson": "Tambah {{name}}",
+    "invite": "Undang orang baru ke chat ini",
+    "close": "Selesai"
+  },
+  "join": {
+    "title": "Bergabung ke PasaBot",
+    "loading": "Memeriksa undangan Anda…",
+    "invalid": "Tautan undangan ini sudah tidak berlaku. Minta tautan baru.",
+    "introGuest": "{{name}} mengundang Anda sebagai guest ke: {{chats}}.",
+    "introMember": "{{name}} mengundang Anda sebagai member.",
+    "name": "Nama Anda",
+    "password": "Buat kata sandi",
+    "again": "Ulangi kata sandi",
+    "short": "Gunakan minimal 8 karakter.",
+    "mismatch": "Kata sandi tidak cocok.",
+    "badName": "Gunakan nama biasa tanpa karakter khusus.",
+    "submit": "Gabung"
+  },
+  "errors": {
+    "generic": "Terjadi kesalahan. Coba lagi."
+  },
+  "find": {
+    "navHint": "Undang orang dan pilih siapa yang ikut",
+    "navKeywords": "undang, anggota, tamu, keluarga, teman"
+  },
+  "plain": {
+    "page": {
+      "introOwner": "Undang keluarga, teman, atau rekan kerja. Tamu hanya melihat obrolan yang kamu tambahkan; anggota juga bisa memakai pembantu yang kamu bagikan. Kamu tetap satu-satunya pemilik."
+    },
+    "invite": {
+      "memberHint": "Anggota melihat obrolan yang kamu pilih dan bisa mengobrol dengan pembantu yang kamu bagikan.",
+      "noChats": "Belum ada obrolan. Buat pembantu dulu."
+    },
+    "agents": {
+      "title": "Pembantu yang bisa dipakai anggota",
+      "intro": "Anggota bisa memulai obrolan sendiri dengan pembantu ini. Pesan mereka berjalan atas nama mereka, bukan kamu, jadi hal berisiko tetap menanyaimu dulu.",
+      "none": "Belum ada pembantu."
+    }
+  }
+}

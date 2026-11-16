@@ -1,0 +1,23 @@
+# Byte-exact files on every checkout, Windows included (a windows-latest runner checks out with autocrlf=true):
+# migrations, locales, catalog files and release keys are hashed or signed, so they must be the same everywhere.
+* text=auto eol=lf
+# Windows-only scripts keep Windows line endings (cmd.exe and Inno Setup expect them)
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.iss text eol=crlf
+# binaries
+*.png binary
+*.jpg binary
+*.ico binary
+*.icns binary
+*.gif binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.zip binary
+*.gz binary
+*.wasm binary
+*.node binary
+*.onnx binary
+*.bin binary

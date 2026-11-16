@@ -1,0 +1,208 @@
+{
+  "nav": "Conectores",
+  "page": {
+    "title": "Conectores",
+    "intro": "Enlaces listos para usar con servicios externos. Añade uno y luego elige quién puede usarlo.",
+    "introTech": "Enlaces listos para usar con servicios externos. Añade uno y luego elige en la página de servidores MCP qué agentes pueden usarlo."
+  },
+  "loading": "Cargando…",
+  "kind": {
+    "mcp-stdio": "Se ejecuta en esta máquina",
+    "mcp-http": "Servicio alojado",
+    "oauth-api": "Inicio de sesión"
+  },
+  "status": {
+    "ready": "Añadido",
+    "needs_auth": "Necesita inicio de sesión o clave",
+    "error": "Problema"
+  },
+  "oauth": {
+    "connected": "Sesión iniciada. El conector está listo.",
+    "denied": "Se canceló el inicio de sesión.",
+    "expired": "Ese enlace de inicio de sesión venció. Inténtalo de nuevo.",
+    "failed": "El inicio de sesión no funcionó. Revisa el ID de cliente e inténtalo de nuevo.",
+    "connectedApp": "Sesión iniciada. {{name}} está listo.",
+    "failedApp": "No se completó el inicio de sesión en {{name}}. Inténtalo de nuevo."
+  },
+  "catalog": {
+    "title": "Añadir más",
+    "homepage": "Acerca de este servicio",
+    "install": "Añadir {{name}}",
+    "custom": "¿Quieres añadir algo más?",
+    "customTech": "¿Tienes la dirección de un servidor de herramientas?"
+  },
+  "install": {
+    "secretHint": "Se guarda en la bóveda. Los agentes nunca lo ven.",
+    "oauthHint": "Este conector inicia sesión con tu propio cliente OAuth. Crea uno en el servicio y agrégale esta dirección de retorno.",
+    "redirect": "Dirección de retorno:",
+    "clientId": "ID de cliente OAuth",
+    "clientSecret": "Secreto de cliente OAuth (si el servicio te dio uno)",
+    "clientSecretHint": "Se guarda en la bóveda.",
+    "save": "Añadir",
+    "cancel": "Cancelar"
+  },
+  "installed": {
+    "title": "Conectados",
+    "secrets": "Secretos guardados en la bóveda: {{names}}",
+    "mcpHint": "Elige qué agentes pueden usarlo:",
+    "foundHint": "Actívalo y elige quién puede usarlo:",
+    "mcpLink": "Servidores MCP",
+    "appsLink": "Apps que los agentes pueden usar",
+    "signIn": "Iniciar sesión",
+    "signInAgain": "Iniciar sesión de nuevo",
+    "remove": "Quitar",
+    "removeConfirm": "Sí, quitarlo"
+  },
+  "find": {
+    "navHint": "Conecta apps y servicios",
+    "navKeywords": "apps, servicios, conectar, integraciones, cuentas"
+  },
+  "search": {
+    "label": "Buscar apps",
+    "placeholder": "Busca apps, como «calendario»",
+    "none": "Ninguna app coincide."
+  },
+  "state": {
+    "added": "Añadido",
+    "ready": "Listo para añadir",
+    "needs_key": "Necesita inicio de sesión o clave",
+    "missing": "No está en este equipo"
+  },
+  "ready": {
+    "title": "Listo para añadir"
+  },
+  "missing": {
+    "line": "Necesita {{name}}, que aún no está en este equipo.",
+    "get": "Conseguir {{name}}",
+    "ask": "Necesita {{name}}, que aún no está en este equipo. ¿Añadirlo de todos modos?",
+    "addAnyway": "Añadir de todos modos"
+  },
+  "found": {
+    "title": "Encontrado en este equipo",
+    "intro": "Herramientas que ya configuraste en otra app. Añade una para usarla también aquí.",
+    "introTech": "Servidores de herramientas que ya configuraste en otra app. Añade uno para usarlo también aquí.",
+    "from": "Configurado en {{app}}",
+    "keys": "Sus claves van directo a tu bóveda y nunca se muestran: {{names}}",
+    "keysAsk": "Tiene claves. ¿Copiarlas también a tu bóveda? Los agentes nunca las ven.",
+    "confirm": "Sí, añadirlo",
+    "blocked": {
+      "key-in-command": "Este guarda una clave dentro de su comando. Mejor añádelo tú:",
+      "unsupported": "PasaBot no puede traer este tal como está. Mejor añádelo tú:"
+    }
+  },
+  "describe": {
+    "filesystem": "Permite a los agentes leer y cambiar los archivos de una carpeta que elijas.",
+    "git": "Permite a los agentes revisar el historial y los cambios de una carpeta de código.",
+    "github": "Permite a los agentes trabajar con tu código, issues y pull requests de GitHub.",
+    "github-remote": "Las mismas herramientas de GitHub, ejecutadas por GitHub en línea. Nada que configurar aquí.",
+    "google-calendar": "Permite a los agentes leer tu Google Calendar.",
+    "time": "Da a los agentes la hora en cualquier parte del mundo.",
+    "notion": "Los ayudantes buscan, leen y escriben páginas en tu Notion.",
+    "atlassian": "Los ayudantes consultan y actualizan tu trabajo en Jira y tus páginas de Confluence.",
+    "trello": "Los ayudantes leen tus tableros de Trello y mueven o añaden tarjetas.",
+    "clickup": "Los ayudantes buscan, añaden y actualizan tus tareas de ClickUp.",
+    "intercom": "Los ayudantes consultan los chats y contactos de tus clientes en Intercom.",
+    "stripe": "Los ayudantes revisan tus pagos, clientes y facturas de Stripe."
+  },
+  "adding": "Añadiendo…",
+  "server": {
+    "connected": "{{name}} está conectado. Pregúntame algo sobre él."
+  },
+  "groups": {
+    "popular": "Populares",
+    "files-notes": "Archivos y notas",
+    "calendar-email": "Calendario y correo",
+    "work-tasks": "Trabajo y tareas",
+    "shop-money": "Compras y dinero",
+    "social-chat": "Redes y chat",
+    "other": "Otros"
+  },
+  "button": {
+    "add": "Añadir",
+    "signIn": "Iniciar sesión",
+    "code": "Necesita un código",
+    "added": "Añadido"
+  },
+  "signin": {
+    "lead": "{{name}} abre su propia página para que inicies sesión. Aquí no escribes nada.",
+    "can": "Tu ayudante podrá:",
+    "ask": "Todo lo que envíe, publique, pague o borre te preguntará antes, siempre.",
+    "go": "Continuar a {{name}}",
+    "failed": "No se pudo abrir la página de inicio de sesión de {{name}}. Inténtalo de nuevo en un momento.",
+    "insecure": "{{name}} solo permite iniciar sesión desde una dirección segura. Abre PasaBot en el ordenador donde se ejecuta, o en su dirección segura (https), y luego inicia sesión.",
+    "refused": "{{name}} no aceptó el inicio de sesión de PasaBot. Intentarlo de nuevo no lo cambiará."
+  },
+  "code": {
+    "lead": "{{name}} te da un código para pegarlo aquí.",
+    "get": "Consigue tu código",
+    "paste": "Pega tu código",
+    "test": "Probar y añadir",
+    "bad": "Ese código no funcionó. Comprueba que lo copiaste entero.",
+    "unreachable": "No se pudo conectar con {{name}}. Revisa tu internet e inténtalo de nuevo.",
+    "failed": "No funcionó: {{reason}}",
+    "refused": "{{name}} respondió, pero ahora no funciona con PasaBot. Inténtalo más tarde."
+  },
+  "helpers": {
+    "title": "Quién puede usarlo",
+    "main": "ayudante principal"
+  },
+  "connected": {
+    "title": "{{name}} está conectado",
+    "try": "Prueba a preguntar:",
+    "who": "Cambiar quién puede usarlo"
+  },
+  "try": {
+    "notion": {
+      "a": "Busca mis notas de Notion sobre la próxima reunión",
+      "b": "Crea una página de Notion con tareas para esta semana"
+    },
+    "atlassian": {
+      "a": "¿Qué incidencias de Jira tengo asignadas?",
+      "b": "Resume la última página de Confluence que cambió mi equipo"
+    },
+    "trello": {
+      "a": "¿Qué hay hoy en mi tablero de Trello?",
+      "b": "Añade una tarjeta en Trello: llamar al proveedor el viernes"
+    },
+    "clickup": {
+      "a": "¿Qué tareas de ClickUp vencen esta semana?",
+      "b": "Añade una tarea en ClickUp: enviar el presupuesto mañana"
+    },
+    "intercom": {
+      "a": "Muestra mis chats más recientes de Intercom",
+      "b": "¿Quién nos escribió en Intercom sobre reembolsos?"
+    },
+    "stripe": {
+      "a": "¿Cuánto cobré en Stripe esta semana?",
+      "b": "Lista mis facturas de Stripe sin pagar"
+    },
+    "generic": {
+      "a": "¿Qué puedes hacer con {{name}}?",
+      "b": "Muéstrame lo que puedes ver en {{name}}"
+    }
+  },
+  "plain": {
+    "nav": "Apps que usan los ayudantes",
+    "page": {
+      "title": "Apps que usan los ayudantes"
+    },
+    "oauth": {
+      "connected": "Sesión iniciada. La app está lista."
+    },
+    "install": {
+      "secretHint": "Se guarda seguro en este equipo. Los ayudantes nunca lo ven.",
+      "oauthHint": "Esta app inicia sesión con una app de acceso propia. Crea una en el sitio del servicio y añade allí esta dirección de retorno.",
+      "clientId": "ID de la app de acceso",
+      "clientSecret": "Contraseña de la app de acceso (si el servicio te dio una)",
+      "clientSecretHint": "Se guarda seguro en este equipo."
+    },
+    "installed": {
+      "mcpHint": "Elige qué ayudantes pueden usarlo:",
+      "appsLink": "Apps y herramientas que usan los ayudantes"
+    },
+    "found": {
+      "keys": "Sus códigos secretos se guardan seguros y nunca se muestran: {{names}}",
+      "keysAsk": "Tiene códigos secretos. ¿Guardar también una copia aquí? Los ayudantes nunca los ven."
+    }
+  }
+}

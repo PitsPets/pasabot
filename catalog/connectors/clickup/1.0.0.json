@@ -1,0 +1,30 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "clickup",
+  "name": "ClickUp",
+  "version": "1.0.0",
+  "category": "work-tasks",
+  "summary": "ClickUp's own hosted MCP server (public beta). Sign in with ClickUp in your browser.",
+  "homepage": "https://clickup.com",
+  "source": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+  "group": "work-tasks",
+  "kind": "mcp-http",
+  "mcp": {
+    "url": "https://mcp.clickup.com/mcp",
+    "headers": {
+      "Authorization": "Bearer {{secret:oauth_token}}"
+    }
+  },
+  "auth": {
+    "type": "oauth2_pkce",
+    "oauth": {
+      "discover": "mcp",
+      "clientIdFrom": "register"
+    }
+  },
+  "network": {
+    "allowHosts": []
+  },
+  "defaultTier": 2,
+  "toolClasses": {}
+}

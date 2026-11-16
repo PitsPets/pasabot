@@ -1,0 +1,113 @@
+{
+  "nav": "Browser",
+  "page": {
+    "title": "Browser",
+    "intro": "Profil browser yang bisa dipakai agent Anda. Masing-masing menyimpan cookie dan akun masuk, warna, dan proxy sendiri. Tonton langsung, kendalikan sendiri, atau munculkan di jendela kecil saat Anda chat.",
+    "empty": "Belum ada profil browser. Agent membuatnya saat pertama kali menjelajah, atau Anda bisa menambahkannya sekarang.",
+    "ownerOnly": "Hanya owner yang dapat melihat dan memakai profil browser."
+  },
+  "badge": {
+    "running": "Berjalan",
+    "loggedIn": "Berisi akun masuk Anda",
+    "proxy": "Proxy"
+  },
+  "profile": {
+    "via": "Melalui {{server}}",
+    "loggedInNote": "Agent harus meminta izin Anda, dengan kata sandi atau passkey, sebelum memakai profil ini.",
+    "defaultName": "Browser agen"
+  },
+  "actions": {
+    "new": "Profil baru",
+    "watch": "Tonton",
+    "start": "Mulai",
+    "stop": "Hentikan",
+    "edit": "Ubah",
+    "delete": "Hapus",
+    "deleteConfirm": "Hapus {{name}} beserta cookie dan akun masuknya? Tindakan ini tidak dapat dibatalkan.",
+    "pip": "Munculkan",
+    "full": "Tampilan penuh",
+    "closePip": "Tutup",
+    "closeView": "Tutup tampilan"
+  },
+  "form": {
+    "newTitle": "Profil browser baru",
+    "editTitle": "Ubah profil browser",
+    "name": "Nama",
+    "color": "Warna",
+    "proxy": "Proxy (opsional)",
+    "proxyHint": "http://, https:// atau socks5:// dengan host dan port. Berlaku saat browser dimulai berikutnya.",
+    "bypass": "Lewati proxy untuk",
+    "username": "Nama pengguna proxy",
+    "password": "Kata sandi proxy",
+    "passwordVault": "Disimpan di vault, tidak akan ditampilkan lagi.",
+    "passwordKeep": "Biarkan kosong untuk mempertahankan kata sandi yang tersimpan.",
+    "loggedIn": "Profil ini berisi akun masuk saya (agent harus meminta izin dulu)",
+    "save": "Simpan",
+    "cancel": "Batal"
+  },
+  "live": {
+    "title": "{{name}} langsung",
+    "alt": "Tampilan langsung browser {{name}}",
+    "waiting": "Menunggu gambar pertama…",
+    "stopped": "Browser ini tidak berjalan."
+  },
+  "steer": {
+    "address": "Alamat",
+    "go": "Buka",
+    "type": "Ketik di halaman",
+    "typeHint": "Klik kolom pada gambar terlebih dahulu. Mengetik akan menandai profil ini berisi akun masuk Anda.",
+    "send": "Ketik"
+  },
+  "keys": {
+    "Enter": "Enter",
+    "Tab": "Tab",
+    "Backspace": "Backspace",
+    "Escape": "Esc",
+    "up": "Gulir ke atas",
+    "down": "Gulir ke bawah"
+  },
+  "network": {
+    "title": "Alamat lokal",
+    "allowHosts": "Host yang boleh dibuka browser di jaringan Anda",
+    "hint": "Alamat privat dan loopback diblokir kecuali dicantumkan di sini, dipisahkan koma.",
+    "save": "Simpan",
+    "saved": "Tersimpan."
+  },
+  "pip": {
+    "label": "Browser dalam jendela kecil"
+  },
+  "dock": {
+    "label": "Browser",
+    "idle": "Tidak ada browser yang berjalan saat ini."
+  },
+  "tools": {
+    "browser_navigate": "Browser: buka halaman",
+    "browser_snapshot": "Browser: baca halaman",
+    "browser_click": "Browser: klik",
+    "browser_type": "Browser: ketik di kolom"
+  },
+  "server": {
+    "yourTurn": "Giliran Anda di browser"
+  },
+  "find": {
+    "navHint": "Biarkan agen memakai peramban",
+    "navKeywords": "web, jelajah, situs, internet"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Biarkan pembantu memakai peramban"
+    },
+    "page": {
+      "intro": "Browser yang bisa dipakai pembantumu. Masing-masing punya info masuk, warna, dan pengaturan sendiri. Tonton langsung, kemudikan sendiri, atau lepaskan sambil mengobrol.",
+      "empty": "Belum ada browser. Pembantu membuatnya saat pertama menjelajah, atau kamu bisa menambah sekarang."
+    },
+    "profile": {
+      "loggedInNote": "Pembantu harus memintamu, dengan kata sandi atau passkey, sebelum memakai browser ini.",
+      "defaultName": "Browser pembantu"
+    },
+    "form": {
+      "passwordVault": "Disimpan aman di komputer ini, tidak pernah ditampilkan lagi.",
+      "loggedIn": "Browser ini punya info masukku (pembantu harus bertanya dulu)"
+    }
+  }
+}

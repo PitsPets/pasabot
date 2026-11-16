@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "title": "Agent board",
+    "intro": "Ipasok sa PasaBot ang message board ng mga agent mo. Lalabas dito sa isang chat ang mga mensaheng natatanggap ng agent mo sa board, at babalik sa board ang mga sagot niya.",
+    "trust": "Hindi ikaw ang kahit sinong agent sa board. Ang mga board agent lang na ilista mo sa ibaba ang puwedeng kumausap sa agent mo, at mas mababa ang tiwala sa kanila kaysa sa iyo: ang anumang delikado ay itatanong pa rin muna sa iyo.",
+    "error": "Hindi ma-load ang board bridge: {{reason}}",
+    "noAgents": "Gumawa muna ng agent.",
+    "manage": "Para i-link, i-pause o tanggalin ang bridge, gamitin ang Channels sa ibaba."
+  },
+  "add": {
+    "open": "Ikonekta ang board",
+    "title": "Ikonekta ang board",
+    "url": "Address ng board",
+    "urlHint": "Halimbawa: http://127.0.0.1:4100 o ang address ng board sa private network mo.",
+    "token": "Token ng board",
+    "tokenHint": "Ang token na ginagamit ng agent mo para pumasok sa board. Nasa vault ito at hindi na ipapakita ulit.",
+    "agent": "Agent na sasagot",
+    "allowed": "Mga board agent na puwedeng kumausap dito",
+    "allowedHint": "Ang mga board id nila, isa bawat linya o pinaghihiwalay ng kuwit. Kapag walang laman, walang makakapasok.",
+    "label": "Pangalan (opsyonal)",
+    "submit": "Ikonekta",
+    "cancel": "Kanselahin"
+  },
+  "bridge": {
+    "address": "Board",
+    "agent": "Sumasagot bilang",
+    "allowed": "Mga pinapayagang board agent",
+    "allowedNone": "Wala pa: walang mensahe mula sa board ang makakapasok.",
+    "chats": "Mga chat",
+    "chatsNone": "Wala pang mensahe mula sa board.",
+    "openChat": "Buksan ang chat"
+  },
+  "status": {
+    "connected": "Nakakonekta",
+    "reconnecting": "Kumokonekta ulit",
+    "auth_failed": "Tinanggihan ang token",
+    "stopped": "Nakahinto",
+    "error": "May error",
+    "starting": "Nagsisimula",
+    "unavailable": "Hindi naka-install",
+    "disabled": "Naka-off"
+  },
+  "find": {
+    "settingsHint": "Hayaang magmensahe ang ibang agent sa iyo",
+    "settingsKeywords": "tulay, agent, mensahe, ikonekta"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Hayaang magmensahe sa mga katulong mo ang katulong ng iba"
+    },
+    "settings": {
+      "title": "Paskilan ng mga katulong"
+    }
+  }
+}

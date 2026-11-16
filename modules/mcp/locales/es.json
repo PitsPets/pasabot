@@ -1,0 +1,114 @@
+{
+  "nav": "Servidores MCP",
+  "page": {
+    "title": "Servidores MCP",
+    "intro": "Servidores de herramientas externos que tus agentes pueden usar. Agrega uno, pruébalo, actívalo y luego elige qué agentes pueden usarlo."
+  },
+  "loading": "Cargando…",
+  "empty": "Aún no hay servidores MCP. Agrega uno aquí o instala un connector.",
+  "transport": {
+    "stdio": "Comando en esta máquina",
+    "http": "Dirección web"
+  },
+  "level": {
+    "none": "Oculto",
+    "use": "Puede usar",
+    "manage": "Puede administrar",
+    "inherit": "Predeterminado ({{level}})"
+  },
+  "access": {
+    "title": "Quién puede usarlo",
+    "hint": "Los agentes con acceso oculto no pueden ver este servidor. Los agentes que pueden administrarlo pueden renombrarlo o desactivarlo, y aun así te piden permiso primero.",
+    "all": "Todos los agentes"
+  },
+  "server": {
+    "on": "Activado",
+    "off": "Desactivado",
+    "fromConnector": "Desde un connector",
+    "tools_one": "{{count}} herramienta",
+    "tools_many": "{{count}} de herramientas",
+    "tools_other": "{{count}} herramientas",
+    "testFailed": "Falló la prueba",
+    "secrets": "Secretos guardados en la bóveda: {{names}}",
+    "test": "Probar",
+    "turnOn": "Activar",
+    "turnOff": "Desactivar",
+    "remove": "Quitar",
+    "removeConfirm": "Sí, quitarlo"
+  },
+  "add": {
+    "open": "Agregar servidor MCP",
+    "title": "Nuevo servidor MCP",
+    "name": "Nombre",
+    "transport": "Cómo acceder",
+    "command": "Comando",
+    "commandHint": "El programa que se iniciará, p. ej. npx o docker. Se inicia sin shell.",
+    "args": "Argumentos",
+    "argsHint": "Uno por línea.",
+    "env": "Ajustes (no secretos)",
+    "envHint": "Un NOMBRE=valor por línea.",
+    "url": "Dirección (https://…)",
+    "secrets": "Ajustes secretos",
+    "secretHeaders": "Encabezados secretos",
+    "secretsHint": "Se guardan en la bóveda. No puedes volver a leerlos aquí y los agentes nunca los ven.",
+    "secretName": "Nombre",
+    "headerName": "Encabezado",
+    "secretValue": "Valor",
+    "anotherSecret": "Agregar otro",
+    "save": "Agregar servidor",
+    "cancel": "Cancelar"
+  },
+  "classes": {
+    "title": "Qué hace cada herramienta",
+    "hint": "Pagar y enviar mensajes a otras personas siempre te pide permiso primero, en cualquier nivel de confianza. El tipo de cada herramienta se deduce de su nombre al listarla; corrígelo aquí si la deducción es incorrecta.",
+    "default": "Predeterminado: {{class}}",
+    "money": "Dinero (comprar, pagar)",
+    "outbound-message": "Mensaje a otras personas",
+    "delete": "Eliminar",
+    "publish": "Publicar",
+    "none": "Nada especial",
+    "alwaysAsks": "Siempre pide permiso"
+  },
+  "tools": {
+    "tools_find": "Buscar herramientas",
+    "tools_describe": "Describir una herramienta",
+    "tools_invoke": "Usar una herramienta externa",
+    "mcp_servers": "Ver servidores MCP",
+    "mcp_server_update": "Cambiar un servidor MCP"
+  },
+  "find": {
+    "navHint": "Servidores de herramientas para tus agentes",
+    "navKeywords": "herramientas, servidores, plugins, integraciones"
+  },
+  "plain": {
+    "nav": "Apps y herramientas que usan los ayudantes",
+    "find": {
+      "navHint": "Apps extra que tus ayudantes pueden usar por ti"
+    },
+    "page": {
+      "title": "Apps y herramientas que usan los ayudantes",
+      "intro": "Apps y herramientas externas que pueden usar tus ayudantes. Añade una, pruébala, actívala y elige qué ayudantes pueden usarla."
+    },
+    "empty": "Aún no hay nada. Añade una aquí o una app lista para usar.",
+    "access": {
+      "hint": "Los ayudantes ocultos no pueden verla. Los que pueden gestionarla pueden renombrarla o apagarla, y aun así te preguntan antes.",
+      "all": "Todos los ayudantes"
+    },
+    "add": {
+      "open": "Añadir una app o herramienta",
+      "title": "Nueva app o herramienta",
+      "secretsHint": "Guardados a salvo en esta computadora. No puedes volver a leerlos aquí y los ayudantes nunca los ven.",
+      "save": "Añadirla",
+      "command": "Cómo se abre",
+      "commandHint": "La página de configuración de la app te dice qué escribir aquí.",
+      "args": "Datos adicionales"
+    },
+    "transport": {
+      "stdio": "Un programa en esta computadora",
+      "http": "Una dirección en la web"
+    },
+    "server": {
+      "fromConnector": "App lista"
+    }
+  }
+}

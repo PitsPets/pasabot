@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "Agents ACP",
+    "intro": "Installez des agents en ligne de commande qui parlent l'Agent Client Protocol. Chaque agent installé devient un cerveau que vous pouvez choisir lors de la création ou de la modification d'un agent.",
+    "ownerOnly": "Seul le propriétaire peut gérer les agents ACP."
+  },
+  "index": {
+    "label": "Index du registre",
+    "hint": "Un chemin absolu vers un fichier d'index local, ou une URL https.",
+    "save": "Enregistrer",
+    "saved": "Enregistré.",
+    "none": "Définissez un index de registre pour parcourir les agents."
+  },
+  "search": {
+    "label": "Rechercher des agents",
+    "placeholder": "Nom ou description",
+    "empty": "Aucun agent de l'index ne correspond.",
+    "install": "Installer",
+    "reinstall": "Mettre à jour",
+    "installing": "Installation…",
+    "installed": "Installé",
+    "remoteCommand": "Un index distant ne peut installer que des paquets, pas des commandes locales.",
+    "available": "Disponible dans l'index"
+  },
+  "installed": {
+    "title": "Installés",
+    "empty": "Aucun agent ACP installé pour l'instant.",
+    "remove": "Supprimer",
+    "removing": "Suppression…",
+    "confirmRemove": "Supprimer {{name}} ? Les agents ne pourront plus l'utiliser comme cerveau.",
+    "ready": "Prêt",
+    "missing": "Introuvable",
+    "version": "Version {{version}}",
+    "provider": "ID du cerveau",
+    "command": "Commande"
+  },
+  "error": {
+    "generic": "Une erreur s'est produite ({{code}}).",
+    "in_use": "Encore utilisé par un agent. Choisissez d'abord un autre cerveau pour lui.",
+    "command_missing": "Ce programme n'est pas présent sur cette machine.",
+    "command_from_remote": "Un index distant ne peut pas installer de commande locale.",
+    "bad_index_source": "Utilisez un chemin de fichier absolu ou une URL https.",
+    "index_unreadable": "Impossible de lire l'index.",
+    "index_invalid": "L'index n'est pas au format attendu.",
+    "install_failed": "Échec de l'installation.",
+    "no_index": "Définissez d'abord un index de registre."
+  },
+  "find": {
+    "settingsHint": "Ajouter des agents de code comme cerveaux",
+    "settingsKeywords": "programmation, code, cerveaux, terminal, développeur"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Utiliser une appli de code comme cerveau d’un assistant"
+    },
+    "settings": {
+      "title": "Applis de code comme cerveau"
+    }
+  }
+}

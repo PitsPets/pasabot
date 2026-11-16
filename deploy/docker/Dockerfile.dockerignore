@@ -1,0 +1,47 @@
+# The build context is an ALLOWLIST: everything is left out, then only what the image needs is let back in.
+# A folder that only lives on a maintainer's machine (the `pnpm dev` data home `.pasabot/` with its database,
+# vault and link keys, `.qa/` screenshots and logs, editor/agent folders, desktop builds) therefore never reaches
+# an image layer, even when it is not listed here. Add a new top-level path below only if the build or the
+# runtime reads it. deploy-files.test.ts checks this file.
+*
+
+# sources and catalog the build and the server read
+!apps
+!packages
+!providers
+!channels
+!modules
+!plugins
+!catalog
+# unit templates and release keys the CLI reads from the install root
+!deploy
+# workspace manifests and compiler settings
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!tsconfig.base.json
+!tsconfig.json
+# Apache-2.0 notices travel with the code
+!LICENSE
+!NOTICE
+
+# never inside the folders let back in: installs, builds, local data, keys and test output
+**/node_modules
+**/dist
+**/out
+**/.git
+**/.claude
+**/.pasabot
+**/.qa
+**/.design
+**/.impeccable
+**/*.private.json
+**/server.addr
+**/.npmrc
+**/test-results
+**/playwright-report
+**/coverage
+**/*.log
+**/.env
+**/.env.*
+**/vault.key

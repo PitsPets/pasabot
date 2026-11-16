@@ -1,0 +1,114 @@
+{
+  "nav": "Serveurs MCP",
+  "page": {
+    "title": "Serveurs MCP",
+    "intro": "Des serveurs d'outils externes que vos agents peuvent utiliser. Ajoutez-en un, testez-le, activez-le, puis choisissez quels agents peuvent l'utiliser."
+  },
+  "loading": "Chargement…",
+  "empty": "Aucun serveur MCP pour l'instant. Ajoutez-en un ici ou installez un connecteur.",
+  "transport": {
+    "stdio": "Commande sur cette machine",
+    "http": "Adresse web"
+  },
+  "level": {
+    "none": "Masqué",
+    "use": "Peut utiliser",
+    "manage": "Peut gérer",
+    "inherit": "Par défaut ({{level}})"
+  },
+  "access": {
+    "title": "Qui peut l'utiliser",
+    "hint": "Les agents masqués ne voient pas ce serveur. Les agents qui peuvent le gérer peuvent le renommer ou le désactiver, en vous demandant tout de même d'abord votre accord.",
+    "all": "Tous les agents"
+  },
+  "server": {
+    "on": "Activé",
+    "off": "Désactivé",
+    "fromConnector": "Depuis un connecteur",
+    "tools_one": "{{count}} outil",
+    "tools_many": "{{count}} d'outils",
+    "tools_other": "{{count}} outils",
+    "testFailed": "Échec du test",
+    "secrets": "Secrets conservés dans le coffre : {{names}}",
+    "test": "Tester",
+    "turnOn": "Activer",
+    "turnOff": "Désactiver",
+    "remove": "Supprimer",
+    "removeConfirm": "Oui, supprimer"
+  },
+  "add": {
+    "open": "Ajouter un serveur MCP",
+    "title": "Nouveau serveur MCP",
+    "name": "Nom",
+    "transport": "Comment l'atteindre",
+    "command": "Commande",
+    "commandHint": "Le programme à lancer, par ex. npx ou docker. Il démarre sans shell.",
+    "args": "Arguments",
+    "argsHint": "Un par ligne.",
+    "env": "Paramètres (non secrets)",
+    "envHint": "Un NOM=valeur par ligne.",
+    "url": "Adresse (https://…)",
+    "secrets": "Paramètres secrets",
+    "secretHeaders": "En-têtes secrets",
+    "secretsHint": "Enregistrés dans le coffre. Vous ne pouvez pas les relire ici, et les agents ne les voient jamais.",
+    "secretName": "Nom",
+    "headerName": "En-tête",
+    "secretValue": "Valeur",
+    "anotherSecret": "Ajouter un autre",
+    "save": "Ajouter le serveur",
+    "cancel": "Annuler"
+  },
+  "classes": {
+    "title": "Ce que fait chaque outil",
+    "hint": "Les paiements et les messages à d'autres personnes demandent toujours votre accord d'abord, à tous les niveaux de confiance. Le type de chaque outil est deviné d'après son nom lors de l'affichage de la liste ; corrigez-le ici si c'est inexact.",
+    "default": "Par défaut : {{class}}",
+    "money": "Argent (achats, paiements)",
+    "outbound-message": "Message à d'autres personnes",
+    "delete": "Suppression",
+    "publish": "Publication",
+    "none": "Rien de particulier",
+    "alwaysAsks": "Demande toujours"
+  },
+  "tools": {
+    "tools_find": "Trouver des outils",
+    "tools_describe": "Décrire un outil",
+    "tools_invoke": "Utiliser un outil externe",
+    "mcp_servers": "Lister les serveurs MCP",
+    "mcp_server_update": "Modifier un serveur MCP"
+  },
+  "find": {
+    "navHint": "Serveurs d’outils pour vos agents",
+    "navKeywords": "outils, serveurs, plugins, intégrations"
+  },
+  "plain": {
+    "nav": "Applis et outils des assistants",
+    "find": {
+      "navHint": "Des applis en plus que vos assistants peuvent utiliser pour vous"
+    },
+    "page": {
+      "title": "Applis et outils des assistants",
+      "intro": "Applis et outils extérieurs que vos assistants peuvent utiliser. Ajoutez-en un, testez-le, activez-le, puis choisissez quels assistants peuvent l’utiliser."
+    },
+    "empty": "Rien pour l’instant. Ajoutez-en un ici, ou une appli toute prête.",
+    "access": {
+      "hint": "Les assistants masqués ne le voient pas. Ceux qui peuvent le gérer peuvent le renommer ou le couper, et vous demandent quand même d’abord.",
+      "all": "Tous les assistants"
+    },
+    "add": {
+      "open": "Ajouter une appli ou un outil",
+      "title": "Nouvelle appli ou nouvel outil",
+      "secretsHint": "Gardés en sécurité sur cet ordinateur. Vous ne pouvez pas les relire ici, et les assistants ne les voient jamais.",
+      "save": "L’ajouter",
+      "command": "Comment l’ouvrir",
+      "commandHint": "La page d’installation de l’appli indique quoi écrire ici.",
+      "args": "Détails en plus"
+    },
+    "transport": {
+      "stdio": "Un programme sur cet ordinateur",
+      "http": "Une adresse sur le web"
+    },
+    "server": {
+      "fromConnector": "App toute prête"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "按住说话",
+    "listening": "正在聆听… 松开即停止",
+    "working": "正在将语音转为文字…",
+    "title": "您的消息",
+    "text": "您说的内容",
+    "send": "发送",
+    "cancel": "取消",
+    "empty": "没有听到声音。请离麦克风近一点再试一次。",
+    "noMic": "此浏览器在此处无法使用麦克风。",
+    "denied": "麦克风权限已被阻止。请在浏览器中允许后再说话。",
+    "unavailable": "语音输入尚未设置。owner 可在“设置 → 语音”中下载语音模型。",
+    "failed": "无法将录音转为文字。{{reason}}",
+    "browserNote": "正在使用浏览器的语音识别。"
+  },
+  "listen": {
+    "play": "收听",
+    "stop": "停止",
+    "loading": "正在准备音频…",
+    "failed": "无法朗读此内容。{{reason}}"
+  },
+  "settings": {
+    "title": "语音",
+    "intro": "与您的 agent 对话并听取它们的回复。语音处理在本服务器上运行，您的声音不会离开服务器。",
+    "engine": "语音引擎",
+    "engineFake": "测试引擎",
+    "engineLocal": "本服务器",
+    "noPackage": "本服务器未安装语音引擎，因此改用浏览器的备用方案。",
+    "stt": "语音输入",
+    "tts": "语音回复",
+    "ready": "已就绪：{{model}}",
+    "notReady": "尚无模型",
+    "models": "语音模型",
+    "modelsIntro": "模型仅在您请求时才会下载，来源为语音引擎自己的发布页。",
+    "kindStt": "语音输入",
+    "kindTts": "语音回复",
+    "size": "约 {{mb}} MB",
+    "languages": "语言：{{list}}",
+    "installed": "已安装",
+    "download": "下载 {{name}}",
+    "remove": "移除 {{name}}",
+    "modelName": "{{model}}（{{note}}）",
+    "noteMultilingual": "多语言",
+    "noteEnglish": "英语",
+    "downloading": "正在下载… {{pct}}",
+    "unpacking": "正在解压…",
+    "failedDownload": "下载失败：{{reason}}",
+    "disabledUnpinned": "暂不可用：PasaBot 没有可用于校验此下载内容的校验和，因此保持关闭。",
+    "ownerOnly": "只有 owner 可以下载或移除模型。",
+    "autoRead": "自动朗读新回复",
+    "autoReadHint": "仅限此设备。",
+    "browserStt": "未安装模型时使用浏览器的语音识别",
+    "browserSttHint": "部分浏览器会把您的语音发送到其厂商的服务器进行识别。默认关闭。",
+    "loading": "正在加载…",
+    "error": "无法加载语音设置。{{reason}}"
+  },
+  "find": {
+    "settingsHint": "和智能体对话并收听",
+    "settingsKeywords": "语音, 说话, 麦克风, 收听, 音频"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "和助手说话、听它们说"
+    },
+    "settings": {
+      "intro": "与您的 助手 对话并听取它们的回复。语音处理在本服务器上运行，您的声音不会离开服务器。",
+      "engineLocal": "本服务器",
+      "notReady": "尚无大脑",
+      "models": "语音大脑",
+      "modelsIntro": "大脑仅在您请求时才会下载，来源为语音引擎自己的发布页。",
+      "browserStt": "未安装大脑时使用浏览器的语音识别",
+      "browserSttHint": "部分浏览器会把您的语音发送到其厂商的服务器进行识别。默认关闭。"
+    }
+  }
+}

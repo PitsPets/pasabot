@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "Zum Sprechen halten",
+    "listening": "Ich höre zu … zum Beenden loslassen",
+    "working": "Deine Stimme wird in Text umgewandelt …",
+    "title": "Deine Nachricht",
+    "text": "Was du gesagt hast",
+    "send": "Senden",
+    "cancel": "Abbrechen",
+    "empty": "Es wurde nichts gehört. Versuch es noch mal, etwas näher am Mikrofon.",
+    "noMic": "Dieser Browser kann das Mikrofon hier nicht nutzen.",
+    "denied": "Der Mikrofonzugriff wurde blockiert. Erlaube ihn im Browser, um zu sprechen.",
+    "unavailable": "Spracheingabe ist nicht eingerichtet. Der Owner kann in den Einstellungen unter Sprache ein Sprachmodell herunterladen.",
+    "failed": "Die Aufnahme konnte nicht in Text umgewandelt werden. {{reason}}",
+    "browserNote": "Nutzt die Spracherkennung deines Browsers."
+  },
+  "listen": {
+    "play": "Anhören",
+    "stop": "Stopp",
+    "loading": "Audio wird vorbereitet …",
+    "failed": "Das konnte nicht vorgelesen werden. {{reason}}"
+  },
+  "settings": {
+    "title": "Sprache",
+    "intro": "Sprich mit deinen Agenten und hör ihre Antworten. Die Sprachverarbeitung läuft auf diesem Server, deine Stimme verlässt ihn also nie.",
+    "engine": "Sprach-Engine",
+    "engineFake": "Test-Engine",
+    "engineLocal": "Auf diesem Server",
+    "noPackage": "Die Sprach-Engine ist auf diesem Server nicht installiert, daher wird die Browser-Alternative genutzt.",
+    "stt": "Spracheingabe",
+    "tts": "Gesprochene Antworten",
+    "ready": "Bereit: {{model}}",
+    "notReady": "Noch kein Modell",
+    "models": "Sprachmodelle",
+    "modelsIntro": "Modelle werden nur auf deinen Wunsch heruntergeladen, aus den eigenen Releases der Sprach-Engine.",
+    "kindStt": "Spracheingabe",
+    "kindTts": "Gesprochene Antworten",
+    "size": "Etwa {{mb}} MB",
+    "languages": "Sprachen: {{list}}",
+    "installed": "Installiert",
+    "download": "{{name}} herunterladen",
+    "remove": "{{name}} entfernen",
+    "modelName": "{{model}} ({{note}})",
+    "noteMultilingual": "mehrsprachig",
+    "noteEnglish": "Englisch",
+    "downloading": "Wird heruntergeladen … {{pct}}",
+    "unpacking": "Wird entpackt …",
+    "failedDownload": "Download fehlgeschlagen: {{reason}}",
+    "disabledUnpinned": "Noch nicht verfügbar: PasaBot hat keine Prüfsumme, mit der sich dieser Download überprüfen ließe, daher bleibt er aus.",
+    "ownerOnly": "Nur der Owner kann Modelle herunterladen oder entfernen.",
+    "autoRead": "Neue Antworten vorlesen",
+    "autoReadHint": "Nur auf diesem Gerät.",
+    "browserStt": "Spracherkennung des Browsers nutzen, wenn kein Modell installiert ist",
+    "browserSttHint": "Manche Browser senden deine Stimme zur Erkennung an die Server ihres Herstellers. Standardmäßig aus.",
+    "loading": "Wird geladen …",
+    "error": "Die Spracheinstellungen konnten nicht geladen werden. {{reason}}"
+  },
+  "find": {
+    "settingsHint": "Mit Agenten sprechen und sie hören",
+    "settingsKeywords": "Stimme, sprechen, Mikrofon, hören, Audio"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Mit deinen Helfern sprechen und sie hören"
+    },
+    "settings": {
+      "intro": "Sprich mit deinen Helfer und hör ihre Antworten. Die Sprachverarbeitung läuft auf diesem Server, deine Stimme verlässt ihn also nie.",
+      "engineLocal": "Auf diesem Server",
+      "notReady": "Noch kein Gehirn",
+      "models": "Sprachmodelle",
+      "modelsIntro": "Gehirne werden nur auf deinen Wunsch heruntergeladen, aus den eigenen Releases der Sprach-Engine.",
+      "browserStt": "Spracherkennung des Browsers nutzen, wenn kein Gehirn installiert ist",
+      "browserSttHint": "Manche Browser senden deine Stimme zur Erkennung an die Server ihres Herstellers. Standardmäßig aus."
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "nav": "資料",
+  "page": {
+    "title": "共用資料",
+    "intro": "代理共用的資料表。每個代理都能讀取所有資料表，因此私人筆記請放在代理的記憶中，不要放這裡。",
+    "size": "已使用 {{used}}，上限 {{max}}",
+    "details": "建立資料表的代理可自由新增與修改其資料列；其他代理的變更則依你對該代理設定的核准規則處理（刪除資料列一律會詢問你）。只有建立者能修改資料表結構或刪除資料表，而刪除一律會詢問你。",
+    "more": "了解更多"
+  },
+  "refresh": "重新整理",
+  "loading": "載入中…",
+  "empty": "尚無資料表。代理建立後會顯示在這裡。",
+  "error": "無法載入資料。{{reason}}",
+  "table": {
+    "rows_other": "{{count}} 列",
+    "columns_other": "{{count}} 欄",
+    "by": "建立者：{{name}}",
+    "byUnknown": "建立者不明",
+    "removedAgent": "已移除的代理",
+    "ddl": "定義方式",
+    "showRows": "顯示資料列",
+    "hideRows": "隱藏資料列",
+    "rowsOf": "{{name}} 的資料列"
+  },
+  "cell": {
+    "null": "空白",
+    "blob": "（檔案資料）"
+  },
+  "result": {
+    "count_other": "{{count}} 列",
+    "countMore_other": "前 {{count}} 列；還有更多"
+  },
+  "query": {
+    "title": "查詢資料",
+    "label": "查詢（唯讀）",
+    "hint": "一個 SELECT 陳述式。此畫面絕不會變更資料。",
+    "run": "執行查詢",
+    "result": "查詢結果",
+    "error": "查詢未能執行。{{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "列出共用資料表",
+    "datastore_create_table": "建立共用資料表",
+    "datastore_query": "查詢共用資料表",
+    "datastore_write": "寫入資料列",
+    "datastore_alter_table": "修改你建立的資料表",
+    "datastore_drop_table": "刪除你建立的資料表"
+  },
+  "find": {
+    "navHint": "代理保存的表格和資料",
+    "navKeywords": "資料, 表格, 資料庫, 紀錄"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助理保存的表格和清單"
+    },
+    "page": {
+      "intro": "你的助理共用的表格。每個助理都能讀所有表格，所以私人筆記應放在助理的記憶裡，不要放這裡。",
+      "details": "建表的助理可以隨意增改列；其他助理的修改按你給那個助理定的核准規則（刪除列總會問你）。只有建表者能改結構或刪除表格，刪除總會問你。"
+    },
+    "empty": "還沒有表格。助理建好後會顯示在這裡。",
+    "table": {
+      "removedAgent": "已移除的助理"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Notifications sa device na ito",
+  "intro": "Makatanggap ng notification sa phone o computer na ito kahit nakasara ang PasaBot.",
+  "state": {
+    "loading": "Tinitingnan…",
+    "off": "Naka-off",
+    "on": "Naka-on",
+    "unsupported": "Hindi suportado rito",
+    "blocked": "Naka-block sa browser",
+    "unavailable": "Hindi available sa server na ito"
+  },
+  "turnOn": "I-on ang notifications",
+  "turnOff": "I-off sa device na ito",
+  "prefs": {
+    "title": "Abisuhan ako kapag",
+    "approval": "Kailangan ng agent ang OK ko",
+    "error": "May run na pumalya",
+    "finished": "Sumagot ang agent",
+    "progress": "Tumatakbo pa ang mahabang gawain",
+    "alert": "Ibang alerto (server, seguridad)"
+  },
+  "test": {
+    "button": "Magpadala ng test",
+    "sent": "Naipadala na. Lalabas ito maya-maya.",
+    "failed": "Hindi natuloy ang test. I-off at i-on ulit ang notifications."
+  },
+  "help": {
+    "unsupported": "Hindi makatanggap ng notifications mula sa mga website ang browser na ito.",
+    "blocked": "Naka-block ang notifications para sa PasaBot. Payagan ito sa site settings ng browser, tapos bumalik dito.",
+    "unavailable": "Hindi makapagpadala ng notifications ang server ngayon (naka-lock ang lalagyan ng mga secret).",
+    "iphone": "Sa iPhone at iPad, idagdag muna ang PasaBot sa Home Screen (Share → Add to Home Screen), tapos i-on ito mula roon."
+  },
+  "errors": {
+    "subscribe": "Hindi ma-on ang notifications. Subukan ulit."
+  },
+  "find": {
+    "settingsHint": "Mga abiso sa device na ito",
+    "settingsKeywords": "abiso, alerto, notipikasyon, tunog"
+  }
+}

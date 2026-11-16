@@ -1,0 +1,107 @@
+{
+  "nav": "Mga tao",
+  "page": {
+    "title": "Mga tao",
+    "introOwner": "Imbitahan ang pamilya, kaibigan o katrabaho. Ang mga guest ay makakakita lang ng mga chat na idinagdag mo sila; ang mga member ay puwede ring gumamit ng mga agent na ibinahagi mo. Ikaw pa rin ang nag-iisang may-ari.",
+    "introOther": "Inimbitahan ka sa PasaBot na ito. Ang may-ari ang nagpapasya kung ano ang makikita mo."
+  },
+  "kind": {
+    "owner": "May-ari",
+    "member": "Member",
+    "guest": "Guest"
+  },
+  "role": {
+    "member": "Puwedeng sumulat",
+    "observer": "Pagbasa lang"
+  },
+  "invite": {
+    "title": "Mag-imbita ng tao",
+    "intro": "Makakakuha ka ng link na ipapadala mo sa kanila. Isang beses lang ito gagana at mawawalan ng bisa pagkalipas ng 3 araw.",
+    "kind": "Imbitahan bilang",
+    "guestHint": "Ang guest ay makakakita lang ng mga chat na pipiliin mo sa ibaba.",
+    "memberHint": "Ang member ay makakakita ng mga chat na pipiliin mo at puwedeng makipag-chat sa mga agent na ibabahagi mo.",
+    "chats": "Mga chat na sasalihan nila",
+    "noChats": "Wala pang chat. Gumawa muna ng agent.",
+    "pickChat": "Pumili ng kahit isang chat para sa guest.",
+    "role": "Sa mga chat na iyon, sila ay",
+    "create": "Gumawa ng invite link",
+    "link": "Invite link",
+    "linkHint": "Ipadala lang ito sa taong iniimbitahan mo: kung sino ang unang magbukas, siya ang makakasali.",
+    "copy": "Kopyahin ang link",
+    "copied": "Nakopya na"
+  },
+  "invites": {
+    "title": "Mga bukas na imbitasyon",
+    "noChats": "Walang chat",
+    "expires": "mag-e-expire sa {{when}}",
+    "revoke": "Kanselahin ang imbitasyon"
+  },
+  "list": {
+    "title": "Lahat ng nasa PasaBot na ito",
+    "disabled": "Naka-off",
+    "disable": "I-off",
+    "enable": "I-on ulit"
+  },
+  "agents": {
+    "title": "Mga agent na magagamit ng mga member",
+    "intro": "Puwedeng magsimula ng sariling chat ang mga member sa mga agent na ito. Tumatakbo ang mga mensahe nila bilang sila, hindi bilang ikaw, kaya magtatanong pa rin muna sa iyo ang anumang delikado.",
+    "none": "Wala pang agent.",
+    "share": "Payagang gamitin ng mga member si {{name}}"
+  },
+  "member": {
+    "title": "Mga agent na magagamit mo",
+    "intro": "Magsimula ng sarili mong chat sa agent na ibinahagi ng may-ari.",
+    "none": "Wala pang agent na ibinahagi sa iyo ang may-ari.",
+    "open": "Makipag-chat kay {{name}}"
+  },
+  "guest": {
+    "title": "Mga chat mo",
+    "body": "Nasa listahan ang mga chat mo. Idadagdag ka ng may-ari sa iba kung kailangan."
+  },
+  "chat": {
+    "button": "Mga tao",
+    "title": "Mga tao sa chat na ito",
+    "readOnly": "Gawing pagbasa lang",
+    "letWrite": "Payagang sumulat",
+    "remove": "Alisin si {{name}}",
+    "add": "Magdagdag ng tao",
+    "addPerson": "Idagdag si {{name}}",
+    "invite": "Mag-imbita ng bagong tao sa chat na ito",
+    "close": "Tapos na"
+  },
+  "join": {
+    "title": "Sumali sa PasaBot",
+    "loading": "Tinitingnan ang imbitasyon mo…",
+    "invalid": "Hindi na gumagana ang invite link na ito. Humingi ng bago.",
+    "introGuest": "Inimbitahan ka ni {{name}} bilang guest sa: {{chats}}.",
+    "introMember": "Inimbitahan ka ni {{name}} bilang member.",
+    "name": "Pangalan mo",
+    "password": "Pumili ng password",
+    "again": "Ulitin ang password",
+    "short": "Gumamit ng kahit 8 character.",
+    "mismatch": "Hindi magkapareho ang mga password.",
+    "badName": "Gumamit ng simpleng pangalan na walang espesyal na character.",
+    "submit": "Sumali"
+  },
+  "errors": {
+    "generic": "May nagkamali. Subukan ulit."
+  },
+  "find": {
+    "navHint": "Mag-imbita at piliin kung sino ang sasali",
+    "navKeywords": "imbita, miyembro, bisita, pamilya, barkada"
+  },
+  "plain": {
+    "page": {
+      "introOwner": "Imbitahan ang pamilya, kaibigan o katrabaho. Ang mga guest ay makakakita lang ng mga chat na idinagdag mo sila; ang mga member ay puwede ring gumamit ng mga katulong na ibinahagi mo. Ikaw pa rin ang nag-iisang may-ari."
+    },
+    "invite": {
+      "memberHint": "Ang member ay makakakita ng mga chat na pipiliin mo at puwedeng makipag-chat sa mga katulong na ibabahagi mo.",
+      "noChats": "Wala pang chat. Gumawa muna ng katulong."
+    },
+    "agents": {
+      "title": "Mga katulong na magagamit ng mga member",
+      "intro": "Puwedeng magsimula ng sariling chat ang mga member sa mga katulong na ito. Tumatakbo ang mga mensahe nila bilang sila, hindi bilang ikaw, kaya magtatanong pa rin muna sa iyo ang anumang delikado.",
+      "none": "Wala pang katulong."
+    }
+  }
+}

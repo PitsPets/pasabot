@@ -1,0 +1,183 @@
+{
+  "nav": "Safety",
+  "stop": {
+    "button": "Stop all",
+    "buttonLabel": "Stop all agents now",
+    "stopped": "Paused",
+    "resume": "Start again",
+    "failed": "Could not stop: {{reason}}",
+    "resumeLabel": "Everything is paused. Start again"
+  },
+  "report": {
+    "title": "Everything is paused",
+    "intro": "Nothing will run until you press Start again. Here is what was stopped.",
+    "by": "Stopped by {{who}} at {{when}}.",
+    "who": {
+      "owner": "you",
+      "linked-machine": "a linked machine",
+      "channel": "a channel command",
+      "automation": "an automation token",
+      "agent": "an agent",
+      "system": "the server"
+    },
+    "empty": "Nothing was running or waiting.",
+    "kind": {
+      "run": "Running turn",
+      "queued": "Waiting turn",
+      "browser": "Browser session",
+      "computer": "Computer session",
+      "voice": "Voice call",
+      "approval": "Approval request",
+      "other": "Other"
+    },
+    "outcome": {
+      "cancelled": "stopped",
+      "held": "on hold",
+      "closed": "closed"
+    },
+    "agent": "Agent {{name}}",
+    "close": "OK",
+    "resume": "Start again",
+    "queue": {
+      "message": "Message",
+      "task": "Task",
+      "handoff": "Hand-off",
+      "routine": "Routine",
+      "workflow": "Workflow",
+      "automation-run": "Automation"
+    },
+    "run": "run {{id}}",
+    "chat": "chat {{id}}"
+  },
+  "resume": {
+    "title": "Start your agents again",
+    "intro": "Type your password to start your agents again. This stops anyone else from restarting them. Work that was waiting starts again.",
+    "password": "Password",
+    "submit": "Start again",
+    "cancel": "Cancel",
+    "wrong": "That password is not right.",
+    "forbidden": "Only the owner can start things again.",
+    "error": "Could not start again: {{reason}}"
+  },
+  "page": {
+    "title": "Safety",
+    "intro": "What your agents did, step by step, and the controls that keep them in check."
+  },
+  "receipts": {
+    "title": "Receipts",
+    "intro": "Every agent task leaves a receipt: its steps, tool calls, approvals and who decided, and the tokens it used.",
+    "empty": "No receipts yet. They appear as soon as an agent works on something.",
+    "steps": "{{count}} steps",
+    "tokens": "{{input}} in / {{output}} out tokens",
+    "open": "Open receipt",
+    "back": "All receipts",
+    "timeline": "Timeline",
+    "step": "Step {{n}} of {{total}}",
+    "scrub": "Move through the steps",
+    "export": "Export",
+    "exportJson": "Download JSON",
+    "exportHtml": "Open readable copy",
+    "exporting": "Preparing…",
+    "decidedBy": "Decided by {{who}}",
+    "you": "you",
+    "duration": "{{s}} s",
+    "cost": "Cost {{amount}} {{currency}}",
+    "state": {
+      "running": "running",
+      "done": "done",
+      "failed": "failed",
+      "cancelled": "stopped",
+      "interrupted": "interrupted"
+    },
+    "kind": {
+      "run.started": "Started",
+      "run.finished": "Finished",
+      "tool.call": "Tool call",
+      "tool.result": "Tool result",
+      "permission": "Permission asked",
+      "approval.requested": "Asked you",
+      "approval.decided": "Your decision",
+      "usage": "Tokens used",
+      "reply": "Reply",
+      "error": "Error",
+      "subagent": "Helper",
+      "screenshot": "Screenshot",
+      "link": "Link",
+      "refused": "Refused by a safety check"
+    },
+    "youNamed": "{{name}} (you)",
+    "nobody": "nobody (it expired)",
+    "someoneElse": "another owner session"
+  },
+  "retention": {
+    "title": "Keep receipts for",
+    "days": "Days",
+    "hint": "Older receipts and their screenshots are deleted for good.",
+    "save": "Save",
+    "saved": "Saved. {{count}} old receipts deleted."
+  },
+  "scan": {
+    "title": "Check a skill before installing",
+    "intro": "Paste a skill's text. We look for risky things: downloading and running programs, reading keys or passwords, hidden text, and sending data out.",
+    "label": "Skill text",
+    "run": "Check",
+    "running": "Checking…",
+    "clean": "We did not notice anything risky.",
+    "noticed": "We noticed:",
+    "timeout": "The check took too long and was stopped. Read the skill yourself before installing it.",
+    "error": "The check failed: {{reason}}",
+    "line": "line {{line}}",
+    "kind": {
+      "download-and-run": "downloads and runs a program",
+      "credential-path": "reads keys, passwords or browser data",
+      "hidden-text": "has hidden text",
+      "exfiltration": "may send your data out",
+      "model-instruction": "tries to give the agent secret orders"
+    }
+  },
+  "decision": {
+    "proposal": "Skill “{{skill}}” asks for permissions",
+    "proposalText": "Open Skills to see every tool, website and file it asks for before you decide.",
+    "proposalWiden": "It asks for more than you approved. Open Skills to see what changes before you decide."
+  },
+  "find": {
+    "navHint": "What agents may do, and the record of it",
+    "navKeywords": "approvals, permissions, allow, log, audit"
+  },
+  "plain": {
+    "find": {
+      "navHint": "What helpers may do, and the record of it"
+    },
+    "stop": {
+      "buttonLabel": "Stop all helpers now"
+    },
+    "page": {
+      "intro": "What your helpers did, step by step, and the controls that keep them in check."
+    },
+    "receipts": {
+      "intro": "Every job a helper does leaves a receipt: its steps, what it used, what you approved and who decided, and how much it used.",
+      "empty": "No receipts yet. They appear as soon as a helper works on something.",
+      "tokens": "{{input}} read / {{output}} written",
+      "kind": {
+        "usage": "Amount used"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "something that runs by itself",
+        "agent": "a helper",
+        "system": "PasaBot itself"
+      },
+      "agent": "Helper {{name}}"
+    },
+    "scan": {
+      "title": "Check an ability before adding it",
+      "intro": "Paste its text. We look for risky things: downloading and running programs, reading keys or passwords, hidden text, and sending data out.",
+      "label": "Its text",
+      "timeout": "The check took too long and was stopped. Read it yourself before adding it.",
+      "kind": {
+        "model-instruction": "tries to give the helper secret orders"
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "nav": "Workflows",
+  "page": {
+    "title": "Workflows",
+    "intro": "Pinagsusunod-sunod ng workflow ang mga hakbang: agents, model call na walang tools, kondisyon, approval mo, paghihintay at output. Buuin ito sa canvas, tapos patakbuhin.",
+    "empty": "Wala pang workflow.",
+    "new": "Bagong workflow",
+    "fromTemplate": "Sumagot, tapos ipasa",
+    "templateHint": "Sasagutin ng unang agent ang prompt mo, tapos sabay-sabay na matatanggap ng ibang agents ang sagot na iyon."
+  },
+  "list": {
+    "steps": "{{count}} hakbang",
+    "run": "Patakbuhin",
+    "edit": "I-edit",
+    "delete": "Burahin",
+    "deleteConfirm": "Burahin ang workflow na ito? Tuloy pa rin ang mga takbong nagsimula na."
+  },
+  "approvals": {
+    "title": "Hinihintay ka",
+    "approve": "Aprubahan",
+    "reject": "Tanggihan",
+    "rejectConfirm": "Tanggihan? Dito na titigil ang takbo."
+  },
+  "runs": {
+    "title": "Mga huling takbo",
+    "empty": "Wala pang takbo.",
+    "show": "Ipakita ang mga hakbang",
+    "hide": "Itago ang mga hakbang",
+    "cancel": "Itigil ang takbo",
+    "loops": "Ulit ng loop: {{count}}"
+  },
+  "state": {
+    "running": "Tumatakbo",
+    "waiting": "Naghihintay",
+    "done": "Tapos na",
+    "failed": "Pumalya",
+    "rejected": "Tinanggihan",
+    "stopped": "Itinigil",
+    "cancelled": "Kinansela",
+    "skipped": "Nilaktawan"
+  },
+  "type": {
+    "agent": "Agent",
+    "model": "Model (walang tools)",
+    "condition": "Kondisyon",
+    "approval": "Approval",
+    "transform": "Transform",
+    "wait": "Maghintay",
+    "parallel": "Sabay-sabay",
+    "output": "Output"
+  },
+  "editor": {
+    "name": "Pangalan ng workflow",
+    "add": "Magdagdag ng hakbang",
+    "addHint": "Susunod sa napiling hakbang ang bagong hakbang.",
+    "save": "I-save",
+    "back": "Bumalik sa listahan",
+    "saved": "Na-save na.",
+    "canvas": "Canvas ng workflow",
+    "maxIterations": "Hangganan ng loop bawat takbo",
+    "selected": "Napiling hakbang",
+    "none": "I-tap ang isang hakbang sa canvas para i-edit ito.",
+    "label": "Pangalan ng hakbang",
+    "remove": "Alisin ang hakbang na ito",
+    "next": "Pagkatapos, pumunta sa",
+    "branch": "Kapag ang kondisyon ay",
+    "link": "Idugtong",
+    "links": "Mga dugtong palabas",
+    "unlink": "Alisin ang dugtong",
+    "pick": "Pumili ng hakbang"
+  },
+  "field": {
+    "agent": "Agent",
+    "pickAgent": "Pumili ng agent",
+    "prompt": "Prompt",
+    "op": "Suriin kung",
+    "value": "Halaga",
+    "message": "Ano ang itatanong sa iyo",
+    "template": "Teksto ({{input}} = input ng hakbang)",
+    "seconds": "Ilang segundo maghihintay",
+    "to": "Ipadala sa",
+    "title": "Pamagat",
+    "channel": "Channel binding id"
+  },
+  "op": {
+    "contains": "may laman na",
+    "not_contains": "walang laman na",
+    "equals": "kapareho ng",
+    "matches": "tugma sa pattern",
+    "empty": "walang laman",
+    "not_empty": "may laman"
+  },
+  "branch": {
+    "true": "oo",
+    "false": "hindi"
+  },
+  "to": {
+    "notification": "Notification",
+    "channel": "Post sa channel"
+  },
+  "template": {
+    "title": "Sumagot, tapos ipasa",
+    "name": "Pangalan",
+    "agents": "Mga agent (ang una ang sasagot)",
+    "prompt": "Prompt para sa unang agent",
+    "followUp": "Ano ang gagawin ng iba sa sagot",
+    "create": "Gumawa ng workflow"
+  },
+  "tools": {
+    "workflows_list": "Ilista ang mga workflow ko",
+    "workflows_create": "Gumawa ng workflow",
+    "workflows_update": "I-edit ang isa sa mga workflow ko",
+    "workflows_run": "Patakbuhin ang isa sa mga workflow ko",
+    "workflows_delete": "Burahin ang isa sa mga workflow ko"
+  },
+  "server": {
+    "failed": "Pumalya ang workflow na \"{{name}}\"",
+    "stopped": "Itinigil ang workflow na \"{{name}}\""
+  },
+  "find": {
+    "navHint": "Pagdugtungin ang mga hakbang sa isang daloy",
+    "navKeywords": "hakbang, daloy, kadena, awtomatiko"
+  },
+  "plain": {
+    "page": {
+      "intro": "Pinagsusunod-sunod ng workflow ang mga hakbang: mga katulong, mabilis na sagot ng utak, kondisyon, pag-apruba mo, paghihintay at resulta. Buuin ito sa canvas, tapos patakbuhin.",
+      "templateHint": "Sasagutin ng unang katulong ang hiling mo, tapos sabay-sabay na matatanggap ng ibang katulong ang sagot na iyon."
+    },
+    "type": {
+      "agent": "Katulong",
+      "model": "Utak lang (walang tools)"
+    },
+    "field": {
+      "agent": "Katulong",
+      "pickAgent": "Pumili ng katulong"
+    },
+    "template": {
+      "agents": "Mga katulong (ang una ang sasagot)",
+      "prompt": "Hiling para sa unang katulong"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "title": "Agentes ACP",
+    "intro": "Instale CLIs de agentes que falam o Agent Client Protocol. Cada agente instalado vira um cérebro que você pode escolher ao criar ou editar um agente.",
+    "ownerOnly": "Só o proprietário pode gerenciar agentes ACP."
+  },
+  "index": {
+    "label": "Índice do registro",
+    "hint": "Um caminho absoluto para um arquivo de índice local ou uma URL https.",
+    "save": "Salvar",
+    "saved": "Salvo.",
+    "none": "Defina um índice do registro para explorar agentes."
+  },
+  "search": {
+    "label": "Buscar agentes",
+    "placeholder": "Nome ou descrição",
+    "empty": "Nenhum agente do índice corresponde.",
+    "install": "Instalar",
+    "reinstall": "Atualizar",
+    "installing": "Instalando…",
+    "installed": "Instalado",
+    "remoteCommand": "Um índice remoto só pode instalar pacotes, não comandos locais.",
+    "available": "Disponíveis no índice"
+  },
+  "installed": {
+    "title": "Instalados",
+    "empty": "Nenhum agente ACP instalado ainda.",
+    "remove": "Remover",
+    "removing": "Removendo…",
+    "confirmRemove": "Remover {{name}}? Os agentes não poderão mais usá-lo como cérebro.",
+    "ready": "Pronto",
+    "missing": "Não encontrado",
+    "version": "Versão {{version}}",
+    "provider": "ID do cérebro",
+    "command": "Comando"
+  },
+  "error": {
+    "generic": "Algo deu errado ({{code}}).",
+    "in_use": "Ainda em uso por um agente. Escolha outro cérebro para ele primeiro.",
+    "command_missing": "Esse programa não está nesta máquina.",
+    "command_from_remote": "Um índice remoto não pode instalar um comando local.",
+    "bad_index_source": "Use um caminho de arquivo absoluto ou uma URL https.",
+    "index_unreadable": "Não foi possível ler o índice.",
+    "index_invalid": "O índice não está no formato esperado.",
+    "install_failed": "A instalação falhou.",
+    "no_index": "Defina um índice do registro primeiro."
+  },
+  "find": {
+    "settingsHint": "Adicione agentes de código como cérebros",
+    "settingsKeywords": "programação, código, cérebros, terminal, desenvolvedor"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Use um app de programação como cérebro de um ajudante"
+    },
+    "settings": {
+      "title": "Apps de programação como cérebro"
+    }
+  }
+}

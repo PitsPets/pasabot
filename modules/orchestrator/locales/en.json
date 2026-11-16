@@ -1,0 +1,299 @@
+{
+  "defaultName": "Tala",
+  "summary": "Asks you a few quick questions, then sets up a small team of helpers for you to approve.",
+  "hello": "Hi, I'm {{name}}! I'll set up a small team of helpers for you. Just a few quick questions: tap an answer, or type your own.",
+  "again": "Let's set up your team again. A few quick questions, like before.",
+  "change": "No problem, let's go through it again.",
+  "skipped": "Okay, it's just me for now. You can set up your team any time in Settings, under Agents & brains.",
+  "q": {
+    "help": {
+      "text": "What do you want help with first?",
+      "options": {
+        "shop": "My shop or business",
+        "home": "Home and family",
+        "work": "My work",
+        "study": "School and learning"
+      }
+    },
+    "people": {
+      "text": "Who else will use PasaBot?",
+      "options": {
+        "solo": "Just me",
+        "family": "My family",
+        "team": "My team at work"
+      }
+    },
+    "chat": {
+      "text": "Do you also want to talk to your helpers from a chat app?",
+      "options": {
+        "none": "Not now",
+        "telegram": "Telegram",
+        "whatsapp": "WhatsApp",
+        "discord": "Discord",
+        "slack": "Slack"
+      }
+    },
+    "email": {
+      "text": "Should your team have email?",
+      "options": {
+        "new": "Make a new email (I'll guide you)",
+        "connect": "Connect my own email",
+        "skip": "No email for now"
+      }
+    },
+    "askFirst": {
+      "text": "Last one: is there anything they must always ask you about first?",
+      "options": {
+        "none": "That's all",
+        "money": "Any spending",
+        "contact": "Contacting anyone",
+        "files": "Changing my files"
+      }
+    }
+  },
+  "plan": {
+    "intro": "Here is the team I will set up. Approve it, or change it.",
+    "base": "Reply in the language the person writes in. Keep answers short and plain. Always ask the owner before spending money, sending messages to other people or deleting anything.",
+    "detail": "What the owner told you about it: {{what}}",
+    "roles": {
+      "shop": {
+        "job": "Handles orders and customer questions for your shop."
+      },
+      "money": {
+        "job": "Keeps track of sales, costs and who still owes you.",
+        "why": "sales and costs"
+      },
+      "home": {
+        "job": "Plans meals, schedules and reminders for the family."
+      },
+      "work": {
+        "job": "Drafts messages, keeps notes and tracks your to-dos."
+      },
+      "study": {
+        "job": "Explains lessons, quizzes you and keeps you on schedule."
+      },
+      "custom": {
+        "job": "Helps you with: {{what}}",
+        "anything": "whatever you need"
+      },
+      "mail": {
+        "job": "Sorts your email and drafts replies for you to check.",
+        "why": "your email, with a short guided setup"
+      }
+    },
+    "steps": {
+      "email-new": "Make a new email together, step by step",
+      "email-connect": "Connect your email (about 3 minutes)",
+      "telegram": "Connect Telegram",
+      "whatsapp": "Connect WhatsApp",
+      "discord": "Connect Discord",
+      "slack": "Connect Slack",
+      "people": "Invite the people who will use it"
+    },
+    "askFirst": {
+      "money": "Also ask the owner before any spending, however small.",
+      "contact": "Also ask the owner before contacting anyone.",
+      "files": "Also ask the owner before changing any of their files.",
+      "custom": "Also always ask the owner first about: {{what}}"
+    },
+    "language": "The owner chose {{language}}: always reply in that language unless they ask for another one.",
+    "taglish": "The owner chose Taglish: reply in Taglish, a natural, casual mix of Filipino and English, unless they ask for another language."
+  },
+  "team": {
+    "ready": "Your team is ready! Open a helper to say hi."
+  },
+  "tools": {
+    "orchestrator_answer": "Save a setup answer",
+    "orchestrator_show_plan": "Show a team plan",
+    "orchestrator_create_team": "Create the approved team"
+  },
+  "web": {
+    "skip": "Skip for now",
+    "typeOwn": "Or type your own answer below.",
+    "quick": "Quick answers",
+    "closed": "Setup skipped",
+    "step": "Question {{n}} of {{total}}",
+    "planTitle": "Here is the team I will set up",
+    "brain": "Brain: {{name}}",
+    "stepsTitle": "Setup steps I will open for you",
+    "approve": "Approve",
+    "changePlan": "Change",
+    "plan_approved": "Approved",
+    "plan_changed": "Changed",
+    "plan_skipped": "Skipped",
+    "open": "Chat with {{name}}",
+    "stepsNext": "Next steps",
+    "secretsNote": "Passwords and codes go only on those setup pages, never in a chat.",
+    "ownerOnly": "Only the owner can answer this.",
+    "failed": "That didn't work. Try again.",
+    "settings": {
+      "title": "Set up my team",
+      "hint": "Answer a few questions and get a team of helpers",
+      "keywords": "team, setup, helpers, interview, start over, orchestrator",
+      "body": "Your team builder asks a few short questions, then shows a plan for you to approve.",
+      "again": "Set up my team again",
+      "working": "Opening…",
+      "openChat": "Open the team builder",
+      "noBrain": "Set up a brain first, then try again.",
+      "continue": "Continue my team setup"
+    },
+    "summaryTitle": "What you told me"
+  },
+  "stage": {
+    "title": "Set up your team",
+    "brand": "PasaBot",
+    "skip": "Skip for now",
+    "back": "Back",
+    "next": "Continue",
+    "progress": "Step {{n}} of {{total}}",
+    "progressShort": "{{n}} of {{total}}",
+    "last": "Last one!",
+    "wait": "One moment…",
+    "slow": "This is taking longer than usual.",
+    "retry": "Try again",
+    "skipped": "Okay, we can finish setting up your team later. Open Settings and tap “Continue my team setup” to pick up where you left off.",
+    "welcome": {
+      "tag": "{{name}} · your team builder",
+      "title": "Hi! Let’s build your own team of helpers.",
+      "body": "I’ll ask a few easy questions, then set up helpers that do the work for you. About 2 minutes.",
+      "start": "Let’s start",
+      "p1": "No tech words",
+      "p2": "Nothing happens without your OK",
+      "p3": "Change anything later"
+    },
+    "lang": {
+      "title": "Which language should your helpers speak?",
+      "body": "Anong wika ang gusto mo? Everything after this uses your pick.",
+      "other": "Other…",
+      "otherSub": "{{names}} and more",
+      "seeAll": "See all languages",
+      "listTitle": "All languages",
+      "taglish": "Taglish",
+      "taglishSample": "Hi! Ano’ng kailangan mo today?",
+      "sample": "Hi! What can I help you with today?"
+    },
+    "name": {
+      "title": "What will you call me?",
+      "body": "I’ll lead your team. “{{name}}” is the default, but it’s up to you.",
+      "label": "Your main helper’s name",
+      "hint": "My face changes too!",
+      "newLook": "New look!",
+      "ideas": "Ideas:",
+      "go": "{{name}} it is!",
+      "errors": {
+        "empty": "Type a name first.",
+        "long": "That name is too long. Use up to {{max}} letters.",
+        "bad": "Use plain letters only, without special marks.",
+        "taken": "That name is taken. Try another one."
+      }
+    },
+    "q": {
+      "sub": "Tap one, or tell me in your own words.",
+      "typeLabel": "Or type it here",
+      "typePlaceholder": "Say it your way…",
+      "other": "Something else",
+      "subMulti": "Pick as many as you like, or tell me in your own words."
+    },
+    "plan": {
+      "title": "Here is the team I will set up for you",
+      "lead": "I’m the lead. You talk to me, and I give them their tasks.",
+      "because": "Because: {{what}}",
+      "arriving": "Arriving…",
+      "change": "I want to change something",
+      "approve": "Approve the team",
+      "picks": "Your picks",
+      "pick": {
+        "language": "Speaks {{language}}",
+        "people": {
+          "solo": "Just me using it",
+          "family": "My family uses it too",
+          "team": "My team at work uses it too"
+        },
+        "chat": {
+          "none": "No chat app for now",
+          "telegram": "Chat on Telegram",
+          "whatsapp": "Chat on WhatsApp",
+          "discord": "Chat on Discord",
+          "slack": "Chat on Slack"
+        },
+        "email": {
+          "new": "A new email, made together step by step",
+          "connect": "Connect my own email (about 3 minutes)",
+          "skip": "No email for now"
+        },
+        "askFirst": {
+          "none": "Nothing extra to ask first",
+          "money": "Asks before any spending",
+          "contact": "Asks before contacting anyone",
+          "files": "Asks before changing my files"
+        }
+      }
+    },
+    "done": {
+      "title": "Your team is ready!",
+      "body": "They’re all set. Just talk to {{name}}, who takes care of the rest.",
+      "open": "Open PasaBot",
+      "chats": "Your chats",
+      "lead": "Team lead · Ready",
+      "ready": "Ready",
+      "pinned": "{{name}} always stays on top",
+      "next": {
+        "title": "Next step",
+        "new": "{{name}} will help you make your new email, one step at a time, in your chat.",
+        "newGo": "Make my new email with {{name}}",
+        "connect": "Connect your email now. It takes about 3 minutes.",
+        "connectGo": "Connect my email"
+      }
+    },
+    "summary": {
+      "body": "Your team is set up! Here is what you told me, and your helpers.",
+      "language": "Language"
+    }
+  },
+  "summaryLead": "Looks after your team: passes each job to the right helper, and can add or change helpers when you ask.",
+  "oks": {
+    "title": "A few things need your OK",
+    "sub": "{{name}} and the team can do more with these. Each one is your choice, and nothing turns on until you tap.",
+    "email": {
+      "title": "Connect your email",
+      "why": "So the mail helper can read new mail and tell you what matters.",
+      "yes": "Connect"
+    },
+    "chat": {
+      "title": "Connect {{app}}",
+      "why": "So you can talk to your helpers in {{app}} too.",
+      "yes": "Connect"
+    },
+    "apps": {
+      "title": "Connect {{app}}",
+      "why": "Your helpers can use {{app}} for you once it’s connected.",
+      "yes": "Connect"
+    },
+    "browser": {
+      "title": "Let helpers use their own browser",
+      "why": "They open websites in a separate browser you can watch. They never sign in or pay for you.",
+      "yes": "Allow"
+    },
+    "computer": {
+      "title": "Let a helper use this computer",
+      "why": "It could see the screen and use the mouse and keyboard. It asks you first every time.",
+      "yes": "Set it up"
+    },
+    "ask": {
+      "title": "Choose how often helpers ask first",
+      "why": "Pick when they check with you before acting. Money and messages always ask.",
+      "yes": "Choose"
+    },
+    "alerts": {
+      "title": "Get a ping when a helper needs you",
+      "why": "We’ll tell you on this device when something needs your OK.",
+      "yes": "Turn on"
+    },
+    "laterBtn": "Later",
+    "notNow": "Not now",
+    "opened": "Opened. Finish it on that page",
+    "later": "Later: {{name}} will remind you in the chat",
+    "continue": "Continue",
+    "continueLater": "Continue, the rest later"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "nav": "管理",
+  "page": {
+    "title": "伺服器管理",
+    "intro": "此伺服器的身分、健康狀態、限制與紀錄。只有你（擁有者）能看到這個頁面。"
+  },
+  "host": {
+    "title": "此伺服器",
+    "name": "伺服器名稱",
+    "save": "儲存名稱",
+    "id": "伺服器 ID",
+    "hostname": "主機名稱",
+    "system": "系統",
+    "uptime": "已運行",
+    "minutes": "{{count}} 分鐘"
+  },
+  "metrics": {
+    "title": "主機健康狀態",
+    "cpu": "CPU",
+    "mem": "記憶體",
+    "disk": "磁碟",
+    "load": "負載",
+    "none": "尚無取樣資料。",
+    "sample": "立即檢查",
+    "at": "檢查時間"
+  },
+  "alerts": {
+    "title": "警示規則",
+    "intro": "當讀數持續高於上限時，你會收到通知。",
+    "empty": "尚無警示規則。",
+    "name": "規則名稱",
+    "metric": "讀數",
+    "above": "高於此值時警示",
+    "forSamples": "連續檢查次數",
+    "cooldown": "靜音時間（分鐘）",
+    "add": "新增規則",
+    "remove": "移除",
+    "fired": "上次警示",
+    "never": "從未警示",
+    "rule": "{{metric}} 高於 {{above}}"
+  },
+  "limits": {
+    "title": "代理限制",
+    "intro": "為每個代理的工作設定記憶體與 CPU 上限。欄位留空表示不設上限。",
+    "mem": "記憶體 (MB)",
+    "cpu": "CPU (%)",
+    "save": "儲存限制",
+    "saved": "已儲存",
+    "usage": "目前使用：{{mem}} MB、CPU {{cpu}}%",
+    "empty": "尚無代理。"
+  },
+  "bundle": {
+    "title": "搬移代理",
+    "intro": "將代理及其聊天匯出成檔案，再匯入到此伺服器或其他 PasaBot 伺服器。不包含密鑰、檔案與資料夾。",
+    "export": "匯出 {{name}}",
+    "import": "匯入代理檔案",
+    "imported": "已匯入。代理及其聊天已出現在你的清單中。",
+    "failed": "無法匯入該檔案。"
+  },
+  "diag": {
+    "title": "診斷",
+    "intro": "包含健康讀數、設定摘要與近期記錄的 zip 檔，用於疑難排解。機密值在離開伺服器前會先移除。",
+    "download": "下載診斷檔"
+  },
+  "audit": {
+    "title": "稽核記錄",
+    "filter": "依動作篩選",
+    "empty": "沒有任何記錄。",
+    "older": "顯示較早的記錄",
+    "by": "由 {{actor}}"
+  },
+  "find": {
+    "navHint": "維護這個 PasaBot",
+    "navKeywords": "管理, 維護, 備份, 記錄, 更新"
+  }
+}

@@ -1,0 +1,109 @@
+# Secret-scan config. Extends the default rules. The only exceptions are made-up test values (fake signing
+# secrets, sample tokens, a canned WebSocket handshake key). Each exception needs BOTH the file path AND the exact
+# fake value, so a different key added to the same file is still reported.
+title = "pasabot gitleaks config"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "fake test value(s) in apps/server/src/approvals/approval-view.test.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^apps/server/src/approvals/approval-view\.test\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^owner-diary-2026\.txt$''',
+]
+
+[[allowlists]]
+description = "fake test value(s) in apps/server/src/auth/setup.test.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^apps/server/src/auth/setup\.test\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^dGhlIHNhbXBsZSBub25jZQ==$''',
+]
+
+[[allowlists]]
+description = "fake test value(s) in channels/slack/src/__fixtures__/mock-slack.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^channels/slack/src/__fixtures__/mock-slack\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^a1b2c3d4e5f60718293a4b5c6d7e8f90$''',
+]
+
+[[allowlists]]
+description = "fake test value(s) in channels/slack/src/hook-server.test.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^channels/slack/src/hook-server\.test\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^e2eSigningSecret0123456789abcdef$''',
+  '''^xoxb-1234567890-abcdefghij$''',
+]
+
+[[allowlists]]
+description = "fake test value(s) in modules/browser/src/browser.test.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^modules/browser/src/browser\.test\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^pw-very-secret-123$''',
+]
+
+[[allowlists]]
+description = "fake test value(s) in modules/computer/src/helper.test.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^modules/computer/src/helper\.test\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^g-0123456789$''',
+]
+
+[[allowlists]]
+description = "fake test value(s) in modules/connectors/src/detect.test.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^modules/connectors/src/detect\.test\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^a1b2c3d4e5f6$''',
+]
+
+[[allowlists]]
+description = "fake test value(s) in modules/datastore/src/datastore.test.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^modules/datastore/src/datastore\.test\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^sk-test-9f8e7d6c5b4a3210$''',
+]
+
+[[allowlists]]
+description = "fake test value(s) in modules/safety/src/safety.test.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^modules/safety/src/safety\.test\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^sk-test-PLANTED-0123456789abcdef$''',
+]
+
+[[allowlists]]
+description = "fake test value(s) in modules/sites/src/sites.test.ts"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^modules/sites/src/sites\.test\.ts$''']
+regexTarget = "secret"
+regexes = [
+  '''^dGhlIHNhbXBsZSBub25jZQ==$''',
+  '''^sk-test-5a6b7c8d9e0f1234$''',
+]

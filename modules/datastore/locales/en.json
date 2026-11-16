@@ -1,0 +1,70 @@
+{
+  "nav": "Data",
+  "page": {
+    "title": "Shared data",
+    "intro": "Tables your agents share. Every agent can read every table, so private notes belong in an agent's memory, not here.",
+    "size": "Using {{used}} of {{max}}",
+    "details": "The agent that made a table adds and changes its rows freely; another agent's changes follow your approval rules for that agent (removing rows always asks you). Only the maker can reshape or delete a table, and deleting always asks you.",
+    "more": "Learn more"
+  },
+  "refresh": "Refresh",
+  "loading": "Loading…",
+  "empty": "No tables yet. When an agent makes one, it shows up here.",
+  "error": "Could not load the data. {{reason}}",
+  "table": {
+    "rows_one": "{{count}} row",
+    "rows_other": "{{count}} rows",
+    "columns_one": "{{count}} column",
+    "columns_other": "{{count}} columns",
+    "by": "Made by {{name}}",
+    "byUnknown": "Maker unknown",
+    "removedAgent": "a removed agent",
+    "ddl": "How it is defined",
+    "showRows": "Show rows",
+    "hideRows": "Hide rows",
+    "rowsOf": "Rows of {{name}}"
+  },
+  "cell": {
+    "null": "empty",
+    "blob": "(file data)"
+  },
+  "result": {
+    "count_one": "{{count}} row",
+    "count_other": "{{count}} rows",
+    "countMore_one": "First {{count}} row; there are more",
+    "countMore_other": "First {{count}} rows; there are more"
+  },
+  "query": {
+    "title": "Look something up",
+    "label": "Query (read only)",
+    "hint": "One SELECT statement. This screen never changes the data.",
+    "run": "Run query",
+    "result": "Query result",
+    "error": "The query did not run. {{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "List shared tables",
+    "datastore_create_table": "Create a shared table",
+    "datastore_query": "Query shared tables",
+    "datastore_write": "Write rows",
+    "datastore_alter_table": "Change a table you created",
+    "datastore_drop_table": "Drop a table you created"
+  },
+  "find": {
+    "navHint": "Tables and data your agents keep",
+    "navKeywords": "data, tables, database, records"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Tables and lists your helpers keep"
+    },
+    "page": {
+      "intro": "Tables your helpers share. Every helper can read every table, so private notes belong in a helper’s memory, not here.",
+      "details": "The helper that made a table adds and changes its rows freely; another helper’s changes follow your approval rules for that helper (removing rows always asks you). Only the maker can reshape or delete a table, and deleting always asks you."
+    },
+    "empty": "No tables yet. When a helper makes one, it shows up here.",
+    "table": {
+      "removedAgent": "a removed helper"
+    }
+  }
+}

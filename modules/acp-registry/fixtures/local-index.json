@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "agents": [
+    {
+      "id": "echo",
+      "name": "ACP echo agent",
+      "description": "A tiny test agent that echoes what you send it. Runs locally, no account needed.",
+      "version": "1.2.3",
+      "license": "Apache-2.0",
+      "distribution": {
+        "type": "command",
+        "command": ["node", "../../../providers/acp/src/__fixtures__/echo-agent.mjs"]
+      }
+    },
+    {
+      "id": "example-npm-agent",
+      "name": "Example npm agent",
+      "description": "Shows the npm distribution form (package + version + bin). Not a real package.",
+      "version": "0.1.0",
+      "distribution": {
+        "type": "npm",
+        "package": "@example/acp-agent",
+        "version": "0.1.0",
+        "bin": "example-acp",
+        "args": ["--acp"]
+      }
+    }
+  ]
+}

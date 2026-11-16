@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "Maintenir pour parler",
+    "listening": "Écoute… relâchez pour arrêter",
+    "working": "Transcription de votre voix…",
+    "title": "Votre message",
+    "text": "Ce que vous avez dit",
+    "send": "Envoyer",
+    "cancel": "Annuler",
+    "empty": "Rien n'a été entendu. Réessayez, un peu plus près du micro.",
+    "noMic": "Ce navigateur ne peut pas utiliser le microphone ici.",
+    "denied": "L'accès au microphone a été bloqué. Autorisez-le dans le navigateur pour parler.",
+    "unavailable": "La saisie vocale n'est pas configurée. Le propriétaire peut télécharger un modèle vocal dans Réglages → Voix.",
+    "failed": "Impossible de transcrire l'enregistrement. {{reason}}",
+    "browserNote": "Utilisation de la reconnaissance vocale de votre navigateur."
+  },
+  "listen": {
+    "play": "Écouter",
+    "stop": "Arrêter",
+    "loading": "Préparation de l'audio…",
+    "failed": "Impossible de lire ceci à voix haute. {{reason}}"
+  },
+  "settings": {
+    "title": "Voix",
+    "intro": "Parlez à vos agents et écoutez leurs réponses. La parole est traitée sur ce serveur, votre voix ne le quitte donc jamais.",
+    "engine": "Moteur vocal",
+    "engineFake": "Moteur de test",
+    "engineLocal": "Sur ce serveur",
+    "noPackage": "Le moteur vocal n'est pas installé sur ce serveur, la solution de repli du navigateur est donc utilisée.",
+    "stt": "Saisie vocale",
+    "tts": "Réponses vocales",
+    "ready": "Prêt : {{model}}",
+    "notReady": "Aucun modèle pour l'instant",
+    "models": "Modèles vocaux",
+    "modelsIntro": "Les modèles ne sont téléchargés que sur demande, depuis les versions du moteur vocal lui-même.",
+    "kindStt": "Saisie vocale",
+    "kindTts": "Réponses vocales",
+    "size": "Environ {{mb}} Mo",
+    "languages": "Langues : {{list}}",
+    "installed": "Installé",
+    "download": "Télécharger {{name}}",
+    "remove": "Supprimer {{name}}",
+    "modelName": "{{model}} ({{note}})",
+    "noteMultilingual": "multilingue",
+    "noteEnglish": "anglais",
+    "downloading": "Téléchargement… {{pct}}",
+    "unpacking": "Décompression…",
+    "failedDownload": "Échec du téléchargement : {{reason}}",
+    "disabledUnpinned": "Pas encore disponible : PasaBot n'a pas de somme de contrôle pour vérifier ce téléchargement, il reste donc désactivé.",
+    "ownerOnly": "Seul le propriétaire peut télécharger ou supprimer des modèles.",
+    "autoRead": "Lire les nouvelles réponses à voix haute",
+    "autoReadHint": "Sur cet appareil uniquement.",
+    "browserStt": "Utiliser la reconnaissance vocale du navigateur quand aucun modèle n'est installé",
+    "browserSttHint": "Certains navigateurs envoient votre voix aux serveurs de leur éditeur pour la reconnaître. Désactivé par défaut.",
+    "loading": "Chargement…",
+    "error": "Impossible de charger les réglages vocaux. {{reason}}"
+  },
+  "find": {
+    "settingsHint": "Parler à vos agents et les entendre",
+    "settingsKeywords": "voix, parler, micro, écouter, audio"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Parler à vos assistants et les entendre"
+    },
+    "settings": {
+      "intro": "Parlez à vos assistants et écoutez leurs réponses. La parole est traitée sur ce serveur, votre voix ne le quitte donc jamais.",
+      "engineLocal": "Sur ce serveur",
+      "notReady": "Aucun cerveau pour l'instant",
+      "models": "Cerveaux vocaux",
+      "modelsIntro": "Les cerveaux ne sont téléchargés que sur demande, depuis les versions du moteur vocal lui-même.",
+      "browserStt": "Utiliser la reconnaissance vocale du navigateur quand aucun cerveau n'est installé",
+      "browserSttHint": "Certains navigateurs envoient votre voix aux serveurs de leur éditeur pour la reconnaître. Désactivé par défaut."
+    }
+  }
+}

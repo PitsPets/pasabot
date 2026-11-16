@@ -1,0 +1,76 @@
+{
+  "nav": "Administración",
+  "page": {
+    "title": "Administración del servidor",
+    "intro": "La identidad, el estado, los límites y los registros de este servidor. Solo tú, el propietario, puedes ver esta página."
+  },
+  "host": {
+    "title": "Este servidor",
+    "name": "Nombre del servidor",
+    "save": "Guardar nombre",
+    "id": "ID del servidor",
+    "hostname": "Nombre del host",
+    "system": "Sistema",
+    "uptime": "Activo desde hace",
+    "minutes": "{{count}} min"
+  },
+  "metrics": {
+    "title": "Estado de la máquina",
+    "cpu": "CPU",
+    "mem": "Memoria",
+    "disk": "Disco",
+    "load": "Carga",
+    "none": "Aún no hay mediciones.",
+    "sample": "Medir ahora",
+    "at": "Medido"
+  },
+  "alerts": {
+    "title": "Reglas de alerta",
+    "intro": "Recibes una notificación cuando una medición se mantiene por encima del límite.",
+    "empty": "Aún no hay reglas de alerta.",
+    "name": "Nombre de la regla",
+    "metric": "Medición",
+    "above": "Alertar por encima de",
+    "forSamples": "Mediciones seguidas",
+    "cooldown": "Silencio durante (minutos)",
+    "add": "Agregar regla",
+    "remove": "Quitar",
+    "fired": "Última alerta",
+    "never": "Sin alertas",
+    "rule": "{{metric}} por encima de {{above}}"
+  },
+  "limits": {
+    "title": "Límites de agentes",
+    "intro": "Topes de memoria y CPU para el trabajo de cada agente. Deja un campo vacío para no poner tope.",
+    "mem": "Memoria (MB)",
+    "cpu": "CPU (%)",
+    "save": "Guardar límites",
+    "saved": "Guardado",
+    "usage": "En uso ahora: {{mem}} MB, {{cpu}}% de CPU",
+    "empty": "Aún no hay agentes."
+  },
+  "bundle": {
+    "title": "Mover un agente",
+    "intro": "Exporta un agente con sus chats a un archivo y luego impórtalo en este u otro servidor de PasaBot. No se incluyen secretos, archivos ni carpetas.",
+    "export": "Exportar {{name}}",
+    "import": "Importar un archivo de agente",
+    "imported": "Importado. El agente y sus chats están en tu lista.",
+    "failed": "No se pudo importar ese archivo."
+  },
+  "diag": {
+    "title": "Diagnóstico",
+    "intro": "Un zip con mediciones de estado, resúmenes de ajustes y registros recientes para resolver problemas. Los valores secretos se eliminan antes de que salga del servidor.",
+    "download": "Descargar diagnóstico"
+  },
+  "audit": {
+    "title": "Registro de auditoría",
+    "filter": "Filtrar por acción",
+    "empty": "No hay nada registrado.",
+    "older": "Mostrar anteriores",
+    "by": "por {{actor}}"
+  },
+  "find": {
+    "navHint": "Mantenimiento de este PasaBot",
+    "navKeywords": "administración, mantenimiento, copia, registros, actualizar"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "google-calendar",
+  "name": "Google Calendar",
+  "version": "1.0.0",
+  "category": "Productivity",
+  "summary": "Sign in with Google using your own OAuth client so agents can read your calendars. Create the client in Google Cloud and paste its id here.",
+  "homepage": "https://developers.google.com/calendar/api",
+  "source": "https://developers.google.com/calendar/api/guides/auth",
+  "group": "calendar-email",
+  "popular": true,
+  "kind": "oauth-api",
+  "auth": {
+    "type": "oauth2_pkce",
+    "oauth": {
+      "authorizeUrl": "https://accounts.google.com/o/oauth2/v2/auth",
+      "tokenUrl": "https://oauth2.googleapis.com/token",
+      "scopes": ["https://www.googleapis.com/auth/calendar.readonly"],
+      "clientIdFrom": "owner"
+    }
+  },
+  "network": {
+    "allowHosts": []
+  },
+  "defaultTier": 2
+}

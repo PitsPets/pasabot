@@ -1,0 +1,110 @@
+{
+  "nav": "代理任務",
+  "page": {
+    "title": "代理任務",
+    "intro": "你的代理彼此交付的工作：訊息、委派任務、交接與檔案。每項工作都以兩個代理中較低的信任等級執行。",
+    "empty": "目前還沒有代理交付工作給其他代理。",
+    "reload": "重新整理"
+  },
+  "kind": {
+    "delegate": "委派",
+    "message": "訊息",
+    "handoff": "交接",
+    "file": "檔案"
+  },
+  "state": {
+    "queued": "等待中",
+    "leased": "啟動中",
+    "running": "處理中",
+    "done": "已完成",
+    "failed": "失敗",
+    "cancelled": "已停止",
+    "interrupted": "已中斷"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "以{{trust}}等級執行",
+    "acked": "已確認",
+    "ackWaiting": "等待確認",
+    "reply": "回覆"
+  },
+  "trust": {
+    "guarded": "受限",
+    "standard": "標準",
+    "trusted": "受信任"
+  },
+  "team": {
+    "open": "團隊",
+    "openLead": "團隊 · 由 {{lead}} 主導",
+    "title": "誰可以使用這個智慧體",
+    "lead": "主導者（回覆新訊息）",
+    "leadHint": "只有主導者會在此回覆使用者。選擇其他代理即可交接主導權。",
+    "makeLead": "設為主導者",
+    "isLead": "目前主導",
+    "state": {
+      "active": "運作中",
+      "stopped": "已停止",
+      "archived": "已封存"
+    },
+    "stop": "停止所有工作",
+    "stopHint": "取消代理在此進行的工作，並暫存新訊息，直到你繼續為止。",
+    "resume": "繼續",
+    "archive": "封存頻道",
+    "archiveConfirm": "再點一次即可封存",
+    "silentTitle": "主導者沒有回應時",
+    "silentRetry": "再請主導者回覆一次",
+    "on": "開啟",
+    "off": "關閉",
+    "backup": "然後改由以下回覆",
+    "backupNone": "無（改為通知我）",
+    "backupModel": "備援模型（選填）",
+    "backupHint": "若主導者在重試後仍未回應，將由此供應商代為回覆該則訊息。",
+    "save": "儲存",
+    "saved": "已儲存",
+    "error": "操作失敗：{{message}}"
+  },
+  "subagent": {
+    "start": "子代理 {{name}} 已開始",
+    "end": "子代理 {{name}} 已完成"
+  },
+  "reactions": {
+    "label": "{{count}} 人回應 {{emoji}}",
+    "group": "表情回應",
+    "button": "回應",
+    "add": "新增表情回應",
+    "pick": "選擇表情回應",
+    "react": "以 {{emoji}} 回應",
+    "remove": "移除你的 {{emoji}}"
+  },
+  "tools": {
+    "collab_agents": "列出代理",
+    "collab_delegate": "委派任務",
+    "collab_message": "傳訊息給代理",
+    "collab_handoff": "移交",
+    "collab_status": "任務狀態",
+    "collab_wait": "等待任務",
+    "collab_interrupt": "中斷任務",
+    "collab_ack": "確認任務",
+    "collab_react": "回應訊息",
+    "collab_send_file": "傳送檔案給代理"
+  },
+  "server": {
+    "silent": "{{name}} 在 {{chat}} 中沒有回應",
+    "aChannel": "一個頻道"
+  },
+  "find": {
+    "navHint": "多個代理協作完成一項工作",
+    "navKeywords": "團隊, 一起, 小組, 協作"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助理們一起做一件事"
+    },
+    "nav": "助理的任務",
+    "page": {
+      "title": "助理的任務",
+      "intro": "你的助理互相交給對方的工作：訊息、轉交的任務、交接和檔案。每項都按兩個助理中更謹慎的設定執行。",
+      "empty": "還沒有助理把工作交給別的助理。"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Local models",
+  "intro": "Run agents on a model on this computer (Ollama, LM Studio) or on your local network. Nothing leaves your network, and agents can never add an address here.",
+  "empty": "No local models yet.",
+  "found": {
+    "text": "Found {{name}} at {{url}} ({{count}} models).",
+    "use": "Add it"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "OpenAI-compatible (LM Studio)"
+  },
+  "scope": {
+    "loopback": "This computer",
+    "lan": "Local network"
+  },
+  "warning": {
+    "lan": "This address is on your local network, not this computer. Whoever controls that machine sees the prompts and can answer as the model."
+  },
+  "models": {
+    "loading": "Looking for models…",
+    "unreachable": "Not answering at this address.",
+    "none": "No models found. Download one in Ollama or LM Studio first.",
+    "tools": "Tools",
+    "toolsTry": "Tools if supported",
+    "chatOnly": "Chat only: tools off"
+  },
+  "tools": {
+    "label": "Tools",
+    "auto": "Use tools when the model supports them",
+    "off": "Chat only (tools off)"
+  },
+  "use": "Agents and fallbacks can now pick the brain {{id}}.",
+  "refresh": "Refresh models",
+  "remove": {
+    "button": "Remove",
+    "confirm": "Yes, remove it",
+    "cancel": "Keep it"
+  },
+  "add": {
+    "title": "Add a local model",
+    "name": "Name",
+    "api": "Type",
+    "url": "Address",
+    "urlHint": "An IP address or localhost, e.g. http://127.0.0.1:11434 (Ollama) or http://127.0.0.1:1234/v1 (LM Studio).",
+    "check": "Check",
+    "submit": "Add",
+    "reachable": "Answering: {{count}} models."
+  },
+  "offlineHint": "Put a local model in an agent's fallbacks (Brains and fallbacks) and mark a routine \"Run even offline\": when the main brain can't be reached, that routine runs on the local model and says so.",
+  "find": {
+    "settingsHint": "Run a brain on this computer",
+    "settingsKeywords": "local, offline, model, private"
+  },
+  "plain": {
+    "title": "Brains on this computer",
+    "intro": "Let helpers think with a brain on this computer (Ollama, LM Studio) or on your home network. Nothing leaves your network, and helpers can never add an address here.",
+    "empty": "No brains on this computer yet.",
+    "add": {
+      "title": "Add a brain on this computer"
+    },
+    "offlineHint": "Put a brain on this computer in a helper's backups (Brains and backups) and mark a routine \"Run even offline\": when the main brain can't be reached, that routine runs on the brain on this computer and says so."
+  }
+}

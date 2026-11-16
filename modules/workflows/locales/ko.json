@@ -1,0 +1,142 @@
+{
+  "nav": "워크플로",
+  "page": {
+    "title": "워크플로",
+    "intro": "워크플로는 에이전트, 도구 없는 모델 호출, 조건, 내 승인, 대기, 출력 단계를 이어 줘요. 캔버스에서 만든 뒤 실행해 보세요.",
+    "empty": "아직 워크플로가 없어요.",
+    "new": "새 워크플로",
+    "fromTemplate": "답변 후 공유",
+    "templateHint": "첫 번째 에이전트가 프롬프트에 답하면, 나머지 에이전트가 그 답변을 동시에 받아요."
+  },
+  "list": {
+    "steps": "{{count}}단계",
+    "run": "실행",
+    "edit": "편집",
+    "delete": "삭제",
+    "deleteConfirm": "이 워크플로를 삭제할까요? 이미 진행 중인 실행은 계속돼요."
+  },
+  "approvals": {
+    "title": "내 승인 대기",
+    "approve": "승인",
+    "reject": "거절",
+    "rejectConfirm": "거절할까요? 실행이 여기서 멈춰요."
+  },
+  "runs": {
+    "title": "최근 실행",
+    "empty": "아직 실행 기록이 없어요.",
+    "show": "단계 보기",
+    "hide": "단계 숨기기",
+    "cancel": "실행 중지",
+    "loops": "반복 횟수: {{count}}"
+  },
+  "state": {
+    "running": "실행 중",
+    "waiting": "대기 중",
+    "done": "완료",
+    "failed": "실패",
+    "rejected": "거절됨",
+    "stopped": "중지됨",
+    "cancelled": "취소됨",
+    "skipped": "건너뜀"
+  },
+  "type": {
+    "agent": "에이전트",
+    "model": "모델(도구 없음)",
+    "condition": "조건",
+    "approval": "승인",
+    "transform": "변환",
+    "wait": "대기",
+    "parallel": "병렬",
+    "output": "출력"
+  },
+  "editor": {
+    "name": "워크플로 이름",
+    "add": "단계 추가",
+    "addHint": "새 단계는 선택한 단계 뒤에 붙어요.",
+    "save": "저장",
+    "back": "목록으로",
+    "saved": "저장했어요.",
+    "canvas": "워크플로 캔버스",
+    "maxIterations": "실행당 반복 한도",
+    "selected": "선택한 단계",
+    "none": "캔버스에서 단계를 눌러 편집하세요.",
+    "label": "단계 이름",
+    "remove": "이 단계 삭제",
+    "next": "다음 단계",
+    "branch": "조건 결과가",
+    "link": "연결 추가",
+    "links": "나가는 연결",
+    "unlink": "연결 삭제",
+    "pick": "단계 선택"
+  },
+  "field": {
+    "agent": "에이전트",
+    "pickAgent": "에이전트 선택",
+    "prompt": "프롬프트",
+    "op": "검사",
+    "value": "값",
+    "message": "나에게 묻는 내용",
+    "template": "텍스트 ({{input}} = 단계의 입력)",
+    "seconds": "대기 시간(초)",
+    "to": "보낼 곳",
+    "title": "제목",
+    "channel": "채널 연결 ID"
+  },
+  "op": {
+    "contains": "포함함",
+    "not_contains": "포함하지 않음",
+    "equals": "같음",
+    "matches": "패턴과 일치",
+    "empty": "비어 있음",
+    "not_empty": "비어 있지 않음"
+  },
+  "branch": {
+    "true": "예",
+    "false": "아니요"
+  },
+  "to": {
+    "notification": "알림",
+    "channel": "채널 게시"
+  },
+  "template": {
+    "title": "답변 후 공유",
+    "name": "이름",
+    "agents": "에이전트 (첫 번째가 답변)",
+    "prompt": "첫 번째 에이전트용 프롬프트",
+    "followUp": "나머지가 답변으로 할 일",
+    "create": "워크플로 만들기"
+  },
+  "tools": {
+    "workflows_list": "내 워크플로 목록",
+    "workflows_create": "워크플로 만들기",
+    "workflows_update": "내 워크플로 하나 편집",
+    "workflows_run": "내 워크플로 하나 실행",
+    "workflows_delete": "내 워크플로 하나 삭제"
+  },
+  "server": {
+    "failed": "워크플로 \"{{name}}\" 실패",
+    "stopped": "워크플로 \"{{name}}\" 중지됨"
+  },
+  "find": {
+    "navHint": "여러 단계를 하나의 흐름으로",
+    "navKeywords": "단계, 흐름, 연결, 자동화"
+  },
+  "plain": {
+    "page": {
+      "intro": "워크플로는 단계를 이어요: 도우미, 두뇌의 빠른 답, 조건, 내 승인, 기다림, 결과. 캔버스에서 만들고 실행하세요.",
+      "templateHint": "첫 도우미가 요청에 답하면, 다른 모든 도우미가 그 답을 동시에 받아요."
+    },
+    "type": {
+      "agent": "도우미",
+      "model": "두뇌만(도구 없음)"
+    },
+    "field": {
+      "agent": "도우미",
+      "pickAgent": "도우미 고르기"
+    },
+    "template": {
+      "agents": "도우미(첫 번째가 답해요)",
+      "prompt": "첫 도우미에게 할 요청"
+    }
+  }
+}

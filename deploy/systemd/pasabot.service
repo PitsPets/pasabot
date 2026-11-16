@@ -1,0 +1,21 @@
+# PasaBot server as a systemd user service (Linux desktop or a single-user box).
+# Installed by `pasabot service install`, which fills in the placeholders. Default runner: host (bubblewrap).
+[Unit]
+Description=PasaBot server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=@NODE@ @ENTRY@
+WorkingDirectory=@ROOT@
+Environment=@HOME_ENV@
+EnvironmentFile=-@ENV_FILE@
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=yes
+TimeoutStopSec=20
+
+[Install]
+WantedBy=default.target

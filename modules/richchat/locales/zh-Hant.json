@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "agent 的提問",
+    "send": "送出回答",
+    "answered": "已回答：{{answer}}",
+    "expired": "未在時限內回答，agent 已繼續進行。",
+    "cancelled": "agent 已不再等待此回答。",
+    "pickMany": "請選擇一項或多項"
+  },
+  "form": {
+    "submit": "送出",
+    "sent": "已送出",
+    "required": "必填",
+    "invalid": "請檢查{{field}}。",
+    "expired": "此表單在送出前已關閉。",
+    "yes": "是",
+    "no": "否"
+  },
+  "html": {
+    "note": "由 agent 製作。獨立於 PasaBot 執行，無法存取你的帳號。",
+    "frame": "agent 頁面：{{title}}"
+  },
+  "files": {
+    "open": "開啟 {{name}}",
+    "download": "下載 {{name}}",
+    "close": "關閉",
+    "zip": "ZIP 壓縮檔",
+    "file": "檔案",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "附加檔案",
+    "title": "傳送檔案",
+    "caption": "訊息（選填）",
+    "send": "傳送",
+    "cancel": "取消",
+    "remove": "移除 {{name}}",
+    "uploading": "上傳中 {{pct}}%",
+    "tooBig": "{{name}} 超過 100 MB。",
+    "tooMuch": "單則訊息的檔案總大小上限為 250 MB。",
+    "failed": "上傳失敗。{{reason}}",
+    "limits": "每個檔案上限 100 MB，每則訊息上限 250 MB。"
+  },
+  "error": "無法傳送。{{reason}}",
+  "tools": {
+    "richchat_ask": "詢問使用者",
+    "richchat_form": "請求填寫表單",
+    "richchat_html": "顯示 HTML",
+    "richchat_share_file": "把檔案交給主人"
+  },
+  "card": {
+    "file": {
+      "title": "{{name}} 準備好了",
+      "text": "{{agent}} 剛剛做好的。"
+    }
+  }
+}

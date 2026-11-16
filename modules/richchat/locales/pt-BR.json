@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "Pergunta do agente",
+    "send": "Enviar resposta",
+    "answered": "Respondido: {{answer}}",
+    "expired": "Sem resposta a tempo. O agente seguiu sem ela.",
+    "cancelled": "O agente parou de esperar por isso.",
+    "pickMany": "Escolha uma ou mais"
+  },
+  "form": {
+    "submit": "Enviar",
+    "sent": "Enviado",
+    "required": "Obrigatório",
+    "invalid": "Verifique {{field}}.",
+    "expired": "Este formulário foi fechado antes de ser enviado.",
+    "yes": "Sim",
+    "no": "Não"
+  },
+  "html": {
+    "note": "Criado pelo agente. Roda separado do PasaBot e não enxerga a sua conta.",
+    "frame": "Página do agente: {{title}}"
+  },
+  "files": {
+    "open": "Abrir {{name}}",
+    "download": "Baixar {{name}}",
+    "close": "Fechar",
+    "zip": "Arquivo ZIP",
+    "file": "Arquivo",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "Anexar arquivos",
+    "title": "Enviar arquivos",
+    "caption": "Mensagem (opcional)",
+    "send": "Enviar",
+    "cancel": "Cancelar",
+    "remove": "Remover {{name}}",
+    "uploading": "Enviando {{pct}}%",
+    "tooBig": "{{name}} tem mais de 100 MB.",
+    "tooMuch": "Os arquivos de uma mensagem podem somar até 250 MB.",
+    "failed": "Falha no envio. {{reason}}",
+    "limits": "Até 100 MB por arquivo e 250 MB por mensagem."
+  },
+  "error": "Não foi possível enviar. {{reason}}",
+  "tools": {
+    "richchat_ask": "Perguntar à pessoa",
+    "richchat_form": "Pedir um formulário",
+    "richchat_html": "Mostrar HTML",
+    "richchat_share_file": "Entregar um arquivo ao dono"
+  },
+  "card": {
+    "file": {
+      "title": "{{name}} está pronto",
+      "text": "Feito por {{agent}} agora há pouco."
+    }
+  }
+}

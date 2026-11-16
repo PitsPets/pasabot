@@ -1,0 +1,24 @@
+{
+  "nav": "검색",
+  "title": "메시지 검색",
+  "label": "채팅 검색",
+  "placeholder": "단어를 입력하세요",
+  "hint": "참여 중인 모든 채팅에서 단어를 찾아 최신순으로 보여줘요.",
+  "empty": "결과가 없어요.",
+  "untitled": "채팅",
+  "count_other": "메시지 {{count}}개",
+  "author": {
+    "user": "사용자",
+    "agent": "에이전트",
+    "system": "PasaBot",
+    "external": "외부"
+  },
+  "error": "검색하지 못했어요. {{reason}}",
+  "tools": {
+    "search_messages": "메시지 검색"
+  },
+  "find": {
+    "navHint": "채팅에서 메시지 찾기",
+    "navKeywords": "검색, 찾기, 메시지, 기록"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "nav": "Geräte",
+  "settings": "Geräte",
+  "page": {
+    "title": "Verknüpfte Geräte",
+    "intro": "Deine anderen PasaBot-Geräte. Wähle eins, um seine Agenten zu sehen und mit ihnen zu chatten; die Arbeit läuft auf diesem Gerät nach dessen eigenen Regeln.",
+    "empty": "Noch keine verknüpften Geräte. Verknüpfe eins unter Einstellungen → Geräte.",
+    "agents": "Agenten auf {{name}}",
+    "noAgents": "Dort gibt es noch keine Agenten.",
+    "back": "Alle Geräte",
+    "open": "Öffnen",
+    "refresh": "Aktualisieren"
+  },
+  "chat": {
+    "title": "{{agent}} auf {{machine}}",
+    "placeholder": "Nachricht an {{agent}}",
+    "send": "Senden",
+    "waiting": "Warte auf {{agent}}…",
+    "me": "Du",
+    "empty": "Sag Hallo. Deine Nachricht läuft auf {{machine}} als Anfrage eines verknüpften Geräts."
+  },
+  "state": {
+    "active": "Verknüpft",
+    "awaiting": "Wartet auf den anderen Owner",
+    "requested": "Möchte sich verknüpfen",
+    "revoked": "Getrennt"
+  },
+  "grant": {
+    "label": "Was es auf diesem Gerät darf",
+    "view": "Ansehen",
+    "chat": "Chatten",
+    "manage": "Verwalten",
+    "hint": "Ansehen: Gerätename und Agentennamen. Chatten: zusätzlich hier mit deinen Agenten chatten. Verwalten: zusätzlich Routinen und Workflows, im Rahmen der Regeln dieses Geräts. Es wird hier nie zum Owner."
+  },
+  "status": {
+    "this": "Dieses Gerät: {{name}}",
+    "fingerprint": "Schlüssel-Fingerabdruck {{fp}}",
+    "unavailable": "Verknüpfen ist noch nicht verfügbar",
+    "transport": "Verknüpfungstransport: {{transport}} · {{state}}",
+    "transportRunning": "läuft",
+    "transportDown": "startet neu",
+    "transportIdle": "inaktiv, bis ein Gerät verknüpft wird"
+  },
+  "code": {
+    "title": "Gerät verknüpfen",
+    "intro": "Lass hier einen Einmalcode anzeigen und gib ihn dann auf dem anderen Gerät ein. Er funktioniert nur einmal und läuft in 10 Minuten ab.",
+    "make": "Verknüpfungscode anzeigen",
+    "expires": "Läuft um {{time}} ab",
+    "copy": "Code kopieren",
+    "copied": "Kopiert",
+    "qr": "Verknüpfungscode als QR-Bild"
+  },
+  "join": {
+    "title": "Code von einem anderen Gerät eingeben",
+    "code": "Verknüpfungscode",
+    "submit": "Verknüpfen",
+    "done": "Gesendet. Der andere Owner bestätigt auf seinem Gerät."
+  },
+  "reauth": {
+    "password": "Dein Passwort (zur Bestätigung, dass du es bist)"
+  },
+  "peers": {
+    "title": "Verknüpfte Geräte",
+    "empty": "Noch keine.",
+    "confirm": "Verknüpfung bestätigen",
+    "check": "Prüfen",
+    "unlink": "Trennen",
+    "unlinkConfirm": "{{name}} trennen? Der Zugriff endet sofort.",
+    "fp": "Schlüssel {{fp}}"
+  },
+  "intros": {
+    "title": "Vorstellungen",
+    "offer": "{{via}} bietet an, {{name}} vorzustellen (Schlüssel {{fp}}). Nichts ist verknüpft, bis du es mit einem Code von diesem Gerät verknüpfst.",
+    "accept": "Verstanden",
+    "dismiss": "Verwerfen"
+  },
+  "error": "Etwas ist schiefgelaufen: {{message}}",
+  "tools": {
+    "link_machines": "Verknüpfte Rechner auflisten",
+    "link_message": "Agenten auf einem verknüpften Rechner anschreiben"
+  },
+  "server": {
+    "introTitle": "{{peer}} bietet an, {{name}} vorzustellen",
+    "introBody": "Nichts wird verbunden, bis du es selbst mit einem Code von diesem Gerät verbindest.",
+    "linkTitle": "{{name}} möchte sich mit diesem Gerät verbinden",
+    "linkBody": "Bestätige es unter Einstellungen → Geräte und wähle, was es hier darf."
+  },
+  "find": {
+    "navHint": "Andere Rechner, die verbunden sind",
+    "navKeywords": "Rechner, Computer, Server, verbinden, entfernt"
+  },
+  "plain": {
+    "page": {
+      "intro": "Deine anderen Computer mit PasaBot. Wähle einen, um seine Helfer zu sehen und mit ihnen zu chatten; die Arbeit läuft dort nach dessen eigenen Regeln.",
+      "agents": "Helfer auf {{name}}",
+      "noAgents": "Dort gibt es noch keine Helfer."
+    },
+    "grant": {
+      "hint": "Sehen: Name des Computers und seiner Helfer. Chatten: auch mit deinen Helfern hier chatten. Verwalten: auch Routinen und Abläufe, nach den Regeln dieses Computers. Er wird hier nie Besitzer."
+    }
+  }
+}

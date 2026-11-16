@@ -1,0 +1,113 @@
+{
+  "nav": "Browser",
+  "page": {
+    "title": "Browser",
+    "intro": "Mga browser profile na puwedeng gamitin ng mga agent mo. May sariling cookies, sign-in, kulay at proxy ang bawat isa. Panoorin nang live, ikaw mismo ang magmaneho, o i-pop out habang nagcha-chat ka.",
+    "empty": "Wala pang browser profile. Gagawa ang agent sa unang beses na mag-browse siya, o puwede kang magdagdag ngayon.",
+    "ownerOnly": "Ang owner lang ang nakakakita at nakakagamit ng mga browser profile."
+  },
+  "badge": {
+    "running": "Tumatakbo",
+    "loggedIn": "May sign-in mo",
+    "proxy": "Proxy"
+  },
+  "profile": {
+    "via": "Dumadaan sa {{server}}",
+    "loggedInNote": "Kailangang magpaalam muna sa iyo ang agent, gamit ang password o passkey mo, bago niya gamitin ang profile na ito.",
+    "defaultName": "Browser ng agent"
+  },
+  "actions": {
+    "new": "Bagong profile",
+    "watch": "Panoorin",
+    "start": "Simulan",
+    "stop": "Ihinto",
+    "edit": "I-edit",
+    "delete": "Burahin",
+    "deleteConfirm": "Burahin ang {{name}} kasama ang cookies at mga sign-in nito? Hindi na ito maibabalik.",
+    "pip": "I-pop out",
+    "full": "Buong view",
+    "closePip": "Isara",
+    "closeView": "Isara ang view"
+  },
+  "form": {
+    "newTitle": "Bagong browser profile",
+    "editTitle": "I-edit ang browser profile",
+    "name": "Pangalan",
+    "color": "Kulay",
+    "proxy": "Proxy (opsyonal)",
+    "proxyHint": "http://, https:// o socks5:// na may host at port. Gagana ito sa susunod na pagsisimula ng browser.",
+    "bypass": "Huwag dumaan sa proxy para sa",
+    "username": "Username ng proxy",
+    "password": "Password ng proxy",
+    "passwordVault": "Itatago sa vault, hindi na ipapakita ulit.",
+    "passwordKeep": "Iwanang blangko para manatili ang naka-save na password.",
+    "loggedIn": "May mga sign-in ko ang profile na ito (magpapaalam muna ang agent)",
+    "save": "I-save",
+    "cancel": "Kanselahin"
+  },
+  "live": {
+    "title": "{{name}} nang live",
+    "alt": "Live na view ng browser na {{name}}",
+    "waiting": "Hinihintay ang unang larawan…",
+    "stopped": "Hindi tumatakbo ang browser na ito."
+  },
+  "steer": {
+    "address": "Address",
+    "go": "Buksan",
+    "type": "Mag-type sa page",
+    "typeHint": "I-click muna ang field sa larawan. Kapag nag-type ka, mamarkahan ang profile na may sign-in mo.",
+    "send": "I-type"
+  },
+  "keys": {
+    "Enter": "Enter",
+    "Tab": "Tab",
+    "Backspace": "Backspace",
+    "Escape": "Esc",
+    "up": "Mag-scroll pataas",
+    "down": "Mag-scroll pababa"
+  },
+  "network": {
+    "title": "Mga lokal na address",
+    "allowHosts": "Mga host sa network mo na puwedeng buksan ng browser",
+    "hint": "Naka-block ang private at loopback na address maliban kung nakalista dito, hiwalay sa kuwit.",
+    "save": "I-save",
+    "saved": "Na-save na."
+  },
+  "pip": {
+    "label": "Browser picture-in-picture"
+  },
+  "dock": {
+    "label": "Browser",
+    "idle": "Walang browser na tumatakbo ngayon."
+  },
+  "tools": {
+    "browser_navigate": "Browser: magbukas ng page",
+    "browser_snapshot": "Browser: basahin ang page",
+    "browser_click": "Browser: i-click",
+    "browser_type": "Browser: mag-type sa field"
+  },
+  "server": {
+    "yourTurn": "Ikaw na sa browser"
+  },
+  "find": {
+    "navHint": "Hayaang gumamit ng browser ang agent",
+    "navKeywords": "web, mag-browse, website, internet"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Hayaang gumamit ng browser ang katulong"
+    },
+    "page": {
+      "intro": "Mga browser na puwedeng gamitin ng mga katulong mo. May sariling sign-in, kulay at settings ang bawat isa. Panoorin nang live, ikaw mismo ang magmaneho, o i-pop out habang nagcha-chat ka.",
+      "empty": "Wala pang browser. Gagawa ang katulong sa unang beses na mag-browse siya, o puwede kang magdagdag ngayon."
+    },
+    "profile": {
+      "loggedInNote": "Kailangang magpaalam muna sa iyo ang katulong, gamit ang password o passkey mo, bago niya gamitin ang browser na ito.",
+      "defaultName": "Browser ng katulong"
+    },
+    "form": {
+      "passwordVault": "Ligtas na itatago sa computer na ito, hindi na ipapakita ulit.",
+      "loggedIn": "May mga sign-in ko ang browser na ito (magpapaalam muna ang katulong)"
+    }
+  }
+}

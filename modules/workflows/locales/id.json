@@ -1,0 +1,142 @@
+{
+  "nav": "Alur kerja",
+  "page": {
+    "title": "Alur kerja",
+    "intro": "Alur kerja merangkai langkah: agent, panggilan model tanpa alat, kondisi, persetujuan Anda, jeda, dan keluaran. Susun di kanvas, lalu jalankan.",
+    "empty": "Belum ada alur kerja.",
+    "new": "Alur kerja baru",
+    "fromTemplate": "Jawab, lalu bagikan",
+    "templateHint": "Agent pertama menjawab perintah Anda, lalu semua agent lain menerima jawaban itu secara bersamaan."
+  },
+  "list": {
+    "steps": "{{count}} langkah",
+    "run": "Jalankan",
+    "edit": "Ubah",
+    "delete": "Hapus",
+    "deleteConfirm": "Hapus alur kerja ini? Proses yang sudah berjalan tetap berlanjut."
+  },
+  "approvals": {
+    "title": "Menunggu Anda",
+    "approve": "Setujui",
+    "reject": "Tolak",
+    "rejectConfirm": "Tolak? Proses berhenti di sini."
+  },
+  "runs": {
+    "title": "Proses terbaru",
+    "empty": "Belum ada proses.",
+    "show": "Tampilkan langkah",
+    "hide": "Sembunyikan langkah",
+    "cancel": "Hentikan proses",
+    "loops": "Pengulangan: {{count}}"
+  },
+  "state": {
+    "running": "Berjalan",
+    "waiting": "Menunggu",
+    "done": "Selesai",
+    "failed": "Gagal",
+    "rejected": "Ditolak",
+    "stopped": "Dihentikan",
+    "cancelled": "Dibatalkan",
+    "skipped": "Dilewati"
+  },
+  "type": {
+    "agent": "Agen",
+    "model": "Model (tanpa alat)",
+    "condition": "Kondisi",
+    "approval": "Persetujuan",
+    "transform": "Transformasi",
+    "wait": "Jeda",
+    "parallel": "Paralel",
+    "output": "Keluaran"
+  },
+  "editor": {
+    "name": "Nama alur kerja",
+    "add": "Tambah langkah",
+    "addHint": "Langkah baru ditambahkan setelah langkah yang dipilih.",
+    "save": "Simpan",
+    "back": "Kembali ke daftar",
+    "saved": "Tersimpan.",
+    "canvas": "Kanvas alur kerja",
+    "maxIterations": "Batas pengulangan per proses",
+    "selected": "Langkah terpilih",
+    "none": "Ketuk langkah di kanvas untuk mengubahnya.",
+    "label": "Nama langkah",
+    "remove": "Hapus langkah ini",
+    "next": "Lalu lanjut ke",
+    "branch": "Jika kondisinya",
+    "link": "Tambah tautan",
+    "links": "Tautan keluar",
+    "unlink": "Hapus tautan",
+    "pick": "Pilih langkah"
+  },
+  "field": {
+    "agent": "Agen",
+    "pickAgent": "Pilih agent",
+    "prompt": "Perintah",
+    "op": "Periksa",
+    "value": "Nilai",
+    "message": "Pertanyaan untuk Anda",
+    "template": "Teks ({{input}} = masukan langkah)",
+    "seconds": "Detik menunggu",
+    "to": "Kirim ke",
+    "title": "Judul",
+    "channel": "ID binding channel"
+  },
+  "op": {
+    "contains": "berisi",
+    "not_contains": "tidak berisi",
+    "equals": "sama dengan",
+    "matches": "cocok dengan pola",
+    "empty": "kosong",
+    "not_empty": "tidak kosong"
+  },
+  "branch": {
+    "true": "ya",
+    "false": "tidak"
+  },
+  "to": {
+    "notification": "Notifikasi",
+    "channel": "Kiriman ke channel"
+  },
+  "template": {
+    "title": "Jawab, lalu bagikan",
+    "name": "Nama",
+    "agents": "Agent (yang pertama menjawab)",
+    "prompt": "Perintah untuk agent pertama",
+    "followUp": "Yang dilakukan agent lain dengan jawabannya",
+    "create": "Buat alur kerja"
+  },
+  "tools": {
+    "workflows_list": "Daftar alur kerja saya",
+    "workflows_create": "Buat alur kerja",
+    "workflows_update": "Edit salah satu alur kerja saya",
+    "workflows_run": "Jalankan salah satu alur kerja saya",
+    "workflows_delete": "Hapus salah satu alur kerja saya"
+  },
+  "server": {
+    "failed": "Alur kerja \"{{name}}\" gagal",
+    "stopped": "Alur kerja \"{{name}}\" dihentikan"
+  },
+  "find": {
+    "navHint": "Rangkai langkah menjadi satu alur",
+    "navKeywords": "langkah, alur, rantai, otomatis"
+  },
+  "plain": {
+    "page": {
+      "intro": "Alur kerja merangkai langkah: pembantu, jawaban cepat otak, syarat, persetujuanmu, jeda, dan hasil. Susun di kanvas, lalu jalankan.",
+      "templateHint": "Pembantu pertama menjawab permintaanmu, lalu semua pembantu lain menerima jawaban itu bersamaan."
+    },
+    "type": {
+      "agent": "Pembantu",
+      "model": "Hanya otak (tanpa alat)"
+    },
+    "field": {
+      "agent": "Pembantu",
+      "pickAgent": "Pilih pembantu"
+    },
+    "template": {
+      "agents": "Pembantu (yang pertama menjawab)",
+      "prompt": "Permintaan untuk pembantu pertama"
+    }
+  }
+}

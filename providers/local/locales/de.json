@@ -1,0 +1,64 @@
+{
+  "title": "Lokale Modelle",
+  "intro": "Lass Agents mit einem Modell auf diesem Computer (Ollama, LM Studio) oder in deinem lokalen Netzwerk laufen. Nichts verlässt dein Netzwerk, und Agents können hier nie eine Adresse hinzufügen.",
+  "empty": "Noch keine lokalen Modelle.",
+  "found": {
+    "text": "{{name}} unter {{url}} gefunden ({{count}} Modelle).",
+    "use": "Hinzufügen"
+  },
+  "api": {
+    "ollama": "Ollama",
+    "openai": "OpenAI-kompatibel (LM Studio)"
+  },
+  "scope": {
+    "loopback": "Dieser Computer",
+    "lan": "Lokales Netzwerk"
+  },
+  "warning": {
+    "lan": "Diese Adresse liegt in deinem lokalen Netzwerk, nicht auf diesem Computer. Wer dieses Gerät kontrolliert, sieht die Prompts und kann als Modell antworten."
+  },
+  "models": {
+    "loading": "Suche nach Modellen…",
+    "unreachable": "Keine Antwort unter dieser Adresse.",
+    "none": "Keine Modelle gefunden. Lade zuerst eins in Ollama oder LM Studio herunter.",
+    "tools": "Werkzeuge",
+    "toolsTry": "Werkzeuge, falls unterstützt",
+    "chatOnly": "Nur Chat: Werkzeuge aus"
+  },
+  "tools": {
+    "label": "Werkzeuge",
+    "auto": "Werkzeuge nutzen, wenn das Modell sie unterstützt",
+    "off": "Nur Chat (Werkzeuge aus)"
+  },
+  "use": "Agents und Ersatzmodelle können jetzt das Modell {{id}} auswählen.",
+  "refresh": "Modelle aktualisieren",
+  "remove": {
+    "button": "Entfernen",
+    "confirm": "Ja, entfernen",
+    "cancel": "Behalten"
+  },
+  "add": {
+    "title": "Lokales Modell hinzufügen",
+    "name": "Name",
+    "api": "Typ",
+    "url": "Adresse",
+    "urlHint": "Eine IP-Adresse oder localhost, z. B. http://127.0.0.1:11434 (Ollama) oder http://127.0.0.1:1234/v1 (LM Studio).",
+    "check": "Prüfen",
+    "submit": "Hinzufügen",
+    "reachable": "Antwortet: {{count}} Modelle."
+  },
+  "offlineHint": "Nimm ein lokales Modell in die Ersatzmodelle eines Agents auf (Modelle und Ersatzmodelle) und markiere eine Routine mit „Auch offline ausführen“: Wenn das Hauptmodell nicht erreichbar ist, läuft die Routine auf dem lokalen Modell und sagt dir das.",
+  "find": {
+    "settingsHint": "Ein Gehirn auf diesem Rechner laufen lassen",
+    "settingsKeywords": "lokal, offline, Modell, privat"
+  },
+  "plain": {
+    "title": "Lokale Gehirne",
+    "intro": "Lass Helfers mit einem Gehirn auf diesem Computer (Ollama, LM Studio) oder in deinem lokalen Netzwerk laufen. Nichts verlässt dein Netzwerk, und Helfers können hier nie eine Adresse hinzufügen.",
+    "empty": "Noch keine lokalen Gehirne.",
+    "add": {
+      "title": "Lokales Gehirn hinzufügen"
+    },
+    "offlineHint": "Nimm ein lokales Gehirn in die Ersatzmodelle eines Helfers auf (Gehirne und Ersatzmodelle) und markiere eine Routine mit „Auch offline ausführen“: Wenn das Hauptmodell nicht erreichbar ist, läuft die Routine auf dem lokalen Gehirn und sagt dir das."
+  }
+}

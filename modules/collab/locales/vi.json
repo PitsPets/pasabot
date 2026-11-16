@@ -1,0 +1,110 @@
+{
+  "nav": "Tác vụ của agent",
+  "page": {
+    "title": "Tác vụ của agent",
+    "intro": "Công việc các agent giao cho nhau: tin nhắn, tác vụ được ủy quyền, bàn giao và tệp. Mỗi việc chạy ở mức tin cậy thấp hơn trong hai agent.",
+    "empty": "Chưa có agent nào giao việc cho agent khác.",
+    "reload": "Làm mới"
+  },
+  "kind": {
+    "delegate": "Ủy quyền",
+    "message": "Tin nhắn",
+    "handoff": "Bàn giao",
+    "file": "Tệp"
+  },
+  "state": {
+    "queued": "Đang chờ",
+    "leased": "Đang khởi động",
+    "running": "Đang làm việc",
+    "done": "Hoàn tất",
+    "failed": "Thất bại",
+    "cancelled": "Đã dừng",
+    "interrupted": "Bị gián đoạn"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "Chạy với mức {{trust}}",
+    "acked": "Đã xác nhận",
+    "ackWaiting": "Đang chờ xác nhận",
+    "reply": "Trả lời"
+  },
+  "trust": {
+    "guarded": "thận trọng",
+    "standard": "tiêu chuẩn",
+    "trusted": "tin cậy"
+  },
+  "team": {
+    "open": "Nhóm",
+    "openLead": "Nhóm · {{lead}} dẫn dắt",
+    "title": "Ai có thể dùng agent này",
+    "lead": "Trưởng nhóm (trả lời tin nhắn mới)",
+    "leadHint": "Chỉ trưởng nhóm trả lời mọi người ở đây. Chọn agent khác để chuyển quyền dẫn dắt.",
+    "makeLead": "Đặt làm trưởng nhóm",
+    "isLead": "Đang dẫn dắt",
+    "state": {
+      "active": "Đang hoạt động",
+      "stopped": "Đã dừng",
+      "archived": "Đã lưu trữ"
+    },
+    "stop": "Dừng mọi công việc",
+    "stopHint": "Hủy những gì các agent đang làm ở đây và giữ tin nhắn mới cho đến khi bạn tiếp tục.",
+    "resume": "Tiếp tục",
+    "archive": "Lưu trữ kênh",
+    "archiveConfirm": "Nhấn lại để lưu trữ",
+    "silentTitle": "Khi trưởng nhóm im lặng",
+    "silentRetry": "Nhắc trưởng nhóm thêm một lần",
+    "on": "Bật",
+    "off": "Tắt",
+    "backup": "Sau đó trả lời bằng",
+    "backupNone": "Không ai (hãy báo cho tôi)",
+    "backupModel": "Mô hình dự phòng (không bắt buộc)",
+    "backupHint": "Nếu trưởng nhóm không trả lời sau lần nhắc lại, nhà cung cấp này sẽ trả lời tin nhắn đó thay.",
+    "save": "Lưu",
+    "saved": "Đã lưu",
+    "error": "Không thành công: {{message}}"
+  },
+  "subagent": {
+    "start": "Agent phụ {{name}} đã bắt đầu",
+    "end": "Agent phụ {{name}} đã xong"
+  },
+  "reactions": {
+    "label": "{{emoji}} từ {{count}}",
+    "group": "Biểu cảm",
+    "button": "Thả biểu cảm",
+    "add": "Thêm biểu cảm",
+    "pick": "Chọn biểu cảm",
+    "react": "Thả {{emoji}}",
+    "remove": "Bỏ {{emoji}} của bạn"
+  },
+  "tools": {
+    "collab_agents": "Liệt kê agent",
+    "collab_delegate": "Giao một việc",
+    "collab_message": "Nhắn cho agent",
+    "collab_handoff": "Bàn giao",
+    "collab_status": "Trạng thái việc",
+    "collab_wait": "Chờ một việc",
+    "collab_interrupt": "Ngắt một việc",
+    "collab_ack": "Xác nhận một việc",
+    "collab_react": "Bày tỏ cảm xúc với tin nhắn",
+    "collab_send_file": "Gửi tệp cho agent"
+  },
+  "server": {
+    "silent": "{{name}} không trả lời trong {{chat}}",
+    "aChannel": "một kênh"
+  },
+  "find": {
+    "navHint": "Các tác tử cùng làm một việc",
+    "navKeywords": "nhóm, cùng nhau, hợp tác, đội"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Các trợ lý cùng làm một việc"
+    },
+    "nav": "Việc của trợ lý",
+    "page": {
+      "title": "Việc của các trợ lý",
+      "intro": "Việc các trợ lý giao cho nhau: tin nhắn, việc chuyển tiếp, bàn giao và tệp. Mỗi việc chạy theo cài đặt cẩn thận hơn của hai trợ lý.",
+      "empty": "Chưa có trợ lý nào giao việc cho trợ lý khác."
+    }
+  }
+}

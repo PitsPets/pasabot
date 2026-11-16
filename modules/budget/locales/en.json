@@ -1,0 +1,151 @@
+{
+  "nav": "Budget",
+  "page": {
+    "title": "Budget",
+    "intro": "What your agents cost, the prices you pay, and the caps that stop them. Prices come only from your table: a model without a price is never guessed."
+  },
+  "spend": {
+    "title": "Spending",
+    "today": "Today",
+    "month": "This month",
+    "total": "Total",
+    "none": "Nothing spent yet.",
+    "byAgent": "By agent",
+    "byModel": "By model",
+    "runs": "{{count}} runs",
+    "tokens": "{{input}} in · {{output}} out · {{cache}} cached",
+    "priceNotSet": "price not set",
+    "unpriced": "{{count}} runs have no price yet and are not counted."
+  },
+  "prices": {
+    "title": "Price table",
+    "intro": "Per million tokens, in one currency per model. Models your agents used appear here; set a price to count them.",
+    "model": "Model",
+    "default": "(default model)",
+    "input": "Input",
+    "output": "Output",
+    "cached": "Cached",
+    "currency": "Currency",
+    "save": "Save price",
+    "saved": "Price saved.",
+    "remove": "Remove price",
+    "add": "Add a model",
+    "provider": "Brain",
+    "empty": "No models yet. They appear after an agent's first reply.",
+    "providerMissing": "Write the brain's name first"
+  },
+  "caps": {
+    "title": "Caps",
+    "intro": "When a cap is reached the agent stops cleanly, new work waits, and routines skip. Only you can raise a cap.",
+    "everyone": "All agents",
+    "day": "Per day",
+    "month": "Per month",
+    "none": "No cap",
+    "spent": "{{spent}} of {{cap}} {{currency}}",
+    "save": "Save caps",
+    "saved": "Caps saved.",
+    "uncovered": "Not counted toward any cap until it has a price in the caps' currency: {{models}}.",
+    "oneCurrency": "Caps and prices must all use one currency. Change them to the same currency first."
+  },
+  "card": {
+    "who": {
+      "global": "All agents",
+      "agent": "{{name}}"
+    },
+    "reached": "{{who}} reached the {{period}} budget: {{spent}} of {{cap}} {{currency}}.",
+    "period": {
+      "day": "daily",
+      "month": "monthly"
+    },
+    "stopped": "{{name}} stopped. What it wrote so far is kept.",
+    "held": "New work waits until the cap resets or you raise it.",
+    "skipped": "A routine run was skipped.",
+    "ask": "Raise the cap or keep it?",
+    "newCap": "New cap ({{currency}})",
+    "raise": "Raise cap",
+    "keep": "Keep cap",
+    "raised": "Cap raised to {{cap}} {{currency}}.",
+    "kept": "Cap kept at {{cap}} {{currency}}.",
+    "failed": "That did not work. Only the owner can change a cap."
+  },
+  "bundle": {
+    "title": "Move an agent (encrypted)",
+    "intro": "One file with the agent's settings, memory, workspace, skills and chats, locked with a passphrase. Importing always makes a new agent.",
+    "agent": "Agent",
+    "passphrase": "Passphrase",
+    "passphraseHint": "At least 8 characters. Without it the file cannot be opened.",
+    "vault": "Include this agent's vault entries",
+    "vaultHint": "Off by default. Needs your password again.",
+    "password": "Your password",
+    "export": "Download encrypted file",
+    "exported": "File downloaded.",
+    "file": "Bundle file",
+    "import": "Import as a new agent",
+    "imported": "Imported as {{name}}.",
+    "open": "Open its chat",
+    "error": {
+      "bad_passphrase_or_tampered": "Wrong passphrase, or the file was changed. Nothing was imported.",
+      "unsafe_path": "The file has unsafe paths. Nothing was imported.",
+      "unsupported_version": "This file was made by a newer PasaBot. Nothing was imported.",
+      "not_a_bundle": "This is not a PasaBot agent file.",
+      "reauth_required": "Your password is needed to include vault entries.",
+      "builtin_agent": "Your team builder is part of PasaBot, so it is not saved to a file. Your other agents can be.",
+      "other": "That did not work."
+    }
+  },
+  "server": {
+    "allAgents": "All agents",
+    "capHeadDay": "{{what}} reached the daily budget ({{spent}} of {{cap}} {{currency}}).",
+    "capHeadMonth": "{{what}} reached the monthly budget ({{spent}} of {{cap}} {{currency}}).",
+    "capStopped": "{{name}} stopped; what it wrote so far is kept.",
+    "capHeld": "New work waits until the cap resets or you raise it.",
+    "capSkipped": "A routine run was skipped.",
+    "capCard": "{{head}} {{tail}}"
+  },
+  "find": {
+    "navHint": "Spending limits for your agents",
+    "navKeywords": "budget, limit, money, cap, spending"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Spending limits for your helpers"
+    },
+    "page": {
+      "intro": "What your helpers cost, the prices you pay, and the limits that stop them. Prices come only from your table: a brain without a price is never guessed."
+    },
+    "spend": {
+      "byAgent": "By helper",
+      "byModel": "By brain version"
+    },
+    "prices": {
+      "intro": "Copy the price from the brain's own price page: what it charges per 1 million pieces of text, e.g. 3 for input and 15 for output. One currency per brain version. Versions your helpers used appear here; set a price to count them.",
+      "model": "Brain version",
+      "default": "(usual version)",
+      "add": "Add a version",
+      "empty": "Nothing yet. They appear after a helper’s first reply."
+    },
+    "caps": {
+      "intro": "When a limit is reached the helper stops cleanly, new work waits, and routines skip. Only you can raise a limit.",
+      "everyone": "All helpers",
+      "uncovered": "Not counted toward any limit until it has a price in the limits’ currency: {{models}}."
+    },
+    "card": {
+      "who": {
+        "global": "All helpers"
+      }
+    },
+    "bundle": {
+      "title": "Move a helper (locked file)",
+      "intro": "One file with the helper’s settings, memory, files, abilities and chats, locked with a passphrase. Bringing it in always makes a new helper.",
+      "agent": "Helper",
+      "vault": "Include this helper’s saved secrets",
+      "file": "Helper file",
+      "import": "Bring in as a new helper",
+      "error": {
+        "not_a_bundle": "This is not a PasaBot helper file.",
+        "reauth_required": "Your password is needed to include saved secrets.",
+        "builtin_agent": "Your team builder is part of PasaBot, so it is not saved to a file. Your other helpers can be."
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "nav": "Suche",
+  "title": "Nachrichten durchsuchen",
+  "label": "Deine Chats durchsuchen",
+  "placeholder": "Wort eingeben",
+  "hint": "Findet Wörter in allen Chats, in denen du bist, die neuesten zuerst.",
+  "empty": "Nichts gefunden.",
+  "untitled": "Chat",
+  "count_one": "{{count}} Nachricht",
+  "count_other": "{{count}} Nachrichten",
+  "author": {
+    "user": "Person",
+    "agent": "Agent",
+    "system": "PasaBot",
+    "external": "Extern"
+  },
+  "error": "Suche fehlgeschlagen. {{reason}}",
+  "tools": {
+    "search_messages": "Nachrichten durchsuchen"
+  },
+  "find": {
+    "navHint": "Jede Nachricht in deinen Chats finden",
+    "navKeywords": "finden, suchen, Nachrichten, Verlauf"
+  }
+}

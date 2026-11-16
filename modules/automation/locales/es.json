@@ -1,0 +1,55 @@
+{
+  "settings": "Automatización",
+  "intro": "Permite que scripts de este equipo inicien trabajo en un agente con el comando pasabot run o la API local. Cada agente tiene su propio interruptor y sus tokens. Los tokens actúan como máximo con confianza estándar, así que cualquier acción riesgosa te pide aprobación primero.",
+  "loadError": "No se pudieron cargar los ajustes de automatización.",
+  "noAgents": "Aún no hay agentes.",
+  "agent": {
+    "switch": "Permitir automatización para {{name}}",
+    "on": "Activada",
+    "off": "Desactivada",
+    "tokens": "{{count}} token(s) activo(s)"
+  },
+  "form": {
+    "title": "Nuevo token para {{name}}",
+    "label": "Nombre del token",
+    "labelHint": "Dónde se usará, p. ej. \"scripts del portátil\".",
+    "expiry": "Vence",
+    "days30": "En 30 días",
+    "days90": "En 90 días",
+    "days365": "En un año",
+    "never": "Nunca",
+    "remote": "Permitir también desde otros dispositivos (no solo este equipo)",
+    "remoteHint": "Déjalo desactivado salvo que un script de otra máquina lo necesite. Las páginas del navegador nunca pueden usar un token.",
+    "create": "Crear token",
+    "creating": "Creando…"
+  },
+  "created": {
+    "title": "Copia este token ahora",
+    "body": "Solo se muestra una vez. Guárdalo en un lugar seguro, como un administrador de contraseñas.",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "usage": "Pruébalo:",
+    "done": "Listo"
+  },
+  "list": {
+    "title": "Tokens",
+    "empty": "Aún no hay tokens.",
+    "revoke": "Revocar",
+    "revoked": "Revocado",
+    "expires": "Vence {{when}}",
+    "noExpiry": "No vence",
+    "lastUsed": "Último uso {{when}}",
+    "neverUsed": "Nunca usado",
+    "remote": "Otros dispositivos permitidos",
+    "localOnly": "Solo este equipo"
+  },
+  "find": {
+    "settingsHint": "Webhooks y disparadores que inician agentes",
+    "settingsKeywords": "webhook, disparador, automatización, eventos"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Pon en marcha un ayudante cuando pase algo"
+    }
+  }
+}

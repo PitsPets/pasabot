@@ -1,0 +1,15 @@
+{
+  "nav": "Beispiel",
+  "page": {
+    "title": "Beispielmodul",
+    "body": "Dieses Modul füllt jeden Slot des Module SDK."
+  },
+  "settings": "Beispiel-Einstellungen",
+  "composer": "Notiz einfügen",
+  "dock": "Beispiel-Panel",
+  "onboarding": "Beispiel-Einrichtungsschritt",
+  "note": "Notiz",
+  "tools": {
+    "example_echo": "Echo wiedergeben"
+  }
+}

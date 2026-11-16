@@ -1,0 +1,208 @@
+{
+  "nav": "連接器",
+  "page": {
+    "title": "連接器",
+    "intro": "與外部服務的現成連結。新增後，選擇誰可以使用。",
+    "introTech": "與外部服務的現成連結。新增後，請到 MCP 伺服器頁面選擇哪些代理可以使用。"
+  },
+  "loading": "載入中…",
+  "kind": {
+    "mcp-stdio": "在這台機器上執行",
+    "mcp-http": "託管服務",
+    "oauth-api": "登入"
+  },
+  "status": {
+    "ready": "已新增",
+    "needs_auth": "需要登入或金鑰",
+    "error": "有問題"
+  },
+  "oauth": {
+    "connected": "已登入，連接器已就緒。",
+    "denied": "已取消登入。",
+    "expired": "該登入連結已過期，請再試一次。",
+    "failed": "登入失敗。請檢查用戶端 ID 後再試一次。",
+    "connectedApp": "已登入，{{name}} 已就緒。",
+    "failedApp": "{{name}} 的登入沒有完成。請再試一次。"
+  },
+  "catalog": {
+    "title": "新增更多",
+    "homepage": "關於此服務",
+    "install": "新增 {{name}}",
+    "custom": "想新增別的嗎？",
+    "customTech": "有工具伺服器位址嗎？"
+  },
+  "install": {
+    "secretHint": "已存入保險庫，代理絕不會看到。",
+    "oauthHint": "此連接器使用你自己的 OAuth 用戶端登入。請在該服務建立一個，並加入這個回傳位址。",
+    "redirect": "回傳位址：",
+    "clientId": "OAuth 用戶端 ID",
+    "clientSecret": "OAuth 用戶端密鑰（若服務有提供）",
+    "clientSecretHint": "已存入保險庫。",
+    "save": "新增",
+    "cancel": "取消"
+  },
+  "installed": {
+    "title": "已連接",
+    "secrets": "保險庫中保存的密鑰：{{names}}",
+    "mcpHint": "選擇哪些代理可以使用：",
+    "foundHint": "開啟它，並選擇誰可以使用：",
+    "mcpLink": "MCP 伺服器",
+    "appsLink": "代理可用的應用程式",
+    "signIn": "登入",
+    "signInAgain": "重新登入",
+    "remove": "移除",
+    "removeConfirm": "是，移除"
+  },
+  "find": {
+    "navHint": "連接應用程式和服務",
+    "navKeywords": "應用程式, 服務, 連接, 整合, 帳戶"
+  },
+  "search": {
+    "label": "搜尋應用程式",
+    "placeholder": "搜尋應用程式，例如「行事曆」",
+    "none": "沒有相符的應用程式。"
+  },
+  "state": {
+    "added": "已新增",
+    "ready": "可以新增",
+    "needs_key": "需要登入或金鑰",
+    "missing": "這台電腦上沒有"
+  },
+  "ready": {
+    "title": "可以新增"
+  },
+  "missing": {
+    "line": "需要 {{name}}，這台電腦上還沒有。",
+    "get": "取得 {{name}}",
+    "ask": "需要 {{name}}，這台電腦上還沒有。仍要新增嗎？",
+    "addAnyway": "仍要新增"
+  },
+  "found": {
+    "title": "在這台電腦上找到",
+    "intro": "你已經在其他應用程式裡設定好的工具。新增後在這裡也能用。",
+    "introTech": "你已在其他應用程式裡設定好的工具伺服器。新增後這裡也能用。",
+    "from": "設定於 {{app}}",
+    "keys": "它的金鑰會直接存入你的保險庫，永遠不會顯示：{{names}}",
+    "keysAsk": "它帶有金鑰。也複製到你的保險庫嗎？代理永遠看不到。",
+    "confirm": "好，新增",
+    "blocked": {
+      "key-in-command": "它的指令裡直接寫著金鑰。請自己手動新增：",
+      "unsupported": "PasaBot 無法原樣搬過來。請自己手動新增："
+    }
+  },
+  "describe": {
+    "filesystem": "讓代理讀取和修改你選定的一個資料夾裡的檔案。",
+    "git": "讓代理查看一個程式碼資料夾的歷史和變更。",
+    "github": "讓代理處理你的 GitHub 程式碼、議題和拉取要求。",
+    "github-remote": "同樣的 GitHub 工具，由 GitHub 線上執行。這裡不需設定。",
+    "google-calendar": "讓代理讀取你的 Google 日曆。",
+    "time": "告訴代理世界任何地方的時間。",
+    "notion": "助手可以尋找、閱讀和撰寫你 Notion 裡的頁面。",
+    "atlassian": "助手可以查看並更新你在 Jira 的工作和 Confluence 頁面。",
+    "trello": "助手可以讀取你的 Trello 看板，移動或新增卡片。",
+    "clickup": "助手可以尋找、新增和更新你的 ClickUp 任務。",
+    "intercom": "助手可以查看你在 Intercom 的客戶對話和聯絡人。",
+    "stripe": "助手可以查看你在 Stripe 的收款、客戶和發票。"
+  },
+  "adding": "正在新增…",
+  "server": {
+    "connected": "{{name}} 已連接。試著問我一些相關的問題。"
+  },
+  "groups": {
+    "popular": "熱門",
+    "files-notes": "檔案和筆記",
+    "calendar-email": "行事曆和郵件",
+    "work-tasks": "工作和任務",
+    "shop-money": "購物和錢",
+    "social-chat": "社群和聊天",
+    "other": "其他"
+  },
+  "button": {
+    "add": "新增",
+    "signIn": "登入",
+    "code": "需要代碼",
+    "added": "已新增"
+  },
+  "signin": {
+    "lead": "{{name}} 會開啟自己的頁面讓你登入。這裡不用輸入任何內容。",
+    "can": "你的助手將能夠：",
+    "ask": "凡是傳送、發佈、付款或刪除，每次都會先問你。",
+    "go": "繼續前往 {{name}}",
+    "failed": "無法開啟 {{name}} 的登入頁面。請稍後再試。",
+    "insecure": "{{name}} 只允許從安全位址登入。請在執行 PasaBot 的電腦上，或透過它的安全（https）位址開啟 PasaBot，然後再登入。",
+    "refused": "{{name}} 沒有接受 PasaBot 的登入。再試一次也不會改變。"
+  },
+  "code": {
+    "lead": "{{name}} 會給你一組代碼，貼到這裡。",
+    "get": "取得代碼",
+    "paste": "貼上代碼",
+    "test": "測試並新增",
+    "bad": "這組代碼不能用。請確認你複製完整了。",
+    "unreachable": "無法連線到 {{name}}。請檢查網路後再試。",
+    "failed": "沒成功：{{reason}}",
+    "refused": "{{name}} 有回應，但現在無法和 PasaBot 一起運作。請稍後再試。"
+  },
+  "helpers": {
+    "title": "誰可以使用",
+    "main": "主助手"
+  },
+  "connected": {
+    "title": "{{name}} 已連接",
+    "try": "試著問：",
+    "who": "變更誰可以使用"
+  },
+  "try": {
+    "notion": {
+      "a": "在 Notion 找我關於下次會議的筆記",
+      "b": "建一個 Notion 頁面，寫上本週待辦"
+    },
+    "atlassian": {
+      "a": "有哪些 Jira 問題指派給我？",
+      "b": "總結一下我團隊最近改過的 Confluence 頁面"
+    },
+    "trello": {
+      "a": "我今天的 Trello 看板上有什麼？",
+      "b": "新增 Trello 卡片：週五打電話給供應商"
+    },
+    "clickup": {
+      "a": "哪些 ClickUp 任務本週到期？",
+      "b": "新增 ClickUp 任務：明天寄報價"
+    },
+    "intercom": {
+      "a": "顯示我最新的 Intercom 對話",
+      "b": "誰在 Intercom 上問過退款？"
+    },
+    "stripe": {
+      "a": "我這週在 Stripe 收了多少錢？",
+      "b": "列出我在 Stripe 未付的發票"
+    },
+    "generic": {
+      "a": "你能用 {{name}} 做什麼？",
+      "b": "給我看看你在 {{name}} 裡能看到什麼"
+    }
+  },
+  "plain": {
+    "nav": "助理能用的應用程式",
+    "page": {
+      "title": "助理能用的應用程式"
+    },
+    "oauth": {
+      "connected": "已登入。應用程式已就緒。"
+    },
+    "install": {
+      "secretHint": "安全保存在這台電腦上。助理永遠看不到。",
+      "oauthHint": "這個應用程式用你自己的登入應用程式登入。請在該服務的網站上建立一個，並把這個返回位址加進去。",
+      "clientId": "登入應用程式 ID",
+      "clientSecret": "登入應用程式密碼（如果服務給了你）",
+      "clientSecretHint": "安全保存在這台電腦上。"
+    },
+    "installed": {
+      "mcpHint": "選擇哪些助理可以使用：",
+      "appsLink": "助理能用的應用程式和工具"
+    },
+    "found": {
+      "keys": "它的秘密代碼會安全保存，永不顯示：{{names}}",
+      "keysAsk": "它有秘密代碼。也在這裡保存一份嗎？助理永遠看不到。"
+    }
+  }
+}

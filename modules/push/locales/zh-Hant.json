@@ -1,0 +1,40 @@
+{
+  "title": "此裝置的通知",
+  "intro": "即使 PasaBot 已關閉，也能在這支手機或電腦上收到通知。",
+  "state": {
+    "loading": "檢查中…",
+    "off": "已關閉",
+    "on": "已開啟",
+    "unsupported": "此處不支援",
+    "blocked": "已在瀏覽器中封鎖",
+    "unavailable": "此伺服器無法使用"
+  },
+  "turnOn": "開啟通知",
+  "turnOff": "在此裝置上關閉",
+  "prefs": {
+    "title": "在下列情況通知我",
+    "approval": "agent 需要我同意",
+    "error": "執行失敗",
+    "finished": "agent 回覆",
+    "progress": "長時間任務仍在執行",
+    "alert": "其他提醒（伺服器、安全性）"
+  },
+  "test": {
+    "button": "傳送測試",
+    "sent": "已傳送，稍後應該就會顯示。",
+    "failed": "測試未成功。請先關閉通知，再重新開啟。"
+  },
+  "help": {
+    "unsupported": "此瀏覽器無法接收網站的通知。",
+    "blocked": "PasaBot 的通知已被封鎖。請在瀏覽器的網站設定中允許通知，然後再回來。",
+    "unavailable": "伺服器目前無法傳送通知（其密鑰儲存庫已鎖定）。",
+    "iphone": "在 iPhone 和 iPad 上，請先將 PasaBot 加入主畫面（分享 → 加入主畫面），再從主畫面開啟此功能。"
+  },
+  "errors": {
+    "subscribe": "無法開啟通知，請再試一次。"
+  },
+  "find": {
+    "settingsHint": "此裝置上的通知",
+    "settingsKeywords": "通知, 提醒, 推播, 聲音"
+  }
+}

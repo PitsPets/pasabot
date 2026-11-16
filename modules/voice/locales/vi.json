@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "Giữ để nói",
+    "listening": "Đang nghe… thả ra để dừng",
+    "working": "Đang chuyển giọng nói thành văn bản…",
+    "title": "Tin nhắn của bạn",
+    "text": "Điều bạn đã nói",
+    "send": "Gửi",
+    "cancel": "Hủy",
+    "empty": "Không nghe thấy gì. Hãy thử lại, gần micro hơn một chút.",
+    "noMic": "Trình duyệt này không thể dùng micro ở đây.",
+    "denied": "Quyền truy cập micro đã bị chặn. Hãy cho phép trong trình duyệt để nói chuyện.",
+    "unavailable": "Nhập liệu bằng giọng nói chưa được thiết lập. Owner có thể tải mô hình giọng nói trong Cài đặt → Giọng nói.",
+    "failed": "Không thể chuyển bản ghi âm thành văn bản. {{reason}}",
+    "browserNote": "Đang dùng nhận dạng giọng nói của trình duyệt."
+  },
+  "listen": {
+    "play": "Nghe",
+    "stop": "Dừng",
+    "loading": "Đang chuẩn bị âm thanh…",
+    "failed": "Không thể đọc to nội dung này. {{reason}}"
+  },
+  "settings": {
+    "title": "Giọng nói",
+    "intro": "Nói chuyện với agent và nghe câu trả lời của chúng. Giọng nói được xử lý trên máy chủ này, nên giọng của bạn không bao giờ rời khỏi đó.",
+    "engine": "Công cụ giọng nói",
+    "engineFake": "Công cụ thử nghiệm",
+    "engineLocal": "Trên máy chủ này",
+    "noPackage": "Công cụ giọng nói chưa được cài trên máy chủ này, nên sẽ dùng phương án dự phòng của trình duyệt.",
+    "stt": "Nhập bằng giọng nói",
+    "tts": "Trả lời bằng giọng nói",
+    "ready": "Sẵn sàng: {{model}}",
+    "notReady": "Chưa có mô hình",
+    "models": "Mô hình giọng nói",
+    "modelsIntro": "Mô hình chỉ được tải khi bạn yêu cầu, từ các bản phát hành của chính công cụ giọng nói.",
+    "kindStt": "Nhập bằng giọng nói",
+    "kindTts": "Trả lời bằng giọng nói",
+    "size": "Khoảng {{mb}} MB",
+    "languages": "Ngôn ngữ: {{list}}",
+    "installed": "Đã cài",
+    "download": "Tải {{name}}",
+    "remove": "Xóa {{name}}",
+    "modelName": "{{model}} ({{note}})",
+    "noteMultilingual": "đa ngôn ngữ",
+    "noteEnglish": "tiếng Anh",
+    "downloading": "Đang tải… {{pct}}",
+    "unpacking": "Đang giải nén…",
+    "failedDownload": "Tải xuống thất bại: {{reason}}",
+    "disabledUnpinned": "Chưa khả dụng: PasaBot chưa có mã checksum để đối chiếu bản tải này, nên tính năng vẫn tắt.",
+    "ownerOnly": "Chỉ owner mới có thể tải hoặc xóa mô hình.",
+    "autoRead": "Đọc to các câu trả lời mới",
+    "autoReadHint": "Chỉ trên thiết bị này.",
+    "browserStt": "Dùng nhận dạng giọng nói của trình duyệt khi chưa cài mô hình nào",
+    "browserSttHint": "Một số trình duyệt gửi giọng nói của bạn đến máy chủ của nhà sản xuất để nhận dạng. Mặc định tắt.",
+    "loading": "Đang tải…",
+    "error": "Không thể tải cài đặt giọng nói. {{reason}}"
+  },
+  "find": {
+    "settingsHint": "Nói và nghe tác tử",
+    "settingsKeywords": "giọng nói, nói, micrô, nghe, âm thanh"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Nói chuyện và nghe trợ lý"
+    },
+    "settings": {
+      "intro": "Nói chuyện với trợ lý và nghe câu trả lời của chúng. Giọng nói được xử lý trên máy chủ này, nên giọng của bạn không bao giờ rời khỏi đó.",
+      "engineLocal": "Trên máy chủ này",
+      "notReady": "Chưa có bộ não",
+      "models": "Bộ não giọng nói",
+      "modelsIntro": "Bộ não chỉ được tải khi bạn yêu cầu, từ các bản phát hành của chính công cụ giọng nói.",
+      "browserStt": "Dùng nhận dạng giọng nói của trình duyệt khi chưa cài bộ não nào",
+      "browserSttHint": "Một số trình duyệt gửi giọng nói của bạn đến máy chủ của nhà sản xuất để nhận dạng. Mặc định tắt."
+    }
+  }
+}

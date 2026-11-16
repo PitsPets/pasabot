@@ -1,0 +1,20 @@
+{
+  "nav": "进程",
+  "page": {
+    "title": "后台进程",
+    "intro": "由你的 agent 通过 PasaBot 工具启动的进程。停止某个进程会同时结束它启动的所有内容。",
+    "empty": "没有正在后台运行的内容。"
+  },
+  "proc": {
+    "since": "启动时间",
+    "stop": "停止"
+  },
+  "tools": {
+    "procs_list": "列出我的后台进程",
+    "procs_stop": "停止我的一个后台进程"
+  },
+  "find": {
+    "navHint": "正在运行的进程和任务",
+    "navKeywords": "进程, 任务, 运行中, 作业"
+  }
+}

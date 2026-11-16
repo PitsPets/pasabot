@@ -1,0 +1,142 @@
+{
+  "nav": "Fluxos de trabalho",
+  "page": {
+    "title": "Fluxos de trabalho",
+    "intro": "Um fluxo de trabalho encadeia etapas: agentes, chamadas de modelo sem ferramentas, condições, sua aprovação, esperas e saídas. Monte no canvas e depois execute.",
+    "empty": "Ainda não há fluxos de trabalho.",
+    "new": "Novo fluxo de trabalho",
+    "fromTemplate": "Responder e depois compartilhar",
+    "templateHint": "O primeiro agente responde ao seu prompt e, em seguida, todos os outros agentes recebem essa resposta ao mesmo tempo."
+  },
+  "list": {
+    "steps": "{{count}} etapas",
+    "run": "Executar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "deleteConfirm": "Excluir este fluxo de trabalho? As execuções em andamento continuam."
+  },
+  "approvals": {
+    "title": "Aguardando você",
+    "approve": "Aprovar",
+    "reject": "Rejeitar",
+    "rejectConfirm": "Rejeitar? A execução para aqui."
+  },
+  "runs": {
+    "title": "Execuções recentes",
+    "empty": "Ainda não há execuções.",
+    "show": "Mostrar etapas",
+    "hide": "Ocultar etapas",
+    "cancel": "Parar execução",
+    "loops": "Repetições do laço: {{count}}"
+  },
+  "state": {
+    "running": "Em execução",
+    "waiting": "Aguardando",
+    "done": "Concluído",
+    "failed": "Falhou",
+    "rejected": "Rejeitado",
+    "stopped": "Parado",
+    "cancelled": "Cancelado",
+    "skipped": "Ignorado"
+  },
+  "type": {
+    "agent": "Agente",
+    "model": "Modelo (sem ferramentas)",
+    "condition": "Condição",
+    "approval": "Aprovação",
+    "transform": "Transformação",
+    "wait": "Espera",
+    "parallel": "Paralelo",
+    "output": "Saída"
+  },
+  "editor": {
+    "name": "Nome do fluxo de trabalho",
+    "add": "Adicionar etapa",
+    "addHint": "Uma nova etapa entra depois da selecionada.",
+    "save": "Salvar",
+    "back": "Voltar à lista",
+    "saved": "Salvo.",
+    "canvas": "Canvas do fluxo de trabalho",
+    "maxIterations": "Limite de laços por execução",
+    "selected": "Etapa selecionada",
+    "none": "Toque em uma etapa no canvas para editá-la.",
+    "label": "Nome da etapa",
+    "remove": "Remover esta etapa",
+    "next": "Depois ir para",
+    "branch": "Quando a condição for",
+    "link": "Adicionar ligação",
+    "links": "Ligações de saída",
+    "unlink": "Remover ligação",
+    "pick": "Escolha uma etapa"
+  },
+  "field": {
+    "agent": "Agente",
+    "pickAgent": "Escolha um agente",
+    "prompt": "Prompt",
+    "op": "Verificação",
+    "value": "Valor",
+    "message": "O que perguntar a você",
+    "template": "Texto ({{input}} = a entrada da etapa)",
+    "seconds": "Segundos de espera",
+    "to": "Enviar para",
+    "title": "Título",
+    "channel": "ID da vinculação do canal"
+  },
+  "op": {
+    "contains": "contém",
+    "not_contains": "não contém",
+    "equals": "é igual a",
+    "matches": "corresponde ao padrão",
+    "empty": "está vazio",
+    "not_empty": "não está vazio"
+  },
+  "branch": {
+    "true": "sim",
+    "false": "não"
+  },
+  "to": {
+    "notification": "Notificação",
+    "channel": "Publicação em canal"
+  },
+  "template": {
+    "title": "Responder e depois compartilhar",
+    "name": "Nome",
+    "agents": "Agentes (o primeiro responde)",
+    "prompt": "Prompt para o primeiro agente",
+    "followUp": "O que os outros fazem com a resposta",
+    "create": "Criar fluxo de trabalho"
+  },
+  "tools": {
+    "workflows_list": "Listar meus fluxos de trabalho",
+    "workflows_create": "Criar um fluxo de trabalho",
+    "workflows_update": "Editar um dos meus fluxos de trabalho",
+    "workflows_run": "Executar um dos meus fluxos de trabalho",
+    "workflows_delete": "Excluir um dos meus fluxos de trabalho"
+  },
+  "server": {
+    "failed": "O fluxo de trabalho \"{{name}}\" falhou",
+    "stopped": "O fluxo de trabalho \"{{name}}\" parou"
+  },
+  "find": {
+    "navHint": "Encadeie etapas em um fluxo",
+    "navKeywords": "etapas, fluxo, cadeia, automatizar"
+  },
+  "plain": {
+    "page": {
+      "intro": "Um fluxo encadeia passos: ajudantes, respostas rápidas de um cérebro, condições, sua aprovação, esperas e resultados. Monte na tela e rode.",
+      "templateHint": "O primeiro ajudante responde ao seu pedido, e todos os outros recebem essa resposta ao mesmo tempo."
+    },
+    "type": {
+      "agent": "Ajudante",
+      "model": "Só cérebro (sem ferramentas)"
+    },
+    "field": {
+      "agent": "Ajudante",
+      "pickAgent": "Escolha um ajudante"
+    },
+    "template": {
+      "agents": "Ajudantes (o primeiro responde)",
+      "prompt": "Pedido para o primeiro ajudante"
+    }
+  }
+}

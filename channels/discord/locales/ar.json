@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "رمز البوت",
+    "botTokenHint": "من صفحة Bot في تطبيقك ضمن بوابة المطورين في Discord. فعّل هناك خيار Message Content intent. يُخزَّن في المخزن السري ولا يُعرض مرة أخرى.",
+    "apiBase": "عنوان API",
+    "gatewayUrl": "عنوان البوابة",
+    "advancedHint": "اترك هذه الإعدادات كما هي ما لم تكن متأكدًا من حاجتك إلى تغييرها."
+  },
+  "link": {
+    "howTo": "أرسل إلى البوت رسالة مباشرة: /link {{code}}",
+    "dmOnly": "رمز الربط يعمل فقط في رسالة مباشرة إلى البوت."
+  },
+  "status": {
+    "connected": "متصل",
+    "reconnecting": "جارٍ إعادة الاتصال…",
+    "auth_failed": "رفض Discord البوت (تحقق من الرمز ومن Message Content intent)",
+    "stopped": "متوقف"
+  }
+}

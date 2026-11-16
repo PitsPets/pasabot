@@ -1,0 +1,110 @@
+{
+  "nav": "Tarefas dos agentes",
+  "page": {
+    "title": "Tarefas dos agentes",
+    "intro": "Trabalho que seus agentes passaram uns aos outros: mensagens, tarefas delegadas, transferências e arquivos. Cada item roda com a menor confiança entre os dois agentes.",
+    "empty": "Nenhum agente passou trabalho a outro agente ainda.",
+    "reload": "Atualizar"
+  },
+  "kind": {
+    "delegate": "Delegada",
+    "message": "Mensagem",
+    "handoff": "Transferência",
+    "file": "Arquivo"
+  },
+  "state": {
+    "queued": "Aguardando",
+    "leased": "Iniciando",
+    "running": "Em andamento",
+    "done": "Concluída",
+    "failed": "Falhou",
+    "cancelled": "Interrompida",
+    "interrupted": "Interrompida"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "Roda como {{trust}}",
+    "acked": "Confirmada",
+    "ackWaiting": "Aguardando confirmação",
+    "reply": "Resposta"
+  },
+  "trust": {
+    "guarded": "restrita",
+    "standard": "padrão",
+    "trusted": "confiável"
+  },
+  "team": {
+    "open": "Equipe",
+    "openLead": "Equipe · {{lead}} lidera",
+    "title": "Quem pode usar este agente",
+    "lead": "Líder (responde às novas mensagens)",
+    "leadHint": "Só o líder responde às pessoas aqui. Escolha outro agente para passar a liderança.",
+    "makeLead": "Tornar líder",
+    "isLead": "Lidera agora",
+    "state": {
+      "active": "Ativa",
+      "stopped": "Parada",
+      "archived": "Arquivada"
+    },
+    "stop": "Parar todo o trabalho",
+    "stopHint": "Cancela o que os agentes estão fazendo aqui e retém novas mensagens até você retomar.",
+    "resume": "Retomar",
+    "archive": "Arquivar canal",
+    "archiveConfirm": "Toque de novo para arquivar",
+    "silentTitle": "Quando o líder fica em silêncio",
+    "silentRetry": "Pedir ao líder mais uma vez",
+    "on": "Ligado",
+    "off": "Desligado",
+    "backup": "Depois, responder com",
+    "backupNone": "Ninguém (avise-me)",
+    "backupModel": "Modelo reserva (opcional)",
+    "backupHint": "Se o líder não responder após a nova tentativa, este provedor responde a mensagem por ele.",
+    "save": "Salvar",
+    "saved": "Salvo",
+    "error": "Não deu certo: {{message}}"
+  },
+  "subagent": {
+    "start": "Subagente {{name}} iniciado",
+    "end": "Subagente {{name}} concluído"
+  },
+  "reactions": {
+    "label": "{{emoji}} de {{count}}",
+    "group": "Reações",
+    "button": "Reagir",
+    "add": "Adicionar reação",
+    "pick": "Escolha uma reação",
+    "react": "Reagir com {{emoji}}",
+    "remove": "Remover seu {{emoji}}"
+  },
+  "tools": {
+    "collab_agents": "Listar agentes",
+    "collab_delegate": "Delegar uma tarefa",
+    "collab_message": "Enviar mensagem a um agente",
+    "collab_handoff": "Repassar",
+    "collab_status": "Status da tarefa",
+    "collab_wait": "Aguardar uma tarefa",
+    "collab_interrupt": "Interromper uma tarefa",
+    "collab_ack": "Confirmar uma tarefa",
+    "collab_react": "Reagir a uma mensagem",
+    "collab_send_file": "Enviar um arquivo a um agente"
+  },
+  "server": {
+    "silent": "{{name}} não responde em {{chat}}",
+    "aChannel": "um canal"
+  },
+  "find": {
+    "navHint": "Agentes trabalhando juntos em uma tarefa",
+    "navKeywords": "equipe, juntos, grupo, colaborar"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Ajudantes trabalhando juntos em uma tarefa"
+    },
+    "nav": "Tarefas dos ajudantes",
+    "page": {
+      "title": "Tarefas dos ajudantes",
+      "intro": "Trabalho que seus ajudantes deram uns aos outros: mensagens, tarefas repassadas, passagens e arquivos. Cada um roda com o ajuste mais cuidadoso dos dois ajudantes.",
+      "empty": "Nenhum ajudante deu trabalho a outro ainda."
+    }
+  }
+}

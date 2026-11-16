@@ -1,0 +1,28 @@
+{
+  "country": "MX",
+  "name": "Mexico",
+  "stores": [
+    {
+      "id": "mercado-libre",
+      "name": "Mercado Libre",
+      "homeUrl": "https://www.mercadolibre.com.mx/",
+      "searchUrl": "https://listado.mercadolibre.com.mx/{query}",
+      "allowedHosts": ["mercadolibre.com.mx", "*.mercadolibre.com.mx", "*.mlstatic.com"],
+      "currency": "MXN",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "homeUrl": "https://www.amazon.com.mx/",
+      "searchUrl": "https://www.amazon.com.mx/s?k={query}",
+      "allowedHosts": ["amazon.com.mx", "*.amazon.com.mx", "*.media-amazon.com", "*.ssl-images-amazon.com"],
+      "currency": "MXN",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "card": {
+    "noImage": "暂无图片",
+    "seenAt": "{{time}}所见",
+    "rating": "评分 {{rating}}",
+    "ratingCount": "评分 {{rating}}，共 {{count}} 条评价",
+    "open": "在{{store}}打开"
+  },
+  "compare": {
+    "title": "正在比较 {{count}} 件商品"
+  },
+  "buy": {
+    "button": "购买",
+    "qty_other": "{{count}} 件",
+    "less": "减少一件",
+    "more": "增加一件",
+    "note": "此操作需你在应用内批准。PasaBot 只会把商品加入购物车，之后由你核对总价并自行付款。",
+    "ask": "请求购买",
+    "cancel": "取消",
+    "asked": "等待你的批准。涉及付款的批准卡片在你的批准列表中。",
+    "error": "无法提交此请求，请重试。",
+    "state": {
+      "running": "已批准，正在加入购物车…",
+      "handedOver": "已在你的购物车中。请在浏览器中核对总价并自行付款。",
+      "denied": "你已拒绝，因此未购买任何商品。",
+      "paused": "已暂停：商店需要你在浏览器中操作。",
+      "stopped": "已停止。未向购物车添加任何商品；原因见聊天。",
+      "ended": "此次购买已结束；详情见聊天。"
+    }
+  },
+  "settings": {
+    "title": "购物",
+    "intro": "智能体查找商品的来源。价格按商店页面所示显示，不做换算。",
+    "country": "国家或地区",
+    "webOnly": "其他国家或地区（网页搜索）",
+    "stores": "商店",
+    "fallback": "此国家或地区暂无商店列表。智能体会搜索网页，仅对描述商品的页面显示卡片。",
+    "custom": "你的商店",
+    "remove": "移除",
+    "rules": "智能体绝不会付款、下单、输入银行卡信息、处理验证码、破解人机验证或注册商店账号。购买前一定会先征求你的同意。",
+    "loading": "加载中…",
+    "error": "无法加载购物设置。"
+  },
+  "custom": {
+    "add": "添加商店",
+    "name": "商店名称",
+    "id": "短标识",
+    "idHint": "小写字母、数字和短横线，例如 corner-shop",
+    "home": "首页",
+    "search": "搜索地址",
+    "searchHint": "在搜索词的位置填入 {query}",
+    "hosts": "允许的地址",
+    "hostsHint": "主机名，用英文逗号分隔，例如 shop.example 或 *.example",
+    "currency": "币种",
+    "currencyHint": "三个字母，例如 PHP 或 USD",
+    "save": "保存商店",
+    "error": "请检查各字段：地址必须在允许的主机内，且不含跟踪参数。"
+  },
+  "onboarding": {
+    "title": "你在哪里购物？",
+    "body": "选择你所在的国家或地区，智能体才知道该查看哪些商店。之后可在“设置 → 购物”中更改。"
+  },
+  "orders": {
+    "title": "订单",
+    "empty": "还没有订单。你批准的每次购买都会显示在这里。",
+    "error": "无法加载订单。",
+    "line": "{{qty}} × {{item}}",
+    "unknownItem": "已不再保存的商品",
+    "each": "每件 {{price}}（所见价格）",
+    "state": {
+      "pending": "等待你的批准",
+      "denied": "你已拒绝",
+      "running": "正在加入购物车",
+      "handed-over": "已在购物车中，由你付款",
+      "paused": "已暂停，需要你处理",
+      "stopped": "已停止",
+      "failed": "失败",
+      "other": "已结束"
+    }
+  },
+  "tools": {
+    "shop_stores": "购物商店",
+    "shop_search": "在商店中搜索",
+    "shop_capture": "记录商品",
+    "shop_show": "显示商品卡片",
+    "shop_compare": "比较商品",
+    "shop_buy": "把商品加入购物车"
+  },
+  "server": {
+    "noBrowser": "浏览器不可用，所以没有加入购物车。",
+    "storeOff": "这家商店在“设置 → 购物”中已关闭，所以没有加入购物车。",
+    "badAddress": "这个商品地址不属于这家商店。",
+    "stoppedBefore": "在操作浏览器之前已停止。",
+    "stoppedNothing": "已停止。没有加入购物车。",
+    "priceChanged": "你批准后价格变了：当时 {{before}}，现在 {{after}}。没有加入购物车。新的卡片会按新价格再次询问你。",
+    "pageDiffers": "商店页面上的商品或价格与你批准的（{{price}}）不同，所以没有加入购物车。请重新记录后再询问。",
+    "openNoCartHandOver": "已在 {{store}} 打开 {{name}}。请自己把 {{quantity}} 件加入购物车并付款。",
+    "openNoCart": "已在浏览器中打开 {{store}} 的 {{name}}。这家商店没有购物车步骤，请自己加入 {{quantity}} 件并付款。",
+    "stoppedAfterAdd": "加入购物车后已停止；没有打开结账页面。",
+    "checkoutSignUp": "结账地址是注册页面。",
+    "stoppedInCart": "已停止。商品已在购物车中，没有做其他操作。",
+    "inCartHandOver": "{{quantity}} × {{name}} 已在你 {{store}} 的购物车中。请检查后自己付款。",
+    "inCart": "{{quantity}} × {{name}} 已在你 {{store}} 的购物车中，结账页面已在浏览器中打开。请核对总价后自己付款；PasaBot 不会下单。",
+    "stoppedCheck": "已停止。继续之前请检查浏览器。",
+    "buyFailed": "购买已停止：{{error}}",
+    "captcha": "商店显示了真人验证（验证码）。请打开浏览器自己完成。",
+    "signIn": "商店要求你登录。请打开浏览器自己登录（PasaBot 从不创建商店账号）。",
+    "denied": "你拒绝了，所以没有操作浏览器。",
+    "buySummary": "在 {{store}} 购买 {{quantity}} × {{name}}",
+    "buyLabel": "购买",
+    "askItems": "{{quantity}} × {{name}} — 每件 {{price}}，{{time}} 时所见",
+    "askTotal": "{{total}}（所见价格，非最终）",
+    "askPayment": "你在浏览器中自行付款；PasaBot 只到购物车为止"
+  },
+  "find": {
+    "settingsHint": "经你同意后让智能体购物",
+    "settingsKeywords": "购物, 购买, 订单, 商店"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "经你同意，让助手买东西"
+    },
+    "settings": {
+      "intro": "助手查找商品的来源。价格按商店页面所示显示，不做换算。",
+      "rules": "助手绝不会付款、下单、输入银行卡信息、处理验证码、破解人机验证或注册商店账号。购买前一定会先征求你的同意。"
+    }
+  }
+}

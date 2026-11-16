@@ -1,0 +1,39 @@
+{
+  "country": "TW",
+  "name": "Taiwan",
+  "stores": [
+    {
+      "id": "shopee",
+      "name": "Shopee",
+      "homeUrl": "https://shopee.tw/",
+      "searchUrl": "https://shopee.tw/search?keyword={query}",
+      "allowedHosts": ["shopee.tw", "*.shopee.tw", "*.susercontent.com"],
+      "currency": "TWD",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "momo",
+      "name": "momo",
+      "homeUrl": "https://www.momoshop.com.tw/",
+      "searchUrl": "https://www.momoshop.com.tw/search/searchShop.jsp?keyword={query}",
+      "allowedHosts": ["momoshop.com.tw", "*.momoshop.com.tw"],
+      "currency": "TWD",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    },
+    {
+      "id": "pchome",
+      "name": "PChome",
+      "homeUrl": "https://24h.pchome.com.tw/",
+      "searchUrl": "https://24h.pchome.com.tw/search/?q={query}",
+      "allowedHosts": ["pchome.com.tw", "*.pchome.com.tw"],
+      "currency": "TWD",
+      "parsingHints": {
+        "prefer": ["json-ld", "opengraph", "microdata"]
+      }
+    }
+  ]
+}

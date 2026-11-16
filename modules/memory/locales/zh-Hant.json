@@ -1,0 +1,135 @@
+{
+  "nav": "記憶",
+  "page": {
+    "title": "Agent 記憶",
+    "intro": "你的 agent 儲存起來供日後使用的內容。錯誤或隱私的內容都可以刪除；agent 的搜尋會立即找不到它。"
+  },
+  "scope": {
+    "label": "誰的記憶",
+    "all": "所有人",
+    "shared": "所有 agent 共用",
+    "global": "全域（所有 agent）",
+    "team": "團隊：{{name}}",
+    "private": "私人"
+  },
+  "search": {
+    "label": "搜尋記憶",
+    "placeholder": "輸入關鍵字"
+  },
+  "item": {
+    "shared": "共用",
+    "saved": "{{when}}儲存",
+    "reviewed": "已審閱",
+    "markReviewed": "標示為已審閱",
+    "forget": "刪除",
+    "confirm": "永久刪除",
+    "cancel": "保留",
+    "untrusted": "非來自你",
+    "global": "全域",
+    "team": "團隊 {{name}}",
+    "by": "由 {{who}} 儲存",
+    "byYou": "由你儲存",
+    "byImport": "從其他伺服器匯入",
+    "byUnknown": "由 agent 儲存",
+    "sure": "確定",
+    "unsure": "不確定",
+    "key": "鍵：{{key}}",
+    "edit": "編輯",
+    "editLabel": "編輯此記憶",
+    "save": "儲存",
+    "editCancel": "取消",
+    "edited": "已儲存。"
+  },
+  "empty": "這裡還沒有儲存任何內容。",
+  "loading": "載入中…",
+  "error": "無法載入記憶。{{reason}}",
+  "count_other": "{{count}} 筆",
+  "settings": {
+    "title": "記憶",
+    "backend": "記憶的儲存位置",
+    "backendHint": "變更此設定不會移動已儲存的項目。",
+    "local": "此伺服器",
+    "limits": "每個 agent 最多 {{perAgent}} 筆、共用 {{shared}} 筆，每筆最多 {{textChars}} 個字元。"
+  },
+  "origin": {
+    "label": "儲存來源",
+    "any": "任何聊天",
+    "owner": "你自己的聊天",
+    "others": "非你發起的聊天"
+  },
+  "more": "顯示更多",
+  "countMore_other": "前 {{count}} 筆",
+  "merges": {
+    "title": "需要你決定",
+    "intro": "兩個 agent 對同一件事確定了不同的答案。請選擇其一，或自行寫下正確答案。",
+    "key": "關於：{{key}}",
+    "current": "目前已儲存",
+    "incoming": "新答案",
+    "keepCurrent": "保留已儲存的",
+    "useIncoming": "使用新的",
+    "writeOwn": "自行撰寫",
+    "mergedLabel": "正確答案",
+    "saveMerged": "儲存答案",
+    "cancel": "取消",
+    "gone": "（已儲存的答案已被刪除）"
+  },
+  "teams": {
+    "title": "團隊",
+    "intro": "團隊是共用同一份記憶的一群 agent。Agent 只會讀寫自己所屬的團隊。",
+    "empty": "目前還沒有團隊。",
+    "name": "團隊名稱",
+    "create": "建立團隊",
+    "members": "成員",
+    "noAgents": "請先新增 agent。",
+    "delete": "刪除團隊",
+    "confirmDelete": "刪除團隊及其記憶",
+    "keep": "保留",
+    "count_other": "{{count}} 個 agent"
+  },
+  "tools": {
+    "memory_remember": "記住",
+    "memory_search": "搜尋記憶",
+    "memory_teams": "我的記憶團隊",
+    "memory_forget": "忘記"
+  },
+  "find": {
+    "navHint": "代理記住的內容",
+    "navKeywords": "記住, 筆記, 事實, 回憶"
+  },
+  "plain": {
+    "find": {
+      "navHint": "助理記住的內容"
+    },
+    "page": {
+      "title": "助理記住的事",
+      "intro": "你的助理留著以後用的東西。錯的或私密的可以忘掉；助理馬上就搜不到了。"
+    },
+    "scope": {
+      "shared": "所有助理共享",
+      "global": "全部（所有助理）"
+    },
+    "item": {
+      "byImport": "從另一台電腦帶來",
+      "byUnknown": "由助理儲存"
+    },
+    "settings": {
+      "local": "這台電腦",
+      "limits": "每個助理最多 {{perAgent}} 筆，共享 {{shared}} 筆，每筆 {{textChars}} 個字元。"
+    },
+    "merges": {
+      "intro": "兩個助理對同一件事各自確信不同的答案。選一個，或自己寫下正確答案。"
+    },
+    "teams": {
+      "intro": "團隊是共用一份記憶的一組助理。助理只讀寫自己所在的團隊。",
+      "noAgents": "請先新增一個助理。"
+    }
+  },
+  "card": {
+    "saved": {
+      "title": "我會記住的",
+      "undo": "復原",
+      "all": "查看我記住的全部內容",
+      "undone": "已忘記"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "nav": "Search",
+  "title": "Search messages",
+  "label": "Search your chats",
+  "placeholder": "Type a word",
+  "hint": "Finds words in every chat you are in, newest first.",
+  "empty": "Nothing found.",
+  "untitled": "Chat",
+  "count_one": "{{count}} message",
+  "count_other": "{{count}} messages",
+  "author": {
+    "user": "Person",
+    "agent": "Agent",
+    "system": "PasaBot",
+    "external": "Outside"
+  },
+  "error": "Search failed. {{reason}}",
+  "tools": {
+    "search_messages": "Search messages"
+  },
+  "find": {
+    "navHint": "Find any message in your chats",
+    "navKeywords": "find, look up, messages, history"
+  }
+}

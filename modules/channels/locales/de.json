@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "title": "Kanäle",
+    "intro": "Sprich mit einem Agenten über Telegram, Discord, Slack oder WhatsApp. Jeder Chat in der App wird zu einem eigenen PasaBot-Chat.",
+    "empty": "Noch keine Channels.",
+    "loading": "Channels werden geladen…",
+    "error": "Channels konnten nicht geladen werden: {{reason}}"
+  },
+  "add": {
+    "title": "Channel hinzufügen",
+    "open": "Channel hinzufügen",
+    "kind": "App",
+    "label": "Name (optional)",
+    "labelHint": "Wird nur hier angezeigt, z. B. „Familiengruppen-Bot“.",
+    "agent": "Agent, der antwortet",
+    "token": "Bot-Token",
+    "tokenHint": "Füge es nur einmal ein. Es wird im Vault gespeichert und nie wieder angezeigt.",
+    "allowed": "Erlaubte Absender (optional)",
+    "allowedHint": "Nutzer-IDs der Plattform, eine pro Zeile oder durch Kommas getrennt. Leer lassen, damit nur du mit ihm sprechen kannst.",
+    "submit": "Channel hinzufügen",
+    "cancel": "Abbrechen",
+    "noKinds": "Auf diesem Server sind keine Channel-Apps installiert.",
+    "noAgents": "Erstelle zuerst einen Agenten.",
+    "pairingNext": "Nach dem Hinzufügen verknüpfst du ihn, indem du mit deinem Handy einen QR-Code scannst."
+  },
+  "kind": {
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "whatsapp": "WhatsApp",
+    "fake": "Test-Channel",
+    "agentchat": "AgentChat"
+  },
+  "status": {
+    "connected": "Verbunden",
+    "reconnecting": "Verbindet neu",
+    "auth_failed": "Token abgelehnt",
+    "stopped": "Gestoppt",
+    "error": "Fehler",
+    "starting": "Startet",
+    "unavailable": "App nicht installiert",
+    "disabled": "Aus",
+    "not_linked": "Noch nicht verknüpft"
+  },
+  "binding": {
+    "agent": "Antwortet als",
+    "lastEvent": "Letzte Nachricht",
+    "never": "noch keine",
+    "dropped_one": "{{count}} Nachricht von Fremden verworfen",
+    "dropped_other": "{{count}} Nachrichten von Fremden verworfen",
+    "owner": "Dein Konto",
+    "ownerNone": "Noch nicht verknüpft: Nur verknüpfte oder erlaubte Absender bekommen Antworten.",
+    "ownerLinked": "Verknüpft mit {{name}} ({{id}})",
+    "places": "Chats",
+    "placesNone": "Noch keine Chats. Schreib dem Bot, um einen zu starten.",
+    "openChat": "Chat öffnen",
+    "allowed": "Erlaubte Absender",
+    "allowedNone": "Nur du",
+    "token": "Bot-Token",
+    "tokenSet": "Im Vault gespeichert",
+    "tokenReplace": "Token ersetzen",
+    "tokenNew": "Neues Bot-Token",
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "restart": "Neu verbinden",
+    "turnOff": "Ausschalten",
+    "turnOn": "Einschalten",
+    "remove": "Entfernen",
+    "removeConfirm": "Diesen Channel entfernen? Der Bot antwortet nicht mehr; seine Chats bleiben in PasaBot.",
+    "confirm": "Ja, entfernen",
+    "unlink": "Verknüpfung lösen",
+    "error": "Letzter Fehler: {{error}}",
+    "which": "Welcher"
+  },
+  "link": {
+    "start": "Mein Konto verknüpfen",
+    "again": "Neuer Verknüpfungscode",
+    "how": "Sende dies innerhalb von 10 Minuten in einer Direktnachricht an den Bot:",
+    "warn": "Nur in einer Direktnachricht. Ein in einer Gruppe gepostetes Code wird ungültig.",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "ownNumber": "Eigene Nummer: Sende den Code in deinem eigenen Chat „Nachricht an mich“."
+  },
+  "field": {
+    "botToken": "Bot-Token",
+    "signingSecret": "Signing Secret"
+  },
+  "option": {
+    "ownNumber": {
+      "label": "Welche Nummer",
+      "off": "Eine separate Nummer für den Agenten",
+      "on": "Meine eigene Nummer (ich spreche mit ihm in „Nachricht an mich“)"
+    }
+  },
+  "events": {
+    "title": "Events-URL",
+    "how": "Füge dies in die Event-Einstellungen deiner {{app}}-App ein. Jede Anfrage wird anhand des Signing Secrets geprüft."
+  },
+  "pairing": {
+    "title": "{{app}} verknüpfen",
+    "riskTitle": "Bevor du verknüpfst: Das ist keine offizielle Verbindung.",
+    "riskBody": "PasaBot tritt deinem {{app}}-Konto als verknüpftes Gerät bei, genauso wie ein Computer. {{app}} erlaubt in den Nutzungsbedingungen keine automatisierte Nutzung privater Konten, daher kann die Nummer eingeschränkt oder gesperrt werden.",
+    "riskAdvice": "Nutze eine Nummer, die du verschmerzen kannst, und halte die Zahl der Nachrichten niedrig.",
+    "accept": "Ich verstehe das Risiko, QR-Code anzeigen",
+    "scan": "Öffne auf deinem Handy {{app}} → Verknüpfte Geräte → Gerät verknüpfen und scanne dann diesen Code. Er ändert sich alle paar Sekunden.",
+    "qrAlt": "QR-Code zum Verknüpfen dieses Geräts",
+    "waiting": "QR-Code wird abgerufen…",
+    "linked": "Verknüpft. Verbindung wird hergestellt…",
+    "failed": "Die Verknüpfung wurde nicht abgeschlossen ({{reason}}). Versuch es erneut."
+  },
+  "find": {
+    "settingsHint": "Mit Agenten aus anderen Apps chatten",
+    "settingsKeywords": "Kanäle, Telegramm, Chat-Apps, Messenger"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Mit deinen Helfern aus anderen Chat-Apps reden"
+    },
+    "settings": {
+      "title": "Chat-Apps",
+      "intro": "Sprich mit deinen Helfern über Telegram, Discord, Slack oder WhatsApp. Jeder Chat dort wird hier ein eigener Chat.",
+      "empty": "Noch keine Chat-Apps."
+    },
+    "add": {
+      "title": "Chat-App hinzufügen",
+      "open": "Chat-App hinzufügen",
+      "submit": "Diese App hinzufügen",
+      "kind": "Welche Chat-App?",
+      "agent": "Helfer, der antwortet",
+      "token": "Geheimcode aus der App",
+      "tokenHint": "Einmal einfügen. Er wird sicher auf diesem Computer aufbewahrt und nie wieder angezeigt.",
+      "allowed": "Wer ihm sonst schreiben darf (optional)",
+      "allowedHint": "Nummer oder Benutzername jeder Person in dieser App, eine pro Zeile. Leer lassen, damit nur du mit ihm sprichst.",
+      "noAgents": "Erstelle zuerst einen Helfer."
+    },
+    "field": {
+      "botToken": "Geheimcode aus der App",
+      "signingSecret": "Zweiter Geheimcode aus der App"
+    },
+    "binding": {
+      "token": "Geheimcode aus der App",
+      "tokenSet": "Sicher auf diesem Computer aufbewahrt",
+      "tokenReplace": "Geheimcode ersetzen",
+      "tokenNew": "Neuer Geheimcode aus der App"
+    }
+  }
+}

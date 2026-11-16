@@ -1,0 +1,102 @@
+{
+  "nav": "设备",
+  "settings": "设备",
+  "page": {
+    "title": "已关联的设备",
+    "intro": "你的其他 PasaBot 设备。选择一台即可查看其中的智能体并与之聊天；任务在该设备上按其自身规则运行。",
+    "empty": "还没有已关联的设备。请在“设置 → 设备”中关联。",
+    "agents": "{{name}}上的智能体",
+    "noAgents": "那里还没有智能体。",
+    "back": "所有设备",
+    "open": "打开",
+    "refresh": "刷新"
+  },
+  "chat": {
+    "title": "{{machine}}上的{{agent}}",
+    "placeholder": "给{{agent}}发消息",
+    "send": "发送",
+    "waiting": "等待{{agent}}…",
+    "me": "你",
+    "empty": "打个招呼吧。你的消息会在{{machine}}上运行，视为来自已关联设备的请求。"
+  },
+  "state": {
+    "active": "已关联",
+    "awaiting": "等待对方所有者确认",
+    "requested": "请求关联",
+    "revoked": "已取消关联"
+  },
+  "grant": {
+    "label": "它在此设备上可执行的操作",
+    "view": "查看",
+    "chat": "聊天",
+    "manage": "管理",
+    "hint": "查看：设备名称和智能体名称。聊天：还可在此与你的智能体聊天。管理：还可管理例行任务和工作流，且遵循此设备自身的规则。它在此处永远不会成为所有者。"
+  },
+  "status": {
+    "this": "本设备：{{name}}",
+    "fingerprint": "密钥指纹 {{fp}}",
+    "unavailable": "暂不支持关联",
+    "transport": "关联传输：{{transport}} · {{state}}",
+    "transportRunning": "运行中",
+    "transportDown": "正在重新启动",
+    "transportIdle": "关联设备前保持空闲"
+  },
+  "code": {
+    "title": "关联设备",
+    "intro": "在此显示一次性代码，然后在另一台设备上输入。代码仅可使用一次，10 分钟后失效。",
+    "make": "显示关联码",
+    "expires": "失效时间：{{time}}",
+    "copy": "复制代码",
+    "copied": "已复制",
+    "qr": "二维码形式的关联码"
+  },
+  "join": {
+    "title": "输入来自另一台设备的代码",
+    "code": "关联码",
+    "submit": "关联",
+    "done": "已发送。对方所有者将在其设备上确认。"
+  },
+  "reauth": {
+    "password": "你的密码（用于确认是你本人）"
+  },
+  "peers": {
+    "title": "已关联的设备",
+    "empty": "暂无。",
+    "confirm": "确认关联",
+    "check": "检查",
+    "unlink": "取消关联",
+    "unlinkConfirm": "取消关联{{name}}？它将立即失去访问权限。",
+    "fp": "密钥 {{fp}}"
+  },
+  "intros": {
+    "title": "引荐",
+    "offer": "{{via}}提出引荐{{name}}（密钥 {{fp}}）。在你使用该设备的关联码完成关联之前，不会建立任何关联。",
+    "accept": "知道了",
+    "dismiss": "忽略"
+  },
+  "error": "出了点问题：{{message}}",
+  "tools": {
+    "link_machines": "列出已关联的机器",
+    "link_message": "给已关联机器上的智能体发消息"
+  },
+  "server": {
+    "introTitle": "{{peer}} 想为你介绍 {{name}}",
+    "introBody": "在你用那台机器的代码亲自连接之前，不会连接任何东西。",
+    "linkTitle": "{{name}} 想与这台机器连接",
+    "linkBody": "请在 设置 → 机器 中确认，并选择它在这里可以做什么。"
+  },
+  "find": {
+    "navHint": "与本机连接的其他机器",
+    "navKeywords": "机器, 电脑, 服务器, 连接, 远程"
+  },
+  "plain": {
+    "page": {
+      "intro": "你装了 PasaBot 的其他电脑。选一台查看它的助手并和它们聊天；工作在那台电脑上按它自己的规则运行。",
+      "agents": "{{name}} 上的助手",
+      "noAgents": "那里还没有助手。"
+    },
+    "grant": {
+      "hint": "查看：电脑名称和助手名称。聊天：还能在这里和你的助手聊天。管理：在这台电脑自己的规则内，还能管例行任务和工作流。它在这里永远不会成为主人。"
+    }
+  }
+}

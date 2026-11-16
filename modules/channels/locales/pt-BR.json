@@ -1,0 +1,148 @@
+{
+  "settings": {
+    "title": "Canais",
+    "intro": "Converse com um agente pelo Telegram, Discord, Slack ou WhatsApp. Cada chat do app vira um chat próprio no PasaBot.",
+    "empty": "Nenhum canal ainda.",
+    "loading": "Carregando canais…",
+    "error": "Não foi possível carregar os canais: {{reason}}"
+  },
+  "add": {
+    "title": "Adicionar um canal",
+    "open": "Adicionar canal",
+    "kind": "App",
+    "label": "Nome (opcional)",
+    "labelHint": "Aparece só aqui, ex.: “Bot do grupo da família”.",
+    "agent": "Agente que responde",
+    "token": "Token do bot",
+    "tokenHint": "Cole uma vez só. Ele fica guardado no cofre e nunca é mostrado de novo.",
+    "allowed": "Remetentes permitidos (opcional)",
+    "allowedHint": "IDs de usuário da plataforma, um por linha ou separados por vírgula. Deixe vazio para que só você possa conversar com ele.",
+    "submit": "Adicionar canal",
+    "cancel": "Cancelar",
+    "noKinds": "Nenhum app de canal está instalado neste servidor.",
+    "noAgents": "Crie um agente primeiro.",
+    "pairingNext": "Depois de adicionar, você vincula escaneando um QR code com o celular."
+  },
+  "kind": {
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "whatsapp": "WhatsApp",
+    "fake": "Canal de teste",
+    "agentchat": "AgentChat"
+  },
+  "status": {
+    "connected": "Conectado",
+    "reconnecting": "Reconectando",
+    "auth_failed": "Token rejeitado",
+    "stopped": "Parado",
+    "error": "Erro",
+    "starting": "Iniciando",
+    "unavailable": "App não instalado",
+    "disabled": "Desativado",
+    "not_linked": "Ainda não vinculado"
+  },
+  "binding": {
+    "agent": "Responde como",
+    "lastEvent": "Última mensagem",
+    "never": "nada ainda",
+    "dropped_one": "{{count}} mensagem de desconhecidos descartada",
+    "dropped_many": "{{count}} de mensagens de desconhecidos descartadas",
+    "dropped_other": "{{count}} mensagens de desconhecidos descartadas",
+    "owner": "Sua conta",
+    "ownerNone": "Ainda não vinculada: só remetentes vinculados ou permitidos recebem respostas.",
+    "ownerLinked": "Vinculada a {{name}} ({{id}})",
+    "places": "Chats",
+    "placesNone": "Nenhum chat ainda. Envie uma mensagem ao bot para iniciar um.",
+    "openChat": "Abrir chat",
+    "allowed": "Remetentes permitidos",
+    "allowedNone": "Só você",
+    "token": "Token do bot",
+    "tokenSet": "Salvo no cofre",
+    "tokenReplace": "Substituir token",
+    "tokenNew": "Novo token do bot",
+    "save": "Salvar",
+    "saved": "Salvo",
+    "restart": "Reconectar",
+    "turnOff": "Desativar",
+    "turnOn": "Ativar",
+    "remove": "Remover",
+    "removeConfirm": "Remover este canal? O bot para de responder; os chats dele continuam no PasaBot.",
+    "confirm": "Sim, remover",
+    "unlink": "Desvincular",
+    "error": "Último erro: {{error}}",
+    "which": "Qual"
+  },
+  "link": {
+    "start": "Vincular minha conta",
+    "again": "Novo código de vínculo",
+    "how": "Envie isto ao bot em uma mensagem direta em até 10 minutos:",
+    "warn": "Somente em mensagem direta. Um código publicado em um grupo é cancelado.",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "ownNumber": "Número próprio: envie o código no seu próprio chat “Conversar com você mesmo”."
+  },
+  "field": {
+    "botToken": "Token do bot",
+    "signingSecret": "Segredo de assinatura"
+  },
+  "option": {
+    "ownNumber": {
+      "label": "Qual número",
+      "off": "Um número separado para o agente",
+      "on": "Meu próprio número (converso com ele em “Conversar com você mesmo”)"
+    }
+  },
+  "events": {
+    "title": "URL de eventos",
+    "how": "Cole isto nas configurações de eventos do seu app {{app}}. Toda requisição é verificada com o segredo de assinatura."
+  },
+  "pairing": {
+    "title": "Vincular {{app}}",
+    "riskTitle": "Antes de vincular: esta não é uma conexão oficial.",
+    "riskBody": "O PasaBot entra na sua conta do {{app}} como um dispositivo vinculado, do mesmo jeito que um computador. Os termos de serviço do {{app}} não permitem o uso automatizado de contas pessoais, então o número pode ser limitado ou banido.",
+    "riskAdvice": "Use um número que você possa perder e mantenha baixo o volume de mensagens.",
+    "accept": "Entendo o risco, mostrar o QR code",
+    "scan": "No celular, abra {{app}} → Dispositivos vinculados → Vincular um dispositivo e escaneie este código. Ele muda a cada poucos segundos.",
+    "qrAlt": "QR code para vincular este dispositivo",
+    "waiting": "Obtendo um QR code…",
+    "linked": "Vinculado. Conectando…",
+    "failed": "A vinculação não terminou ({{reason}}). Tente de novo."
+  },
+  "find": {
+    "settingsHint": "Converse com agentes por outros apps",
+    "settingsKeywords": "canais, Telegrama, apps de chat, mensagens"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Fale com seus ajudantes de outros apps de chat"
+    },
+    "settings": {
+      "title": "Apps de chat",
+      "intro": "Fale com seus ajudantes pelo Telegram, Discord, Slack ou WhatsApp. Cada conversa lá vira uma conversa aqui.",
+      "empty": "Nenhum app de chat ainda."
+    },
+    "add": {
+      "title": "Adicionar um app de chat",
+      "open": "Adicionar um app de chat",
+      "submit": "Adicionar este app",
+      "kind": "Qual app de chat?",
+      "agent": "Ajudante que responde",
+      "token": "Código secreto do app",
+      "tokenHint": "Cole uma vez. Fica guardado com segurança neste computador e nunca mais é mostrado.",
+      "allowed": "Quem mais pode mandar mensagem (opcional)",
+      "allowedHint": "O número ou nome de usuário de cada pessoa nesse app, um por linha. Deixe vazio para que só você fale com ele.",
+      "noAgents": "Crie um ajudante primeiro."
+    },
+    "field": {
+      "botToken": "Código secreto do app",
+      "signingSecret": "Segundo código secreto do app"
+    },
+    "binding": {
+      "token": "Código secreto do app",
+      "tokenSet": "Guardado com segurança neste computador",
+      "tokenReplace": "Trocar o código secreto",
+      "tokenNew": "Novo código secreto do app"
+    }
+  }
+}

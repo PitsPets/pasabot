@@ -1,0 +1,70 @@
+{
+  "nav": "Daten",
+  "page": {
+    "title": "Gemeinsame Daten",
+    "intro": "Tabellen, die deine Agents teilen. Jeder Agent kann jede Tabelle lesen, private Notizen gehören also ins Gedächtnis eines Agents, nicht hierher.",
+    "size": "{{used}} von {{max}} belegt",
+    "details": "Der Agent, der eine Tabelle angelegt hat, ergänzt und ändert ihre Zeilen frei; Änderungen anderer Agents folgen deinen Freigabe-Regeln für diesen Agent (Zeilen entfernen fragt immer dich). Nur der Ersteller kann eine Tabelle umbauen oder löschen, und Löschen fragt immer dich.",
+    "more": "Mehr erfahren"
+  },
+  "refresh": "Aktualisieren",
+  "loading": "Lädt…",
+  "empty": "Noch keine Tabellen. Wenn ein Agent eine anlegt, erscheint sie hier.",
+  "error": "Die Daten konnten nicht geladen werden. {{reason}}",
+  "table": {
+    "rows_one": "{{count}} Zeile",
+    "rows_other": "{{count}} Zeilen",
+    "columns_one": "{{count}} Spalte",
+    "columns_other": "{{count}} Spalten",
+    "by": "Erstellt von {{name}}",
+    "byUnknown": "Ersteller unbekannt",
+    "removedAgent": "ein entfernter Agent",
+    "ddl": "So ist sie definiert",
+    "showRows": "Zeilen anzeigen",
+    "hideRows": "Zeilen ausblenden",
+    "rowsOf": "Zeilen von {{name}}"
+  },
+  "cell": {
+    "null": "leer",
+    "blob": "(Dateidaten)"
+  },
+  "result": {
+    "count_one": "{{count}} Zeile",
+    "count_other": "{{count}} Zeilen",
+    "countMore_one": "Erste {{count}} Zeile; es gibt mehr",
+    "countMore_other": "Erste {{count}} Zeilen; es gibt mehr"
+  },
+  "query": {
+    "title": "Etwas nachschlagen",
+    "label": "Abfrage (nur lesend)",
+    "hint": "Eine SELECT-Anweisung. Dieser Bildschirm ändert nie die Daten.",
+    "run": "Abfrage ausführen",
+    "result": "Abfrageergebnis",
+    "error": "Die Abfrage wurde nicht ausgeführt. {{reason}}"
+  },
+  "tools": {
+    "datastore_list_tables": "Geteilte Tabellen auflisten",
+    "datastore_create_table": "Geteilte Tabelle anlegen",
+    "datastore_query": "Geteilte Tabellen abfragen",
+    "datastore_write": "Zeilen schreiben",
+    "datastore_alter_table": "Eigene Tabelle ändern",
+    "datastore_drop_table": "Eigene Tabelle löschen"
+  },
+  "find": {
+    "navHint": "Tabellen und Daten deiner Agenten",
+    "navKeywords": "Daten, Tabellen, Datenbank, Einträge"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Tabellen und Listen deiner Helfer"
+    },
+    "page": {
+      "intro": "Tabellen, die deine Helfer teilen. Jeder Helfer kann jede Tabelle lesen, private Notizen gehören also ins Gedächtnis eines Helfers, nicht hierher.",
+      "details": "Der Helfer, der eine Tabelle angelegt hat, ändert ihre Zeilen frei; Änderungen anderer Helfer folgen deinen Freigaberegeln für diesen Helfer (Zeilen löschen fragt immer dich). Nur der Ersteller kann eine Tabelle umbauen oder löschen, und Löschen fragt immer dich."
+    },
+    "empty": "Noch keine Tabellen. Wenn ein Helfer eine anlegt, erscheint sie hier.",
+    "table": {
+      "removedAgent": "ein entfernter Helfer"
+    }
+  }
+}

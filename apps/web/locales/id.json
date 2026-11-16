@@ -1,0 +1,794 @@
+{
+  "app": {
+    "skip": "Langsung ke konten",
+    "tagline": "Sabihin mo lang. Ako na bahala.",
+    "taglineTranslation": "Katakan saja. Serahkan padaku."
+  },
+  "lang": {
+    "label": "Bahasa",
+    "unreviewed": "terjemahan belum ditinjau",
+    "unreviewedNote": "{{language}} adalah terjemahan mesin yang belum diperiksa oleh penutur fasih.",
+    "helpImprove": "Bantu perbaiki"
+  },
+  "conn": {
+    "connecting": "Menghubungkan…",
+    "live": "Online",
+    "reconnecting": "Menghubungkan ulang…",
+    "offline": "Offline",
+    "banner": "Menyambung ulang… Pesan Anda aman.",
+    "bannerLong": "Tidak dapat menjangkau PasaBot di komputer ini.",
+    "tryNow": "Coba sekarang"
+  },
+  "counts": {
+    "needs_other": "{{count}} butuh Anda",
+    "working_other": "{{count}} sedang bekerja",
+    "idle_other": "{{count}} tersedia"
+  },
+  "errors": {
+    "generic": "Terjadi kesalahan. Silakan coba lagi.",
+    "rateLimited": "Terlalu banyak percobaan. Tunggu semenit lalu coba lagi."
+  },
+  "setup": {
+    "title": "Klaim PasaBot Anda",
+    "intro": "Pilih nama dan kata sandi. Anda akan memakainya untuk membuka PasaBot.",
+    "token": "Kode penyiapan",
+    "tokenHint": "Ada di tautan penyiapan yang ditunjukkan PasaBot saat mulai. Untuk kode baru, buka aplikasi PasaBot di komputer itu, atau jalankan `pasabot setup-link` di sana.",
+    "name": "Nama Anda",
+    "password": "Kata sandi",
+    "passwordHint": "Minimal 8 karakter. Anda bisa menambahkan passkey nanti.",
+    "confirm": "Ulangi kata sandi",
+    "submit": "Buat akun owner",
+    "tooShort": "Gunakan minimal 8 karakter.",
+    "mismatch": "Kedua kata sandi tidak cocok.",
+    "badToken": "Kode penyiapan ini sudah dipakai atau kedaluwarsa. Untuk kode baru, klik ikon PasaBot di taskbar atau bilah menu lalu pilih Buka PasaBot (di Linux, jalankan PasaBot lagi dari menu aplikasi), atau jalankan `pasabot setup-link` di komputer itu.",
+    "gettingReady": "Menyiapkan semuanya…",
+    "reopen": "Tutup PasaBot lalu buka lagi.",
+    "ownerExists": "Server ini sudah memiliki owner. Silakan masuk.",
+    "bossNote": "Dengan ini Anda menjadi pemilik PasaBot ini.",
+    "trustLine": "Agen Anda bertanya dulu sebelum melakukan hal berbahaya, seperti menghapus data.",
+    "trustHow": "Cara ia bertanya kepada Anda"
+  },
+  "login": {
+    "title": "Selamat datang kembali",
+    "intro": "Masuk ke PasaBot Anda.",
+    "password": "Kata sandi",
+    "submit": "Masuk",
+    "passkey": "Masuk dengan passkey",
+    "failed": "Kata sandi tidak berhasil.",
+    "passkeyCancelled": "Pemeriksaan passkey tidak selesai.",
+    "pairInstead": "Pasangkan perangkat ini dengan kode",
+    "asPerson": "Masuk sebagai {{name}}.",
+    "notYou": "Bukan Anda?",
+    "otherWays": "Cara lain untuk masuk"
+  },
+  "pair": {
+    "title": "Pasangkan perangkat ini",
+    "intro": "Di device yang sudah masuk, buka Device lalu ketuk \"Pasangkan ponsel\". Pindai kode QR, atau ketik kodenya di sini.",
+    "code": "Kode pemasangan",
+    "deviceName": "Nama untuk device ini",
+    "submit": "Pasangkan",
+    "waitingTitle": "Hampir selesai",
+    "waiting": "Konfirmasi device ini di layar Anda yang lain.",
+    "fingerprint": "Sidik jari server",
+    "checkOther": "Pastikan layar lain menampilkan sidik jari yang sama, lalu ketuk Konfirmasi di sana.",
+    "rejected": "Pemasangan ditolak.",
+    "expired": "Pemasangan kedaluwarsa. Minta kode baru.",
+    "invalid": "Kode salah atau sudah kedaluwarsa.",
+    "backToLogin": "Kembali ke halaman masuk"
+  },
+  "devices": {
+    "title": "Device & masuk",
+    "pairTitle": "Pasangkan ponsel",
+    "pairIntro": "Pindai kode QR dengan kamera ponsel Anda. PasaBot akan terbuka di sana; lalu konfirmasi ponsel di sini.",
+    "newCode": "Pasangkan ponsel",
+    "qrAlt": "Kode QR untuk memasangkan device",
+    "codeLabel": "Atau ketik kode ini",
+    "expires_other": "Kedaluwarsa dalam {{count}} detik",
+    "claims": "Menunggu Anda",
+    "confirm": "Konfirmasi",
+    "reject": "Tolak",
+    "list": "Device terpasang",
+    "none": "Belum ada device terpasang.",
+    "revoked": "Dihapus",
+    "revoke": "Hapus",
+    "passkeys": "Passkey",
+    "passkeysIntro": "Masuk dan konfirmasi tindakan berisiko dengan sidik jari, wajah, atau PIN device Anda.",
+    "passkeyN": "Passkey {{n}} · ditambahkan {{date}}",
+    "remove": "Hapus",
+    "addPasskey": "Tambahkan passkey",
+    "passkeyAdded": "Passkey ditambahkan.",
+    "reauthPair": "memasangkan ponsel baru",
+    "reauthConfirm": "mengizinkan perangkat baru masuk",
+    "reauthPasskey": "menambahkan passkey",
+    "reauthNeeded": "Belum dilakukan: perlu kata sandi atau passkey Anda lagi."
+  },
+  "agents": {
+    "add": "+ Tambah",
+    "newTitle": "Agent baru",
+    "editTitle": "Ubah {{name}}",
+    "name": "Nama",
+    "instructions": "Tugasnya",
+    "instructionsHint": "Dengan kata sederhana: tugasnya, apa yang dicek, kapan harus bertanya dulu kepada Anda.",
+    "provider": "Otak",
+    "notInstalled": "belum terpasang",
+    "notReachable": "tidak dapat dijangkau",
+    "model": "Model",
+    "trust": "Tingkat kepercayaan",
+    "trustLevels": {
+      "guarded": "Terjaga: bertanya sebelum melakukan apa pun di luar foldernya",
+      "standard": "Standar: bertanya sebelum tindakan di luar folder atau berisiko",
+      "trusted": "Tepercaya: bertanya hanya sebelum tindakan berbahaya"
+    },
+    "trustHint": "Agent tepercaya yang otaknya punya shell sendiri bisa melakukan apa saja yang bisa dilakukan pengguna komputer ini.",
+    "save": "Simpan",
+    "avatar": "Tampilan",
+    "avatarAlt": "Avatar {{name}}",
+    "shuffle": "Acak",
+    "avatarHint": "Acak sampai Anda suka. Baru berubah saat Anda menekan Simpan.",
+    "create": "Buat agent",
+    "unknownProvider": "Otak itu tidak tersedia di server ini.",
+    "empty": "Belum ada agent.",
+    "emptyTitle": "Mulai tim Anda",
+    "emptyIntro": "Tambahkan agent pertama Anda. Beri nama, tugas, dan otak.",
+    "emptyCta": "Tambahkan agent pertama Anda",
+    "trustWarning": "Agent baru dimulai dari Tepercaya. Setelah Anda membuatnya, agent bekerja tanpa meminta izin setiap kali, bahkan untuk hal seperti memposting ke luar, memakai web, atau memasang alat. Agent tetap bertanya sebelum tindakan berbahaya (membaca secret, menghapus data, memakai komputer Anda), dan pesan yang masuk lewat Telegram atau aplikasi chat lain tidak pernah mendapat tingkat lebih tinggi dari Standar. Agar lebih sering ditanya, pilih Standar atau Terjaga untuk agent tersebut, atau ubah tingkat awal agent baru di Pengaturan.",
+    "askShellWeb": "Tanya dulu sebelum perintah terminal dan web mentah",
+    "askShellWebHint": "Jika aktif, agent ini bertanya kepada Anda sebelum setiap perintah shell dan setiap permintaan web mentah yang dijalankan otaknya. Nonaktif secara bawaan untuk agent Tepercaya, aktif untuk Standar dan Terjaga.",
+    "needsSignIn": "perlu masuk",
+    "setUpBrains": "Siapkan atau perbaiki otak",
+    "backup": "Otak cadangan",
+    "backupNone": "Tidak ada",
+    "backupHint": "Dipakai saat otak utama mencapai batas atau tak terjangkau. Agenmu tetap melanjutkan percakapan.",
+    "brainReady": "Siap",
+    "fixInstall": "Pasang",
+    "fixSignIn": "Masuk",
+    "fixCheck": "Periksa lagi",
+    "modelAuto": "Otomatis",
+    "modelAutoHint": "Otak memilih model biasanya",
+    "modelHints": {
+      "fast": "Cepat",
+      "balanced": "Untuk pekerjaan sehari-hari",
+      "smart": "Pintar",
+      "smartest": "Paling pintar",
+      "free": "Gratis"
+    },
+    "modelsRefresh": "Muat ulang daftar model",
+    "modelsLoading": "Memuat model…",
+    "modelsError": "Model otak ini tidak bisa dimuat. Otomatis tetap berfungsi, atau tekan Muat ulang.",
+    "modelsCurated": "Daftar ini mungkin tidak menampilkan semua model otak ini.",
+    "trustShort": "Agen ini bekerja tanpa bertanya setiap kali. Ia tetap bertanya sebelum hal berbahaya, seperti menghapus data.",
+    "helpWith": "Bantu apa saja?",
+    "helpPlaceholder": "mis. Bantu aku merencanakan menu makan dan tanya dulu sebelum membeli apa pun.",
+    "helpIdeas": {
+      "week": "Rencanakan mingguku",
+      "shopping": "Daftar belanja",
+      "messages": "Menulis pesan",
+      "questions": "Menjawab pertanyaan"
+    },
+    "helpFill": {
+      "week": "Bantu aku merencanakan mingguku dan ingatkan apa yang akan datang.",
+      "shopping": "Kelola daftar belanjaku dan tanya dulu sebelum membeli apa pun.",
+      "messages": "Bantu aku menulis dan membalas pesan. Tunjukkan dulu sebelum dikirim.",
+      "questions": "Jawab pertanyaanku dengan kata-kata sederhana."
+    },
+    "moreOptions": "Opsi lainnya"
+  },
+  "nav": {
+    "sidebar": "Agent dan chat",
+    "yourTeam": "Tim Anda",
+    "channels": "Channel",
+    "devices": "Device",
+    "settings": "Pengaturan",
+    "chats": "Obrolan",
+    "new": "Baru",
+    "newAgent": "Agen baru",
+    "newGroup": "Obrolan grup baru",
+    "pinned": "Disematkan",
+    "searchChats": "Cari obrolan",
+    "moveUp": "Pindah ke atas",
+    "moveDown": "Pindah ke bawah",
+    "unpin": "Hapus dari bilah sisi",
+    "pinMenu": "Opsi untuk {{feature}}",
+    "openSettings": "Buka Pengaturan",
+    "teamTalk": "Obrolan tim",
+    "teamTalkHint": "Para pembantumu saling bicara",
+    "workingFor": "Bekerja untuk {{name}}",
+    "newRequest": "Permintaan baru"
+  },
+  "status": {
+    "working": "Sibuk",
+    "waiting": "Butuh persetujuan",
+    "idle": "Siap",
+    "needsSignIn": "Perlu masuk"
+  },
+  "details": {
+    "label": "Detail agent",
+    "hide": "Sembunyikan",
+    "show": "Detail",
+    "since": "sejak {{date}}",
+    "does": "Tugas {{name}}",
+    "edit": "Ubah",
+    "noInstructions": "Belum ada instruksi.",
+    "brain": "Otak",
+    "main": "Utama",
+    "backup": "Cadangan",
+    "none": "Tidak ada",
+    "trust": "Tingkat kepercayaan",
+    "change": "Ubah",
+    "about": "Tentang {{name}}",
+    "thinksWith": "Berpikir dengan",
+    "more": "Lainnya",
+    "instructions": "Instruksi lengkap",
+    "backupBrains": "Otak cadangan",
+    "noSummary": "Belum ada yang ditulis tentang pembantu ini."
+  },
+  "chat": {
+    "notFound": "Chat ini tidak ditemukan.",
+    "members_other": "{{count}} agent",
+    "logLabel": "Pesan dengan {{name}}",
+    "empty": "Sapa {{name}}.",
+    "selectTitle": "Pilih chat",
+    "select": "Pilih agent atau channel di sebelah kiri.",
+    "someone": "Agen",
+    "thinking": "{{name}} sedang berpikir…",
+    "replyFailed": "Balasan ini tidak selesai.",
+    "activity_other": "Memakai {{count}} alat: {{names}}",
+    "seconds_other": "{{count}} dtk",
+    "partialLabel": "Balasan sebagian: hanya ini yang sempat ditulis sebelum berhenti.",
+    "interruptedHandled": "Selesai: giliran ini sudah dicoba ulang atau dilewati.",
+    "steered": "Ditambahkan ke yang sedang dikerjakan {{name}}.",
+    "queueFull": "Antrean {{name}} penuh. Coba lagi sebentar lagi.",
+    "mode": {
+      "steer": "Tambahkan ke yang sedang dikerjakan",
+      "queue": "Kirim setelah selesai",
+      "interrupt": "Hentikan dan kirim ini",
+      "more": "Cara lain mengirim"
+    },
+    "placeholder": "Kirim pesan ke {{name}}…",
+    "send": "Kirim",
+    "queued_other": "{{count}} mengantre",
+    "failedCount_other": "{{count}} gagal",
+    "queueHint": "{{name}} akan membaca ini berikutnya",
+    "queueItem": "Pesan {{n}}",
+    "qstate": {
+      "queued": "menunggu",
+      "held": "ditahan sampai batas direset",
+      "failed": "gagal",
+      "interrupted": "terhenti"
+    },
+    "readOnlyNote": "Anda bisa membaca chat ini, tetapi tidak bisa menulis. Tanyakan kepada owner jika perlu.",
+    "readOnlyLabel": "Hanya baca",
+    "more": "Lainnya",
+    "searchThis": "Cari di obrolan ini",
+    "editAgent": "Ubah agen",
+    "copy": "Salin",
+    "copied": "Disalin",
+    "paused": {
+      "since": "Semuanya dijeda (sejak {{when}}).",
+      "now": "Semuanya dijeda.",
+      "hint": "Mulai lagi untuk mengirim.",
+      "hintMember": "Hanya pemilik yang bisa memulai lagi.",
+      "start": "Mulai lagi"
+    },
+    "editNamed": "Ubah {{name}}",
+    "startersLabel": "Ide untuk memulai",
+    "startersTitle": "Bingung mulai dari mana? Ketuk salah satu:",
+    "starters": {
+      "can": "Apa yang bisa kamu bantu?",
+      "week": "Bantu aku merencanakan mingguku",
+      "message": "Bantu aku menulis pesan",
+      "dinner": "Masak apa untuk makan malam?"
+    },
+    "model": {
+      "thinksWith": "Berpikir dengan",
+      "auto": "Otomatis",
+      "change": "{{name}} berpikir dengan {{brain}}, {{model}}. Ubah",
+      "readOnly": "{{name}} berpikir dengan {{brain}}, {{model}}",
+      "title": "Bagaimana {{name}} sebaiknya berpikir?",
+      "brain": "Otak",
+      "models": "Model",
+      "best": "Terbaik untuk kebanyakan",
+      "autoHint": "Memilih yang tepat untuk tiap pesan",
+      "hints": {
+        "smartest": "Paling pintar, untuk kerja berat. Lebih lambat, memakai lebih banyak paketmu",
+        "smart": "Pintar dan teliti",
+        "balanced": "Cepat dan pintar. Cocok untuk kebanyakan hal",
+        "fast": "Paling cepat, untuk pertanyaan sederhana",
+        "free": "Gratis"
+      },
+      "own": "Otak ini memilih modelnya sendiri",
+      "more": "Siapkan otak lain",
+      "error": "Daftar model tidak bisa dimuat.",
+      "retry": "Coba lagi"
+    },
+    "toolsMore": "+{{n}} lagi",
+    "tools": {
+      "team": "Memeriksa tim",
+      "askHelper": "Meminta bantuan pembantu",
+      "noteHelper": "Mengirim catatan ke pembantu",
+      "checkHelper": "Mengecek pembantu",
+      "stopHelper": "Menghentikan tugas pembantu",
+      "noted": "Mencatat jawabanmu",
+      "plan": "Menunjukkan rencana",
+      "makeTeam": "Membuat timmu",
+      "memoryRead": "Melihat ingatan",
+      "memorySave": "Menyimpan ke ingatan",
+      "memoryForget": "Menghapus dari ingatan",
+      "searchChats": "Mencari di obrolan lama",
+      "browser": "Memakai peramban",
+      "computer": "Memakai komputer",
+      "webSearch": "Mencari di web",
+      "webPage": "Membuka halaman web",
+      "fileRead": "Membaca berkas",
+      "fileChange": "Mengubah berkas",
+      "fileSearch": "Menelusuri berkas",
+      "command": "Menjalankan perintah",
+      "todo": "Membuat daftar tugas",
+      "dataRead": "Membaca tabel data",
+      "dataChange": "Mengubah tabel data",
+      "inbox": "Memeriksa kotak masuk",
+      "machines": "Berbicara dengan komputer lain",
+      "askYou": "Bertanya kepadamu",
+      "card": "Membuat kartu",
+      "routine": "Mengerjakan rutinitas",
+      "workflow": "Mengerjakan alur kerja",
+      "site": "Mengerjakan situs web",
+      "shop": "Melihat toko",
+      "shopBuy": "Menyiapkan pembelian",
+      "skills": "Mengerjakan keahlian",
+      "findTool": "Mencari alat",
+      "connections": "Memeriksa koneksi",
+      "secrets": "Menanyakan rahasia tersimpan",
+      "programs": "Memeriksa program yang berjalan",
+      "permission": "Meminta izin",
+      "other": "Memakai alat"
+    },
+    "handoff": {
+      "asked": "{{from}} meminta bantuan {{to}}",
+      "noted": "{{from}} mengirim catatan ke {{to}}",
+      "whatAsked": "Yang diminta",
+      "reply": "Balasan {{name}}",
+      "waiting": "Menunggu {{name}}…",
+      "failed": "Ini tidak berhasil.",
+      "later": "Balasan {{name}} datang di pesan berikutnya.",
+      "open": "Buka percakapan mereka",
+      "openThread": "Buka di chat {{name}}"
+    },
+    "teamNote": "{{from}} dan {{to}} berbicara di sini. Kamu bisa ikut membaca, dan juga menulis.",
+    "stopAll": "Hentikan semua pembantu sekarang",
+    "thread": {
+      "from": "Dari {{name}}",
+      "label": "Permintaan dari {{name}}",
+      "summary": "{{from}} bertanya · {{to}} menjawab",
+      "working": "{{name}} sedang mengerjakannya…",
+      "show": "Tampilkan seluruh percakapan",
+      "hide": "Lipat percakapan",
+      "reply": "Balas di sini",
+      "replying": "Membalas permintaan {{name}}",
+      "stopReply": "Tulis pesan biasa saja"
+    },
+    "report": {
+      "workingOne": "{{name}} sedang mengerjakannya…",
+      "workingMany": "{{names}} sedang mengerjakannya…",
+      "reading": "{{name}} sedang merangkum jawabannya…",
+      "fromOne": "Jawaban dari {{name}}",
+      "fromMany": "Jawaban-jawaban dari {{names}}",
+      "fullOne": "Tampilkan jawaban lengkap",
+      "fullMany": "Tampilkan semua jawaban lengkap",
+      "finished": "{{name}} selesai:",
+      "failed": "{{name}} tidak bisa menyelesaikannya.",
+      "stoppedOne": "{{name}} dihentikan sebelum selesai.",
+      "stillOne": "{{name}} masih mengerjakannya.",
+      "stillMany": "{{names}} masih mengerjakannya.",
+      "openFull": "Buka jawaban lengkap",
+      "openThread": "Buka di chat {{name}}",
+      "stopped": "Berhenti di sini: para asisten sudah terlalu sering saling mengoper ini. Minta lagi kalau ingin mereka lanjut."
+    }
+  },
+  "approval": {
+    "wants": "{{name}} ingin: {{tool}}",
+    "waiting_other": "{{count}} keputusan menunggu",
+    "review": "Tinjau",
+    "asking": "{{name}} bertanya dulu",
+    "tier0": "Hanya melihat",
+    "tier1": "Hanya di foldernya sendiri",
+    "tier2": "Perlu OK Anda",
+    "tier3": "Berisiko",
+    "state": {
+      "pending": "Menunggu Anda",
+      "approved": "Disetujui",
+      "denied": "Ditolak",
+      "expired": "Kedaluwarsa: dianggap ditolak"
+    },
+    "approve": "Setujui",
+    "deny": "Tolak",
+    "reauthNote": "Anda akan mengonfirmasi bahwa ini Anda sebelum dilanjutkan.",
+    "reauthTitle": "Konfirmasi bahwa ini Anda",
+    "reauthIntro": "Ini langkah berisiko: {{summary}}. Ketik kata sandimu agar kami tahu ini kamu.",
+    "reauthSubmit": "Konfirmasi dan setujui",
+    "reauthPasskey": "Gunakan passkey",
+    "reauthFailed": "Tidak cocok. Coba lagi.",
+    "screenBusy": "Tunggu sebentar — seorang pembantu baru saja memakai layar",
+    "workflow": "Alur kerja \"{{name}}\" bertanya: {{message}}",
+    "askClass": {
+      "money": "Uang: selalu bertanya",
+      "outbound-message": "Pesan ke orang lain: selalu bertanya",
+      "delete": "Menghapus: selalu bertanya",
+      "publish": "Memublikasikan: selalu bertanya"
+    },
+    "fact": {
+      "items": "Item",
+      "merchant": "Penjual",
+      "total": "Total",
+      "paymentMethod": "Metode pembayaran",
+      "recipients": "Kepada",
+      "channel": "Kanal",
+      "subject": "Subjek",
+      "text": "Teks lengkap",
+      "target": "Apa",
+      "where": "Di mana",
+      "count": "Berapa banyak",
+      "tool": "Alat",
+      "arguments": "Permintaan persis",
+      "cc": "Cc",
+      "bcc": "Bcc",
+      "attachments": "Lampiran",
+      "server": "Menjalankan",
+      "request": "Rincian permintaan"
+    },
+    "notStated": "tidak disebutkan",
+    "undeclared": "Pembantu tidak bilang ini akan membayar atau mengirim sesuatu, tapi halaman ini terlihat begitu.",
+    "unshown": "Detail lainnya tidak ditampilkan di ringkasan ini: {{names}}. Baca permintaan persisnya di bawah sebelum Anda menyetujui.",
+    "askNote": "Tindakan seperti ini selalu menanyaimu, seberapa sering pun pembantu diatur untuk bertanya. Hanya kamu yang bisa menyetujuinya di aplikasi ini.",
+    "reauthContinue": "Konfirmasi dan lanjutkan",
+    "wantsTo": "{{name}} ingin {{verb}}",
+    "verb": {
+      "read": "membaca file",
+      "write": "menyimpan file",
+      "edit": "mengubah file",
+      "command": "menjalankan perintah di komputermu",
+      "page": "membuka halaman web",
+      "webSearch": "mencari di web",
+      "findFiles": "mencari file",
+      "searchFiles": "mencari di dalam file",
+      "notebook": "mengubah notebook",
+      "task": "menyerahkan tugas ke pembantu",
+      "other": "memakai alat"
+    },
+    "target": {
+      "file": "Berkas: {{v}}",
+      "command": "Perintah: {{v}}",
+      "page": "Halaman web: {{v}}",
+      "search": "Mencari: {{v}}",
+      "tool": "Alat: {{v}}"
+    },
+    "tierAdv0": "Tingkat 0 · hanya baca",
+    "tierAdv1": "Tingkat 1 · folder sendiri",
+    "tierAdv2": "Tingkat 2 · perlu persetujuanmu",
+    "tierAdv3": "Tingkat 3 · berisiko",
+    "reauthIntroPasskey": "Ini langkah berisiko: {{summary}}. Ketik kata sandimu atau pakai passkey-mu agar kami tahu ini kamu.",
+    "unshownPlain": "Permintaan ini punya detail lebih dari yang terlihat di sini: {{names}}. Nyalakan Istilah teknis di Pengaturan untuk melihat semuanya sebelum menyetujui.",
+    "unshownShown": "Ringkasan tidak mencakup semua detail ({{names}}). Baca rincian permintaan sebelum menyetujui."
+  },
+  "onboarding": {
+    "next": "Lanjut",
+    "step": "Langkah {{n}} dari {{total}}",
+    "brainTitle": "Pilih otak",
+    "brainIntro": "Otak adalah AI yang dipakai agenmu untuk berpikir. Yang terbaik sudah dipilih.",
+    "working": "Menyiapkan agenmu…",
+    "starterName": "Pemula gratis",
+    "starterSub": "Tanpa kunci, tanpa masuk, tanpa bayar",
+    "starterBody": "PasaBot akan mengunduh aplikasi gratis kecil agar agenmu bisa berpikir. Butuh sekitar satu menit.",
+    "details": "Rincian",
+    "starterWhat": "Apa: {{what}}",
+    "starterWhere": "Di mana: {{where}} (hanya untuk pengguna Anda, tanpa hak admin)",
+    "starterFrom": "Dari: {{from}}",
+    "starterCheck": "Unduhan diperiksa terhadap SHA-256 yang dipublikasikan sebelum apa pun ditulis.",
+    "starterGo": "Unduh dan lanjutkan",
+    "starterWorking": "Mengunduh… sekitar satu menit",
+    "noBrain": "Belum ada otak yang siap di komputer ini. Siapkan satu, lalu kembali ke sini.",
+    "setUpBrain": "Siapkan otak",
+    "otherBrain": "Pakai otak lain",
+    "defaultName": "Tala",
+    "meetTitle": "Kenalan dengan agen pertamamu",
+    "meetIntro": "Beri nama yang kamu suka. Semuanya bisa diubah nanti.",
+    "meetSafe": "{{name}} bertanya dulu sebelum hal berbahaya, seperti menghapus data.",
+    "start": "Ayo mulai",
+    "localSub": "Di komputer ini. Pribadi, bisa offline",
+    "starterFailedPlain": "Pemula gratis tidak terpasang. Coba lagi, atau pilih otak lain."
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "language": "Bahasa",
+    "languageHint": "Mengganti bahasa di setiap layar aplikasi ini.",
+    "modules": "Modul",
+    "account": "Akun",
+    "signOut": "Keluar",
+    "newAgents": "Agent baru",
+    "newAgentsHint": "Tingkat kepercayaan awal agent baru. Anda tetap bisa mengubahnya untuk setiap agent.",
+    "alwaysAsks": "Selalu bertanya",
+    "alwaysAsksIntro": "Bahkan agent tepercaya akan bertanya kepada Anda dulu, setiap kali, sebelum melakukan hal-hal ini. Tidak ada \"selalu izinkan\" untuk ini, dan channel chat atau otomatisasi tidak dapat menyetujuinya.",
+    "alwaysAsksMoney": "Uang: membeli, membayar, checkout, memesan, berlangganan, memakai detail pembayaran, mengirim uang atau kripto.",
+    "alwaysAsksMessage": "Pesan ke orang lain: email, chat, DM, atau posting ke siapa pun selain chat tertaut milik Anda sendiri. Agent yang membalas Anda di chat Anda sendiri tidak bertanya.",
+    "alwaysAsksDelete": "Menghapus di luar workspace agent sendiri: file atau folder agent lain atau di mana pun di komputer ini, tabel data milik agent lain atau bersama, dan apa pun yang ditandai merusak oleh alat luar atau connector. Menghapus di dalam workspace agent sendiri tidak bertanya.",
+    "alwaysAsksFixed": "Selalu aktif",
+    "alwaysAsksAdd": "Anda juga bisa membuat ini selalu bertanya:",
+    "alwaysAsksClass": {
+      "delete": "Menghapus file atau data",
+      "publish": "Memublikasikan (situs, posting)"
+    },
+    "alwaysAsksLimit": "Agent yang Anda beri terminal bisa melakukan apa pun yang bisa dilakukan terminal; kartu selalu-bertanya hanya mencakup alat yang dapat dilihat PasaBot. Perintah shell atau permintaan web mentah bisa mengirim pesan atau membayar tanpa kartu. Agar ditanya dulu, aktifkan \"Tanya dulu sebelum perintah terminal dan web mentah\" untuk agent tersebut.",
+    "search": "Cari pengaturan",
+    "back": "Kembali ke obrolan",
+    "intro": "Semua yang bukan obrolan ada di sini. Sematkan yang Anda pakai setiap hari ke bilah sisi.",
+    "pin": "Tampilkan di bilah sisi",
+    "pinAria": "Tampilkan {{feature}} di bilah sisi",
+    "hide": "Tidak saya pakai",
+    "hideTitle": "Sembunyikan {{feature}}?",
+    "hideBody": "Fitur ini hilang dari Pengaturan dan bilah sisi untuk semua orang. Tidak ada yang dihapus. Aktifkan lagi di Pengaturan › Lanjutan.",
+    "hideConfirm": "Sembunyikan {{feature}}",
+    "showAgain": "Tampilkan lagi",
+    "hiddenNote": "Anda menyembunyikan fitur ini. Fitur tetap berjalan; hanya tidak muncul di daftar.",
+    "notUsing": "Fitur yang tidak Anda pakai",
+    "notUsingEmpty": "Anda memakai semuanya. Sembunyikan fitur dari halamannya saat tidak perlu.",
+    "groupEmpty": "Belum ada apa-apa di sini. Fitur tersembunyi ada di Lanjutan.",
+    "searchEmpty": "Tidak ada yang cocok dengan \"{{q}}\". Coba kata yang lebih sederhana.",
+    "resetSidebar": "Atur ulang bilah sisi",
+    "resetSidebarHint": "Melepas semua sematan dari bilah sisi. Tidak ada yang lain berubah.",
+    "pinnedCount": "Disematkan: {{count}}",
+    "saveFailed": "Tidak dapat disimpan. Coba lagi.",
+    "tidied": "Kami merapikannya. Semua kini ada di Pengaturan — sematkan yang Anda pakai ke bilah sisi.",
+    "gotIt": "Mengerti",
+    "where": "Anda di sini",
+    "advancedSwitch": "Istilah teknis",
+    "advancedHint": "Menampilkan nama seperti \"Tingkat kepercayaan\" dan \"Server MCP\", serta halaman untuk penyiapan teknis.",
+    "moreOptions": "Opsi lainnya",
+    "switchOn": "Aktif",
+    "switchOff": "Mati",
+    "sections": {
+      "everyday": "Sehari-hari",
+      "helpers": "Yang bisa dipakai pembantumu",
+      "own": "Berjalan sendiri"
+    },
+    "technicalOnly": "Untuk pengaturan teknis — nyalakan {{switch}} untuk melihatnya",
+    "technicalOnlyPage": "Halaman ini untuk pengaturan teknis — nyalakan {{switch}} untuk melihatnya."
+  },
+  "offline": {
+    "title": "Tidak dapat menjangkau PasaBot",
+    "body": "PasaBot tidak dapat menjangkau server Anda saat ini. Chat Anda aman di server dan akan muncul kembali saat tersambung lagi.",
+    "retry": "Coba lagi"
+  },
+  "decisions": {
+    "title": "Keputusan menunggu",
+    "intro": "Semua yang menunggu Anda, dari setiap chat, alur kerja, dan modul.",
+    "showInChat": "Tampilkan di chat",
+    "openChat": "Buka chat",
+    "open": "Buka",
+    "ownerOnly": "Hanya owner yang dapat memutuskan ini. Anda bisa melihatnya di sini."
+  },
+  "roles": {
+    "ownerOnlyPage": "Hanya owner yang dapat menggunakan halaman ini.",
+    "ownerOnlyBack": "Kembali ke chat Anda"
+  },
+  "account": {
+    "menu": "Akun",
+    "look": "Tampilan",
+    "lookAuto": "Otomatis",
+    "lookLight": "Terang",
+    "lookDark": "Gelap",
+    "thisDevice": "Perangkat ini",
+    "role": {
+      "owner": "Pemilik",
+      "member": "Anggota",
+      "guest": "Tamu"
+    }
+  },
+  "features": {
+    "agents": "Agen",
+    "agentsHint": "Ubah, tambah, atau arsipkan agen Anda"
+  },
+  "groups": {
+    "agents": {
+      "name": "Agen & otak",
+      "hint": "Agen Anda dan AI yang menjalankannya"
+    },
+    "tools": {
+      "name": "Keahlian & alat",
+      "hint": "Yang bisa dipakai agen Anda"
+    },
+    "automations": {
+      "name": "Otomatisasi",
+      "hint": "Hal yang berjalan sendiri"
+    },
+    "safety": {
+      "name": "Keamanan & persetujuan",
+      "hint": "Yang butuh persetujuan Anda"
+    },
+    "spending": {
+      "name": "Pengeluaran",
+      "hint": "Batas dan pemakaian Anda"
+    },
+    "people": {
+      "name": "Orang & perangkat",
+      "hint": "Siapa yang bisa memakai PasaBot dan di mana"
+    },
+    "machines": {
+      "name": "Mesin",
+      "hint": "Komputer lain yang tertaut ke sini"
+    },
+    "shopping": {
+      "name": "Belanja",
+      "hint": "Toko, keranjang, dan harga"
+    },
+    "inbox": {
+      "name": "Kotak masuk & surel",
+      "hint": "Surel yang dibaca agen untuk Anda"
+    },
+    "memory": {
+      "name": "Memori & data",
+      "hint": "Yang diingat dan disimpan agen Anda"
+    },
+    "look": {
+      "name": "Bahasa & tampilan",
+      "hint": "Bahasa, tema, dan suara"
+    },
+    "advanced": {
+      "name": "Lanjutan",
+      "hint": "Untuk yang suka mengulik"
+    }
+  },
+  "plain": {
+    "agents": {
+      "trust": "Seberapa sering ia bertanya",
+      "trustLevels": {
+        "guarded": "Bertanya sebelum apa pun di luar foldernya sendiri",
+        "standard": "Bertanya sebelum hal berisiko",
+        "trusted": "Hanya bertanya sebelum hal berbahaya"
+      },
+      "trustHint": "Pembantu yang hanya bertanya sebelum hal berbahaya bisa melakukan apa saja yang bisa kamu lakukan di komputer ini.",
+      "askShellWeb": "Tanya sebelum perintah komputer dan permintaan web langsung",
+      "askShellWebHint": "Jika aktif, pembantu ini bertanya dulu sebelum setiap perintah yang dijalankannya di komputermu dan setiap permintaan web langsung, karena permintaan itu bisa mengirim datamu atau membayar. Mati di awal untuk pembantu yang hanya bertanya sebelum hal berbahaya.",
+      "model": "Versi",
+      "modelsRefresh": "Cek versi baru",
+      "modelsError": "Versi otak ini tidak bisa dimuat. Otomatis tetap berfungsi, atau coba lagi.",
+      "trustShort": "Pembantu ini bekerja tanpa bertanya setiap kali. Ia tetap bertanya sebelum hal berbahaya, seperti menghapus data.",
+      "newTitle": "Pembantu baru",
+      "unknownProvider": "Otak itu belum disiapkan di komputer ini.",
+      "backupHint": "Dipakai saat otak utama mencapai batas atau tidak bisa dihubungi. Pembantumu tetap melanjutkan percakapan.",
+      "modelAutoHint": "Otak memilih versi biasanya",
+      "modelsCurated": "Daftar ini mungkin tidak menampilkan semua versi otak ini.",
+      "trustWarning": "Pembantu baru mulai di “Hanya bertanya sebelum hal berbahaya”. Setelah kamu membuatnya, ia bekerja tanpa bertanya setiap kali, bahkan untuk hal seperti memposting ke luar, memakai web, atau memasang alat. Ia tetap bertanya sebelum hal berbahaya (membaca rahasia, menghapus data, memakai komputermu), dan pesan yang sampai lewat Telegram atau aplikasi chat lain tidak pernah mendapat lebih dari “Bertanya sebelum hal berisiko”. Agar lebih sering ditanya, pilih “Bertanya sebelum hal berisiko” atau “Bertanya sebelum apa pun di luar foldernya sendiri” untuk pembantu itu, atau ubah di Pengaturan tempat pembantu baru mulai.",
+      "create": "Buat pembantu"
+    },
+    "details": {
+      "trust": "Seberapa sering bertanya"
+    },
+    "settings": {
+      "newAgentsHint": "Seberapa sering pembantu baru bertanya kepada Anda di awal. Anda tetap bisa mengubahnya untuk tiap pembantu.",
+      "alwaysAsksLimit": "Pembantu yang boleh menjalankan perintah di komputermu bisa melakukan apa saja yang bisa dilakukan perintah itu. Kartu ini mencakup yang terlihat oleh PasaBot: perintah atau permintaan web langsung bisa mengirim pesan atau membayar tanpa kartu. Agar ditanya dulu, nyalakan \"Tanya sebelum perintah komputer dan permintaan web langsung\" untuk pembantu itu.",
+      "advancedHint": "Juga menampilkan nama teknis dan halaman untuk penyiapan teknis.",
+      "newAgents": "Pembantu baru",
+      "alwaysAsksIntro": "Bahkan pembantu tepercaya akan bertanya kepada Anda dulu, setiap kali, sebelum melakukan hal-hal ini. Tidak ada \"selalu izinkan\" untuk ini, dan channel chat atau otomatisasi tidak dapat menyetujuinya.",
+      "alwaysAsksMessage": "Pesan ke orang lain: email, chat, DM, atau posting ke siapa pun selain chat tertaut milik Anda sendiri. Pembantu yang membalas Anda di chat Anda sendiri tidak bertanya.",
+      "alwaysAsksDelete": "Menghapus di luar workspace pembantu sendiri: file atau folder pembantu lain atau di mana pun di komputer ini, tabel data milik pembantu lain atau bersama, dan apa pun yang ditandai merusak oleh alat luar atau connector. Menghapus di dalam workspace pembantu sendiri tidak bertanya."
+    },
+    "pair": {
+      "fingerprint": "Kode keamanan",
+      "checkOther": "Pastikan layar lain menampilkan kode keamanan yang sama, lalu ketuk Konfirmasi di sana."
+    },
+    "features": {
+      "agents": "Pembantu",
+      "agentsHint": "Ubah, tambah, atau arsipkan pembantu Anda"
+    },
+    "groups": {
+      "agents": {
+        "name": "Pembantu & otak",
+        "hint": "Pembantu Anda dan AI yang mereka pakai untuk berpikir"
+      },
+      "inbox": {
+        "hint": "Surat yang dibaca pembantu untuk Anda"
+      },
+      "memory": {
+        "hint": "Yang diingat dan disimpan pembantu Anda"
+      },
+      "tools": {
+        "hint": "Yang bisa dipakai pembantu Anda",
+        "name": "Kemampuan & alat"
+      }
+    },
+    "nav": {
+      "newAgent": "Pembantu baru"
+    }
+  },
+  "cards": {
+    "needsOk": "Perlu persetujuanmu",
+    "stale": "Ini sudah dijawab.",
+    "failed": "Tidak berhasil. Coba lagi.",
+    "details": "Rincian",
+    "settled": {
+      "open": "Terbuka",
+      "done": "Selesai",
+      "later": "Nanti",
+      "dismissed": "Ditutup",
+      "failed": "Gagal"
+    },
+    "open": "Buka",
+    "download": "Unduh",
+    "browserAlt": "Browser pembantu, langsung",
+    "browserWait": "Menunggu gambar…",
+    "stillNeed": "Yang masih perlu persetujuanmu: {{count}}",
+    "suggest": {
+      "title": "Yang bisa kamu minta selanjutnya",
+      "send": "Coba ini",
+      "plan": {
+        "title": "Rencanakan mingguku",
+        "send": "Bantu aku merencanakan mingguku"
+      },
+      "remind": {
+        "title": "Ingatkan aku",
+        "send": "Ingatkan aku besok jam 9 untuk bayar tagihan"
+      },
+      "write": {
+        "title": "Tulis pesan",
+        "send": "Bantu aku menulis pesan singkat dan ramah untuk pelanggan"
+      },
+      "find": {
+        "title": "Lihat apa yang bisa tim lakukan",
+        "send": "Apa yang bisa kamu dan tim lakukan untukku?"
+      },
+      "hint": "Ketuk salah satu untuk menaruhnya di kotak pesan, lalu ubah dan kirim."
+    },
+    "idea": "Ide",
+    "more": "{{count}} lagi"
+  },
+  "system": {
+    "pageTitle": "Komputer ini",
+    "pageHint": "Yang ditemukan PasaBot tentang komputer tempatnya berjalan",
+    "kicker": "Tentang komputer ini",
+    "gotIt": "Mengerti",
+    "seen": "Sudah dilihat",
+    "details": "Detail",
+    "changeTrust": "Ubah yang boleh dilakukan pembantu baru",
+    "allGood": "Tidak ada yang perlu diperbaiki di komputer ini.",
+    "windows-no-sandbox": {
+      "title": "Pembantu di PC Windows ini tidak punya kotak pengaman",
+      "text": "Di Windows, PasaBot belum bisa menjaga pembantu tetap di dalam foldernya sendiri, jadi pembantu bisa membuka file apa pun yang bisa kamu buka. Karena itu pembantu baru bertanya dulu sebelum melakukan apa pun di luar foldernya. Tambahkan hanya pembantu yang kamu percaya."
+    },
+    "linux-sandbox-missing": {
+      "title": "Pembantu belum bisa mulai",
+      "text": "Komputer ini belum punya alat pengaman kecil bernama bubblewrap. Minta orang yang mengurus komputer ini untuk memasangnya, lalu buka PasaBot lagi."
+    },
+    "linux-sandbox-userns": {
+      "title": "Pembantu belum bisa mulai",
+      "text": "Linux ini memblokir kotak pengaman tempat pembantu bekerja. Orang yang mengurus komputer ini bisa mengizinkannya dengan satu pengaturan, lalu membuka PasaBot lagi."
+    },
+    "linux-sandbox-other": {
+      "title": "Pembantu belum bisa mulai",
+      "text": "Kotak pengaman pembantu tidak mau berjalan di komputer ini. Minta orang yang mengurus komputer ini untuk memeriksanya."
+    },
+    "vault-unavailable": {
+      "title": "Kunci dan kata sandi yang disimpan terkunci",
+      "text": "PasaBot tidak bisa membuka brankasnya kali ini, jadi tidak bisa menyimpan atau memakai kunci dan kata sandi. Buka PasaBot lagi. Kalau terus terjadi, jalankan pemeriksaan di halaman ini."
+    },
+    "vault-key-file": {
+      "title": "Kunci brankasmu disimpan di sebuah file",
+      "text": "Komputer ini tidak punya keyring, jadi PasaBot menyimpan kunci brankasnya di file yang hanya bisa dibuka akunmu. Program yang kamu jalankan sendiri masih bisa membacanya."
+    },
+    "data-folder-open": {
+      "title": "Folder PasaBot mungkin terbuka untuk orang lain",
+      "text": "Windows tidak mengizinkan PasaBot mengunci foldernya untuk akunmu, jadi akun lain di PC ini mungkin bisa melihat obrolan dan kuncimu. Jalankan pemeriksaan di halaman ini untuk tahu lebih banyak."
+    },
+    "signin-links": {
+      "title": "Codex dan OpenCode perlu satu pengaturan Windows",
+      "text": "Agar pembantu bisa memakai login Codex atau OpenCode-mu, nyalakan Mode Pengembang di Pengaturan Windows, lalu buka PasaBot lagi. Claude tetap jalan tanpa itu."
+    },
+    "check": {
+      "title": "Periksa komputer ini",
+      "text": "Memeriksa sebentar apakah PasaBot berjalan di PC ini dan menunjukkan yang lolos. Memakai folder uji, tidak pernah datamu sendiri.",
+      "notInstalled": "Pemeriksaan ini ikut dengan aplikasi Windows yang terpasang. Pasang PasaBot untuk memakainya.",
+      "run": "Periksa komputer ini",
+      "started": "Pemeriksaan terbuka di jendelanya sendiri.",
+      "failed": "Pemeriksaan tidak dimulai. Coba lagi."
+    }
+  }
+}

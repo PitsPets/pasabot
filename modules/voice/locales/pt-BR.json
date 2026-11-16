@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "Segure para falar",
+    "listening": "Ouvindo… solte para parar",
+    "working": "Transformando sua voz em texto…",
+    "title": "Sua mensagem",
+    "text": "O que você disse",
+    "send": "Enviar",
+    "cancel": "Cancelar",
+    "empty": "Nada foi ouvido. Tente de novo, um pouco mais perto do microfone.",
+    "noMic": "Este navegador não pode usar o microfone aqui.",
+    "denied": "O acesso ao microfone foi bloqueado. Permita no navegador para falar.",
+    "unavailable": "A entrada de voz não está configurada. O owner pode baixar um modelo de fala em Configurações → Voz.",
+    "failed": "Não foi possível transformar a gravação em texto. {{reason}}",
+    "browserNote": "Usando o reconhecimento de fala do seu navegador."
+  },
+  "listen": {
+    "play": "Ouvir",
+    "stop": "Parar",
+    "loading": "Preparando o áudio…",
+    "failed": "Não foi possível ler isto em voz alta. {{reason}}"
+  },
+  "settings": {
+    "title": "Voz",
+    "intro": "Fale com seus agentes e ouça as respostas. A fala é processada neste servidor, então sua voz nunca sai dele.",
+    "engine": "Mecanismo de fala",
+    "engineFake": "Mecanismo de teste",
+    "engineLocal": "Neste servidor",
+    "noPackage": "O mecanismo de fala não está instalado neste servidor, então será usado o do navegador.",
+    "stt": "Entrada de voz",
+    "tts": "Respostas faladas",
+    "ready": "Pronto: {{model}}",
+    "notReady": "Ainda sem modelo",
+    "models": "Modelos de fala",
+    "modelsIntro": "Os modelos só são baixados quando você pedir, a partir das versões oficiais do próprio mecanismo de fala.",
+    "kindStt": "Entrada de voz",
+    "kindTts": "Respostas faladas",
+    "size": "Cerca de {{mb}} MB",
+    "languages": "Idiomas: {{list}}",
+    "installed": "Instalado",
+    "download": "Baixar {{name}}",
+    "remove": "Remover {{name}}",
+    "modelName": "{{model}} ({{note}})",
+    "noteMultilingual": "multilíngue",
+    "noteEnglish": "inglês",
+    "downloading": "Baixando… {{pct}}",
+    "unpacking": "Descompactando…",
+    "failedDownload": "Falha no download: {{reason}}",
+    "disabledUnpinned": "Ainda indisponível: o PasaBot não tem um checksum para verificar este download, então ele continua desativado.",
+    "ownerOnly": "Somente o owner pode baixar ou remover modelos.",
+    "autoRead": "Ler novas respostas em voz alta",
+    "autoReadHint": "Somente neste dispositivo.",
+    "browserStt": "Usar o reconhecimento de fala do navegador quando não houver modelo instalado",
+    "browserSttHint": "Alguns navegadores enviam sua voz aos servidores do fabricante para reconhecê-la. Desativado por padrão.",
+    "loading": "Carregando…",
+    "error": "Não foi possível carregar as configurações de voz. {{reason}}"
+  },
+  "find": {
+    "settingsHint": "Fale com seus agentes e ouça-os",
+    "settingsKeywords": "voz, falar, microfone, ouvir, áudio"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Fale com seus ajudantes e ouça-os"
+    },
+    "settings": {
+      "intro": "Fale com seus ajudantes e ouça as respostas. A fala é processada neste servidor, então sua voz nunca sai dele.",
+      "engineLocal": "Neste servidor",
+      "notReady": "Ainda sem cérebro",
+      "models": "Cérebros de fala",
+      "modelsIntro": "Os cérebros só são baixados quando você pedir, a partir das versões oficiais do próprio mecanismo de fala.",
+      "browserStt": "Usar o reconhecimento de fala do navegador quando não houver cérebro instalado",
+      "browserSttHint": "Alguns navegadores enviam sua voz aos servidores do fabricante para reconhecê-la. Desativado por padrão."
+    }
+  }
+}

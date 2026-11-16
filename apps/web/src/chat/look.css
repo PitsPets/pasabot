@@ -1,0 +1,445 @@
+/*
+ * Polish direction B (ws/look): the chat header's model picker (pill + popover / phone sheet) and the look fixes
+ * from the polish audit that sit in the chat (message actions, starter chips, the details card).
+ */
+
+/* ---------- the agent's details: one card with dividers ---------- */
+.det-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.det-card > .det-sec + .det-sec {
+  border-block-start: 1px solid var(--bk-line);
+}
+.det-card .brains dd,
+.det-card .det-brain {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+/* short by default: one line per brain, everything else folded under More */
+.det-card .det-main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-weight: 700;
+  color: var(--bk-ink);
+  overflow-wrap: anywhere;
+}
+.det-more {
+  padding: 4px 14px 8px;
+}
+.det-more__body {
+  display: grid;
+  gap: 16px;
+  padding: 4px 4px 10px;
+}
+.det-part {
+  display: grid;
+  gap: 8px;
+  min-inline-size: 0;
+}
+.det-part p {
+  font-size: 14px;
+  color: var(--bk-ink-2);
+}
+.det-instr {
+  max-block-size: 220px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--bk-soft);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--bk-ink-2);
+}
+.det-instr:focus-visible {
+  outline: 2px solid var(--bk-primary);
+  outline-offset: 2px;
+}
+/* the chat header's own button for the details (it shows pressed while they are open) */
+.ch-info[aria-expanded="true"] {
+  color: var(--bk-primary);
+}
+
+/* ---------- message actions: React, Listen and Copy as one row of identical buttons ---------- */
+.msg-acts [data-testid="react-button"],
+.msg-acts .vc-listen,
+.msg-acts .msg-act {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-block-size: 32px !important;
+  min-inline-size: 32px !important;
+  block-size: auto;
+  padding: 0 10px !important;
+  border: 1px solid var(--bk-line) !important;
+  border-radius: 10px !important;
+  background: var(--bk-panel) !important;
+  color: var(--bk-ink-2) !important;
+  font: 600 13px / 1 var(--bk-sans) !important;
+  cursor: pointer;
+}
+@media (pointer: coarse), (max-width: 600px) {
+  .msg-acts [data-testid="react-button"],
+  .msg-acts .vc-listen,
+  .msg-acts .msg-act {
+    min-block-size: 44px !important;
+    min-inline-size: 44px !important;
+  }
+}
+
+/* ---------- empty chat: the starter ideas as equal chips, two by two ---------- */
+.starters .tap-chips {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  inline-size: min(100%, 520px);
+}
+.starters .tap-chips > .starter {
+  inline-size: 100%;
+  min-block-size: 48px;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ---------- model picker ---------- */
+.mp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-block-size: 44px;
+  max-inline-size: 260px;
+  padding: 4px 10px 4px 6px;
+  border: 1px solid var(--bk-line);
+  border-radius: 999px;
+  background: var(--bk-soft);
+  color: var(--bk-ink);
+  font: inherit;
+  text-align: start;
+  flex: 0 1 auto;
+  min-inline-size: 0;
+}
+button.mp-pill {
+  cursor: pointer;
+}
+button.mp-pill:hover:not(:disabled),
+button.mp-pill[aria-expanded="true"] {
+  border-color: var(--bk-ink-2);
+}
+button.mp-pill:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.mp-pill:focus-visible {
+  outline: 2px solid var(--bk-focus);
+  outline-offset: 2px;
+}
+.mp-pill__t {
+  display: grid;
+  min-inline-size: 0;
+  line-height: 1.2;
+}
+.mp-pill__k {
+  font-size: 12px;
+  color: var(--bk-muted);
+}
+.mp-pill__v,
+.mp-pill__short {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mp-pill__short {
+  display: none;
+}
+.mp-pill__chev {
+  transform: rotate(90deg);
+  color: var(--bk-muted);
+}
+.ch > .mp-pill {
+  margin-inline-start: auto;
+}
+.ch > .mp-pill ~ .ch-w {
+  margin-inline-start: 0;
+}
+@media (max-width: 600px) {
+  /* a phone chat's model pill lives in its own header (.ptop): the short label only */
+  .ch > .mp-pill {
+    display: none;
+  }
+  /* the phone header gives the helper's name the room: the brain pill is its icon alone, one 44 px circle (its full
+     words stay its accessible name, and the picker it opens says the rest) */
+  .ptop .mp-pill {
+    padding: 0;
+    gap: 0;
+    inline-size: 44px;
+    min-inline-size: 44px;
+    max-inline-size: 44px;
+    justify-content: center;
+    flex: none;
+    overflow: hidden;
+  }
+  .ptop .mp-pill .bk-brand-tile {
+    flex: none;
+  }
+  .ptop--chat .ptop-who {
+    flex: 1 1 auto;
+  }
+  .ptop .mp-pill__t,
+  .ptop .mp-pill__short,
+  .ptop .mp-pill__chev {
+    display: none;
+  }
+}
+.mp-pop {
+  position: fixed;
+  z-index: 60;
+  inline-size: 340px;
+  max-inline-size: calc(100vw - 16px);
+  max-block-size: min(70dvh, 560px);
+  overflow: auto;
+  display: grid;
+  gap: 8px;
+  padding: 14px 10px 10px;
+  background: var(--bk-panel);
+  color: var(--bk-ink);
+  border: 1px solid var(--bk-line);
+  border-radius: 18px;
+  box-shadow: var(--bk-pop-shadow);
+  font: 15px / 1.45 var(--bk-sans);
+}
+.mp-pop--sheet {
+  inset: auto 0 0 0;
+  inline-size: auto;
+  max-inline-size: none;
+  max-block-size: 85dvh;
+  border-radius: 24px 24px 0 0;
+  border-block-end: 0;
+  padding: 8px 16px calc(16px + env(safe-area-inset-bottom));
+}
+.mp-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 59;
+  background: var(--bk-scrim);
+}
+.mp-grab {
+  justify-self: center;
+  inline-size: 40px;
+  block-size: 5px;
+  border-radius: 3px;
+  background: var(--bk-line);
+  margin-block-end: 6px;
+}
+.mp-title {
+  margin: 0;
+  padding-inline: 8px;
+  font: 700 17px / 1.25 var(--bk-head);
+}
+.mp-pop--sheet .mp-title {
+  font-size: 20px;
+  padding-inline: 0;
+}
+.mp-brains {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0 4px;
+  border: 0;
+  min-inline-size: 0;
+}
+.mp-brain {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-block-size: 44px;
+  padding: 3px 12px 3px 6px;
+  border: 1px solid var(--bk-line);
+  border-radius: 999px;
+  background: var(--bk-panel);
+  color: var(--bk-ink);
+  font: 600 14px var(--bk-sans);
+  cursor: pointer;
+  max-inline-size: 100%;
+  min-inline-size: 0;
+}
+.mp-brain > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-inline-size: 0;
+}
+.mp-brain[aria-pressed="true"] {
+  border-color: var(--bk-ink);
+  box-shadow: inset 0 0 0 1px var(--bk-ink);
+}
+.mp-brain:focus-visible {
+  outline: 2px solid var(--bk-focus);
+  outline-offset: 2px;
+}
+.mp-one {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding-inline: 8px;
+  font-weight: 600;
+}
+.mp-list {
+  display: grid;
+  gap: 2px;
+  outline: none;
+  border-radius: 14px;
+}
+.mp-list:focus-visible {
+  outline: 2px solid var(--bk-focus);
+  outline-offset: 2px;
+}
+.mp-opt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-block-size: 52px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.mp-opt:hover {
+  background: color-mix(in srgb, var(--bk-soft) 60%, transparent);
+}
+.mp-list:focus-visible .mp-opt[data-active] {
+  box-shadow: inset 0 0 0 2px var(--bk-focus);
+}
+.mp-opt[aria-selected="true"] {
+  background: var(--bk-soft);
+}
+.mp-opt__ic {
+  inline-size: 32px;
+  block-size: 32px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--bk-soft);
+  color: var(--bk-ink-2);
+}
+.mp-opt[aria-selected="true"] .mp-opt__ic {
+  background: var(--bk-panel);
+}
+.mp-opt__t {
+  flex: 1;
+  min-inline-size: 0;
+  display: grid;
+  gap: 1px;
+}
+.mp-opt__n {
+  font-weight: 600;
+  font-size: 14.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  overflow-wrap: anywhere;
+}
+.mp-opt__h {
+  font-size: 13px;
+  color: var(--bk-muted);
+}
+.mp-best {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--bk-ink-2);
+  background: var(--bk-panel);
+  border: 1px solid var(--bk-line);
+  border-radius: 999px;
+  padding: 0 8px;
+}
+.mp-tick {
+  color: var(--bk-work);
+}
+.mp-note {
+  margin: 0;
+  padding-inline: 10px;
+  font-size: 13px;
+  color: var(--bk-muted);
+}
+.mp-note--err {
+  color: var(--bk-danger);
+}
+.mp-retry {
+  min-block-size: 44px;
+  padding: 0 4px;
+  border: 0;
+  background: none;
+  color: var(--bk-ink);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.mp-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-block-size: 44px;
+  padding: 0 10px;
+  border-block-start: 1px solid var(--bk-line);
+  color: var(--bk-ink-2);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+.mp-more:hover {
+  color: var(--bk-ink);
+}
+
+/* W40 suggestions: a row of chips; a tap puts the example in the message box (never sends it) */
+.suggest {
+  display: grid;
+  gap: 6px;
+  margin-block: 8px;
+  max-inline-size: 640px;
+}
+.suggest__title {
+  margin: 0;
+  font-weight: 700;
+}
+.suggest__hint {
+  margin: 0;
+  font-size: 13px;
+}
+.suggest__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.suggest__chip {
+  min-block-size: 44px;
+  padding-inline: 16px;
+  border: 1px solid var(--bk-line);
+  border-radius: 999px;
+  background: var(--bk-soft);
+  color: var(--bk-ink);
+  font: 600 15px / 1.2 var(--bk-sans);
+  cursor: pointer;
+  max-inline-size: 100%;
+  text-align: start;
+}
+.suggest__chip:hover {
+  border-color: var(--bk-primary);
+}
+.suggest__chip:focus-visible {
+  outline: 2px solid var(--bk-primary);
+  outline-offset: 2px;
+}

@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "エージェントからの質問",
+    "send": "回答を送信",
+    "answered": "回答済み：{{answer}}",
+    "expired": "時間内に回答がなかったため、エージェントは回答なしで続行しました。",
+    "cancelled": "エージェントはこの回答を待つのをやめました。",
+    "pickMany": "1つ以上選択してください"
+  },
+  "form": {
+    "submit": "送信",
+    "sent": "送信済み",
+    "required": "必須",
+    "invalid": "{{field}}を確認してください。",
+    "expired": "このフォームは送信前に閉じられました。",
+    "yes": "はい",
+    "no": "いいえ"
+  },
+  "html": {
+    "note": "エージェントが作成しました。PasaBotとは別に実行され、あなたのアカウントは見えません。",
+    "frame": "エージェントのページ：{{title}}"
+  },
+  "files": {
+    "open": "{{name}}を開く",
+    "download": "{{name}}をダウンロード",
+    "close": "閉じる",
+    "zip": "ZIPアーカイブ",
+    "file": "ファイル",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "ファイルを添付",
+    "title": "ファイルを送信",
+    "caption": "メッセージ（任意）",
+    "send": "送信",
+    "cancel": "キャンセル",
+    "remove": "{{name}}を削除",
+    "uploading": "アップロード中 {{pct}}%",
+    "tooBig": "{{name}}は100 MBを超えています。",
+    "tooMuch": "1通のメッセージに添付できるファイルは合計250 MBまでです。",
+    "failed": "アップロードに失敗しました。{{reason}}",
+    "limits": "1ファイル100 MB、1メッセージ250 MBまでです。"
+  },
+  "error": "送信できませんでした。{{reason}}",
+  "tools": {
+    "richchat_ask": "ユーザーに尋ねる",
+    "richchat_form": "フォームで尋ねる",
+    "richchat_html": "HTMLを表示",
+    "richchat_share_file": "オーナーにファイルを渡す"
+  },
+  "card": {
+    "file": {
+      "title": "{{name}} ができました",
+      "text": "{{agent}} がたった今作りました。"
+    }
+  }
+}

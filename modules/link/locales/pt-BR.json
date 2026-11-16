@@ -1,0 +1,102 @@
+{
+  "nav": "Máquinas",
+  "settings": "Máquinas",
+  "page": {
+    "title": "Máquinas vinculadas",
+    "intro": "Suas outras máquinas com PasaBot. Escolha uma para ver os agentes dela e conversar com eles; o trabalho roda nessa máquina, sob as regras dela.",
+    "empty": "Ainda não há máquinas vinculadas. Vincule uma em Configurações → Máquinas.",
+    "agents": "Agentes em {{name}}",
+    "noAgents": "Ainda não há agentes lá.",
+    "back": "Todas as máquinas",
+    "open": "Abrir",
+    "refresh": "Atualizar"
+  },
+  "chat": {
+    "title": "{{agent}} em {{machine}}",
+    "placeholder": "Mensagem para {{agent}}",
+    "send": "Enviar",
+    "waiting": "Aguardando {{agent}}…",
+    "me": "Você",
+    "empty": "Diga olá. Sua mensagem roda em {{machine}}, como uma solicitação de uma máquina vinculada."
+  },
+  "state": {
+    "active": "Vinculada",
+    "awaiting": "Aguardando o outro proprietário",
+    "requested": "Quer vincular",
+    "revoked": "Desvinculada"
+  },
+  "grant": {
+    "label": "O que ela pode fazer nesta máquina",
+    "view": "Ver",
+    "chat": "Conversar",
+    "manage": "Gerenciar",
+    "hint": "Ver: nome da máquina e nomes dos agentes. Conversar: também conversar com seus agentes aqui. Gerenciar: também rotinas e fluxos de trabalho, dentro das regras desta máquina. Ela nunca se torna proprietária aqui."
+  },
+  "status": {
+    "this": "Esta máquina: {{name}}",
+    "fingerprint": "Impressão digital da chave {{fp}}",
+    "unavailable": "A vinculação ainda não está disponível",
+    "transport": "Transporte da vinculação: {{transport}} · {{state}}",
+    "transportRunning": "em execução",
+    "transportDown": "reiniciando",
+    "transportIdle": "inativo até que uma máquina seja vinculada"
+  },
+  "code": {
+    "title": "Vincular uma máquina",
+    "intro": "Mostre um código de uso único aqui e digite-o na outra máquina. Ele funciona uma vez e expira em 10 minutos.",
+    "make": "Mostrar um código de vinculação",
+    "expires": "Expira às {{time}}",
+    "copy": "Copiar código",
+    "copied": "Copiado",
+    "qr": "Código de vinculação como imagem QR"
+  },
+  "join": {
+    "title": "Digite um código de outra máquina",
+    "code": "Código de vinculação",
+    "submit": "Vincular",
+    "done": "Enviado. O outro proprietário confirma na máquina dele."
+  },
+  "reauth": {
+    "password": "Sua senha (para confirmar que é você)"
+  },
+  "peers": {
+    "title": "Máquinas vinculadas",
+    "empty": "Nenhuma ainda.",
+    "confirm": "Confirmar vinculação",
+    "check": "Verificar",
+    "unlink": "Desvincular",
+    "unlinkConfirm": "Desvincular {{name}}? Ela perde o acesso imediatamente.",
+    "fp": "Chave {{fp}}"
+  },
+  "intros": {
+    "title": "Apresentações",
+    "offer": "{{via}} se oferece para apresentar {{name}} (chave {{fp}}). Nada é vinculado até que você vincule com um código dessa máquina.",
+    "accept": "Entendi",
+    "dismiss": "Dispensar"
+  },
+  "error": "Algo deu errado: {{message}}",
+  "tools": {
+    "link_machines": "Listar máquinas vinculadas",
+    "link_message": "Enviar mensagem a um agente em uma máquina vinculada"
+  },
+  "server": {
+    "introTitle": "{{peer}} oferece apresentar {{name}}",
+    "introBody": "Nada é vinculado até você mesmo vincular com um código daquela máquina.",
+    "linkTitle": "{{name}} quer se vincular a esta máquina",
+    "linkBody": "Confirme em Configurações → Máquinas e escolha o que ela pode fazer aqui."
+  },
+  "find": {
+    "navHint": "Outras máquinas ligadas a esta",
+    "navKeywords": "máquinas, computadores, servidores, vincular, remoto"
+  },
+  "plain": {
+    "page": {
+      "intro": "Seus outros computadores com PasaBot. Escolha um para ver os ajudantes e conversar com eles; o trabalho roda naquele computador, com as regras dele.",
+      "agents": "Ajudantes em {{name}}",
+      "noAgents": "Nenhum ajudante lá ainda."
+    },
+    "grant": {
+      "hint": "Ver: o nome do computador e dos ajudantes. Conversar: também conversar com seus ajudantes aqui. Gerenciar: também rotinas e fluxos, dentro das regras deste computador. Ele nunca vira dono aqui."
+    }
+  }
+}

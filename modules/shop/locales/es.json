@@ -1,0 +1,130 @@
+{
+  "card": {
+    "noImage": "Sin imagen",
+    "seenAt": "visto a las {{time}}",
+    "rating": "Calificación: {{rating}}",
+    "ratingCount": "Calificación: {{rating}} según {{count}} valoraciones",
+    "open": "Abrir en {{store}}"
+  },
+  "compare": {
+    "title": "Comparando {{count}} productos"
+  },
+  "buy": {
+    "button": "Comprar",
+    "qty_one": "{{count}} artículo",
+    "qty_many": "{{count}} de artículos",
+    "qty_other": "{{count}} artículos",
+    "less": "Uno menos",
+    "more": "Uno más",
+    "note": "Tú lo apruebas en la app. PasaBot solo lo lleva a tu carrito; luego revisas el total y pagas tú.",
+    "ask": "Pedir comprar",
+    "cancel": "Cancelar",
+    "asked": "Esperando tu aprobación. La tarjeta de dinero está en tus aprobaciones.",
+    "error": "No se pudo hacer la solicitud para este. Inténtalo de nuevo.",
+    "state": {
+      "running": "Aprobado. Agregándolo al carrito…",
+      "handedOver": "Está en tu carrito. Revisa el total y paga tú en el navegador.",
+      "denied": "Dijiste que no, así que no se compró nada.",
+      "paused": "En pausa: la tienda te necesita en el navegador.",
+      "stopped": "Detenido. No se agregó nada al carrito; el chat explica por qué.",
+      "ended": "Esta compra terminó; el chat explica cómo."
+    }
+  },
+  "settings": {
+    "title": "Compras",
+    "intro": "Dónde buscan productos tus agentes. Los precios se muestran tal como aparecían en la página de la tienda, sin conversión.",
+    "country": "País",
+    "webOnly": "Otro país (búsqueda web)",
+    "stores": "Tiendas",
+    "fallback": "Aún no hay lista de tiendas para este país. Los agentes buscan en la web y solo muestran tarjetas de páginas que describen un producto.",
+    "custom": "Tu tienda",
+    "remove": "Quitar",
+    "rules": "Los agentes nunca pagan, hacen pedidos, escriben datos de tarjetas, manejan códigos, resuelven captchas ni crean cuentas en tiendas. Comprar siempre te lo pregunta primero.",
+    "loading": "Cargando…",
+    "error": "No se pudo cargar la configuración de compras."
+  },
+  "custom": {
+    "add": "Agregar una tienda",
+    "name": "Nombre de la tienda",
+    "id": "ID corto",
+    "idHint": "Letras minúsculas, números y guiones, como corner-shop",
+    "home": "Página de inicio",
+    "search": "Dirección de búsqueda",
+    "searchHint": "Pon {query} donde van las palabras de búsqueda",
+    "hosts": "Direcciones permitidas",
+    "hostsHint": "Nombres de host separados por comas, como shop.example o *.example",
+    "currency": "Moneda",
+    "currencyHint": "Tres letras, como PHP o USD",
+    "save": "Guardar tienda",
+    "error": "Revisa los campos: las direcciones deben estar en los hosts permitidos y no tener códigos de seguimiento."
+  },
+  "onboarding": {
+    "title": "¿Dónde compras?",
+    "body": "Elige tu país para que tus agentes sepan en qué tiendas buscar. Puedes cambiarlo después en Ajustes → Compras."
+  },
+  "orders": {
+    "title": "Pedidos",
+    "empty": "Aún no hay pedidos. Aquí aparece cada compra que apruebes.",
+    "error": "No se pudieron cargar los pedidos.",
+    "line": "{{qty}} × {{item}}",
+    "unknownItem": "Un producto que ya no está guardado",
+    "each": "{{price}} cada uno, según se vio",
+    "state": {
+      "pending": "Esperando tu aprobación",
+      "denied": "Dijiste que no",
+      "running": "Añadiendo al carrito",
+      "handed-over": "En tu carrito, lo pagas tú",
+      "paused": "En pausa, te necesita",
+      "stopped": "Detenido",
+      "failed": "Falló",
+      "other": "Terminado"
+    }
+  },
+  "tools": {
+    "shop_stores": "Tiendas",
+    "shop_search": "Buscar en una tienda",
+    "shop_capture": "Guardar un producto",
+    "shop_show": "Mostrar la ficha de un producto",
+    "shop_compare": "Comparar productos",
+    "shop_buy": "Llevar un producto al carrito"
+  },
+  "server": {
+    "noBrowser": "El navegador no está disponible, así que no se añadió nada al carrito.",
+    "storeOff": "Esta tienda está desactivada en Ajustes → Compras, así que no se añadió nada al carrito.",
+    "badAddress": "Esa dirección de producto no está permitida para esta tienda.",
+    "stoppedBefore": "Detenido antes de tocar el navegador.",
+    "stoppedNothing": "Detenido. No se añadió nada al carrito.",
+    "priceChanged": "El precio cambió desde que lo aprobaste: antes {{before}}, ahora {{after}}. No se añadió nada al carrito. Una nueva tarjeta te pregunta otra vez con el nuevo precio.",
+    "pageDiffers": "El artículo o el precio de la página de la tienda no coincide con lo que aprobaste ({{price}}), así que no se añadió nada al carrito. Vuelve a guardarlo y pregunta de nuevo.",
+    "openNoCartHandOver": "{{name}} está abierto en {{store}}. Añade {{quantity}} al carrito y paga tú.",
+    "openNoCart": "{{name}} está abierto en {{store}} en el navegador. Esta tienda no tiene pasos de carrito, así que añade {{quantity}} y paga tú.",
+    "stoppedAfterAdd": "Detenido después de añadir al carrito; no se abrió la página de pago.",
+    "checkoutSignUp": "La dirección de pago es una página de registro.",
+    "stoppedInCart": "Detenido. El artículo está en el carrito; no se hizo nada más.",
+    "inCartHandOver": "{{quantity}} × {{name}} está en tu carrito de {{store}}. Revísalo y paga tú.",
+    "inCart": "{{quantity}} × {{name}} está en tu carrito de {{store}} y la página de pago está abierta en el navegador. Revisa el total y paga tú; PasaBot no hace el pedido.",
+    "stoppedCheck": "Detenido. Revisa el navegador antes de seguir.",
+    "buyFailed": "La compra se detuvo: {{error}}",
+    "captcha": "La tienda muestra una comprobación para personas (un captcha). Abre el navegador y complétala tú.",
+    "signIn": "La tienda quiere que inicies sesión. Abre el navegador e inicia sesión tú (PasaBot nunca crea cuentas en tiendas).",
+    "denied": "Dijiste que no, así que no se tocó el navegador.",
+    "buySummary": "Comprar {{quantity}} × {{name}} en {{store}}",
+    "buyLabel": "Compra",
+    "askItems": "{{quantity}} × {{name}} — {{price}} cada uno, visto el {{time}}",
+    "askTotal": "{{total}} según lo visto, no definitivo",
+    "askPayment": "Pagas tú en el navegador; PasaBot se detiene en el carrito"
+  },
+  "find": {
+    "settingsHint": "Que los agentes compren, con tu permiso",
+    "settingsKeywords": "compras, comprar, pedidos, tienda"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Deja que los ayudantes compren, con tu permiso"
+    },
+    "settings": {
+      "intro": "Dónde buscan productos tus ayudantes. Los precios se muestran tal como aparecían en la página de la tienda, sin conversión.",
+      "rules": "Los ayudantes nunca pagan, hacen pedidos, escriben datos de tarjetas, manejan códigos, resuelven captchas ni crean cuentas en tiendas. Comprar siempre te lo pregunta primero."
+    }
+  }
+}

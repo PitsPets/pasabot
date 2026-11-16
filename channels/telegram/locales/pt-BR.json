@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "Token do bot",
+    "botTokenHint": "Do bot que você criou no Telegram. Fica guardado no cofre e nunca é exibido novamente.",
+    "apiBase": "Endereço da API de Bots",
+    "apiBaseHint": "Deixe como está, a menos que você use o seu próprio servidor da API de Bots."
+  },
+  "link": {
+    "howTo": "Abra um chat direto com o seu bot e envie: /link {{code}}",
+    "dmOnly": "O código de vinculação só funciona em um chat direto com o bot."
+  },
+  "status": {
+    "connected": "Conectado",
+    "reconnecting": "Reconectando…",
+    "auth_failed": "O token do bot foi rejeitado",
+    "stopped": "Parado"
+  }
+}

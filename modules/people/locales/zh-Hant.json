@@ -1,0 +1,107 @@
+{
+  "nav": "成員",
+  "page": {
+    "title": "成員",
+    "introOwner": "邀請家人、朋友或同事加入。訪客只能看到你加入的聊天；成員還能使用你分享的 agent。你仍是唯一的擁有者。",
+    "introOther": "你受邀加入這個 PasaBot。你能看到哪些內容由擁有者決定。"
+  },
+  "kind": {
+    "owner": "擁有者",
+    "member": "成員",
+    "guest": "訪客"
+  },
+  "role": {
+    "member": "可發言",
+    "observer": "唯讀"
+  },
+  "invite": {
+    "title": "邀請對方",
+    "intro": "你會取得一個連結可傳給對方。連結只能使用一次，3 天後失效。",
+    "kind": "邀請身分",
+    "guestHint": "訪客只能看到你在下方選擇的聊天。",
+    "memberHint": "成員能看到你選擇的聊天，也能與你分享的 agent 開啟聊天。",
+    "chats": "對方加入的聊天",
+    "noChats": "目前還沒有聊天。請先建立 agent。",
+    "pickChat": "請至少為訪客選擇一個聊天。",
+    "role": "在這些聊天中，對方",
+    "create": "建立邀請連結",
+    "link": "邀請連結",
+    "linkHint": "只能傳給你要邀請的人：第一個開啟連結的人就會加入。",
+    "copy": "複製連結",
+    "copied": "已複製"
+  },
+  "invites": {
+    "title": "未使用的邀請",
+    "noChats": "沒有聊天",
+    "expires": "{{when}}到期",
+    "revoke": "取消邀請"
+  },
+  "list": {
+    "title": "此 PasaBot 的所有人",
+    "disabled": "已停用",
+    "disable": "停用",
+    "enable": "重新啟用"
+  },
+  "agents": {
+    "title": "成員可使用的 agent",
+    "intro": "成員可以與這些 agent 開啟自己的聊天。他們的訊息以他們的身分執行，不會是你，因此有風險的操作仍會先詢問你。",
+    "none": "目前還沒有 agent。",
+    "share": "讓成員使用 {{name}}"
+  },
+  "member": {
+    "title": "你可使用的 agent",
+    "intro": "與擁有者分享的 agent 開啟你自己的聊天。",
+    "none": "擁有者尚未與你分享任何 agent。",
+    "open": "與 {{name}} 聊天"
+  },
+  "guest": {
+    "title": "你的聊天",
+    "body": "你的聊天都在清單中。需要時，擁有者會再把你加入更多聊天。"
+  },
+  "chat": {
+    "button": "成員",
+    "title": "此聊天中的成員",
+    "readOnly": "改為唯讀",
+    "letWrite": "允許發言",
+    "remove": "移除 {{name}}",
+    "add": "新增成員",
+    "addPerson": "新增 {{name}}",
+    "invite": "邀請新成員加入此聊天",
+    "close": "完成"
+  },
+  "join": {
+    "title": "加入 PasaBot",
+    "loading": "正在檢查你的邀請…",
+    "invalid": "此邀請連結已失效。請向對方索取新的連結。",
+    "introGuest": "{{name}} 邀請你以訪客身分加入：{{chats}}。",
+    "introMember": "{{name}} 邀請你以成員身分加入。",
+    "name": "你的名稱",
+    "password": "設定密碼",
+    "again": "再次輸入密碼",
+    "short": "請至少輸入 8 個字元。",
+    "mismatch": "兩次輸入的密碼不一致。",
+    "badName": "請使用不含特殊符號的一般名稱。",
+    "submit": "加入"
+  },
+  "errors": {
+    "generic": "發生錯誤，請再試一次。"
+  },
+  "find": {
+    "navHint": "邀請他人並選擇誰可以加入",
+    "navKeywords": "邀請, 成員, 訪客, 家人, 朋友"
+  },
+  "plain": {
+    "page": {
+      "introOwner": "邀請家人、朋友或同事。訪客只能看到你加他們進去的聊天；成員還能使用你共享的助理。你仍是唯一的主人。"
+    },
+    "invite": {
+      "memberHint": "成員能看到你選的聊天，還能和你共享的助理聊天。",
+      "noChats": "還沒有聊天。請先建立一個助理。"
+    },
+    "agents": {
+      "title": "成員可用的助理",
+      "intro": "成員可以和這些助理開始自己的聊天。他們的訊息以他們本人身分執行，絕不以你的身分，所以有風險的事仍會先問你。",
+      "none": "還沒有助理。"
+    }
+  }
+}

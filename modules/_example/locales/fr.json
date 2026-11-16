@@ -1,0 +1,15 @@
+{
+  "nav": "Exemple",
+  "page": {
+    "title": "Module d'exemple",
+    "body": "Chaque emplacement du SDK de modules est rempli par ce module."
+  },
+  "settings": "Paramètres de l'exemple",
+  "composer": "Insérer une note",
+  "dock": "Panneau d'exemple",
+  "onboarding": "Étape d'intégration d'exemple",
+  "note": "Note",
+  "tools": {
+    "example_echo": "Écho"
+  }
+}

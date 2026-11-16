@@ -1,0 +1,22 @@
+PasaBot
+Copyright 2026 PitsPets
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+PasaBot is an independent project. It is not affiliated with, endorsed by,
+or derived from the code of any other product or company. Product and
+company names mentioned in its documentation are trademarks of their
+respective owners and are used only to describe interoperability.
+
+Brand icons from Simple Icons 16.36.0 (CC0-1.0, https://simpleicons.org).
+Trademarks belong to their owners; used only to name the service. Git Logo
+by Jason Long, licensed under CC BY 3.0
+(https://creativecommons.org/licenses/by/3.0/). The list, sources and rules:
+docs/BRANDS.md, packages/ui/assets/icons/NOTICE.md and manifest.json.
+
+Fonts: Bricolage Grotesque and Figtree, installed from the @fontsource npm
+packages and bundled into the web app, are licensed under the SIL Open Font
+License 1.1 (https://openfontlicense.org).
+
+Other third-party software is installed from npm as declared dependencies and
+keeps its own licence (see each package's own LICENSE file and pnpm-lock.yaml).

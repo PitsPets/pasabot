@@ -1,0 +1,183 @@
+{
+  "nav": "An toàn",
+  "stop": {
+    "button": "Dừng tất cả",
+    "buttonLabel": "Dừng tất cả agent ngay",
+    "stopped": "Đã tạm dừng",
+    "resume": "Bắt đầu lại",
+    "failed": "Không thể dừng: {{reason}}",
+    "resumeLabel": "Mọi thứ đang tạm dừng. Bắt đầu lại"
+  },
+  "report": {
+    "title": "Mọi thứ đã tạm dừng",
+    "intro": "Sẽ không có gì chạy cho đến khi bạn nhấn Bắt đầu lại. Đây là những gì đã dừng.",
+    "by": "Được dừng bởi {{who}} lúc {{when}}.",
+    "who": {
+      "owner": "bạn",
+      "linked-machine": "một máy đã liên kết",
+      "channel": "một lệnh từ channel",
+      "automation": "một token tự động hóa",
+      "agent": "một agent",
+      "system": "máy chủ"
+    },
+    "empty": "Không có gì đang chạy hoặc đang chờ.",
+    "kind": {
+      "run": "Lượt đang chạy",
+      "queued": "Lượt đang chờ",
+      "browser": "Phiên trình duyệt",
+      "computer": "Phiên máy tính",
+      "voice": "Cuộc gọi thoại",
+      "approval": "Yêu cầu phê duyệt",
+      "other": "Khác"
+    },
+    "outcome": {
+      "cancelled": "đã dừng",
+      "held": "đang tạm giữ",
+      "closed": "đã đóng"
+    },
+    "agent": "Tác nhân {{name}}",
+    "close": "OK",
+    "resume": "Bắt đầu lại",
+    "queue": {
+      "message": "Tin nhắn",
+      "task": "Việc",
+      "handoff": "Bàn giao",
+      "routine": "Thói quen",
+      "workflow": "Quy trình",
+      "automation-run": "Tự động hóa"
+    },
+    "run": "lượt chạy {{id}}",
+    "chat": "cuộc trò chuyện {{id}}"
+  },
+  "resume": {
+    "title": "Cho các agent chạy lại",
+    "intro": "Nhập mật khẩu để cho các agent chạy lại. Như vậy không ai khác có thể khởi động lại chúng. Việc đang chờ sẽ chạy lại.",
+    "password": "Mật khẩu",
+    "submit": "Bắt đầu lại",
+    "cancel": "Hủy",
+    "wrong": "Mật khẩu không đúng.",
+    "forbidden": "Chỉ chủ sở hữu mới bắt đầu lại được.",
+    "error": "Không bắt đầu lại được: {{reason}}"
+  },
+  "page": {
+    "title": "An toàn",
+    "intro": "Những gì agent của bạn đã làm, từng bước một, và các kiểm soát giúp giữ chúng trong giới hạn."
+  },
+  "receipts": {
+    "title": "Biên nhận",
+    "intro": "Mỗi tác vụ của agent đều để lại một biên nhận: các bước, lệnh gọi công cụ, phê duyệt và người quyết định, cùng số token đã dùng.",
+    "empty": "Chưa có biên nhận nào. Chúng sẽ xuất hiện ngay khi agent làm việc gì đó.",
+    "steps": "{{count}} bước",
+    "tokens": "{{input}} token vào / {{output}} token ra",
+    "open": "Mở biên nhận",
+    "back": "Tất cả biên nhận",
+    "timeline": "Dòng thời gian",
+    "step": "Bước {{n}} trên {{total}}",
+    "scrub": "Di chuyển qua các bước",
+    "export": "Xuất",
+    "exportJson": "Tải JSON",
+    "exportHtml": "Mở bản dễ đọc",
+    "exporting": "Đang chuẩn bị…",
+    "decidedBy": "Quyết định bởi {{who}}",
+    "you": "bạn",
+    "duration": "{{s}} giây",
+    "cost": "Chi phí {{amount}} {{currency}}",
+    "state": {
+      "running": "đang chạy",
+      "done": "xong",
+      "failed": "thất bại",
+      "cancelled": "đã dừng",
+      "interrupted": "bị gián đoạn"
+    },
+    "kind": {
+      "run.started": "Bắt đầu",
+      "run.finished": "Kết thúc",
+      "tool.call": "Gọi công cụ",
+      "tool.result": "Kết quả công cụ",
+      "permission": "Đã xin quyền",
+      "approval.requested": "Đã hỏi bạn",
+      "approval.decided": "Quyết định của bạn",
+      "usage": "Token đã dùng",
+      "reply": "Phản hồi",
+      "error": "Lỗi",
+      "subagent": "Trợ thủ",
+      "screenshot": "Ảnh chụp màn hình",
+      "link": "Liên kết",
+      "refused": "Bị chặn bởi kiểm tra an toàn"
+    },
+    "youNamed": "{{name}} (bạn)",
+    "nobody": "không ai (đã hết hạn)",
+    "someoneElse": "một phiên owner khác"
+  },
+  "retention": {
+    "title": "Giữ biên nhận trong",
+    "days": "Ngày",
+    "hint": "Các biên nhận cũ hơn và ảnh chụp màn hình của chúng sẽ bị xóa vĩnh viễn.",
+    "save": "Lưu",
+    "saved": "Đã lưu. Đã xóa {{count}} biên nhận cũ."
+  },
+  "scan": {
+    "title": "Kiểm tra kỹ năng trước khi cài",
+    "intro": "Dán nội dung của một kỹ năng. Chúng tôi sẽ tìm những điểm rủi ro: tải và chạy chương trình, đọc khóa hoặc mật khẩu, văn bản ẩn và gửi dữ liệu ra ngoài.",
+    "label": "Nội dung kỹ năng",
+    "run": "Kiểm tra",
+    "running": "Đang kiểm tra…",
+    "clean": "Chúng tôi không thấy điểm rủi ro nào.",
+    "noticed": "Chúng tôi nhận thấy:",
+    "timeout": "Việc kiểm tra mất quá nhiều thời gian nên đã bị dừng. Hãy tự đọc kỹ năng trước khi cài.",
+    "error": "Kiểm tra thất bại: {{reason}}",
+    "line": "dòng {{line}}",
+    "kind": {
+      "download-and-run": "tải và chạy một chương trình",
+      "credential-path": "đọc khóa, mật khẩu hoặc dữ liệu trình duyệt",
+      "hidden-text": "có văn bản ẩn",
+      "exfiltration": "có thể gửi dữ liệu của bạn ra ngoài",
+      "model-instruction": "cố ra lệnh bí mật cho agent"
+    }
+  },
+  "decision": {
+    "proposal": "Kỹ năng “{{skill}}” xin quyền",
+    "proposalText": "Hãy mở Kỹ năng để xem mọi công cụ, trang web và tệp mà nó yêu cầu trước khi quyết định.",
+    "proposalWiden": "Nó yêu cầu nhiều hơn những gì bạn đã phê duyệt. Hãy mở Kỹ năng để xem điều gì thay đổi trước khi quyết định."
+  },
+  "find": {
+    "navHint": "Tác tử được làm gì và nhật ký",
+    "navKeywords": "phê duyệt, quyền, cho phép, nhật ký, kiểm tra"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Trợ lý được làm gì, và nhật ký việc đó"
+    },
+    "stop": {
+      "buttonLabel": "Dừng tất cả trợ lý ngay"
+    },
+    "page": {
+      "intro": "Những gì trợ lý đã làm, từng bước, và các nút kiểm soát giữ họ trong khuôn khổ."
+    },
+    "receipts": {
+      "intro": "Mỗi việc trợ lý làm đều để lại biên nhận: các bước, những gì đã dùng, những gì bạn duyệt và ai quyết định, và đã dùng bao nhiêu.",
+      "empty": "Chưa có biên nhận. Chúng xuất hiện ngay khi trợ lý làm việc gì đó.",
+      "tokens": "{{input}} đã đọc / {{output}} đã viết",
+      "kind": {
+        "usage": "Lượng đã dùng"
+      }
+    },
+    "report": {
+      "who": {
+        "automation": "thứ tự chạy",
+        "agent": "một trợ lý",
+        "system": "chính PasaBot"
+      },
+      "agent": "Trợ lý {{name}}"
+    },
+    "scan": {
+      "title": "Kiểm tra một khả năng trước khi thêm",
+      "intro": "Dán văn bản của nó. Chúng tôi tìm điều rủi ro: tải và chạy chương trình, đọc khóa hoặc mật khẩu, chữ ẩn và gửi dữ liệu ra ngoài.",
+      "label": "Văn bản của nó",
+      "timeout": "Việc kiểm tra quá lâu nên đã dừng. Hãy tự đọc trước khi thêm.",
+      "kind": {
+        "model-instruction": "cố ra lệnh bí mật cho trợ lý"
+      }
+    }
+  }
+}

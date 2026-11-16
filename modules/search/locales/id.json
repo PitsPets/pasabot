@@ -1,0 +1,24 @@
+{
+  "nav": "Cari",
+  "title": "Cari pesan",
+  "label": "Cari di chat Anda",
+  "placeholder": "Ketik kata",
+  "hint": "Menemukan kata di semua chat yang Anda ikuti, terbaru lebih dulu.",
+  "empty": "Tidak ada hasil.",
+  "untitled": "Obrolan",
+  "count_other": "{{count}} pesan",
+  "author": {
+    "user": "Orang",
+    "agent": "Agen",
+    "system": "PasaBot",
+    "external": "Eksternal"
+  },
+  "error": "Pencarian gagal. {{reason}}",
+  "tools": {
+    "search_messages": "Cari pesan"
+  },
+  "find": {
+    "navHint": "Temukan pesan apa pun di obrolan",
+    "navKeywords": "cari, temukan, pesan, riwayat"
+  }
+}

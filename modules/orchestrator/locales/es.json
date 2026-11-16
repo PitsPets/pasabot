@@ -1,0 +1,299 @@
+{
+  "defaultName": "Tala",
+  "summary": "Te hace unas preguntas rápidas y luego arma un pequeño equipo de ayudantes para que lo apruebes.",
+  "hello": "¡Hola, soy {{name}}! Voy a armar un pequeño equipo de ayudantes para ti. Solo unas preguntas rápidas: toca una respuesta o escribe la tuya.",
+  "again": "Armemos tu equipo otra vez. Unas preguntas rápidas, como antes.",
+  "change": "Claro, repasémoslo otra vez.",
+  "skipped": "Vale, por ahora solo estoy yo. Puedes armar tu equipo cuando quieras en Ajustes, en Agentes y cerebros.",
+  "q": {
+    "help": {
+      "text": "¿Con qué quieres ayuda primero?",
+      "options": {
+        "shop": "Mi tienda o negocio",
+        "home": "La casa y la familia",
+        "work": "Mi trabajo",
+        "study": "Estudios y aprendizaje"
+      }
+    },
+    "people": {
+      "text": "¿Quién más usará PasaBot?",
+      "options": {
+        "solo": "Solo yo",
+        "family": "Mi familia",
+        "team": "Mi equipo de trabajo"
+      }
+    },
+    "chat": {
+      "text": "¿Quieres hablar también con tus ayudantes desde una app de chat?",
+      "options": {
+        "none": "Ahora no",
+        "telegram": "Telegram",
+        "whatsapp": "WhatsApp",
+        "discord": "Discord",
+        "slack": "Slack"
+      }
+    },
+    "email": {
+      "text": "¿Tu equipo debería tener correo?",
+      "options": {
+        "new": "Crear un correo nuevo (yo te guío)",
+        "connect": "Conectar mi propio correo",
+        "skip": "Sin correo por ahora"
+      }
+    },
+    "askFirst": {
+      "text": "Última: ¿hay algo que siempre deban preguntarte antes?",
+      "options": {
+        "none": "Eso es todo",
+        "money": "Cualquier gasto",
+        "contact": "Contactar a alguien",
+        "files": "Cambiar mis archivos"
+      }
+    }
+  },
+  "plan": {
+    "intro": "Este es el equipo que voy a armar. Apruébalo o cámbialo.",
+    "base": "Responde en el idioma en que escribe la persona. Respuestas cortas y sencillas. Pregunta siempre al dueño antes de gastar dinero, enviar mensajes a otras personas o borrar algo.",
+    "detail": "Lo que te dijo el dueño sobre esto: {{what}}",
+    "roles": {
+      "shop": {
+        "job": "Atiende pedidos y preguntas de clientes de tu tienda."
+      },
+      "money": {
+        "job": "Lleva la cuenta de ventas, gastos y quién te debe todavía.",
+        "why": "ventas y gastos"
+      },
+      "home": {
+        "job": "Planea comidas, horarios y recordatorios para la familia."
+      },
+      "work": {
+        "job": "Redacta mensajes, toma notas y sigue tus pendientes."
+      },
+      "study": {
+        "job": "Explica lecciones, te pone a prueba y te ayuda a seguir tu horario."
+      },
+      "custom": {
+        "job": "Te ayuda con: {{what}}",
+        "anything": "lo que necesites"
+      },
+      "mail": {
+        "job": "Ordena tu correo y redacta respuestas para que las revises.",
+        "why": "tu correo, con una configuración guiada corta"
+      }
+    },
+    "steps": {
+      "email-new": "Crear juntos un correo nuevo, paso a paso",
+      "email-connect": "Conecta tu correo (unos 3 minutos)",
+      "telegram": "Conectar Telegram",
+      "whatsapp": "Conectar WhatsApp",
+      "discord": "Conectar Discord",
+      "slack": "Conectar Slack",
+      "people": "Invitar a quienes lo usarán"
+    },
+    "askFirst": {
+      "money": "Pregunta también al dueño antes de cualquier gasto, por pequeño que sea.",
+      "contact": "Pregunta también al dueño antes de contactar a alguien.",
+      "files": "Pregunta también al dueño antes de cambiar cualquiera de sus archivos.",
+      "custom": "Pregunta siempre antes al dueño sobre: {{what}}"
+    },
+    "language": "El dueño eligió {{language}}: responde siempre en ese idioma, salvo que pida otro.",
+    "taglish": "El dueño eligió taglish: responde en taglish, una mezcla natural e informal de filipino e inglés, salvo que pida otro idioma."
+  },
+  "team": {
+    "ready": "¡Tu equipo está listo! Abre un ayudante para saludar."
+  },
+  "tools": {
+    "orchestrator_answer": "Guardar una respuesta de configuración",
+    "orchestrator_show_plan": "Mostrar un plan de equipo",
+    "orchestrator_create_team": "Crear el equipo aprobado"
+  },
+  "web": {
+    "skip": "Omitir por ahora",
+    "typeOwn": "O escribe tu propia respuesta abajo.",
+    "quick": "Respuestas rápidas",
+    "closed": "Configuración omitida",
+    "step": "Pregunta {{n}} de {{total}}",
+    "planTitle": "Este es el equipo que voy a armar",
+    "brain": "Cerebro: {{name}}",
+    "stepsTitle": "Pasos de configuración que abriré para ti",
+    "approve": "Aprobar",
+    "changePlan": "Cambiar",
+    "plan_approved": "Aprobado",
+    "plan_changed": "Cambiado",
+    "plan_skipped": "Omitido",
+    "open": "Chatear con {{name}}",
+    "stepsNext": "Siguientes pasos",
+    "secretsNote": "Las contraseñas y los códigos van solo en esas páginas de configuración, nunca en un chat.",
+    "ownerOnly": "Solo el dueño puede responder esto.",
+    "failed": "No funcionó. Inténtalo de nuevo.",
+    "settings": {
+      "title": "Armar mi equipo",
+      "hint": "Responde unas preguntas y obtén un equipo de ayudantes",
+      "keywords": "equipo, configuración, ayudantes, preguntas, empezar de nuevo, orquestador",
+      "body": "Tu creador de equipos hace unas preguntas cortas y luego te muestra un plan para aprobar.",
+      "again": "Armar mi equipo otra vez",
+      "working": "Abriendo…",
+      "openChat": "Abrir el creador de equipos",
+      "noBrain": "Configura primero un cerebro y vuelve a intentarlo.",
+      "continue": "Seguir armando mi equipo"
+    },
+    "summaryTitle": "Lo que me contaste"
+  },
+  "stage": {
+    "title": "Arma tu equipo",
+    "brand": "PasaBot",
+    "skip": "Omitir por ahora",
+    "back": "Atrás",
+    "next": "Continuar",
+    "progress": "Paso {{n}} de {{total}}",
+    "progressShort": "{{n}} de {{total}}",
+    "last": "¡El último!",
+    "wait": "Un momento…",
+    "slow": "Esto está tardando más de lo normal.",
+    "retry": "Reintentar",
+    "skipped": "Listo, terminamos tu equipo más tarde. Abre Ajustes y toca «Seguir armando mi equipo» para continuar donde lo dejaste.",
+    "welcome": {
+      "tag": "{{name}} · arma tu equipo",
+      "title": "¡Hola! Armemos tu propio equipo de ayudantes.",
+      "body": "Te haré unas preguntas fáciles y luego prepararé ayudantes que trabajan por ti. Unos 2 minutos.",
+      "start": "Empecemos",
+      "p1": "Sin palabras técnicas",
+      "p2": "Nada pasa sin tu visto bueno",
+      "p3": "Puedes cambiar todo después"
+    },
+    "lang": {
+      "title": "¿Qué idioma deben hablar tus ayudantes?",
+      "body": "¿Qué idioma prefieres? Todo lo que sigue usará tu elección.",
+      "other": "Otro…",
+      "otherSub": "{{names}} y más",
+      "seeAll": "Ver todos los idiomas",
+      "listTitle": "Todos los idiomas",
+      "taglish": "Taglish",
+      "taglishSample": "Hi! Ano’ng kailangan mo today?",
+      "sample": "¡Hola! ¿En qué te puedo ayudar hoy?"
+    },
+    "name": {
+      "title": "¿Cómo me vas a llamar?",
+      "body": "Voy a dirigir tu equipo. «{{name}}» es el nombre por defecto, pero tú decides.",
+      "label": "Nombre de tu ayudante principal",
+      "hint": "¡Mi cara también cambia!",
+      "newLook": "¡Nuevo look!",
+      "ideas": "Algunas ideas:",
+      "go": "¡Que sea {{name}}!",
+      "errors": {
+        "empty": "Primero escribe un nombre.",
+        "long": "Ese nombre es muy largo. Usa hasta {{max}} letras.",
+        "bad": "Usa solo letras, sin signos especiales.",
+        "taken": "Ese nombre ya está en uso. Prueba otro."
+      }
+    },
+    "q": {
+      "sub": "Toca una opción o cuéntamelo con tus palabras.",
+      "typeLabel": "O escríbelo aquí",
+      "typePlaceholder": "Dilo a tu manera…",
+      "other": "Otra cosa",
+      "subMulti": "Elige todas las que quieras, o cuéntamelo con tus palabras."
+    },
+    "plan": {
+      "title": "Este es el equipo que voy a armar para ti",
+      "lead": "Yo soy quien dirige. Hablas conmigo y yo les doy las tareas.",
+      "because": "Porque: {{what}}",
+      "arriving": "Llegando…",
+      "change": "Quiero cambiar algo",
+      "approve": "Aprobar el equipo",
+      "picks": "Lo que elegiste",
+      "pick": {
+        "language": "Habla {{language}}",
+        "people": {
+          "solo": "Solo lo uso yo",
+          "family": "Mi familia también lo usa",
+          "team": "Mi equipo de trabajo también lo usa"
+        },
+        "chat": {
+          "none": "Sin app de chat por ahora",
+          "telegram": "Chatear por Telegram",
+          "whatsapp": "Chatear por WhatsApp",
+          "discord": "Chatear por Discord",
+          "slack": "Chatear por Slack"
+        },
+        "email": {
+          "new": "Un correo nuevo, creado juntos paso a paso",
+          "connect": "Conectar mi propio correo (unos 3 minutos)",
+          "skip": "Sin correo por ahora"
+        },
+        "askFirst": {
+          "none": "Nada más que preguntar antes",
+          "money": "Pregunta antes de cualquier gasto",
+          "contact": "Pregunta antes de contactar a alguien",
+          "files": "Pregunta antes de cambiar mis archivos"
+        }
+      }
+    },
+    "done": {
+      "title": "¡Tu equipo está listo!",
+      "body": "Ya está todo listo. Solo habla con {{name}}, que se encarga del resto.",
+      "open": "Abrir PasaBot",
+      "chats": "Tus chats",
+      "lead": "Líder del equipo · Listo",
+      "ready": "Listo",
+      "pinned": "{{name}} siempre queda arriba",
+      "next": {
+        "title": "Siguiente paso",
+        "new": "{{name}} te ayudará a crear tu correo nuevo, paso a paso, en su chat.",
+        "newGo": "Crear mi correo nuevo con {{name}}",
+        "connect": "Conecta tu correo ahora. Tarda unos 3 minutos.",
+        "connectGo": "Conectar mi correo"
+      }
+    },
+    "summary": {
+      "body": "¡Tu equipo está armado! Esto es lo que me contaste y tus ayudantes.",
+      "language": "Idioma"
+    }
+  },
+  "summaryLead": "Cuida de tu equipo: pasa cada tarea al ayudante adecuado y puede añadir o cambiar ayudantes cuando se lo pidas.",
+  "oks": {
+    "title": "Algunas cosas necesitan tu OK",
+    "sub": "{{name}} y el equipo pueden hacer más con esto. Tú decides cada cosa y nada se activa hasta que toques.",
+    "email": {
+      "title": "Conecta tu correo",
+      "why": "Para que el ayudante de correo lea el correo nuevo y te diga lo importante.",
+      "yes": "Conectar"
+    },
+    "chat": {
+      "title": "Conectar {{app}}",
+      "why": "Para hablar con tus ayudantes también en {{app}}.",
+      "yes": "Conectar"
+    },
+    "apps": {
+      "title": "Conectar {{app}}",
+      "why": "Tus ayudantes podrán usar {{app}} por ti cuando esté conectado.",
+      "yes": "Conectar"
+    },
+    "browser": {
+      "title": "Deja que los ayudantes usen su propio navegador",
+      "why": "Abren sitios web en un navegador aparte que puedes ver. Nunca inician sesión ni pagan por ti.",
+      "yes": "Permitir"
+    },
+    "computer": {
+      "title": "Deja que un ayudante use esta computadora",
+      "why": "Podría ver la pantalla y usar el ratón y el teclado. Te pregunta antes cada vez.",
+      "yes": "Configurar"
+    },
+    "ask": {
+      "title": "Elige cada cuánto preguntan antes los ayudantes",
+      "why": "Elige cuándo te consultan antes de actuar. Dinero y mensajes siempre preguntan.",
+      "yes": "Elegir"
+    },
+    "alerts": {
+      "title": "Recibe un aviso cuando un ayudante te necesite",
+      "why": "Te avisaremos en este dispositivo cuando algo necesite tu OK.",
+      "yes": "Activar"
+    },
+    "laterBtn": "Más tarde",
+    "notNow": "Ahora no",
+    "opened": "Abierto. Termínalo en esa página",
+    "later": "Más tarde: {{name}} te lo recordará en el chat",
+    "continue": "Continuar",
+    "continueLater": "Continuar, lo demás luego"
+  }
+}

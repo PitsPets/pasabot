@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleName</key>
+  <string>PasaBot</string>
+  <key>CFBundleDisplayName</key>
+  <string>PasaBot</string>
+  <key>CFBundleIdentifier</key>
+  <string>local.pasabot.desktop</string>
+  <key>CFBundleIconFile</key>
+  <string>PasaBot</string>
+  <key>CFBundleExecutable</key>
+  <string>PasaBot</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleShortVersionString</key>
+  <string>__VERSION__</string>
+  <key>CFBundleVersion</key>
+  <string>__VERSION__</string>
+  <key>LSMinimumSystemVersion</key>
+  <string>12.0</string>
+  <key>LSApplicationCategoryType</key>
+  <string>public.app-category.productivity</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>PasaBot uses the microphone when you talk to it by voice.</string>
+  <key>NSCameraUsageDescription</key>
+  <string>PasaBot uses the camera only when you turn it on yourself.</string>
+  <key>NSHighResolutionCapable</key>
+  <true/>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>en</string>
+  <key>CFBundleLocalizations</key>
+  <array>
+    <string>ar</string>
+    <string>de</string>
+    <string>en</string>
+    <string>es</string>
+    <string>fil</string>
+    <string>fr</string>
+    <string>hi</string>
+    <string>id</string>
+    <string>ja</string>
+    <string>ko</string>
+    <string>pt-BR</string>
+    <string>vi</string>
+    <string>zh-Hans</string>
+    <string>zh-Hant</string>
+  </array>
+</dict>
+</plist>

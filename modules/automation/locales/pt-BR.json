@@ -1,0 +1,55 @@
+{
+  "settings": "Automação",
+  "intro": "Deixe scripts neste computador iniciarem trabalho em um agente com o comando pasabot run ou a API local. Cada agente tem seu próprio interruptor e seus tokens. Os tokens agem com confiança Padrão no máximo, então qualquer ação arriscada ainda pede sua aprovação antes.",
+  "loadError": "Não foi possível carregar as configurações de automação.",
+  "noAgents": "Nenhum agente ainda.",
+  "agent": {
+    "switch": "Permitir automação para {{name}}",
+    "on": "Ligada",
+    "off": "Desligada",
+    "tokens": "{{count}} token(s) ativo(s)"
+  },
+  "form": {
+    "title": "Novo token para {{name}}",
+    "label": "Nome do token",
+    "labelHint": "Onde ele será usado, por exemplo \"scripts do notebook\".",
+    "expiry": "Expira",
+    "days30": "Em 30 dias",
+    "days90": "Em 90 dias",
+    "days365": "Em um ano",
+    "never": "Nunca",
+    "remote": "Permitir também de outros dispositivos (não só deste computador)",
+    "remoteHint": "Deixe desligado, a menos que um script em outra máquina precise. Páginas de navegador nunca podem usar um token.",
+    "create": "Criar token",
+    "creating": "Criando…"
+  },
+  "created": {
+    "title": "Copie este token agora",
+    "body": "Ele é mostrado só uma vez. Guarde-o em um lugar seguro, como um gerenciador de senhas.",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "usage": "Experimente:",
+    "done": "Pronto"
+  },
+  "list": {
+    "title": "Tokens",
+    "empty": "Nenhum token ainda.",
+    "revoke": "Revogar",
+    "revoked": "Revogado",
+    "expires": "Expira {{when}}",
+    "noExpiry": "Nunca expira",
+    "lastUsed": "Último uso {{when}}",
+    "neverUsed": "Nunca usado",
+    "remote": "Outros dispositivos permitidos",
+    "localOnly": "Somente este computador"
+  },
+  "find": {
+    "settingsHint": "Webhooks e gatilhos que iniciam agentes",
+    "settingsKeywords": "webhook, gatilho, automação, eventos"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Inicie um ajudante quando algo acontecer"
+    }
+  }
+}

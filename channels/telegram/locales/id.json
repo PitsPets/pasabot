@@ -1,0 +1,19 @@
+{
+  "name": "Telegram",
+  "config": {
+    "botToken": "Token bot",
+    "botTokenHint": "Dari bot yang Anda buat di Telegram. Disimpan di vault, tidak akan ditampilkan lagi.",
+    "apiBase": "Alamat Bot API",
+    "apiBaseHint": "Biarkan apa adanya kecuali Anda menjalankan server Bot API sendiri."
+  },
+  "link": {
+    "howTo": "Buka chat langsung dengan bot Anda dan kirim: /link {{code}}",
+    "dmOnly": "Kode tautan hanya berfungsi di chat langsung dengan bot."
+  },
+  "status": {
+    "connected": "Terhubung",
+    "reconnecting": "Menghubungkan ulang…",
+    "auth_failed": "Token bot ditolak",
+    "stopped": "Berhenti"
+  }
+}

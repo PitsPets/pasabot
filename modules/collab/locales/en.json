@@ -1,0 +1,110 @@
+{
+  "nav": "Agent tasks",
+  "page": {
+    "title": "Agent tasks",
+    "intro": "Work your agents gave each other: messages, delegated tasks, handoffs and files. Each one runs at the lower trust of the two agents.",
+    "empty": "No agent has given another agent work yet.",
+    "reload": "Refresh"
+  },
+  "kind": {
+    "delegate": "Delegated",
+    "message": "Message",
+    "handoff": "Handoff",
+    "file": "File"
+  },
+  "state": {
+    "queued": "Waiting",
+    "leased": "Starting",
+    "running": "Working",
+    "done": "Done",
+    "failed": "Failed",
+    "cancelled": "Stopped",
+    "interrupted": "Interrupted"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "Runs as {{trust}}",
+    "acked": "Acknowledged",
+    "ackWaiting": "Waiting for acknowledgement",
+    "reply": "Reply"
+  },
+  "trust": {
+    "guarded": "guarded",
+    "standard": "standard",
+    "trusted": "trusted"
+  },
+  "team": {
+    "open": "Team",
+    "openLead": "Team · {{lead}} leads",
+    "title": "Who can use this agent",
+    "lead": "Lead (answers new messages)",
+    "leadHint": "Only the lead replies to people here. Pick another agent to hand the lead over.",
+    "makeLead": "Make lead",
+    "isLead": "Leads now",
+    "state": {
+      "active": "Active",
+      "stopped": "Stopped",
+      "archived": "Archived"
+    },
+    "stop": "Stop all work",
+    "stopHint": "Cancels what the agents are doing here and holds new messages until you resume.",
+    "resume": "Resume",
+    "archive": "Archive channel",
+    "archiveConfirm": "Tap again to archive",
+    "silentTitle": "When the lead stays silent",
+    "silentRetry": "Ask the lead once more",
+    "on": "On",
+    "off": "Off",
+    "backup": "Then answer with",
+    "backupNone": "Nobody (tell me instead)",
+    "backupModel": "Backup model (optional)",
+    "backupHint": "If the lead gives no answer after the retry, this provider answers that message for it.",
+    "save": "Save",
+    "saved": "Saved",
+    "error": "That did not work: {{message}}"
+  },
+  "subagent": {
+    "start": "Sub-agent {{name}} started",
+    "end": "Sub-agent {{name}} finished"
+  },
+  "reactions": {
+    "label": "{{emoji}} from {{count}}",
+    "group": "Reactions",
+    "button": "React",
+    "add": "Add a reaction",
+    "pick": "Pick a reaction",
+    "react": "React with {{emoji}}",
+    "remove": "Remove your {{emoji}}"
+  },
+  "tools": {
+    "collab_agents": "List agents",
+    "collab_delegate": "Delegate a task",
+    "collab_message": "Message an agent",
+    "collab_handoff": "Hand off",
+    "collab_status": "Task status",
+    "collab_wait": "Wait for a task",
+    "collab_interrupt": "Interrupt a task",
+    "collab_ack": "Acknowledge a task",
+    "collab_react": "React to a message",
+    "collab_send_file": "Send a file to an agent"
+  },
+  "server": {
+    "silent": "{{name}} is silent in {{chat}}",
+    "aChannel": "a channel"
+  },
+  "find": {
+    "navHint": "Agents working together on one job",
+    "navKeywords": "team, together, group, collaborate"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Helpers working together on one job"
+    },
+    "nav": "Helpers' tasks",
+    "page": {
+      "title": "Helpers’ tasks",
+      "intro": "Work your helpers gave each other: messages, passed-on jobs, hand-overs and files. Each one runs with the more careful setting of the two helpers.",
+      "empty": "No helper has given another helper work yet."
+    }
+  }
+}

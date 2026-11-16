@@ -1,0 +1,31 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "trello",
+  "name": "Trello",
+  "version": "1.0.0",
+  "category": "work-tasks",
+  "summary": "Trello's own hosted MCP server (Atlassian). Sign in with Trello in your browser. It archives instead of deleting.",
+  "homepage": "https://trello.com",
+  "source": "https://support.atlassian.com/trello/docs/connect-trello-to-ai-assistants-with-trello-mcp/",
+  "group": "work-tasks",
+  "popular": true,
+  "kind": "mcp-http",
+  "mcp": {
+    "url": "https://mcp.trello.com/v1",
+    "headers": {
+      "Authorization": "Bearer {{secret:oauth_token}}"
+    }
+  },
+  "auth": {
+    "type": "oauth2_pkce",
+    "oauth": {
+      "discover": "mcp",
+      "clientIdFrom": "register"
+    }
+  },
+  "network": {
+    "allowHosts": []
+  },
+  "defaultTier": 2,
+  "toolClasses": {}
+}

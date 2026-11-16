@@ -1,0 +1,110 @@
+{
+  "nav": "エージェントのタスク",
+  "page": {
+    "title": "エージェントのタスク",
+    "intro": "エージェント同士が依頼し合った作業です(メッセージ、委任されたタスク、引き継ぎ、ファイル)。それぞれ、2つのエージェントのうち低い方の信頼レベルで実行されます。",
+    "empty": "他のエージェントに作業を依頼したエージェントはまだありません。",
+    "reload": "更新"
+  },
+  "kind": {
+    "delegate": "委任",
+    "message": "メッセージ",
+    "handoff": "引き継ぎ",
+    "file": "ファイル"
+  },
+  "state": {
+    "queued": "待機中",
+    "leased": "開始中",
+    "running": "作業中",
+    "done": "完了",
+    "failed": "失敗",
+    "cancelled": "停止済み",
+    "interrupted": "中断"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "{{trust}}で実行",
+    "acked": "受信確認済み",
+    "ackWaiting": "受信確認待ち",
+    "reply": "返信"
+  },
+  "trust": {
+    "guarded": "保護",
+    "standard": "標準",
+    "trusted": "信頼"
+  },
+  "team": {
+    "open": "チーム",
+    "openLead": "チーム · リード: {{lead}}",
+    "title": "このエージェントを使える人",
+    "lead": "リード(新着メッセージに返信)",
+    "leadHint": "ここで人に返信するのはリードだけです。別のエージェントを選ぶと、リードを交代できます。",
+    "makeLead": "リードにする",
+    "isLead": "現在のリード",
+    "state": {
+      "active": "稼働中",
+      "stopped": "停止中",
+      "archived": "アーカイブ済み"
+    },
+    "stop": "すべての作業を停止",
+    "stopHint": "ここでエージェントが行っている作業を取り消し、再開するまで新しいメッセージを保留します。",
+    "resume": "再開",
+    "archive": "チャンネルをアーカイブ",
+    "archiveConfirm": "もう一度タップするとアーカイブします",
+    "silentTitle": "リードが応答しないとき",
+    "silentRetry": "リードにもう一度依頼する",
+    "on": "オン",
+    "off": "オフ",
+    "backup": "その後の返信担当",
+    "backupNone": "なし(代わりに自分に通知)",
+    "backupModel": "予備モデル(任意)",
+    "backupHint": "再試行してもリードが応答しない場合、このプロバイダーが代わりにそのメッセージに返信します。",
+    "save": "保存",
+    "saved": "保存しました",
+    "error": "うまくいきませんでした: {{message}}"
+  },
+  "subagent": {
+    "start": "サブエージェント {{name}} を開始しました",
+    "end": "サブエージェント {{name}} が完了しました"
+  },
+  "reactions": {
+    "label": "{{count}}人から{{emoji}}",
+    "group": "リアクション",
+    "button": "リアクション",
+    "add": "リアクションを追加",
+    "pick": "リアクションを選択",
+    "react": "{{emoji}}でリアクション",
+    "remove": "{{emoji}}を取り消す"
+  },
+  "tools": {
+    "collab_agents": "エージェント一覧",
+    "collab_delegate": "タスクを任せる",
+    "collab_message": "エージェントにメッセージ",
+    "collab_handoff": "引き継ぐ",
+    "collab_status": "タスクの状況",
+    "collab_wait": "タスクを待つ",
+    "collab_interrupt": "タスクを中断",
+    "collab_ack": "タスクを了承",
+    "collab_react": "メッセージにリアクション",
+    "collab_send_file": "エージェントにファイルを送る"
+  },
+  "server": {
+    "silent": "{{name}}が{{chat}}で応答していません",
+    "aChannel": "チャンネル"
+  },
+  "find": {
+    "navHint": "複数のエージェントで一つの仕事",
+    "navKeywords": "チーム, 一緒, グループ, 協力"
+  },
+  "plain": {
+    "find": {
+      "navHint": "お手伝いが一緒に一つの仕事をする"
+    },
+    "nav": "お手伝いの仕事",
+    "page": {
+      "title": "お手伝いの仕事",
+      "intro": "お手伝い同士で渡し合った仕事：メッセージ、任せた仕事、引き継ぎ、ファイル。それぞれ二人のうち慎重な方の設定で動きます。",
+      "empty": "まだほかのお手伝いに仕事を渡したお手伝いはいません。"
+    }
+  }
+}

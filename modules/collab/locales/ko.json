@@ -1,0 +1,110 @@
+{
+  "nav": "에이전트 작업",
+  "page": {
+    "title": "에이전트 작업",
+    "intro": "에이전트끼리 주고받은 작업이에요: 메시지, 위임한 작업, 인계, 파일이 있어요. 각 작업은 두 에이전트 중 낮은 신뢰 수준으로 실행돼요.",
+    "empty": "다른 에이전트에게 작업을 맡긴 에이전트가 아직 없어요.",
+    "reload": "새로고침"
+  },
+  "kind": {
+    "delegate": "위임",
+    "message": "메시지",
+    "handoff": "인계",
+    "file": "파일"
+  },
+  "state": {
+    "queued": "대기 중",
+    "leased": "시작 중",
+    "running": "작업 중",
+    "done": "완료",
+    "failed": "실패",
+    "cancelled": "중단됨",
+    "interrupted": "끊김"
+  },
+  "task": {
+    "route": "{{from}} → {{to}}",
+    "trust": "{{trust}} 수준으로 실행",
+    "acked": "확인함",
+    "ackWaiting": "확인 대기 중",
+    "reply": "답장"
+  },
+  "trust": {
+    "guarded": "보호",
+    "standard": "표준",
+    "trusted": "신뢰"
+  },
+  "team": {
+    "open": "팀",
+    "openLead": "팀 · 리더 {{lead}}",
+    "title": "이 에이전트를 쓸 수 있는 사람",
+    "lead": "리더 (새 메시지에 답변)",
+    "leadHint": "여기서는 리더만 사람들에게 답해요. 다른 에이전트를 선택하면 리더를 넘겨줄 수 있어요.",
+    "makeLead": "리더로 지정",
+    "isLead": "현재 리더",
+    "state": {
+      "active": "활성",
+      "stopped": "중지됨",
+      "archived": "보관됨"
+    },
+    "stop": "모든 작업 중지",
+    "stopHint": "여기서 에이전트가 하던 일을 취소하고, 다시 시작할 때까지 새 메시지를 보류해요.",
+    "resume": "다시 시작",
+    "archive": "채널 보관",
+    "archiveConfirm": "한 번 더 누르면 보관돼요",
+    "silentTitle": "리더가 답하지 않을 때",
+    "silentRetry": "리더에게 한 번 더 요청",
+    "on": "켜짐",
+    "off": "꺼짐",
+    "backup": "그다음 답변할 대상",
+    "backupNone": "없음 (저에게 알림)",
+    "backupModel": "대체 모델 (선택)",
+    "backupHint": "다시 요청한 뒤에도 리더가 답하지 않으면, 이 제공자가 대신 해당 메시지에 답해요.",
+    "save": "저장",
+    "saved": "저장됨",
+    "error": "실패했어요: {{message}}"
+  },
+  "subagent": {
+    "start": "하위 에이전트 {{name}} 시작",
+    "end": "하위 에이전트 {{name}} 완료"
+  },
+  "reactions": {
+    "label": "{{count}}명이 {{emoji}}",
+    "group": "반응",
+    "button": "반응",
+    "add": "반응 추가",
+    "pick": "반응 선택",
+    "react": "{{emoji}}로 반응",
+    "remove": "내 {{emoji}} 삭제"
+  },
+  "tools": {
+    "collab_agents": "에이전트 목록",
+    "collab_delegate": "작업 맡기기",
+    "collab_message": "에이전트에게 메시지",
+    "collab_handoff": "넘겨주기",
+    "collab_status": "작업 상태",
+    "collab_wait": "작업 기다리기",
+    "collab_interrupt": "작업 중단",
+    "collab_ack": "작업 확인",
+    "collab_react": "메시지에 반응",
+    "collab_send_file": "에이전트에게 파일 보내기"
+  },
+  "server": {
+    "silent": "{{name}}이(가) {{chat}}에서 응답하지 않습니다",
+    "aChannel": "채널"
+  },
+  "find": {
+    "navHint": "여러 에이전트가 함께 하는 작업",
+    "navKeywords": "팀, 함께, 그룹, 협업"
+  },
+  "plain": {
+    "find": {
+      "navHint": "도우미들이 함께 하는 한 가지 일"
+    },
+    "nav": "도우미 할 일",
+    "page": {
+      "title": "도우미들의 일",
+      "intro": "도우미끼리 주고받은 일이에요: 메시지, 넘긴 일, 인계, 파일. 각각 두 도우미 중 더 조심스러운 설정으로 돌아가요.",
+      "empty": "아직 다른 도우미에게 일을 준 도우미가 없어요."
+    }
+  }
+}

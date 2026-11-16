@@ -1,0 +1,113 @@
+{
+  "nav": "浏览器",
+  "page": {
+    "title": "浏览器",
+    "intro": "您的 agent 可使用的浏览器配置文件。每个配置文件都有独立的 Cookie 和登录状态、颜色及代理。您可以实时观看、亲自操控，或在聊天时弹出小窗。",
+    "empty": "还没有浏览器配置文件。agent 首次浏览时会自动创建，您也可以现在添加。",
+    "ownerOnly": "只有 owner 可以查看和使用浏览器配置文件。"
+  },
+  "badge": {
+    "running": "运行中",
+    "loggedIn": "含您的登录状态",
+    "proxy": "代理"
+  },
+  "profile": {
+    "via": "通过 {{server}}",
+    "loggedInNote": "agent 使用此配置文件前，必须先征得您同意，并通过您的密码或 passkey 验证。",
+    "defaultName": "智能体浏览器"
+  },
+  "actions": {
+    "new": "新建配置文件",
+    "watch": "观看",
+    "start": "启动",
+    "stop": "停止",
+    "edit": "编辑",
+    "delete": "删除",
+    "deleteConfirm": "删除 {{name}} 及其 Cookie 和登录状态？此操作无法撤销。",
+    "pip": "弹出小窗",
+    "full": "全屏查看",
+    "closePip": "关闭",
+    "closeView": "关闭视图"
+  },
+  "form": {
+    "newTitle": "新建浏览器配置文件",
+    "editTitle": "编辑浏览器配置文件",
+    "name": "名称",
+    "color": "颜色",
+    "proxy": "代理（可选）",
+    "proxyHint": "以 http://、https:// 或 socks5:// 开头，并包含主机和端口。下次启动浏览器时生效。",
+    "bypass": "不使用代理的地址",
+    "username": "代理用户名",
+    "password": "代理密码",
+    "passwordVault": "保存在 vault 中，不会再次显示。",
+    "passwordKeep": "留空则保留已保存的密码。",
+    "loggedIn": "此配置文件含有我的登录状态（agent 须先征得同意）",
+    "save": "保存",
+    "cancel": "取消"
+  },
+  "live": {
+    "title": "{{name}} 实时画面",
+    "alt": "{{name}} 浏览器的实时画面",
+    "waiting": "正在等待第一帧画面…",
+    "stopped": "此浏览器未在运行。"
+  },
+  "steer": {
+    "address": "地址",
+    "go": "打开",
+    "type": "在页面中输入",
+    "typeHint": "请先在画面中点击一个输入框。输入内容会将此配置文件标记为含有您的登录状态。",
+    "send": "输入"
+  },
+  "keys": {
+    "Enter": "回车",
+    "Tab": "Tab",
+    "Backspace": "退格",
+    "Escape": "Esc",
+    "up": "向上滚动",
+    "down": "向下滚动"
+  },
+  "network": {
+    "title": "本地地址",
+    "allowHosts": "允许浏览器打开的本地网络主机",
+    "hint": "私有地址和环回地址会被阻止，除非在此列出，多个地址用英文逗号分隔。",
+    "save": "保存",
+    "saved": "已保存。"
+  },
+  "pip": {
+    "label": "浏览器画中画"
+  },
+  "dock": {
+    "label": "浏览器",
+    "idle": "当前没有运行中的浏览器。"
+  },
+  "tools": {
+    "browser_navigate": "浏览器：打开网页",
+    "browser_snapshot": "浏览器：读取网页",
+    "browser_click": "浏览器：点击",
+    "browser_type": "浏览器：在输入框中输入"
+  },
+  "server": {
+    "yourTurn": "轮到你在浏览器中操作"
+  },
+  "find": {
+    "navHint": "让智能体使用浏览器",
+    "navKeywords": "网页, 浏览, 网站, 互联网"
+  },
+  "plain": {
+    "find": {
+      "navHint": "让助手使用网页浏览器"
+    },
+    "page": {
+      "intro": "你的助手能用的浏览器。每个都有自己的登录、颜色和设置。可以实时观看、亲自操控，或在聊天时单独弹出。",
+      "empty": "还没有浏览器。助手第一次上网时会建一个，你也可以现在添加。"
+    },
+    "profile": {
+      "loggedInNote": "助手使用这个浏览器前，必须用你的密码或通行密钥问你。",
+      "defaultName": "助手的浏览器"
+    },
+    "form": {
+      "passwordVault": "安全保存在这台电脑上，不会再显示。",
+      "loggedIn": "这个浏览器有我的登录（助手必须先问）"
+    }
+  }
+}

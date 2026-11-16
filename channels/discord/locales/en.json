@@ -1,0 +1,20 @@
+{
+  "name": "Discord",
+  "config": {
+    "botToken": "Bot token",
+    "botTokenHint": "From your application's Bot page in the Discord developer portal. Turn on the Message Content intent there. Stored in the vault, never shown again.",
+    "apiBase": "API address",
+    "gatewayUrl": "Gateway address",
+    "advancedHint": "Leave these as they are unless you know you need to change them."
+  },
+  "link": {
+    "howTo": "Send your bot a direct message: /link {{code}}",
+    "dmOnly": "The link code works only in a direct message to the bot."
+  },
+  "status": {
+    "connected": "Connected",
+    "reconnecting": "Reconnecting…",
+    "auth_failed": "Discord refused the bot (check the token and the Message Content intent)",
+    "stopped": "Stopped"
+  }
+}

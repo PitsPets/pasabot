@@ -1,0 +1,151 @@
+{
+  "nav": "Budget",
+  "page": {
+    "title": "Budget",
+    "intro": "Was deine Agents kosten, welche Preise du zahlst und welche Limits sie stoppen. Preise stammen nur aus deiner Tabelle: Für ein Modell ohne Preis wird nie geschätzt."
+  },
+  "spend": {
+    "title": "Ausgaben",
+    "today": "Heute",
+    "month": "Diesen Monat",
+    "total": "Gesamt",
+    "none": "Noch nichts ausgegeben.",
+    "byAgent": "Nach Agent",
+    "byModel": "Nach Modell",
+    "runs": "{{count}} Läufe",
+    "tokens": "{{input}} rein · {{output}} raus · {{cache}} aus Cache",
+    "priceNotSet": "Preis nicht festgelegt",
+    "unpriced": "{{count}} Läufe haben noch keinen Preis und werden nicht mitgezählt."
+  },
+  "prices": {
+    "title": "Preistabelle",
+    "intro": "Pro Million Tokens, in einer Währung pro Modell. Modelle, die deine Agents genutzt haben, erscheinen hier; lege einen Preis fest, damit sie mitgezählt werden.",
+    "model": "Modell",
+    "default": "(Standardmodell)",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "cached": "Aus Cache",
+    "currency": "Währung",
+    "save": "Preis speichern",
+    "saved": "Preis gespeichert.",
+    "remove": "Preis entfernen",
+    "add": "Modell hinzufügen",
+    "provider": "Brain",
+    "empty": "Noch keine Modelle. Sie erscheinen nach der ersten Antwort eines Agents.",
+    "providerMissing": "Zuerst den Namen des Gehirns eingeben"
+  },
+  "caps": {
+    "title": "Limits",
+    "intro": "Wenn ein Limit erreicht ist, hält der Agent sauber an, neue Aufgaben warten und Routinen werden übersprungen. Nur du kannst ein Limit erhöhen.",
+    "everyone": "Alle Agents",
+    "day": "Pro Tag",
+    "month": "Pro Monat",
+    "none": "Kein Limit",
+    "spent": "{{spent}} von {{cap}} {{currency}}",
+    "save": "Limits speichern",
+    "saved": "Limits gespeichert.",
+    "uncovered": "Zählt zu keinem Limit, bis es einen Preis in der Währung der Limits hat: {{models}}.",
+    "oneCurrency": "Limits und Preise müssen alle dieselbe Währung verwenden. Stelle sie zuerst auf dieselbe Währung um."
+  },
+  "card": {
+    "who": {
+      "global": "Alle Agents",
+      "agent": "{{name}}"
+    },
+    "reached": "{{who}} hat das {{period}} erreicht: {{spent}} von {{cap}} {{currency}}.",
+    "period": {
+      "day": "Tagesbudget",
+      "month": "Monatsbudget"
+    },
+    "stopped": "{{name}} wurde angehalten. Was bisher geschrieben wurde, bleibt erhalten.",
+    "held": "Neue Aufgaben warten, bis das Limit zurückgesetzt wird oder du es erhöhst.",
+    "skipped": "Ein Routinelauf wurde übersprungen.",
+    "ask": "Limit erhöhen oder beibehalten?",
+    "newCap": "Neues Limit ({{currency}})",
+    "raise": "Limit erhöhen",
+    "keep": "Limit beibehalten",
+    "raised": "Limit auf {{cap}} {{currency}} erhöht.",
+    "kept": "Limit bleibt bei {{cap}} {{currency}}.",
+    "failed": "Das hat nicht geklappt. Nur der Owner kann ein Limit ändern."
+  },
+  "bundle": {
+    "title": "Agent umziehen (verschlüsselt)",
+    "intro": "Eine Datei mit Einstellungen, Memory, Workspace, Skills und Chats des Agents, gesichert mit einer Passphrase. Beim Import entsteht immer ein neuer Agent.",
+    "agent": "Agent",
+    "passphrase": "Passphrase",
+    "passphraseHint": "Mindestens 8 Zeichen. Ohne sie lässt sich die Datei nicht öffnen.",
+    "vault": "Vault-Einträge dieses Agents einschließen",
+    "vaultHint": "Standardmäßig aus. Erfordert erneut dein Passwort.",
+    "password": "Dein Passwort",
+    "export": "Verschlüsselte Datei herunterladen",
+    "exported": "Datei heruntergeladen.",
+    "file": "Bundle-Datei",
+    "import": "Als neuen Agent importieren",
+    "imported": "Als {{name}} importiert.",
+    "open": "Chat öffnen",
+    "error": {
+      "bad_passphrase_or_tampered": "Falsche Passphrase oder die Datei wurde verändert. Es wurde nichts importiert.",
+      "unsafe_path": "Die Datei enthält unsichere Pfade. Es wurde nichts importiert.",
+      "unsupported_version": "Diese Datei stammt von einem neueren PasaBot. Es wurde nichts importiert.",
+      "not_a_bundle": "Das ist keine PasaBot-Agent-Datei.",
+      "reauth_required": "Zum Einschließen von Vault-Einträgen ist dein Passwort nötig.",
+      "builtin_agent": "Der Team-Bauer gehört zu PasaBot und wird daher nicht in einer Datei gespeichert. Deine anderen Agenten schon.",
+      "other": "Das hat nicht geklappt."
+    }
+  },
+  "server": {
+    "allAgents": "Alle Agenten",
+    "capHeadDay": "{{what}}: Tagesbudget erreicht ({{spent}} von {{cap}} {{currency}}).",
+    "capHeadMonth": "{{what}}: Monatsbudget erreicht ({{spent}} von {{cap}} {{currency}}).",
+    "capStopped": "{{name}} wurde gestoppt; was bisher geschrieben wurde, bleibt erhalten.",
+    "capHeld": "Neue Arbeit wartet, bis das Limit zurückgesetzt wird oder du es erhöhst.",
+    "capSkipped": "Ein Routinelauf wurde übersprungen.",
+    "capCard": "{{head}} {{tail}}"
+  },
+  "find": {
+    "navHint": "Ausgabengrenzen für deine Agenten",
+    "navKeywords": "Budget, Limit, Geld, Obergrenze, Ausgaben"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Ausgabengrenzen für deine Helfer"
+    },
+    "page": {
+      "intro": "Was deine Helfer kosten, welche Preise du zahlst und welche Grenzen sie stoppen. Preise kommen nur aus deiner Tabelle: Ein Gehirn ohne Preis wird nie geschätzt."
+    },
+    "spend": {
+      "byAgent": "Nach Helfer",
+      "byModel": "Nach Gehirn-Version"
+    },
+    "prices": {
+      "intro": "Preis pro Million Textstücke, eine Währung pro Gehirn-Version. Versionen, die deine Helfer genutzt haben, erscheinen hier; setz einen Preis, damit sie zählen.",
+      "model": "Gehirn-Version",
+      "default": "(übliche Version)",
+      "add": "Version hinzufügen",
+      "empty": "Noch nichts. Sie erscheinen nach der ersten Antwort eines Helfers."
+    },
+    "caps": {
+      "intro": "Ist eine Grenze erreicht, hört der Helfer sauber auf, neue Arbeit wartet und Routinen fallen aus. Nur du kannst eine Grenze anheben.",
+      "everyone": "Alle Helfer",
+      "uncovered": "Zählt zu keiner Grenze, bis es einen Preis in der Währung der Grenzen hat: {{models}}."
+    },
+    "card": {
+      "who": {
+        "global": "Alle Helfer"
+      }
+    },
+    "bundle": {
+      "title": "Einen Helfer umziehen (gesperrte Datei)",
+      "intro": "Eine Datei mit Einstellungen, Gedächtnis, Dateien, Fähigkeiten und Chats des Helfers, mit einer Passphrase gesperrt. Beim Einlesen entsteht immer ein neuer Helfer.",
+      "agent": "Helfer",
+      "vault": "Gespeicherte Geheimnisse dieses Helfers mitnehmen",
+      "file": "Helfer-Datei",
+      "import": "Als neuen Helfer einlesen",
+      "error": {
+        "not_a_bundle": "Das ist keine PasaBot-Helfer-Datei.",
+        "reauth_required": "Dein Passwort wird gebraucht, um gespeicherte Geheimnisse mitzunehmen.",
+        "builtin_agent": "Dein Team-Baumeister gehört zu PasaBot und wird nicht in eine Datei gespeichert. Deine anderen Helfer schon."
+      }
+    }
+  }
+}

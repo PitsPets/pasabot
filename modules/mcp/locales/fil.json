@@ -1,0 +1,113 @@
+{
+  "nav": "Mga MCP server",
+  "page": {
+    "title": "Mga MCP server",
+    "intro": "Mga panlabas na tool server na magagamit ng mga agent mo. Magdagdag, i-test, i-on, saka piliin kung aling mga agent ang puwedeng gumamit."
+  },
+  "loading": "Naglo-load…",
+  "empty": "Wala pang MCP server. Magdagdag dito, o mag-install ng connector.",
+  "transport": {
+    "stdio": "Command sa makinang ito",
+    "http": "Web address"
+  },
+  "level": {
+    "none": "Nakatago",
+    "use": "Puwedeng gamitin",
+    "manage": "Puwedeng ayusin",
+    "inherit": "Default ({{level}})"
+  },
+  "access": {
+    "title": "Sino ang puwedeng gumamit",
+    "hint": "Hindi makikita ng mga nakatagong agent ang server na ito. Ang mga puwedeng mag-ayos ay puwedeng magpalit ng pangalan o mag-off nito, pero magtatanong pa rin muna sa iyo.",
+    "all": "Lahat ng agent"
+  },
+  "server": {
+    "on": "Naka-on",
+    "off": "Naka-off",
+    "fromConnector": "Mula sa connector",
+    "tools_one": "{{count}} tool",
+    "tools_other": "{{count}} na tool",
+    "testFailed": "Pumalya ang test",
+    "secrets": "Mga sikretong nasa vault: {{names}}",
+    "test": "I-test",
+    "turnOn": "I-on",
+    "turnOff": "I-off",
+    "remove": "Alisin",
+    "removeConfirm": "Oo, alisin na"
+  },
+  "add": {
+    "open": "Magdagdag ng MCP server",
+    "title": "Bagong MCP server",
+    "name": "Pangalan",
+    "transport": "Paano ito maaabot",
+    "command": "Command",
+    "commandHint": "Ang program na bubuksan, hal. npx o docker. Bubuksan ito nang walang shell.",
+    "args": "Mga argument",
+    "argsHint": "Isa bawat linya.",
+    "env": "Mga setting (hindi sikreto)",
+    "envHint": "Isang NAME=value bawat linya.",
+    "url": "Address (https://…)",
+    "secrets": "Mga sikretong setting",
+    "secretHeaders": "Mga sikretong header",
+    "secretsHint": "Itatago sa vault. Hindi mo na ito mababasa rito, at hindi ito kailanman makikita ng mga agent.",
+    "secretName": "Pangalan",
+    "headerName": "Header",
+    "secretValue": "Value",
+    "anotherSecret": "Magdagdag pa",
+    "save": "Idagdag ang server",
+    "cancel": "Kanselahin"
+  },
+  "classes": {
+    "title": "Ano ang ginagawa ng bawat tool",
+    "hint": "Ang pagbabayad at pagpapadala ng mensahe sa ibang tao ay laging magtatanong muna sa iyo, kahit anong antas ng tiwala. Hinuhulaan ang uri ng bawat tool mula sa pangalan nito; ayusin dito kung mali ang hula.",
+    "default": "Default: {{class}}",
+    "money": "Pera (pagbili, pagbabayad)",
+    "outbound-message": "Mensahe sa ibang tao",
+    "delete": "Pagbura",
+    "publish": "Paglalathala",
+    "none": "Walang espesyal",
+    "alwaysAsks": "Laging nagtatanong"
+  },
+  "tools": {
+    "tools_find": "Maghanap ng mga tool",
+    "tools_describe": "Ilarawan ang isang tool",
+    "tools_invoke": "Gumamit ng tool mula sa labas",
+    "mcp_servers": "Ilista ang mga MCP server",
+    "mcp_server_update": "Baguhin ang MCP server"
+  },
+  "find": {
+    "navHint": "Mga tool server na matatawag ng agent",
+    "navKeywords": "kasangkapan, server, plugin, integrasyon"
+  },
+  "plain": {
+    "nav": "Mga app at tool na magagamit ng mga katulong",
+    "find": {
+      "navHint": "Mga dagdag na app na magagamit ng mga katulong mo"
+    },
+    "page": {
+      "title": "Mga app at tool na magagamit ng mga katulong",
+      "intro": "Mga app at tool mula sa labas na magagamit ng mga katulong mo. Magdagdag, i-test, i-on, saka piliin kung aling mga katulong ang puwedeng gumamit."
+    },
+    "empty": "Wala pa rito. Magdagdag dito, o magdagdag ng handang app.",
+    "access": {
+      "hint": "Hindi ito makikita ng mga nakatagong katulong. Ang mga katulong na puwedeng mag-ayos nito ay puwedeng magpalit ng pangalan o mag-off nito, pero magtatanong pa rin muna sa iyo.",
+      "all": "Lahat ng katulong"
+    },
+    "add": {
+      "open": "Magdagdag ng app o tool",
+      "title": "Bagong app o tool",
+      "secretsHint": "Ligtas na itatago sa computer na ito. Hindi mo na ito mababasa rito, at hindi ito kailanman makikita ng mga katulong.",
+      "save": "Idagdag ito",
+      "command": "Paano ito bubuksan",
+      "commandHint": "Sinasabi ng sariling setup page ng app kung ano ang isusulat dito.",
+      "args": "Mga dagdag na detalye"
+    },
+    "transport": {
+      "stdio": "Isang program sa computer na ito",
+      "http": "Isang address sa web"
+    },
+    "server": {
+      "fromConnector": "Handang app"
+    }
+  }
+}

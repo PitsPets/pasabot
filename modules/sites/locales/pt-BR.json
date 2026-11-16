@@ -1,0 +1,59 @@
+{
+  "nav": "Sites",
+  "page": {
+    "title": "Sites",
+    "intro": "Pequenas páginas web publicadas pelos seus agentes. Elas abrem no endereço separado de sites, rodam em um sandbox e não podem usar o seu login. Cada uma expira se não for renovada."
+  },
+  "refresh": "Atualizar",
+  "loading": "Carregando…",
+  "empty": "Nenhum site ainda. Quando um agente publicar um, ele aparecerá aqui.",
+  "error": "Não foi possível carregar os sites. {{reason}}",
+  "tunnel": {
+    "title": "Endereço externo",
+    "label": "Endereço do túnel para sites",
+    "hint": "Opcional. Se o seu próprio túnel aponta para o endereço de sites, cole o endereço dele aqui (por exemplo, https://sites.example.net). Os sites públicos passam a usá-lo.",
+    "save": "Salvar endereço",
+    "saved": "Salvo.",
+    "none": "Nenhum endereço de túnel definido, então nenhum site pode ser público ainda."
+  },
+  "site": {
+    "by": "Publicado por {{name}}",
+    "byRemoved": "Publicado por um agente removido",
+    "files_one": "{{count}} arquivo",
+    "files_many": "{{count}} de arquivos",
+    "files_other": "{{count}} arquivos",
+    "expires": "Expira {{when}}",
+    "public": "Público",
+    "private": "Privado",
+    "open": "Abrir site",
+    "openPublic": "Endereço público",
+    "renew": "Manter por mais 7 dias",
+    "makePublic": "Tornar público",
+    "makePrivate": "Tornar privado",
+    "remove": "Remover",
+    "confirmRemove": "Remover \"{{title}}\"? O endereço deixa de funcionar imediatamente.",
+    "list": "Arquivos"
+  },
+  "tools": {
+    "sites_publish": "Publicar um site estático",
+    "sites_list": "Listar seus sites",
+    "sites_renew": "Renovar um site",
+    "sites_unpublish": "Remover um site"
+  },
+  "find": {
+    "navHint": "Sites que seus agentes criam",
+    "navKeywords": "site, página, publicar, hospedar"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Sites que seus ajudantes criam e publicam"
+    },
+    "page": {
+      "intro": "Pequenas páginas que seus ajudantes publicaram. Elas abrem em um endereço próprio, separado do app, e não podem usar seu login. Cada uma expira se não for renovada."
+    },
+    "empty": "Nenhum site ainda. Quando um ajudante publicar um, ele aparece aqui.",
+    "site": {
+      "byRemoved": "Publicado por um ajudante removido"
+    }
+  }
+}

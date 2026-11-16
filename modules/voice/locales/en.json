@@ -1,0 +1,76 @@
+{
+  "talk": {
+    "button": "Hold to talk",
+    "listening": "Listening… release to stop",
+    "working": "Turning your voice into text…",
+    "title": "Your message",
+    "text": "What you said",
+    "send": "Send",
+    "cancel": "Cancel",
+    "empty": "Nothing was heard. Try again, a bit closer to the mic.",
+    "noMic": "This browser cannot use the microphone here.",
+    "denied": "Microphone access was blocked. Allow it in the browser to talk.",
+    "unavailable": "Voice input is not set up. The owner can download a speech model in Settings → Voice.",
+    "failed": "Could not turn the recording into text. {{reason}}",
+    "browserNote": "Using your browser's speech recognition."
+  },
+  "listen": {
+    "play": "Listen",
+    "stop": "Stop",
+    "loading": "Preparing audio…",
+    "failed": "Could not read this aloud. {{reason}}"
+  },
+  "settings": {
+    "title": "Voice",
+    "intro": "Talk to your agents and hear their replies. Speech runs on this server, so your voice never leaves it.",
+    "engine": "Speech engine",
+    "engineFake": "Test engine",
+    "engineLocal": "On this server",
+    "noPackage": "The speech engine is not installed on this server, so the browser fallback is used.",
+    "stt": "Voice input",
+    "tts": "Spoken replies",
+    "ready": "Ready: {{model}}",
+    "notReady": "No model yet",
+    "models": "Speech models",
+    "modelsIntro": "Models download only when you ask, from the speech engine's own releases.",
+    "kindStt": "Voice input",
+    "kindTts": "Spoken replies",
+    "size": "About {{mb}} MB",
+    "languages": "Languages: {{list}}",
+    "installed": "Installed",
+    "download": "Download {{name}}",
+    "remove": "Remove {{name}}",
+    "modelName": "{{model}} ({{note}})",
+    "noteMultilingual": "multilingual",
+    "noteEnglish": "English",
+    "downloading": "Downloading… {{pct}}",
+    "unpacking": "Unpacking…",
+    "failedDownload": "Download failed: {{reason}}",
+    "disabledUnpinned": "Not available yet: PasaBot has no checksum to check this download against, so it stays off.",
+    "ownerOnly": "Only the owner can download or remove models.",
+    "autoRead": "Read new replies aloud",
+    "autoReadHint": "On this device only.",
+    "browserStt": "Use the browser's speech recognition when no model is installed",
+    "browserSttHint": "Some browsers send your voice to their maker's servers to recognise it. Off by default.",
+    "loading": "Loading…",
+    "error": "Could not load the voice settings. {{reason}}"
+  },
+  "find": {
+    "settingsHint": "Talk to your agents and hear them",
+    "settingsKeywords": "voice, speak, microphone, listen, audio"
+  },
+  "plain": {
+    "find": {
+      "settingsHint": "Talk to your helpers and hear them"
+    },
+    "settings": {
+      "intro": "Talk to your helpers and hear their replies. Speech runs on this computer, so your voice never leaves it.",
+      "engineLocal": "On this computer",
+      "notReady": "No voice pack yet",
+      "models": "Voice packs",
+      "modelsIntro": "Voice packs download only when you ask, from the speech engine's own releases.",
+      "browserStt": "Use the browser's speech recognition when no voice pack is installed",
+      "browserSttHint": "Some browsers send your voice to their maker's computers to recognise it. Off by default."
+    }
+  }
+}

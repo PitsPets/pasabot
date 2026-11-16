@@ -1,0 +1,39 @@
+{
+  "name": "@pasabot/mod-safety",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": {
+    "./server": {
+      "source": "./src/server.ts",
+      "types": "./dist/server.d.ts",
+      "default": "./dist/server.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "pasabot": {
+    "kind": "module",
+    "entry": "./dist/server.js",
+    "source": "./src/server.ts",
+    "web": "./web/index.tsx"
+  },
+  "dependencies": {
+    "@pasabot/core": "workspace:*",
+    "@pasabot/i18n": "workspace:*",
+    "@pasabot/protocol": "workspace:*",
+    "@pasabot/ui": "workspace:*",
+    "zod": "^4.6.7"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@pasabot/provider-fake": "workspace:*",
+    "@pasabot/testkit": "workspace:*",
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0"
+  }
+}

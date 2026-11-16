@@ -1,0 +1,119 @@
+{
+  "title": "保險庫",
+  "intro": "你的 agent 使用的金鑰與密碼。agent 只會拿到像 {{example}} 這樣的參照；實際的值保留在此伺服器上，並會從所有回覆、記錄與頻道中隱藏。",
+  "loading": "正在載入保險庫…",
+  "error": "無法載入保險庫：{{reason}}",
+  "unavailable": "此伺服器上的保險庫已鎖定（沒有密語或鑰匙圈）。請以保險庫密語啟動伺服器後再使用。",
+  "requests": {
+    "title": "正在索取金鑰的 agent",
+    "asks": "{{agent}} 要求提供 {{name}}",
+    "untrusted": "發起這次要求的對話並非由你開始。請先確認真的需要，再填入。",
+    "fill": "提供金鑰",
+    "decline": "拒絕",
+    "filled": "{{agent}} 現在可以使用 {{reference}}。",
+    "declined": "已拒絕要求。"
+  },
+  "secrets": {
+    "title": "已儲存的機密",
+    "empty": "尚無機密。",
+    "shared": "共用（伺服器）",
+    "for": "供 {{agent}} 使用",
+    "remove": "移除",
+    "confirmRemove": "要移除 {{name}} 嗎？使用它的 agent 在你重新加入之前將無法運作。",
+    "module": "另有 {{count}} 個項目屬於頻道與密碼管理工具。",
+    "backend_local": "儲存於此",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "{{brain}} 的金鑰。在其上執行的代理可以看到此金鑰。"
+  },
+  "add": {
+    "title": "新增機密",
+    "open": "新增機密",
+    "name": "名稱",
+    "nameHint": "可使用字母、數字與 _ . -（agent 會寫成 {{example}}）。",
+    "who": "誰可以使用",
+    "shared": "共用（僅限伺服器，不含 agent）",
+    "source": "值的來源",
+    "source_local": "輸入值",
+    "source_bitwarden": "Bitwarden 項目",
+    "source_1password": "1Password 參照",
+    "value": "值",
+    "valueHint": "僅供寫入：之後不會再顯示。",
+    "ref_bitwarden": "Bitwarden 項目 ID",
+    "refHint_bitwarden": "項目 ID，或 id/欄位（password、username、notes、totp 或自訂欄位）。",
+    "ref_1password": "機密參照",
+    "refHint_1password": "例如 op://Private/GitHub/token",
+    "save": "儲存",
+    "cancel": "取消",
+    "saved": "已儲存 {{name}}。",
+    "brainOption": "{{brain}} 的金鑰"
+  },
+  "backends": {
+    "title": "密碼管理工具",
+    "intro": "PasaBot 透過此伺服器上的 Bitwarden（bw）或 1Password（op）命令列工具讀取值，這裡只會儲存參照。",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "工作階段金鑰（來自 bw unlock）",
+    "token_1password": "服務帳號權杖",
+    "tokenHint": "僅供寫入。留空並儲存即可移除。",
+    "set": "金鑰已儲存",
+    "notSet": "尚未儲存金鑰",
+    "save": "儲存金鑰",
+    "test": "測試",
+    "state_ready": "就緒",
+    "state_locked": "已鎖定或未登入",
+    "state_not_installed": "伺服器上未安裝命令列工具",
+    "state_unsafe_bin": "已停用（工具位置不安全）",
+    "unsafeHint": "已停用：此伺服器的使用者可以修改該工具的檔案，agent 因此可能將它替換掉。請將它安裝在系統資料夾（或將 PASABOT_BW_BIN / PASABOT_OP_BIN 設為這類路徑），然後重新啟動。",
+    "state_error": "無法運作"
+  },
+  "rotate": {
+    "title": "輪換保險庫金鑰",
+    "intro": "產生新的加密金鑰，並以它重新加密所有機密。值不會改變。",
+    "button": "輪換金鑰",
+    "confirm": "現在要以新金鑰重新加密所有機密嗎？",
+    "yes": "立即輪換",
+    "cancel": "取消",
+    "done": "已以新金鑰重新加密 {{count}} 個機密。",
+    "last": "上次輪換時間：{{when}}。"
+  },
+  "tools": {
+    "vault_request_secret": "向擁有者索取金鑰",
+    "vault_list_secrets": "列出我的金鑰"
+  },
+  "server": {
+    "asksForKey": "{{agent}} 請求一把金鑰：{{name}}"
+  },
+  "find": {
+    "settingsHint": "密碼和金鑰，安全保管",
+    "settingsKeywords": "密碼, 金鑰, 機密, 權杖, 憑證"
+  },
+  "plain": {
+    "title": "已儲存的秘密",
+    "intro": "你的 助理 使用的金鑰與密碼。助理 只會拿到像 {{example}} 這樣的參照；實際的值保留在此伺服器上，並會從所有回覆、記錄與頻道中隱藏。",
+    "backends": {
+      "intro": "PasaBot 透過此伺服器上的 Bitwarden（bw）或 1Password（op）命令列工具讀取值，這裡只會儲存參照。",
+      "token_1password": "服務帳號權杖"
+    },
+    "rotate": {
+      "title": "輪換保險庫金鑰"
+    },
+    "secrets": {
+      "title": "這裡儲存的內容",
+      "forBrain": "{{brain}} 的金鑰。用它思考的助理可以使用這把金鑰。",
+      "confirmRemove": "刪除 {{name}}？用到它的助理會停止運作，直到你重新加入。"
+    },
+    "requests": {
+      "title": "正在索取金鑰的助理"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "{{agent}} 需要你的 {{name}} 金鑰",
+      "text": "{{agent}} 能用它，但永遠看不到。只有你能在保險箱裡提供。",
+      "give": "提供金鑰",
+      "given": "金鑰已儲存，現在可以用了",
+      "declined": "未提供"
+    }
+  }
+}

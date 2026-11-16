@@ -1,0 +1,57 @@
+{
+  "nav": "Trang web",
+  "page": {
+    "title": "Trang web",
+    "intro": "Các trang web nhỏ do agent của bạn xuất bản. Chúng mở trên địa chỉ trang web riêng, chạy trong môi trường cách ly và không thể dùng phiên đăng nhập của bạn. Mỗi trang sẽ hết hạn nếu không được gia hạn."
+  },
+  "refresh": "Làm mới",
+  "loading": "Đang tải…",
+  "empty": "Chưa có trang web nào. Khi agent xuất bản một trang, trang đó sẽ hiện ở đây.",
+  "error": "Không thể tải các trang web. {{reason}}",
+  "tunnel": {
+    "title": "Địa chỉ từ bên ngoài",
+    "label": "Địa chỉ tunnel cho các trang web",
+    "hint": "Không bắt buộc. Nếu tunnel của bạn trỏ tới địa chỉ trang web, hãy dán địa chỉ đó vào đây (ví dụ https://sites.example.net). Các trang công khai sẽ hiển thị địa chỉ này.",
+    "save": "Lưu địa chỉ",
+    "saved": "Đã lưu.",
+    "none": "Chưa đặt địa chỉ tunnel nên chưa trang web nào có thể công khai."
+  },
+  "site": {
+    "by": "Được xuất bản bởi {{name}}",
+    "byRemoved": "Được xuất bản bởi một agent đã bị xóa",
+    "files_other": "{{count}} tệp",
+    "expires": "Hết hạn {{when}}",
+    "public": "Công khai",
+    "private": "Riêng tư",
+    "open": "Mở trang web",
+    "openPublic": "Địa chỉ công khai",
+    "renew": "Giữ thêm 7 ngày",
+    "makePublic": "Công khai",
+    "makePrivate": "Chuyển sang riêng tư",
+    "remove": "Xóa",
+    "confirmRemove": "Xóa \"{{title}}\"? Địa chỉ của trang sẽ ngừng hoạt động ngay lập tức.",
+    "list": "Tệp"
+  },
+  "tools": {
+    "sites_publish": "Xuất bản trang tĩnh",
+    "sites_list": "Liệt kê trang của bạn",
+    "sites_renew": "Gia hạn trang",
+    "sites_unpublish": "Gỡ trang"
+  },
+  "find": {
+    "navHint": "Trang web do tác tử tạo và lưu trữ",
+    "navKeywords": "trang web, trang, xuất bản, lưu trữ"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Trang web trợ lý tạo và đưa lên mạng"
+    },
+    "page": {
+      "intro": "Trang web nhỏ do trợ lý đăng. Chúng mở ở địa chỉ riêng, tách khỏi ứng dụng và không dùng được đăng nhập của bạn. Mỗi trang hết hạn nếu không gia hạn."
+    },
+    "empty": "Chưa có trang. Khi trợ lý đăng một trang, nó hiện ở đây.",
+    "site": {
+      "byRemoved": "Do một trợ lý đã xóa đăng"
+    }
+  }
+}

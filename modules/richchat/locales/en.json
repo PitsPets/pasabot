@@ -1,0 +1,57 @@
+{
+  "ask": {
+    "label": "Question from the agent",
+    "send": "Send answer",
+    "answered": "Answered: {{answer}}",
+    "expired": "No answer in time. The agent went on without it.",
+    "cancelled": "The agent stopped waiting for this.",
+    "pickMany": "Pick one or more"
+  },
+  "form": {
+    "submit": "Send",
+    "sent": "Sent",
+    "required": "Required",
+    "invalid": "Check {{field}}.",
+    "expired": "This form closed before it was sent.",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "html": {
+    "note": "Made by the agent. Runs apart from PasaBot and cannot see your account.",
+    "frame": "Agent page: {{title}}"
+  },
+  "files": {
+    "open": "Open {{name}}",
+    "download": "Download {{name}}",
+    "close": "Close",
+    "zip": "ZIP archive",
+    "file": "File",
+    "size": "{{size}}"
+  },
+  "attach": {
+    "button": "Attach files",
+    "title": "Send files",
+    "caption": "Message (optional)",
+    "send": "Send",
+    "cancel": "Cancel",
+    "remove": "Remove {{name}}",
+    "uploading": "Uploading {{pct}}%",
+    "tooBig": "{{name}} is over 100 MB.",
+    "tooMuch": "Files in one message can add up to 250 MB.",
+    "failed": "Upload failed. {{reason}}",
+    "limits": "Up to 100 MB per file, 250 MB per message."
+  },
+  "error": "Could not send. {{reason}}",
+  "tools": {
+    "richchat_ask": "Ask the user",
+    "richchat_form": "Ask for a form",
+    "richchat_html": "Show HTML",
+    "richchat_share_file": "Give the owner a file"
+  },
+  "card": {
+    "file": {
+      "title": "{{name}} is ready",
+      "text": "Made by {{agent}} just now."
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "nav": "Workflows",
+  "page": {
+    "title": "Workflows",
+    "intro": "A workflow chains steps: agents, tool-less model calls, conditions, your approval, waits and outputs. Build it on the canvas, then run it.",
+    "empty": "No workflows yet.",
+    "new": "New workflow",
+    "fromTemplate": "Answer, then share",
+    "templateHint": "The first agent answers your prompt, then every other agent gets that answer at the same time."
+  },
+  "list": {
+    "steps": "{{count}} steps",
+    "run": "Run",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this workflow? Runs already going keep going."
+  },
+  "approvals": {
+    "title": "Waiting for you",
+    "approve": "Approve",
+    "reject": "Reject",
+    "rejectConfirm": "Reject? The run stops here."
+  },
+  "runs": {
+    "title": "Recent runs",
+    "empty": "No runs yet.",
+    "show": "Show steps",
+    "hide": "Hide steps",
+    "cancel": "Stop run",
+    "loops": "Loop repeats: {{count}}"
+  },
+  "state": {
+    "running": "Running",
+    "waiting": "Waiting",
+    "done": "Done",
+    "failed": "Failed",
+    "rejected": "Rejected",
+    "stopped": "Stopped",
+    "cancelled": "Cancelled",
+    "skipped": "Skipped"
+  },
+  "type": {
+    "agent": "Agent",
+    "model": "Model (no tools)",
+    "condition": "Condition",
+    "approval": "Approval",
+    "transform": "Transform",
+    "wait": "Wait",
+    "parallel": "Parallel",
+    "output": "Output"
+  },
+  "editor": {
+    "name": "Workflow name",
+    "add": "Add a step",
+    "addHint": "A new step joins after the selected one.",
+    "save": "Save",
+    "back": "Back to the list",
+    "saved": "Saved.",
+    "canvas": "Workflow canvas",
+    "maxIterations": "Loop limit per run",
+    "selected": "Selected step",
+    "none": "Tap a step on the canvas to edit it.",
+    "label": "Step name",
+    "remove": "Remove this step",
+    "next": "Then go to",
+    "branch": "When the condition is",
+    "link": "Add link",
+    "links": "Links out",
+    "unlink": "Remove link",
+    "pick": "Choose a step"
+  },
+  "field": {
+    "agent": "Agent",
+    "pickAgent": "Choose an agent",
+    "prompt": "Prompt",
+    "op": "Check",
+    "value": "Value",
+    "message": "What you are asked",
+    "template": "Text ({{input}} = the step's input)",
+    "seconds": "Seconds to wait",
+    "to": "Send to",
+    "title": "Title",
+    "channel": "Channel binding id"
+  },
+  "op": {
+    "contains": "contains",
+    "not_contains": "does not contain",
+    "equals": "equals",
+    "matches": "matches the pattern",
+    "empty": "is empty",
+    "not_empty": "is not empty"
+  },
+  "branch": {
+    "true": "yes",
+    "false": "no"
+  },
+  "to": {
+    "notification": "Notification",
+    "channel": "Channel post"
+  },
+  "template": {
+    "title": "Answer, then share",
+    "name": "Name",
+    "agents": "Agents (first one answers)",
+    "prompt": "Prompt for the first agent",
+    "followUp": "What the others do with the answer",
+    "create": "Create workflow"
+  },
+  "tools": {
+    "workflows_list": "List my workflows",
+    "workflows_create": "Create a workflow",
+    "workflows_update": "Edit one of my workflows",
+    "workflows_run": "Run one of my workflows",
+    "workflows_delete": "Delete one of my workflows"
+  },
+  "server": {
+    "failed": "Workflow \"{{name}}\" failed",
+    "stopped": "Workflow \"{{name}}\" stopped"
+  },
+  "find": {
+    "navHint": "Chain steps into one flow",
+    "navKeywords": "steps, flow, chain, pipeline, automate"
+  },
+  "plain": {
+    "page": {
+      "intro": "A workflow chains steps: helpers, quick brain answers, conditions, your approval, waits and results. Build it on the canvas, then run it.",
+      "templateHint": "The first helper answers your request, then every other helper gets that answer at the same time."
+    },
+    "type": {
+      "agent": "Helper",
+      "model": "Brain only (no tools)"
+    },
+    "field": {
+      "agent": "Helper",
+      "pickAgent": "Choose a helper"
+    },
+    "template": {
+      "agents": "Helpers (the first one answers)",
+      "prompt": "Request for the first helper"
+    }
+  }
+}

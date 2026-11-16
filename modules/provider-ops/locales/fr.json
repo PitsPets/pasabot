@@ -1,0 +1,209 @@
+{
+  "nav": "Utilisation",
+  "page": {
+    "title": "Utilisation",
+    "intro": "Les jetons utilisés par vos agents, comptés sur ce serveur uniquement.",
+    "days": "{{count}} derniers jours",
+    "agents": "Par agent",
+    "providers": "Par moteur",
+    "empty": "Aucune exécution avec décompte de jetons pour l'instant.",
+    "agent": "Agent",
+    "provider": "Moteur",
+    "runs": "Exécutions",
+    "input": "Entrée",
+    "output": "Sortie",
+    "cache": "Cache",
+    "limits": "Moteurs en pause",
+    "noLimits": "Tous les moteurs sont disponibles.",
+    "limitUntil": "{{provider}} : {{reason}}, nouvel essai après {{time}}",
+    "check": "Vérifier maintenant",
+    "checked": "Vérifié : {{count}} moteur(s) de nouveau disponible(s)."
+  },
+  "gauge": {
+    "label": "Contexte {{pct}} %",
+    "title": "{{used}} jetons de contexte utilisés sur {{window}} ({{provider}})",
+    "full": "Mémoire pleine à {{pct}} %",
+    "menu": "Remplissage de ce chat",
+    "none": "Pas encore de rapport de contexte pour ce chat."
+  },
+  "notice": {
+    "switched": "Passage de {{from}} à {{to}} ({{reason}}). Le chat continue.",
+    "back": "De retour sur {{to}}.",
+    "compactedNative": "Contexte à {{pct}} % : compacté.",
+    "compactedReseed": "Contexte à {{pct}} % : la prochaine réponse démarre une nouvelle session avec un résumé.",
+    "overflow": "Le contexte était plein : une nouvelle session a démarré avec un résumé.",
+    "stopped": "Compactage arrêté : les deux derniers n'ont presque rien libéré. Démarrez un nouveau chat ou reprenez le compactage dans les réglages.",
+    "reason": {
+      "rate_limit": "limite de débit",
+      "quota": "limite d'utilisation",
+      "auth": "problème de connexion",
+      "context_overflow": "contexte plein",
+      "offline": "moteur principal hors ligne"
+    }
+  },
+  "settings": {
+    "title": "Moteurs et solutions de repli",
+    "intro": "Quand un moteur atteint sa limite, l'agent passe au suivant de sa liste, puis revient dès que la limite est levée.",
+    "fallback": "Repli {{n}}",
+    "none": "Aucun",
+    "model": "Modèle (facultatif)",
+    "account": "Compte pour {{provider}}",
+    "defaultAccount": "Compte par défaut",
+    "compactPct": "Compacter à (% du contexte)",
+    "compactHint": "Vide = {{pct}} %",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "stopped": "Le compactage est arrêté pour cet agent.",
+    "resume": "Reprendre le compactage",
+    "accounts": "Comptes",
+    "accountsIntro": "Chaque compte a son propre dossier de connexion pour la CLI de ce moteur.",
+    "accountLabel": "Nom du compte",
+    "accountProvider": "Moteur",
+    "addAccount": "Ajouter un compte",
+    "remove": "Supprimer",
+    "noAccounts": "Aucun compte supplémentaire.",
+    "accountSignIn": "Pour vous connecter, exécutez ceci une fois dans un terminal sur le serveur :",
+    "accountFolder": "Dossier de connexion pour la CLI de ce moteur :",
+    "accountChecking": "Vérification…",
+    "accountSignedIn": "Connecté",
+    "accountSignedOut": "Non connecté",
+    "accountUnknown": "Connexion non vérifiée",
+    "primary": "Utilise {{provider}}"
+  },
+  "server": {
+    "stoppedTitle": "{{name}} : compactage arrêté",
+    "stoppedBody": "Deux compactages de suite ont libéré moins de 10 % du contexte. Ouvrez une nouvelle discussion ou reprenez le compactage dans Réglages."
+  },
+  "find": {
+    "navHint": "Utilisation et coût de vos agents",
+    "navKeywords": "utilisation, coût, jetons, dépenses, facture",
+    "settingsHint": "Limites et contrôles de vos cerveaux IA",
+    "settingsKeywords": "cerveaux, modèles, limites, fournisseurs, IA",
+    "brainsHint": "Configurer l'IA avec laquelle pensent vos agents",
+    "brainsKeywords": "cerveaux, IA, modèles, connexion, installer, Claude, Codex, Gemini, Grok, OpenCode, local, gratuit"
+  },
+  "brains": {
+    "title": "Cerveaux",
+    "intro": "Un cerveau est l'IA avec laquelle pense votre agent. Configurez-en un ou plusieurs ; chaque agent choisit un cerveau principal et un de secours.",
+    "name": {
+      "opencode": "Démarrage gratuit (OpenCode)",
+      "local": "Modèle local",
+      "acp": "Autres agents ACP"
+    },
+    "desc": {
+      "claude": "L'app Claude Code d'Anthropic, avec votre compte Claude",
+      "codex": "L'app Codex d'OpenAI, avec votre compte ChatGPT",
+      "opencode": "Modèle gratuit, sans clé ni paiement. Idéal pour commencer",
+      "gemini": "La CLI Gemini de Google, avec votre compte Google",
+      "grok": "La CLI Grok de xAI, avec une clé xAI",
+      "local": "Ollama ou LM Studio sur cet ordinateur. Privé, fonctionne hors ligne",
+      "acp": "Toute app qui parle l'Agent Client Protocol",
+      "other": "Un cerveau ajouté par un plugin ou pour les tests"
+    },
+    "state": {
+      "ready": "Prêt",
+      "needs_sign_in": "Connexion requise",
+      "not_installed": "Non installé",
+      "unreachable": "Injoignable",
+      "not_running": "Pas ouvert",
+      "needs_model": "Il faut un modèle",
+      "checking": "Vérification…"
+    },
+    "unconfirmed": "Connexion non confirmée. Lancez Tester pour en être sûr.",
+    "notFound": "Introuvable",
+    "install": "Installer",
+    "signIn": "Se connecter",
+    "test": "Tester",
+    "testing": "Test en cours…",
+    "useNew": "Utiliser pour un nouvel agent",
+    "checkAgain": "Vérifier à nouveau",
+    "steps": "Étapes",
+    "browse": "Parcourir et installer",
+    "close": "Fermer",
+    "copy": "Copier",
+    "copied": "Copié",
+    "details": "Détails",
+    "works": "Ça marche. Réponse : \"{{reply}}\" · {{secs}} s",
+    "usedBy": "Utilisé par {{names}}",
+    "backupFor": "Secours de {{names}}",
+    "noneReady": "Aucun cerveau n'est prêt. Le démarrage gratuit marche en un geste.",
+    "useStarter": "Utiliser le démarrage gratuit",
+    "stepsTitle": "Configurer {{name}}",
+    "step": {
+      "terminal": "Ouvrez Terminal sur cet ordinateur.",
+      "paste": "Collez cette commande et appuyez sur Entrée :",
+      "signIn": "Collez cette commande et suivez la connexion qu'elle ouvre :",
+      "back": "Revenez ici et appuyez sur Vérifier à nouveau.",
+      "noPassword": "PasaBot ne demande jamais votre mot de passe. La connexion reste dans l'app.",
+      "geminiChoose": "Quand on vous le demande, choisissez \"Sign in with Google\".",
+      "grokInstall": "Installez la CLI Grok en suivant les instructions de xAI.",
+      "starter": "Ou laissez PasaBot l'installer (téléchargement vérifié avant exécution) :",
+      "starterCta": "Installer le démarrage gratuit",
+      "vault": "Enregistrez votre clé xAI dans le Coffre de PasaBot sous {{name}}. Elle n'apparaît plus jamais sur une page ensuite.",
+      "local": "Installez Ollama ou LM Studio, téléchargez un modèle et laissez l'app ouverte.",
+      "localCta": "Configurer les modèles locaux",
+      "acp": "Choisissez un agent dans la liste et installez-le.",
+      "acpCta": "Ouvrir les agents ACP",
+      "keyLabel": "Clé pour {{brain}}",
+      "keyWho": "Les agents qui utilisent ce cerveau peuvent voir la clé.",
+      "keySave": "Enregistrer la clé",
+      "keySaved": "Clé enregistrée dans le Coffre.",
+      "keyErr": "Impossible d'enregistrer la clé. Réessayez.",
+      "tokenTitle": "Ou colle un jeton de configuration",
+      "tokenWhy": "Utilise ceci si la connexion ne tient pas, ou si PasaBot tourne sur un autre ordinateur.",
+      "tokenRun": "Ouvre le Terminal, colle ceci et appuie sur Retour. Connecte-toi quand le navigateur s’ouvre :",
+      "tokenPaste": "Copie le long code affiché à la fin et colle-le ci-dessous.",
+      "tokenLabel": "Jeton de configuration",
+      "tokenWho": "Gardé sous clé dans le Coffre de PasaBot. Les agents qui tournent sur Claude peuvent le voir.",
+      "tokenSave": "Enregistrer le jeton",
+      "tokenSaved": "Jeton enregistré. Vérification de Claude…",
+      "tokenErr": "Impossible d’enregistrer le jeton. Réessaie.",
+      "starterFailed": "Le démarrage gratuit ne s’est pas installé. Réessaie dans un instant.",
+      "starterPlain": "PasaBot peut l’installer pour vous en un geste : une petite app gratuite, rien que pour vous sur cet ordinateur, vérifiée avant de s’ouvrir. Cela prend environ une minute.",
+      "terminalWindows": "Ouvrez PowerShell sur cet ordinateur (tapez PowerShell dans le menu Démarrer).",
+      "pasteWindows": "Collez cette commande et appuyez sur Entrée :",
+      "nodeFirstWindows": "S’il indique que npm est introuvable, installez d’abord Node.js depuis nodejs.org, puis ouvrez une nouvelle fenêtre PowerShell."
+    },
+    "err": {
+      "auth": "Non connecté, ou la connexion a expiré. Reconnectez-vous.",
+      "limit": "Ce compte a atteint sa limite d'utilisation. Réessayez plus tard.",
+      "limitAt": "Ce compte a atteint sa limite d'utilisation. Elle se réinitialise à {{time}}.",
+      "offline": "Impossible de joindre le cerveau. Vérifiez internet, ou qu'Ollama / LM Studio est ouvert.",
+      "crash": "L'app s'est arrêtée avant de répondre.",
+      "timeout": "Pas de réponse en une minute. L'app est peut-être occupée ou bloquée.",
+      "model": "Ce modèle n'est pas disponible sur ce compte. Choisissez-en un autre.",
+      "notInstalled": "Non installé sur cet ordinateur.",
+      "busy": "Trop de tests d'affilée. Attendez une minute et réessayez.",
+      "failed": "Impossible de lancer le test. Réessayez.",
+      "load": "Impossible de charger les cerveaux. Réessayez."
+    },
+    "inUse": "Utilisé : {{name}}",
+    "notHere": "Pas sur cet ordinateur"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "Régler l’IA avec laquelle pensent vos assistants",
+      "navHint": "Ce que vos assistants utilisent et coûtent"
+    },
+    "brains": {
+      "intro": "Un cerveau est l'IA avec laquelle pense votre assistant. Configurez-en un ou plusieurs ; chaque assistant choisit un cerveau principal et un de secours.",
+      "useNew": "Utiliser pour un nouvel assistant",
+      "desc": {
+        "opencode": "Cerveau gratuit, sans clé ni paiement. Idéal pour commencer",
+        "gemini": "La CLI Gemini de Google, avec votre compte Google",
+        "grok": "La CLI Grok de xAI, avec une clé xAI",
+        "acp": "Toute app qui parle l'Assistant Client Protocol"
+      },
+      "name": {
+        "local": "Cerveau local",
+        "acp": "Autres assistants ACP"
+      }
+    },
+    "page": {
+      "intro": "Ce que vos assistants ont utilisé, compté sur cet ordinateur seulement.",
+      "agents": "Par assistant",
+      "empty": "Rien d’utilisé pour l’instant.",
+      "agent": "Assistant"
+    }
+  }
+}

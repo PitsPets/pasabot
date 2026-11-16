@@ -1,0 +1,814 @@
+{
+  "app": {
+    "skip": "Aller au contenu",
+    "tagline": "Sabihin mo lang. Ako na bahala.",
+    "taglineTranslation": "Dites-le simplement. Je m'en occupe."
+  },
+  "lang": {
+    "label": "Langue",
+    "unreviewed": "traduction non relue",
+    "unreviewedNote": "{{language}} est une traduction automatique qu'aucun locuteur natif n'a encore vérifiée.",
+    "helpImprove": "Aider à l'améliorer"
+  },
+  "conn": {
+    "connecting": "Connexion…",
+    "live": "En ligne",
+    "reconnecting": "Reconnexion…",
+    "offline": "Hors ligne",
+    "banner": "Reconnexion… Vos messages sont en sécurité.",
+    "bannerLong": "Impossible de joindre PasaBot sur cet ordinateur.",
+    "tryNow": "Réessayer"
+  },
+  "counts": {
+    "needs_one": "{{count}} a besoin de vous",
+    "needs_many": "{{count}} ont besoin de vous",
+    "needs_other": "{{count}} ont besoin de vous",
+    "working_one": "{{count}} au travail",
+    "working_many": "{{count}} au travail",
+    "working_other": "{{count}} au travail",
+    "idle_one": "{{count}} disponible",
+    "idle_many": "{{count}} disponibles",
+    "idle_other": "{{count}} disponibles"
+  },
+  "errors": {
+    "generic": "Une erreur s'est produite. Veuillez réessayer.",
+    "rateLimited": "Trop de tentatives. Attendez une minute et réessayez."
+  },
+  "setup": {
+    "title": "Prenez possession de votre PasaBot",
+    "intro": "Choisissez un nom et un mot de passe. Ils vous serviront à ouvrir PasaBot.",
+    "token": "Code de configuration",
+    "tokenHint": "Il est dans le lien de configuration affiché par PasaBot au démarrage. Pour en avoir un nouveau, ouvre l'app PasaBot sur cet ordinateur ou lance `pasabot setup-link` dessus.",
+    "name": "Votre nom",
+    "password": "Mot de passe",
+    "passwordHint": "8 caractères minimum. Vous pourrez ajouter une passkey plus tard.",
+    "confirm": "Confirmez le mot de passe",
+    "submit": "Créer le compte propriétaire",
+    "tooShort": "Utilisez au moins 8 caractères.",
+    "mismatch": "Les deux mots de passe ne correspondent pas.",
+    "badToken": "Ce code de configuration est déjà utilisé ou a expiré. Pour en obtenir un nouveau, clique sur l'icône PasaBot dans la barre des tâches ou la barre des menus et choisis Ouvrir PasaBot (sous Linux, relance PasaBot depuis le menu des applications), ou lance `pasabot setup-link` sur cet ordinateur.",
+    "gettingReady": "Préparation en cours…",
+    "reopen": "Ferme PasaBot, puis rouvre-le.",
+    "ownerExists": "Ce serveur a déjà un propriétaire. Connectez-vous plutôt.",
+    "bossNote": "Vous devenez ainsi le responsable de ce PasaBot.",
+    "trustLine": "Vos agents vous demandent avant toute action dangereuse, comme supprimer des données.",
+    "trustHow": "Comment il vous demande"
+  },
+  "login": {
+    "title": "Bon retour",
+    "intro": "Connectez-vous à votre PasaBot.",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "passkey": "Se connecter avec une passkey",
+    "failed": "Ce mot de passe n'a pas fonctionné.",
+    "passkeyCancelled": "La vérification de la passkey n'a pas abouti.",
+    "pairInstead": "Associer cet appareil avec un code",
+    "asPerson": "Connexion en tant que {{name}}.",
+    "notYou": "Ce n'est pas vous ?",
+    "otherWays": "Autres façons de se connecter"
+  },
+  "pair": {
+    "title": "Associer cet appareil",
+    "intro": "Sur un appareil déjà connecté, ouvrez Appareils et touchez « Associer un téléphone ». Scannez le code QR ou saisissez le code ici.",
+    "code": "Code d'association",
+    "deviceName": "Nom de cet appareil",
+    "submit": "Associer",
+    "waitingTitle": "Presque terminé",
+    "waiting": "Confirmez cet appareil sur votre autre écran.",
+    "fingerprint": "Empreinte du serveur",
+    "checkOther": "Vérifiez que l'autre écran affiche la même empreinte, puis touchez Confirmer là-bas.",
+    "rejected": "L'association a été refusée.",
+    "expired": "L'association a expiré. Demandez un nouveau code.",
+    "invalid": "Ce code est incorrect ou a expiré.",
+    "backToLogin": "Retour à la connexion"
+  },
+  "devices": {
+    "title": "Appareils et connexion",
+    "pairTitle": "Associer un téléphone",
+    "pairIntro": "Scannez le code QR avec l'appareil photo de votre téléphone. PasaBot s'y ouvre ; confirmez ensuite le téléphone ici.",
+    "newCode": "Associer un téléphone",
+    "qrAlt": "Code QR pour associer un appareil",
+    "codeLabel": "Ou saisissez ce code",
+    "expires_one": "Expire dans {{count}} seconde",
+    "expires_many": "Expire dans {{count}} de secondes",
+    "expires_other": "Expire dans {{count}} secondes",
+    "claims": "En attente de votre confirmation",
+    "confirm": "Confirmer",
+    "reject": "Refuser",
+    "list": "Appareils associés",
+    "none": "Aucun appareil associé pour l'instant.",
+    "revoked": "Retiré",
+    "revoke": "Retirer",
+    "passkeys": "Clés d'accès",
+    "passkeysIntro": "Connectez-vous et confirmez les actions risquées avec votre empreinte, votre visage ou le code PIN de l'appareil.",
+    "passkeyN": "Passkey {{n}} · ajoutée le {{date}}",
+    "remove": "Retirer",
+    "addPasskey": "Ajouter une passkey",
+    "passkeyAdded": "Passkey ajoutée.",
+    "reauthPair": "associer un nouveau téléphone",
+    "reauthConfirm": "laisser entrer un nouvel appareil",
+    "reauthPasskey": "ajouter une clé d’accès",
+    "reauthNeeded": "Pas fait : il faut de nouveau votre mot de passe ou votre clé d’accès."
+  },
+  "agents": {
+    "add": "+ Ajouter",
+    "newTitle": "Nouvel agent",
+    "editTitle": "Modifier {{name}}",
+    "name": "Nom",
+    "instructions": "Ce qu'il fait",
+    "instructionsHint": "En mots simples : son rôle, ce qu'il doit vérifier, quand vous demander d'abord.",
+    "provider": "Cerveau",
+    "notInstalled": "non installé",
+    "notReachable": "inaccessible",
+    "model": "Modèle",
+    "trust": "Niveau de confiance",
+    "trustLevels": {
+      "guarded": "Prudent : demande avant toute action hors de son dossier",
+      "standard": "Standard : demande avant les actions externes ou risquées",
+      "trusted": "De confiance : ne demande que pour les actions dangereuses"
+    },
+    "trustHint": "Un agent de confiance dont le cerveau dispose de son propre terminal peut faire tout ce que peut faire l'utilisateur de cet ordinateur.",
+    "save": "Enregistrer",
+    "avatar": "Apparence",
+    "avatarAlt": "Avatar de {{name}}",
+    "shuffle": "Mélanger",
+    "avatarHint": "Mélangez jusqu'à ce qu'il vous plaise. Il ne change que lorsque vous appuyez sur Enregistrer.",
+    "create": "Créer l'agent",
+    "unknownProvider": "Ce cerveau n'est pas disponible sur ce serveur.",
+    "empty": "Aucun agent pour l'instant.",
+    "emptyTitle": "Constituez votre équipe",
+    "emptyIntro": "Ajoutez votre premier agent. Donnez-lui un nom, un rôle et un cerveau.",
+    "emptyCta": "Ajouter votre premier agent",
+    "trustWarning": "Les nouveaux agents démarrent au niveau De confiance. Une fois créé, un agent fait son travail sans vous demander à chaque fois, même pour publier à l'extérieur, utiliser le web ou installer des outils. Il demande toujours avant les actions dangereuses (lire un secret, supprimer des données, utiliser votre ordinateur), et un message qui lui parvient via Telegram ou une autre application de chat ne dépasse jamais le niveau Standard. Pour être sollicité plus souvent, choisissez Standard ou Prudent pour cet agent, ou changez le niveau de départ des nouveaux agents dans les Paramètres.",
+    "askShellWeb": "Demander avant les commandes de terminal et web brutes",
+    "askShellWebHint": "Lorsque cette option est activée, cet agent vous demande avant chaque commande shell et chaque requête web brute exécutée par son cerveau. Désactivée par défaut pour les agents de confiance, activée pour Standard et Prudent.",
+    "needsSignIn": "connexion requise",
+    "setUpBrains": "Configurer ou réparer un cerveau",
+    "backup": "Cerveau de secours",
+    "backupNone": "Aucun",
+    "backupHint": "Utilisé quand le cerveau principal atteint une limite ou est injoignable. Votre agent garde la conversation.",
+    "brainReady": "Prêt",
+    "fixInstall": "Installer",
+    "fixSignIn": "Se connecter",
+    "fixCheck": "Vérifier à nouveau",
+    "modelAuto": "Automatique",
+    "modelAutoHint": "Le cerveau choisit son modèle habituel",
+    "modelHints": {
+      "fast": "Rapide",
+      "balanced": "Pour le travail de tous les jours",
+      "smart": "Intelligent",
+      "smartest": "Le plus intelligent",
+      "free": "Gratuit"
+    },
+    "modelsRefresh": "Actualiser la liste des modèles",
+    "modelsLoading": "Chargement des modèles…",
+    "modelsError": "Impossible de charger les modèles de ce cerveau. Automatique fonctionne toujours, ou touchez Actualiser.",
+    "modelsCurated": "Cette liste ne montre peut-être pas tous les modèles de ce cerveau.",
+    "trustShort": "Cet agent travaille sans demander à chaque fois. Il demande quand même avant les choses dangereuses, comme supprimer des données.",
+    "helpWith": "Pour quoi doit-il t’aider ?",
+    "helpPlaceholder": "ex. Aide-moi à planifier mes repas et demande-moi avant d’acheter quoi que ce soit.",
+    "helpIdeas": {
+      "week": "Planifier ma semaine",
+      "shopping": "Liste de courses",
+      "messages": "Écrire des messages",
+      "questions": "Répondre aux questions"
+    },
+    "helpFill": {
+      "week": "Aide-moi à planifier ma semaine et rappelle-moi ce qui arrive.",
+      "shopping": "Tiens ma liste de courses et demande-moi avant d’acheter quoi que ce soit.",
+      "messages": "Aide-moi à écrire et à répondre aux messages. Montre-les-moi avant tout envoi.",
+      "questions": "Réponds à mes questions avec des mots simples."
+    },
+    "moreOptions": "Plus d'options"
+  },
+  "nav": {
+    "sidebar": "Agents et chats",
+    "yourTeam": "Votre équipe",
+    "channels": "Canaux",
+    "devices": "Appareils",
+    "settings": "Paramètres",
+    "chats": "Discussions",
+    "new": "Nouveau",
+    "newAgent": "Nouvel agent",
+    "newGroup": "Nouvelle discussion de groupe",
+    "pinned": "Épinglés",
+    "searchChats": "Rechercher des discussions",
+    "moveUp": "Monter",
+    "moveDown": "Descendre",
+    "unpin": "Retirer de la barre latérale",
+    "pinMenu": "Options pour {{feature}}",
+    "openSettings": "Ouvrir les réglages",
+    "teamTalk": "Échanges de l'équipe",
+    "teamTalkHint": "Vos assistants qui se parlent",
+    "workingFor": "Travaille pour {{name}}",
+    "newRequest": "Nouvelle demande"
+  },
+  "status": {
+    "working": "Occupé",
+    "waiting": "Attend votre accord",
+    "idle": "Prêt",
+    "needsSignIn": "Connexion requise"
+  },
+  "details": {
+    "label": "Détails de l'agent",
+    "hide": "Masquer",
+    "show": "Détails",
+    "since": "depuis le {{date}}",
+    "does": "Ce que fait {{name}}",
+    "edit": "Modifier",
+    "noInstructions": "Aucune instruction pour l'instant.",
+    "brain": "Cerveau",
+    "main": "Principal",
+    "backup": "Secours",
+    "none": "Aucun",
+    "trust": "Niveau de confiance",
+    "change": "Modifier",
+    "about": "À propos de {{name}}",
+    "thinksWith": "Réfléchit avec",
+    "more": "Plus",
+    "instructions": "Instructions complètes",
+    "backupBrains": "Cerveaux de secours",
+    "noSummary": "Rien n'est encore écrit sur cet assistant."
+  },
+  "chat": {
+    "notFound": "Ce chat est introuvable.",
+    "members_one": "{{count}} agent",
+    "members_many": "{{count}} d'agents",
+    "members_other": "{{count}} agents",
+    "logLabel": "Messages avec {{name}}",
+    "empty": "Dites bonjour à {{name}}.",
+    "selectTitle": "Choisissez un chat",
+    "select": "Choisissez un agent ou un canal à gauche.",
+    "someone": "Agent",
+    "thinking": "{{name}} réfléchit…",
+    "replyFailed": "Cette réponse n'a pas abouti.",
+    "activity_one": "{{count}} outil utilisé : {{names}}",
+    "activity_many": "{{count}} d'outils utilisés : {{names}}",
+    "activity_other": "{{count}} outils utilisés : {{names}}",
+    "seconds_one": "{{count}} s",
+    "seconds_many": "{{count}} s",
+    "seconds_other": "{{count}} s",
+    "partialLabel": "Réponse partielle : c'est tout ce qui a été écrit avant l'arrêt.",
+    "interruptedHandled": "Terminé : ce tour a été relancé ou ignoré.",
+    "steered": "Ajouté à ce que {{name}} fait en ce moment.",
+    "queueFull": "La file de {{name}} est pleine. Réessayez dans un instant.",
+    "mode": {
+      "steer": "Ajouter à ce qu'il fait",
+      "queue": "Envoyer quand il a fini",
+      "interrupt": "L'arrêter et envoyer ceci",
+      "more": "Autres façons d'envoyer"
+    },
+    "placeholder": "Écrire à {{name}}…",
+    "send": "Envoyer",
+    "queued_one": "{{count}} en attente",
+    "queued_many": "{{count}} en attente",
+    "queued_other": "{{count}} en attente",
+    "failedCount_one": "{{count}} échoué",
+    "failedCount_many": "{{count}} échoués",
+    "failedCount_other": "{{count}} échoués",
+    "queueHint": "{{name}} les lira ensuite",
+    "queueItem": "Message {{n}}",
+    "qstate": {
+      "queued": "en attente",
+      "held": "suspendu jusqu'à la réinitialisation de la limite",
+      "failed": "échoué",
+      "interrupted": "interrompu"
+    },
+    "readOnlyNote": "Vous pouvez lire ce chat, mais pas y écrire. Demandez au propriétaire si besoin.",
+    "readOnlyLabel": "Lecture seule",
+    "more": "Plus",
+    "searchThis": "Rechercher dans cette discussion",
+    "editAgent": "Modifier l'agent",
+    "copy": "Copier",
+    "copied": "Copié",
+    "paused": {
+      "since": "Tout est en pause (depuis {{when}}).",
+      "now": "Tout est en pause.",
+      "hint": "Relance pour envoyer.",
+      "hintMember": "Seul le propriétaire peut relancer.",
+      "start": "Relancer"
+    },
+    "editNamed": "Modifier {{name}}",
+    "startersLabel": "Idées pour commencer",
+    "startersTitle": "Tu ne sais pas par où commencer ? Touche une idée :",
+    "starters": {
+      "can": "Que peux-tu faire pour moi ?",
+      "week": "Aide-moi à planifier ma semaine",
+      "message": "Aide-moi à écrire un message",
+      "dinner": "Qu’est-ce que je cuisine ce soir ?"
+    },
+    "model": {
+      "thinksWith": "Réfléchit avec",
+      "auto": "Automatique",
+      "change": "{{name}} réfléchit avec {{brain}}, {{model}}. Modifier",
+      "readOnly": "{{name}} réfléchit avec {{brain}}, {{model}}",
+      "title": "Comment {{name}} doit-il réfléchir ?",
+      "brain": "Cerveau",
+      "models": "Modèles",
+      "best": "Idéal pour la plupart",
+      "autoHint": "Choisit le bon pour chaque message",
+      "hints": {
+        "smartest": "Le plus malin, pour le travail difficile. Plus lent, consomme plus de votre forfait",
+        "smart": "Malin et soigneux",
+        "balanced": "Rapide et malin. Bien pour presque tout",
+        "fast": "Le plus rapide, pour les questions simples",
+        "free": "Gratuit"
+      },
+      "own": "Ce cerveau choisit lui-même son modèle",
+      "more": "Configurer un autre cerveau",
+      "error": "Impossible de charger la liste des modèles.",
+      "retry": "Réessayer"
+    },
+    "toolsMore": "+{{n}} autres",
+    "tools": {
+      "team": "A consulté l'équipe",
+      "askHelper": "A demandé de l'aide à un assistant",
+      "noteHelper": "A laissé un mot à un assistant",
+      "checkHelper": "A pris des nouvelles d'un assistant",
+      "stopHelper": "A arrêté la tâche d'un assistant",
+      "noted": "A noté votre réponse",
+      "plan": "A montré le plan",
+      "makeTeam": "A créé votre équipe",
+      "memoryRead": "A cherché dans la mémoire",
+      "memorySave": "A enregistré en mémoire",
+      "memoryForget": "A retiré de la mémoire",
+      "searchChats": "A cherché dans les anciens chats",
+      "browser": "A utilisé le navigateur",
+      "computer": "A utilisé l'ordinateur",
+      "webSearch": "A cherché sur le web",
+      "webPage": "A ouvert une page web",
+      "fileRead": "A lu un fichier",
+      "fileChange": "A modifié un fichier",
+      "fileSearch": "A parcouru des fichiers",
+      "command": "A lancé une commande",
+      "todo": "A fait une liste de tâches",
+      "dataRead": "A lu une table de données",
+      "dataChange": "A modifié une table de données",
+      "inbox": "A vérifié la boîte de réception",
+      "machines": "A parlé à un autre ordinateur",
+      "askYou": "Vous a posé une question",
+      "card": "A créé une carte",
+      "routine": "A travaillé sur une routine",
+      "workflow": "A travaillé sur un enchaînement",
+      "site": "A travaillé sur un site web",
+      "shop": "A regardé des boutiques",
+      "shopBuy": "A préparé un achat",
+      "skills": "A travaillé sur des compétences",
+      "findTool": "A cherché un outil",
+      "connections": "A vérifié les connexions",
+      "secrets": "A demandé un secret enregistré",
+      "programs": "A vérifié les programmes en cours",
+      "permission": "A demandé la permission",
+      "other": "A utilisé un outil"
+    },
+    "handoff": {
+      "asked": "{{from}} a demandé de l'aide à {{to}}",
+      "noted": "{{from}} a laissé un mot à {{to}}",
+      "whatAsked": "Ce qui a été demandé",
+      "reply": "Réponse de {{name}}",
+      "waiting": "En attente de {{name}}…",
+      "failed": "Cela n'a pas abouti.",
+      "later": "La réponse de {{name}} arrivera dans un prochain message.",
+      "open": "Ouvrir leur conversation",
+      "openThread": "Ouvrir dans le chat de {{name}}"
+    },
+    "teamNote": "{{from}} et {{to}} échangent ici. Vous pouvez lire et écrire aussi.",
+    "stopAll": "Arrêter tous les assistants maintenant",
+    "thread": {
+      "from": "De {{name}}",
+      "label": "Demande de {{name}}",
+      "summary": "{{from}} a demandé · {{to}} a répondu",
+      "working": "{{name}} s’en occupe…",
+      "show": "Voir toute la conversation",
+      "hide": "Replier la conversation",
+      "reply": "Répondre ici",
+      "replying": "Réponse à la demande de {{name}}",
+      "stopReply": "Écrire un message normal"
+    },
+    "report": {
+      "workingOne": "{{name}} s’en occupe…",
+      "workingMany": "{{names}} s’en occupent…",
+      "reading": "{{name}} rassemble les réponses…",
+      "fromOne": "Réponse de {{name}}",
+      "fromMany": "Réponses de {{names}}",
+      "fullOne": "Voir la réponse complète",
+      "fullMany": "Voir les réponses complètes",
+      "finished": "{{name}} a terminé :",
+      "failed": "{{name}} n’a pas pu terminer.",
+      "stoppedOne": "{{name}} a été arrêté avant de terminer.",
+      "stillOne": "{{name}} y travaille encore.",
+      "stillMany": "{{names}} y travaillent encore.",
+      "openFull": "Ouvrir la réponse complète",
+      "openThread": "Ouvrir dans le chat de {{name}}",
+      "stopped": "Arrêté ici : les assistants se sont renvoyé cette tâche trop de fois. Redemandez si vous voulez qu’ils continuent."
+    }
+  },
+  "approval": {
+    "wants": "{{name}} veut : {{tool}}",
+    "waiting_one": "{{count}} décision en attente",
+    "waiting_many": "{{count}} de décisions en attente",
+    "waiting_other": "{{count}} décisions en attente",
+    "review": "Examiner",
+    "asking": "{{name}} demande d'abord",
+    "tier0": "Juste regarder",
+    "tier1": "Seulement dans son dossier",
+    "tier2": "Demande votre accord",
+    "tier3": "Risqué",
+    "state": {
+      "pending": "En attente de vous",
+      "approved": "Approuvée",
+      "denied": "Refusée",
+      "expired": "Expirée : considérée comme refusée"
+    },
+    "approve": "Approuver",
+    "deny": "Refuser",
+    "reauthNote": "Vous confirmerez votre identité avant l'exécution.",
+    "reauthTitle": "Confirmez votre identité",
+    "reauthIntro": "C'est une étape risquée : {{summary}}. Tape ton mot de passe pour qu'on sache que c'est toi.",
+    "reauthSubmit": "Confirmer et approuver",
+    "reauthPasskey": "Utiliser une passkey",
+    "reauthFailed": "Ça ne correspond pas. Réessayez.",
+    "screenBusy": "Patientez un instant : un assistant vient d’utiliser l’écran",
+    "workflow": "La routine « {{name}} » demande : {{message}}",
+    "askClass": {
+      "money": "Argent : demande toujours",
+      "outbound-message": "Message à d'autres personnes : demande toujours",
+      "delete": "Suppression : demande toujours",
+      "publish": "Publication : demande toujours"
+    },
+    "fact": {
+      "items": "Article(s)",
+      "merchant": "Commerçant",
+      "total": "Total",
+      "paymentMethod": "Moyen de paiement",
+      "recipients": "À",
+      "channel": "Canal",
+      "subject": "Objet",
+      "text": "Texte complet",
+      "target": "Quoi",
+      "where": "Où",
+      "count": "Combien",
+      "tool": "Outil",
+      "arguments": "Requête exacte",
+      "cc": "Cc",
+      "bcc": "Cci",
+      "attachments": "Pièces jointes",
+      "server": "Lance",
+      "request": "Détails de la demande"
+    },
+    "notStated": "non précisé",
+    "undeclared": "L’assistant n’a pas dit que cela paierait ou enverrait quoi que ce soit, mais cette page en a l’air.",
+    "unshown": "D'autres détails ne figurent pas dans ce résumé : {{names}}. Lisez la requête exacte ci-dessous avant d'approuver.",
+    "askNote": "Ce type d’action vous est toujours demandé, quelle que soit la fréquence réglée pour l’assistant. Vous seul pouvez l’approuver ici, dans l’appli.",
+    "reauthContinue": "Confirmer et continuer",
+    "wantsTo": "{{name}} veut {{verb}}",
+    "verb": {
+      "read": "lire un fichier",
+      "write": "enregistrer un fichier",
+      "edit": "modifier un fichier",
+      "command": "lancer une commande sur ton ordinateur",
+      "page": "ouvrir une page web",
+      "webSearch": "chercher sur le web",
+      "findFiles": "chercher des fichiers",
+      "searchFiles": "chercher dans des fichiers",
+      "notebook": "modifier un carnet",
+      "task": "confier une tâche à un assistant",
+      "other": "utiliser un outil"
+    },
+    "target": {
+      "file": "Fichier : {{v}}",
+      "command": "Commande : {{v}}",
+      "page": "Page web : {{v}}",
+      "search": "Cherche : {{v}}",
+      "tool": "Outil : {{v}}"
+    },
+    "tierAdv0": "Niveau 0 · lecture seule",
+    "tierAdv1": "Niveau 1 · son dossier",
+    "tierAdv2": "Niveau 2 · demande ton accord",
+    "tierAdv3": "Niveau 3 · risqué",
+    "reauthIntroPasskey": "C'est une étape risquée : {{summary}}. Tape ton mot de passe ou utilise ta clé d'accès pour qu'on sache que c'est toi.",
+    "unshownPlain": "Cette demande a plus de détails que ceux affichés ici : {{names}}. Active Termes techniques dans les Réglages pour tout voir avant d’approuver.",
+    "unshownShown": "Le résumé ne couvre pas tous les détails ({{names}}). Lis les détails de la demande avant d’approuver."
+  },
+  "onboarding": {
+    "next": "Suivant",
+    "step": "Étape {{n}} sur {{total}}",
+    "brainTitle": "Choisis un cerveau",
+    "brainIntro": "Le cerveau est l’IA avec laquelle ton agent réfléchit. Le meilleur est déjà choisi.",
+    "working": "Préparation de ton agent…",
+    "starterName": "Démarrage gratuit",
+    "starterSub": "Sans clé, sans connexion, sans paiement",
+    "starterBody": "PasaBot va télécharger une petite app gratuite pour que ton agent puisse réfléchir. Cela prend environ une minute.",
+    "details": "Détails",
+    "starterWhat": "Quoi : {{what}}",
+    "starterWhere": "Où : {{where}} (pour votre utilisateur uniquement, sans droits d'administrateur)",
+    "starterFrom": "Depuis : {{from}}",
+    "starterCheck": "Le téléchargement est vérifié par rapport à son SHA-256 publié avant que quoi que ce soit ne soit écrit.",
+    "starterGo": "Télécharger et continuer",
+    "starterWorking": "Téléchargement… environ une minute",
+    "noBrain": "Aucun cerveau n’est encore prêt sur cet ordinateur. Configures-en un, puis reviens ici.",
+    "setUpBrain": "Configurer un cerveau",
+    "otherBrain": "Utiliser un autre cerveau",
+    "defaultName": "Tala",
+    "meetTitle": "Fais connaissance avec ton premier agent",
+    "meetIntro": "Donne-lui le nom que tu veux. Tu pourras tout changer plus tard.",
+    "meetSafe": "{{name}} te demande d’abord avant les choses dangereuses, comme supprimer des données.",
+    "start": "C’est parti",
+    "localSub": "Sur cet ordinateur. Privé, marche hors ligne",
+    "starterFailedPlain": "Le démarrage gratuit ne s’est pas installé. Réessaie, ou choisis un autre cerveau."
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "languageHint": "Change la langue de tous les écrans de l'application.",
+    "modules": "Modules",
+    "account": "Compte",
+    "signOut": "Se déconnecter",
+    "newAgents": "Nouveaux agents",
+    "newAgentsHint": "Le niveau de confiance de départ d'un nouvel agent. Vous pouvez toujours le modifier pour chaque agent.",
+    "alwaysAsks": "Demande toujours",
+    "alwaysAsksIntro": "Même un agent de confiance vous demande d'abord, à chaque fois, avant ces actions. Il n'existe pas de « toujours autoriser » pour elles, et ni un canal de chat ni une automatisation ne peut les approuver.",
+    "alwaysAsksMoney": "Argent : acheter, payer, passer à la caisse, commander, s'abonner, utiliser des moyens de paiement, envoyer de l'argent ou des cryptomonnaies.",
+    "alwaysAsksMessage": "Messages à d'autres personnes : un e-mail, un chat, un message privé ou une publication destinés à quiconque autre que vos propres chats liés. Un agent qui vous répond dans votre propre chat ne demande pas.",
+    "alwaysAsksDelete": "Suppression hors de l'espace de travail de l'agent : fichiers ou dossiers d'un autre agent ou de n'importe où ailleurs sur cet ordinateur, table de données d'un autre agent ou partagée, et tout ce qu'un outil ou connecteur externe signale comme destructeur. Supprimer dans l'espace de travail de l'agent ne demande pas.",
+    "alwaysAsksFixed": "Toujours actif",
+    "alwaysAsksAdd": "Vous pouvez aussi demander une approbation systématique pour :",
+    "alwaysAsksClass": {
+      "delete": "Suppression de fichiers ou de données",
+      "publish": "Publication (sites, posts)"
+    },
+    "alwaysAsksLimit": "Un agent à qui vous donnez un terminal peut faire tout ce qu'un terminal permet ; les cartes d'approbation systématique couvrent les outils que PasaBot peut voir. Une commande shell ou une requête web brute peut envoyer un message ou payer sans carte. Pour être sollicité d'abord, activez « Demander avant les commandes de terminal et web brutes » pour cet agent.",
+    "search": "Rechercher dans les réglages",
+    "back": "Retour aux discussions",
+    "intro": "Tout ce qui n'est pas une discussion se trouve ici. Épinglez dans la barre latérale ce que vous utilisez chaque jour.",
+    "pin": "Afficher dans la barre latérale",
+    "pinAria": "Afficher {{feature}} dans la barre latérale",
+    "hide": "Je n'utilise pas ceci",
+    "hideTitle": "Masquer {{feature}} ?",
+    "hideBody": "Il disparaît des réglages et de la barre latérale pour tout le monde. Rien n'est supprimé. Réactivez-le dans Réglages › Avancé.",
+    "hideConfirm": "Masquer {{feature}}",
+    "showAgain": "Afficher à nouveau",
+    "hiddenNote": "Vous avez masqué cette fonction. Elle fonctionne toujours ; elle n'apparaît simplement plus dans les listes.",
+    "notUsing": "Fonctions que vous n'utilisez pas",
+    "notUsingEmpty": "Vous utilisez tout. Masquez une fonction depuis sa page quand vous n'en avez pas besoin.",
+    "groupEmpty": "Rien ici pour l'instant. Les fonctions masquées sont dans Avancé.",
+    "searchEmpty": "Aucun résultat pour « {{q}} ». Essayez un mot plus simple.",
+    "resetSidebar": "Réinitialiser la barre latérale",
+    "resetSidebarHint": "Retire tous les épinglages de la barre latérale. Rien d'autre ne change.",
+    "pinnedCount": "Épinglés : {{count}}",
+    "saveFailed": "Impossible d'enregistrer. Réessayez.",
+    "tidied": "On a fait du rangement. Tout est maintenant dans les réglages — épinglez ce que vous utilisez dans la barre latérale.",
+    "gotIt": "J'ai compris",
+    "where": "Vous êtes ici",
+    "advancedSwitch": "Termes techniques",
+    "advancedHint": "Affiche des noms comme « Niveau de confiance » et « Serveur MCP », et les pages de réglage technique.",
+    "moreOptions": "Plus d'options",
+    "switchOn": "Activé",
+    "switchOff": "Désactivé",
+    "sections": {
+      "everyday": "Au quotidien",
+      "helpers": "Ce que vos assistants peuvent utiliser",
+      "own": "En autonomie"
+    },
+    "technicalOnly": "Pour la configuration technique — activez {{switch}} pour les voir",
+    "technicalOnlyPage": "Cette page sert à la configuration technique — activez {{switch}} pour la voir."
+  },
+  "offline": {
+    "title": "PasaBot est inaccessible",
+    "body": "PasaBot ne parvient pas à joindre votre serveur pour le moment. Vos chats sont en sécurité sur le serveur et réapparaîtront à la reconnexion.",
+    "retry": "Réessayer"
+  },
+  "decisions": {
+    "title": "Décisions en attente",
+    "intro": "Tout ce qui attend votre réponse, de tous les chats, routines et modules.",
+    "showInChat": "Afficher dans le chat",
+    "openChat": "Ouvrir le chat",
+    "open": "Ouvrir",
+    "ownerOnly": "Seul le propriétaire peut trancher. Vous pouvez les voir ici."
+  },
+  "roles": {
+    "ownerOnlyPage": "Seul le propriétaire peut utiliser cette page.",
+    "ownerOnlyBack": "Retour à vos chats"
+  },
+  "account": {
+    "menu": "Compte",
+    "look": "Apparence",
+    "lookAuto": "Automatique",
+    "lookLight": "Clair",
+    "lookDark": "Sombre",
+    "thisDevice": "Cet appareil",
+    "role": {
+      "owner": "Propriétaire",
+      "member": "Membre",
+      "guest": "Invité"
+    }
+  },
+  "features": {
+    "agents": "Agents",
+    "agentsHint": "Modifiez, ajoutez ou archivez vos agents"
+  },
+  "groups": {
+    "agents": {
+      "name": "Agents et cerveaux",
+      "hint": "Vos agents et l'IA qui les fait tourner"
+    },
+    "tools": {
+      "name": "Compétences et outils",
+      "hint": "Ce que vos agents peuvent utiliser"
+    },
+    "automations": {
+      "name": "Automatisations",
+      "hint": "Ce qui tourne tout seul"
+    },
+    "safety": {
+      "name": "Sécurité et validations",
+      "hint": "Ce qui demande votre accord"
+    },
+    "spending": {
+      "name": "Dépenses",
+      "hint": "Limites et consommation"
+    },
+    "people": {
+      "name": "Personnes et appareils",
+      "hint": "Qui peut utiliser PasaBot, et où"
+    },
+    "machines": {
+      "name": "Machines liées",
+      "hint": "Autres ordinateurs reliés à celui-ci"
+    },
+    "shopping": {
+      "name": "Achats",
+      "hint": "Boutiques, paniers et prix"
+    },
+    "inbox": {
+      "name": "Boîte de réception",
+      "hint": "Le courrier que vos agents lisent pour vous"
+    },
+    "memory": {
+      "name": "Mémoire et données",
+      "hint": "Ce que vos agents retiennent et conservent"
+    },
+    "look": {
+      "name": "Langue et apparence",
+      "hint": "Langue, thème et voix"
+    },
+    "advanced": {
+      "name": "Avancé",
+      "hint": "Pour les bricoleurs"
+    }
+  },
+  "plain": {
+    "agents": {
+      "trust": "Quand il te demande",
+      "trustLevels": {
+        "guarded": "Demande avant tout ce qui sort de son propre dossier",
+        "standard": "Demande avant ce qui est risqué",
+        "trusted": "Demande seulement avant le dangereux"
+      },
+      "trustHint": "Un assistant qui ne demande qu'avant le dangereux peut faire tout ce que tu peux faire sur cet ordinateur.",
+      "askShellWeb": "Demander avant les commandes et les requêtes web directes",
+      "askShellWebHint": "Activé, cet assistant te demande avant chaque commande qu'il lance sur ton ordinateur et chaque requête web directe, car une telle requête peut envoyer tes données ou payer. Désactivé au début pour les assistants qui ne demandent qu'avant le dangereux.",
+      "model": "Version",
+      "modelsRefresh": "Chercher de nouvelles versions",
+      "modelsError": "Impossible de charger les versions de ce cerveau. Automatique marche toujours, ou réessaie.",
+      "trustShort": "Cet assistant travaille sans demander à chaque fois. Il demande quand même avant les choses dangereuses, comme supprimer des données.",
+      "newTitle": "Nouvel assistant",
+      "unknownProvider": "Ce cerveau n’est pas configuré sur cet ordinateur.",
+      "backupHint": "Utilisé quand le cerveau principal atteint une limite ou ne répond pas. Votre assistant garde la conversation.",
+      "modelAutoHint": "Le cerveau choisit sa version habituelle",
+      "modelsCurated": "Cette liste ne montre peut-être pas toutes les versions de ce cerveau.",
+      "trustWarning": "Les nouveaux assistants commencent à « Demande seulement avant le dangereux ». Une fois créé, un assistant travaille sans te demander à chaque fois, même pour publier à l’extérieur, utiliser le web ou installer des outils. Il demande toujours avant le dangereux (lire un secret, effacer des données, utiliser ton ordinateur), et un message qui lui arrive par Telegram ou une autre appli de discussion n’obtient jamais plus que « Demande avant ce qui est risqué ». Pour qu’il demande plus souvent, choisis « Demande avant ce qui est risqué » ou « Demande avant tout ce qui sort de son propre dossier » pour cet assistant, ou change dans les Paramètres le niveau de départ des nouveaux assistants.",
+      "create": "Créer l’assistant"
+    },
+    "details": {
+      "trust": "Quand il demande"
+    },
+    "settings": {
+      "newAgentsHint": "À quelle fréquence un nouvel assistant vous demande au début. Vous pouvez le changer pour chaque assistant.",
+      "alwaysAsksLimit": "Un assistant qui peut lancer des commandes sur ton ordinateur peut faire tout ce que ces commandes permettent. Ces cartes couvrent ce que PasaBot voit : une commande ou une requête web directe peut envoyer un message ou payer sans carte. Pour qu'on te demande d'abord, active \"Demander avant les commandes et les requêtes web directes\" pour cet assistant.",
+      "advancedHint": "Affiche aussi les noms techniques et les pages de réglage technique.",
+      "newAgents": "Nouveaux assistants",
+      "alwaysAsksIntro": "Même un assistant de confiance vous demande d'abord, à chaque fois, avant ces actions. Il n'existe pas de « toujours autoriser » pour elles, et ni un canal de chat ni une automatisation ne peut les approuver.",
+      "alwaysAsksMessage": "Messages à d'autres personnes : un e-mail, un chat, un message privé ou une publication destinés à quiconque autre que vos propres chats liés. Un assistant qui vous répond dans votre propre chat ne demande pas.",
+      "alwaysAsksDelete": "Suppression hors de l'espace de travail de l'assistant : fichiers ou dossiers d'un autre assistant ou de n'importe où ailleurs sur cet ordinateur, table de données d'un autre assistant ou partagée, et tout ce qu'un outil ou connecteur externe signale comme destructeur. Supprimer dans l'espace de travail de l'assistant ne demande pas."
+    },
+    "pair": {
+      "fingerprint": "Code de sécurité",
+      "checkOther": "Vérifie que l'autre écran affiche le même code de sécurité, puis touche Confirmer là-bas."
+    },
+    "features": {
+      "agents": "Assistants",
+      "agentsHint": "Modifier, ajouter ou archiver vos assistants"
+    },
+    "groups": {
+      "agents": {
+        "name": "Assistants et cerveaux",
+        "hint": "Vos assistants et l’IA avec laquelle ils pensent"
+      },
+      "inbox": {
+        "hint": "Le courrier que vos assistants lisent pour vous"
+      },
+      "memory": {
+        "hint": "Ce que vos assistants retiennent et gardent"
+      },
+      "tools": {
+        "hint": "Ce que vos assistants peuvent utiliser",
+        "name": "Compétences et outils"
+      }
+    },
+    "nav": {
+      "newAgent": "Nouvel assistant"
+    }
+  },
+  "cards": {
+    "needsOk": "Attend votre accord",
+    "stale": "C’est déjà réglé.",
+    "failed": "Ça n’a pas marché. Réessayez.",
+    "details": "Détails",
+    "settled": {
+      "open": "Ouverte",
+      "done": "Fait",
+      "later": "Plus tard",
+      "dismissed": "Fermée",
+      "failed": "Échec"
+    },
+    "open": "Ouvrir",
+    "download": "Télécharger",
+    "browserAlt": "Le navigateur de l’assistant, en direct",
+    "browserWait": "En attente de l’image…",
+    "stillNeed": "Choses qui attendent encore votre accord : {{count}}",
+    "suggest": {
+      "title": "Ce que vous pouvez demander ensuite",
+      "send": "Essayer",
+      "plan": {
+        "title": "Organiser ma semaine",
+        "send": "Aide-moi à organiser ma semaine"
+      },
+      "remind": {
+        "title": "Rappelle-moi",
+        "send": "Rappelle-moi demain à 9 h de payer les factures"
+      },
+      "write": {
+        "title": "Écrire un message",
+        "send": "Aide-moi à écrire un message court et sympathique à un client"
+      },
+      "find": {
+        "title": "Voir ce que l’équipe sait faire",
+        "send": "Que pouvez-vous faire pour moi, toi et l’équipe ?"
+      },
+      "hint": "Touchez-en une pour la mettre dans la zone de message, puis modifiez-la et envoyez."
+    },
+    "idea": "Idée",
+    "more": "{{count}} de plus"
+  },
+  "system": {
+    "pageTitle": "Cet ordinateur",
+    "pageHint": "Ce que PasaBot a trouvé sur l’ordinateur où il tourne",
+    "kicker": "À propos de cet ordinateur",
+    "gotIt": "Compris",
+    "seen": "Vu",
+    "details": "Détails",
+    "changeTrust": "Changer ce que les nouveaux assistants peuvent faire",
+    "allGood": "Rien à corriger sur cet ordinateur.",
+    "windows-no-sandbox": {
+      "title": "Les assistants de ce PC Windows n’ont pas de boîte de sécurité",
+      "text": "Sous Windows, PasaBot ne peut pas encore garder les assistants dans leur propre dossier : un assistant pourrait ouvrir n’importe quel fichier que vous pouvez ouvrir. C’est pourquoi les nouveaux assistants vous demandent avant d’agir hors de leur dossier. N’ajoutez que des assistants de confiance."
+    },
+    "linux-sandbox-missing": {
+      "title": "Les assistants ne peuvent pas encore démarrer",
+      "text": "Il manque à cet ordinateur un petit outil de sécurité appelé bubblewrap. Demandez à la personne qui s’occupe de cet ordinateur de l’installer, puis relancez PasaBot."
+    },
+    "linux-sandbox-userns": {
+      "title": "Les assistants ne peuvent pas encore démarrer",
+      "text": "Ce Linux bloque la boîte de sécurité où travaillent les assistants. La personne qui s’occupe de cet ordinateur peut l’autoriser avec un réglage, puis relancer PasaBot."
+    },
+    "linux-sandbox-other": {
+      "title": "Les assistants ne peuvent pas encore démarrer",
+      "text": "La boîte de sécurité des assistants n’a pas démarré sur cet ordinateur. Demandez à la personne qui s’en occupe de vérifier."
+    },
+    "vault-unavailable": {
+      "title": "Les clés et mots de passe enregistrés sont verrouillés",
+      "text": "PasaBot n’a pas pu ouvrir son coffre cette fois : il ne peut ni enregistrer ni utiliser de clés et de mots de passe. Relancez PasaBot. Si cela continue, lancez la vérification de cette page."
+    },
+    "vault-key-file": {
+      "title": "La clé de votre coffre est dans un fichier",
+      "text": "Cet ordinateur n’a pas de trousseau : PasaBot garde la clé de son coffre dans un fichier que seul votre compte peut ouvrir. Les programmes que vous lancez vous-même pourraient quand même le lire."
+    },
+    "data-folder-open": {
+      "title": "Le dossier de PasaBot est peut-être ouvert à d’autres",
+      "text": "Windows n’a pas laissé PasaBot verrouiller son dossier pour votre compte : d’autres comptes de ce PC pourraient voir vos discussions et vos clés. Lancez la vérification de cette page pour en savoir plus."
+    },
+    "signin-links": {
+      "title": "Codex et OpenCode ont besoin d’un réglage Windows",
+      "text": "Pour que les assistants utilisent votre connexion Codex ou OpenCode, activez le Mode développeur dans les Paramètres Windows, puis relancez PasaBot. Claude fonctionne sans."
+    },
+    "check": {
+      "title": "Vérifier cet ordinateur",
+      "text": "Fait une courte vérification que PasaBot fonctionne sur ce PC et montre ce qui a réussi. Elle utilise un dossier de test, jamais vos données.",
+      "notInstalled": "La vérification est fournie avec l’app Windows installée. Installez PasaBot pour l’utiliser.",
+      "run": "Vérifier cet ordinateur",
+      "started": "La vérification s’est ouverte dans sa propre fenêtre.",
+      "failed": "La vérification n’a pas démarré. Réessayez."
+    }
+  }
+}

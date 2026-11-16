@@ -1,0 +1,209 @@
+{
+  "nav": "使用量",
+  "page": {
+    "title": "使用量",
+    "intro": "エージェントが使用したトークン数です。このサーバー上の分のみ集計しています。",
+    "days": "過去{{count}}日間",
+    "agents": "エージェント別",
+    "providers": "ブレイン別",
+    "empty": "トークン数のある実行はまだありません。",
+    "agent": "エージェント",
+    "provider": "ブレイン",
+    "runs": "実行回数",
+    "input": "入力",
+    "output": "出力",
+    "cache": "キャッシュ",
+    "limits": "一時停止中のブレイン",
+    "noLimits": "すべてのブレインが利用可能です。",
+    "limitUntil": "{{provider}}：{{reason}}、{{time}}以降に再試行します",
+    "check": "今すぐ確認",
+    "checked": "確認しました：{{count}}件のブレインが再び利用可能です。"
+  },
+  "gauge": {
+    "label": "コンテキスト {{pct}}%",
+    "title": "コンテキスト {{window}} トークン中 {{used}} トークンを使用中（{{provider}}）",
+    "full": "メモリ {{pct}}% 使用中",
+    "menu": "このチャットの使用量",
+    "none": "このチャットのコンテキスト情報はまだありません。"
+  },
+  "notice": {
+    "switched": "{{from}}から{{to}}に切り替えました（{{reason}}）。チャットはそのまま続けられます。",
+    "back": "{{to}}に戻りました。",
+    "compactedNative": "コンテキストが{{pct}}%になったため、圧縮しました。",
+    "compactedReseed": "コンテキストが{{pct}}%になりました。次の返信から、要約を引き継いだ新しいセッションを開始します。",
+    "overflow": "コンテキストがいっぱいになったため、要約を引き継いだ新しいセッションを開始しました。",
+    "stopped": "圧縮を停止しました。直近2回の圧縮でほとんど空きが増えませんでした。新しいチャットを始めるか、設定で圧縮を再開してください。",
+    "reason": {
+      "rate_limit": "レート制限",
+      "quota": "使用量の上限",
+      "auth": "サインインの問題",
+      "context_overflow": "コンテキストがいっぱい",
+      "offline": "メインがオフライン"
+    }
+  },
+  "settings": {
+    "title": "ブレインとフォールバック",
+    "intro": "ブレインが上限に達すると、エージェントはリストの次のブレインで続行し、上限が解除されると元に戻ります。",
+    "fallback": "フォールバック {{n}}",
+    "none": "なし",
+    "model": "モデル（任意）",
+    "account": "{{provider}}のアカウント",
+    "defaultAccount": "デフォルトのアカウント",
+    "compactPct": "圧縮するタイミング（コンテキストの%）",
+    "compactHint": "空欄 = {{pct}}%",
+    "save": "保存",
+    "saved": "保存しました",
+    "stopped": "このエージェントの圧縮は停止しています。",
+    "resume": "圧縮を再開",
+    "accounts": "アカウント",
+    "accountsIntro": "各アカウントには、そのブレインのCLI用の専用サインインフォルダがあります。",
+    "accountLabel": "アカウント名",
+    "accountProvider": "ブレイン",
+    "addAccount": "アカウントを追加",
+    "remove": "削除",
+    "noAccounts": "追加のアカウントはありません。",
+    "accountSignIn": "サインインするには、サーバーのターミナルで次のコマンドを一度実行してください：",
+    "accountFolder": "このブレインのCLI用サインインフォルダ：",
+    "accountChecking": "確認中…",
+    "accountSignedIn": "サインイン済み",
+    "accountSignedOut": "未サインイン",
+    "accountUnknown": "サインイン未確認",
+    "primary": "{{provider}}を使用"
+  },
+  "server": {
+    "stoppedTitle": "{{name}}: 圧縮を停止しました",
+    "stoppedBody": "2 回続けて圧縮しても、コンテキストの空きが 10 % 未満でした。新しいチャットを始めるか、設定で圧縮を再開してください。"
+  },
+  "find": {
+    "navHint": "エージェントの使用量と費用",
+    "navKeywords": "使用量, 費用, トークン, 支出, 請求",
+    "settingsHint": "AI ブレインの上限と確認",
+    "settingsKeywords": "ブレイン, モデル, 上限, プロバイダー, 人工知能",
+    "brainsHint": "エージェントが考えるのに使う AI を設定",
+    "brainsKeywords": "ブレイン, AI, モデル, サインイン, インストール, Claude, Codex, Gemini, Grok, OpenCode, ローカル, 無料"
+  },
+  "brains": {
+    "title": "ブレイン",
+    "intro": "ブレインはエージェントが考えるための AI です。1つ以上を設定し、各エージェントがメインとバックアップを選びます。",
+    "name": {
+      "opencode": "無料スターター（OpenCode）",
+      "local": "ローカルモデル",
+      "acp": "その他の ACP エージェント"
+    },
+    "desc": {
+      "claude": "Anthropic の Claude Code アプリ（Claude アカウントで利用）",
+      "codex": "OpenAI の Codex アプリ（ChatGPT アカウントで利用）",
+      "opencode": "無料モデル。キーも支払いも不要。最初の一歩に",
+      "gemini": "Google の Gemini CLI（Google アカウントで利用）",
+      "grok": "xAI の Grok CLI（xAI キーで利用）",
+      "local": "このコンピューター上の Ollama または LM Studio。プライベートでオフラインでも動作",
+      "acp": "Agent Client Protocol に対応したアプリ",
+      "other": "プラグインまたはテスト用に追加されたブレイン"
+    },
+    "state": {
+      "ready": "準備完了",
+      "needs_sign_in": "サインインが必要",
+      "not_installed": "未インストール",
+      "unreachable": "接続できません",
+      "not_running": "起動していません",
+      "needs_model": "モデルが必要です",
+      "checking": "確認中…"
+    },
+    "unconfirmed": "サインインを確認できませんでした。テストで確かめてください。",
+    "notFound": "見つかりません",
+    "install": "インストール",
+    "signIn": "サインイン",
+    "test": "テスト",
+    "testing": "テスト中…",
+    "useNew": "新しいエージェントに使う",
+    "checkAgain": "再確認",
+    "steps": "手順",
+    "browse": "探してインストール",
+    "close": "閉じる",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "details": "詳細",
+    "works": "動作しました。返答：「{{reply}}」· {{secs}} 秒",
+    "usedBy": "{{names}} が使用中",
+    "backupFor": "{{names}} のバックアップ",
+    "noneReady": "準備できたブレインはまだありません。無料スターターならワンタップです。",
+    "useStarter": "無料スターターを使う",
+    "stepsTitle": "{{name}} を設定",
+    "step": {
+      "terminal": "このコンピューターでターミナルを開きます。",
+      "paste": "このコマンドを貼り付けて Return を押します：",
+      "signIn": "このコマンドを貼り付け、開いたサインインに従います：",
+      "back": "ここに戻って「再確認」を押します。",
+      "noPassword": "PasaBot がパスワードを尋ねることはありません。サインインはアプリ側で行います。",
+      "geminiChoose": "聞かれたら「Sign in with Google」を選びます。",
+      "grokInstall": "xAI の案内に従って Grok CLI をインストールします。",
+      "starter": "または PasaBot にインストールさせます（実行前にダウンロードを検証）：",
+      "starterCta": "無料スターターをインストール",
+      "vault": "xAI キーを PasaBot の保管庫に {{name}} として保存します。保存後はどのページにも表示されません。",
+      "local": "Ollama または LM Studio をインストールし、モデルを1つダウンロードしてアプリを開いたままにします。",
+      "localCta": "ローカルモデルを設定",
+      "acp": "一覧からエージェントを選んでインストールします。",
+      "acpCta": "ACP エージェントを開く",
+      "keyLabel": "{{brain}} のキー",
+      "keyWho": "このブレインで動くエージェントはキーを見ることができます。",
+      "keySave": "キーを保存",
+      "keySaved": "キーをシークレットボールトに保存しました。",
+      "keyErr": "キーを保存できませんでした。もう一度お試しください。",
+      "tokenTitle": "またはセットアップトークンを貼り付ける",
+      "tokenWhy": "サインインが続かないときや、PasaBot が別のコンピューターで動いているときに使います。",
+      "tokenRun": "ターミナルを開いてこれを貼り付け、Return を押します。ブラウザが開いたらサインインします：",
+      "tokenPaste": "最後に表示される長いコードをコピーして、下に貼り付けます。",
+      "tokenLabel": "セットアップトークン",
+      "tokenWho": "PasaBot の保管庫に鍵をかけて保存します。Claude で動くエージェントはこれを見られます。",
+      "tokenSave": "トークンを保存",
+      "tokenSaved": "トークンを保存しました。Claude を確認しています…",
+      "tokenErr": "トークンを保存できませんでした。もう一度お試しください。",
+      "starterFailed": "無料スターターをインストールできませんでした。少ししてからもう一度お試しください。",
+      "starterPlain": "PasaBot がワンタップでインストールできます。このパソコンのあなた専用の小さな無料アプリで、動かす前に確認されます。1 分ほどかかります。",
+      "terminalWindows": "このコンピューターで PowerShell を開きます（スタートメニューで PowerShell と入力）。",
+      "pasteWindows": "このコマンドを貼り付けて Enter キーを押します:",
+      "nodeFirstWindows": "npm が見つからないと表示されたら、先に nodejs.org から Node.js をインストールし、新しい PowerShell ウィンドウを開いてください。"
+    },
+    "err": {
+      "auth": "サインインしていないか、期限が切れています。もう一度サインインしてください。",
+      "limit": "このアカウントは利用上限に達しました。後でもう一度お試しください。",
+      "limitAt": "このアカウントは利用上限に達しました。{{time}} にリセットされます。",
+      "offline": "ブレインに接続できません。インターネット、または Ollama / LM Studio が開いているか確認してください。",
+      "crash": "アプリが返答前に停止しました。",
+      "timeout": "1分以内に返答がありません。アプリが混雑中か止まっている可能性があります。",
+      "model": "このモデルはこのアカウントでは使えません。別のモデルを選んでください。",
+      "notInstalled": "このコンピューターにはインストールされていません。",
+      "busy": "テストが続きすぎています。1分待ってからもう一度お試しください。",
+      "failed": "テストを実行できませんでした。もう一度お試しください。",
+      "load": "ブレインを読み込めませんでした。もう一度お試しください。"
+    },
+    "inUse": "使用中：{{name}}",
+    "notHere": "このコンピューターにはありません"
+  },
+  "plain": {
+    "find": {
+      "brainsHint": "お手伝いが考えるのに使うAIを設定",
+      "navHint": "お手伝いの使用量と費用"
+    },
+    "brains": {
+      "intro": "ブレインはお手伝いが考えるための AI です。1つ以上を設定し、各お手伝いがメインとバックアップを選びます。",
+      "useNew": "新しいお手伝いに使う",
+      "desc": {
+        "opencode": "無料頭脳。キーも支払いも不要。最初の一歩に",
+        "gemini": "Google の Gemini CLI（Google アカウントで利用）",
+        "grok": "xAI の Grok CLI（xAI キーで利用）",
+        "acp": "Agent Client Protocol に対応したアプリ"
+      },
+      "name": {
+        "local": "ローカル頭脳",
+        "acp": "その他の ACP お手伝い"
+      }
+    },
+    "page": {
+      "intro": "お手伝いが使った量。このコンピューターでだけ数えます。",
+      "agents": "お手伝いごと",
+      "empty": "まだ何も使っていません。",
+      "agent": "お手伝い"
+    }
+  }
+}

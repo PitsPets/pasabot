@@ -1,0 +1,38 @@
+{
+  "schema": "pasabot.connector/v1",
+  "slug": "stripe",
+  "name": "Stripe",
+  "version": "1.0.0",
+  "category": "shop-money",
+  "summary": "Stripe's own hosted MCP server. Sign in with Stripe in your browser. Anything that moves money or changes your account asks you first.",
+  "homepage": "https://stripe.com",
+  "source": "https://docs.stripe.com/mcp",
+  "group": "shop-money",
+  "popular": true,
+  "kind": "mcp-http",
+  "mcp": {
+    "url": "https://mcp.stripe.com",
+    "headers": {
+      "Authorization": "Bearer {{secret:oauth_token}}"
+    }
+  },
+  "auth": {
+    "type": "oauth2_pkce",
+    "oauth": {
+      "discover": "mcp",
+      "clientIdFrom": "register"
+    }
+  },
+  "network": {
+    "allowHosts": []
+  },
+  "defaultTier": 3,
+  "toolClasses": {
+    "stripe_api_write": "money",
+    "send_money": "money",
+    "transfer_money": "money",
+    "convert_currency": "money",
+    "setup_recipient": "money",
+    "send_stripe_feedback": "outbound-message"
+  }
+}

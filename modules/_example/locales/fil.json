@@ -1,0 +1,15 @@
+{
+  "nav": "Halimbawa",
+  "page": {
+    "title": "Halimbawang module",
+    "body": "Pinupunan ng module na ito ang bawat slot ng Module SDK."
+  },
+  "settings": "Mga setting ng halimbawa",
+  "composer": "Maglagay ng tala",
+  "dock": "Panel ng halimbawa",
+  "onboarding": "Halimbawang hakbang sa onboarding",
+  "note": "Tala",
+  "tools": {
+    "example_echo": "Ulitin"
+  }
+}

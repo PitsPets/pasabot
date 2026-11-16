@@ -1,0 +1,113 @@
+{
+  "nav": "Browser",
+  "page": {
+    "title": "Browser",
+    "intro": "Browser profiles your agents can use. Each one keeps its own cookies and sign-ins, colour and proxy. Watch one live, steer it yourself, or pop it out while you chat.",
+    "empty": "No browser profiles yet. Agents make one the first time they browse, or you can add one now.",
+    "ownerOnly": "Only the owner can see and use browser profiles."
+  },
+  "badge": {
+    "running": "Running",
+    "loggedIn": "Has your sign-ins",
+    "proxy": "Proxy"
+  },
+  "profile": {
+    "via": "Through {{server}}",
+    "loggedInNote": "Agents must ask you, with your password or passkey, before they use this profile.",
+    "defaultName": "Agent browser"
+  },
+  "actions": {
+    "new": "New profile",
+    "watch": "Watch",
+    "start": "Start",
+    "stop": "Stop",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteConfirm": "Delete {{name}} with its cookies and sign-ins? This cannot be undone.",
+    "pip": "Pop out",
+    "full": "Full view",
+    "closePip": "Close",
+    "closeView": "Close view"
+  },
+  "form": {
+    "newTitle": "New browser profile",
+    "editTitle": "Edit browser profile",
+    "name": "Name",
+    "color": "Colour",
+    "proxy": "Proxy (optional)",
+    "proxyHint": "http://, https:// or socks5:// with host and port. Applies the next time the browser starts.",
+    "bypass": "Skip the proxy for",
+    "username": "Proxy username",
+    "password": "Proxy password",
+    "passwordVault": "Kept in the vault, never shown again.",
+    "passwordKeep": "Leave empty to keep the saved password.",
+    "loggedIn": "This profile has my sign-ins (agents must ask first)",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "live": {
+    "title": "{{name}} live",
+    "alt": "Live view of the {{name}} browser",
+    "waiting": "Waiting for the first picture…",
+    "stopped": "This browser is not running."
+  },
+  "steer": {
+    "address": "Address",
+    "go": "Open",
+    "type": "Type into the page",
+    "typeHint": "Click a field in the picture first. Typing marks this profile as having your sign-ins.",
+    "send": "Type"
+  },
+  "keys": {
+    "Enter": "Enter",
+    "Tab": "Tab",
+    "Backspace": "Backspace",
+    "Escape": "Esc",
+    "up": "Scroll up",
+    "down": "Scroll down"
+  },
+  "network": {
+    "title": "Local addresses",
+    "allowHosts": "Hosts the browser may open on your network",
+    "hint": "Private and loopback addresses are blocked unless listed here, separated by commas.",
+    "save": "Save",
+    "saved": "Saved."
+  },
+  "pip": {
+    "label": "Browser picture-in-picture"
+  },
+  "dock": {
+    "label": "Browser",
+    "idle": "No browser is running right now."
+  },
+  "tools": {
+    "browser_navigate": "Browser: open a page",
+    "browser_snapshot": "Browser: read the page",
+    "browser_click": "Browser: click",
+    "browser_type": "Browser: type into a field"
+  },
+  "server": {
+    "yourTurn": "Your turn in the browser"
+  },
+  "find": {
+    "navHint": "Let an agent use a web browser",
+    "navKeywords": "web, browse, website, internet"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Let a helper use a web browser"
+    },
+    "page": {
+      "intro": "Browsers your helpers can use. Each one keeps its own sign-ins, colour and settings. Watch one live, steer it yourself, or pop it out while you chat.",
+      "empty": "No browsers yet. A helper makes one the first time it browses, or you can add one now."
+    },
+    "profile": {
+      "loggedInNote": "Helpers must ask you, with your password or passkey, before they use this browser.",
+      "defaultName": "Helper’s browser"
+    },
+    "form": {
+      "passwordVault": "Kept safe on this computer, never shown again.",
+      "loggedIn": "This browser has my sign-ins (helpers must ask first)"
+    }
+  }
+}

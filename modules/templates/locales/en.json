@@ -1,0 +1,109 @@
+{
+  "nav": "Templates",
+  "page": {
+    "title": "Templates",
+    "starterTitle": "Free starter"
+  },
+  "onboarding": {
+    "title": "Pick a brain for your first agent",
+    "intro": "Your agents need a brain: an AI model they think with. Choose how to get one.",
+    "freeTitle": "Free starter, no setup",
+    "freeBody": "Uses a free model through the OpenCode app. No key, no login, no payment.",
+    "freeCta": "Use the free starter",
+    "freeUnavailable": "The free starter is not available right now. Set up a brain yourself below.",
+    "guidedTitle": "Use a brain you already have",
+    "guidedBody": "Claude, Codex, OpenCode or another app you have signed in to on this computer.",
+    "found": "Found on this computer",
+    "notFound": "Not installed",
+    "installHint": "To install: {{cmd}}",
+    "guidedCta": "Add your first agent",
+    "localTitle": "Local model on this computer",
+    "localBody": "A model server is running on this computer. Your agent thinks there: no account, nothing leaves the computer.",
+    "localFound": "{{name}} answers at {{url}} with {{count}} model(s).",
+    "localCta": "Use {{name}}",
+    "localAdded": "{{name}} is added. Pick it as the brain of your first agent.",
+    "useThis": "Use this",
+    "setUp": "Set up"
+  },
+  "consent": {
+    "title": "Install OpenCode for the free starter?",
+    "what": "What: {{what}}",
+    "where": "Where: {{where}} (for your user only, no admin rights)",
+    "from": "From: {{from}}",
+    "check": "The download is checked against its published SHA-256 before anything is written.",
+    "models": "Free models as checked on {{date}}. Free models can end at any time; PasaBot will tell you if yours stops working.",
+    "agree": "Install and create my agent",
+    "back": "Back",
+    "working": "Installing…",
+    "failed": "Could not install OpenCode: {{reason}}. Nothing was created. You can still set up a brain yourself.",
+    "agentName": "Starter",
+    "agentInstructions": "You are a friendly helper. Keep answers short and clear."
+  },
+  "notice": {
+    "title": "The free model stopped working",
+    "body": "{{model}} {{reason}}. Your agent needs another brain.",
+    "action": "Pick another brain",
+    "notFreeTitle": "The free model is no longer free",
+    "not_free": "{{name}} is no longer free. Your agent needs another brain: set one up, or use a local model.",
+    "needs_key": "{{name}} now needs a key or a login. Your agent needs another brain.",
+    "unavailable": "{{name}} is no longer available. Your agent needs another brain.",
+    "none": "Your free starter is working.",
+    "busy": "The free model is busy or out of quota, try again at {{time}}."
+  },
+  "catalog": {
+    "title": "Start from a template",
+    "use": "Use",
+    "useNamed": "Use {{name}}",
+    "export": "Export",
+    "exportNamed": "Export {{name}}",
+    "empty": "No templates yet."
+  },
+  "describe": {
+    "title": "Describe your agent",
+    "label": "What should the agent do?",
+    "placeholder": "Make me an agent that…",
+    "submit": "Make a draft"
+  },
+  "import": {
+    "title": "Import an agent file",
+    "hint": "A .pasabot-template.json, an agent .md file or an assistant .json file.",
+    "label": "Agent file"
+  },
+  "review": {
+    "title": "Review the new agent",
+    "hint": "Nothing is created until you press Create.",
+    "name": "Name",
+    "instructions": "Instructions",
+    "brain": "Brain",
+    "create": "Create agent",
+    "cancel": "Cancel"
+  },
+  "error": "Something went wrong: {{msg}}",
+  "server": {
+    "skippedTitle": "A routine was skipped: the free model is rate limited",
+    "skippedBody": "Routines on the free model skip their runs until then; the next fire runs as usual."
+  },
+  "find": {
+    "navHint": "Ready-made agents to start from",
+    "navKeywords": "templates, examples, starter, presets"
+  },
+  "plain": {
+    "find": {
+      "navHint": "Ready-made helpers to start from"
+    },
+    "describe": {
+      "title": "Describe your helper",
+      "label": "What should the helper do?",
+      "placeholder": "Make me a helper that…"
+    },
+    "import": {
+      "title": "Bring in a helper from a file",
+      "hint": "A helper file saved by PasaBot or by another assistant app.",
+      "label": "Helper file"
+    },
+    "review": {
+      "title": "Check the new helper",
+      "create": "Make this helper"
+    }
+  }
+}

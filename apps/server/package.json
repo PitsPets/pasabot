@@ -1,0 +1,40 @@
+{
+  "name": "@pasabot/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": {
+    ".": {
+      "source": "./src/host/index.ts",
+      "types": "./dist/host/index.d.ts",
+      "default": "./dist/host/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/host/main.js"
+  },
+  "dependencies": {
+    "@pasabot/core": "workspace:*",
+    "@pasabot/protocol": "workspace:*",
+    "@pasabot/db": "workspace:*",
+    "@pasabot/i18n": "workspace:*",
+    "fastify": "^5.6.0",
+    "@fastify/websocket": "^11.0.0",
+    "zod": "^4.6.7",
+    "kysely": "^0.29.0",
+    "better-sqlite3": "^13.1.1",
+    "@pasabot/safe-net": "workspace:*",
+    "@noble/ciphers": "^2.0.0",
+    "@noble/hashes": "^2.0.0",
+    "@simplewebauthn/server": "^14.1.0"
+  },
+  "devDependencies": {
+    "@pasabot/provider-fake": "workspace:*",
+    "@pasabot/provider-claude": "workspace:*"
+  },
+  "bin": {
+    "pasabot-server": "./dist/host/main.js"
+  }
+}

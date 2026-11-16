@@ -1,0 +1,119 @@
+{
+  "title": "Vault",
+  "intro": "Mga key at password na ginagamit ng mga agent mo. Reference lang tulad ng {{example}} ang nakukuha nila; nananatili sa server na ito ang totoong value at nakatago ito sa bawat sagot, log at channel.",
+  "loading": "Binubuksan ang vault…",
+  "error": "Hindi ma-load ang vault: {{reason}}",
+  "unavailable": "Naka-lock ang vault sa server na ito (walang passphrase o keychain). Simulan ang server na may vault passphrase para magamit ito.",
+  "requests": {
+    "title": "Mga agent na humihingi ng key",
+    "asks": "Humihingi si {{agent}} ng {{name}}",
+    "untrusted": "Hindi ikaw ang nagsimula ng turn na humingi nito. Siguraduhing kailangan talaga bago mo ibigay.",
+    "fill": "Ibigay ang key",
+    "decline": "Tanggihan",
+    "filled": "Magagamit na ni {{agent}} ang {{reference}}.",
+    "declined": "Tinanggihan ang hiling."
+  },
+  "secrets": {
+    "title": "Mga naka-save na secret",
+    "empty": "Wala pang secret.",
+    "shared": "Shared (server)",
+    "for": "Para kay {{agent}}",
+    "remove": "Alisin",
+    "confirmRemove": "Alisin ang {{name}}? Hihinto ang mga agent na gumagamit nito hanggang idagdag mo ulit.",
+    "module": "May {{count}} pang entry na para sa mga channel at password manager.",
+    "backend_local": "Naka-save dito",
+    "backend_bitwarden": "Bitwarden",
+    "backend_1password": "1Password",
+    "forBrain": "Susi ng {{brain}}. Makikita ito ng mga agent na tumatakbo rito."
+  },
+  "add": {
+    "title": "Magdagdag ng secret",
+    "open": "Magdagdag ng secret",
+    "name": "Pangalan",
+    "nameHint": "Letra, numero, _ . - (isinusulat ito ng agent bilang {{example}}).",
+    "who": "Sino ang puwedeng gumamit",
+    "shared": "Shared (server lang, walang agent)",
+    "source": "Saan galing ang value",
+    "source_local": "I-type ang value",
+    "source_bitwarden": "Item sa Bitwarden",
+    "source_1password": "Reference sa 1Password",
+    "value": "Value",
+    "valueHint": "Isusulat lang: hindi na ito ipapakita ulit.",
+    "ref_bitwarden": "Item id sa Bitwarden",
+    "refHint_bitwarden": "Item id, o id/field (password, username, notes, totp o custom field).",
+    "ref_1password": "Secret reference",
+    "refHint_1password": "Halimbawa: op://Private/GitHub/token",
+    "save": "I-save",
+    "cancel": "Kanselahin",
+    "saved": "Na-save ang {{name}}.",
+    "brainOption": "Susi ng {{brain}}"
+  },
+  "backends": {
+    "title": "Mga password manager",
+    "intro": "Binabasa ng PasaBot ang mga value gamit ang command-line tool ng Bitwarden (bw) o 1Password (op) sa server na ito. Reference lang ang naka-save dito.",
+    "bitwarden": "Bitwarden",
+    "1password": "1Password",
+    "token_bitwarden": "Session key (mula sa bw unlock)",
+    "token_1password": "Service account token",
+    "tokenHint": "Isusulat lang. Iwanang blangko at i-save para alisin.",
+    "set": "May naka-save na key",
+    "notSet": "Walang naka-save na key",
+    "save": "I-save ang key",
+    "test": "Subukan",
+    "state_ready": "Handa na",
+    "state_locked": "Naka-lock o hindi naka-sign in",
+    "state_not_installed": "Hindi naka-install ang command-line tool sa server",
+    "state_unsafe_bin": "Naka-off (hindi ligtas ang lokasyon ng tool)",
+    "unsafeHint": "Naka-off: kayang palitan ng user ng server na ito ang file ng tool, kaya puwede itong palitan ng agent. I-install ito sa system folder (o i-set ang PASABOT_BW_BIN / PASABOT_OP_BIN sa ganoong path) at i-restart.",
+    "state_error": "Hindi gumagana"
+  },
+  "rotate": {
+    "title": "Palitan ang vault key",
+    "intro": "Gagawa ng bagong encryption key at ie-encrypt ulit ang bawat secret gamit ito. Hindi nagbabago ang mga value.",
+    "button": "Palitan ang key",
+    "confirm": "I-encrypt ulit ang bawat secret gamit ang bagong key ngayon?",
+    "yes": "Palitan na",
+    "cancel": "Kanselahin",
+    "done": "Na-encrypt ulit ang {{count}} secret gamit ang bagong key.",
+    "last": "Huling pinalitan noong {{when}}."
+  },
+  "tools": {
+    "vault_request_secret": "Humingi ng key sa may-ari",
+    "vault_list_secrets": "Ilista ang mga key ko"
+  },
+  "server": {
+    "asksForKey": "Humihingi si {{agent}} ng key: {{name}}"
+  },
+  "find": {
+    "settingsHint": "Mga password at susi, nakakandado",
+    "settingsKeywords": "password, susi, lihim, token, kredensyal"
+  },
+  "plain": {
+    "title": "Mga naka-save na sikreto",
+    "intro": "Mga key at password na ginagamit ng mga katulong mo. Pamalit lang tulad ng {{example}} ang nakukuha nila; nananatili sa computer na ito ang totoong value at nakatago ito sa bawat sagot, log at chat.",
+    "backends": {
+      "intro": "Binabasa ng PasaBot ang mga value gamit ang app ng Bitwarden (bw) o 1Password (op) sa computer na ito. Pamalit lang ang naka-save dito.",
+      "token_1password": "Sikretong code ng 1Password"
+    },
+    "rotate": {
+      "title": "Palitan ang kandado ng mga naka-save na sikreto"
+    },
+    "secrets": {
+      "title": "Mga naka-save dito",
+      "forBrain": "Key para sa {{brain}}. Magagamit ito ng mga katulong na gumagamit ng isip na iyon.",
+      "confirmRemove": "Alisin ang {{name}}? Titigil ang mga katulong na gumagamit nito hanggang idagdag mo ulit."
+    },
+    "requests": {
+      "title": "Mga katulong na humihingi ng key"
+    }
+  },
+  "card": {
+    "request": {
+      "title": "Kailangan ni {{agent}} ang {{name}} key mo",
+      "text": "Magagamit ito ni {{agent}} pero hindi niya makikita. Ikaw lang ang makakapagbigay nito, sa safe box.",
+      "give": "Ibigay ang key",
+      "given": "Na-save ang key. Magagamit na niya",
+      "declined": "Hindi ibinigay"
+    }
+  }
+}

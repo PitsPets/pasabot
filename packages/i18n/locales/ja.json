@@ -1,0 +1,136 @@
+{
+  "app": {
+    "name": "PasaBot"
+  },
+  "common": {
+    "retry": "再試行",
+    "skip": "スキップ",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "loading": "読み込み中…"
+  },
+  "queue": {
+    "interrupted": "サーバーの再起動により、この実行は中断されました。",
+    "interruptedHint": "再試行するか、スキップして次のメッセージに進んでください。",
+    "routineInterrupted": "{{agent}}のルーティン実行が、サーバーの再起動により中断されました。"
+  },
+  "blocks": {
+    "fallback": "このメッセージには、このアプリで表示できない内容（{{kind}}）が含まれています。"
+  },
+  "meta": {
+    "name": "日本語",
+    "dir": "ltr",
+    "status": "unreviewed"
+  },
+  "server": {
+    "approvalNeeded": "承認が必要です",
+    "wantsToUse": "{{name}}が実行しようとしています: {{tool}}",
+    "interrupted": "サーバーの再起動で実行が中断されました",
+    "interruptedBody": "{{kind}} {{id}}",
+    "runFailed": "{{name}}: 実行に失敗しました",
+    "unknownError": "不明なエラー",
+    "devicePaired": "端末がペアリングされました",
+    "devicePairedBody": "{{what}} があなたのアカウントにサインインできるようになりました。"
+  },
+  "provider": {
+    "fakeName": "ダミー（テスト用）",
+    "hint": {
+      "notOnPath": "PATHに{{cli}}が見つかりません",
+      "notFound": "{{cli}}が見つかりません",
+      "versionFailed": "`{{cmd}} --version` が失敗しました",
+      "runToSignIn": "サインインするには `{{cmd}}` を一度実行してください",
+      "runToSignInOrKey": "サインインするには `{{cmd}}` を一度実行してください（または保管庫で {{env}} を設定）",
+      "runToAddProvider": "プロバイダーを追加するには `{{cmd}}` を一度実行してください",
+      "checkedFirstTurn": "サインインは最初のターンで確認します",
+      "notAnswering": "{{name}}（{{url}}）が応答しません",
+      "turnSignIn": "前回の実行でサインインがうまくいきませんでした。「頭脳」ページでもう一度サインインしてください。"
+    }
+  },
+  "channel": {
+    "linked": "リンクしました。ここで{{agent}}と話せます。",
+    "linkInvalid": "そのリンクコードは無効か期限切れです。PasaBotの設定 → チャンネルで新しく作ってください。",
+    "failed": "すみません、うまくいきませんでした。詳しくはPasaBotアプリをご覧ください。",
+    "empty": "（返信なし）",
+    "interrupted": "再起動で中断されました。PasaBotアプリでやり直してください。",
+    "approvalAsk": "承認が必要です: {{summary}}\n/approve {{id}} か /deny {{id}} で返信してください",
+    "approvalDevice": "承認が必要です: {{summary}}\nこれはペアリング済みの端末のPasaBotアプリでのみ承認できます。",
+    "approvalNone": "このチャットにそのIDの保留中の承認はありません。",
+    "approvalOwnerOnly": "承認に答えられるのはリンク済みのオーナーだけです。",
+    "approvalDeviceOnly": "この承認にはペアリング済みの端末のPasaBotアプリでのみ答えられます。",
+    "approved": "{{id}} を承認しました。",
+    "denied": "{{id}} を拒否しました。"
+  },
+  "card": {
+    "action": {
+      "open": "開く",
+      "dismiss": "閉じる",
+      "signIn": "もう一度サインイン",
+      "retry": "もう一度",
+      "otherBrain": "別の頭脳を使う",
+      "wait": "このまま待つ",
+      "notNow": "今はしない",
+      "takeOver": "自分で操作する",
+      "imDone": "終わりました。続けて",
+      "ok": "了解",
+      "remind": "あとで知らせて"
+    },
+    "signIn": {
+      "title": "{{name}} の頭脳にサインインが必要です",
+      "text": "{{brain}} がサインアウトしているため、{{name}} はまだ答えられません。一度サインインしてから、もう一度試してください。"
+    },
+    "failed": {
+      "title": "{{name}} はこの返事を最後まで書けませんでした",
+      "offline": "頭脳につながりませんでした。インターネットを確認して、もう一度試してください。",
+      "timeout": "時間がかかりすぎたので止まりました。",
+      "auth": "頭脳がサインアウトしています。",
+      "ratelimit": "頭脳の利用上限に今は達しています。",
+      "quota": "このプランでは頭脳の利用分が残っていません。",
+      "contextoverflow": "会話が頭脳にとって長くなりすぎました。",
+      "other": "返事が終わる前に頭脳が止まりました。"
+    },
+    "limit": {
+      "title": "{{name}} は {{untilAt}} まで一時停止中です",
+      "text": "頭脳の利用上限に達しました。メッセージは待機して、自動で送られます。",
+      "offline": "今は頭脳につながりません。メッセージは待機して、自動で送られます。",
+      "remindNow": "{{name}} は続きができるようになりました",
+      "offlineTitle": "{{name}} は {{untilAt}} まで一時停止中です"
+    },
+    "settled": {
+      "retrying": "もう一度試しています",
+      "signedIn": "サインインしました",
+      "resumed": "また動いています",
+      "remind": "{{untilAt}} にお知らせします"
+    },
+    "member": {
+      "failed": "{{name}} はこの返事を最後まで書けませんでした。",
+      "approvalWaiting": "{{name}}はオーナーのOKを待っています。",
+      "approvalApproved": "{{name}}はOKをもらいました。",
+      "approvalRefused": "{{name}}は許可されませんでした。"
+    }
+  },
+  "plain": {
+    "card": {
+      "signIn": {
+        "title": "{{name}}のために、もう一度サインインしてください",
+        "text": "{{name}}の頭脳がサインアウトしているため、まだ返事ができません。一度サインインしてから、もう一度メッセージを送ってください。"
+      },
+      "action": {
+        "otherBrain": "別の頭脳を使う"
+      },
+      "limit": {
+        "title": "{{name}} は今使える回数を使い切りました",
+        "text": "{{untilAt}} に続きができます。メッセージは待機して、自動で送られます。",
+        "offlineTitle": "{{name}} は今、頭脳につながりません",
+        "offline": "{{untilAt}} にもう一度試します。メッセージは待機して、自動で送られます。"
+      },
+      "failed": {
+        "offline": "頭脳につながりませんでした。インターネットを確認して、もう一度お試しください。",
+        "auth": "頭脳がサインアウトしています。",
+        "ratelimit": "今使える回数を使い切りました。",
+        "quota": "このプランでは、もう使える回数がありません。",
+        "contextoverflow": "会話が頭脳にとって長くなりすぎました。",
+        "other": "返事が終わる前に止まりました。"
+      }
+    }
+  }
+}
