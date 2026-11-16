@@ -561,7 +561,16 @@
       "own": "Läuft von selbst"
     },
     "technicalOnly": "Für die technische Einrichtung — schalte „{{switch}}“ ein, um sie zu sehen",
-    "technicalOnlyPage": "Diese Seite ist für die technische Einrichtung — schalte „{{switch}}“ ein, um sie zu sehen."
+    "technicalOnlyPage": "Diese Seite ist für die technische Einrichtung — schalte „{{switch}}“ ein, um sie zu sehen.",
+    "app": {
+      "title": "Diese App",
+      "signIn": "Bei der Anmeldung öffnen",
+      "signInHint": "PasaBot starten, wenn du dich an diesem Computer anmeldest.",
+      "quit": "PasaBot beenden",
+      "quitHint": "Beendet PasaBot und seine Helfer auf diesem Computer. Öffne es wieder über deine Apps.",
+      "quitting": "PasaBot wird beendet. Du kannst dieses Fenster schließen.",
+      "failed": "Das hat nicht geklappt. Versuch es noch einmal."
+    }
   },
   "offline": {
     "title": "PasaBot nicht erreichbar",

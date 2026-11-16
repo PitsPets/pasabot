@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SignPath artifact configuration "inner" (release-windows.yml step 2): the files of ours inside the Windows package,
+  signed BEFORE Inno Setup packs them. Paste it into the SignPath project as an artifact configuration and put its
+  slug in the SIGNPATH_INNER_CONFIG_SLUG repository variable. The artifact is the ZIP that actions/upload-artifact
+  makes from apps/desktop/out/sign-inner/ (its root holds PasaBot\ and uninst\).
+  The list is scripts/windows-binaries.mjs's "sign" set (docs/WINDOWS-BINARIES.md); keep the two in step.
+  Not signed here, on purpose: node.exe (already signed by its publisher), the optional voice engine's upstream DLLs
+  (third-party binaries are never signed with this certificate), PasaBot.cmd (batch files carry no signature).
+  verify with SignPath: element names and nesting follow https://docs.signpath.io/artifact-configuration/syntax as read
+  on 2026-11-16, except <powershell-file>, which that page did not show (the .ps1 entries may need another element).
+-->
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <zip-file>
+    <directory path="PasaBot">
+      <!-- verify with SignPath: PowerShell script signing element -->
+      <powershell-file path="PasaBotTray.ps1">
+        <authenticode-sign />
+      </powershell-file>
+      <powershell-file path="PasaBotIcon.ps1">
+        <authenticode-sign />
+      </powershell-file>
+      <powershell-file path="selftest.ps1">
+        <authenticode-sign />
+      </powershell-file>
+      <!-- the database engine, compiled in our CI from the pinned better-sqlite3 source (build-windows.ps1
+           -SqliteFromSource); verify with SignPath that a binary we compile from a dependency's source counts as ours -->
+      <directory path="pasabot/node_modules/better-sqlite3/prebuilds">
+        <pe-file path="win32-x64.node">
+          <authenticode-sign />
+        </pe-file>
+      </directory>
+    </directory>
+    <!-- Inno Setup's uninstaller (unins000.exe once installed), written by the first compile as
+         uninst-<inno version>-<hash>.e32; verify with SignPath that a pe-file with this extension is accepted -->
+    <directory path="uninst">
+      <pe-file path="uninst-*.e*" max-matches="1">
+        <authenticode-sign />
+      </pe-file>
+    </directory>
+  </zip-file>
+</artifact-configuration>

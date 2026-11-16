@@ -51,12 +51,27 @@ export const windowsPowerShell = (env: NodeJS.ProcessEnv = process.env) =>
   `${env.SystemRoot || env.SYSTEMROOT || 'C:\\Windows'}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`;
 
 /**
- * the PowerShell that prints one process's command line, as base64 of its UTF-8 bytes (empty when there is no such
- * process): redirected console output is in the OEM code page (437/850), which would turn C:\Users\Peña into
- * "Pe?a", so the lock of a running launcher there would look stale. Base64 is plain ASCII in any code page.
+ * the PowerShell that prints one process's command line as `pb:` and its UTF-16 code units in decimal, comma
+ * separated (`pb:` alone when there is no such process): redirected console output is in the OEM code page
+ * (437/850), which would turn C:\Users\Peña into "Pe?a", so the lock of a running launcher there would look stale;
+ * digits are plain ASCII in any code page. Only a cmdlet, property reads and casts to core types: it runs the same in
+ * Constrained Language Mode (an application control policy such as Smart App Control), where .NET method calls such
+ * as [Convert]::ToBase64String are refused. Without the `pb:` mark the answer is unknown, never "no such process".
  */
 export const windowsCommandLineScript = (pid: number) =>
-  `$p = Get-CimInstance Win32_Process -Filter "ProcessId=${Math.trunc(pid)}"; if ($p -and $p.CommandLine) { [Console]::Out.Write([Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($p.CommandLine))) }`;
+  `$p = Get-CimInstance Win32_Process -Filter "ProcessId=${Math.trunc(pid)}"; $c = ''; if ($p -and $p.CommandLine) { $c = ([int[]][char[]][string]$p.CommandLine) -join ',' }; 'pb:' + $c`;
+
+/** the command line from `windowsCommandLineScript`'s answer: '' for no such process, null when unreadable */
+export function parseWindowsCommandLine(stdout: string): string | null {
+  const m = /^pb:((?:\d{1,5})(?:,\d{1,5})*)?$/.exec(stdout.trim());
+  if (!m) return null;
+  if (!m[1]) return '';
+  const units = m[1].split(',').map(Number);
+  if (units.some((u) => u > 0xffff)) return null;
+  let s = '';
+  for (let i = 0; i < units.length; i += 4096) s += String.fromCharCode(...units.slice(i, i + 4096));
+  return s;
+}
 
 export type SyncRunner = (cmd: string, args: string[]) => { status: number | null; stdout: string };
 const runSync: SyncRunner = (cmd, args) => {
@@ -84,9 +99,7 @@ export function commandOf(
     ]);
     // an empty answer: no such process (or one this user may not read, which is never our launcher)
     if (r.status !== 0) return null;
-    const b64 = r.stdout.trim();
-    if (!/^[A-Za-z0-9+/]*={0,2}$/.test(b64)) return null;
-    return Buffer.from(b64, 'base64').toString('utf8');
+    return parseWindowsCommandLine(r.stdout);
   }
   const r = run('ps', ['-p', String(pid), '-o', 'command=']);
   return r.status === 0 ? r.stdout.trim() : null;

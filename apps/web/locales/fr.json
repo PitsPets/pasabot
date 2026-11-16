@@ -571,7 +571,16 @@
       "own": "En autonomie"
     },
     "technicalOnly": "Pour la configuration technique — activez {{switch}} pour les voir",
-    "technicalOnlyPage": "Cette page sert à la configuration technique — activez {{switch}} pour la voir."
+    "technicalOnlyPage": "Cette page sert à la configuration technique — activez {{switch}} pour la voir.",
+    "app": {
+      "title": "Cette app",
+      "signIn": "Ouvrir à la connexion",
+      "signInHint": "Lancer PasaBot quand vous vous connectez à cet ordinateur.",
+      "quit": "Quitter PasaBot",
+      "quitHint": "Arrête PasaBot et ses assistants sur cet ordinateur. Rouvrez-le depuis vos apps.",
+      "quitting": "PasaBot se ferme. Vous pouvez fermer cette fenêtre.",
+      "failed": "Cela n’a pas marché. Réessayez."
+    }
   },
   "offline": {
     "title": "PasaBot est inaccessible",

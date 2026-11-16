@@ -551,7 +551,16 @@
       "own": "自动运行"
     },
     "technicalOnly": "用于技术设置——打开“{{switch}}”即可看到",
-    "technicalOnlyPage": "此页面用于技术设置——打开“{{switch}}”即可看到。"
+    "technicalOnlyPage": "此页面用于技术设置——打开“{{switch}}”即可看到。",
+    "app": {
+      "title": "此应用",
+      "signIn": "登录时打开",
+      "signInHint": "登录这台电脑时启动 PasaBot。",
+      "quit": "退出 PasaBot",
+      "quitHint": "在这台电脑上停止 PasaBot 及其助手。可从应用列表再次打开。",
+      "quitting": "PasaBot 正在退出。你可以关闭此窗口。",
+      "failed": "没有成功。请再试一次。"
+    }
   },
   "offline": {
     "title": "无法连接 PasaBot",

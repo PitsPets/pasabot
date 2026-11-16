@@ -22,8 +22,18 @@ import {
   cmdSafePath,
   setAutostart,
 } from './autostart.js';
-import { acquireInstance, commandOf, windowsCommandLineScript, windowsPowerShell } from './instance.js';
+import {
+  acquireInstance,
+  commandOf,
+  parseWindowsCommandLine,
+  windowsCommandLineScript,
+  windowsPowerShell,
+} from './instance.js';
 import { createOpener, type Spawned } from './opener.js';
+
+/** what windowsCommandLineScript prints for a command line: `pb:` and its UTF-16 code units */
+const psAnswer = (line: string) =>
+  `pb:${Array.from({ length: line.length }, (_, i) => line.charCodeAt(i)).join(',')}`;
 
 const tmp = mkdtempSync(join(tmpdir(), 'pb-desk-win-'));
 // retries: on Windows a file another process (Defender, the indexer) still holds cannot be unlinked for a moment
@@ -35,7 +45,7 @@ describe('single instance on Windows (pid reuse after a crash or reboot)', () =>
     const out = commandOf(4242, 'win32', (cmd, args) => {
       calls.push([cmd, args]);
       const line = '"C:\\PB\\node.exe" "C:\\PB\\pasabot\\apps\\desktop\\dist\\main.js" --open-urls';
-      return { status: 0, stdout: `${Buffer.from(line, 'utf8').toString('base64')}\r\n` };
+      return { status: 0, stdout: `${psAnswer(line)}\r\n` };
     });
     expect(out).toContain('main.js');
     expect(calls[0]?.[0]).toBe(windowsPowerShell(process.env));
@@ -43,16 +53,23 @@ describe('single instance on Windows (pid reuse after a crash or reboot)', () =>
     expect(windowsCommandLineScript(4242)).toContain('ProcessId=4242');
     expect(commandOf(-1, 'win32', () => ({ status: 0, stdout: 'x' }))).toBeNull();
     expect(commandOf(5, 'win32', () => ({ status: 1, stdout: '' }))).toBeNull();
-    expect(commandOf(5, 'win32', () => ({ status: 0, stdout: '' }))).toBe('');
+    // `pb:` alone: no such process; no mark at all (a refused line in Constrained Language Mode): unknown
+    expect(commandOf(5, 'win32', () => ({ status: 0, stdout: 'pb:\r\n' }))).toBe('');
+    expect(commandOf(5, 'win32', () => ({ status: 0, stdout: '' }))).toBeNull();
+    expect(commandOf(5, 'win32', () => ({ status: 0, stdout: 'pb:65,x' }))).toBeNull();
+  });
+  it('asks with a cmdlet, property reads and core-type casts only (it must run in Constrained Language Mode)', () => {
+    const s = windowsCommandLineScript(9);
+    // no .NET static method call ([Type]::Method) and no New-Object / Add-Type
+    expect(s).not.toMatch(/\]::/);
+    expect(s).not.toMatch(/New-Object|Add-Type/i);
+    expect(parseWindowsCommandLine(psAnswer('a😀b'))).toBe('a😀b');
   });
   it('a user folder with ñ (C:\\Users\\Peña) survives the console code page: the live launcher keeps its lock', () => {
     const entry =
       'C:\\Users\\Peña\\AppData\\Local\\Programs\\PasaBot\\PasaBot\\pasabot\\apps\\desktop\\dist\\main.js';
-    const run = () => ({
-      status: 0,
-      stdout: Buffer.from(`"C:\\node.exe" "${entry}" --open-urls`, 'utf8').toString('base64'),
-    });
-    expect(windowsCommandLineScript(7)).toContain('ToBase64String');
+    const run = () => ({ status: 0, stdout: psAnswer(`"C:\\node.exe" "${entry}" --open-urls`) });
+    expect(psAnswer('ñ')).toBe('pb:241');
     const cmd = commandOf(7, 'win32', run);
     expect(cmd).toContain(entry);
     const home = mkdtempSync(join(tmp, 'pena-'));

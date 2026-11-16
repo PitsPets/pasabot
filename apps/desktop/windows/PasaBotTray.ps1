@@ -3,13 +3,21 @@
 # apps/desktop/src/main.ts) and sends commands back on its stdin; every word comes translated from the launcher.
 # The launcher opens PasaBot itself (--open-urls --app-window): in its own app window (Edge in app mode, with
 # PasaBot's own profile), so this script never handles a link, and a setup code never passes through it.
-# Started (hidden, no console flash) by the Start-menu shortcut or PasaBot.cmd:
-#   powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File PasaBotTray.ps1
-# Not run on a Windows PC by the author (built on a Mac): selftest.ps1 checks it there (syntax, start, stop).
-param([switch]$NoOpen)
+# Started (hidden) by windows-shell.js start (the Start-menu shortcut and PasaBot.cmd run that with node.exe), which
+# first asks `PasaBotTray.ps1 -Probe` whether the tray can run here:
+#   powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File PasaBotTray.ps1 [-Probe]
+# The tray is optional. Under an application control policy that does not trust this script (Smart App Control, App
+# Control for Business), PowerShell runs it in Constrained Language Mode, where WinForms cannot load: it then exits 3
+# at once (4 when WinForms will not load) and windows-shell.js runs PasaBot without a tray, from its window.
+# Not run on a Windows PC by the author (built on a Mac): selftest.js checks it there.
+param([switch]$NoOpen, [switch]$Probe)
 $ErrorActionPreference = 'Stop'
-Add-Type -AssemblyName System.Windows.Forms
-Add-Type -AssemblyName System.Drawing
+if ($ExecutionContext.SessionState.LanguageMode -ne 'FullLanguage') { exit 3 }
+try {
+  Add-Type -AssemblyName System.Windows.Forms
+  Add-Type -AssemblyName System.Drawing
+} catch { exit 4 }
+if ($Probe) { exit 0 }
 [System.Windows.Forms.Application]::EnableVisualStyles()
 
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path

@@ -561,7 +561,16 @@
       "own": "Running on their own"
     },
     "technicalOnly": "For technical setup — turn on {{switch}} to see these",
-    "technicalOnlyPage": "This page is for technical setup — turn on {{switch}} to see it."
+    "technicalOnlyPage": "This page is for technical setup — turn on {{switch}} to see it.",
+    "app": {
+      "title": "This app",
+      "signIn": "Open at sign-in",
+      "signInHint": "Start PasaBot when you sign in to this computer.",
+      "quit": "Quit PasaBot",
+      "quitHint": "Stops PasaBot and its helpers on this computer. Open it again from your apps.",
+      "quitting": "PasaBot is quitting. You can close this window.",
+      "failed": "That did not work. Try again."
+    }
   },
   "offline": {
     "title": "Can't reach PasaBot",

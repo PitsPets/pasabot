@@ -551,7 +551,16 @@
       "own": "自動で動くもの"
     },
     "technicalOnly": "技術的な設定用です。表示するには「{{switch}}」をオンにしてください",
-    "technicalOnlyPage": "このページは技術的な設定用です。表示するには「{{switch}}」をオンにしてください。"
+    "technicalOnlyPage": "このページは技術的な設定用です。表示するには「{{switch}}」をオンにしてください。",
+    "app": {
+      "title": "このアプリ",
+      "signIn": "サインイン時に開く",
+      "signInHint": "このコンピューターにサインインしたときに PasaBot を起動します。",
+      "quit": "PasaBot を終了",
+      "quitHint": "このコンピューターで PasaBot とヘルパーを停止します。アプリからもう一度開けます。",
+      "quitting": "PasaBot を終了しています。このウィンドウは閉じてかまいません。",
+      "failed": "うまくいきませんでした。もう一度お試しください。"
+    }
   },
   "offline": {
     "title": "PasaBotに接続できません",

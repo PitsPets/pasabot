@@ -40,7 +40,16 @@ type Events = {
   state: [StopFlag];
   failure: [string];
   'setup-link': [string | null];
+  /** the owner tapped one of the desktop controls in the web app's Settings (desktop-bridge.ts on the server) */
+  'desktop-ask': [{ what: 'quit' } | { what: 'autostart'; on: boolean }];
 };
+
+/** what the web app may offer of this launcher's own controls (the server's DesktopBridge) */
+export interface DesktopOffer {
+  quit: boolean;
+  autostart: boolean;
+  autostartAvailable: boolean;
+}
 
 const isObj = (m: unknown): m is Record<string, unknown> => typeof m === 'object' && m !== null;
 
@@ -101,6 +110,11 @@ export class ServerProcess extends EventEmitter<Events> {
       else if (m.type === 'pasabot:error') this.emit('failure', String(m.message ?? 'error'));
       else if (m.type === 'pasabot:setup-link')
         this.emit('setup-link', typeof m.setupLink === 'string' ? m.setupLink : null);
+      else if (m.type === 'pasabot:desktop-ask') {
+        if (m.what === 'quit') this.emit('desktop-ask', { what: 'quit' });
+        else if (m.what === 'autostart' && typeof m.on === 'boolean')
+          this.emit('desktop-ask', { what: 'autostart', on: m.on });
+      }
     });
     return new Promise<ServerReady>((resolve, reject) => {
       const timer = setTimeout(() => {
@@ -143,6 +157,11 @@ export class ServerProcess extends EventEmitter<Events> {
     if (!c?.connected) return false;
     c.send(m);
     return true;
+  }
+
+  /** tells the server which of this launcher's controls the web app may offer (false when it is not running) */
+  tellDesktop(d: DesktopOffer): boolean {
+    return this.send({ type: 'pasabot:desktop', ...d });
   }
 
   /** the global stop flag, asked over the channel */

@@ -551,7 +551,16 @@
       "own": "Berjalan sendiri"
     },
     "technicalOnly": "Untuk pengaturan teknis — nyalakan {{switch}} untuk melihatnya",
-    "technicalOnlyPage": "Halaman ini untuk pengaturan teknis — nyalakan {{switch}} untuk melihatnya."
+    "technicalOnlyPage": "Halaman ini untuk pengaturan teknis — nyalakan {{switch}} untuk melihatnya.",
+    "app": {
+      "title": "Aplikasi ini",
+      "signIn": "Buka saat masuk",
+      "signInHint": "Jalankan PasaBot saat Anda masuk ke komputer ini.",
+      "quit": "Keluar dari PasaBot",
+      "quitHint": "Menghentikan PasaBot dan pembantunya di komputer ini. Buka lagi dari aplikasi Anda.",
+      "quitting": "PasaBot sedang ditutup. Anda bisa menutup jendela ini.",
+      "failed": "Tidak berhasil. Coba lagi."
+    }
   },
   "offline": {
     "title": "Tidak dapat menjangkau PasaBot",

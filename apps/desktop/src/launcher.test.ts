@@ -105,6 +105,53 @@ describe('ServerProcess', () => {
 });
 
 describe('Launcher', () => {
+  it("offers Quit and Open at sign-in to the web app's Settings on Linux and Windows, and acts on the owner's tap", async () => {
+    const home = dir();
+    writeConfig(home, { ...readConfig(home), port: 0, sitesPort: 0 });
+    const log = join(home, 'offers.jsonl');
+    let quitAsked = 0;
+    const l = new Launcher({
+      home,
+      entry: fake,
+      server: { node: process.execPath, entry: fake, env: env({ FAKE_DESKTOP: '1', FAKE_DESKTOP_LOG: log }) },
+      version: '0.1.0',
+      emit: () => {},
+      userHome: join(home, 'user'),
+      appPath: '/opt/pasabot/bin/pasabot-desktop',
+      platform: 'linux',
+      env: {},
+      stopGraceMs: 1500,
+      onQuitRequest: () => quitAsked++,
+    });
+    expect(await l.init()).toBe(true);
+    const end = Date.now() + 10_000;
+    while (quitAsked === 0 && Date.now() < end) await sleep(50);
+    expect(quitAsked).toBe(1);
+    expect(existsSync(join(home, 'user', '.config', 'autostart', 'pasabot.desktop'))).toBe(true);
+    const offers = readFileSync(log, 'utf8')
+      .trim()
+      .split('\n')
+      .map((x) => JSON.parse(x) as { quit: boolean; autostart: boolean; autostartAvailable: boolean });
+    expect(offers[0]).toMatchObject({ quit: true, autostart: false, autostartAvailable: true });
+    expect(offers.at(-1)).toMatchObject({ quit: true, autostart: true, autostartAvailable: true });
+    await l.quit();
+  });
+
+  it('offers nothing on macOS (its own app menus have both) and ignores an ask', async () => {
+    const home = dir();
+    const log = join(home, 'offers.jsonl');
+    mkdirSync(home, { recursive: true });
+    const { l } = launcher(home, { FAKE_DESKTOP: '1', FAKE_DESKTOP_LOG: log });
+    expect(l.desktopOffer()).toEqual({ quit: false, autostart: false, autostartAvailable: false });
+    expect(await l.init()).toBe(true);
+    await sleep(300);
+    expect(existsSync(join(home, 'user', 'Library', 'LaunchAgents', 'local.pasabot.desktop.plist'))).toBe(
+      false,
+    );
+    expect(JSON.parse(readFileSync(log, 'utf8').split('\n')[0]!)).toMatchObject({ quit: false });
+    await l.quit();
+  });
+
   it('starts the server, describes the menu, stops all, and quits leaving nothing behind', async () => {
     const home = dir();
     const { l, events, last } = launcher(home, { FAKE_SETUP: '1' });

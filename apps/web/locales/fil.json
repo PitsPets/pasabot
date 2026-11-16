@@ -561,7 +561,16 @@
       "own": "Kusang tumatakbo"
     },
     "technicalOnly": "Para sa teknikal na setup — i-on ang {{switch}} para makita ang mga ito",
-    "technicalOnlyPage": "Para sa teknikal na setup ang pahinang ito — i-on ang {{switch}} para makita ito."
+    "technicalOnlyPage": "Para sa teknikal na setup ang pahinang ito — i-on ang {{switch}} para makita ito.",
+    "app": {
+      "title": "Ang app na ito",
+      "signIn": "Buksan pag nag-sign in",
+      "signInHint": "Kusang bubukas ang PasaBot pag nag-sign in ka sa computer na ito.",
+      "quit": "Isara ang PasaBot",
+      "quitHint": "Ititigil ang PasaBot at ang mga helper nito sa computer na ito. Buksan ulit mula sa mga app mo.",
+      "quitting": "Nagsasara na ang PasaBot. Puwede mo nang isara ang window na ito.",
+      "failed": "Hindi gumana. Subukan ulit."
+    }
   },
   "offline": {
     "title": "Hindi maabot ang PasaBot",

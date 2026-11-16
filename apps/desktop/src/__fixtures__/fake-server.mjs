@@ -5,7 +5,9 @@
 //   FAKE_SETUP=1       no owner: ready carries a setup link, and each `pasabot:setup-link` ask gets a new one
 //   FAKE_LINK_MUTE=1   never answer a `pasabot:setup-link` ask
 //   FAKE_OWNER_FILE    once this file exists an owner has claimed the server: a `pasabot:setup-link` ask gets null
-import { existsSync, writeFileSync } from 'node:fs';
+//   FAKE_DESKTOP=1     plays the owner in Settings: on the first `pasabot:desktop` offer it asks to turn open at
+//                      sign-in on, then (once the offer says it is on) to quit; FAKE_DESKTOP_LOG gets each offer
+import { appendFileSync, existsSync, writeFileSync } from 'node:fs';
 import { createServer } from 'node:http';
 
 if (process.env.FAKE_PID_FILE) writeFileSync(process.env.FAKE_PID_FILE, String(process.pid));
@@ -20,6 +22,8 @@ const listen = (port) =>
 
 let state = { stopped: false, since: null };
 let asks = 0;
+let desktopAsked = false;
+let quitAsked = false;
 try {
   const web = await listen(Number(process.env.PASABOT_PORT ?? 0));
   const sites = await listen(Number(process.env.PASABOT_SITES_PORT ?? 0));
@@ -34,6 +38,17 @@ try {
     if (m?.type === 'pasabot:stop-all') {
       state = { stopped: true, since: Date.now() };
       process.send({ type: 'pasabot:state', ...state });
+    }
+    if (m?.type === 'pasabot:desktop' && process.env.FAKE_DESKTOP === '1') {
+      if (process.env.FAKE_DESKTOP_LOG)
+        appendFileSync(process.env.FAKE_DESKTOP_LOG, `${JSON.stringify(m)}\n`);
+      if (!desktopAsked) {
+        desktopAsked = true;
+        process.send({ type: 'pasabot:desktop-ask', what: 'autostart', on: true });
+      } else if (m.autostart === true && !quitAsked) {
+        quitAsked = true;
+        process.send({ type: 'pasabot:desktop-ask', what: 'quit' });
+      }
     }
     if (m?.type === 'pasabot:setup-link' && process.env.FAKE_LINK_MUTE !== '1') {
       asks += 1;

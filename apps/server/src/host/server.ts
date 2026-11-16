@@ -88,6 +88,7 @@ import {
   type Redact,
   VaultConfigError,
 } from '../vault/index.js';
+import { DesktopBridge, registerDesktopRoutes } from './desktop-bridge.js';
 import { type DiscoveredPackage, discoverPackages, loadEntry } from './discovery.js';
 import {
   createModuleHost,
@@ -175,6 +176,8 @@ export interface PasaBotServer {
   dispatcher: Dispatcher;
   /** the W31 global stop */
   killSwitch: KillSwitch;
+  /** the desktop app's Quit and Open-at-sign-in, when a launcher on Windows or Linux offers them (parent channel) */
+  desktop: DesktopBridge;
   tools: ToolRegistryImpl;
   blocks: BlockKindRegistryImpl;
   providers: ProviderRegistryImpl;
@@ -563,6 +566,8 @@ async function boot(
     recheckMs: o.ws?.recheckMs,
   });
   registerCoreRoutes(app, { queue, db, serverId, resolveAuth, cards });
+  const desktop = new DesktopBridge();
+  registerDesktopRoutes(app, desktop, resolveAuth);
   auth.registerRoutes(app);
   approvals.registerRoutes(app, resolveAuth, {
     reauthed: (sid) => auth.reauthedWithin(sid),
@@ -706,6 +711,7 @@ async function boot(
     queue,
     dispatcher,
     killSwitch,
+    desktop,
     tools,
     blocks,
     providers,

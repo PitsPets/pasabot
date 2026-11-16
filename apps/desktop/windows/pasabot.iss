@@ -2,15 +2,19 @@
 ; %LOCALAPPDATA%\Programs\PasaBot. Start menu entries, optional desktop icon and start at sign-in. The uninstaller
 ; leaves the person's data (%USERPROFILE%\.pasabot) unless they say so. Unsigned (signing is the owner's step).
 ; The server listens on 127.0.0.1 only, so Windows Firewall never asks.
-; Compiled by build-windows.ps1:  iscc /DVersion=x.y.z /DSource=<out\PasaBot> /O<out> pasabot.iss
+; Compiled by build-windows.ps1:  iscc /DVersion=x.y.z /DSource=<out\PasaBot> /O<out> [/DSignedUninstallerDir=<dir>] pasabot.iss
 ; NOT COMPILED by the author (no Windows machine): .github/workflows/desktop.yml compiles it.
+; Every shortcut and every install or uninstall step runs the bundled node.exe (signed by its publisher) with
+; windows-shell.js, never PowerShell: on a PC with Smart App Control, unsigned PowerShell runs in Constrained Language
+; Mode. The tray (PowerShell) is started by windows-shell.js only where it can run.
 #ifndef Version
   #define Version "0.0.0"
 #endif
 #ifndef Source
   #define Source "..\out\PasaBot"
 #endif
-#define PS "{sys}\WindowsPowerShell\v1.0\powershell.exe"
+#define Node "{app}\node.exe"
+#define ShellJs "{app}\pasabot\apps\desktop\dist\windows-shell.js"
 
 [Setup]
 AppId=PasaBot.Desktop
@@ -37,6 +41,13 @@ ArchitecturesInstallIn64BitMode=x64compatible
 ; an update while PasaBot runs: close it (node.exe holds files in {app}) and start it again afterwards
 CloseApplications=yes
 RestartApplications=no
+#ifdef SignedUninstallerDir
+; release-windows.yml: the uninstaller is signed before the installer is made. The first compile writes
+; uninst-<version>-<hash>.e32 here and stops ("signature needed"); once that file is signed (SignPath), the second
+; compile embeds its signature in the uninstaller the installer writes (Inno Setup's SignedUninstaller)
+SignedUninstaller=yes
+SignedUninstallerDir={#SignedUninstallerDir}
+#endif
 
 [Languages]
 Name: "en"; MessagesFile: "compiler:Default.isl"
@@ -49,20 +60,22 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; Flags: unchecked
 Source: "{#Source}\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs ignoreversion
 
 [Icons]
-; the tray, hidden: powershell is a console program, so the shortcut starts it minimized and it hides itself
-Name: "{group}\PasaBot"; Filename: "{#PS}"; Parameters: "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File ""{app}\PasaBotTray.ps1"""; WorkingDir: "{app}"; IconFilename: "{app}\pasabot.ico"; Flags: runminimized
-Name: "{group}\Check this computer (PasaBot)"; Filename: "{#PS}"; Parameters: "-NoProfile -ExecutionPolicy Bypass -File ""{app}\selftest.ps1"" -Pause"; WorkingDir: "{app}"; IconFilename: "{app}\pasabot.ico"
+; node.exe is a console program: the shortcut starts it minimized, and windows-shell.js starts PasaBot hidden and exits
+Name: "{group}\PasaBot"; Filename: "{#Node}"; Parameters: """{#ShellJs}"" start"; WorkingDir: "{app}"; IconFilename: "{app}\pasabot.ico"; Flags: runminimized
+; asks the running PasaBot to quit (it stops its server cleanly); with no tray icon, this or Settings > Quit PasaBot
+Name: "{group}\Stop PasaBot"; Filename: "{#Node}"; Parameters: """{#ShellJs}"" stop"; WorkingDir: "{app}"; IconFilename: "{app}\pasabot.ico"; Flags: runminimized
+Name: "{group}\Check this computer (PasaBot)"; Filename: "{#Node}"; Parameters: """{app}\pasabot\apps\desktop\dist\selftest.js"" --pause"; WorkingDir: "{app}"; IconFilename: "{app}\pasabot.ico"
 Name: "{group}\Uninstall PasaBot"; Filename: "{uninstallexe}"
-Name: "{autodesktop}\PasaBot"; Filename: "{#PS}"; Parameters: "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File ""{app}\PasaBotTray.ps1"""; WorkingDir: "{app}"; IconFilename: "{app}\pasabot.ico"; Flags: runminimized; Tasks: desktopicon
+Name: "{autodesktop}\PasaBot"; Filename: "{#Node}"; Parameters: """{#ShellJs}"" start"; WorkingDir: "{app}"; IconFilename: "{app}\pasabot.ico"; Flags: runminimized; Tasks: desktopicon
 
 [Run]
-; the workspace links the build wrote down (links.ps1): junctions, no admin rights needed
-Filename: "{#PS}"; Parameters: "-NoProfile -ExecutionPolicy Bypass -File ""{app}\links.ps1"""; Flags: runhidden waituntilterminated; StatusMsg: "Setting up PasaBot..."
-Filename: "{#PS}"; Parameters: "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File ""{app}\PasaBotTray.ps1"""; WorkingDir: "{app}"; Description: "Open PasaBot"; Flags: postinstall nowait skipifsilent runminimized
+; the workspace links the build wrote down (links.json): junctions, no admin rights needed
+Filename: "{#Node}"; Parameters: """{#ShellJs}"" links"; WorkingDir: "{app}"; Flags: runhidden waituntilterminated; StatusMsg: "Setting up PasaBot..."
+Filename: "{#Node}"; Parameters: """{#ShellJs}"" start"; WorkingDir: "{app}"; Description: "Open PasaBot"; Flags: postinstall nowait skipifsilent runminimized
 
 [UninstallRun]
 ; stops this install's PasaBot and removes the junctions as links (never what they point to)
-Filename: "{#PS}"; Parameters: "-NoProfile -ExecutionPolicy Bypass -File ""{app}\links.ps1"" -Remove"; Flags: runhidden waituntilterminated; RunOnceId: "PasaBotLinks"
+Filename: "{#Node}"; Parameters: """{#ShellJs}"" uninstall"; WorkingDir: "{app}"; Flags: runhidden waituntilterminated; RunOnceId: "PasaBotLinks"
 
 [UninstallDelete]
 ; open-at-login, written by the tray's toggle or the autostart task

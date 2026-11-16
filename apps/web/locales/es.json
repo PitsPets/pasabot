@@ -571,7 +571,16 @@
       "own": "Funciona por su cuenta"
     },
     "technicalOnly": "Para la configuración técnica — activa {{switch}} para verlas",
-    "technicalOnlyPage": "Esta página es para la configuración técnica — activa {{switch}} para verla."
+    "technicalOnlyPage": "Esta página es para la configuración técnica — activa {{switch}} para verla.",
+    "app": {
+      "title": "Esta app",
+      "signIn": "Abrir al iniciar sesión",
+      "signInHint": "Inicia PasaBot cuando inicias sesión en este equipo.",
+      "quit": "Salir de PasaBot",
+      "quitHint": "Detiene PasaBot y sus ayudantes en este equipo. Vuelve a abrirlo desde tus apps.",
+      "quitting": "PasaBot se está cerrando. Puedes cerrar esta ventana.",
+      "failed": "No funcionó. Inténtalo de nuevo."
+    }
   },
   "offline": {
     "title": "No se puede conectar con PasaBot",

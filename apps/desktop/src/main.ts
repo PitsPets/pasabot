@@ -18,6 +18,7 @@ import { parseArgs } from 'node:util';
 import { appWindowCommand } from './app-window.js';
 import { type Command, Launcher, type ShellEvent } from './launcher.js';
 import { createOpener, shellSink } from './opener.js';
+import { watchStopRequest } from './windows-shell.js';
 
 const COMMANDS = new Set([
   'status',
@@ -145,6 +146,8 @@ async function main() {
     openSetupLink: !values['no-browser'],
     canShow: values.window,
     opensUrls: values['open-urls'],
+    // Settings > Quit PasaBot in the web app (Windows and Linux): the same as the tray's Quit
+    onQuitRequest: () => exit(),
   });
   // before the lock is taken: SIGUSR2's default action would kill a launcher a second launch pokes
   if (process.platform !== 'win32') process.on('SIGUSR2', () => launcher.requestShow());
@@ -170,6 +173,9 @@ async function main() {
     rl.on('close', exit);
   }
   if (!(await launcher.init())) process.exit(0);
+  // Windows has no signals: "Stop PasaBot" (windows-shell.js stop) asks through a file in the data folder, so a
+  // launcher started without the tray (Constrained Language Mode, no stdin) still stops cleanly
+  if (process.platform === 'win32') watchStopRequest(home, process.pid, exit);
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url))

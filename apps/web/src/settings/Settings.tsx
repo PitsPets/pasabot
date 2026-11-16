@@ -35,6 +35,7 @@ import { usePlainFeature, usePlainWords, useWords } from '../app/words.js';
 import { Devices } from '../auth/Devices.js';
 import { SignOut } from '../chat/SignOut.js';
 import { ModuleRoute, type ViewerRole } from '../shell/slots.js';
+import { AppControls } from './AppControls.js';
 import {
   buildCatalog,
   type Feature,
@@ -223,6 +224,7 @@ function SettingsHome() {
         <GroupRows />
       </div>
       <TechnicalSwitch />
+      <AppControls />
       <section className="bk-card panel set-account" aria-labelledby="set-acc">
         <h2 id="set-acc" className="row-ic">
           <Icon name="log-out" />

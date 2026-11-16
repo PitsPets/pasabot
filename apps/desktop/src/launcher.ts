@@ -12,7 +12,7 @@ import { type DesktopConfig, readConfig, writeConfig } from './config.js';
 import { acquireInstance, alive, type InstanceDeps, type InstanceLock, poke } from './instance.js';
 import { LOOPBACK, pickPort, portOf } from './ports.js';
 import { helperAppPath, removeHelperKey, startScreenHelper } from './screen-helper.js';
-import { type ServerLaunch, ServerProcess, type ServerReady } from './server-proc.js';
+import { type DesktopOffer, type ServerLaunch, ServerProcess, type ServerReady } from './server-proc.js';
 import { loadStrings, pickLocale, type Strings, t } from './strings.js';
 import { checkForUpdate, type Fetcher, type UpdateResult } from './update.js';
 
@@ -146,6 +146,11 @@ export interface LauncherOptions {
   opensUrls?: boolean;
   /** start the server as soon as the app starts (default true) */
   startOnLaunch?: boolean;
+  /**
+   * how this process quits when the web app's Settings asks (main.ts: quit, then exit); default `quit()` alone, for a
+   * shell that exits on `bye`
+   */
+  onQuitRequest?: () => void;
   stopGraceMs?: number;
 }
 
@@ -431,6 +436,14 @@ export class Launcher {
       this.allStopped = s.stopped;
       this.emitStatus();
     });
+    // the web app's Settings (Windows and Linux): Quit PasaBot and Open at sign-in, the same commands as the tray's
+    proc.on('desktop-ask', (a) => {
+      if (!this.desktopOffer().quit) return;
+      if (a.what === 'quit') {
+        if (this.o.onQuitRequest) this.o.onQuitRequest();
+        else void this.quit();
+      } else void this.handle({ cmd: 'autostart', on: a.on });
+    });
     proc.once('exit', (code, signal) => {
       if (this.server !== proc) return;
       this.server = null;
@@ -596,8 +609,24 @@ export class Launcher {
     };
   }
 
+  /**
+   * Which of its own controls this launcher lets the web app's Settings offer: on Windows and Linux, where there may
+   * be no tray icon at all, Quit and (when this build can) Open at sign-in. macOS has its own app menus for both.
+   */
+  desktopOffer(): DesktopOffer {
+    if ((this.o.platform ?? process.platform) === 'darwin')
+      return { quit: false, autostart: false, autostartAvailable: false };
+    const target = this.autostartTarget;
+    return {
+      quit: true,
+      autostart: target ? isAutostartOn(target) : false,
+      autostartAvailable: target !== null,
+    };
+  }
+
   private emitStatus(): void {
     if (this.quitting && this.status === 'stopped') return;
     this.o.emit(this.snapshot());
+    this.server?.tellDesktop(this.desktopOffer());
   }
 }

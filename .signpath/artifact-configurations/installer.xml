@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SignPath artifact configuration "installer" (release-windows.yml step 4): the Inno Setup installer, compiled around
+  the files signed in step 1 ("inner"). Its slug goes in the SIGNPATH_INSTALLER_CONFIG_SLUG repository variable.
+  The artifact is the ZIP that actions/upload-artifact makes from apps/desktop/out/unsigned-installer/.
+  verify with SignPath: syntax as read from https://docs.signpath.io/artifact-configuration/syntax on 2026-11-16.
+-->
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <zip-file>
+    <pe-file path="PasaBot-Setup-*.exe" max-matches="1">
+      <authenticode-sign />
+    </pe-file>
+  </zip-file>
+</artifact-configuration>

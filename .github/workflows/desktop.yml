@@ -5,8 +5,9 @@
 # when an earlier check failed, so one run shows every problem it can (the job still fails).
 #   windows-latest: the Windows tests (platform-injected, or real Windows behaviour: no `ps`, taskkill, ACLs, shims;
 #                   the POSIX-only ones, such as file modes, /bin/sh fake CLIs and process groups, run on Linux and
-#                   macOS), build-windows.ps1 (portable folder + installer), the installer silently, selftest.ps1 on
-#                   the installed copy, then a silent uninstall
+#                   macOS), build-windows.ps1 (portable folder + installer, better-sqlite3 compiled from source, the
+#                   executable inventory), the installer silently, the self-test (selftest.ps1 -> selftest.js) on the
+#                   installed copy, then a silent uninstall. All unsigned: release-windows.yml signs (docs/SIGNING.md)
 #   ubuntu-latest:  every unit test, build-linux.sh, install.sh, selftest.sh
 #   macos-latest:   every unit test, build-app.sh + smoke.sh
 name: desktop
@@ -27,10 +28,10 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: 22
+          node-version: 22.23.5 # exact: the node.exe the Windows package bundles (docs/WINDOWS-BINARIES.md)
       - id: install
         run: npx --yes pnpm@12.18.0 install --frozen-lockfile
       - name: typecheck
@@ -49,12 +50,12 @@ jobs:
       - name: install Inno Setup
         id: inno
         if: ${{ !cancelled() && steps.build.outcome == 'success' }}
-        run: choco install innosetup --no-progress -y
+        run: choco install innosetup --version 6.7.1 --no-progress -y
       - name: build the package (portable folder + installer)
         id: package
         if: ${{ !cancelled() && steps.build.outcome == 'success' && steps.inno.outcome == 'success' }}
         shell: powershell
-        run: powershell -NoProfile -ExecutionPolicy Bypass -File apps\desktop\windows\build-windows.ps1 -SkipBuild
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File apps\desktop\windows\build-windows.ps1 -SkipBuild -SqliteFromSource
       - name: install it silently (per user, no admin)
         id: setup
         if: ${{ !cancelled() && steps.package.outcome == 'success' }}
@@ -92,11 +93,13 @@ jobs:
           $p = Start-Process $u -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART' -Wait -PassThru
           if ($p.ExitCode -ne 0) { throw "uninstaller exit $($p.ExitCode)" }
       - if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: pasabot-windows
           path: |
             apps/desktop/out/PasaBot-Setup-*.exe
+            apps/desktop/out/windows-binaries.md
+            apps/desktop/out/windows-binaries.json
             apps/desktop/out/selftest-report.txt
             apps/desktop/out/selftest-logs.txt
             apps/desktop/out/install.log
@@ -104,10 +107,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: 22
+          node-version: 22.23.5 # exact: the node.exe the Windows package bundles (docs/WINDOWS-BINARIES.md)
       # before any test: the helper sandbox needs bubblewrap, and both bubblewrap and Chromium's sandbox
       # (modules/browser, chromiumSandbox: true) need user namespaces, which Ubuntu 24.04 restricts through AppArmor
       - name: install bubblewrap, allow user namespaces
@@ -149,7 +152,7 @@ jobs:
         if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
         run: XDG_CURRENT_DESKTOP=ci "$HOME/.local/share/pasabot/selftest.sh"
       - if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: pasabot-linux
           path: |
@@ -159,10 +162,10 @@ jobs:
     runs-on: macos-latest
     timeout-minutes: 45
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: 22
+          node-version: 22.23.5 # exact: the node.exe the Windows package bundles (docs/WINDOWS-BINARIES.md)
       - id: install
         run: npx --yes pnpm@12.18.0 install --frozen-lockfile
       # the hardened-runtime test of the Screen Helper skips itself where dyld does not enforce the runtime; this
@@ -190,7 +193,7 @@ jobs:
         if: ${{ !cancelled() && steps.package.outcome == 'success' }}
         run: bash apps/desktop/macos/smoke.sh
       - if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: pasabot-macos
           path: apps/desktop/out/*.dmg

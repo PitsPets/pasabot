@@ -4,7 +4,9 @@
  * URLs (port 0 works), may press the global stop as a `system` actor (resume stays owner + re-auth, on the web), and
  * may ask for a fresh first-run setup link for the window it shows the person in front of the machine
  * (`pasabot:setup-link`; null once an owner exists, the same link again while the last one is a few seconds old).
- * Setup links travel only over this channel: they are never logged here.
+ * Setup links travel only over this channel: they are never logged here. The launcher also says which of its own
+ * controls the web app may offer (`pasabot:desktop`, desktop-bridge.ts), and the owner's tap on one goes back as
+ * `pasabot:desktop-ask`.
  */
 import { asSystem } from '@pasabot/core';
 import type { PasaBotServer } from './server.js';
@@ -16,7 +18,8 @@ export interface ParentChannel {
   onMessage(listener: (m: unknown) => void): void;
 }
 
-export type ParentServer = Pick<PasaBotServer, 'url' | 'sitesUrl' | 'setupLink' | 'killSwitch' | 'auth'>;
+export type ParentServer = Pick<PasaBotServer, 'url' | 'sitesUrl' | 'setupLink' | 'killSwitch' | 'auth'> &
+  Partial<Pick<PasaBotServer, 'desktop'>>;
 
 /** wires the channel and says `pasabot:ready` (with the boot setup link, when there is one) */
 export function attachParentChannel(server: ParentServer, ch: ParentChannel): void {
@@ -35,6 +38,11 @@ export function attachParentChannel(server: ParentServer, ch: ParentChannel): vo
     }
   };
   server.killSwitch.watch(() => tell(stopState()));
+  server.desktop?.connect((m) => {
+    if (!ch.connected()) return false;
+    ch.send(m);
+    return true;
+  });
   ch.onMessage((m: unknown) => {
     const type = typeof m === 'object' && m !== null ? (m as { type?: unknown }).type : undefined;
     if (type === 'pasabot:state') tell(stopState());
@@ -44,6 +52,7 @@ export function attachParentChannel(server: ParentServer, ch: ParentChannel): vo
         (e: unknown) => tell({ type: 'pasabot:error', message: e instanceof Error ? e.message : String(e) }),
       );
     else if (type === 'pasabot:setup-link') tell({ type: 'pasabot:setup-link', setupLink: freshSetupLink() });
+    else if (type === 'pasabot:desktop') server.desktop?.update(m);
   });
   // the first-run setup link (single use, 30 min) goes only to the parent, which opens it for the person in front
   tell({

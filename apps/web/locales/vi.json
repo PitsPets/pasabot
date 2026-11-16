@@ -551,7 +551,16 @@
       "own": "Tự chạy"
     },
     "technicalOnly": "Dành cho thiết lập kỹ thuật — bật {{switch}} để xem",
-    "technicalOnlyPage": "Trang này dành cho thiết lập kỹ thuật — bật {{switch}} để xem."
+    "technicalOnlyPage": "Trang này dành cho thiết lập kỹ thuật — bật {{switch}} để xem.",
+    "app": {
+      "title": "Ứng dụng này",
+      "signIn": "Mở khi đăng nhập",
+      "signInHint": "Khởi động PasaBot khi bạn đăng nhập vào máy tính này.",
+      "quit": "Thoát PasaBot",
+      "quitHint": "Dừng PasaBot và các trợ lý của nó trên máy tính này. Mở lại từ danh sách ứng dụng.",
+      "quitting": "PasaBot đang thoát. Bạn có thể đóng cửa sổ này.",
+      "failed": "Không được. Hãy thử lại."
+    }
   },
   "offline": {
     "title": "Không thể kết nối PasaBot",

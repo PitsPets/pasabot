@@ -551,7 +551,16 @@
       "own": "알아서 돌아가는 것"
     },
     "technicalOnly": "기술 설정용입니다. 보려면 {{switch}}를 켜세요",
-    "technicalOnlyPage": "이 페이지는 기술 설정용입니다. 보려면 {{switch}}를 켜세요."
+    "technicalOnlyPage": "이 페이지는 기술 설정용입니다. 보려면 {{switch}}를 켜세요.",
+    "app": {
+      "title": "이 앱",
+      "signIn": "로그인할 때 열기",
+      "signInHint": "이 컴퓨터에 로그인하면 PasaBot을 시작합니다.",
+      "quit": "PasaBot 종료",
+      "quitHint": "이 컴퓨터에서 PasaBot과 도우미를 멈춥니다. 앱 목록에서 다시 열 수 있습니다.",
+      "quitting": "PasaBot을 종료하는 중입니다. 이 창을 닫아도 됩니다.",
+      "failed": "잘 되지 않았습니다. 다시 시도하세요."
+    }
   },
   "offline": {
     "title": "PasaBot에 연결할 수 없어요",

@@ -1,0 +1,275 @@
+# Signed Windows release (docs/SIGNING.md). INACTIVE until the owner sets up SignPath: without the SIGNPATH_*
+# repository variables the gate job says so and nothing else runs. Never publishes: a tag run ends in a DRAFT GitHub
+# Release; publishing it stays a human click, and a release that is already published is never touched.
+# Only `v*` tags sign (and `main`, by hand, for a trial run): the gate refuses any other ref, and the signing job runs
+# in the `release-signing` environment, whose required reviewer and deployment-ref rule GitHub enforces as well.
+# The two-step flow (everything on GitHub-hosted runners, as SignPath requires for open-source projects):
+#   1. build the unsigned portable folder (better-sqlite3 compiled from source) and Inno Setup's uninstaller
+#   2. SignPath signs the inner files (ours: the tray/self-test scripts, the database engine, the uninstaller)
+#   3. compile the installer around the signed files, 4. SignPath signs the installer
+#   5. install it here, check every signature (any file of ours that is not Valid fails the run), self-test,
+#      uninstall, write SHA256SUMS, 6. (tags only) attach both to a draft release
+# Owner set-up (docs/SIGNING.md, "Owner's checklist"):
+#   environment release-signing (Settings > Environments): a required reviewer (the owner), "Prevent self-review" off
+#                only if the owner is the sole maintainer, and Deployment branches and tags = Selected: the tag rule
+#                `v*` (plus the branch `main` for trial runs). The token lives only there:
+#   environment secret SIGNPATH_API_TOKEN  a SignPath user token with the submitter role (never printed; no
+#                repository-level copy, so no other job or branch can read it)
+# Repository variables (Settings > Secrets and variables > Actions > Variables):
+#   variable SIGNPATH_ORGANIZATION_ID      the organization id SignPath shows
+#   variable SIGNPATH_PROJECT_SLUG         e.g. pasabot
+#   variable SIGNPATH_POLICY_SLUG          e.g. release-signing (each request then waits for an approver)
+#   variable SIGNPATH_INNER_CONFIG_SLUG    artifact configuration for step 2 (.signpath/artifact-configurations/inner.xml)
+#   variable SIGNPATH_INSTALLER_CONFIG_SLUG  artifact configuration for step 4 (.signpath/artifact-configurations/installer.xml)
+name: release-windows
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: read
+concurrency:
+  group: release-windows-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      ready: ${{ steps.check.outputs.ready }}
+    steps:
+      - id: check
+        env:
+          REF: ${{ github.ref }}
+          ORG: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          PROJECT: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          POLICY: ${{ vars.SIGNPATH_POLICY_SLUG }}
+          INNER: ${{ vars.SIGNPATH_INNER_CONFIG_SLUG }}
+          INSTALLER: ${{ vars.SIGNPATH_INSTALLER_CONFIG_SLUG }}
+        run: |
+          case "$REF" in
+            refs/tags/v*|refs/heads/main) ;;
+            *)
+              echo "::error title=Not a release ref::Signing runs only for v* tags (and main, for a trial). $REF is neither, so nothing is built or signed."
+              echo "ready=false" >> "$GITHUB_OUTPUT"
+              exit 1
+              ;;
+          esac
+          if [ -n "$ORG" ] && [ -n "$PROJECT" ] && [ -n "$POLICY" ] && [ -n "$INNER" ] && [ -n "$INSTALLER" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice title=Signing is not set up::No SIGNPATH_* variables yet, so nothing is signed or released. The unsigned preview is in the desktop workflow's artifacts. See docs/SIGNING.md."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  windows:
+    needs: gate
+    if: needs.gate.outputs.ready == 'true' && (startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/main')
+    runs-on: windows-latest
+    # the environment holds SIGNPATH_API_TOKEN; its required reviewer approves each run and its deployment-ref rule
+    # admits only v* tags and main, so a workflow pushed on any other branch can neither run this job nor read the token
+    environment: release-signing
+    timeout-minutes: 120
+    # actions: read lets SignPath fetch the unsigned artifact from this run (the action passes github.token)
+    permissions:
+      contents: read
+      actions: read
+    env:
+      OUT: apps\desktop\out
+    steps:
+      - name: the signing token is set in the release-signing environment
+        env:
+          HAS_TOKEN: ${{ secrets.SIGNPATH_API_TOKEN != '' }}
+        shell: bash
+        run: |
+          if [ "$HAS_TOKEN" != "true" ]; then
+            echo "::error title=No signing token::The release-signing environment has no SIGNPATH_API_TOKEN secret. See docs/SIGNING.md."
+            exit 1
+          fi
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22.23.5 # exact: the node.exe the Windows package bundles (docs/WINDOWS-BINARIES.md)
+      - run: npx --yes pnpm@12.18.0 install --frozen-lockfile
+      - run: npx --yes pnpm@12.18.0 run build
+      - name: install Inno Setup
+        run: choco install innosetup --version 6.7.1 --no-progress -y
+
+      - name: 1. the unsigned portable folder (better-sqlite3 from source) and its inventory
+        shell: powershell
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File apps\desktop\windows\build-windows.ps1 -SkipBuild -SqliteFromSource -NoInstaller
+      - name: 1. the uninstaller to sign (Inno Setup stops after writing it, asking for its signature)
+        shell: powershell
+        run: |
+          $dir = Join-Path (Resolve-Path $env:OUT).Path 'uninst'
+          New-Item -ItemType Directory -Force $dir | Out-Null
+          # expected to fail with "signature needed" once uninst-<version>-<hash>.e32 is written
+          powershell -NoProfile -ExecutionPolicy Bypass -File apps\desktop\windows\build-windows.ps1 -InstallerOnly -SignedUninstallerDir $dir
+          $global:LASTEXITCODE = 0
+          $u = @(Get-ChildItem $dir -Filter 'uninst-*.e*')
+          if ($u.Count -ne 1) { throw "expected one uninst-*.e32 in $dir, found $($u.Count)" }
+      - name: 2. stage the inner files to sign
+        shell: powershell
+        run: |
+          $out = (Resolve-Path $env:OUT).Path
+          $stage = Join-Path $out 'sign-inner'
+          $inv = Get-Content -Raw (Join-Path $out 'windows-binaries.json') -Encoding UTF8 | ConvertFrom-Json
+          foreach ($e in @($inv | Where-Object { $_.action -eq 'sign' })) {
+            # a native module is signed only when this run compiled it from source (never an upstream prebuild)
+            if ($e.kind -eq 'pe' -and $e.builtFromSource -ne $true) { throw "refusing to sign $($e.path): not marked as compiled from source in this run" }
+            $to = Join-Path $stage ('PasaBot\' + ($e.path -replace '/', '\'))
+            New-Item -ItemType Directory -Force (Split-Path -Parent $to) | Out-Null
+            Copy-Item -LiteralPath (Join-Path $out ('PasaBot\' + ($e.path -replace '/', '\'))) $to
+            Write-Host "to sign: $($e.path)"
+          }
+          New-Item -ItemType Directory -Force (Join-Path $stage 'uninst') | Out-Null
+          Copy-Item (Join-Path $out 'uninst\uninst-*.e*') (Join-Path $stage 'uninst')
+      - id: inner
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: unsigned-inner
+          path: apps/desktop/out/sign-inner/
+          if-no-files-found: error
+      - name: 2. SignPath signs the inner files (waits for the approver)
+        uses: signpath/github-action-submit-signing-request@f6d04783b4569d051e0c80105fe66e82819d0092 # v3.0
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          signing-policy-slug: ${{ vars.SIGNPATH_POLICY_SLUG }}
+          artifact-configuration-slug: ${{ vars.SIGNPATH_INNER_CONFIG_SLUG }}
+          github-artifact-id: ${{ steps.inner.outputs.artifact-id }}
+          wait-for-completion: true
+          wait-for-completion-timeout-in-seconds: 3600
+          output-artifact-directory: apps/desktop/out/signed-inner
+      - name: 2. put the signed files back and check them
+        shell: powershell
+        run: |
+          $out = (Resolve-Path $env:OUT).Path
+          $signed = Join-Path $out 'signed-inner'
+          $bad = @()
+          foreach ($f in @(Get-ChildItem -Recurse -File $signed)) {
+            $s = Get-AuthenticodeSignature -LiteralPath $f.FullName
+            if ($s.Status -ne 'Valid') { $bad += "$($f.FullName.Substring($signed.Length + 1)): $($s.Status)" }
+          }
+          if ($bad.Count) { throw ("not validly signed: " + ($bad -join '; ')) }
+          Copy-Item (Join-Path $signed 'PasaBot\*') (Join-Path $out 'PasaBot') -Recurse -Force
+          Copy-Item (Join-Path $signed 'uninst\*') (Join-Path $out 'uninst') -Force
+          # the published inventory lists the bytes that ship: hashes again, now of the signed files
+          node scripts\windows-binaries.mjs (Join-Path $out 'PasaBot') --md (Join-Path $out 'windows-binaries.md') --json (Join-Path $out 'windows-binaries.json') --sqlite-built (Join-Path $out 'sqlite-from-source.json') --note signed --strict
+          if ($LASTEXITCODE -ne 0) { throw 'the signed portable folder does not match the signing policy' }
+      - name: 3. the installer around the signed files (and the signed uninstaller)
+        shell: powershell
+        run: |
+          $dir = Join-Path (Resolve-Path $env:OUT).Path 'uninst'
+          powershell -NoProfile -ExecutionPolicy Bypass -File apps\desktop\windows\build-windows.ps1 -InstallerOnly -SignedUninstallerDir $dir
+          if ($LASTEXITCODE -ne 0) { throw "installer compile failed (exit $LASTEXITCODE)" }
+          New-Item -ItemType Directory -Force (Join-Path $env:OUT 'unsigned-installer') | Out-Null
+          Move-Item (Join-Path $env:OUT 'PasaBot-Setup-*.exe') (Join-Path $env:OUT 'unsigned-installer')
+      - id: installer
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: unsigned-installer
+          path: apps/desktop/out/unsigned-installer/
+          if-no-files-found: error
+      - name: 4. SignPath signs the installer (waits for the approver)
+        uses: signpath/github-action-submit-signing-request@f6d04783b4569d051e0c80105fe66e82819d0092 # v3.0
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          signing-policy-slug: ${{ vars.SIGNPATH_POLICY_SLUG }}
+          artifact-configuration-slug: ${{ vars.SIGNPATH_INSTALLER_CONFIG_SLUG }}
+          github-artifact-id: ${{ steps.installer.outputs.artifact-id }}
+          wait-for-completion: true
+          wait-for-completion-timeout-in-seconds: 3600
+          output-artifact-directory: apps/desktop/out/release
+
+      - name: 5. install the signed installer silently (per user, no admin)
+        id: setup
+        shell: powershell
+        run: |
+          $setup = Get-ChildItem apps\desktop\out\release\PasaBot-Setup-*.exe | Select-Object -First 1
+          if (-not $setup) { throw 'no signed PasaBot-Setup-*.exe came back' }
+          $s = Get-AuthenticodeSignature -LiteralPath $setup.FullName
+          if ($s.Status -ne 'Valid') { throw "the installer is not validly signed: $($s.Status)" }
+          Write-Host "installer signed by: $($s.SignerCertificate.Subject)"
+          $p = Start-Process $setup.FullName -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CURRENTUSER' -Wait -PassThru
+          if ($p.ExitCode -ne 0) { throw "installer exit $($p.ExitCode)" }
+      - name: 5. every signature in the installed copy
+        shell: powershell
+        run: |
+          $app = "$env:LOCALAPPDATA\Programs\PasaBot"
+          $inv = Get-Content -Raw apps\desktop\out\windows-binaries.json -Encoding UTF8 | ConvertFrom-Json
+          $must = @{}
+          foreach ($e in @($inv | Where-Object { $_.action -in @('sign', 'vendor-signed') })) { $must[($e.path -replace '/', '\').ToLower()] = $e.action }
+          $must['unins000.exe'] = 'inno'
+          $bad = @()
+          $files = @(Get-ChildItem -LiteralPath $app -Recurse -File -Attributes !ReparsePoint -Include *.exe, *.dll, *.node, *.ps1, *.psm1)
+          foreach ($f in $files) {
+            $rel = $f.FullName.Substring($app.Length + 1)
+            $s = Get-AuthenticodeSignature -LiteralPath $f.FullName
+            $want = $must[$rel.ToLower()]
+            Write-Host ("{0,-14} {1,-16} {2}" -f $s.Status, $(if ($want) { $want } else { 'not ours' }), $rel)
+            if ($want -and $s.Status -ne 'Valid') { $bad += "$rel ($want): $($s.Status)" }
+          }
+          foreach ($k in $must.Keys) { if (-not (Test-Path -LiteralPath (Join-Path $app $k))) { $bad += "$k is missing" } }
+          if ($bad.Count) { throw ("not validly signed: " + ($bad -join '; ')) }
+      - name: 5. self-test on the installed copy
+        shell: powershell
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File "$env:LOCALAPPDATA\Programs\PasaBot\selftest.ps1"
+      - name: 5. uninstall silently (data is kept)
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: powershell
+        run: |
+          $p = Start-Process "$env:LOCALAPPDATA\Programs\PasaBot\unins000.exe" -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART' -Wait -PassThru
+          if ($p.ExitCode -ne 0) { throw "uninstaller exit $($p.ExitCode)" }
+      - name: SHA256SUMS
+        shell: powershell
+        run: |
+          Push-Location apps\desktop\out\release
+          $lines = foreach ($f in @(Get-ChildItem -File -Filter 'PasaBot-Setup-*.exe')) { "$((Get-FileHash -Algorithm SHA256 $f.FullName).Hash.ToLower())  $($f.Name)" }
+          [System.IO.File]::WriteAllText((Join-Path (Get-Location) 'SHA256SUMS'), (($lines -join "`n") + "`n"))
+          Get-Content SHA256SUMS
+          Pop-Location
+          Copy-Item apps\desktop\out\windows-binaries.md apps\desktop\out\release\
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: pasabot-windows-signed
+          path: |
+            apps/desktop/out/release/PasaBot-Setup-*.exe
+            apps/desktop/out/release/SHA256SUMS
+            apps/desktop/out/release/windows-binaries.md
+          if-no-files-found: error
+
+  draft-release:
+    needs: windows
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: pasabot-windows-signed
+          path: release
+      - name: attach to a DRAFT release (publishing stays a human click)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          # a release that exists is touched only while it is still a draft; a published one is never changed
+          if draft=$(gh release view "$TAG" --json isDraft -q .isDraft 2>/dev/null); then
+            if [ "$draft" != "true" ]; then
+              echo "::error title=Release already published::$TAG is a published release, so its files are left as they are. Make a new tag (or a new draft by hand) instead."
+              exit 1
+            fi
+            gh release upload "$TAG" release/PasaBot-Setup-*.exe release/SHA256SUMS release/windows-binaries.md --clobber
+          else
+            gh release create "$TAG" --draft --verify-tag --title "PasaBot $TAG" --notes-file .github/release-notes.md \
+              release/PasaBot-Setup-*.exe release/SHA256SUMS release/windows-binaries.md
+          fi
