@@ -34,10 +34,17 @@ const COMMANDS = new Set([
   'quit',
 ]);
 
+/**
+ * One command line from the shell, or null. A leading byte-order mark is dropped: Windows PowerShell 5.1 (.NET
+ * Framework) writes a child's stdin with the console's input code page and has no way to choose another
+ * (ProcessStartInfo.StandardInputEncoding is .NET Core only), and under code page 65001 (UTF-8: GitHub's Windows
+ * runners, or the "Beta: Use Unicode UTF-8" setting) that writer puts a BOM before the first line. JSON.parse refuses
+ * a BOM, so the tray's or the self-test's first command was silently lost.
+ */
 export function parseCommand(line: string): Command | null {
   let v: unknown;
   try {
-    v = JSON.parse(line);
+    v = JSON.parse(line.charCodeAt(0) === 0xfeff ? line.slice(1) : line);
   } catch {
     return null;
   }

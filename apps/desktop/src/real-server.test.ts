@@ -87,7 +87,9 @@ describe('desktop launcher + real server', () => {
       // the window asks for a fresh link (its page's code was refused): it comes over the server channel; seconds
       // after boot the server hands the same unused link back instead of minting another
       const bootLink = /"event":"open","url":"([^"]+)"/.exec(out)![1]!;
-      child.stdin.write('{"cmd":"setup-link"}\n');
+      // the first line exactly as the Windows tray and selftest.ps1 send it under code page 65001: Windows
+      // PowerShell 5.1's stdin writer starts with a UTF-8 BOM and ends lines with CRLF (main.ts parseCommand)
+      child.stdin.write('﻿{"cmd":"setup-link"}\r\n');
       for (let i = 0; i < 50 && !out.includes('"event":"setup-link"'); i++) await sleep(100);
       expect(/"event":"setup-link","url":"([^"]+)"/.exec(out)?.[1]).toBe(bootLink);
       // the link is never written to the server's log beyond the boot line

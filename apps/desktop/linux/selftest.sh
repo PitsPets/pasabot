@@ -69,10 +69,12 @@ if [ -n "$URL" ]; then
   if [ -n "$SESSION" ]; then
     N="$(curl -fsS "$URL/api/v1/system/notices" -H "authorization: Bearer $SESSION")"
     res "Owner-only notices answer" PASS "$(printf '%s' "$N" | grep -o '"id":"[^"]*"' | sed -E 's/"id":"(.*)"/\1/' | tr '\n' ' ')"
-    if printf '%s' "$N" | grep -q 'vault-key-file'; then
-      M="$(stat -c '%a' "$TMPH/vault.key" 2>/dev/null)"; [ "$M" = "600" ] && res "Vault key" PASS "no keyring here: a 0600 key file (the owner sees a card)" || res "Vault key" FAIL "vault.key mode $M"
-    elif printf '%s' "$N" | grep -q 'vault-unavailable'; then res "Vault key" FAIL "the vault did not open"
-    else res "Vault key" PASS "kept in the desktop keyring"; fi
+    # the desktop keyring is for your own data folder only (~/.pasabot): a server on any other folder, such as this
+    # test one, keeps its key in a 0600 vault.key inside that folder (vault/index.ts hostMasterKeySource)
+    M="$(stat -c '%a' "$TMPH/vault.key" 2>/dev/null)"
+    if printf '%s' "$N" | grep -q 'vault-unavailable'; then res "Vault key" FAIL "the vault did not open"
+    elif [ "$M" = "600" ]; then res "Vault key" PASS "test folder: its own 0600 vault.key (your own data folder uses the desktop keyring)"
+    else res "Vault key" FAIL "vault.key in the test folder: mode ${M:-missing}"; fi
     if printf '%s' "$N" | grep -q 'linux-sandbox'; then res "Helper sandbox (bubblewrap)" FAIL "see the card on the home screen"; else res "Helper sandbox (bubblewrap)" PASS; fi
   fi
 fi

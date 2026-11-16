@@ -12,17 +12,26 @@ $node = Join-Path $here 'node.exe'
 $root = Join-Path $here 'pasabot'
 $launcherJs = Join-Path $root 'apps\desktop\dist\main.js'
 $appWindowJs = Join-Path $root 'apps\desktop\dist\app-window.js'
+$osKeyJs = Join-Path $root 'apps\server\dist\vault\os-key.js'
 $payload = Join-Path $here 'payload.json'
 $ps = "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
 $report = Join-Path $here 'selftest-report.txt'
+# only when a check failed: what the test launchers and server said (codes hidden), to send with the report
+$logsFile = Join-Path $here 'selftest-logs.txt'
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 $results = New-Object System.Collections.ArrayList
 $tmp = Join-Path ([System.IO.Path]::GetTempPath()) ("pasabot-selftest-" + [Guid]::NewGuid().ToString('N').Substring(0, 8))
 $started = @()
+$launchers = @()
 
+# never a setup code, session or password in the report or the logs file
+function Hide-Codes([string]$s) {
+  $s = $s -replace 'token=[^&#\s"]+', 'token=<hidden>'
+  $s = $s -replace '"(token|password|session|secret|key)"\s*:\s*"[^"]*"', '"$1":"<hidden>"'
+  return ($s -replace '(?i)\bbearer\s+\S+', 'Bearer <hidden>')
+}
 function Add-Result([string]$name, [string]$result, [string]$detail = '') {
-  # never a setup code in the report
-  $detail = $detail -replace 'token=[^&#\s"]+', 'token=<hidden>'
+  $detail = Hide-Codes $detail
   [void]$results.Add([pscustomobject]@{ Check = $name; Result = $result; Detail = $detail })
   $color = switch ($result) { 'PASS' { 'Green' } 'FAIL' { 'Red' } default { 'Yellow' } }
   Write-Host ("{0,-5} {1}" -f $result, $name) -ForegroundColor $color
@@ -51,7 +60,18 @@ function Invoke-Quiet([scriptblock]$block) {
   $global:LASTEXITCODE = 0
 }
 
-# a launcher with its stdin/stdout wired to us, as the tray runs it
+# who else may open a file or folder: every access-list entry that is not this Windows user
+function Get-OtherUsers([string]$path) {
+  $me = [System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value
+  foreach ($r in (Get-Acl -LiteralPath $path).Access) {
+    $sid = try { $r.IdentityReference.Translate([System.Security.Principal.SecurityIdentifier]).Value } catch { [string]$r.IdentityReference }
+    if ($sid -ne $me) { [string]$r.IdentityReference }
+  }
+}
+
+# a launcher with its stdin/stdout wired to us, as the tray runs it. Its stdin is written exactly as the tray writes
+# it: Windows PowerShell 5.1 (.NET Framework) has no StandardInputEncoding, so the writer uses the console's input
+# code page, and under 65001 (UTF-8) it starts with a BOM; the launcher drops a leading BOM (main.ts parseCommand).
 function Start-Launcher([string[]]$extra) {
   $psi = New-Object System.Diagnostics.ProcessStartInfo
   $psi.FileName = $node
@@ -66,7 +86,10 @@ function Start-Launcher([string[]]$extra) {
   $psi.EnvironmentVariables['PASABOT_HOME'] = $tmp
   $p = [System.Diagnostics.Process]::Start($psi)
   $script:started += $p
-  return [pscustomobject]@{ Proc = $p; Err = $p.StandardError.ReadToEndAsync(); Line = $p.StandardOutput.ReadLineAsync() }
+  # Seen: the name of every event read so far (never its content), for a failed check's detail and the logs file
+  $l = [pscustomobject]@{ Name = "launcher $($script:launchers.Count + 1)"; Proc = $p; Err = $p.StandardError.ReadToEndAsync(); Line = $p.StandardOutput.ReadLineAsync(); Seen = (New-Object System.Collections.ArrayList) }
+  $script:launchers += $l
+  return $l
 }
 # the next event matching $match within $seconds, else null
 function Wait-Event($l, [scriptblock]$match, [int]$seconds) {
@@ -74,14 +97,20 @@ function Wait-Event($l, [scriptblock]$match, [int]$seconds) {
   while ([DateTime]::Now -lt $until) {
     if ($l.Line.Wait(250)) {
       $text = $l.Line.Result
-      if ($null -eq $text) { return $null }
+      if ($null -eq $text) { [void]$l.Seen.Add('(end of output)'); return $null }
       $l.Line = $l.Proc.StandardOutput.ReadLineAsync()
       $e = $null
       try { $e = $text | ConvertFrom-Json } catch {}
+      if ($e) { [void]$l.Seen.Add([string]$e.event) } else { [void]$l.Seen.Add('(not JSON)') }
       if ($e -and (& $match $e)) { return $e }
     }
   }
   return $null
+}
+# the events read since mark $from, for a failed check's detail
+function Seen-Since($l, [int]$from) {
+  $s = @($l.Seen | Select-Object -Skip $from)
+  if ($s.Count) { return ($s -join ', ') } else { return 'none' }
 }
 function Send($l, $obj) { $l.Proc.StandardInput.WriteLine(($obj | ConvertTo-Json -Compress)); $l.Proc.StandardInput.Flush() }
 
@@ -89,6 +118,14 @@ Write-Host ''
 Write-Host 'PasaBot: checking this computer (a test folder, never your own data)' -ForegroundColor Cyan
 Write-Host ''
 $info = "Windows $([Environment]::OSVersion.Version) $env:PROCESSOR_ARCHITECTURE, PowerShell $($PSVersionTable.PSVersion), $(Get-Date -Format s)"
+# how this PowerShell writes a launcher's stdin (see Start-Launcher): the console's input code page, and whether a BOM
+# goes first (Windows PowerShell 5.1 under a code page whose encoding has one, such as 65001)
+$stdinNote = 'unknown'
+try {
+  $inEnc = [Console]::InputEncoding
+  $bom = $PSVersionTable.PSEdition -ne 'Core' -and $inEnc.GetPreamble().Length -gt 0
+  $stdinNote = "code page $($inEnc.CodePage)" + $(if ($bom) { ', a BOM first' } else { ', no BOM' })
+} catch {}
 
 Try-Check 'PasaBot is installed' {
   foreach ($f in $node, $launcherJs, (Join-Path $root 'apps\server\dist\host\main.js'), $payload) {
@@ -144,12 +181,23 @@ try {
     }
     $link = $null
     Try-Check 'Setup link is made (private channel)' {
+      # the first command this launcher gets, as the tray's first click would be
+      $mark = $script:L1.Seen.Count
       Send $script:L1 @{ cmd = 'setup-link' }
       $e = Wait-Event $script:L1 { param($e) $e.event -eq 'setup-link' } 20
-      if (-not $e -or -not $e.url) { throw 'no setup link from the launcher' }
+      if (-not $e) {
+        # which side lost it: the launcher answering a later command (logs -> reveal, nothing opens) means it dropped
+        # the first line; no answer at all means it reads no commands
+        $seen = Seen-Since $script:L1 $mark
+        Send $script:L1 @{ cmd = 'logs' }
+        $later = Wait-Event $script:L1 { param($x) $x.event -eq 'reveal' -or $x.event -eq 'setup-link' } 10
+        $why = if (-not $later) { 'it answered no later command either' } elseif ($later.event -eq 'setup-link') { 'the link came late' } else { 'it answered a later command, so the first line was lost' }
+        throw "no answer within 20 s ($why; events: $seen; stdin: $stdinNote)"
+      }
+      if (-not $e.url) { throw "the launcher answered without a link (stdin: $stdinNote)" }
       if ([string]$e.url -notmatch '#/setup\?token=([A-Za-z0-9_-]+)') { throw 'the link has no code' }
       $script:link = [string]$e.url
-      'a fresh one-time link over the launcher-server channel'
+      "a fresh one-time link over the launcher-server channel (stdin: $stdinNote)"
     }
     if ($link) {
       Try-Check 'Claim works' {
@@ -177,15 +225,39 @@ try {
       if ($others.Count) { throw ("also open to: " + (($others | Select-Object -Unique) -join ', ')) }
       'inheritance off, only this Windows user'
     }
+    # Windows protection (DPAPI) is for your own data folder only (%USERPROFILE%\.pasabot): a server on any other
+    # folder, such as this test one, keeps its key in a vault.key inside that folder (vault/index.ts
+    # hostMasterKeySource). So the test server is checked for that, and DPAPI itself is checked on the installed code.
+    Try-Check 'Test folder keeps its own vault key' {
+      $k = Join-Path $tmp 'vault.key'
+      if (-not (Test-Path -LiteralPath $k)) { throw 'no vault.key in the test folder: the vault did not open' }
+      if (Test-Path -LiteralPath (Join-Path $tmp 'vault.dpapi')) { throw 'the test folder used Windows protection, which is for your own data folder only' }
+      $others = @(Get-OtherUsers $k | Select-Object -Unique)
+      if ($others.Count) { throw ("vault.key is also open to: " + ($others -join ', ')) }
+      'a vault.key only this Windows user can open, inside the test folder'
+    }
     Try-Check 'Vault key is protected by Windows (DPAPI)' {
-      $f = Join-Path $tmp 'vault.dpapi'
-      if (-not (Test-Path -LiteralPath $f)) { throw 'no vault.dpapi: the vault did not open with Windows protection' }
-      if (Test-Path -LiteralPath (Join-Path $tmp 'vault.key')) { throw 'a plain vault.key file exists' }
+      # the installed server code that keeps your own folder's key (os-key.js dpapiMasterKey, Windows PowerShell's
+      # ProtectedData), on an empty folder of its own inside the test folder: it makes a key, then opens it again
+      if (-not (Test-Path -LiteralPath $osKeyJs)) { throw "missing: $osKeyJs" }
+      $dir = Join-Path $tmp 'dpapi-check'
+      New-Item -ItemType Directory -Force -Path $dir | Out-Null
+      # only lengths and yes/no come back, never the key; a failed DPAPI run adds the start of its error output
+      $probe = "import('file:///' + process.argv[1].replace(/\\/g, '/')).then((m) => { const errs = []; const run = (c, a, i) => { const r = m.runKeyTool(c, a, i); if (r.status !== 0) errs.push(String(r.stderr).replace(/\s+/g, ' ').slice(0, 300)); return r; }; try { const a = m.dpapiMasterKey(process.argv[2], false, run); const b = m.dpapiMasterKey(process.argv[2], true, run); console.log(JSON.stringify({ bytes: a.length, same: a.equals(b) })); a.fill(0); b.fill(0); } catch (e) { console.log(JSON.stringify({ error: String((e && e.message) || e), stderr: errs.join(' / ') })); } }).catch((e) => console.log(JSON.stringify({ error: 'import: ' + String((e && e.message) || e) })))"
+      $out = & $node --input-type=module -e $probe $osKeyJs $dir
+      $r = $null
+      try { $r = ($out | Select-Object -Last 1) | ConvertFrom-Json } catch {}
+      if ($null -eq $r) { throw "no answer from os-key.js (node exit $LASTEXITCODE)" }
+      if ($r.error) { throw ("DPAPI: $($r.error)" + $(if ($r.stderr) { " ($($r.stderr))" } else { '' })) }
+      if ($r.bytes -ne 32 -or -not $r.same) { throw "the key did not open again unchanged ($($r.bytes) bytes)" }
+      $f = Join-Path $dir 'vault.dpapi'
+      if (-not (Test-Path -LiteralPath $f)) { throw 'no vault.dpapi was written' }
+      if (Test-Path -LiteralPath (Join-Path $dir 'vault.key')) { throw 'a plain vault.key file was written' }
       Add-Type -AssemblyName System.Security
       $b = [System.Security.Cryptography.ProtectedData]::Unprotect([Convert]::FromBase64String((Get-Content -Raw $f).Trim()), $null, 'CurrentUser')
       if ($b.Length -ne 32) { throw "unexpected key length $($b.Length)" }
       [Array]::Clear($b, 0, $b.Length)
-      'only this Windows user can open it'
+      'made, opened again and read back with this Windows user''s protection (vault.dpapi, no plain key)'
     }
     Try-Check 'No open local channel (named pipe)' {
       $pipes = @([System.IO.Directory]::GetFiles('\\.\pipe\') | Where-Object { $_ -match 'pasabot' })
@@ -258,6 +330,27 @@ try {
 } finally {
   foreach ($p in $started) { try { if (-not $p.HasExited) { $id = $p.Id; Invoke-Quiet { & "$env:SystemRoot\System32\taskkill.exe" /PID $id /T /F } } } catch {} }
   Start-Sleep -Seconds 1
+  # a failed check: what the test launchers and server said, kept next to the report before the test folder goes
+  # (codes hidden); a run with no failure leaves no such file behind
+  try {
+    if (@($results | Where-Object { $_.Result -eq 'FAIL' }).Count) {
+      $parts = @('PasaBot check of this computer: what the test run logged (codes hidden)', $info, "stdin: $stdinNote")
+      foreach ($l in $launchers) {
+        $err = ''
+        try { if ($l.Err.Wait(3000)) { $err = [string]$l.Err.Result } } catch {}
+        $parts += @('', "== $($l.Name): events read: $(Seen-Since $l 0)", "== $($l.Name): error output", $err.TrimEnd())
+      }
+      foreach ($f in @(Get-ChildItem -LiteralPath (Join-Path $tmp 'logs') -File -ErrorAction SilentlyContinue)) {
+        $parts += @('', "== logs\$($f.Name) (last 80 lines)")
+        $parts += @(Get-Content -LiteralPath $f.FullName -Tail 80 -Encoding UTF8 -ErrorAction SilentlyContinue)
+      }
+      [System.IO.File]::WriteAllText($logsFile, (Hide-Codes ($parts -join "`r`n")) + "`r`n", $utf8)
+    } elseif (Test-Path -LiteralPath $logsFile) {
+      Remove-Item -LiteralPath $logsFile -Force -ErrorAction SilentlyContinue
+    }
+  } catch {
+    Write-Host "Could not keep the logs of the test run: $($_.Exception.Message)"
+  }
   # junction-safe delete of the test folder (rmdir never follows a link)
   Invoke-Quiet { & "$env:SystemRoot\System32\cmd.exe" /c rmdir /s /q "$tmp" }
 }
@@ -272,6 +365,7 @@ $lines = @("PasaBot check of this computer", $info, '', ($results | Format-Table
 try {
   [System.IO.File]::WriteAllText($report, ($lines -join "`r`n") + "`r`n", $utf8)
   Write-Host "Report: $report"
+  if ($fail -gt 0 -and (Test-Path -LiteralPath $logsFile)) { Write-Host "Logs of the test run: $logsFile" }
 } catch {
   Write-Host "Could not write the report next to this script: $($_.Exception.Message)"
 }

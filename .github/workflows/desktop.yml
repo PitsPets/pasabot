@@ -69,11 +69,15 @@ jobs:
         if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
         shell: powershell
         run: powershell -NoProfile -ExecutionPolicy Bypass -File "$env:LOCALAPPDATA\Programs\PasaBot\selftest.ps1"
-      # the report is written next to the installed selftest.ps1; it goes with the artifact from the workspace
+      # the report (and, after a failed check, the test run's logs with codes hidden) is written next to the installed
+      # selftest.ps1; it goes with the artifact from the workspace
       - name: keep the self-test report
         if: ${{ always() && steps.setup.outcome == 'success' }}
         shell: powershell
-        run: Copy-Item "$env:LOCALAPPDATA\Programs\PasaBot\selftest-report.txt" apps\desktop\out\ -ErrorAction SilentlyContinue
+        run: |
+          foreach ($f in 'selftest-report.txt', 'selftest-logs.txt') {
+            Copy-Item "$env:LOCALAPPDATA\Programs\PasaBot\$f" apps\desktop\out\ -ErrorAction SilentlyContinue
+          }
       - name: no node.exe left from the installed copy
         if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
         shell: powershell
@@ -94,6 +98,7 @@ jobs:
           path: |
             apps/desktop/out/PasaBot-Setup-*.exe
             apps/desktop/out/selftest-report.txt
+            apps/desktop/out/selftest-logs.txt
             apps/desktop/out/install.log
   linux:
     runs-on: ubuntu-latest

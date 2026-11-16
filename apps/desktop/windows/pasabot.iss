@@ -67,6 +67,9 @@ Filename: "{#PS}"; Parameters: "-NoProfile -ExecutionPolicy Bypass -File ""{app}
 [UninstallDelete]
 ; open-at-login, written by the tray's toggle or the autostart task
 Type: files; Name: "{userstartup}\PasaBot.cmd"
+; what "Check this computer" wrote next to itself (its report, and the logs of a failed check)
+Type: files; Name: "{app}\selftest-report.txt"
+Type: files; Name: "{app}\selftest-logs.txt"
 Type: dirifempty; Name: "{app}"
 
 [Code]

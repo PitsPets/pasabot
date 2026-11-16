@@ -32,7 +32,8 @@ Good to know:
 3. A window lists each check as PASS, FAIL or SKIP and ends with **ALL GOOD** or **N FAILED**. It uses a test folder,
    never your own data, and stops everything it started.
 4. The same table is saved as `selftest-report.txt` in `%LOCALAPPDATA%\Programs\PasaBot` (no codes, keys or
-   passwords in it). Send that file if anything failed.
+   passwords in it). Send that file if anything failed, with `selftest-logs.txt` beside it: what the test run logged
+   (codes hidden), written only when a check failed.
 5. Then try it by hand: open PasaBot from the Start menu, claim it, pick a brain, ask a helper something, press
    **Stop all** in the tray, quit from the tray, and check Task Manager shows no `node.exe` left.
 6. Build it yourself on Windows: `powershell -ExecutionPolicy Bypass -File apps\desktop\windows\build-windows.ps1`

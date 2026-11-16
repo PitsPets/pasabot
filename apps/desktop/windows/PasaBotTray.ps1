@@ -52,6 +52,8 @@ $psi.RedirectStandardError = $true
 $psi.CreateNoWindow = $true
 $psi.StandardOutputEncoding = $utf8
 $psi.StandardErrorEncoding = $utf8
+# stdin has no such setting on .NET Framework (StandardInputEncoding is .NET Core only: setting it here would stop this
+# script): its writer uses the console's input code page and, under 65001, sends a BOM first, which the launcher drops
 $psi.WorkingDirectory = $here
 
 $icons = @{ running = (New-PasaBotIcon 'running'); stopped = (New-PasaBotIcon 'stopped'); problem = (New-PasaBotIcon 'problem') }

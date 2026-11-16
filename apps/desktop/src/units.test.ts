@@ -245,4 +245,13 @@ describe('strings and wire', () => {
     expect(parseCommand('{"cmd":"rm -rf"}')).toBeNull();
     expect(parseCommand('nope')).toBeNull();
   });
+  it('a first line from Windows PowerShell 5.1 under code page 65001 (BOM, CRLF) is still understood', () => {
+    // .NET Framework's stdin writer starts with a UTF-8 BOM; readline keeps it on the first line
+    expect(parseCommand('﻿{"cmd":"setup-link"}')).toEqual({ cmd: 'setup-link' });
+    expect(parseCommand('﻿{"cmd":"setup-link"}\r')).toEqual({ cmd: 'setup-link' });
+    // only one leading mark is dropped, and nothing else changes what passes the wire
+    expect(parseCommand('﻿﻿{"cmd":"setup-link"}')).toBeNull();
+    expect(parseCommand('﻿{"cmd":"rm -rf"}')).toBeNull();
+    expect(parseCommand('﻿')).toBeNull();
+  });
 });
