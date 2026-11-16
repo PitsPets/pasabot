@@ -9,8 +9,9 @@
 #     -NoInstaller        the portable folder only (release-windows.yml signs its files, then compiles the installer)
 #     -InstallerOnly      compile the installer from an existing portable folder (after its files were signed)
 #     -SignedUninstallerDir <dir>   Inno Setup's SignedUninstaller: the uninstaller is taken, signed, from <dir>
-# The folder holds only what PasaBot runs: build-time tools, other systems' binaries and command shims are removed,
-# and scripts\windows-binaries.mjs --strict fails the build when an executable file is not in the signing policy.
+# The folder holds only what PasaBot runs: build-time tools, other systems' binaries and the command shims of every
+# node_modules are removed, and scripts\windows-binaries.mjs --strict fails the build when an executable file is not
+# in the signing policy.
 # Nothing in it needs PowerShell to start, stop or uninstall PasaBot (windows-shell.js, run by node.exe).
 param(
   [string]$NodeExe = '',
@@ -127,11 +128,23 @@ try {
 # loaded at run time; pnpm's command shims (.cmd/.ps1) are never used either, and neither are Playwright's browser
 # installer scripts. Removed here, so the set of executables to sign stays small and explicit.
 $nm = Join-Path $payloadRoot 'node_modules'
-foreach ($d in @('.bin', 'vitest', '@vitest', 'vite', 'rolldown', '@rolldown', 'esbuild', '@esbuild', 'tsx') + @(Get-ChildItem -LiteralPath $nm -Directory -Filter 'lightningcss*' | ForEach-Object { $_.Name })) {
+foreach ($d in @('vitest', '@vitest', 'vite', 'rolldown', '@rolldown', 'esbuild', '@esbuild', 'tsx') + @(Get-ChildItem -LiteralPath $nm -Directory -Filter 'lightningcss*' | ForEach-Object { $_.Name })) {
   $p = Join-Path $nm $d
   if (Test-Path -LiteralPath $p) { Remove-Item -LiteralPath $p -Recurse -Force }
 }
 Remove-Item (Join-Path $nm 'playwright-core\bin\*.ps1') -Force -ErrorAction SilentlyContinue
+# pnpm writes command shims in every node_modules whose packages depend on one with a command, not only the top one:
+# a workspace package's own node_modules too (packages\testkit\node_modules\.bin, for @pasabot/server's command).
+# Every node_modules\.bin goes, found by hand and never through a link (the workspace links are still here; going
+# through one would reach the same folder twice).
+function Remove-Shims([string]$dir) {
+  foreach ($c in @(Get-ChildItem -LiteralPath $dir -Force -Directory)) {
+    if ($c.Attributes -band [System.IO.FileAttributes]::ReparsePoint) { continue }
+    if ($c.Name -eq '.bin' -and $c.Parent.Name -eq 'node_modules') { Remove-Item -LiteralPath $c.FullName -Recurse -Force }
+    else { Remove-Shims $c.FullName }
+  }
+}
+Remove-Shims $payloadRoot
 
 # what is left as links are the workspace packages (@pasabot/*): write them down and remove them; windows-shell.js makes
 # them again as junctions after install (an installer would copy through them, so every package would load twice)

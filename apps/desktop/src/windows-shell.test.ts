@@ -382,9 +382,16 @@ describe('the Windows executable inventory (scripts/windows-binaries.mjs)', () =
     ).toBe(true);
     put(root, 'pasabot/node_modules/better-sqlite3/prebuilds/linux-x64.node', 'ELF');
     put(root, 'pasabot/node_modules/some-new-dep/thing.dll', pe(0x8664, false));
+    // pnpm's command shims at any depth: a workspace package's own node_modules\.bin too (round-5 CI: testkit's)
+    put(root, 'pasabot/node_modules/.bin/tsc.cmd', '@echo off');
+    put(root, 'pasabot/packages/testkit/node_modules/.bin/pasabot-server.cmd', '@echo off');
+    put(root, 'pasabot/packages/testkit/node_modules/.bin/pasabot-server.ps1', 'exit');
     expect(m.strictProblems(m.scan(root, built))).toEqual([
+      'remove: pasabot/node_modules/.bin/tsc.cmd',
       'remove: pasabot/node_modules/better-sqlite3/prebuilds/linux-x64.node',
       'unknown: pasabot/node_modules/some-new-dep/thing.dll',
+      'remove: pasabot/packages/testkit/node_modules/.bin/pasabot-server.cmd',
+      'remove: pasabot/packages/testkit/node_modules/.bin/pasabot-server.ps1',
     ]);
   });
 });

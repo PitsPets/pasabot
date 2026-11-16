@@ -57,6 +57,10 @@ Added at build or install time, so not in the tables:
 
 ## What the build removes
 
+Also every package manager command shim (`node_modules\.bin\*.cmd` and `.ps1`), in any `node_modules`: the top one
+and a workspace package's own, such as `packages\testkit\node_modules\.bin`. pnpm writes them on Windows only, so
+they are not in the table below, which was assembled on a Mac.
+
 | File                                                                                         | Kind   | CPU            |     Size | SHA-256             | From                                    | Release       | Why                                                                        |
 | -------------------------------------------------------------------------------------------- | ------ | -------------- | -------: | ------------------- | --------------------------------------- | ------------- | -------------------------------------------------------------------------- |
 | `pasabot/node_modules/@esbuild/win32-x64/esbuild.exe`                                        | pe     | x64            | 11694592 | `c7bee37877d0aa6a…` | @esbuild/win32-x64@0.28.2               | must not ship | build and test tools pulled in as optional peers; never loaded at run time |
