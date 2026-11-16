@@ -37,6 +37,7 @@ interface Manager {
   guidedUnchanged(id: string, mark: GuidedMark | null): boolean;
   guidedRead<T>(id: string, read: () => Promise<T>): Promise<T>;
   guidedBounces(id: string): number;
+  guidedSaveTyped(id: string): Promise<void>;
 }
 /** see `BrowserManager.guidedMark` (structural, like `Manager`) */
 interface GuidedMark {
@@ -244,6 +245,8 @@ export function createBrowserPort(m: Manager, app: Pick<ModuleHost, 'log' | 'not
         if (o.url !== undefined) {
           if (!hostOk(o.url, o.allowedHosts)) throw new Error('that address is not allowed');
           const bounces = m.guidedBounces(r.id);
+          // W43: a redirect of this address off the sign-up's hosts goes back to what was typed there
+          await m.guidedSaveTyped(r.id);
           const nav = await s.page.goto(o.url, { waitUntil: 'domcontentloaded', timeout: 20_000 }).then(
             () => null,
             (e: unknown) => e,

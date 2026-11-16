@@ -635,6 +635,67 @@ describe('guided sign-up (W43 "Do it with me")', () => {
     }
   }, 60_000);
 
+  it('an address opened while the sign-up page is busy keeps what was typed when its redirect is sent back', async () => {
+    // Chromium keeps what was typed on a page in its history entry, but stores it there on a timer or once the page's
+    // renderer has unloaded it; a page busy at that moment (a slow runner) had stored nothing yet when the redirect
+    // landed and was sent back. Here the sign-up's renderer is held busy from the moment each navigation the server
+    // starts is sent: by the helper's tool (the other site loading fast and slowly), the module port and the owner
+    const profileId = await openFilled('Tagumpay');
+    // four send-backs in a row here: each its own burst (the cap is another test's)
+    opts.guidedBurstQuietMs = 0;
+    const pg = pageOf(profileId);
+    const realGoto = pg.goto.bind(pg);
+    let held = 0;
+    (pg as { goto: unknown }).goto = async (url: string, o?: Parameters<Page['goto']>[1]) => {
+      if (url.endsWith('/hop')) {
+        held++;
+        await pg
+          .evaluate(() => {
+            setTimeout(() => {
+              const t = Date.now();
+              while (Date.now() - t < 1_000) {}
+            }, 0);
+          })
+          .catch(() => {});
+      }
+      return realGoto(url, o);
+    };
+    try {
+      for (const slow of [0, 1500]) {
+        slowAwayMs = slow;
+        const reply = await probe('browser_navigate', { profile: 'Tagumpay', url: 'http://signup.test/hop' });
+        slowAwayMs = 0;
+        expect(reply).toMatch(/refused: this browser stays on the sign-up page/);
+        await settledOnSignup(profileId);
+        expect(await values(profileId, '#fn', '#ln', '#un')).toEqual(['Ligaya', 'Santos', 'kakaninniligaya']);
+      }
+      await expect(
+        port().read(SYS, {
+          profile: 'Tagumpay',
+          url: 'http://signup.test/hop',
+          allowedHosts: ['signup.test'],
+        }),
+      ).rejects.toThrow(/refused: this browser stays on the sign-up page/);
+      await settledOnSignup(profileId);
+      expect(await value(profileId, '#fn')).toBe('Ligaya');
+      // the owner's address bar (the owner takes the browser over by using it)
+      await (
+        await req(`/api/m/browser/profiles/${profileId}/navigate`, {
+          method: 'POST',
+          json: { url: 'http://signup.test/hop' },
+        })
+      ).text();
+      await settledOnSignup(profileId);
+      expect(await value(profileId, '#fn')).toBe('Ligaya');
+      expect(held).toBe(4);
+    } finally {
+      slowAwayMs = 0;
+      opts.guidedBurstQuietMs = undefined;
+      (pg as { goto: unknown }).goto = realGoto;
+      await mod.manager().close(profileId);
+    }
+  }, 90_000);
+
   it('a page that keeps redirecting away is parked on a blank page after the cap; redirects far apart never add up', async () => {
     const before = away;
     const loop = await openAt('Sinag');

@@ -557,6 +557,44 @@ export class BrowserManager {
     this.assertNotTakenOver(id);
     return out;
   }
+  /**
+   * Stores what is typed on a guided sign-up page in the page's history entry, before the server itself navigates
+   * that page (an address a helper, the module port or the owner opened, a popup's address). Going back after a
+   * redirect brings back what Chromium stored there, and Chromium stores it on a timer (about a second after the
+   * typing) or once the page's renderer has unloaded it: a navigation the page starts (a link, a script) stores it
+   * first, one the server starts does not. A redirect off the hosts is sent back the moment it lands, so with that
+   * renderer busy (a slow machine) the sign-up came back empty. A same-document history commit (replaceState with
+   * the page's own state and address, in an isolated world: no wrapper the page put on the history API runs) carries
+   * the typed values to the browser ahead of the navigation. Best effort: a page that does not answer within `ms`
+   * is navigated as before.
+   */
+  async guidedSaveTyped(id: string, ms = 10_000): Promise<void> {
+    const s = this.running(id);
+    if (!s || !this.guidedFlows.has(id) || this.guidedOffHost(id)) return;
+    const own = !s.cdp;
+    const cdp = s.cdp ?? (await s.ctx.newCDPSession(s.page).catch(() => null));
+    if (!cdp) return;
+    let timer: NodeJS.Timeout | undefined;
+    const save = async () => {
+      const { frameTree } = await cdp.send('Page.getFrameTree');
+      const { executionContextId } = await cdp.send('Page.createIsolatedWorld', {
+        frameId: frameTree.frame.id,
+        worldName: 'pasabot-guided',
+      });
+      await cdp.send('Runtime.evaluate', {
+        expression: 'void history.replaceState(history.state, "")',
+        contextId: executionContextId,
+      });
+    };
+    try {
+      await Promise.race([save(), new Promise<void>((res) => (timer = setTimeout(res, ms)))]);
+    } catch {
+      // the page went away or cannot be reached: navigated as before
+    } finally {
+      clearTimeout(timer);
+      if (own) await cdp.detach().catch(() => {});
+    }
+  }
   /** the main frame of a guided browser landed off its hosts (a redirect): back to the sign-up */
   private keepOnHosts(s: Session) {
     const id = s.profileId;
@@ -599,8 +637,12 @@ export class BrowserManager {
           .catch(() => {});
         await new Promise((res) => setTimeout(res, 50 * (attempt + 1)));
       }
-      if (!s.closed && this.guidedOffHost(id))
+      if (!s.closed && this.guidedOffHost(id)) {
+        this.app.log.info('browser guided flow: could not go back, the sign-up was opened again', {
+          profile: id,
+        });
         await s.page.goto(g.url, { waitUntil: 'commit', timeout: left() }).catch(() => null);
+      }
       if (!s.closed)
         await s.page.waitForLoadState('load', { timeout: Math.min(10_000, left()) }).catch(() => {});
     })()
@@ -739,7 +781,9 @@ export class BrowserManager {
       void p.close().catch(() => {});
       if (target && target !== 'about:blank')
         void this.allowed(target).then(async (ok) => {
-          if (ok) await s.page.goto(target).catch(() => {});
+          if (!ok) return;
+          await this.guidedSaveTyped(id);
+          await s.page.goto(target).catch(() => {});
         });
     });
     // a page that reaches the real register() anyway: its worker is dropped the moment it starts
@@ -889,6 +933,7 @@ export class BrowserManager {
     // a sign-in may need no typing (a magic link, an SSO click-through): any owner use may leave one behind (a
     // guided sign-up counts it when it ends)
     if (!g) this.ownerDrove(id);
+    await this.guidedSaveTyped(id);
     await s.page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30_000 }).catch((e) => {
       throw new HttpError(502, `could not open the page: ${String(e).split('\n')[0]}`, 'navigate_failed');
     });
@@ -1274,6 +1319,8 @@ export function createBrowserModule(o: BrowserOptions = {}): PasaBotModule & { m
           return withLock(r.id, async () => {
             halted();
             const bounces = m.guidedBounces(r.id);
+            // a redirect of this address off the sign-up's hosts goes back to what was typed there
+            await m.guidedSaveTyped(r.id);
             // a guided page sent back from a redirect may interrupt this navigation: that is the refusal below
             const nav = await s.page.goto(i.url, { waitUntil: 'domcontentloaded', timeout: 30_000 }).then(
               () => null,
