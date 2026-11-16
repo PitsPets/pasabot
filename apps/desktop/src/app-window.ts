@@ -12,7 +12,7 @@
  */
 import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
-import { delimiter, join, posix, win32 } from 'node:path';
+import { join, posix, win32 } from 'node:path';
 
 export interface BrowserProbe {
   exists(path: string): boolean;
@@ -87,11 +87,14 @@ const LINUX_BROWSERS = [
   'microsoft-edge-stable',
 ];
 
-/** Chromium-family browsers on PATH on Linux, best first, as absolute paths */
+/**
+ * Chromium-family browsers on PATH on Linux, best first, as absolute paths. A Linux PATH is always `:`-separated, so it
+ * is split on `:` whatever OS this code runs on (node:path's `delimiter` is the host's, `;` on Windows).
+ */
 export function linuxBrowsers(path: string, probe: Pick<BrowserProbe, 'exists'> = realProbe): string[] {
   const out: string[] = [];
   for (const name of LINUX_BROWSERS)
-    for (const dir of path.split(delimiter)) {
+    for (const dir of path.split(':')) {
       if (!dir || !posix.isAbsolute(dir)) continue;
       const p = posix.join(dir, name);
       if (probe.exists(p)) {

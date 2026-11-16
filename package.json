@@ -28,9 +28,9 @@
     "test:crash": "vitest run apps/server/src/core/crash.test.ts",
     "test:queue-priority": "vitest run apps/server/src/core/queue-priority.test.ts",
     "test:contract": "vitest run packages/testkit/src/fake-contract.test.ts providers/fake",
-    "build": "\"$npm_execpath\" -r run build",
+    "build": "node scripts/pnpm-steps.mjs \"-r run build\"",
     "i18n:check": "tsx packages/i18n/src/check.ts .",
-    "check": "\"$npm_execpath\" run typecheck && \"$npm_execpath\" run i18n:check && \"$npm_execpath\" run lint && \"$npm_execpath\" run test && \"$npm_execpath\" run build",
+    "check": "node scripts/pnpm-steps.mjs \"run typecheck\" \"run i18n:check\" \"run lint\" \"run test\" \"run build\"",
     "test:setup": "vitest run apps/server/src/auth/setup.test.ts",
     "test:approval": "vitest run apps/server/src/approvals/approval.test.ts",
     "test:mcp-gateway": "vitest run apps/server/src/mcp/gateway.test.ts",
@@ -39,9 +39,9 @@
     "test:sandbox": "vitest run apps/server/src/runner/sandbox.test.ts",
     "test:membership": "vitest run apps/server/src/chat/membership.test.ts",
     "test:live": "vitest run providers",
-    "dev": "\"$npm_execpath\" --filter @pasabot/web run dev",
-    "test:e2e": "\"$npm_execpath\" --filter @pasabot/web run test:e2e",
-    "test:e2e:all": "PASABOT_LAYOUT_FULL=1 \"$npm_execpath\" run test:e2e && \"$npm_execpath\" -r --no-bail --workspace-concurrency=1 --filter \"!@pasabot/web\" run test:e2e"
+    "dev": "node scripts/pnpm-steps.mjs \"--filter @pasabot/web run dev\"",
+    "test:e2e": "node scripts/pnpm-steps.mjs \"--filter @pasabot/web run test:e2e\"",
+    "test:e2e:all": "node scripts/pnpm-steps.mjs \"PASABOT_LAYOUT_FULL=1 run test:e2e\" \"-r --no-bail --workspace-concurrency=1 --filter !@pasabot/web run test:e2e\""
   },
   "devDependencies": {
     "typescript": "^5.9.0",

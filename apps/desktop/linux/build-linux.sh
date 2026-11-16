@@ -5,22 +5,32 @@
 # starter runs the launcher without a shell (--no-stdin --open-urls), opens the web app, and the web app has the
 # Stop all button. Starting it again opens the app again: the running copy is poked and opens a fresh setup link
 # while no one has claimed PasaBot yet (never a code to type), the plain address after. `pasabot-desktop --quit` stops it.
-#   apps/desktop/linux/build-linux.sh [--node PATH] [--update-url URL]
+#   apps/desktop/linux/build-linux.sh [--node PATH] [--update-url URL] [--skip-build]
+#   --skip-build: package the workspace's existing install and dist/ (CI builds in a step of its own first)
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(cd "$HERE/../../.." && pwd)"
 NODE_BIN="$(command -v node || true)"
 UPDATE_URL=""
+SKIP_BUILD=0
 while [ $# -gt 0 ]; do
   case "$1" in
     --node) NODE_BIN="$2"; shift 2 ;;
     --update-url) UPDATE_URL="$2"; shift 2 ;;
+    --skip-build) SKIP_BUILD=1; shift ;;
     *) echo "build-linux: unknown option $1" >&2; exit 2 ;;
   esac
 done
 case "$UPDATE_URL" in ""|https://*) ;; *) echo "build-linux: --update-url must be https" >&2; exit 2 ;; esac
+[ -x "$NODE_BIN" ] || { echo "build-linux: no node binary (pass --node)" >&2; exit 2; }
+command -v rsync >/dev/null || { echo "build-linux: rsync missing (apt-get install rsync)" >&2; exit 2; }
 PNPM=(npx --yes pnpm@12.18.0)
-(cd "$ROOT" && "${PNPM[@]}" install --frozen-lockfile && "${PNPM[@]}" -r run build)
+if [ "$SKIP_BUILD" = 0 ]; then
+  (cd "$ROOT" && "${PNPM[@]}" install --frozen-lockfile && "${PNPM[@]}" -r run build)
+fi
+for f in apps/server/dist/host/main.js apps/desktop/dist/main.js apps/web/dist/index.html; do
+  [ -f "$ROOT/$f" ] || { echo "build-linux: $f missing; run without --skip-build" >&2; exit 1; }
+done
 VERSION="$("$NODE_BIN" -p "require('$ROOT/apps/server/package.json').version")"
 ARCH="$(uname -m)"
 OUT="$ROOT/apps/desktop/out"

@@ -24,6 +24,7 @@ import {
   seedUser,
   type TestServer,
 } from '../../../packages/testkit/src/index.js';
+import { requireChromium } from './__fixtures__/chromium.js';
 import { createBrowserModule } from './server.js';
 
 /** pids of Chromium processes started for this server's profiles */
@@ -106,6 +107,7 @@ describe('browser (W15)', () => {
       .messages;
 
   beforeAll(async () => {
+    await requireChromium();
     secret = createServer((_q, r) => {
       secretHits++;
       r.end('iam-credentials-for-nena');
@@ -199,6 +201,7 @@ describe('browser (W15)', () => {
     chat = seedChat(s.db, { userIds: [owner.id], agentIds: [agent] });
   }, 30_000);
   afterAll(async () => {
+    if (!s) return; // beforeAll stopped early (no Chromium): nothing was started
     const dir = mod.manager().profilesDir;
     await mod.manager().closeAll();
     await s.cleanup();

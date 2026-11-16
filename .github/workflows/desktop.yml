@@ -1,9 +1,14 @@
 # Desktop proof on real Windows, Linux and macOS runners (W26). Kept in the repo; it runs when the owner pushes or
 # starts it by hand. Unsigned artifacts only; nothing is published or uploaded anywhere else.
-#   windows-latest: install, typecheck + build + the Windows tests, build-windows.ps1 (portable folder + installer), the
-#                   installer silently, then selftest.ps1 against the installed copy, then a silent uninstall
-#   ubuntu-latest:  install, run check, build-linux.sh, install.sh, selftest.sh
-#   macos-latest:   install, desktop tests, build-app.sh + smoke.sh
+# Each OS job: install, typecheck, the unit tests for that OS, the build, the desktop package for that OS, its
+# self-test, and the package + self-test report as an artifact. Every check runs once what it needs has worked, even
+# when an earlier check failed, so one run shows every problem it can (the job still fails).
+#   windows-latest: the Windows tests (platform-injected, or real Windows behaviour: no `ps`, taskkill, ACLs, shims;
+#                   the POSIX-only ones, such as file modes, /bin/sh fake CLIs and process groups, run on Linux and
+#                   macOS), build-windows.ps1 (portable folder + installer), the installer silently, selftest.ps1 on
+#                   the installed copy, then a silent uninstall
+#   ubuntu-latest:  every unit test, build-linux.sh, install.sh, selftest.sh
+#   macos-latest:   every unit test, build-app.sh + smoke.sh
 name: desktop
 on:
   workflow_dispatch:
@@ -12,6 +17,8 @@ on:
       - "apps/desktop/**"
       - "apps/server/src/host/**"
       - "packages/core/src/**"
+      - "package.json"
+      - "scripts/**"
       - ".github/workflows/desktop.yml"
 permissions:
   contents: read
@@ -24,34 +31,57 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npx --yes pnpm@12.18.0 install --frozen-lockfile
-      # not `run check`: pnpm runs scripts through cmd.exe here, which does not expand the "$npm_execpath" those
-      # scripts use, so each step is run directly. The tests are the ones written for Windows (platform-injected,
-      # or real Windows behaviour: no `ps`, taskkill, ACLs, shims); the POSIX-only ones (file modes, /bin/sh fake
-      # CLIs, process groups) run on the Linux and macOS jobs. Lint is platform-independent and runs on Linux.
-      - run: npx --yes pnpm@12.18.0 run typecheck
-      - run: npx --yes pnpm@12.18.0 run i18n:check
-      - run: npx --yes pnpm@12.18.0 -r run build
-      - run: npx --yes pnpm@12.18.0 vitest run packages/core/src/win.test.ts apps/server/src/host/notices.test.ts apps/desktop/src/windows.test.ts apps/desktop/src/shells.test.ts modules/procs
-      - run: choco install innosetup --no-progress -y
-      - name: build the package
+      - id: install
+        run: npx --yes pnpm@12.18.0 install --frozen-lockfile
+      - name: typecheck
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run typecheck
+      - name: i18n:check
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run i18n:check
+      - name: build
+        id: build
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run build
+      - name: Windows unit tests
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 vitest run packages/core/src/win.test.ts apps/server/src/host/notices.test.ts apps/desktop/src/windows.test.ts apps/desktop/src/shells.test.ts modules/procs
+      - name: install Inno Setup
+        id: inno
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: choco install innosetup --no-progress -y
+      - name: build the package (portable folder + installer)
+        id: package
+        if: ${{ !cancelled() && steps.build.outcome == 'success' && steps.inno.outcome == 'success' }}
         shell: powershell
         run: powershell -NoProfile -ExecutionPolicy Bypass -File apps\desktop\windows\build-windows.ps1 -SkipBuild
       - name: install it silently (per user, no admin)
+        id: setup
+        if: ${{ !cancelled() && steps.package.outcome == 'success' }}
         shell: powershell
         run: |
           $setup = Get-ChildItem apps\desktop\out\PasaBot-Setup-*.exe | Select-Object -First 1
-          $p = Start-Process $setup.FullName -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CURRENTUSER' -Wait -PassThru
+          if (-not $setup) { throw 'no PasaBot-Setup-*.exe in apps\desktop\out (was Inno Setup found?)' }
+          $log = Join-Path (Resolve-Path apps\desktop\out).Path 'install.log'
+          $p = Start-Process $setup.FullName -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CURRENTUSER', "/LOG=`"$log`"" -Wait -PassThru
           if ($p.ExitCode -ne 0) { throw "installer exit $($p.ExitCode)" }
       - name: selftest on the installed copy
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
         shell: powershell
         run: powershell -NoProfile -ExecutionPolicy Bypass -File "$env:LOCALAPPDATA\Programs\PasaBot\selftest.ps1"
+      # the report is written next to the installed selftest.ps1; it goes with the artifact from the workspace
+      - name: keep the self-test report
+        if: ${{ always() && steps.setup.outcome == 'success' }}
+        shell: powershell
+        run: Copy-Item "$env:LOCALAPPDATA\Programs\PasaBot\selftest-report.txt" apps\desktop\out\ -ErrorAction SilentlyContinue
       - name: no node.exe left from the installed copy
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
         shell: powershell
         run: |
           $left = Get-CimInstance Win32_Process -Filter "Name='node.exe'" | Where-Object { $_.CommandLine -like "*Programs\PasaBot*" }
           if ($left) { $left | Format-List ProcessId, CommandLine; throw 'node.exe left running' }
       - name: uninstall silently (data is kept)
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
         shell: powershell
         run: |
           $u = "$env:LOCALAPPDATA\Programs\PasaBot\unins000.exe"
@@ -63,7 +93,8 @@ jobs:
           name: pasabot-windows
           path: |
             apps/desktop/out/PasaBot-Setup-*.exe
-            ${{ env.LOCALAPPDATA }}/Programs/PasaBot/selftest-report.txt
+            apps/desktop/out/selftest-report.txt
+            apps/desktop/out/install.log
   linux:
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -72,17 +103,46 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      # the helper sandbox on Ubuntu 24.04 needs bubblewrap with user namespaces (the app shows a card otherwise)
-      - run: sudo apt-get update && sudo apt-get install -y bubblewrap && sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
-      - run: npx --yes pnpm@12.18.0 install --frozen-lockfile
-      - run: npx --yes pnpm@12.18.0 run check
-      - run: bash apps/desktop/linux/build-linux.sh
-      - name: install for this user and check the computer
+      # before any test: the helper sandbox needs bubblewrap, and both bubblewrap and Chromium's sandbox
+      # (modules/browser, chromiumSandbox: true) need user namespaces, which Ubuntu 24.04 restricts through AppArmor
+      - name: install bubblewrap, allow user namespaces
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bubblewrap
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 || echo "::warning::could not relax kernel.apparmor_restrict_unprivileged_userns"
+      - id: install
+        run: npx --yes pnpm@12.18.0 install --frozen-lockfile
+      # pnpm install brings playwright-core but not its browser (the real-Chromium tests in modules/browser)
+      - name: install Playwright's Chromium headless shell
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 --filter @pasabot/mod-browser exec playwright-core install --with-deps --only-shell chromium
+      - name: typecheck
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run typecheck
+      - name: i18n:check
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run i18n:check
+      - name: unit tests
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run test
+      - name: build
+        id: build
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run build
+      - name: build the package
+        id: package
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: bash apps/desktop/linux/build-linux.sh --skip-build
+      - name: install for this user
+        id: setup
+        if: ${{ !cancelled() && steps.package.outcome == 'success' }}
         run: |
           mkdir -p "$RUNNER_TEMP/pb" && tar -C "$RUNNER_TEMP/pb" -xzf apps/desktop/out/pasabot-linux-*.tar.gz
           "$RUNNER_TEMP/pb/pasabot/install.sh"
           test -f "$HOME/.local/share/applications/pasabot.desktop"
-          DISPLAY=:99 XDG_CURRENT_DESKTOP=ci "$HOME/.local/share/pasabot/selftest.sh"
+      - name: selftest on the installed copy
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        run: XDG_CURRENT_DESKTOP=ci "$HOME/.local/share/pasabot/selftest.sh"
       - if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -98,11 +158,34 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npx --yes pnpm@12.18.0 install --frozen-lockfile
-      - run: npx --yes pnpm@12.18.0 vitest run apps/desktop
-      - run: bash apps/desktop/macos/build-app.sh --payload copy --dmg
-      - run: bash apps/desktop/macos/smoke.sh
-      - uses: actions/upload-artifact@v4
+      - id: install
+        run: npx --yes pnpm@12.18.0 install --frozen-lockfile
+      # the hardened-runtime test of the Screen Helper skips itself where dyld does not enforce the runtime; this
+      # line says why in the log (hosted runners are VMs with System Integrity Protection relaxed)
+      - name: System Integrity Protection status
+        run: csrutil status || true
+      - name: install Playwright's Chromium headless shell
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 --filter @pasabot/mod-browser exec playwright-core install --only-shell chromium
+      - name: typecheck
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run typecheck
+      - name: unit tests
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run test
+      - name: build
+        id: build
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npx --yes pnpm@12.18.0 run build
+      - name: build the app and the .dmg
+        id: package
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: bash apps/desktop/macos/build-app.sh --payload copy --dmg --skip-build
+      - name: smoke test of the built app
+        if: ${{ !cancelled() && steps.package.outcome == 'success' }}
+        run: bash apps/desktop/macos/smoke.sh
+      - if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: pasabot-macos
           path: apps/desktop/out/*.dmg

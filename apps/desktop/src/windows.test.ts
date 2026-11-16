@@ -3,7 +3,7 @@
  * the registry and the file system (nothing here starts a browser or PowerShell). What only a real Windows PC can
  * prove is listed in docs/WINDOWS.md and checked by windows/selftest.ps1.
  */
-import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterAll, describe, expect, it } from 'vitest';
@@ -26,7 +26,8 @@ import { acquireInstance, commandOf, windowsCommandLineScript, windowsPowerShell
 import { createOpener, type Spawned } from './opener.js';
 
 const tmp = mkdtempSync(join(tmpdir(), 'pb-desk-win-'));
-afterAll(() => rmSync(tmp, { recursive: true, force: true }));
+// retries: on Windows a file another process (Defender, the indexer) still holds cannot be unlinked for a moment
+afterAll(() => rmSync(tmp, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
 
 describe('single instance on Windows (pid reuse after a crash or reboot)', () => {
   it('reads the holder’s command line through PowerShell by full path, the pid as a number only', () => {
@@ -124,22 +125,36 @@ describe('open at login on Windows and Linux', () => {
     expect(f).toContain('\\\\srv\\u\\Roaming');
     expect(f).toMatch(/Startup.PasaBot\.cmd$/);
   });
-  it('Linux: $XDG_CONFIG_HOME/autostart when it is set', () => {
-    const xdg = join(tmp, 'xdg');
+  it('Linux: $XDG_CONFIG_HOME/autostart when it is set (an absolute Linux path), ~/.config/autostart otherwise', () => {
+    // a Linux path, whatever OS runs this test: on a Windows runner a temp folder is C:\..., which a Linux
+    // $XDG_CONFIG_HOME can never be (it must start with /)
+    const xdg = '/xdg-test/config';
     const t = {
       platform: 'linux' as const,
-      userHome: tmp,
+      userHome: '/home/u',
       appPath: '/opt/pasabot/pasabot',
       env: { XDG_CONFIG_HOME: xdg },
     };
     expect(autostartFile(t)).toBe(join(xdg, 'autostart', 'pasabot.desktop'));
-    setAutostart(t, true);
-    expect(readFileSync(join(xdg, 'autostart', 'pasabot.desktop'), 'utf8')).toContain(
-      'Exec="/opt/pasabot/pasabot"',
-    );
     expect(autostartFile({ ...t, env: { XDG_CONFIG_HOME: 'relative' } })).toBe(
-      join(tmp, '.config', 'autostart', 'pasabot.desktop'),
+      join('/home/u', '.config', 'autostart', 'pasabot.desktop'),
     );
+    expect(autostartFile({ ...t, env: {} })).toBe(join('/home/u', '.config', 'autostart', 'pasabot.desktop'));
+  });
+  it('Linux: the autostart entry is written where autostartFile says, and removed again', () => {
+    // a real folder of this computer as the home (no $XDG_CONFIG_HOME, so this works on a Windows runner too)
+    const t = {
+      platform: 'linux' as const,
+      userHome: join(tmp, 'linux-home'),
+      appPath: '/opt/pasabot/pasabot',
+      env: {},
+    };
+    const file = join(tmp, 'linux-home', '.config', 'autostart', 'pasabot.desktop');
+    expect(autostartFile(t)).toBe(file);
+    setAutostart(t, true);
+    expect(readFileSync(file, 'utf8')).toContain('Exec="/opt/pasabot/pasabot"');
+    setAutostart(t, false);
+    expect(existsSync(file)).toBe(false);
   });
 });
 

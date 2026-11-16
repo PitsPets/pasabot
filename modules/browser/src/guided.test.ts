@@ -19,6 +19,7 @@ import {
   seedUser,
   type TestServer,
 } from '../../../packages/testkit/src/index.js';
+import { requireChromium } from './__fixtures__/chromium.js';
 import { clickRefusal, typeRefusal } from './guided.js';
 import { createBrowserPort } from './port.js';
 import { createBrowserModule } from './server.js';
@@ -99,6 +100,7 @@ describe('guided sign-up (W43 "Do it with me")', () => {
   const SYS = { kind: 'system' as const, reason: 'inbox: do it with me (test)' };
 
   beforeAll(async () => {
+    await requireChromium();
     page = createServer((q, r) => {
       if (q.url === '/hop') return void r.writeHead(302, { location: 'http://elsewhere.test/' }).end();
       if (q.url === '/created') {
@@ -118,6 +120,7 @@ describe('guided sign-up (W43 "Do it with me")', () => {
     chat = seedChat(s.db, { userIds: [owner.id], agentIds: [agent] });
   }, 30_000);
   afterAll(async () => {
+    if (!s) return; // beforeAll stopped early (no Chromium): nothing was started
     await mod.manager().closeAll();
     await s.cleanup();
     page.closeAllConnections();

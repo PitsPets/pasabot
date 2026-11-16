@@ -38,4 +38,7 @@ Chromium comes from Playwright's browser cache (`npx playwright install chromium
 503 with the reason.
 
 Tests: `vitest run modules/browser` (real headless Chromium, local test page on 127.0.0.1 port 0) and
-`pnpm --filter @pasabot/mod-browser test:e2e` (build the web app first) at 1440 and 390 px.
+`pnpm --filter @pasabot/mod-browser test:e2e` (build the web app first) at 1440 and 390 px. `pnpm install` does not
+download the browser: on a fresh machine or CI runner run
+`pnpm --filter @pasabot/mod-browser exec playwright-core install --only-shell chromium` once (add `--with-deps` on
+Linux for its system libraries); without it the real-Chromium test files fail at once with that instruction.

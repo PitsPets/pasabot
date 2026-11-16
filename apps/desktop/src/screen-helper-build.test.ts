@@ -30,7 +30,7 @@ describe.runIf(canBuild)('PasaBot Screen Helper build (macOS)', () => {
     expect(`${info.stdout}${info.stderr}`).toMatch(/flags=0x[0-9a-f]+\([^)]*runtime[^)]*\)/);
   }, 300_000);
 
-  it('ignores DYLD_INSERT_LIBRARIES (an unhardened copy of the same binary would load the library)', () => {
+  it('ignores DYLD_INSERT_LIBRARIES (an unhardened copy of the same binary would load the library)', (ctx) => {
     const src = join(out, 'inj.c');
     const lib = join(out, 'inj.dylib');
     writeFileSync(
@@ -44,6 +44,23 @@ describe.runIf(canBuild)('PasaBot Screen Helper build (macOS)', () => {
         encoding: 'utf8',
         timeout: 10_000,
       });
+    // Does this Mac enforce the hardened runtime at all? A one-line program signed the same way (ad-hoc, hardened
+    // runtime) is the control: where dyld still loads the library into it, System Integrity Protection / AMFI is
+    // relaxed (GitHub's hosted macOS runners are such VMs), so nothing here could tell a hardened helper from an
+    // unhardened one. The signing itself is still checked above (the `runtime` flag).
+    const probeSrc = join(out, 'probe.c');
+    const probe = join(out, 'probe');
+    writeFileSync(probeSrc, '#include <stdio.h>\nint main(void) { puts("1.0.0"); return 0; }\n');
+    execFileSync('cc', ['-o', probe, probeSrc]);
+    execFileSync('codesign', ['--force', '--options', 'runtime', '--sign', '-', probe], { stdio: 'ignore' });
+    const probeMark = join(out, 'probe.mark');
+    run(probe, probeMark);
+    if (existsSync(probeMark)) {
+      const sip = spawnSync('/usr/bin/csrutil', ['status'], { encoding: 'utf8' }).stdout?.trim() || 'unknown';
+      ctx.skip(
+        `this Mac does not enforce the hardened runtime (a hardened control program loaded the library; ${sip})`,
+      );
+    }
     const hardened = join(out, 'hardened.mark');
     expect(run(bin, hardened).stdout.trim()).toMatch(/^\d+\.\d+\.\d+$/);
     expect(existsSync(hardened)).toBe(false);

@@ -25,7 +25,12 @@ export { FakeMemoryBackend, type MemoryContractSubject, runMemoryContract } from
 
 export function tempHome(prefix = 'pasabot-test-'): { dir: string; cleanup(): void } {
   const dir = mkdtempSync(join(tmpdir(), prefix));
-  return { dir, cleanup: () => rmSync(dir, { recursive: true, force: true }) };
+  // retries: on Windows a file that was just closed (the database) can stay locked for a moment (Defender, the
+  // indexer) and unlink answers EBUSY/EPERM; POSIX unlinks at once
+  return {
+    dir,
+    cleanup: () => rmSync(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }),
+  };
 }
 
 export interface TestServer extends PasaBotServer {

@@ -17,7 +17,7 @@ import { createOpener, hideSetupCode, isOpenable, openCommands, type Spawner, sh
 const fake = fileURLToPath(new URL('./__fixtures__/fake-server.mjs', import.meta.url));
 const mint = fileURLToPath(new URL('./__fixtures__/mint-setup-link.mjs', import.meta.url));
 const scratch = mkdtempSync(join(tmpdir(), 'pasabot-shells-'));
-afterAll(() => rmSync(scratch, { recursive: true, force: true }));
+afterAll(() => rmSync(scratch, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
 let n = 0;
 const dir = () => join(scratch, `h${n++}`);
 const env = (extra: Record<string, string> = {}) => ({ PATH: process.env.PATH ?? '', ...extra });

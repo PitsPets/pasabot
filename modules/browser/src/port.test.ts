@@ -10,6 +10,7 @@ import type { ManagedBrowserPort } from '@pasabot/core';
 import { asSystem } from '@pasabot/core';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { bootTestServer, seedUser, type TestServer } from '../../../packages/testkit/src/index.js';
+import { requireChromium } from './__fixtures__/chromium.js';
 import { createBrowserModule } from './server.js';
 
 let s: TestServer;
@@ -51,6 +52,7 @@ const stepsPage = `<!doctype html><html><head><title>Steps</title></head><body>
 </body></html>`;
 
 beforeAll(async () => {
+  await requireChromium();
   shop = createServer((q, r) => {
     const send = (html: string) => {
       r.writeHead(200, { 'content-type': 'text/html' });
@@ -90,7 +92,8 @@ beforeAll(async () => {
 }, 60_000);
 afterAll(async () => {
   await s?.cleanup();
-  await new Promise((r) => shop?.close(r));
+  // no shop when beforeAll stopped early (no Chromium): a close that never runs would hang this hook
+  if (shop) await new Promise((r) => shop.close(r));
 });
 
 const port = (): ManagedBrowserPort => {
