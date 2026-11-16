@@ -110,9 +110,22 @@ $utf8 = New-Object System.Text.UTF8Encoding($false)
 [System.IO.File]::WriteAllText((Join-Path $dest 'links.json'), (ConvertTo-Json -InputObject @($links) -Depth 3), $utf8)
 Write-Host "build-windows: $($links.Count) workspace links recorded for links.ps1"
 
-# the database's native module must be there for this Node (better-sqlite3 ships a Windows prebuild)
-$sqlite = Get-ChildItem -Recurse -File -Filter 'better_sqlite3.node' (Join-Path $payloadRoot 'node_modules') -ErrorAction SilentlyContinue | Select-Object -First 1
-if (-not $sqlite) { throw 'build-windows: better_sqlite3.node is missing from the payload' }
+# the database's native module must be there and load in this Node. better-sqlite3 13 has no node-gyp build (no
+# build\Release\better_sqlite3.node): it ships prebuilds\win32-x64.node and win32-arm64.node and loads the one for
+# the running Node's arch. So: name the file this node.exe needs, then really open a database with it, resolved the
+# way the server resolves it (from packages\db, walking up to the hoisted node_modules).
+$nodeArch = (& $NodeExe -p 'process.arch' | Out-String).Trim()
+if ($LASTEXITCODE -ne 0 -or $nodeArch -notin @('x64', 'arm64')) { throw "build-windows: $NodeExe reports an unsupported arch '$nodeArch'" }
+$dbDir = Join-Path $payloadRoot 'packages\db'
+Push-Location $dbDir
+try {
+  $sqliteDir = (& $NodeExe -p "require('path').dirname(require.resolve('better-sqlite3/package.json'))" | Out-String).Trim()
+  if ($LASTEXITCODE -ne 0 -or -not $sqliteDir) { throw 'build-windows: better-sqlite3 is missing from the payload' }
+  $prebuild = Join-Path $sqliteDir "prebuilds\win32-$nodeArch.node"
+  if (-not (Test-Path -LiteralPath $prebuild)) { throw "build-windows: better-sqlite3's prebuilds\win32-$nodeArch.node is missing from the payload" }
+  & $NodeExe -e "new (require('better-sqlite3'))(':memory:').prepare('select 1').get(); console.log('build-windows: the database module loads (win32-' + process.arch + ')')"
+  if ($LASTEXITCODE -ne 0) { throw "build-windows: better-sqlite3 does not load in $NodeExe (exit $LASTEXITCODE)" }
+} finally { Pop-Location }
 
 # long paths: the install folder is %LOCALAPPDATA%\Programs\PasaBot (about 60 characters with a long user name)
 $longest = (Get-ChildItem -Recurse -Force -File $dest | ForEach-Object { $_.FullName.Length - $dest.Length } | Measure-Object -Maximum).Maximum

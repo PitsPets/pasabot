@@ -5,7 +5,12 @@
 
 import { protectDataDir, WINDOWS_DATA_DIR_ACL_SCRIPT, windowsAclCommand } from '@pasabot/core';
 import { describe, expect, it } from 'vitest';
-import { bootTestServer, seedUser, tempHome } from '../../../../packages/testkit/src/index.js';
+import {
+  bootTestServer,
+  seedUser,
+  type TestServer,
+  tempHome,
+} from '../../../../packages/testkit/src/index.js';
 import { defaultRunnerMode, hostModeWarning, linuxSandboxProblem, scrubbedEnv } from '../runner/sandbox.js';
 
 describe('the Windows sandbox story, stated honestly', () => {
@@ -42,27 +47,50 @@ describe('the Windows sandbox story, stated honestly', () => {
       await s.cleanup();
     }
   });
-  it('an owner who already picked a default keeps it; macOS and Linux tests boot with no Windows card', async () => {
+  it('an owner who already picked a default keeps it; macOS and Linux boots show no Windows card', async () => {
     const home = tempHome();
+    // every server is closed before the folder goes, even when an assertion fails first: an open database is
+    // locked on Windows, and a failed cleanup would hide the real failure behind EBUSY
+    const open = new Set<TestServer>();
+    const boot = async (platform: NodeJS.Platform) => {
+      const s = await bootTestServer({ home: home.dir, platform });
+      open.add(s);
+      return s;
+    };
+    const close = async (s: TestServer) => {
+      open.delete(s);
+      await s.close();
+    };
     try {
-      const a = await bootTestServer({ home: home.dir });
-      const owner = seedUser(a.db, 'owner');
-      a.db
-        .prepare("INSERT INTO settings (key, value) VALUES ('agents.defaultTrust', ?)")
-        .run(JSON.stringify('trusted'));
-      const r = (await (
-        await fetch(`${a.url}/api/v1/system/notices`, { headers: { authorization: `Bearer ${owner.token}` } })
-      ).json()) as { notices: { id: string }[] };
-      expect(r.notices.map((n) => n.id)).not.toContain('windows-no-sandbox');
-      await a.close();
-      const b = await bootTestServer({ home: home.dir, platform: 'win32' });
+      // the platform is always named: left to the default, a Windows runner would boot as win32 and show the card
+      for (const platform of ['darwin', 'linux'] as const) {
+        const a = await boot(platform);
+        const owner = seedUser(a.db, 'owner');
+        const r = (await (
+          await fetch(`${a.url}/api/v1/system/notices`, {
+            headers: { authorization: `Bearer ${owner.token}` },
+          })
+        ).json()) as { notices: { id: string }[] };
+        expect(r.notices.map((n) => n.id)).not.toContain('windows-no-sandbox');
+        // and no careful default was written for the owner
+        expect(
+          a.db.prepare("SELECT 1 FROM settings WHERE key = 'agents.defaultTrust'").get(),
+        ).toBeUndefined();
+        if (platform === 'linux')
+          a.db
+            .prepare("INSERT INTO settings (key, value) VALUES ('agents.defaultTrust', ?)")
+            .run(JSON.stringify('trusted'));
+        await close(a);
+      }
+      const b = await boot('win32');
       const o2 = seedUser(b.db, 'owner');
       const t = await fetch(`${b.url}/api/v1/settings/agent-trust`, {
         headers: { authorization: `Bearer ${o2.token}` },
       });
       expect(((await t.json()) as { defaultTrust: string }).defaultTrust).toBe('trusted');
-      await b.close();
+      await close(b);
     } finally {
+      for (const s of open) await s.close().catch(() => {});
       home.cleanup();
     }
   });

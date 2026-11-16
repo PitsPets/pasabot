@@ -436,6 +436,18 @@ function setup(app: ModuleHost) {
   };
 
   // ---------- bus: task progress, reports, silent lead, stopped teams ----------
+  // Bus work runs a tick after the publish that caused it. By then the server may have shut down and closed its
+  // database (an event published while it closes), and a throw inside a bare setImmediate escapes every handler
+  // and takes the process down, so deferred work checks the database first and catches what it throws.
+  const later = (what: string, fn: () => void) =>
+    setImmediate(() => {
+      if (!db.open) return;
+      try {
+        fn();
+      } catch (e) {
+        app.log.warn(what, { e: String(e) });
+      }
+    });
   const ENDED_ITEM = new Set(['cancelled', 'failed', 'interrupted', 'skipped']);
   const taskOfRun = (runId: string) =>
     db
@@ -462,7 +474,7 @@ function setup(app: ModuleHost) {
   app.bus.subscribe((ev) => {
     if (ev.type === 'run.started' || ev.type === 'run.finished') {
       const run = ev.data as RunDTO;
-      setImmediate(() => {
+      later('collab run update failed', () => {
         if (ev.type === 'run.started') {
           const r = db
             .prepare(
@@ -497,7 +509,7 @@ function setup(app: ModuleHost) {
       const a = ev.data as { runId?: string | null; state?: string };
       if (!a.runId) return;
       const runId = a.runId;
-      setImmediate(() => {
+      later('collab approval status failed', () => {
         const t = taskOfRun(runId);
         if (!t) return;
         const pending = a.state === 'pending';
@@ -522,7 +534,7 @@ function setup(app: ModuleHost) {
           app.queue.get(it.id)?.state === 'queued'
         )
           app.queue.hold(it.id, HOLD_UNTIL_RESUME, STOPPED_HOLD);
-      setImmediate(() => {
+      later('collab queue update failed', () => {
         for (const it of d.items) {
           if (!ENDED_ITEM.has(it.state)) continue;
           // a task that ended without its run finishing: cancelled or refused before it ran, or cut by a restart

@@ -26,10 +26,23 @@ export { FakeMemoryBackend, type MemoryContractSubject, runMemoryContract } from
 export function tempHome(prefix = 'pasabot-test-'): { dir: string; cleanup(): void } {
   const dir = mkdtempSync(join(tmpdir(), prefix));
   // retries: on Windows a file that was just closed (the database) can stay locked for a moment (Defender, the
-  // indexer) and unlink answers EBUSY/EPERM; POSIX unlinks at once
+  // indexer) and unlink answers EBUSY/EPERM; POSIX unlinks at once. The retries back off for about 5.5 s, so a lock
+  // that outlasts them is a handle still open (a server not closed): that stays a failure, and says so.
   return {
     dir,
-    cleanup: () => rmSync(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }),
+    cleanup: () => {
+      try {
+        rmSync(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 });
+      } catch (e) {
+        const code = (e as NodeJS.ErrnoException).code;
+        if (code !== 'EBUSY' && code !== 'EPERM') throw e;
+        throw new Error(
+          `the test folder is still in use (${code}): a server or database opened in it was not closed; ` +
+            'close it before cleanup, in a finally, so the first failure is the one reported',
+          { cause: e },
+        );
+      }
+    },
   };
 }
 
