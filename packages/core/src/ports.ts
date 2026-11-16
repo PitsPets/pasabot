@@ -791,6 +791,11 @@ export type BrowserPortActor =
   | { kind: 'user'; id: string }
   | { kind: 'agent'; id: string; runId: string }
   | SystemActor;
+/** how one field of a W43 guided fill went (`ManagedBrowserPort.guided.fill`) */
+export interface GuidedFieldResult {
+  kind: 'givenName' | 'familyName' | 'username';
+  status: 'filled' | 'changed' | 'notKept' | 'notFound';
+}
 /**
  * The W15 managed browser for server-side module code (W30 shopping): never an agent tool by itself. Every page it
  * opens, and the page it ends on, must be on `allowedHosts` (else it throws); it never types into a card, bank,
@@ -858,11 +863,15 @@ export interface ManagedBrowserPort {
       actor: BrowserPortActor,
       o: { profileName: string; url: string; allowedHosts: readonly string[] },
     ): Promise<{ profileId: string }>;
-    /** fills only these fields, found by the module's fixed heuristics; returns the kinds it filled */
+    /**
+     * fills only these fields, found by the module's fixed heuristics; returns the kinds it filled (read back as
+     * typed, or as the page normalised them) and, per field, how it went: `filled`, `changed` (the page changed its
+     * case or spacing), `notKept` (the field did not keep it, or the page moved meanwhile) or `notFound`
+     */
     fill(
       actor: BrowserPortActor,
       o: { profileId: string; fields: { kind: 'givenName' | 'familyName' | 'username'; value: string }[] },
-    ): Promise<{ filled: string[] }>;
+    ): Promise<{ filled: string[]; fields?: GuidedFieldResult[] }>;
     /** the owner drives the live view from now on */
     takeOver(o: { profileId: string }): void;
     /** the flow ends (the owner said Done, or the setup moved on) */

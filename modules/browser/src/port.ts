@@ -5,7 +5,13 @@
  * are never filled; a money action (pay, place order) or anything on a payment page is never clicked. Page data is
  * read in the renderer and bounded; it is untrusted data for the caller. No regular expressions.
  */
-import type { BrowserPageData, BrowserPortActor, ManagedBrowserPort, ModuleHost } from '@pasabot/core';
+import type {
+  BrowserPageData,
+  BrowserPortActor,
+  GuidedFieldResult,
+  ManagedBrowserPort,
+  ModuleHost,
+} from '@pasabot/core';
 import { urlAllowed } from '@pasabot/protocol';
 import type { Page } from 'playwright-core';
 import { clickRefusal, elementFacts, findGuidedField, typeRefusal } from './guided.js';
@@ -26,6 +32,32 @@ interface Manager {
   endGuided(id: string): void;
   assertNotTakenOver(id: string): void;
   assertGuidedOnHost(id: string): void;
+  guidedSettled(id: string, timeoutMs?: number): Promise<boolean>;
+  guidedMark(id: string): GuidedMark | null;
+  guidedUnchanged(id: string, mark: GuidedMark | null): boolean;
+  guidedRead<T>(id: string, read: () => Promise<T>): Promise<T>;
+  guidedBounces(id: string): number;
+}
+/** see `BrowserManager.guidedMark` (structural, like `Manager`) */
+interface GuidedMark {
+  navs: number;
+  sentBack: number;
+  url: string;
+}
+
+/** one `guided.fill` call never runs longer than this, whatever the page does */
+const GUIDED_FILL_DEADLINE_MS = 45_000;
+/** the element is still in the page's current main-frame document (not one a navigation replaced) */
+const inCurrentDocument = (e: Element) =>
+  e.isConnected && e.ownerDocument === document && window === window.top;
+/**
+ * what reading a field back says about a value typed into it: the same text, the page's own normalising of it
+ * (case, spaces), or not kept. No regular expressions (the value read back is page content).
+ */
+export function readBack(got: string, typed: string): 'filled' | 'changed' | 'notKept' {
+  if (got === typed) return 'filled';
+  const norm = (v: string) => [...v.toLowerCase()].filter((ch) => ch.trim() !== '').join('');
+  return norm(got) === norm(typed) && norm(typed) !== '' ? 'changed' : 'notKept';
 }
 
 const MAX_JSON_LD = 20;
@@ -211,21 +243,34 @@ export function createBrowserPort(m: Manager, app: Pick<ModuleHost, 'log' | 'not
         halted();
         if (o.url !== undefined) {
           if (!hostOk(o.url, o.allowedHosts)) throw new Error('that address is not allowed');
-          await s.page.goto(o.url, { waitUntil: 'domcontentloaded', timeout: 20_000 });
+          const bounces = m.guidedBounces(r.id);
+          const nav = await s.page.goto(o.url, { waitUntil: 'domcontentloaded', timeout: 20_000 }).then(
+            () => null,
+            (e: unknown) => e,
+          );
+          // W43: a guided page this address redirected off the sign-up's hosts was sent back: nothing to read
+          if (m.guided(r.id)) await m.guidedSettled(r.id);
+          if (m.guidedBounces(r.id) !== bounces)
+            throw new Error('refused: this browser stays on the sign-up page for now. Do not retry.');
+          if (nav) throw nav;
         }
-        onHosts(s.page, o.allowedHosts);
-        const sel = Object.fromEntries(Object.entries(o.selectors ?? {}).slice(0, MAX_SELECTORS));
-        const x = await extract(s.page, sel);
-        const data: BrowserPageData = {
-          url: s.page.url(),
-          title: x.title,
-          jsonLd: x.jsonLd,
-          meta: x.meta,
-          microdata: x.microdata,
-          selected: x.selected,
-          signals: { captcha: x.captcha, cardField: x.cardField, signIn: x.signIn },
-        };
-        return data;
+        // W43: in a guided sign-up the page is read only while it stays on the sign-up (checked again after)
+        return m.guidedRead(r.id, async () => {
+          onHosts(s.page, o.allowedHosts);
+          const url = s.page.url();
+          const sel = Object.fromEntries(Object.entries(o.selectors ?? {}).slice(0, MAX_SELECTORS));
+          const x = await extract(s.page, sel);
+          const data: BrowserPageData = {
+            url,
+            title: x.title,
+            jsonLd: x.jsonLd,
+            meta: x.meta,
+            microdata: x.microdata,
+            selected: x.selected,
+            signals: { captcha: x.captcha, cardField: x.cardField, signIn: x.signIn },
+          };
+          return data;
+        });
       });
     },
     async fill(actor, o) {
@@ -330,22 +375,83 @@ export function createBrowserPort(m: Manager, app: Pick<ModuleHost, 'log' | 'not
         const g = m.guided(o.profileId);
         if (!g) throw new Error('no guided sign-up is open in that browser');
         m.assertNotTakenOver(o.profileId);
-        const s = await m.open(o.profileId);
-        const filled: string[] = [];
-        await m.withLock(o.profileId, async () => {
+        const id = o.profileId;
+        const deadline = Date.now() + GUIDED_FILL_DEADLINE_MS;
+        const left = () => deadline - Date.now();
+        const s = await m.open(id);
+        const fields: GuidedFieldResult[] = [];
+        /** every hands-off rule, run synchronously right before (and after) typing: a stop, a takeover or a page
+         * that left the sign-up between the lookup and the typing refuses it */
+        const handsOff = () => {
           halted();
-          m.assertGuidedOnHost(o.profileId);
+          m.assertNotTakenOver(id);
+          m.assertGuidedOnHost(id);
           if (!hostOk(s.page.url(), g.hosts)) throw new Error('the page is not the sign-up page');
+        };
+        await m.withLock(id, async () => {
+          // once the page changes under an entry, nothing more is typed: never on a page that loaded meanwhile
+          let pageChanged = false;
           for (const f of o.fields) {
-            const el = await findGuidedField(s.page, f.kind);
-            if (!el) continue;
-            // the same rule as every other hand on this browser, read on the element itself
-            if (typeRefusal(await elementFacts(el))) continue;
-            await el.fill(f.value.slice(0, 100), { timeout: 5000 });
-            filled.push(f.kind);
+            if (pageChanged || left() <= 0) {
+              fields.push({ kind: f.kind, status: 'notKept' });
+              continue;
+            }
+            // a field counts as filled only when it reads back what was typed (or the page's normalising of it).
+            // A page that clears it once is typed into once more; one that keeps refusing it is reported, not fought
+            let status: GuidedFieldResult['status'] = 'notFound';
+            for (let attempt = 0; attempt < 2; attempt++) {
+              const settled = await m.guidedSettled(id, left());
+              halted();
+              if (!settled) {
+                pageChanged = true;
+                status = 'notKept';
+                break;
+              }
+              handsOff();
+              const mark = m.guidedMark(id);
+              const el = await findGuidedField(s.page, f.kind);
+              // the same rule as every other hand on this browser, read on the element itself
+              const facts = el ? await elementFacts(el).catch(() => null) : null;
+              if (!el || !facts || typeRefusal(facts)) {
+                status = 'notFound';
+                break;
+              }
+              // what the field can hold: a maxlength cuts the value, and that is what reads back
+              const max = await el.evaluate((e) => (e as HTMLInputElement).maxLength).catch(() => -1);
+              const want = max > 0 ? f.value.slice(0, Math.min(100, max)) : f.value.slice(0, 100);
+              const attached = await el.evaluate(inCurrentDocument).catch(() => false);
+              // nothing awaited between these checks and the typing they guard
+              handsOff();
+              if (!attached || !m.guidedUnchanged(id, mark)) {
+                pageChanged = true;
+                status = 'notKept';
+                break;
+              }
+              const typed = await el.fill(want, { timeout: Math.max(1, Math.min(5_000, left())) }).then(
+                () => true,
+                () => false,
+              );
+              const got = m.guidedUnchanged(id, mark)
+                ? await el.inputValue({ timeout: Math.max(1, Math.min(2_000, left())) }).catch(() => null)
+                : null;
+              const still =
+                m.guidedUnchanged(id, mark) && (await el.evaluate(inCurrentDocument).catch(() => false));
+              if (!still) {
+                // the page moved under the entry: not retried, and nothing more is typed on the page it reached
+                pageChanged = true;
+                status = 'notKept';
+                break;
+              }
+              status = typed && got !== null ? readBack(got, want) : 'notKept';
+              if (status !== 'notKept' || !typed || left() <= 0) break;
+            }
+            fields.push({ kind: f.kind, status });
           }
         });
-        return { filled };
+        return {
+          filled: fields.filter((x) => x.status === 'filled' || x.status === 'changed').map((x) => x.kind),
+          fields,
+        };
       },
       takeOver(o) {
         m.takeOverGuided(o.profileId);
